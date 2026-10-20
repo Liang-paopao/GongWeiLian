@@ -1,0 +1,72 @@
+{
+  "simulated": true,
+  "description": "手工编写的业务练习数据，不是公开数据集或真实工厂数据。",
+  "device_ids": [
+    "pump-001"
+  ],
+  "slots": {
+    "slot-a": "演示时段A（有人可用）",
+    "slot-b": "演示时段B（无人可用）"
+  },
+  "staff": [
+    {
+      "id": "staff-01",
+      "name": "模拟人员甲",
+      "skills": [
+        "pump_inspection"
+      ],
+      "available_slots": [
+        "slot-a"
+      ]
+    },
+    {
+      "id": "staff-02",
+      "name": "模拟人员乙",
+      "skills": [
+        "electrical_inspection"
+      ],
+      "available_slots": [
+        "slot-a"
+      ]
+    },
+    {
+      "id": "staff-03",
+      "name": "模拟人员丙",
+      "skills": [
+        "pump_inspection"
+      ],
+      "available_slots": []
+    },
+    {
+      "id": "staff-04",
+      "name": "模拟人员丁",
+      "skills": [
+        "pump_inspection"
+      ],
+      "available_slots": [
+        "slot-a"
+      ]
+    },
+    {
+      "id": "staff-05",
+      "name": "模拟人员戊",
+      "skills": [
+        "pump_inspection",
+        "electrical_inspection"
+      ],
+      "available_slots": [
+        "slot-a"
+      ]
+    },
+    {
+      "id": "staff-06",
+      "name": "模拟人员己",
+      "skills": [
+        "electrical_inspection"
+      ],
+      "available_slots": [
+        "slot-a"
+      ]
+    }
+  ]
+}

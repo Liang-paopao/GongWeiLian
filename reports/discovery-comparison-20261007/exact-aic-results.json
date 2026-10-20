@@ -1,0 +1,1313 @@
+[
+  {
+    "checked_at": "2026-10-07T08:59:22.468897+00:00",
+    "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+    "query": {
+      "type": "filtered",
+      "limit": 10,
+      "filter": {
+        "conditions": [
+          {
+            "field": "aic",
+            "op": "eq",
+            "value": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45"
+          }
+        ],
+        "logic": "and"
+      }
+    },
+    "dingdang_verified": false,
+    "http_status": 200,
+    "response": {
+      "result": {
+        "acsMap": {},
+        "agents": [
+          {
+            "group": "filtered",
+            "agentSkills": []
+          }
+        ],
+        "routes": [
+          {
+            "forwardChain": [
+              "AIC-DS-A"
+            ],
+            "agentGroups": [
+              {
+                "group": "filtered",
+                "agentSkills": []
+              }
+            ],
+            "status": "ok",
+            "durationMs": 2
+          }
+        ]
+      }
+    },
+    "success": true,
+    "target_found": false,
+    "name": "工维联核心业务 Leader",
+    "owner": "own",
+    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+    "mode": "default"
+  },
+  {
+    "checked_at": "2026-10-07T08:59:22.469128+00:00",
+    "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+    "query": {
+      "type": "filtered",
+      "limit": 10,
+      "filter": {
+        "conditions": [
+          {
+            "field": "aic",
+            "op": "eq",
+            "value": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45"
+          }
+        ],
+        "logic": "and"
+      },
+      "extFilter": {
+        "conditions": [
+          {
+            "field": "alive",
+            "op": "in",
+            "value": [
+              "online",
+              "offline",
+              "unknown"
+            ]
+          }
+        ]
+      }
+    },
+    "dingdang_verified": false,
+    "http_status": 200,
+    "response": {
+      "result": {
+        "acsMap": {
+          "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45": {
+            "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "name": "工维联核心业务 Leader",
+            "active": true,
+            "skills": [
+              {
+                "id": "gongwei.leader.handle-maintenance-request",
+                "name": "理解设备异常请求",
+                "tags": [
+                  "leader",
+                  "agentic"
+                ],
+                "version": "1.1.0",
+                "description": "接收中文自然语言和结构化检查请求，缺失字段时询问用户。"
+              },
+              {
+                "id": "gongwei.leader.plan-collaboration",
+                "name": "规划检查协作",
+                "tags": [
+                  "leader",
+                  "agentic"
+                ],
+                "version": "1.1.0",
+                "description": "生成资源查询、确认和工单协作计划。"
+              },
+              {
+                "id": "gongwei.leader.discover-and-delegate",
+                "name": "发现并委派 Partner",
+                "tags": [
+                  "leader",
+                  "agentic"
+                ],
+                "version": "1.1.0",
+                "description": "按能力、安全和在线状态发现并选择 Partner。"
+              },
+              {
+                "id": "gongwei.leader.resume-multiturn-task",
+                "name": "恢复多轮任务",
+                "tags": [
+                  "leader",
+                  "agentic"
+                ],
+                "version": "1.1.0",
+                "description": "使用同一 session、task 和 message 关联补充信息。"
+              },
+              {
+                "id": "gongwei.leader.track-and-summarize",
+                "name": "跟踪并汇总结果",
+                "tags": [
+                  "leader",
+                  "agentic"
+                ],
+                "version": "1.1.0",
+                "description": "返回协作轨迹、资源证据和工单结果。"
+              }
+            ],
+            "version": "1.1.0",
+            "provider": {
+              "name": "LiangPaoPao",
+              "department": "设备运维系统",
+              "countryCode": "CN",
+              "organization": "工维联项目组"
+            },
+            "endPoints": [
+              {
+                "url": "https://leader.yanyi.online/rpc",
+                "security": [
+                  {
+                    "mtls": []
+                  }
+                ],
+                "transport": "JSONRPC"
+              }
+            ],
+            "certificate": {
+              "altNames": {
+                "dns": [
+                  "leader.yanyi.online"
+                ]
+              }
+            },
+            "description": "工维联设备检查协调智能体。接受中文自然语言或 JSON 设备异常请求，多轮补充设备、日期、开始时间、时长与技能；在线发现并通过正式 MQ 调用资源协调 Partner，查询人员、时间、工具和库存后返回待确认方案。仅用户明确确认后预留资源并调用工单处理 Partner，创建唯一检查工单并返回编号、人员、物品、时间及状态。支持任务查询、补充、确认、取消、重复确认保护和服务重启恢复。声音检测为可选辅助，不推断具体零件损坏。",
+            "capabilities": {
+              "streaming": false,
+              "messageQueue": [],
+              "notification": false
+            },
+            "protocolVersion": "02.02",
+            "securitySchemes": {
+              "mtls": {
+                "type": "mutualTLS"
+              }
+            },
+            "lastModifiedTime": "2026-10-06T22:34:01.315584+08:00",
+            "defaultInputModes": [
+              "text/plain",
+              "application/json"
+            ],
+            "defaultOutputModes": [
+              "text/plain",
+              "application/json"
+            ]
+          }
+        },
+        "agents": [
+          {
+            "group": "filtered",
+            "agentSkills": [
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "skillId": "gongwei.leader.discover-and-delegate",
+                "ranking": 1,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "skillId": "gongwei.leader.handle-maintenance-request",
+                "ranking": 2,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "skillId": "gongwei.leader.plan-collaboration",
+                "ranking": 3,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "skillId": "gongwei.leader.resume-multiturn-task",
+                "ranking": 4,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "skillId": "gongwei.leader.track-and-summarize",
+                "ranking": 5,
+                "memo": "Filtered query result"
+              }
+            ]
+          }
+        ],
+        "routes": [
+          {
+            "forwardChain": [
+              "AIC-DS-A"
+            ],
+            "agentGroups": [
+              {
+                "group": "filtered",
+                "agentSkills": [
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                    "skillId": "gongwei.leader.discover-and-delegate",
+                    "ranking": 1,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                    "skillId": "gongwei.leader.handle-maintenance-request",
+                    "ranking": 2,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                    "skillId": "gongwei.leader.plan-collaboration",
+                    "ranking": 3,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                    "skillId": "gongwei.leader.resume-multiturn-task",
+                    "ranking": 4,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                    "skillId": "gongwei.leader.track-and-summarize",
+                    "ranking": 5,
+                    "memo": "Filtered query result"
+                  }
+                ]
+              }
+            ],
+            "status": "ok",
+            "durationMs": 3
+          }
+        ]
+      }
+    },
+    "success": true,
+    "target_found": true,
+    "name": "工维联核心业务 Leader",
+    "owner": "own",
+    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+    "mode": "catalog"
+  },
+  {
+    "checked_at": "2026-10-07T08:59:22.469819+00:00",
+    "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+    "query": {
+      "type": "filtered",
+      "limit": 10,
+      "filter": {
+        "conditions": [
+          {
+            "field": "aic",
+            "op": "eq",
+            "value": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA"
+          }
+        ],
+        "logic": "and"
+      }
+    },
+    "dingdang_verified": false,
+    "http_status": 200,
+    "response": {
+      "result": {
+        "acsMap": {},
+        "agents": [
+          {
+            "group": "filtered",
+            "agentSkills": []
+          }
+        ],
+        "routes": [
+          {
+            "forwardChain": [
+              "AIC-DS-A"
+            ],
+            "agentGroups": [
+              {
+                "group": "filtered",
+                "agentSkills": []
+              }
+            ],
+            "status": "ok",
+            "durationMs": 2
+          }
+        ]
+      }
+    },
+    "success": true,
+    "target_found": false,
+    "name": "工维联资源协调 Partner",
+    "owner": "own",
+    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+    "mode": "default"
+  },
+  {
+    "checked_at": "2026-10-07T08:59:23.685104+00:00",
+    "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+    "query": {
+      "type": "filtered",
+      "limit": 10,
+      "filter": {
+        "conditions": [
+          {
+            "field": "aic",
+            "op": "eq",
+            "value": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA"
+          }
+        ],
+        "logic": "and"
+      },
+      "extFilter": {
+        "conditions": [
+          {
+            "field": "alive",
+            "op": "in",
+            "value": [
+              "online",
+              "offline",
+              "unknown"
+            ]
+          }
+        ]
+      }
+    },
+    "dingdang_verified": false,
+    "http_status": 200,
+    "response": {
+      "result": {
+        "acsMap": {
+          "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA": {
+            "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+            "name": "工维联资源协调 Partner",
+            "active": true,
+            "skills": [
+              {
+                "id": "gongwei.resource.query",
+                "name": "查询可用人员与库存",
+                "tags": [
+                  "resource",
+                  "query"
+                ],
+                "version": "1.1.0",
+                "description": "根据检查请求查询人员、技能、工具和配件可用性。"
+              },
+              {
+                "id": "gongwei.resource.reserve",
+                "name": "预留和释放检查资源",
+                "tags": [
+                  "resource",
+                  "reserve"
+                ],
+                "version": "1.1.0",
+                "description": "为已生成的检查方案预留资源并支持释放。"
+              }
+            ],
+            "version": "1.1.0",
+            "provider": {
+              "name": "LiangPaoPao",
+              "department": "设备运维系统",
+              "countryCode": "CN",
+              "organization": "工维联项目组"
+            },
+            "endPoints": [
+              {
+                "url": "amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "security": [
+                  {
+                    "mtls": []
+                  }
+                ],
+                "transport": "AMQP"
+              }
+            ],
+            "description": "提供设备检查业务所需的人员、技能、可用时段、工具和配件查询，并支持按检查时段进行资源预留与释放。仅处理资源查询和预留，不负责维修决策、工单执行或声音诊断；缺少泵、时间或技能等必要参数时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。",
+            "capabilities": {
+              "streaming": false,
+              "messageQueue": [
+                "rabbitmq:>=4.2"
+              ],
+              "notification": false
+            },
+            "protocolVersion": "02.02",
+            "securitySchemes": {
+              "mtls": {
+                "type": "mutualTLS"
+              }
+            },
+            "lastModifiedTime": "2026-10-06T22:34:10.877744+08:00",
+            "defaultInputModes": [
+              "application/json"
+            ],
+            "defaultOutputModes": [
+              "application/json"
+            ]
+          }
+        },
+        "agents": [
+          {
+            "group": "filtered",
+            "agentSkills": [
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "skillId": "gongwei.resource.query",
+                "ranking": 1,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "skillId": "gongwei.resource.reserve",
+                "ranking": 2,
+                "memo": "Filtered query result"
+              }
+            ]
+          }
+        ],
+        "routes": [
+          {
+            "forwardChain": [
+              "AIC-DS-A"
+            ],
+            "agentGroups": [
+              {
+                "group": "filtered",
+                "agentSkills": [
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                    "skillId": "gongwei.resource.query",
+                    "ranking": 1,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                    "skillId": "gongwei.resource.reserve",
+                    "ranking": 2,
+                    "memo": "Filtered query result"
+                  }
+                ]
+              }
+            ],
+            "status": "ok",
+            "durationMs": 3
+          }
+        ]
+      }
+    },
+    "success": true,
+    "target_found": true,
+    "name": "工维联资源协调 Partner",
+    "owner": "own",
+    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+    "mode": "catalog"
+  },
+  {
+    "checked_at": "2026-10-07T08:59:24.079660+00:00",
+    "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+    "query": {
+      "type": "filtered",
+      "limit": 10,
+      "filter": {
+        "conditions": [
+          {
+            "field": "aic",
+            "op": "eq",
+            "value": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF"
+          }
+        ],
+        "logic": "and"
+      }
+    },
+    "dingdang_verified": false,
+    "http_status": 200,
+    "response": {
+      "result": {
+        "acsMap": {},
+        "agents": [
+          {
+            "group": "filtered",
+            "agentSkills": []
+          }
+        ],
+        "routes": [
+          {
+            "forwardChain": [
+              "AIC-DS-A"
+            ],
+            "agentGroups": [
+              {
+                "group": "filtered",
+                "agentSkills": []
+              }
+            ],
+            "status": "ok",
+            "durationMs": 3
+          }
+        ]
+      }
+    },
+    "success": true,
+    "target_found": false,
+    "name": "工维联工单处理 Partner",
+    "owner": "own",
+    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+    "mode": "default"
+  },
+  {
+    "checked_at": "2026-10-07T08:59:24.722119+00:00",
+    "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+    "query": {
+      "type": "filtered",
+      "limit": 10,
+      "filter": {
+        "conditions": [
+          {
+            "field": "aic",
+            "op": "eq",
+            "value": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF"
+          }
+        ],
+        "logic": "and"
+      },
+      "extFilter": {
+        "conditions": [
+          {
+            "field": "alive",
+            "op": "in",
+            "value": [
+              "online",
+              "offline",
+              "unknown"
+            ]
+          }
+        ]
+      }
+    },
+    "dingdang_verified": false,
+    "http_status": 200,
+    "response": {
+      "result": {
+        "acsMap": {
+          "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF": {
+            "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+            "name": "工维联工单处理 Partner",
+            "active": true,
+            "skills": [
+              {
+                "id": "gongwei.work-order.create",
+                "name": "创建检查工单",
+                "tags": [
+                  "work-order",
+                  "create"
+                ],
+                "version": "1.1.0",
+                "description": "仅为已确认检查方案创建幂等工单。"
+              },
+              {
+                "id": "gongwei.work-order.lifecycle",
+                "name": "更新和取消工单",
+                "tags": [
+                  "work-order",
+                  "lifecycle"
+                ],
+                "version": "1.1.0",
+                "description": "更新工单状态或取消工单，并在取消时释放资源。"
+              }
+            ],
+            "version": "1.1.0",
+            "provider": {
+              "name": "LiangPaoPao",
+              "department": "设备运维系统",
+              "countryCode": "CN",
+              "organization": "工维联项目组"
+            },
+            "endPoints": [
+              {
+                "url": "amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "security": [
+                  {
+                    "mtls": []
+                  }
+                ],
+                "transport": "AMQP"
+              }
+            ],
+            "description": "提供设备检查工单的创建、查询、状态更新和取消能力。仅处理已确认方案的工单生命周期，不负责资源查询、人员排班或声音诊断；缺少方案编号或状态不允许时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。",
+            "capabilities": {
+              "streaming": false,
+              "messageQueue": [
+                "rabbitmq:>=4.2"
+              ],
+              "notification": false
+            },
+            "protocolVersion": "02.02",
+            "securitySchemes": {
+              "mtls": {
+                "type": "mutualTLS"
+              }
+            },
+            "lastModifiedTime": "2026-10-06T23:37:38.239969+08:00",
+            "defaultInputModes": [
+              "application/json"
+            ],
+            "defaultOutputModes": [
+              "application/json"
+            ]
+          }
+        },
+        "agents": [
+          {
+            "group": "filtered",
+            "agentSkills": [
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "skillId": "gongwei.work-order.create",
+                "ranking": 1,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "skillId": "gongwei.work-order.lifecycle",
+                "ranking": 2,
+                "memo": "Filtered query result"
+              }
+            ]
+          }
+        ],
+        "routes": [
+          {
+            "forwardChain": [
+              "AIC-DS-A"
+            ],
+            "agentGroups": [
+              {
+                "group": "filtered",
+                "agentSkills": [
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                    "skillId": "gongwei.work-order.create",
+                    "ranking": 1,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                    "skillId": "gongwei.work-order.lifecycle",
+                    "ranking": 2,
+                    "memo": "Filtered query result"
+                  }
+                ]
+              }
+            ],
+            "status": "ok",
+            "durationMs": 3
+          }
+        ]
+      }
+    },
+    "success": true,
+    "target_found": true,
+    "name": "工维联工单处理 Partner",
+    "owner": "own",
+    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+    "mode": "catalog"
+  },
+  {
+    "checked_at": "2026-10-07T08:59:24.748208+00:00",
+    "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+    "query": {
+      "type": "filtered",
+      "limit": 10,
+      "filter": {
+        "conditions": [
+          {
+            "field": "aic",
+            "op": "eq",
+            "value": "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7"
+          }
+        ],
+        "logic": "and"
+      }
+    },
+    "dingdang_verified": false,
+    "http_status": 200,
+    "response": {
+      "result": {
+        "acsMap": {
+          "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7": {
+            "aic": "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7",
+            "name": "知行·项目推荐与实践规划主智能体",
+            "active": true,
+            "skills": [
+              {
+                "id": "study.coordinate",
+                "name": "知行·项目推荐与实践规划主智能体",
+                "tags": [
+                  "跨领域",
+                  "项目与知识",
+                  "leader"
+                ],
+                "version": "1.0.0",
+                "inputModes": [
+                  "text/plain"
+                ],
+                "description": "面向跨领域技能提升与项目实践，理解用户目标，协调三名专项智能体补齐画像、联网匹配项目与知识资料、规划实践路径。返回来源、匹配理由、待确认条件和第一步行动；项目由用户自行实施。业务输入为版本化 JSON 文本；结果为结构化产物。",
+                "outputModes": [
+                  "application/json"
+                ]
+              }
+            ],
+            "version": "0.1.0",
+            "provider": {
+              "countryCode": "CN",
+              "organization": "杨帆"
+            },
+            "endPoints": [
+              {
+                "url": "https://8.152.209.151:8443/rpc",
+                "security": [
+                  {
+                    "mtls": []
+                  }
+                ],
+                "transport": "JSONRPC"
+              }
+            ],
+            "certificate": {
+              "altNames": {
+                "ip": [
+                  "8.152.209.151"
+                ]
+              }
+            },
+            "description": "面向跨领域技能提升与项目实践，理解用户目标，协调三名专项智能体补齐画像、联网匹配项目与知识资料、规划实践路径。返回来源、匹配理由、待确认条件和第一步行动；项目由用户自行实施。",
+            "capabilities": {
+              "streaming": false,
+              "messageQueue": [],
+              "notification": false
+            },
+            "protocolVersion": "02.02",
+            "securitySchemes": {
+              "mtls": {
+                "type": "mutualTLS"
+              }
+            },
+            "lastModifiedTime": "2026-09-30T10:04:47.071926+08:00",
+            "defaultInputModes": [
+              "text/plain"
+            ],
+            "defaultOutputModes": [
+              "application/json"
+            ]
+          }
+        },
+        "agents": [
+          {
+            "group": "filtered",
+            "agentSkills": [
+              {
+                "aic": "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7",
+                "skillId": "study.coordinate",
+                "ranking": 1,
+                "memo": "Filtered query result"
+              }
+            ]
+          }
+        ],
+        "routes": [
+          {
+            "forwardChain": [
+              "AIC-DS-A"
+            ],
+            "agentGroups": [
+              {
+                "group": "filtered",
+                "agentSkills": [
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7",
+                    "skillId": "study.coordinate",
+                    "ranking": 1,
+                    "memo": "Filtered query result"
+                  }
+                ]
+              }
+            ],
+            "status": "ok",
+            "durationMs": 3
+          }
+        ],
+        "aliveMap": {
+          "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7": {
+            "alive": true,
+            "aliveLastSeenAt": "2026-10-06T11:58:36.947Z"
+          }
+        }
+      }
+    },
+    "success": true,
+    "target_found": true,
+    "name": "知行·项目推荐与实践规划主智能体",
+    "owner": "other",
+    "aic": "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7",
+    "mode": "default"
+  },
+  {
+    "checked_at": "2026-10-07T08:59:25.482855+00:00",
+    "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+    "query": {
+      "type": "filtered",
+      "limit": 10,
+      "filter": {
+        "conditions": [
+          {
+            "field": "aic",
+            "op": "eq",
+            "value": "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7"
+          }
+        ],
+        "logic": "and"
+      },
+      "extFilter": {
+        "conditions": [
+          {
+            "field": "alive",
+            "op": "in",
+            "value": [
+              "online",
+              "offline",
+              "unknown"
+            ]
+          }
+        ]
+      }
+    },
+    "dingdang_verified": false,
+    "http_status": 200,
+    "response": {
+      "result": {
+        "acsMap": {
+          "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7": {
+            "aic": "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7",
+            "name": "知行·项目推荐与实践规划主智能体",
+            "active": true,
+            "skills": [
+              {
+                "id": "study.coordinate",
+                "name": "知行·项目推荐与实践规划主智能体",
+                "tags": [
+                  "跨领域",
+                  "项目与知识",
+                  "leader"
+                ],
+                "version": "1.0.0",
+                "inputModes": [
+                  "text/plain"
+                ],
+                "description": "面向跨领域技能提升与项目实践，理解用户目标，协调三名专项智能体补齐画像、联网匹配项目与知识资料、规划实践路径。返回来源、匹配理由、待确认条件和第一步行动；项目由用户自行实施。业务输入为版本化 JSON 文本；结果为结构化产物。",
+                "outputModes": [
+                  "application/json"
+                ]
+              }
+            ],
+            "version": "0.1.0",
+            "provider": {
+              "countryCode": "CN",
+              "organization": "杨帆"
+            },
+            "endPoints": [
+              {
+                "url": "https://8.152.209.151:8443/rpc",
+                "security": [
+                  {
+                    "mtls": []
+                  }
+                ],
+                "transport": "JSONRPC"
+              }
+            ],
+            "certificate": {
+              "altNames": {
+                "ip": [
+                  "8.152.209.151"
+                ]
+              }
+            },
+            "description": "面向跨领域技能提升与项目实践，理解用户目标，协调三名专项智能体补齐画像、联网匹配项目与知识资料、规划实践路径。返回来源、匹配理由、待确认条件和第一步行动；项目由用户自行实施。",
+            "capabilities": {
+              "streaming": false,
+              "messageQueue": [],
+              "notification": false
+            },
+            "protocolVersion": "02.02",
+            "securitySchemes": {
+              "mtls": {
+                "type": "mutualTLS"
+              }
+            },
+            "lastModifiedTime": "2026-09-30T10:04:47.071926+08:00",
+            "defaultInputModes": [
+              "text/plain"
+            ],
+            "defaultOutputModes": [
+              "application/json"
+            ]
+          }
+        },
+        "agents": [
+          {
+            "group": "filtered",
+            "agentSkills": [
+              {
+                "aic": "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7",
+                "skillId": "study.coordinate",
+                "ranking": 1,
+                "memo": "Filtered query result"
+              }
+            ]
+          }
+        ],
+        "routes": [
+          {
+            "forwardChain": [
+              "AIC-DS-A"
+            ],
+            "agentGroups": [
+              {
+                "group": "filtered",
+                "agentSkills": [
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7",
+                    "skillId": "study.coordinate",
+                    "ranking": 1,
+                    "memo": "Filtered query result"
+                  }
+                ]
+              }
+            ],
+            "status": "ok",
+            "durationMs": 3
+          }
+        ],
+        "aliveMap": {
+          "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7": {
+            "alive": true,
+            "aliveLastSeenAt": "2026-10-06T11:58:36.947Z"
+          }
+        }
+      }
+    },
+    "success": true,
+    "target_found": true,
+    "name": "知行·项目推荐与实践规划主智能体",
+    "owner": "other",
+    "aic": "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7",
+    "mode": "catalog"
+  },
+  {
+    "checked_at": "2026-10-07T08:59:27.275934+00:00",
+    "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+    "query": {
+      "type": "filtered",
+      "limit": 10,
+      "filter": {
+        "conditions": [
+          {
+            "field": "aic",
+            "op": "eq",
+            "value": "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ"
+          }
+        ],
+        "logic": "and"
+      }
+    },
+    "dingdang_verified": false,
+    "http_status": 200,
+    "response": {
+      "result": {
+        "acsMap": {
+          "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ": {
+            "aic": "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ",
+            "name": "证据综合智能体",
+            "active": true,
+            "skills": [
+              {
+                "id": "evidence-synthesis",
+                "name": "可追溯证据综合",
+                "tags": [
+                  "科研协作",
+                  "证据综合",
+                  "开放全文",
+                  "证据矩阵",
+                  "不确定性"
+                ],
+                "version": "0.7.0",
+                "examples": [
+                  "综合睡眠与学习表现的直接证据并说明不确定性",
+                  "区分摘要级证据和开放全文片段级证据",
+                  "生成可追溯证据矩阵但不夸大因果结论"
+                ],
+                "inputModes": [
+                  "application/json",
+                  "text/plain"
+                ],
+                "description": "基于检索产物生成证据矩阵、类型分布、确定性提示和限制说明。",
+                "outputModes": [
+                  "application/json",
+                  "text/plain"
+                ]
+              }
+            ],
+            "version": "0.7.0",
+            "provider": {
+              "countryCode": "CN",
+              "organization": "吃土买token队"
+            },
+            "endPoints": [
+              {
+                "url": "https://43.132.150.94:8016/rpc",
+                "security": [
+                  {
+                    "mtls": []
+                  }
+                ],
+                "transport": "JSONRPC"
+              }
+            ],
+            "certificate": {
+              "altNames": {
+                "ip": [
+                  "43.132.150.94"
+                ]
+              },
+              "requestedValidity": 365
+            },
+            "description": "将书目、摘要与合法开放全文片段整理为证据矩阵，区分证据层级并表达不确定性；不在缺少验证时推断效应方向或生成正式 GRADE 结论。",
+            "capabilities": {
+              "streaming": false,
+              "messageQueue": [],
+              "notification": false
+            },
+            "protocolVersion": "02.02",
+            "securitySchemes": {
+              "mtls": {
+                "type": "mutualTLS",
+                "description": "ACPs CA 签发证书的智能体间 mTLS 双向认证"
+              }
+            },
+            "lastModifiedTime": "2026-09-29T14:52:39.068262+08:00",
+            "defaultInputModes": [
+              "application/json",
+              "text/plain"
+            ],
+            "defaultOutputModes": [
+              "application/json",
+              "text/plain"
+            ]
+          }
+        },
+        "agents": [
+          {
+            "group": "filtered",
+            "agentSkills": [
+              {
+                "aic": "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ",
+                "skillId": "evidence-synthesis",
+                "ranking": 1,
+                "memo": "Filtered query result"
+              }
+            ]
+          }
+        ],
+        "routes": [
+          {
+            "forwardChain": [
+              "AIC-DS-A"
+            ],
+            "agentGroups": [
+              {
+                "group": "filtered",
+                "agentSkills": [
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ",
+                    "skillId": "evidence-synthesis",
+                    "ranking": 1,
+                    "memo": "Filtered query result"
+                  }
+                ]
+              }
+            ],
+            "status": "ok",
+            "durationMs": 3
+          }
+        ],
+        "aliveMap": {
+          "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ": {
+            "alive": true,
+            "aliveLastSeenAt": "2026-10-06T11:58:10.775Z"
+          }
+        }
+      }
+    },
+    "success": true,
+    "target_found": true,
+    "name": "证据综合智能体",
+    "owner": "other",
+    "aic": "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ",
+    "mode": "default"
+  },
+  {
+    "checked_at": "2026-10-07T08:59:27.727878+00:00",
+    "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+    "query": {
+      "type": "filtered",
+      "limit": 10,
+      "filter": {
+        "conditions": [
+          {
+            "field": "aic",
+            "op": "eq",
+            "value": "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ"
+          }
+        ],
+        "logic": "and"
+      },
+      "extFilter": {
+        "conditions": [
+          {
+            "field": "alive",
+            "op": "in",
+            "value": [
+              "online",
+              "offline",
+              "unknown"
+            ]
+          }
+        ]
+      }
+    },
+    "dingdang_verified": false,
+    "http_status": 200,
+    "response": {
+      "result": {
+        "acsMap": {
+          "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ": {
+            "aic": "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ",
+            "name": "证据综合智能体",
+            "active": true,
+            "skills": [
+              {
+                "id": "evidence-synthesis",
+                "name": "可追溯证据综合",
+                "tags": [
+                  "科研协作",
+                  "证据综合",
+                  "开放全文",
+                  "证据矩阵",
+                  "不确定性"
+                ],
+                "version": "0.7.0",
+                "examples": [
+                  "综合睡眠与学习表现的直接证据并说明不确定性",
+                  "区分摘要级证据和开放全文片段级证据",
+                  "生成可追溯证据矩阵但不夸大因果结论"
+                ],
+                "inputModes": [
+                  "application/json",
+                  "text/plain"
+                ],
+                "description": "基于检索产物生成证据矩阵、类型分布、确定性提示和限制说明。",
+                "outputModes": [
+                  "application/json",
+                  "text/plain"
+                ]
+              }
+            ],
+            "version": "0.7.0",
+            "provider": {
+              "countryCode": "CN",
+              "organization": "吃土买token队"
+            },
+            "endPoints": [
+              {
+                "url": "https://43.132.150.94:8016/rpc",
+                "security": [
+                  {
+                    "mtls": []
+                  }
+                ],
+                "transport": "JSONRPC"
+              }
+            ],
+            "certificate": {
+              "altNames": {
+                "ip": [
+                  "43.132.150.94"
+                ]
+              },
+              "requestedValidity": 365
+            },
+            "description": "将书目、摘要与合法开放全文片段整理为证据矩阵，区分证据层级并表达不确定性；不在缺少验证时推断效应方向或生成正式 GRADE 结论。",
+            "capabilities": {
+              "streaming": false,
+              "messageQueue": [],
+              "notification": false
+            },
+            "protocolVersion": "02.02",
+            "securitySchemes": {
+              "mtls": {
+                "type": "mutualTLS",
+                "description": "ACPs CA 签发证书的智能体间 mTLS 双向认证"
+              }
+            },
+            "lastModifiedTime": "2026-09-29T14:52:39.068262+08:00",
+            "defaultInputModes": [
+              "application/json",
+              "text/plain"
+            ],
+            "defaultOutputModes": [
+              "application/json",
+              "text/plain"
+            ]
+          }
+        },
+        "agents": [
+          {
+            "group": "filtered",
+            "agentSkills": [
+              {
+                "aic": "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ",
+                "skillId": "evidence-synthesis",
+                "ranking": 1,
+                "memo": "Filtered query result"
+              }
+            ]
+          }
+        ],
+        "routes": [
+          {
+            "forwardChain": [
+              "AIC-DS-A"
+            ],
+            "agentGroups": [
+              {
+                "group": "filtered",
+                "agentSkills": [
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ",
+                    "skillId": "evidence-synthesis",
+                    "ranking": 1,
+                    "memo": "Filtered query result"
+                  }
+                ]
+              }
+            ],
+            "status": "ok",
+            "durationMs": 3
+          }
+        ],
+        "aliveMap": {
+          "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ": {
+            "alive": true,
+            "aliveLastSeenAt": "2026-10-06T11:58:10.775Z"
+          }
+        }
+      }
+    },
+    "success": true,
+    "target_found": true,
+    "name": "证据综合智能体",
+    "owner": "other",
+    "aic": "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ",
+    "mode": "catalog"
+  }
+]

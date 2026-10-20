@@ -1,0 +1,22 @@
+[
+  {
+    "role": "resource",
+    "pid": 151516,
+    "port": 18212
+  },
+  {
+    "role": "workorder",
+    "pid": 143520,
+    "port": 18213
+  },
+  {
+    "role": "audio",
+    "pid": 86832,
+    "port": 18214
+  },
+  {
+    "role": "leader",
+    "pid": 105840,
+    "port": 18210
+  }
+]

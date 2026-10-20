@@ -1,0 +1,46 @@
+{
+  "status": "design_artifacts_verified",
+  "production_code_modified": false,
+  "application_regression_run": false,
+  "requested_image_size": [
+    1920,
+    1200
+  ],
+  "provider_actual_image_size": [
+    1586,
+    992
+  ],
+  "size_difference": "Provider output differs from requested dimensions; originals retained without resampling.",
+  "images": [
+    {
+      "file": "output/imagegen/precision-workbench-20261007/01-collaboration.png",
+      "width": 1586,
+      "height": 992,
+      "bytes": 1201823,
+      "sha256": "57c47103abcf3c355b366ded2df940ebce33894d49f8f93b0db8058cc8a379af"
+    },
+    {
+      "file": "output/imagegen/precision-workbench-20261007/02-plan-confirmation.png",
+      "width": 1586,
+      "height": 992,
+      "bytes": 1189376,
+      "sha256": "9310198cb6c6748a6a9c000480b1b37e3c5fbc00eb7bb6a4d2434cfc1dea2e9b"
+    },
+    {
+      "file": "output/imagegen/precision-workbench-20261007/03-work-orders.png",
+      "width": 1586,
+      "height": 992,
+      "bytes": 1217935,
+      "sha256": "5261384c8fbe35ff1aa1a1b39bbd2cac6cd258b691f523a9cb848b704991aeab"
+    },
+    {
+      "file": "output/imagegen/precision-workbench-20261007/04-resources-audit.png",
+      "width": 1586,
+      "height": 992,
+      "bytes": 1201972,
+      "sha256": "d10cdc70c733b8f17fb09075f2101c545ce78ba5c4c23339dc4d15f6106bf9d6"
+    }
+  ],
+  "prompt_count": 4,
+  "generation_exit_code": 0
+}

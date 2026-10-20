@@ -1,0 +1,141 @@
+{
+  "started_at": "2026-10-06T21:15:52.991274+00:00",
+  "release": "/opt/gongwei/releases/20261006-211426-maintenance",
+  "platform_verified": false,
+  "pass_result": true,
+  "services": {
+    "resource": {
+      "MainPID": "2435360",
+      "NRestarts": "0",
+      "WorkingDirectory": "/opt/gongwei/current",
+      "ActiveState": "active"
+    },
+    "workorder": {
+      "MainPID": "2435362",
+      "NRestarts": "0",
+      "WorkingDirectory": "/opt/gongwei/current",
+      "ActiveState": "active"
+    },
+    "audio": {
+      "MainPID": "2435364",
+      "NRestarts": "0",
+      "WorkingDirectory": "/opt/gongwei/current",
+      "ActiveState": "active"
+    },
+    "web": {
+      "MainPID": "2435366",
+      "NRestarts": "0",
+      "WorkingDirectory": "/opt/gongwei/current",
+      "ActiveState": "active"
+    },
+    "resource-inbox": {
+      "MainPID": "2435368",
+      "NRestarts": "0",
+      "WorkingDirectory": "/opt/gongwei/releases/20261006-211426-maintenance",
+      "ActiveState": "active"
+    },
+    "workorder-inbox": {
+      "MainPID": "2435370",
+      "NRestarts": "0",
+      "WorkingDirectory": "/opt/gongwei/releases/20261006-211426-maintenance",
+      "ActiveState": "active"
+    },
+    "leader": {
+      "MainPID": "2435373",
+      "NRestarts": "0",
+      "WorkingDirectory": "/opt/gongwei/releases/20261006-211426-maintenance",
+      "ActiveState": "active"
+    },
+    "amp-heartbeat": {
+      "MainPID": "2367812",
+      "NRestarts": "0",
+      "WorkingDirectory": "/opt/gongwei/tools/amp-diagnostics",
+      "ActiveState": "active"
+    }
+  },
+  "health": {
+    "18110": {
+      "status": "ok",
+      "service": "stage2-leader",
+      "database": "/opt/gongwei/shared/data/stage2.db",
+      "mode": "local_simulation_only",
+      "runtime_mode": "local",
+      "transport_mode": "local_rpc",
+      "mq_configuration": {
+        "mode": "local_rpc",
+        "configured": true,
+        "missing": [],
+        "invalid": [],
+        "broker_url": null,
+        "auth_service_url": null,
+        "vhost": null,
+        "tls_mode": null,
+        "inbox_endpoint_template": null,
+        "platform_verified": false
+      },
+      "https_configuration": {
+        "mode": "local_rpc",
+        "configured": true,
+        "missing": [],
+        "invalid": [],
+        "urls": {
+          "leader_rpc_url": null,
+          "resource_rpc_url": null,
+          "workorder_rpc_url": null
+        },
+        "aics": {
+          "leader_aic": null,
+          "resource_aic": null,
+          "workorder_aic": null
+        },
+        "certificate_files": {
+          "server_cert_file": null,
+          "client_cert_file": null,
+          "private_key_file": null,
+          "trust_bundle_file": null
+        },
+        "platform_verified": false
+      },
+      "external_ready": true,
+      "configuration_errors": [],
+      "platform_verified": false
+    },
+    "18112": {
+      "status": "ok",
+      "partner": "stage2-gongwei-resource",
+      "mode": "local_simulation_only",
+      "runtime_mode": "local",
+      "external_ready": true,
+      "configuration_errors": [],
+      "platform_verified": false
+    },
+    "18113": {
+      "status": "ok",
+      "partner": "stage2-gongwei-work-order",
+      "mode": "local_simulation_only",
+      "runtime_mode": "local",
+      "external_ready": true,
+      "configuration_errors": [],
+      "platform_verified": false
+    },
+    "18114": {
+      "status": "ok",
+      "partner": "stage2-gongwei-audio",
+      "detector_backend": "logmel_gaussian",
+      "audio_enabled": true,
+      "model_version": "mimii-pump-logmel-gaussian-v1",
+      "model_role": "auxiliary_smoke_baseline",
+      "verdicts": [
+        "\u672a\u53d1\u73b0\u660e\u663e\u5f02\u5e38",
+        "\u7591\u4f3c\u5f02\u5e38"
+      ],
+      "mode": "local_simulation_only",
+      "runtime_mode": "local",
+      "external_ready": true,
+      "configuration_errors": [],
+      "platform_verified": false
+    }
+  },
+  "nginx_unchanged": true,
+  "partner_discovery_policy": "platform_catalog"
+}

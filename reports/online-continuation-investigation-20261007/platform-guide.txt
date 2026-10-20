@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>梧桐智能体互联平台使用指南</title>
+  <style>
+    :root {
+      --primary:#3b6ff6;
+      --primary-soft:#eef4ff;
+      --text:#172033;
+      --muted:#5f6b7a;
+      --border:#e5e7eb;
+      --bg:#ffffff;
+      --sidebar:#f7f8fb;
+      --code:#f4f6fb;
+      --note:#f8fbff;
+      --warn:#fff7ed;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif; color:var(--text); background:var(--bg); }
+    .topbar { height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 24px; border-bottom:1px solid var(--border); background:rgba(255,255,255,.96); position:sticky; top:0; z-index:20; backdrop-filter:blur(10px); }
+    .brand { font-size:15px; font-weight:800; }
+    .brand span { color:var(--primary); }
+    .toplink { color:var(--muted); text-decoration:none; font-size:14px; }
+    .toplink:hover { color:var(--primary); }
+    .layout { display:grid; grid-template-columns: 214px minmax(0, 1fr); width:100%; margin:0; }
+    .sidebar { position:sticky; top:56px; height:calc(100vh - 56px); padding:22px 12px 22px 14px; border-right:1px solid var(--border); background:var(--sidebar); overflow:auto; }
+    .sidebar-title { margin:0 0 10px 8px; font-size:12px; color:#98a2b3; letter-spacing:.08em; text-transform:uppercase; font-weight:800; }
+    .nav { display:flex; flex-direction:column; gap:2px; }
+    .nav a { display:block; padding:8px 10px; border-radius:8px; color:#465264; text-decoration:none; font-size:13px; line-height:1.38; border-left:2px solid transparent; }
+    .nav a:hover { color:var(--primary); background:var(--primary-soft); }
+    .nav a.active { color:var(--primary); background:var(--primary-soft); border-left-color:var(--primary); font-weight:700; }
+    .nav-subnav { display:flex; flex-direction:column; gap:1px; margin:1px 0 5px 12px; padding-left:8px; border-left:1px solid #d9e2f3; }
+    .nav-subnav a { padding:6px 8px; font-size:12px; }
+    .section-pager { display:flex; justify-content:space-between; gap:12px; margin:28px 0 4px; padding-top:18px; border-top:1px solid var(--border); }
+    .section-pager a { display:flex; flex-direction:column; gap:3px; min-width:0; max-width:48%; padding:10px 12px; border:1px solid var(--border); border-radius:12px; color:var(--text); background:#fff; text-decoration:none; }
+    .section-pager a:hover { border-color:#c7d7fe; background:#f8fbff; text-decoration:none; }
+    .section-pager .pager-kicker { color:#98a2b3; font-size:12px; }
+    .section-pager .pager-title { color:#263244; font-size:14px; font-weight:700; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .section-pager .pager-next { margin-left:auto; text-align:right; }
+    .section-pager .pager-placeholder { visibility:hidden; }
+    .content { max-width:880px; padding:34px 38px 72px; min-width:0; }
+    .breadcrumb { color:#98a2b3; font-size:13px; margin-bottom:14px; }
+    section, h3[id], h4[id] { scroll-margin-top:82px; }
+    h1 { margin:0 0 14px; font-size:34px; line-height:1.22; letter-spacing:-.02em; }
+    h2 { margin:44px 0 14px; padding-top:10px; font-size:25px; line-height:1.28; border-top:1px solid var(--border); }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    h4 { margin:20px 0 8px; color:#263244; font-size:16px; line-height:1.5; }
+    p, li { color:var(--muted); line-height:1.82; font-size:15px; }
+    ul, ol { padding-left:22px; }
+    a { color:var(--primary); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .lead { margin:0 0 16px; color:#3f4b5d; font-size:16px; line-height:1.9; }
+    .doc-links { margin:14px 0 4px; padding-left:20px; color:var(--muted); }
+    .doc-links li { margin:4px 0; line-height:1.7; }
+    .callout { margin:16px 0; padding:14px 16px; border-radius:12px; background:var(--note); border:1px solid #dbe7ff; color:#334155; }
+    .warning { margin:16px 0; padding:14px 16px; border-radius:12px; background:var(--warn); border:1px solid #fed7aa; color:#9a3412; }
+    .steps { display:grid; gap:14px; margin:16px 0 8px; padding-left:18px; border-left:2px solid var(--border); }
+    .step { position:relative; padding:0 0 0 16px; background:transparent; }
+    .step::before { content:""; position:absolute; left:-24px; top:.58em; width:8px; height:8px; border-radius:50%; background:#fff; border:2px solid var(--primary); }
+    .step strong { display:block; color:var(--text); margin-bottom:2px; font-size:15px; }
+    .cards { display:grid; gap:10px; margin:16px 0; }
+    .card { border-left:3px solid var(--primary); padding:4px 0 4px 14px; background:transparent; }
+    .card h3 { margin:0 0 4px; font-size:16px; }
+    .card p { margin:0; font-size:14px; }
+    .status-table { width:100%; margin:16px 0; border-collapse:separate; border-spacing:0; border:1px solid var(--border); border-radius:12px; overflow:hidden; font-size:14px; }
+    .status-table th, .status-table td { padding:12px 14px; text-align:left; vertical-align:top; border-bottom:1px solid var(--border); line-height:1.65; }
+    .status-table th { background:#f8fafc; color:#334155; font-size:13px; font-weight:700; }
+    .status-table td { color:var(--muted); }
+    .status-table td:first-child { width:154px; color:#263244; font-weight:700; white-space:nowrap; }
+    .status-table tr:last-child td { border-bottom:none; }
+    code { background:#f5f5f5; color:#3f3f46; padding:2px 5px; border-radius:4px; font-size:.92em; }
+    pre { overflow:auto; padding:16px 18px; border-radius:12px; background:linear-gradient(135deg,#f8fbff 0%,#eef4ff 54%,#f7f7fb 100%); color:#263244; border:1px solid #dbe7ff; box-shadow:0 10px 24px rgba(59,111,246,.08); font-size:13px; line-height:1.72; margin-top:14px; }
+    pre code { background:transparent; color:#263244; padding:0; font-style:normal; }
+    .details-box { margin:14px 0; border:1px solid var(--border); border-radius:12px; background:#fff; overflow:hidden; }
+    .details-box summary { cursor:pointer; padding:12px 14px; color:#334155; font-weight:600; font-size:14px; }
+    .details-box summary:hover { color:var(--primary); background:#f8fafc; }
+    .details-box pre { margin:0; border-radius:0; }
+    .development-notice { position:relative; overflow:hidden; height:42px; margin:0 0 22px; border:1px solid rgba(137,164,218,.42); border-radius:12px; background:rgba(238,244,255,.64); box-shadow:0 8px 22px rgba(59,111,246,.08); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); }
+    .development-notice::before { content:""; position:absolute; inset:-24px -35%; background:linear-gradient(90deg, transparent 15%, rgba(255,255,255,.86) 49%, transparent 84%); transform:translateX(-55%); animation:notice-sheen 5.6s ease-in-out infinite; }
+    .development-notice span { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:#53657d; font-size:13px; font-weight:650; letter-spacing:.02em; white-space:nowrap; animation:notice-drift 5.6s ease-in-out infinite; }
+    @keyframes notice-sheen { 0%,100% { transform:translateX(-55%); } 50% { transform:translateX(55%); } }
+    @keyframes notice-drift { 0%,100% { transform:translateX(-8px); } 50% { transform:translateX(8px); } }
+    @media (prefers-reduced-motion: reduce) { .development-notice::before, .development-notice span { animation:none; } }
+    .faq-item { border-top:1px solid var(--border); padding:16px 0; }
+    .faq-item h3 { margin:0 0 6px; }
+    .footer { margin-top:48px; padding-top:18px; border-top:1px solid var(--border); color:#98a2b3; font-size:13px; }
+    @media (max-width: 860px) {
+      .layout { grid-template-columns:1fr; }
+      .sidebar { position:relative; top:0; height:auto; border-right:none; border-bottom:1px solid var(--border); padding:14px; }
+      .content { max-width:none; padding:26px 18px 56px; }
+      h1 { font-size:28px; }
+      .status-table { display:block; overflow-x:auto; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">梧桐<span>使用指南</span></div>
+    <a class="toplink" href="/">返回首页</a>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <p class="sidebar-title">目录</p>
+      <nav class="nav" aria-label="文档导航">
+        <a href="#overview">概览</a>
+        <a href="#quick-start">快速开始</a>
+        <a href="#components">平台组成</a>
+        <a href="#sdk-agent">使用 SDK 开发智能体</a>
+        <div class="nav-subnav" aria-label="SDK 开发章节">
+          <a href="#sdk-implementation">使用 SDK 实现服务</a>
+          <a href="#sdk-registration">在注册平台注册智能体</a>
+          <a href="#sdk-cli">配置 acps-cli</a>
+          <a href="#sdk-certificate">使用 acps-cli 获取证书</a>
+          <a href="#sdk-verification">部署、验证与更新</a>
+        </div>
+        <a href="#wit-agent">使用梧桐智能体开发框架（wit）</a>
+        <div class="nav-subnav" aria-label="WIT 开发章节">
+          <a href="#wit-agent-1">参考文档</a>
+          <a href="#wit-agent-2">开始使用</a>
+        </div>
+        <a href="#agent-discovery">寻找合适的智能体</a>
+        <div class="nav-subnav" aria-label="智能体发现章节">
+          <a href="#local-discovery">本地 ACS List 发现</a>
+          <a href="#discovery-server">通过发现服务器发现</a>
+          <a href="#discovery-agent">调用发现智能体</a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="breadcrumb">梧桐智能体互联平台 / 使用指南</div>
+      <div class="development-notice" role="status"><span>正在开发中，内容可能存在变化</span></div>
+
+      <section id="overview">
+        <h1>概览</h1>
+        <p class="lead" style="text-indent:2em;">本页面介绍梧桐智能体互联平台的主要入口和基本使用流程，帮助使用者完成智能体的开发、可信注册、发现和互联。</p>
+        <p>梧桐智能体互联平台面向科研与智能体协作场景，提供智能体展示、发现、注册、认证和调用能力。使用者可以直接体验已有智能体，也可以使用 ACPs SDK 或 梧桐智能体开发框架（wit）开发自己的智能体。</p>
+        <p>梧桐智能体互联平台包括以下部分：</p>
+        <ul class="doc-links">
+          <li><a href="https://wt.ioa.pub/" target="_blank" rel="noopener noreferrer">梧桐智能体互联平台</a>：平台首页，用于展示、发现和进入各类智能体服务。</li>
+          <li><a href="https://wt.ioa.pub/dingdang/" target="_blank" rel="noopener noreferrer">叮当智能体互联工作助手</a>：用于搜索、体验和调用智能体；不确定该选哪一个时，也可以在这里请“智能体发现 Agent”帮助推荐。</li>
+          <li><a href="https://wt.ioa.pub/registry/" target="_blank" rel="noopener noreferrer">ACPs 智能体注册平台</a>：用于提交、审核和维护智能体注册信息。</li>
+        </ul>
+        <div class="callout">初次使用建议先阅读“快速开始”和“平台组成”。开发者可按需要选择 SDK 或 WIT 路径开发智能体。</div>
+        <nav class="section-pager" aria-label="章节导航">
+          <span class="pager-placeholder"></span>
+          <a class="pager-next" href="#quick-start"><span class="pager-kicker">下一节</span><span class="pager-title">快速开始</span></a>
+        </nav>
+      </section>
+
+      <section id="quick-start">
+        <h2>快速开始</h2>
+        <p>本节给出从进入平台到体验、开发和发布智能体的基本路径。</p>
+        <div class="steps">
+          <div class="step"><strong>注册并登录梧桐账号。</strong><br>访问 <code>https://wt.ioa.pub/</code>，注册或登录梧桐平台账号。</div>
+          <div class="step"><strong>浏览已有智能体。</strong><br>在首页查看最新上线和热门智能体，了解平台中已有的智能体能力。</div>
+          <div class="step"><strong>在叮当中体验调用。</strong><br>通过叮当搜索或打开智能体，观察智能体如何被展示、调用和返回结果。不确定该找谁时，可直接说明需求，请智能体发现 Agent 推荐。</div>
+          <div class="step"><strong>选择开发路径。</strong><br>需要完整控制服务、注册和证书流程时使用 SDK；希望由开发框架内置处理注册等流程时使用 WIT。</div>
+        </div>
+        <nav class="section-pager" aria-label="章节导航">
+          <a class="pager-prev" href="#overview"><span class="pager-kicker">上一节</span><span class="pager-title">概览</span></a>
+          <a class="pager-next" href="#components"><span class="pager-kicker">下一节</span><span class="pager-title">平台组成</span></a>
+        </nav>
+      </section>
+
+      <section id="components">
+        <h2>平台组成</h2>
+        <p>梧桐是一组围绕智能体开发、发现、注册和调用的工具，使用时可先根据目标进入对应入口，再逐步了解相关模块。</p>
+        <div class="cards">
+          <div class="card"><h3>使用已有智能体</h3><p>从首页和叮当开始，浏览已有智能体并尝试调用。</p></div>
+          <div class="card"><h3>使用 SDK 开发</h3><p>通过 ACPs SDK 实现智能体服务，在注册平台完成注册和审核，再使用 <code>acps-cli</code> 获取证书并完成 mTLS 配置。</p></div>
+          <div class="card"><h3>使用 WIT 开发</h3><p>通过 WIT 开发智能体；注册等平台接入流程由 WIT 内置处理。</p></div>
+        </div>
+        <nav class="section-pager" aria-label="章节导航">
+          <a class="pager-prev" href="#quick-start"><span class="pager-kicker">上一节</span><span class="pager-title">快速开始</span></a>
+          <a class="pager-next" href="#sdk-agent"><span class="pager-kicker">下一节</span><span class="pager-title">使用 SDK 开发智能体</span></a>
+        </nav>
+      </section>
+
+      <section id="sdk-agent">
+        <h2>使用 SDK 开发智能体</h2>
+        <p>当你需要用代码完整控制智能体服务与协议实现时，可使用 ACPs SDK 开发。接入顺序为：实现服务并准备 ACS，在注册平台完成注册和审核，获得 AIC 后再使用 <code>acps-cli</code> 获取证书。</p>
+
+        <h3 id="sdk-implementation">1. 使用 SDK 实现智能体服务</h3>
+        <ol>
+          <li>阅读 ACPs SDK v2.2.0：<a href="https://github.com/AIP-PUB/ACPs-community/blob/v2.2.0/acps-sdk/README.md" target="_blank" rel="noopener noreferrer">GitHub README</a> 或 <a href="https://atomgit.com/AIP-PUB/ACPs-community/blob/v2.2.0/acps-sdk/README.md" target="_blank" rel="noopener noreferrer">AtomGit README</a>。</li>
+          <li>参考 <code>partner-demo</code>，理解合作方智能体如何提供能力并接入平台。</li>
+          <li>参考 <code>leader-demo</code>，理解主控或协调类智能体如何组织任务。</li>
+          <li>了解AMP：按照统一格式记录心跳、指标、访问、消息、审计和系统日志，为运行状态监控、链路追踪与问题排查提供数据基础。详细内容查看
+   <a href="https://atomgit.com/AIP-PUB/ACPs-community/blob/v2.2.0/acps-specs/09-ACPs-spec-AMP/ACPs-spec-
+  AMP.md" target="_blank" rel="noopener noreferrer">AtomGit AMP 规范</a>和<a href="https://wt.ioa.pub/amp">平台AMP文档说明</a><b> <br>日志上报要求： 统计access日志，correlationId 填写为taskId，按照taskId双方匹配作为1次调用/被调用</b><br>如果需要对 Message 日志进行 task 次数的统计，需要在每个 Message 日志中填写：
+
+<br>1. correlationId：和 Access 日志一样，是 taskId。
+<br>2. messageId：每个消息自己的ID，发送和接收需要相同的 messageId 才能配对儿。
+<br>3. eventType：至少要有 send 和 receive，分别代表发送和接收，这样才能区分调用和被调用方。
+
+此外，一个消息可能发给多个接收者，这样就会算作多个任务次数。这样和 Acess 中的一对一的次数规则接近，不会产生群组模式算少了，影响排名的问题。</li>
+        </ol>
+        <details class="details-box">
+          <summary>查看 AMP 日志上报端点</summary>
+          <pre><code>外部 Agent 规划上报端点（Kafka/TLS）：wt.ioa.pub:19092</code></pre>
+        </details>
+        <div class="steps">
+          <div class="step"><strong>实现服务接口。</strong><br>使用 SDK 提供智能体能力接口和健康检查接口，确保服务可以被平台稳定访问。</div>
+          <div class="step"><strong>编写 ACS 元数据。</strong><br>准备 <code>acs.json</code>，准确描述智能体名称、能力、输入输出、服务入口、维护者和认证方式。</div>
+          <div class="step"><strong>本地测试。</strong><br>在提交注册前，确认服务能正常启动并按 AIP 协议返回预期任务状态和结果。</div>
+        </div>
+
+        <h3 id="sdk-registration">2. 在注册平台注册智能体</h3>
+        <p>服务和 ACS 准备完成后，访问 <a href="https://wt.ioa.pub/registry/" target="_blank" rel="noopener noreferrer">ACPs 智能体注册平台</a>，登录后创建智能体、填写或上传 ACS 并提交审核。审核通过后，从平台获取该智能体的 AIC。</p>
+
+        <h3 id="sdk-cli">3. 配置 acps-cli</h3>
+        <p>按照 ACPs v2.2.0 的 <a href="https://github.com/AIP-PUB/ACPs-community/blob/v2.2.0/acps-cli/README.md" target="_blank" rel="noopener noreferrer">acps-cli README</a> 安装工具并准备 <code>acps-cli.toml</code>。这里的 CLI 用于审核通过后的证书申请，不用于提交智能体注册。</p>
+        <details class="details-box">
+          <summary>查看 acps-cli.toml 示例配置</summary>
+          <pre><code>[registry]
+base_url = "https://wt.ioa.pub/registry-server"
+
+[auth]
+user_token_file = "./.acps-cli/tokens/registry-user.json"
+admin_token_file = "./.acps-cli/tokens/registry-admin.json"
+
+[ca]
+base_url = "https://wt.ioa.pub/ca-server"
+
+[discovery]
+base_url = "https://wt.ioa.pub/discovery"</code></pre>
+        </details>
+
+        <h3 id="sdk-certificate">4. 使用 acps-cli 获取 mTLS 证书</h3>
+        <p>注册审核通过后，登录 <code>acps-cli</code>，使用平台分配的 AIC 获取 EAB 并申请 mTLS 证书。私钥和证书文件应妥善保存，不应提交到公开仓库。</p>
+        <pre><code>acps-cli --config acps-cli.toml auth login
+
+acps-cli --config acps-cli.toml cert eab fetch \
+  --aic &lt;aic&gt; \
+  --output eab.json \
+  --json
+
+acps-cli --config acps-cli.toml cert issue \
+  -a &lt;aic&gt; \
+  --eab-file eab.json \
+  -u clientAuth \
+  --key-path agent-key.pem \
+  --cert-path agent-cert.pem \
+  --trust-bundle-path trust-bundle.pem</code></pre>
+
+        <h3 id="sdk-verification">5. 部署、验证与更新</h3>
+        <p>将私钥、证书和信任包配置到智能体服务中，再通过注册平台或 Discovery 确认智能体可被检索和调用。后续修改能力、服务地址或输入输出格式时，在注册平台同步更新 ACS。</p>
+        <div class="callout">SDK 接入统一先走注册平台，审核通过并获得 AIC 后，再使用 <code>acps-cli</code> 获取证书。</div>
+        <nav class="section-pager" aria-label="章节导航">
+          <a class="pager-prev" href="#components"><span class="pager-kicker">上一节</span><span class="pager-title">平台组成</span></a>
+          <a class="pager-next" href="#wit-agent"><span class="pager-kicker">下一节</span><span class="pager-title">使用梧桐智能体开发框架（wit）</span></a>
+        </nav>
+      </section>
+      <section id="wit-agent">
+        <h2>使用梧桐智能体开发框架（wit）</h2>
+        <h3 id="wit-agent-1">梧桐智能体开发框架参考文档</h3>
+        <p><a href="https://wt.ioa.pub/flux/docs/" target="_blank" rel="noopener noreferrer">Docs</a>：查看框架的使用说明、能力介绍和相关文档。</p>
+        <h3 id="wit-agent-2">开始使用梧桐智能体开发框架</h3>
+        <p><a href="https://wt.ioa.pub/flux/login" target="_blank" rel="noopener noreferrer">进入 Flux</a>：开始使用框架。</p>
+        <nav class="section-pager" aria-label="章节导航">
+          <a class="pager-prev" href="#sdk-agent"><span class="pager-kicker">上一节</span><span class="pager-title">使用 SDK 开发智能体</span></a>
+          <a class="pager-next" href="#agent-discovery"><span class="pager-kicker">下一节</span><span class="pager-title">寻找合适的智能体</span></a>
+        </nav>
+      </section>
+
+
+      <section id="agent-discovery">
+        <h2>寻找合适的智能体</h2>
+        <p>ACPs共提供三种智能体发现方式。按照发现来源和调用路径，可以归为两类：一类是在智能体中预存 ACS List 并查询的本地发现；另一类是连接线上能力完成检索的在线发现。在线发现又分为连接指定的发现服务器，以及调用指定的发现智能体两种方式。</p>
+
+        <h3 id="local-discovery">第一类：本地发现</h3>
+        <h4>方式一：从预存的 ACS List 中查找</h4>
+        <p>本地发现直接在当前智能体的 ACS List 中进行匹配，无需连接外部发现服务。可以根据智能体名称、所属领域或能力描述等信息快速筛选候选智能体，适合候选范围相对固定、希望快速返回结果，或暂时无法访问在线服务的场景。</p>
+        <div class="callout">本地发现的结果取决于 ACS List 的覆盖范围和更新情况。如果目标智能体尚未收录，或列表中的能力信息已经过期，可以继续尝试在线发现。</div>
+
+        <h3 id="online-discovery">第二类：在线发现</h3>
+        <p>在线发现通过已知的线上入口查询更广泛或持续更新的智能体信息，在线发现又分为以下两种方式。</p>
+        <div class="steps">
+          <div class="step">
+            <h4 id="discovery-server">方式二：通过指定的发现服务器发现</h4>
+            <p>当已经知道可用的发现服务器地址时，在智能体中填写该地址并提交发现请求。发现服务器会根据名称、领域、能力描述或任务需求检索其收录的智能体，并返回可供选择的结果。该方式适合希望直接查询某个可信发现源，或需要获取该服务器最新登记信息的场景。</p>
+          </div>
+          <div class="step">
+            <h4 id="discovery-agent">方式三：调用指定的发现智能体</h4>
+            <p>当已经知道可用的发现智能体时，可以填写该智能体并发起调用，用自然语言描述希望完成的任务。发现智能体会理解需求、检索相关能力，并给出智能体或技能组合建议。该方式更适合需求较复杂、难以仅靠关键词表达，或希望获得推荐理由和组合方案的场景。</p>
+          </div>
+        </div>
+        <details class="details-box">
+          <summary>调用发现智能体时的参考提问</summary>
+          <pre><code>请帮我找能够处理乳腺癌多学科会诊的智能体，
+希望它能根据病例、影像和检验资料给出诊疗建议。</code></pre>
+        </details>
+        <p><a href="https://github.com/AIP-PUB/ACPs-community/blob/v2.2.0/acps-specs/06-ACPs-spec-ADP/ACPs-spec-ADP.md" target="_blank" rel="noopener noreferrer">查看 ACPs ADP 规范</a></p>
+        <nav class="section-pager" aria-label="章节导航">
+          <a class="pager-prev" href="#wit-agent"><span class="pager-kicker">上一节</span><span class="pager-title">使用梧桐智能体开发框架（wit）</span></a>
+          <span class="pager-placeholder"></span>
+        </nav>
+      </section>
+
+
+    </main>
+  </div>
+
+  <script>
+    (() => {
+      const links = Array.from(document.querySelectorAll('.nav a[href^="#"]'));
+      const sections = links
+        .map(link => document.querySelector(link.getAttribute('href')))
+        .filter(Boolean);
+
+      const setActive = id => {
+        links.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+        });
+      };
+
+      const observer = new IntersectionObserver(entries => {
+        const visible = entries
+          .filter(entry => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible) setActive(visible.target.id);
+      }, { rootMargin: '-72px 0px -62% 0px', threshold: [0, 0.12, 0.3, 0.6] });
+
+      sections.forEach(section => observer.observe(section));
+      if (location.hash) {
+        const id = location.hash.slice(1);
+        if (document.getElementById(id)) setActive(id);
+      } else if (sections[0]) {
+        setActive(sections[0].id);
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+- link "跳到主要内容":
+  - /url: "#main-content"
+- complementary:
+  - link "返回工维联协作页":
+    - /url: "#/home"
+    - generic: 工
+  - navigation "主导航":
+    - button "主协作":
+      - generic: 主协作
+    - button "方案确认":
+      - generic: 方案确认
+    - button "工单中心":
+      - generic: 工单中心
+    - button "资源与审计":
+      - generic: 资源与审计
+- banner:
+  - text: 工维联
+  - generic: /
+  - strong: 主协作
+  - status:
+    - generic: 业务服务可用
+- main:
+  - status: 声音辅助检测完成，结果未自动创建任务。
+  - region "安排设备检查":
+    - heading "安排设备检查" [level=1]
+    - paragraph: 从一句话开始，确认后执行。
+    - button "＋ 新建任务"
+    - region "检查对话":
+      - heading "检查对话" [level=2]
+      - generic: 你
+      - strong: 你
+      - paragraph: 水泵001运行异常，帮我安排明天下午检查。本次为全流程验收。
+      - time: 22:09
+      - generic: 工
+      - strong: 工维联
+      - paragraph: 请补充：开始时间、预计时长
+      - time: 22:09
+      - generic: 你
+      - strong: 你
+      - paragraph: 下午两点开始，预计一小时，需要泵体检查技能。
+      - time: 22:11
+      - generic: 你
+      - strong: 你
+      - paragraph: 下午两点开始，预计一小时，需要泵体检查技能。
+      - time: 22:14
+      - generic: 工
+      - strong: 工维联
+      - paragraph: 资源发生冲突：库存不足：便携检查工具包。请修改时间后重新安排。
+      - time: 22:14
+      - generic: 你
+      - strong: 你
+      - paragraph: 把检查时间改为下午三点，预计一小时，需要泵体检查技能。
+      - time: 22:18
+      - generic: 工
+      - strong: 工维联
+      - paragraph: 人员和物品已查询，检查方案已准备好。请查看方案并确认安排。
+      - time: 22:18
+      - generic: 工
+      - strong: 工维联
+      - paragraph: 安排已确认，工单 WO-20261008-3D7B9C 已创建。可在工单中心查看人员、物品和处理状态。
+      - time: 22:20
+      - button "安排明天下午检查"
+      - button "查看已有工单"
+      - generic: 检查要求
+      - textbox "检查要求":
+        - /placeholder: 描述设备异常，或继续补充检查要求…
+      - button "上传录音":
+        - text: 上传录音
+      - button "发送消息"
+      - generic "声音辅助（可选）"
+      - paragraph: 只提示疑似异常，确认后再安排检查。
+      - generic: 上传 WAV 录音
+      - button "上传 WAV 录音"
+      - button "检测录音" [active]
+      - generic: 00000000.wav · 2500 KB
+      - generic: 疑似异常
+      - text: 检测分数
+      - strong: "7.807"
+      - text: 基线
+      - strong: mimii-pump-logmel-gaussian-v1
+    - complementary "本次检查":
+      - heading "本次检查" [level=2]
+      - generic: 已完成
+      - generic: 设备
+      - strong: pump-001
+      - generic: 检查时间
+      - strong: 2026-10-09 15:00–16:00
+      - generic: 预计时长
+      - strong: 60 分钟
+      - generic: 检查人员
+      - strong: 模拟人员甲
+      - generic: 工具与配件
+      - strong: 机械密封圈 1件、便携检查工具包 1套
+      - paragraph: 按技能、时段和库存生成的模拟方案
+      - button "查看并确认方案"
+      - strong: 工单已创建
+      - paragraph: WO-20261008-3D7B9C · 待处理
+      - button "查看工单 →"
+      - heading "协作进展" [level=2]
+      - button "查看记录"
+      - list:
+        - strong: 补充检查信息
+        - generic: 设备、时间与检查要求
+        - strong: 协调人员与物品
+        - generic: 按技能和时间查询资源
+        - strong: 确认并创建工单
+        - generic: 等待你的明确确认
+      - paragraph: 确认前不会预留资源或创建工单。
+  - generic "技术详情"
+- contentinfo:
+  - generic: 工维联 · 设备维护协作台
+  - generic: 模拟业务数据 · 平台完整验收待完成

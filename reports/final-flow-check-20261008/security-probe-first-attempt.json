@@ -1,0 +1,5 @@
+{
+  "pass_result": false,
+  "scope": "diagnostic execution transport failure; not an identity rejection",
+  "error": "SSH execution timed out; no security test result obtained"
+}

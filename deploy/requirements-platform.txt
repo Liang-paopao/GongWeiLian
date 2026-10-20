@@ -1,0 +1,3 @@
+# Explicit dependency used by platform_runtime_config identity validation.
+# Verified on the server's existing Python 3.12 runtime.
+cryptography==46.0.5

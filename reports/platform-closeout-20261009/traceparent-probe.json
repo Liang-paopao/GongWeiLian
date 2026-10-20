@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-09T13:26:13.612307+00:00",
+  "caller_aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+  "scope": "official mTLS diagnostic probe; not DingDang; no order",
+  "sessionId": "traceprobe-423d3d9dc058-session",
+  "taskId": "traceprobe-423d3d9dc058-task",
+  "trace_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "before": {"orders": 5, "active_reservations": 0, "integrity": "ok"},
+  "start_state": "accepted",
+  "status_history": ["accepted", "working", "awaiting-input", "canceled"],
+  "cancel_state": "canceled",
+  "after": {"orders": 5, "active_reservations": 0, "integrity": "ok"},
+  "db_unchanged": true
+}

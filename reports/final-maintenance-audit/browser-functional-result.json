@@ -1,0 +1,19 @@
+{
+  "mode": "local_rpc",
+  "isolated_test_database": true,
+  "awaiting_input": "PASS",
+  "original_description_preserved": "PASS",
+  "modify_14_to_15_same_task_and_plan": "PASS",
+  "confirmed_unique_order": "WO-20261007-3950EB",
+  "duplicate_confirm_same_order": "PASS",
+  "before_confirm_orders": 0,
+  "before_confirm_reservations": 0,
+  "after_duplicate_orders": 1,
+  "after_duplicate_reservations": 3,
+  "equipment_filter": "PASS",
+  "status_filter": "PASS",
+  "cancel_order": "PASS",
+  "after_cancel_active_reservations": 0,
+  "test_processes_stopped": true,
+  "platform_acceptance": false
+}

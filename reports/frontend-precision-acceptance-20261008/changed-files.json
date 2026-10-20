@@ -1,0 +1,50 @@
+[
+  {
+    "file": "web/index.html",
+    "sha256": "3898b4ab47920a1c04844a23f0246d9b805d7f3fad956f80cb770a7a060f9a8f"
+  },
+  {
+    "file": "web/styles.css",
+    "sha256": "ca17c409c1395ff317dc2eb4e35f452737746844e8972d1eeb1feb69d19902c3"
+  },
+  {
+    "file": "web/app.js",
+    "sha256": "af5644b6fb46599567d8c39ce638c3eef5c05cbe1a3b729d08a7bf0631d2f7e5"
+  },
+  {
+    "file": "scripts/test_web_controls.cjs",
+    "sha256": "409543456541c88cc13ca08d43a72726d25c5a24625f3ebd9fd0bbca61e11830"
+  },
+  {
+    "file": "deploy/deploy_precision_frontend.py",
+    "sha256": "282ad78c4f4ec09923bf4862138ed51a6a98339b2f38cc7f6b40a5c5a95215da"
+  },
+  {
+    "file": "DESIGN.md",
+    "sha256": "33135e82142f0364edb1d7cb17a2b1e63ccdcb4636168604a6723c31b8fe0427"
+  },
+  {
+    "file": "README.md",
+    "sha256": "f9d28d9b6bcdcf98722293d55b0b1c994b2942f1ee03b230bb5527ce319c2761"
+  },
+  {
+    "file": "STATUS.md",
+    "sha256": "2e7a92aa24ab430c490557d767bc3719c247b6ec40a8da5ff35ca875b744cfaa"
+  },
+  {
+    "file": "CHECK_STATUS.json",
+    "sha256": "22fbe378b89664b939d73614a71bd196329be2d9d8973ac9940d4d3911cb29b9"
+  },
+  {
+    "file": "KNOWN_ISSUES.md",
+    "sha256": "ddb86db43e4a1d634caee76f855cb25059d0215557d9d0c5c904577fc79e8f07"
+  },
+  {
+    "file": "HUMAN_ACTIONS.md",
+    "sha256": "6eb1e49618cfb64c476d9afe6a95f9c0a2603613f264e652758a0ddbbc726de7"
+  },
+  {
+    "file": "docs/superpowers/plans/2026-10-08-precision-workbench-implementation.md",
+    "sha256": "9fcfaecad6d775e463bfeba13c29831d427e07fe1f9266ef0791f9a50a21b784"
+  }
+]

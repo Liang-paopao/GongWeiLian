@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-08T23:48:33.990825+08:00",
+  "assets": {
+    "index.html": {
+      "url": "https://gongwei.yanyi.online/?v=precision-20261008-final3",
+      "http_status": 200,
+      "sha256": "393c77a6ea5b8b23503335e5e3dc4b2cb8a7b8c03bd2276084e115e887c88725",
+      "matches_local": true
+    },
+    "app.js": {
+      "url": "https://gongwei.yanyi.online/static/app.js?v=precision-20261008-final3",
+      "http_status": 200,
+      "sha256": "0a4818040160db2e04bdd0219667d99702646154e3020c95b8cb604d778f934e",
+      "matches_local": true
+    }
+  },
+  "statistics": {
+    "url": "https://wt.ioa.pub/internal/matched-stats/top?startAt=2026-10-08T21%3A00%3A00%2B08%3A00&endAt=2026-10-09T01%3A00%3A00%2B08%3A00&n=200",
+    "scope": "Public matched-stats, not a claim about all internal platform access records",
+    "error": "URLError: <urlopen error _ssl.c:1064: The handshake operation timed out>",
+    "own_aics_present": null
+  }
+}

@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AMP 可观测性说明</title>
+<style>
+:root{color-scheme:light;--ink:#1f2937;--muted:#64748b;--line:#dbe4f0;--blue:#2563eb;--code:#f4f7fb}
+*{box-sizing:border-box}body{margin:0;background:#f6f8fc;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72}
+main{max-width:1120px;margin:32px auto 64px;padding:42px 56px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 14px 42px rgba(31,64,104,.08)}
+h1,h2,h3{line-height:1.3;color:#163b73}h1{font-size:2.1rem;border-bottom:2px solid #e8eef8;padding-bottom:18px}h2{margin-top:2.2em;border-left:4px solid var(--blue);padding-left:12px}h3{margin-top:1.7em}a{color:var(--blue)}code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}code{background:var(--code);padding:.12em .35em;border-radius:4px}pre{overflow:auto;padding:16px 18px;background:var(--code);border:1px solid #e5ebf4;border-radius:10px;line-height:1.55}table{border-collapse:collapse;width:100%;margin:16px 0}th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}th{background:#f1f5fb}blockquote{margin:16px 0;padding:8px 16px;border-left:4px solid #9bb8e8;color:var(--muted);background:#f8fbff}hr{border:0;border-top:1px solid var(--line);margin:28px 0}.tip{color:var(--muted);font-size:.92rem;margin-top:-8px}
+@media(max-width:720px){main{margin:0;border:0;border-radius:0;padding:24px 18px}h1{font-size:1.65rem}}
+</style>
+</head>
+<body><main><p class="tip">梧桐平台 · AMP 可观测性说明</p><p><a href="../README.md">首页</a> · <a href="README.md">Agent 开发进阶</a></p>
+<h1>在 Agent 中接入 AMP 可观测性</h1>
+<p>这篇教程写给 Agent 开发者。读完能做三件事：在 Agent 里写出 AMP 日志、在开发机上把日志转到 Kafka、确认平台侧能看到这些日志。</p>
+<ol>
+<li>用 <code>acps-sdk</code> 的 Emitter 往本地 NDJSON 文件追加一行</li>
+<li>用 Fluent Bit 尾追这些文件，转发到 Kafka 的 <code>amp.*</code> 主题（本地开发要自己跑；完整安装包里由 Ansible 装好）</li>
+<li>看本地文件、发现结果里的在线状态；自建了 ACPs 平台、自己是管理员时，再用 <code>acps-cli monitor</code> 查 Monitor</li>
+</ol>
+<p>Agent 进程不连 Kafka。文件名、目录要对上 Forwarder 的采集路径，否则第 2 步会静默空转。<code>acps-cli monitor</code> 用的是平台 Monitor 账号，不是 Agent 自己的证书；只在别人的平台上注册了 Agent、没有管理权限，这个命令查不了。</p>
+<p>成品参考：<code>demo-partner/partners/generic_runner.py</code>、<code>demo-leader</code> 里的装配。安装包环境的验收故事见文末 <code>business.yml</code> Step D。</p>
+<hr />
+<h2>0. 你要达到什么效果</h2>
+<p>业务跑起来之后，对某个 Agent 的 AIC，你应该能够：</p>
+<ul>
+<li>在 Kafka 对应的 <code>amp.*</code> 主题里看到刚追加的那一行（本地开发按第 3 节转发）</li>
+<li>发现查询的返回里，这个 AIC 带有在线状态（心跳同步过去之后）</li>
+<li>本机自建平台、且有管理员权限时：还能用 <code>acps-cli monitor</code> 按 AIC 查到心跳、指标、访问日志等</li>
+</ul>
+<p>SDK 只负责往本地文件追加一行。转到 Kafka、入库、存活同步是后面两段的事：</p>
+<pre><code class="language-text">[写] Agent：Emitter → 本地 amp_*.jsonl
+        ↓  Fluent Bit 尾追（开发机自己跑，或安装包已部署）
+[转] Kafka 主题 amp.heartbeat / amp.metrics / amp.access / amp.message / amp.system / amp.audit
+        ↓  Monitor Writer 入库；heartbeat 再做 alive-sync
+[查] 发现结果里的在线状态；有管理权限时再用 acps-cli monitor
+</code></pre>
+<p>本地开发时，第 3 节把「转」跑通之后，再做第 4 节。完整安装包里 Fluent Bit 已经在业务机上，从第 4 节直接确认即可。没有管理员权限时，第 4 节以本地文件和发现结果为准，不必强求 <code>acps-cli monitor</code>。</p>
+<hr />
+<h2>1. 准备：目录、AIC、依赖</h2>
+<p>写日志之前先定三件事：日志写到哪个目录、AIC 必须和注册身份一致、SDK 要带 amp 能力。文件名跟 demo 对齐，后面 Forwarder 才好按这些文件采集。</p>
+<pre><code class="language-bash"># 开发机：安装含 amp 能力的 SDK（以你项目的依赖方式为准）
+# uv add acps-sdk   或在 pyproject 中声明依赖后 uv sync
+</code></pre>
+<pre><code class="language-python">import os
+from pathlib import Path
+
+# 安装部署通常会注入 AMP_LOG_DIR（例如 /opt/acps/app/logs）
+# 本地开发未设置时，可用仓库下的 logs/
+AMP_LOG_DIR = Path(os.environ.get(&quot;AMP_LOG_DIR&quot;, &quot;./logs&quot;))
+AMP_LOG_DIR.mkdir(parents=True, exist_ok=True)
+
+# 必须与 Registry 上该 Agent 实例的 AIC 一致
+AIC = os.environ[&quot;ACPS_AIC&quot;]  # 示例：换成你的真实 AIC
+</code></pre>
+<p>约定建议（与 demo 一致，便于 Forwarder 按这些文件采集）：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>建议文件名示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>heartbeat</td>
+<td><code>amp_heartbeat_&lt;name&gt;.jsonl</code></td>
+</tr>
+<tr>
+<td>metrics</td>
+<td><code>amp_metrics_&lt;name&gt;.jsonl</code></td>
+</tr>
+<tr>
+<td>access</td>
+<td><code>amp_access_&lt;name&gt;.jsonl</code></td>
+</tr>
+<tr>
+<td>message</td>
+<td><code>amp_message_&lt;name&gt;.jsonl</code></td>
+</tr>
+<tr>
+<td>system</td>
+<td><code>amp_system_&lt;name&gt;.jsonl</code></td>
+</tr>
+<tr>
+<td>audit</td>
+<td><code>amp_audit_&lt;name&gt;.jsonl</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. 六类 Emitter：怎么用</h2>
+<p>这一节按「什么时候用 → 怎么挂进进程 → 字段怎么填 → 示例」来讲。示例对齐 demo 的常见写法，目的是你能直接抄到自己的 Agent 里改，而不是只证明 API 能跑通。</p>
+<p>共性习惯：</p>
+<ul>
+<li><strong>启动时创建一次</strong> Emitter（绑定 <code>aic</code> 与日志文件），业务路径里反复 <code>emit</code> / <code>emit_sync</code>。</li>
+<li>异步服务里优先 <code>await emitter.emit(...)</code>（内部用线程写文件，不堵事件循环）；同步回调里用 <code>emit_sync</code>。</li>
+<li>写入失败时默认只写一条 WARNING，不抛异常。业务主路径不要依赖「emit 成功才继续」。</li>
+<li><code>trace_id</code> / <code>span_id</code> / <code>correlation_id</code> 能带就带：后续在 Monitor 里按会话、任务、链路排查会轻松很多。</li>
+</ul>
+<h3>2.1 Heartbeat — 告诉平台「我还活着」</h3>
+<p><strong>用途</strong>：持续心跳用来告诉平台「我还在」。发现查询的返回里会带上在线状态。心跳一停，别人按「只要在线」去发现时就找不到你，即使业务进程还在。平台管理员还能在 Monitor 里点查这个 AIC。</p>
+<p><strong>怎么挂</strong>：进程启动后开一个后台周期任务；关闭时 cancel。demo 用环境变量 <code>AMP_HEARTBEAT_INTERVAL_SECONDS</code>（默认约 15s）。<code>uptimeSeconds</code> 由 Emitter 按创建时刻自动算，你不用填。</p>
+<pre><code class="language-python">import asyncio
+import contextlib
+import os
+
+from acps_sdk.amp import HeartbeatEmitter
+
+heartbeat = HeartbeatEmitter(AMP_LOG_DIR / f&quot;amp_heartbeat_{agent_name}.jsonl&quot;, aic=AIC)
+
+
+async def run_agent() -&gt; None:
+    interval = float(os.environ.get(&quot;AMP_HEARTBEAT_INTERVAL_SECONDS&quot;, &quot;15&quot;))
+    hb_task = asyncio.create_task(heartbeat.run_periodic(interval), name=&quot;amp-heartbeat&quot;)
+    try:
+        await serve_forever()  # 你的主循环
+    finally:
+        hb_task.cancel()
+        with contextlib.suppress(asyncio.CancelledError):
+            await hb_task
+</code></pre>
+<p><code>run_periodic</code> 会<strong>立刻发首条</strong>，再按间隔续发，方便刚启动就验证链路。本地自检：文件在增长。有 Monitor 管理权限时，再用 <code>heartbeat liveness &lt;AIC&gt;</code> 点查。</p>
+<h3>2.2 Metrics — 周期性指标快照</h3>
+<p><strong>用途</strong>：给 Monitor 提供负载与窗口统计（并发任务、CPU/内存、成功率、时延分位等），支撑 snapshots / series 查询。</p>
+<p><strong>怎么挂</strong>：和 heartbeat 类似，启动时 <code>run_periodic</code>。差别是 body 不由 Emitter 编造——你要实现 <code>SampleProvider</code>（只要有 <code>sample() -&gt; MetricsBody</code>）。生产环境应读真实队列长度、进程资源；联调可先用 SDK 的 <code>DemoMetricsSampler</code>（<strong>仅 demo，勿上生产</strong>）。</p>
+<p><code>resource</code> 建议带上 OpenTelemetry 风格的服务标识，便于按服务名过滤：</p>
+<pre><code class="language-python">import time
+
+from acps_sdk.amp import LoadMetrics, MetricsBody, MetricsEmitter, WindowMetrics
+
+_start = time.monotonic()
+
+
+class AgentMetricsSampler:
+    &quot;&quot;&quot;示例：从本进程的任务表采真实负载（字段按你能拿到的填）。&quot;&quot;&quot;
+
+    def __init__(self, tasks: dict) -&gt; None:
+        self._tasks = tasks
+
+    def sample(self) -&gt; MetricsBody:
+        active = sum(1 for t in self._tasks.values() if t.state == &quot;working&quot;)
+        queued = sum(1 for t in self._tasks.values() if t.state == &quot;submitted&quot;)
+        return MetricsBody(
+            uptime_seconds=round(time.monotonic() - _start, 3),
+            load_metrics=LoadMetrics(
+                active_tasks=active,
+                queued_tasks=queued,
+                max_active_tasks=10,
+                max_queued_tasks=50,
+                cpu_usage=None,  # 有 psutil / cgroup 再填
+                memory_usage=None,
+            ),
+            window_metrics=[
+                WindowMetrics(
+                    window=&quot;PT5M&quot;,
+                    success_rate=98.5,
+                    request_total=120,
+                    request_per_second=0.4,
+                    p50_latency_ms=80.0,
+                    p95_latency_ms=220.0,
+                    p99_latency_ms=450.0,
+                ),
+            ],
+        )
+
+
+metrics = MetricsEmitter(
+    AMP_LOG_DIR / f&quot;amp_metrics_{agent_name}.jsonl&quot;,
+    aic=AIC,
+    sampler=AgentMetricsSampler(tasks),
+    resource={
+        &quot;service.name&quot;: f&quot;my-partner-{agent_name}&quot;,
+        &quot;service.namespace&quot;: &quot;acps-demo&quot;,
+        &quot;deployment.environment.name&quot;: &quot;dev&quot;,
+    },
+)
+
+# 启动后：asyncio.create_task(metrics.run_periodic(30.0))
+</code></pre>
+<p>窗口字符串用 ISO 8601 Duration（如 <code>PT1M</code> / <code>PT5M</code> / <code>PT15M</code>）。公共指标名约定见 SDK <code>metrics_catalog</code>；分位务必保持 <code>p50 ≤ p95 ≤ p99</code>。</p>
+<h3>2.3 Access — 一次请求/响应的边</h3>
+<p><strong>用途</strong>：记录「谁用什么方法调了谁、花了多久、成功还是失败」。典型挂点是 HTTP <code>/rpc</code>、出站 Partner 调用——<strong>在 <code>finally</code> 里写</strong>，保证异常路径也有记录。</p>
+<p>关键字段：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>request.method</code> / <code>route</code> / <code>url</code></td>
+<td>动词与路由；<code>route</code> 用稳定模板（如 <code>/rpc</code>），便于按 endpoint 聚合</td>
+</tr>
+<tr>
+<td><code>response.statusCode</code></td>
+<td>HTTP / RPC 状态</td>
+</tr>
+<tr>
+<td><code>caller</code> / <code>callee</code></td>
+<td>双方 AIC + <code>serviceName</code></td>
+</tr>
+<tr>
+<td><code>durationMs</code></td>
+<td>总耗时</td>
+</tr>
+<tr>
+<td><code>error</code></td>
+<td>失败时的 <code>ErrorInfo</code></td>
+</tr>
+<tr>
+<td><code>trace_id</code> / <code>span_id</code> / <code>correlation_id</code></td>
+<td>链路与会话（demo 里常用 <code>taskId</code> 作 correlation）</td>
+</tr>
+</tbody>
+</table>
+<p>下面是 Partner 入站 RPC 的教学写法（结构对齐 <code>demo-partner/partners/main.py</code>）：</p>
+<pre><code class="language-python">import time
+
+from acps_sdk.amp import (
+    AccessBody,
+    AccessEmitter,
+    AccessParticipant,
+    AccessRequest,
+    AccessResponse,
+    ErrorInfo,
+)
+
+access = AccessEmitter(AMP_LOG_DIR / f&quot;amp_access_{agent_name}.jsonl&quot;, aic=AIC)
+
+
+async def handle_rpc(command, request_headers: dict[str, str]) -&gt; object:
+    t0 = time.monotonic()
+    request_bytes = len(command.model_dump_json().encode(&quot;utf-8&quot;))
+    resp = None
+    status_code = 200
+    error_info = None
+    try:
+        resp = await dispatch(command)
+        status_code = status_from_rpc_response(resp)
+        error_info = error_info_from_rpc_response(resp)
+        return resp
+    except Exception as exc:
+        status_code = 500
+        error_info = ErrorInfo(code=500, message=str(exc))
+        raise
+    finally:
+        duration_ms = int((time.monotonic() - t0) * 1000)
+        response_bytes = (
+            len(resp.model_dump_json().encode(&quot;utf-8&quot;)) if resp is not None else 0
+        )
+        method = str(command.command)
+        body = AccessBody(
+            request=AccessRequest(
+                method=method,
+                url=&quot;/rpc&quot;,
+                route=&quot;/rpc&quot;,
+                headers=request_headers,
+                bodySizeBytes=request_bytes,
+            ),
+            response=AccessResponse(statusCode=status_code, bodySizeBytes=response_bytes),
+            caller=AccessParticipant(aic=command.senderId, serviceName=&quot;demo-leader&quot;),
+            callee=AccessParticipant(aic=AIC, serviceName=f&quot;demo-partner-{agent_name}&quot;),
+            error=error_info,
+            durationMs=duration_ms,
+        )
+        try:
+            await access.emit(
+                body,
+                trace_id=trace_id,          # 从入站 headers / 上下文取
+                span_id=span_id,
+                parent_span_id=parent_span_id,
+                correlation_id=command.taskId,
+            )
+        except Exception:
+            logger.warning(&quot;Access emit failed&quot;, exc_info=True)
+</code></pre>
+<p>Leader 出站调用 Partner 时同样可以写 access，只是 <code>caller</code> / <code>callee</code> 对调，<code>url</code> 写成对方地址。有 Monitor 管理权限时，可用 <code>acps-cli monitor access events</code> 查询，也可按 <code>trace_id</code> 串整条调用链。</p>
+<h3>2.4 Message — 消息生命周期的边</h3>
+<p><strong>用途</strong>：群组 / RabbitMQ / Kafka 场景。同一条业务消息的 <strong>send、receive、ack/nack… 各写一条独立日志</strong>，靠相同的 <code>messageId</code>（以及可选的 <code>correlationId</code>）在查询层拼成生命周期。</p>
+<p><code>event_type</code> 取值：<code>send</code> | <code>receive</code> | <code>ack</code> | <code>nack</code> | <code>reject</code> | <code>timeout</code> | <code>dead_letter</code>。结算类事件再用 <code>MessageSettlement</code> 补耗时与原因。</p>
+<p>若走 SDK 的群组 MQ 客户端，可注入 <code>MessageEmitter</code>，由客户端在收发路径自动写日志；自己组 body 时也可直接调 Emitter。组包时可参考 SDK 里群组客户端使用的组装逻辑（<code>acps_sdk/amp/_message_tap.py</code> 中的 <code>build_send_body</code> / <code>build_receive_body</code> / <code>build_settlement_body</code>）：</p>
+<pre><code class="language-python">from acps_sdk.amp import MessageBody, MessageDestination, MessageEmitter, MessageRouting, MessageSettlement
+
+message = MessageEmitter(AMP_LOG_DIR / f&quot;amp_message_{agent_name}.jsonl&quot;, aic=AIC)
+
+# 生产者：发布到群组 exchange
+await message.emit(
+    MessageBody(
+        event_type=&quot;send&quot;,
+        operation_name=&quot;publish&quot;,
+        system=&quot;rabbitmq&quot;,
+        destination=MessageDestination(
+            name=&quot;group.demo.exchange&quot;,
+            kind=&quot;exchange&quot;,
+            virtual_host=&quot;/&quot;,
+        ),
+        routing=MessageRouting(key=&quot;group.demo&quot;),
+        message_id=&quot;msg-001&quot;,
+        payload_size_bytes=256,
+    ),
+    correlation_id=&quot;group-session-1&quot;,
+    trace_id=trace_id,
+)
+
+# 消费者：收到后
+await message.emit(
+    MessageBody(
+        event_type=&quot;receive&quot;,
+        operation_name=&quot;deliver&quot;,
+        system=&quot;rabbitmq&quot;,
+        destination=MessageDestination(name=&quot;group.demo.exchange&quot;, kind=&quot;exchange&quot;),
+        subscription_name=&quot;partner-queue-1&quot;,
+        routing=MessageRouting(key=&quot;group.demo&quot;),
+        message_id=&quot;msg-001&quot;,
+        payload_size_bytes=256,
+        delivery_attempt=1,
+    ),
+    correlation_id=&quot;group-session-1&quot;,
+)
+
+# 结算：ack（失败则 nack + reason）
+await message.emit(
+    MessageBody(
+        event_type=&quot;ack&quot;,
+        operation_name=&quot;basic.ack&quot;,
+        system=&quot;rabbitmq&quot;,
+        destination=MessageDestination(name=&quot;group.demo.exchange&quot;, kind=&quot;exchange&quot;),
+        subscription_name=&quot;partner-queue-1&quot;,
+        message_id=&quot;msg-001&quot;,
+        delivery_attempt=1,
+        settlement=MessageSettlement(latency_ms=35.0),
+    ),
+    correlation_id=&quot;group-session-1&quot;,
+)
+</code></pre>
+<p>查询：<code>message events</code> 按时间窗；有 <code>messageId</code> 时可查 lifecycle。不要把整段 payload 塞进日志，只记大小与标识即可。</p>
+<h3>2.5 System — Agent 内部事件</h3>
+<p><strong>用途</strong>：没有强 schema 的内部可观测性——LLM 调用、Skill 执行、进程生命周期、内部错误等。<code>body</code> 是自由 <code>dict</code>；靠 <code>severity_text</code> / <code>severity_number</code> 和约定好的字段（如 <code>category</code>、<code>component</code>）在 Monitor 里过滤。</p>
+<p>建议约定（demo 常用）：</p>
+<ul>
+<li><code>message</code>：人可读一句话</li>
+<li><code>category</code>：<code>llm</code> / <code>skill</code> / <code>lifecycle</code> …</li>
+<li><code>component</code> / <code>module</code>：发生在哪一块</li>
+<li><code>elapsed_ms</code>、错误时的 <code>error_type</code> / <code>error_message</code></li>
+<li><code>correlation_id=task_id</code>：把同一任务的多条 system 串起来</li>
+</ul>
+<p>严重级别示例：成功 INFO → <code>severity_number=9</code>；失败 ERROR → <code>17</code>（与 demo 一致即可，团队内统一比「绝对值」更重要）。</p>
+<pre><code class="language-python">import time
+
+from acps_sdk.amp import SystemEmitter
+
+system = SystemEmitter(
+    AMP_LOG_DIR / f&quot;amp_system_{agent_name}.jsonl&quot;,
+    aic=AIC,
+    resource={
+        &quot;service.name&quot;: f&quot;demo-partner-{agent_name}&quot;,
+        &quot;service.namespace&quot;: &quot;acps-demo&quot;,
+        &quot;deployment.environment.name&quot;: &quot;dev&quot;,
+    },
+)
+
+
+async def call_llm(stage: str, model: str, task_id: str) -&gt; str:
+    t0 = time.monotonic()
+    try:
+        content = await client.chat.completions.create(...)
+        elapsed = int((time.monotonic() - t0) * 1000)
+        system.emit_sync(
+            {
+                &quot;message&quot;: f&quot;LLM call completed: stage={stage}, model={model}, elapsed={elapsed}ms&quot;,
+                &quot;category&quot;: &quot;llm&quot;,
+                &quot;component&quot;: &quot;llm_client&quot;,
+                &quot;module&quot;: stage,
+                &quot;model&quot;: model,
+                &quot;tags&quot;: {&quot;model&quot;: model, &quot;stage&quot;: stage, &quot;task_id&quot;: task_id},
+                &quot;elapsed_ms&quot;: elapsed,
+                &quot;task_id&quot;: task_id,
+                &quot;token_total&quot;: getattr(getattr(response, &quot;usage&quot;, None), &quot;total_tokens&quot;, None),
+            },
+            severity_number=9,
+            severity_text=&quot;INFO&quot;,
+            correlation_id=task_id,
+        )
+        return content
+    except Exception as e:
+        elapsed = int((time.monotonic() - t0) * 1000)
+        system.emit_sync(
+            {
+                &quot;message&quot;: f&quot;LLM call failed: stage={stage}, model={model}, error={type(e).__name__}&quot;,
+                &quot;category&quot;: &quot;llm&quot;,
+                &quot;component&quot;: &quot;llm_client&quot;,
+                &quot;module&quot;: stage,
+                &quot;model&quot;: model,
+                &quot;tags&quot;: {&quot;model&quot;: model, &quot;stage&quot;: stage, &quot;error_type&quot;: type(e).__name__},
+                &quot;elapsed_ms&quot;: elapsed,
+                &quot;task_id&quot;: task_id,
+                &quot;error_type&quot;: type(e).__name__,
+                &quot;error_message&quot;: str(e)[:500],
+            },
+            severity_number=17,
+            severity_text=&quot;ERROR&quot;,
+            correlation_id=task_id,
+        )
+        raise
+</code></pre>
+<p>进程启停也可各写一条 lifecycle system（见 <code>demo-partner</code> / <code>demo-leader</code> 的 main）。查询可用 <code>--severity-min</code> 只看错误，或 <code>--correlation-id</code> 跟任务。</p>
+<h3>2.6 Audit — 需要留痕的关键动作</h3>
+<p><strong>用途</strong>：谁对什么资源做了什么、结果如何——适合任务受理/终态、权限相关操作、不可抵赖的状态变更。结构固定为 <strong>actor / action / target / result</strong>。</p>
+<p>与 system 的分工：system 偏「运行时可观测」；audit 偏「事后追责与合规」。同一业务可以两者都写（例如 LLM 细节走 system，任务终态走 audit）。</p>
+<p><strong>签名</strong>：生产环境应给 <code>AuditEmitter</code> 传 <code>signer</code>（demo 优先 CA 证书，失败则回退 <code>audit_keys.json</code> / <code>load_signer_from_keys_json</code>）。未签名仍能写入，但 Monitor 可能标 <code>missing_public_key</code>。规范要求 audit 带 integrity；联调可先通链路，上线前补齐签名与信任材料。</p>
+<pre><code class="language-python">from pathlib import Path
+
+from acps_sdk.amp import (
+    AuditAction,
+    AuditActor,
+    AuditBody,
+    AuditEmitter,
+    AuditResult,
+    AuditTarget,
+    load_signer_from_keys_json,
+)
+
+signer = load_signer_from_keys_json(Path(&quot;config/audit_keys.json&quot;), AIC)
+# 或 CertificateAuditSigner(private_key_pem=..., cert_pem=...)
+
+audit = AuditEmitter(
+    AMP_LOG_DIR / f&quot;amp_audit_{agent_name}.jsonl&quot;,
+    aic=AIC,
+    signer=signer,
+)
+
+# 收到 Start、完成 decision 之后（对齐 demo B1）
+await audit.emit(
+    AuditBody(
+        actor=AuditActor(id=command.senderId or &quot;unknown&quot;, type=&quot;agent&quot;),
+        action=AuditAction(name=&quot;receive_task_start&quot;, type=&quot;aip_protocol&quot;),
+        target=AuditTarget(type=&quot;task&quot;, id=task_id),
+        result=AuditResult(
+            status=&quot;success&quot; if accepted else &quot;failure&quot;,
+            reason=None if accepted else reject_reason,
+        ),
+    ),
+    trace_id=command.sessionId,
+    correlation_id=task_id,
+)
+
+# 任务进入终态时（对齐 demo B2；同步状态机里用 emit_sync）
+audit.emit_sync(
+    AuditBody(
+        actor=AuditActor(id=AIC, type=&quot;agent&quot;),
+        action=AuditAction(name=&quot;task_state_transition&quot;, type=&quot;aip_protocol&quot;),
+        target=AuditTarget(type=&quot;task&quot;, id=task_id),
+        result=AuditResult(status=&quot;success&quot;, reason=&quot;completed&quot;),
+    ),
+    trace_id=session_id,
+    correlation_id=task_id,
+)
+</code></pre>
+<p><code>result.status</code> 只能是 <code>success</code> / <code>failure</code> / <code>unknown</code>。<code>action.name</code> / <code>action.type</code> 建议团队内定一套稳定词汇，便于按动作检索。</p>
+<hr />
+<h2>3. 把本地日志转到 Kafka</h2>
+<p>完整安装包会把 AMP Forwarder（Fluent Bit）装在跑 Agent 的那台机器上，开发者不用自己维护这个进程。本地开发没有安装包时，要在开发机上自己装、自己跑，否则 jsonl 在涨，Kafka 和 Monitor 都是空的。</p>
+<p>这一节只覆盖开发机：Homebrew 安装、仓库里现成的配置、前台运行、用 <code>rpk</code> 看主题水位。不要配成 <code>systemctl</code> 服务。生产怎么随安装包落地，见 <a href="../operations/deploy/02-ansible.md">Ansible 部署</a>。</p>
+<p>开发配置与安装层是同一套语义。安装层模板在 <code>acps-infra</code> 的 <code>roles/amp_forwarder/templates/fluent-bit.conf.j2</code>；开发机可把 <code>monitor-server/config/fluent-bit/fluent-bit.conf</code> 当完整样例（六类 INPUT/OUTPUT 都在），把里面的日志 <code>Path</code> 改成你第 1 节定的 <code>AMP_LOG_DIR</code>。下文以 macOS、Fluent Bit 5.x、本机 Redpanda（<code>just infra up kafka</code>，<code>localhost:19092</code>）为例。</p>
+<h3>3.1 安装 Fluent Bit，并拉起 Kafka</h3>
+<p>macOS：</p>
+<pre><code class="language-bash">brew install fluent-bit
+which fluent-bit          # Apple Silicon 常见 /opt/homebrew/bin/fluent-bit
+fluent-bit --version
+</code></pre>
+<p>Linux 开发机用 Fluent Bit 官方包或发行版包，把 <code>fluent-bit</code> 放到 <code>PATH</code> 里即可，后面同样前台跑，不必做成系统服务。</p>
+<p>Kafka 用 monitor-server 的共享基础设施（容器名 <code>dev-redpanda</code>，宿主机 <code>localhost:19092</code>）。先开 Docker Desktop，再：</p>
+<pre><code class="language-bash">cd monitor-server
+just infra up kafka
+just infra wait kafka
+docker exec dev-redpanda rpk cluster health
+docker exec dev-redpanda rpk topic describe amp.heartbeat -c | grep message.timestamp.type
+# 期望：message.timestamp.type  LogAppendTime
+</code></pre>
+<p><code>just infra up kafka</code> 会创建（或修正）六类 <code>amp.*</code> 主题。heartbeat / metrics / access / message / system 必须是 <code>LogAppendTime</code>；audit 可以由 Fluent Bit 注入时间戳，允许 <code>CreateTime</code>。Docker 没起来时，<code>just infra up kafka</code> 会直接失败。</p>
+<h3>3.2 配置怎么读、怎么跑</h3>
+<p><code>ACPS_ROOT</code> 指向工作区根目录（<code>monitor-server</code> 所在的父目录），用来定位 <code>parsers.conf</code>。启动时<strong>必须</strong>带上。仓库这份 conf 里的日志 <code>Path</code> 默认指向 demo 目录，复制后先改成你自己的 <code>AMP_LOG_DIR</code>，再启动：</p>
+<pre><code class="language-bash">cd &lt;工作区根目录&gt;
+ACPS_ROOT=&quot;$(pwd)&quot; fluent-bit -c /path/to/your/fluent-bit.conf
+</code></pre>
+<p>另开一个终端，保持这个前台窗口开着。六类日志都配了 Kafka OUTPUT 时，标准输出里应出现六个 <code>worker #0 started</code>：</p>
+<pre><code class="language-text">[output:kafka:kafka.0] worker #0 started      # amp.audit
+[output:kafka:kafka.1] worker #0 started      # amp.heartbeat
+[output:kafka:kafka.2] worker #0 started      # amp.metrics
+[output:kafka:kafka.3] worker #0 started      # amp.access
+[output:kafka:kafka.4] worker #0 started      # amp.message
+[output:kafka:kafka.5] worker #0 started      # amp.system
+</code></pre>
+<p>macOS 上不要加 <code>-d</code>。Fluent Bit v5 在 macOS 上用 daemon 模式时，进程还在，事件循环不工作，日志转不出去。每个 Kafka <code>[OUTPUT]</code> 必须保留 <code>Workers 1</code>，否则 worker 线程起不来（<a href="https://github.com/fluent/fluent-bit/issues/11358">fluent/fluent-bit#11358</a>）。</p>
+<p>六类日志都是「一个 tail INPUT + 一个 kafka OUTPUT」。心跳这一段如下，其余五类只是文件名、Tag、主题不同。把 <code>Path</code> 换成你实际的日志目录：</p>
+<pre><code class="language-text">[INPUT]
+    Name             tail
+    Path             /path/to/AMP_LOG_DIR/amp_heartbeat_*.jsonl
+    Tag              amp.heartbeat
+    Parser           amp_audit_json
+    Refresh_Interval 2
+    Read_From_Head   False
+    DB               /tmp/fluentbit-heartbeat.db
+
+[OUTPUT]
+    Name                              kafka
+    Match                             amp.heartbeat
+    Brokers                           Brokers wt.ioa.pub:19092
+    Topics                            amp.heartbeat
+    Workers                           1
+    rdkafka.log.connection.close      false
+    rdkafka.request.required.acks     1
+    rdkafka.allow.auto.create.topics  false
+</code></pre>
+<p>对照时记住这几条：</p>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>取值</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>多实例路径</td>
+<td><code>AMP_LOG_DIR/amp_&lt;类型&gt;_*.jsonl</code></td>
+<td>每个 Agent 一个文件，glob 采集</td>
+</tr>
+<tr>
+<td>单文件路径</td>
+<td><code>AMP_LOG_DIR/amp_&lt;类型&gt;.jsonl</code></td>
+<td>进程只有一份日志时用固定名</td>
+</tr>
+<tr>
+<td><code>Read_From_Head</code></td>
+<td><code>False</code></td>
+<td>只转发 Fluent Bit <strong>启动之后</strong>追加的行</td>
+</tr>
+<tr>
+<td><code>Refresh_Interval</code></td>
+<td><code>2</code></td>
+<td>新文件、新行大约两秒内会被看到</td>
+</tr>
+<tr>
+<td><code>Brokers</code></td>
+<td><code>localhost:19092</code></td>
+<td>本机 Redpanda 对外监听</td>
+</tr>
+<tr>
+<td><code>Workers</code></td>
+<td><code>1</code></td>
+<td>macOS 必填</td>
+</tr>
+<tr>
+<td>Parser</td>
+<td><code>amp_audit_json</code>（在 <code>parsers.conf</code>）</td>
+<td>按 JSON 解析，并用记录里的 <code>timestamp</code></td>
+</tr>
+</tbody>
+</table>
+<p>第 1 节那种 <code>amp_heartbeat_&lt;name&gt;.jsonl</code> 对得上 glob <code>amp_heartbeat_*.jsonl</code>。INPUT 写了 glob，却只写 <code>amp_heartbeat.jsonl</code>（没有下划线和名字），就匹配不到。</p>
+<p>Parser 要求 <code>timestamp</code> 带小数秒和时区，和 SDK 默认写法一致，例如 <code>2026-09-17T13:12:21.043924+00:00</code>。手写测试行时不要写成没有小数秒的时间。</p>
+<h3>3.3 怎么知道转发成功</h3>
+<p>顺序必须是：Kafka 已健康 → Fluent Bit 六个 worker 已 started → <strong>再</strong>让 Agent 写新行。配了 <code>Read_From_Head False</code>，启动前已经在文件里的旧行不会进 Kafka。</p>
+<ol>
+<li>记一笔追加前的水位：</li>
+</ol>
+<pre><code class="language-bash">docker exec dev-redpanda rpk topic describe amp.heartbeat -p
+# 看 PARTITION 行里的 HIGH-WATERMARK，下面记为旧 HW
+</code></pre>
+<ol start="2">
+<li>
+<p>让 Agent 写出新的心跳。进程在跑时，等一个心跳周期即可（第 2.1 节默认大约 15 秒）。新行必须落在 conf 里 <code>Path</code> 能匹配到的文件上。</p>
+</li>
+<li>
+<p>再看水位。HIGH-WATERMARK 增加了，用旧 HW 当 <code>--offset</code> 把新消息读出来（不要从 0 扫，主题里可能已有历史消息）：</p>
+</li>
+</ol>
+<pre><code class="language-bash">docker exec dev-redpanda rpk topic describe amp.heartbeat -p
+docker exec dev-redpanda rpk topic consume amp.heartbeat --num 1 --offset &lt;旧HW&gt; --format json
+</code></pre>
+<p>payload 里应能看到你的 <code>aic</code>、<code>log_type</code>、<code>log_id</code>。Fluent Bit 常会多注入一个 <code>@timestamp</code>（秒.小数）；Monitor 入库前会剥掉 <code>@</code> / <code>_fb</code> 前缀，开发者用 <code>rpk</code> 眼看时不要被这个字段吓到。</p>
+<p>同时看一眼死信主题，这次追加之后水位不该增长：</p>
+<pre><code class="language-bash">docker exec dev-redpanda rpk topic describe amp.heartbeat.dlq -p
+</code></pre>
+<p>access / message / system 同理，主题名换成对应的 <code>amp.*</code>。要停 Forwarder 时，在前台窗口 Ctrl-C 即可。</p>
+<h3>3.4 自己的 Agent 要改什么</h3>
+<p>仓库样例改到你的进程，通常只动这些：</p>
+<ol>
+<li>每个 <code>[INPUT]</code> 的 <code>Path</code>，改成你的 <code>AMP_LOG_DIR</code>，文件名对齐第 1 节的表。多实例用 <code>amp_heartbeat_*.jsonl</code> 这种 glob。</li>
+<li><code>Brokers</code>：本机 Redpanda 保持 <code>localhost:19092</code>；连别的集群再改。</li>
+<li>每个 INPUT 的 <code>DB</code> 用不同文件。两个 tail 共用一个 DB 会把位点搅乱。</li>
+<li>启动命令里的 <code>ACPS_ROOT</code> 仍指向工作区根目录（<code>parsers.conf</code> 靠它定位）。conf 拷到别处时，按拷贝后的路径改 <code>-c</code> 和 <code>Parsers_File</code>。</li>
+</ol>
+<p>Tag、Match、Topics 保持 <code>amp.heartbeat</code> 这一套六类名字，和 Monitor 消费约定一致。不要在 Agent 里直连 Kafka。</p>
+<h3>3.5 文件在写、Kafka 没有：先查这些</h3>
+<p>这些情况常常不报业务错误，或只在 Fluent Bit 启动日志里闪一下：</p>
+<table>
+<thead>
+<tr>
+<th>现象</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>进程立刻退出：<code>could not open parser configuration file</code></td>
+<td>没设 <code>ACPS_ROOT</code>。<code>Parsers_File</code> 变成无效路径，Fluent Bit 5.1.2 会直接退出，不会空转</td>
+</tr>
+<tr>
+<td>六个 worker 都 started，水位不动</td>
+<td><code>Path</code> 对不上实际文件：目录错了，或 glob 写成 <code>amp_heartbeat_*.jsonl</code> 却只写了 <code>amp_heartbeat.jsonl</code></td>
+</tr>
+<tr>
+<td>Agent 早就在写，刚启动 Fluent Bit，水位仍不动</td>
+<td><code>Read_From_Head False</code>：只转启动之后的新行。等下一条心跳，或再 <code>emit</code> 一次</td>
+</tr>
+<tr>
+<td>macOS 上进程在、Kafka 没有新消息</td>
+<td>用了 <code>-d</code>，或 <code>[OUTPUT]</code> 里没有 <code>Workers 1</code></td>
+</tr>
+<tr>
+<td>主题能写入，Monitor 仍为空、DLQ 在涨</td>
+<td>主题不是 <code>LogAppendTime</code>（再执行一次 <code>just infra up kafka</code> 做幂等修正）；这已经越过 Forwarder，下一步才是 Monitor</td>
+</tr>
+</tbody>
+</table>
+<p>安装包环境里 Forwarder 由运维托管。文件在写但平台查不到，先确认业务机上 Fluent Bit 在跑、采集目录就是部署注入的 <code>AMP_LOG_DIR</code>，再查 <a href="../operations/maintain/01-day2-ops.md">日常运维</a>。</p>
+<hr />
+<h2>4. 怎么确认能查到</h2>
+<p>本地文件在涨，只说明 Emitter 在写。Kafka 水位在涨，说明第 3 节的转发通了。没有平台管理权限时，再看第 4.3 节发现结果里的在线状态。<code>acps-cli monitor</code> 只给自建平台的管理员用，见第 4.2 节。</p>
+<h3>4.1 先看本地文件（最快自检）</h3>
+<pre><code class="language-bash">ls -la &quot;${AMP_LOG_DIR:-./logs}&quot;/amp_*.jsonl
+tail -n 1 &quot;${AMP_LOG_DIR:-./logs}&quot;/amp_heartbeat_demo.jsonl
+</code></pre>
+<p>文件在增长，说明 Agent 侧已经在写。</p>
+<h3>4.2 用 acps-cli 查 Monitor（自建平台的管理员）</h3>
+<p><code>acps-cli monitor</code> 访问的是 Monitor 的查询接口，要用平台侧的 Monitor 账号登录，不是 Agent 的证书，也不是你在 Registry 注册 Agent 的那个普通用户。</p>
+<p>如果你自建了完整 ACPs 平台、你自己就是管理员时，才能跑下面这些命令。只是在别人的平台上登记了一个 Agent、没有管理员权限，请跳过这一节：看 4.1 的本地文件和第 4.3 节的发现结果。Monitor 里有没有你的日志，要请平台管理员帮你看。</p>
+<p>登录和地址配置见 <a href="../references/cli-reference.md">CLI 参考</a> 的 <code>acps-cli monitor</code>；OIDC 登录步骤见 <a href="../operations/maintain/cli-device-login.md">Device 登录</a> 的 monitor 用户登录。</p>
+<p>时间窗用**北京时间（东八区）**即可，写成带 <code>+08:00</code> 的 ISO 8601；CLI 会原样交给 Monitor，服务端按带时区的时间解析。把区间换成你实际发日志前后的时段（access / message / system / audit 的 <code>events</code> / <code>records</code> 未提供完整 request 时，一般需要 <code>--start</code> / <code>--end</code>）：</p>
+<pre><code class="language-bash"># 例：2026-07-25 当天（北京时间）
+START=2026-07-25T00:00:00+08:00
+END=2026-07-25T23:59:59+08:00
+
+# 健康
+acps-cli monitor status
+
+# 心跳（点查单个 AIC）
+acps-cli monitor heartbeat liveness &quot;$AIC&quot;
+
+# 指标快照
+acps-cli monitor metrics snapshots --aic &quot;$AIC&quot;
+
+# 访问 / 消息 / 系统 / 审计（按 AIC + 时间窗）
+acps-cli monitor access events --aic &quot;$AIC&quot; --start &quot;$START&quot; --end &quot;$END&quot;
+acps-cli monitor message events --start &quot;$START&quot; --end &quot;$END&quot;
+acps-cli monitor system events --aic &quot;$AIC&quot; --start &quot;$START&quot; --end &quot;$END&quot;
+acps-cli monitor audit records --aic &quot;$AIC&quot; --start &quot;$START&quot; --end &quot;$END&quot;
+</code></pre>
+<p>刚写入时可能有短暂延迟，稍等再查。更多子命令（trace、series、verify 等）见 CLI 参考。</p>
+<h3>4.3 发现结果里的在线状态</h3>
+<p>当你使用发现服务做发现查询，返回里会带一份 <code>aliveMap</code>，用 AIC 当键，标明这个 Agent 现在在不在线。</p>
+<p>要先有心跳进平台（第 3 节转到 Kafka，Monitor 再同步给发现），<code>aliveMap</code> 里才会出现你。停了心跳，过一会儿会变成离线；筛选条件写成「只要在线」时就看不见它，即使进程其实还在跑。</p>
+<p><code>aliveMap</code> 怎么读、怎么按在线状态筛选，见 <a href="./discovery-query-tutorial.md">发现服务查询</a>。</p>
+<hr />
+<h2>5. 端到端故事：<code>business.yml</code> 的 Step D</h2>
+<p>这一节用安装包里的 <code>business.yml</code> Step D，说明 demo 写日志、Forwarder 转发、Monitor 查询怎样串成一次验收。</p>
+<ol>
+<li><strong>运维</strong>用安装包跑通 <code>site.yml</code>，打开 demo-leader / demo-partner（见 <a href="../operations/deploy/02-ansible.md">部署教程</a>）。</li>
+<li><strong>写</strong>：demo 进程启动时已创建六类 Emitter（Partner 见 <code>generic_runner.py</code>）。跑业务验收 A/B/C 时：
+<ul>
+<li>RPC 路径写 <strong>access</strong></li>
+<li>群组路径写 <strong>message</strong></li>
+<li>LLM / 生命周期写 <strong>system</strong></li>
+<li>周期任务写 <strong>heartbeat</strong> / <strong>metrics</strong></li>
+<li>任务终态等写 <strong>audit</strong></li>
+</ul>
+</li>
+<li><strong>中间</strong>：安装包里 Fluent Bit 由 Ansible 的 <code>amp_forwarder</code> 拉起，采集 demo 的 <code>amp_*.jsonl</code> 送到 Redpanda。本地开发没有安装包时，自己按第 3 节跑 Forwarder。</li>
+<li><strong>查</strong>：<code>business.yml</code> 的 <strong>Step D</strong> 轮询 Monitor：demo 相关 AIC 是否出现 metrics / system / access / message / audit 等记录，并检查 Discovery 存活。</li>
+</ol>
+<p>因此：你自己写 Agent 时，对齐的是 <strong>同类 Emitter + 正确 AIC</strong>，而不是去改 <code>business.yml</code>。Step D 只是平台侧的「验收剧本」。</p>
+<hr />
+<h2>6. 开发者自检清单</h2>
+<ul>
+<li>[ ] <code>AMP_LOG_DIR</code>（或本地 <code>logs/</code>）下对应 <code>amp_*.jsonl</code> 在增长</li>
+<li>[ ] 每条记录的 <code>aic</code> 与注册身份一致</li>
+<li>[ ] 本地开发：Fluent Bit 带 <code>ACPS_ROOT</code> 前台运行，六个 <code>kafka.* worker #0 started</code> 都出现</li>
+<li>[ ] Forwarder 启动之后有新行写入，对应 <code>amp.*</code> 主题的 HIGH-WATERMARK 增加，payload 里能看到自己的 <code>aic</code></li>
+<li>[ ] 没有管理员权限：发现查询返回的 <code>aliveMap</code> 里能看到自己在线</li>
+<li>[ ] 自建平台且有管理员权限：六类里你启用的类型，都能用 <code>acps-cli monitor</code> 按 AIC 查到（允许短暂延迟）</li>
+<li>[ ] Audit 若要求验签，已配置 <code>signer</code> 且 Monitor 侧信任材料齐全</li>
+</ul>
+<hr />
+<h2>7. 接下来做什么</h2>
+<ul>
+<li>AIP 业务怎么写：<a href="./agent-development.md">智能体快速开发指南</a></li>
+<li>SDK / 协议细节：<code>acps-sdk</code> 的 <code>acps_sdk/amp/</code>，以及 <code>acps-specs</code> 中 AMP 相关规范</li>
+<li>CLI 查询参数：<a href="../references/cli-reference.md">CLI 参考 · monitor</a></li>
+<li>开发机 Forwarder 配置：<code>monitor-server/config/fluent-bit/</code>；安装层模板：<code>acps-infra</code> 的 <code>roles/amp_forwarder/</code></li>
+<li>平台怎么装、怎么运维：<a href="../operations/deploy/02-ansible.md">Ansible 部署</a>、<a href="../operations/maintain/01-day2-ops.md">日常运维</a></li>
+<li>成品装配：<code>demo-partner/partners/generic_runner.py</code>、<code>demo-leader</code> 中的 AMP 初始化与调用点</li>
+</ul>
+</main></body></html>

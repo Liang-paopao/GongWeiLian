@@ -1,0 +1,142 @@
+{
+  "checked_at": "2026-10-08T15:47:40.826102+00:00",
+  "certificates": {
+    "resource": {
+      "subject": "C=CN,OU=设备运维系统,O=工维联项目组,CN=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "issuer": "CN=Agent CA Intermediate Certificate,OU=Intermediate Certificate Authority,O=Agent CA,L=Beijing,ST=Beijing,C=CN",
+      "sha256": "96afa1ce2018583ddcc4c302ca5046e77c0ce3d376849bf8cb79749edc46a10c",
+      "not_before": "2026-10-06T14:57:31+00:00",
+      "not_after": "2026-11-24T14:57:31+00:00",
+      "san": [
+        "acps://1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA"
+      ],
+      "eku": [
+        "1.3.6.1.5.5.7.3.2"
+      ],
+      "permissions": "0o600"
+    },
+    "workorder": {
+      "subject": "C=CN,OU=设备运维系统,O=工维联项目组,CN=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "issuer": "CN=Agent CA Intermediate Certificate,OU=Intermediate Certificate Authority,O=Agent CA,L=Beijing,ST=Beijing,C=CN",
+      "sha256": "19f5ca930a70c3a19297da7086ffb5179bdaf220dda0f04c2699c75385cdaac8",
+      "not_before": "2026-10-06T16:23:22+00:00",
+      "not_after": "2026-11-24T16:23:22+00:00",
+      "san": [
+        "acps://1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF"
+      ],
+      "eku": [
+        "1.3.6.1.5.5.7.3.2"
+      ],
+      "permissions": "0o600"
+    },
+    "leader": {
+      "subject": "C=CN,OU=设备运维系统,O=工维联项目组,CN=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "issuer": "CN=Agent CA Intermediate Certificate,OU=Intermediate Certificate Authority,O=Agent CA,L=Beijing,ST=Beijing,C=CN",
+      "sha256": "a763e03c4e6e7e8c0ffe155cc99012340054d087fb3028e13fe551d3acee53c4",
+      "not_before": "2026-10-06T14:55:27+00:00",
+      "not_after": "2026-11-24T14:55:27+00:00",
+      "san": [
+        "acps://1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+        "leader.yanyi.online"
+      ],
+      "eku": [
+        "1.3.6.1.5.5.7.3.2"
+      ],
+      "permissions": "0o600"
+    },
+    "leader-server": {
+      "subject": "C=CN,OU=设备运维系统,O=工维联项目组,CN=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "issuer": "CN=Agent CA Intermediate Certificate,OU=Intermediate Certificate Authority,O=Agent CA,L=Beijing,ST=Beijing,C=CN",
+      "sha256": "0f2b45ab91241295a93c206b5bc7d9ed25146d80a41ba2e88e8148c1c67a7fa5",
+      "not_before": "2026-10-06T14:57:27+00:00",
+      "not_after": "2026-11-24T14:57:27+00:00",
+      "san": [
+        "acps://1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+        "leader.yanyi.online"
+      ],
+      "eku": [
+        "1.3.6.1.5.5.7.3.1"
+      ],
+      "permissions": "0o600"
+    }
+  },
+  "configuration": {
+    "/opt/gongwei/gongwei.env": {
+      "GONGWEI_TRANSPORT_MODE": "local_rpc",
+      "GONGWEI_LOG_DIR": "/opt/gongwei/shared/logs/aip"
+    },
+    "/opt/gongwei/platform/leader.env": {
+      "GONGWEI_TRANSPORT_MODE": "platform_mq_inbox",
+      "GONGWEI_DISCOVERY_URL": "https://wt.ioa.pub/discovery",
+      "MQ_BROKER_URL": "amqps://wt.ioa.pub:5671",
+      "MQ_AUTH_SERVICE_URL": "https://wt.ioa.pub:9007",
+      "MQ_VHOST": "/acps"
+    }
+  },
+  "leader_heartbeat_metadata": [
+    {
+      "schema_version": "1.0",
+      "log_id": "5c16992f-be69-416e-93ce-3ee85567721c",
+      "log_type": "heartbeat",
+      "timestamp": "2026-10-08T15:47:34.376871+00:00",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "body": {
+        "uptimeSeconds": 285.025
+      }
+    }
+  ],
+  "resource-inbox_heartbeat_metadata": [
+    {
+      "schema_version": "1.0",
+      "log_id": "4d9cb460-268b-4b10-9da9-e9d76fb2b462",
+      "log_type": "heartbeat",
+      "timestamp": "2026-10-08T15:47:40.415362+00:00",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "body": {
+        "uptimeSeconds": 3316.689
+      }
+    }
+  ],
+  "workorder-inbox_heartbeat_metadata": [
+    {
+      "schema_version": "1.0",
+      "log_id": "f74664b5-7053-40b0-a88d-fdaab352f5c6",
+      "log_type": "heartbeat",
+      "timestamp": "2026-10-08T15:47:31.341874+00:00",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "body": {
+        "uptimeSeconds": 3301.666
+      }
+    }
+  ],
+  "private_file_permissions": [
+    {
+      "role": "leader",
+      "path": "leader/certs/private/leader-server.key",
+      "mode": "0o600",
+      "uid": 0,
+      "gid": 0
+    },
+    {
+      "role": "leader",
+      "path": "leader/certs/private/leader.key",
+      "mode": "0o600",
+      "uid": 0,
+      "gid": 0
+    },
+    {
+      "role": "resource",
+      "path": "resource/certs/private/resource_partner.key",
+      "mode": "0o600",
+      "uid": 0,
+      "gid": 0
+    },
+    {
+      "role": "workorder",
+      "path": "workorder/certs/private/workorder.key",
+      "mode": "0o600",
+      "uid": 0,
+      "gid": 0
+    }
+  ]
+}

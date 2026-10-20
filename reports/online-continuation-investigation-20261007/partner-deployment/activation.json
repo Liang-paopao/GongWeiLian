@@ -1,0 +1,92 @@
+{
+  "started_at": "2026-10-07T09:39:14.722897+00:00",
+  "before": {
+    "leader": {
+      "MainPID": "2742189",
+      "WorkingDirectory": "/opt/gongwei/releases/20261007-092609-maintenance",
+      "ActiveState": "active"
+    },
+    "resource-inbox": {
+      "MainPID": "2435368",
+      "WorkingDirectory": "/opt/gongwei/releases/20261006-211426-maintenance",
+      "ActiveState": "active"
+    },
+    "workorder-inbox": {
+      "MainPID": "2435370",
+      "WorkingDirectory": "/opt/gongwei/releases/20261006-211426-maintenance",
+      "ActiveState": "active"
+    },
+    "web": {
+      "MainPID": "2435366",
+      "WorkingDirectory": "/opt/gongwei/current",
+      "ActiveState": "active"
+    },
+    "resource": {
+      "MainPID": "2435360",
+      "WorkingDirectory": "/opt/gongwei/current",
+      "ActiveState": "active"
+    },
+    "workorder": {
+      "MainPID": "2435362",
+      "WorkingDirectory": "/opt/gongwei/current",
+      "ActiveState": "active"
+    },
+    "audio": {
+      "MainPID": "2435364",
+      "WorkingDirectory": "/opt/gongwei/current",
+      "ActiveState": "active"
+    },
+    "amp-heartbeat": {
+      "MainPID": "2367812",
+      "WorkingDirectory": "/opt/gongwei/tools/amp-diagnostics",
+      "ActiveState": "active"
+    }
+  },
+  "release": "/opt/gongwei/releases/20261007-093706-maintenance",
+  "platform_verified": false,
+  "pass_result": true,
+  "after": {
+    "leader": {
+      "MainPID": "2742189",
+      "WorkingDirectory": "/opt/gongwei/releases/20261007-092609-maintenance",
+      "ActiveState": "active"
+    },
+    "resource-inbox": {
+      "MainPID": "2747818",
+      "WorkingDirectory": "/opt/gongwei/releases/20261007-093706-maintenance",
+      "ActiveState": "active"
+    },
+    "workorder-inbox": {
+      "MainPID": "2747821",
+      "WorkingDirectory": "/opt/gongwei/releases/20261007-093706-maintenance",
+      "ActiveState": "active"
+    },
+    "web": {
+      "MainPID": "2435366",
+      "WorkingDirectory": "/opt/gongwei/current",
+      "ActiveState": "active"
+    },
+    "resource": {
+      "MainPID": "2435360",
+      "WorkingDirectory": "/opt/gongwei/current",
+      "ActiveState": "active"
+    },
+    "workorder": {
+      "MainPID": "2435362",
+      "WorkingDirectory": "/opt/gongwei/current",
+      "ActiveState": "active"
+    },
+    "audio": {
+      "MainPID": "2435364",
+      "WorkingDirectory": "/opt/gongwei/current",
+      "ActiveState": "active"
+    },
+    "amp-heartbeat": {
+      "MainPID": "2367812",
+      "WorkingDirectory": "/opt/gongwei/tools/amp-diagnostics",
+      "ActiveState": "active"
+    }
+  },
+  "nginx_unchanged": true,
+  "other_processes_unchanged": true
+}

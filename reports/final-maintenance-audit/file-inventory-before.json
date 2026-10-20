@@ -1,0 +1,3805 @@
+{
+  "root": "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1",
+  "excluded_managed_or_secret_directories": [
+    ".git",
+    ".venv",
+    ".python-runtime",
+    "secrets"
+  ],
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 1198
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 337
+    },
+    {
+      "path": ".python-version",
+      "bytes": 5
+    },
+    {
+      "path": "01_prepare.cmd",
+      "bytes": 2108
+    },
+    {
+      "path": "02_start_resource.cmd",
+      "bytes": 791
+    },
+    {
+      "path": "03_run_leader.cmd",
+      "bytes": 641
+    },
+    {
+      "path": "agentic_core.py",
+      "bytes": 11893
+    },
+    {
+      "path": "agent_core.py",
+      "bytes": 89
+    },
+    {
+      "path": "amp_heartbeat_forwarder.py",
+      "bytes": 16453
+    },
+    {
+      "path": "amp_runtime.py",
+      "bytes": 5234
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "bytes": 1895
+    },
+    {
+      "path": "audio_data.py",
+      "bytes": 2588
+    },
+    {
+      "path": "audio_detector.py",
+      "bytes": 7001
+    },
+    {
+      "path": "audio_partner_v1.py",
+      "bytes": 2799
+    },
+    {
+      "path": "audio_service.py",
+      "bytes": 6416
+    },
+    {
+      "path": "business.py",
+      "bytes": 2235
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 856
+    },
+    {
+      "path": "CHECK_STATUS.json",
+      "bytes": 7112
+    },
+    {
+      "path": "DESIGN.md",
+      "bytes": 1904
+    },
+    {
+      "path": "HUMAN_ACTIONS.md",
+      "bytes": 12475
+    },
+    {
+      "path": "KNOWN_ISSUES.md",
+      "bytes": 4189
+    },
+    {
+      "path": "leader.py",
+      "bytes": 5786
+    },
+    {
+      "path": "leader_external_flow.py",
+      "bytes": 15709
+    },
+    {
+      "path": "leader_inbox_runtime.py",
+      "bytes": 4872
+    },
+    {
+      "path": "leader_rpc_runtime.py",
+      "bytes": 21832
+    },
+    {
+      "path": "llm_provider.py",
+      "bytes": 3119
+    },
+    {
+      "path": "local_log.py",
+      "bytes": 2627
+    },
+    {
+      "path": "mq_group_transport.py",
+      "bytes": 15538
+    },
+    {
+      "path": "partner_resolver.py",
+      "bytes": 8925
+    },
+    {
+      "path": "platform_runtime.py",
+      "bytes": 3079
+    },
+    {
+      "path": "platform_runtime_config.py",
+      "bytes": 7052
+    },
+    {
+      "path": "PRODUCT.md",
+      "bytes": 1519
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 655
+    },
+    {
+      "path": "README.md",
+      "bytes": 2544
+    },
+    {
+      "path": "resource_agent.py",
+      "bytes": 2743
+    },
+    {
+      "path": "resource_partner_v1.py",
+      "bytes": 2411
+    },
+    {
+      "path": "run_leader_inbox.py",
+      "bytes": 3011
+    },
+    {
+      "path": "run_leader_rpc.py",
+      "bytes": 5666
+    },
+    {
+      "path": "run_mq_inbox_integration.py",
+      "bytes": 2960
+    },
+    {
+      "path": "run_partner_inbox.py",
+      "bytes": 3480
+    },
+    {
+      "path": "run_stage2_tests.py",
+      "bytes": 7750
+    },
+    {
+      "path": "run_stage5_tests.py",
+      "bytes": 7834
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 900
+    },
+    {
+      "path": "SOURCES.txt",
+      "bytes": 1288
+    },
+    {
+      "path": "stage2_aip.py",
+      "bytes": 8050
+    },
+    {
+      "path": "stage2_business_actions.py",
+      "bytes": 2345
+    },
+    {
+      "path": "stage2_db.py",
+      "bytes": 12462
+    },
+    {
+      "path": "stage2_domain.py",
+      "bytes": 35518
+    },
+    {
+      "path": "stage2_partner_common.py",
+      "bytes": 2294
+    },
+    {
+      "path": "stage3_leader_aip.py",
+      "bytes": 4462
+    },
+    {
+      "path": "start_stage2.cmd",
+      "bytes": 1913
+    },
+    {
+      "path": "state_mapping.py",
+      "bytes": 1231
+    },
+    {
+      "path": "STATUS.md",
+      "bytes": 7600
+    },
+    {
+      "path": "stop_stage2.cmd",
+      "bytes": 295
+    },
+    {
+      "path": "test_agentic_core.py",
+      "bytes": 2172
+    },
+    {
+      "path": "test_amp_heartbeat_forwarder.py",
+      "bytes": 19196
+    },
+    {
+      "path": "test_amp_runtime.py",
+      "bytes": 22034
+    },
+    {
+      "path": "test_audio_data.py",
+      "bytes": 2137
+    },
+    {
+      "path": "test_audio_detector.py",
+      "bytes": 1624
+    },
+    {
+      "path": "test_audio_flow.py",
+      "bytes": 2296
+    },
+    {
+      "path": "test_audio_partner.py",
+      "bytes": 2903
+    },
+    {
+      "path": "test_audio_pluggable.py",
+      "bytes": 3100
+    },
+    {
+      "path": "test_business.py",
+      "bytes": 1786
+    },
+    {
+      "path": "test_business_actions.py",
+      "bytes": 2040
+    },
+    {
+      "path": "test_final_audit_features.py",
+      "bytes": 5468
+    },
+    {
+      "path": "test_leader_external_flow.py",
+      "bytes": 2969
+    },
+    {
+      "path": "test_leader_inbox_runtime.py",
+      "bytes": 3030
+    },
+    {
+      "path": "test_leader_rpc_runtime.py",
+      "bytes": 51530
+    },
+    {
+      "path": "test_mq_acs.py",
+      "bytes": 2889
+    },
+    {
+      "path": "test_mq_group_transport.py",
+      "bytes": 5988
+    },
+    {
+      "path": "test_mq_inbox_integration.py",
+      "bytes": 511
+    },
+    {
+      "path": "test_partner_inbox_entrypoint.py",
+      "bytes": 1353
+    },
+    {
+      "path": "test_partner_resolver.py",
+      "bytes": 4644
+    },
+    {
+      "path": "test_platform_diagnostics.py",
+      "bytes": 2416
+    },
+    {
+      "path": "test_platform_runtime.py",
+      "bytes": 2202
+    },
+    {
+      "path": "test_platform_runtime_config.py",
+      "bytes": 6170
+    },
+    {
+      "path": "test_runtime_config.py",
+      "bytes": 1449
+    },
+    {
+      "path": "test_stage2_api.py",
+      "bytes": 7342
+    },
+    {
+      "path": "test_stage2_domain.py",
+      "bytes": 7423
+    },
+    {
+      "path": "test_stage2_partners.py",
+      "bytes": 3710
+    },
+    {
+      "path": "test_stage3_leader_aip.py",
+      "bytes": 2921
+    },
+    {
+      "path": "test_stage5_resilience.py",
+      "bytes": 8343
+    },
+    {
+      "path": "test_transport_mode.py",
+      "bytes": 3479
+    },
+    {
+      "path": "transport_mode.py",
+      "bytes": 8088
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 114983
+    },
+    {
+      "path": "web_app.py",
+      "bytes": 18954
+    },
+    {
+      "path": "work_order_partner_v1.py",
+      "bytes": 2367
+    },
+    {
+      "path": "archive/legacy/20261003-platform-acs/acs/leader.json",
+      "bytes": 1843
+    },
+    {
+      "path": "archive/legacy/20261003-platform-acs/acs/resource_partner.json",
+      "bytes": 1813
+    },
+    {
+      "path": "archive/legacy/20261003-platform-acs/acs/work_order_partner.json",
+      "bytes": 1740
+    },
+    {
+      "path": "archive/legacy/20261003-platform-acs/acs/templates/https/leader.json",
+      "bytes": 298
+    },
+    {
+      "path": "archive/legacy/20261003-platform-acs/acs/templates/https/resource_partner.json",
+      "bytes": 299
+    },
+    {
+      "path": "archive/legacy/20261003-platform-acs/acs/templates/https/work_order_partner.json",
+      "bytes": 299
+    },
+    {
+      "path": "archive/legacy/20261003-platform-acs/acs/templates/mq/leader.json",
+      "bytes": 387
+    },
+    {
+      "path": "archive/legacy/20261003-platform-acs/acs/templates/mq/resource_partner.json",
+      "bytes": 388
+    },
+    {
+      "path": "archive/legacy/20261003-platform-acs/acs/templates/mq/work_order_partner.json",
+      "bytes": 388
+    },
+    {
+      "path": "archive/legacy/20261003-progress/00_先读说明.txt",
+      "bytes": 4960
+    },
+    {
+      "path": "archive/legacy/20261003-progress/baseline-report.md",
+      "bytes": 1391
+    },
+    {
+      "path": "archive/legacy/20261003-progress/project-location-audit.md",
+      "bytes": 1639
+    },
+    {
+      "path": "archive/legacy/20261003-progress/stage-2-report.md",
+      "bytes": 4218
+    },
+    {
+      "path": "archive/legacy/20261003-progress/stage-3-platform-report.md",
+      "bytes": 4502
+    },
+    {
+      "path": "archive/legacy/20261003-progress/stage-4-audio-report.md",
+      "bytes": 5857
+    },
+    {
+      "path": "archive/legacy/20261003-progress/stage-5-resilience-report.md",
+      "bytes": 3712
+    },
+    {
+      "path": "archive/legacy/20261003-reports/baseline-report.html",
+      "bytes": 3189
+    },
+    {
+      "path": "archive/legacy/20261003-reports/final-phase-gate-summary.md",
+      "bytes": 1113
+    },
+    {
+      "path": "archive/legacy/20261003-reports/full-baseline-audit.json",
+      "bytes": 2228
+    },
+    {
+      "path": "archive/legacy/20261003-reports/full-baseline-audit.md",
+      "bytes": 4371
+    },
+    {
+      "path": "archive/legacy/20261003-reports/live_audio_analyze.json",
+      "bytes": 392
+    },
+    {
+      "path": "archive/legacy/20261003-reports/live_audio_confirm.json",
+      "bytes": 4399
+    },
+    {
+      "path": "archive/legacy/20261003-reports/log-consistency-report.md",
+      "bytes": 356
+    },
+    {
+      "path": "archive/legacy/20261003-reports/observability-sample.json",
+      "bytes": 1597
+    },
+    {
+      "path": "archive/legacy/20261003-reports/platform-readiness-report.md",
+      "bytes": 692
+    },
+    {
+      "path": "archive/legacy/20261003-reports/security-check.md",
+      "bytes": 558
+    },
+    {
+      "path": "archive/legacy/20261003-reports/stage1-refactor-report.md",
+      "bytes": 1235
+    },
+    {
+      "path": "archive/legacy/20261003-reports/stage2-browser-flow.jpg",
+      "bytes": 43775
+    },
+    {
+      "path": "archive/legacy/20261003-reports/stage2-final-product-report.md",
+      "bytes": 471
+    },
+    {
+      "path": "archive/legacy/20261003-reports/stage3-platform-list-full.png",
+      "bytes": 48746
+    },
+    {
+      "path": "archive/legacy/20261003-reports/stage3-platform-list.png",
+      "bytes": 46077
+    },
+    {
+      "path": "archive/legacy/20261003-reports/stage4-60-scenarios.json",
+      "bytes": 7766
+    },
+    {
+      "path": "archive/legacy/20261003-reports/stage4-60-scenarios.md",
+      "bytes": 291
+    },
+    {
+      "path": "archive/legacy/20261003-reports/stage4_audio_metrics.json",
+      "bytes": 2122
+    },
+    {
+      "path": "archive/legacy/20261003-reports/stage8-materials-report.md",
+      "bytes": 306
+    },
+    {
+      "path": "archive/legacy/20261003-review-build-scripts/make_final_review_zip.py",
+      "bytes": 4151
+    },
+    {
+      "path": "archive/legacy/20261003-review-build-scripts/make_mq_review_zip.py",
+      "bytes": 3944
+    },
+    {
+      "path": "archive/legacy/20261003-review-build-scripts/make_stage4_zip.py",
+      "bytes": 3120
+    },
+    {
+      "path": "archive/legacy/20261003-review-build-scripts/make_stage5_zip.py",
+      "bytes": 3583
+    },
+    {
+      "path": "archive/legacy/20261003-review-packages/gongwei-final-review-20261004.zip",
+      "bytes": 107583
+    },
+    {
+      "path": "archive/legacy/20261003-review-packages/gongwei-mq-inbox-review-20261003.zip",
+      "bytes": 63428
+    },
+    {
+      "path": "archive/legacy/20261003-review-packages/gongwei-stage3-review-20261003-025617.zip",
+      "bytes": 146843
+    },
+    {
+      "path": "archive/legacy/20261003-review-packages/gongwei-stage4-review-20261003.zip",
+      "bytes": 102433
+    },
+    {
+      "path": "archive/legacy/20261003-review-packages/gongwei-stage5-review-20261003.zip",
+      "bytes": 104036
+    },
+    {
+      "path": "archive/legacy/20261003-review-packages/stage2-business-v1-review.zip",
+      "bytes": 95944
+    },
+    {
+      "path": "archive/legacy/20261003-superpowers/plans/2026-10-03-stage-2-business-v1.md",
+      "bytes": 6802
+    },
+    {
+      "path": "archive/legacy/20261003-superpowers/plans/2026-10-03-stage4-audio.md",
+      "bytes": 5486
+    },
+    {
+      "path": "archive/legacy/20261003-superpowers/specs/2026-10-03-stage-2-business-v1-design.md",
+      "bytes": 3997
+    },
+    {
+      "path": "archive/legacy/20261003-superpowers/specs/2026-10-03-stage4-audio-design.md",
+      "bytes": 2764
+    },
+    {
+      "path": "archive/legacy/20261005-mq/gongwei-mq-platform-review-20261005.zip",
+      "bytes": 84125
+    },
+    {
+      "path": "archive/legacy/20261005-mq/platform_mq_submission_attempt-20261005.md",
+      "bytes": 1496
+    },
+    {
+      "path": "archive/legacy/20261005-mq/platform_rejection_evidence.json",
+      "bytes": 2280
+    },
+    {
+      "path": "archive/review-needed/README.md",
+      "bytes": 167
+    },
+    {
+      "path": "data/dingdang-live-discovery.db",
+      "bytes": 200704
+    },
+    {
+      "path": "data/resources.json",
+      "bytes": 803
+    },
+    {
+      "path": "data/self-audit-group-571249259c234e57907609d5d02f3a1d.db",
+      "bytes": 200704
+    },
+    {
+      "path": "data/self-audit-group-dc5983a4e3bf425b9b99d9fe79fb207f.db",
+      "bytes": 200704
+    },
+    {
+      "path": "data/stage2.db",
+      "bytes": 290816
+    },
+    {
+      "path": "data/stage2_seed.json",
+      "bytes": 1794
+    },
+    {
+      "path": "data/audio_uploads/audio-0238af5686dc490a9982c8439364b026.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-026bf3579ca943f2976bf584d3901ea7.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-06badbddb31b418c99ba09a0aec3c5c5.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-0875a4e4edc3419ea41c54c4e63391fc.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-0d8dcdeba51d4c12b203b0066c3005ec.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-0eacd308a3364945baf5b2c7a1cd59dc.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/audio_uploads/audio-0f259a195ffb49a8847493354d6c2351.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-0f4be7d774784b26834d0c4387814298.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-1392d319405144b29733c06e793d12a5.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-166a1d8c86984bc8a9dd05783a21cdbd.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-167b9eafda374854a5b6dc274134465a.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-169c28b060db4880ba2344227e4a8af3.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-1769d07804cf49a4b6b1da167016db25.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-17c7173d1cf248ba9cb4bc1ed8a1d4eb.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-17cb9d10faad4219aab9d91ddd8e5c85.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-17eda0812994427583b5cdcc21d78ea2.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-1a35cc059b4143a6a11b8564c55bbfc0.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-1a8f77ae5a6d44358bfa2c40f0fe1278.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-1dbf5cf8350545a08ca1ec471bdf1bbd.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-1f94e77faaf24fdf9a13e925c5231e59.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-218b99dd3b4b4d8baf714c8e5ce277e6.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-21b5ae0ed32543c8905c0876cddcc18c.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-2b957da026ce483c9f75b7311aca1df7.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-2f92da57ab1e4b22814e436a80844d44.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-31700c7782134a36840a82590dc26775.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-33dd93897b134d608aaf6fa70a1627a3.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-34a3fc710d884b4c806ecc6907df4fde.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-3532cdd638b54cbcae030747fbd95e5b.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-37ee5c7035fe4340945a9972e6f89121.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-389b2d23b806426090c5fd8e75f9efbe.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-3a242d0849ee44f181e82a37bbcc67e8.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-3ba5470feece431aa8364d3bce33b0a8.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-3fd864e600d84ce09d1ea05ca0e18926.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-4133b7896c5b403baccda8013205f5f9.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-4265a8d3fb9440dd8f4f8a776c7ea0e2.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-43f56f31391c4fe78d19f34869769417.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-4542d70f9f8640498311bff67e6bbca9.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-4565f366ab7c456fb03135a422eb5d5a.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-4693be652c6e48538ba94495e5b4e41b.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-47403fc456db4e42ac654800ff300947.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-493a84d00a45443aa8aff505f5d572ce.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-49a13e9a0405489992720b35b6fe12ef.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-49b9960fae3443999a6b41a9915f6bf1.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-4b62c3600c174ec082a89f2baffb835d.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-525078af160242739fc44e9299068fac.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-53263876658e45319f5404133f55bae1.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-53ed5d683aee458f91eb29225c2cf32d.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-551c4dd43ef345d0a4bccf74bf045531.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-55f99da1376241b49f890d7bbe18170b.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-5e25f4fbbec544ce9721100dfaa63d98.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-5fab48461725486b994e0c3c6c0c600d.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-6009d1ab71684aa3a0bdf8657745e5d6.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/audio_uploads/audio-607bcc3bb6394ac1903f5f4d4dcd6ed3.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-658bd1d6370f486a98a1382e3cb0b5a3.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-69fc629a6dbc48d6b62d0b588a69a1ba.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-6f31e0d9090048d5a944cac37b53561f.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-6fa9e732b38044adb85892047f11c6c6.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-7277e89b1ca5460583d5c5946959101e.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-751d1790d0d44798afb93f225e05b9c5.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-757d9b5e18e94e1c8096e6b412e00121.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-78239c6ba3404f78a836150d4cf8032f.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-78fe74f967c64e6ba4b14afa7063e0ab.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-7be69ec99267406b94c08e7c38146c73.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-7f82e68acd3b400e89790139e55b8237.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-8090e4cbf8af4a90a83cd5f376abfb60.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-810faed016a94f16ba6fbc694832f534.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-81c50563188a49c2946c2e4243a37d7a.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-82076f04996a44b4b520dec7e19ebb5a.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/audio_uploads/audio-83ad00032f0f41058dad47623bea5e86.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-84b9d0c7cde54a6989a604dd2ed50844.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-8a7ad2b4b0bd4fe68cac4947beafa5c3.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-8bf04e127ad04806a17e4ab8ff2e7790.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-8f0297434ff94ab9a3376b811530d441.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-8fdfcc91fe0e4e64ab3a7edca032c900.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-9127ab9f03334f3e89276f8dbb3e8f8e.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-939846115ca94ac6ade6e077477f42b8.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-94aafdb1035e4b77a71d82a936c36e7d.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-965c7a44cbe94005b542959bf8497c75.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-974c7584ac384e9aa0edad1b9c3e46ae.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-9a26ed80fc8a4141a64bf62473f80ba3.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-9abfc07575934a7ab6e7c37e6797e2dc.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-9d77049a502b4442ad306b2737e6739b.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-a2f4a5670cfb481fa0d453cbe39bd544.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-a7ceb81474014e92bd3238b392e4fe02.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-abc1dce44d084d4386dbece22a8e5486.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-ae8234369f834829a2a1d7cf87ba0985.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-b2a14a1ff21042bdb6f2a5ebf7a6bff7.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-b3613e28f72a406c920078183a109e53.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-b3b60a609d584397b28b91ecb8199bcf.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-b43797a1845f483592ef0f3b8bcefa9e.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-b45ca6e2690347a5a2135c8bea1e4d07.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-b5983a58139c4fc394a1c4ea9ddfad8b.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-b7b18ed450834749a970375bf0c7f2d1.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-bb89357d603843c29e3d3a73a4a2419c.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-bc89ea4d59ee4701b7e705ad5b970900.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-bd1789e11fd24cbfaa8e9e47f756c29a.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-c117ccf667fd4f64812a601143914b3e.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-c40332441eaf4405b467d62f905f9499.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-c5e24c461b4d4207b6ea648385858fdf.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-cd002fdb3e09472692b80e528b2ea23d.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-cf09ecdabfcf41c58467669aa9415013.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-d6c9bb1b66bf4ee0a5ee59badcef4ec6.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-d7c0225d7a2048c8994db213a3d2bcea.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-d7c95e5a1a1e419bacd5232dcc23e3f1.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-d9eb334d711a4867931fd961eb9f4626.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-da28675569944254903effdbf0cc4e3d.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-de8ec60bc2fd453c872be84b0ec6488b.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-e1c94f1c442e4d939787d82f480acae7.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-e624d4241bb240fa9679f4bfff17aec3.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-e661b2cdb4cf4f6ca230ad0e2df55d0e.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-e789e27bfc9a4312bd480ac74b56c272.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-e9d04ca97a4b4ffea60d19ed31ecdc03.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-edee1dd017f14412b612a52152988ca7.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-eeb774cebe8f406ea1d8364fed81f369.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-f02a0043229d445eb1af4532eb403b7e.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-f157e6aeb8c844718d58e533fc08ac77.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-f6be77ffe7d64b2591087557d056fcfb.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-f79359710dfe42b9a779081797b2ee36.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-f79c98675b9b4bd29512d52e7c3032f2.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-fb12dcfbe5554f3d80f498df37e5ff74.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-fbf1e734b69a44b2bf8cb2c9ec6c03fa.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-fc46583c955a4713970058c1d9237154.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-fcd9a4b4c2af4e1b8c88e1083c0c4370.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-fd833b8b13f8426dace51a2f10c4ac55.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/audio_uploads/audio-fddd3a065e48443f949b1ea134d0b2de.wav",
+      "bytes": 32044
+    },
+    {
+      "path": "data/mimii_pump/manifest.csv",
+      "bytes": 4931
+    },
+    {
+      "path": "data/mimii_pump/source.json",
+      "bytes": 890
+    },
+    {
+      "path": "data/mimii_pump/splits.json",
+      "bytes": 1071
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_00/abnormal/00000000.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_00/abnormal/00000001.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_00/abnormal/00000002.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_00/abnormal/00000003.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_00/abnormal/00000004.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_00/abnormal/00000005.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_00/abnormal/00000006.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_00/abnormal/00000007.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_00/normal/00000000.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_00/normal/00000001.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_00/normal/00000002.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_00/normal/00000003.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_00/normal/00000004.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_00/normal/00000005.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_00/normal/00000006.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_02/abnormal/00000000.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_02/abnormal/00000001.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_02/abnormal/00000002.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_02/abnormal/00000003.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_02/normal/00000000.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_02/normal/00000001.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_04/abnormal/00000000.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_04/abnormal/00000001.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_04/abnormal/00000002.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_04/normal/00000000.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_04/normal/00000001.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_04/normal/00000002.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_06/abnormal/00000000.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_06/abnormal/00000001.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_06/abnormal/00000002.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_06/normal/00000000.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "data/mimii_pump/wav/0_dB_pump/pump/id_06/normal/00000001.wav",
+      "bytes": 2560080
+    },
+    {
+      "path": "deploy/activate_leader_sni.py",
+      "bytes": 5961
+    },
+    {
+      "path": "deploy/check_amp_metadata_contract.py",
+      "bytes": 1753
+    },
+    {
+      "path": "deploy/collect_platform_state.py",
+      "bytes": 3672
+    },
+    {
+      "path": "deploy/install_amp_heartbeat_forwarder.py",
+      "bytes": 5580
+    },
+    {
+      "path": "deploy/leader.env.example",
+      "bytes": 660
+    },
+    {
+      "path": "deploy/probe_amp_forwarding.py",
+      "bytes": 4414
+    },
+    {
+      "path": "deploy/probe_live_leader.py",
+      "bytes": 5767
+    },
+    {
+      "path": "deploy/probe_public_leader_continue.py",
+      "bytes": 5467
+    },
+    {
+      "path": "deploy/probe_server_inboxes.py",
+      "bytes": 4148
+    },
+    {
+      "path": "deploy/requirements-amp.txt",
+      "bytes": 155
+    },
+    {
+      "path": "deploy/requirements-platform.txt",
+      "bytes": 153
+    },
+    {
+      "path": "deploy/stage_hybrid_release.py",
+      "bytes": 2379
+    },
+    {
+      "path": "deploy/stage_platform_preflight.py",
+      "bytes": 2414
+    },
+    {
+      "path": "deploy/upload_platform_secrets.py",
+      "bytes": 3209
+    },
+    {
+      "path": "deploy/verify_platform_staging.py",
+      "bytes": 3351
+    },
+    {
+      "path": "deploy/nginx/gongwei.yanyi.online.conf",
+      "bytes": 930
+    },
+    {
+      "path": "deploy/nginx/leader-sni-stream.conf.example",
+      "bytes": 1244
+    },
+    {
+      "path": "deploy/systemd/gongwei-amp-heartbeat.service.example",
+      "bytes": 1510
+    },
+    {
+      "path": "deploy/systemd/gongwei-audio.service",
+      "bytes": 610
+    },
+    {
+      "path": "deploy/systemd/gongwei-leader.service",
+      "bytes": 1535
+    },
+    {
+      "path": "deploy/systemd/gongwei-resource-inbox.service",
+      "bytes": 1288
+    },
+    {
+      "path": "deploy/systemd/gongwei-resource.service",
+      "bytes": 613
+    },
+    {
+      "path": "deploy/systemd/gongwei-web.service",
+      "bytes": 593
+    },
+    {
+      "path": "deploy/systemd/gongwei-workorder-inbox.service",
+      "bytes": 1280
+    },
+    {
+      "path": "deploy/systemd/gongwei-workorder.service",
+      "bytes": 619
+    },
+    {
+      "path": "deploy/__pycache__/activate_leader_sni.cpython-314.pyc",
+      "bytes": 7027
+    },
+    {
+      "path": "deploy/__pycache__/collect_platform_state.cpython-314.pyc",
+      "bytes": 4784
+    },
+    {
+      "path": "deploy/__pycache__/probe_live_leader.cpython-314.pyc",
+      "bytes": 6897
+    },
+    {
+      "path": "deploy/__pycache__/probe_server_inboxes.cpython-314.pyc",
+      "bytes": 5338
+    },
+    {
+      "path": "deploy/__pycache__/stage_hybrid_release.cpython-314.pyc",
+      "bytes": 4117
+    },
+    {
+      "path": "deploy/__pycache__/stage_platform_preflight.cpython-314.pyc",
+      "bytes": 3719
+    },
+    {
+      "path": "deploy/__pycache__/upload_platform_secrets.cpython-314.pyc",
+      "bytes": 4679
+    },
+    {
+      "path": "deploy/__pycache__/verify_platform_staging.cpython-314.pyc",
+      "bytes": 4354
+    },
+    {
+      "path": "docs/agent-contracts.md",
+      "bytes": 1451
+    },
+    {
+      "path": "docs/database-schema.md",
+      "bytes": 739
+    },
+    {
+      "path": "docs/demo-scenarios.md",
+      "bytes": 655
+    },
+    {
+      "path": "docs/demo-video-script.md",
+      "bytes": 509
+    },
+    {
+      "path": "docs/final-architecture.md",
+      "bytes": 1511
+    },
+    {
+      "path": "docs/final-presentation-outline.md",
+      "bytes": 560
+    },
+    {
+      "path": "docs/final-technical-report.md",
+      "bytes": 708
+    },
+    {
+      "path": "docs/mq-inbox-implementation.md",
+      "bytes": 1663
+    },
+    {
+      "path": "docs/mq-platform-parameters-needed.md",
+      "bytes": 1444
+    },
+    {
+      "path": "docs/observability.md",
+      "bytes": 515
+    },
+    {
+      "path": "docs/platform-dual-transport-plan.md",
+      "bytes": 531
+    },
+    {
+      "path": "docs/platform-parameters-checklist.md",
+      "bytes": 596
+    },
+    {
+      "path": "docs/security.md",
+      "bytes": 682
+    },
+    {
+      "path": "docs/state-machine.md",
+      "bytes": 796
+    },
+    {
+      "path": "docs/user-guide.md",
+      "bytes": 786
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-05-agentic-redesign.md",
+      "bytes": 2671
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-06-frontend-refactor.md",
+      "bytes": 2517
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-06-hybrid-platform.md",
+      "bytes": 2371
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-06-platform-reregister.md",
+      "bytes": 4603
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-07-platform-fixes.md",
+      "bytes": 6021
+    },
+    {
+      "path": "docs/superpowers/specs/2026-10-05-agentic-redesign-design.md",
+      "bytes": 1938
+    },
+    {
+      "path": "docs/superpowers/specs/2026-10-06-frontend-refactor-design.md",
+      "bytes": 2394
+    },
+    {
+      "path": "logs/access.jsonl",
+      "bytes": 221
+    },
+    {
+      "path": "logs/audio_v1.jsonl",
+      "bytes": 62568
+    },
+    {
+      "path": "logs/audit.jsonl",
+      "bytes": 18644
+    },
+    {
+      "path": "logs/audit_baseline_filelist_20261005.txt",
+      "bytes": 18066
+    },
+    {
+      "path": "logs/audit_baseline_git_status_20261005.txt",
+      "bytes": 570
+    },
+    {
+      "path": "logs/audit_post_cleanup_compile_20261005.log",
+      "bytes": 30
+    },
+    {
+      "path": "logs/audit_post_cleanup_inventory_20261005.json",
+      "bytes": 19527
+    },
+    {
+      "path": "logs/audit_post_cleanup_mq_preflight_20261005.log",
+      "bytes": 192
+    },
+    {
+      "path": "logs/audit_post_cleanup_stage2_20261005.log",
+      "bytes": 214
+    },
+    {
+      "path": "logs/audit_post_cleanup_stage5_20261005.log",
+      "bytes": 333
+    },
+    {
+      "path": "logs/audit_post_cleanup_unittest_20261005.log",
+      "bytes": 12601
+    },
+    {
+      "path": "logs/audit_pre_cleanup_git_status_20261005.txt",
+      "bytes": 625
+    },
+    {
+      "path": "logs/audit_pre_cleanup_inventory_20261005.json",
+      "bytes": 21521
+    },
+    {
+      "path": "logs/audit_pre_cleanup_unittest_20261005.log",
+      "bytes": 12271
+    },
+    {
+      "path": "logs/baseline_leader_output.log",
+      "bytes": 920
+    },
+    {
+      "path": "logs/baseline_resource_runtime.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/baseline_resource_runtime.log",
+      "bytes": 287
+    },
+    {
+      "path": "logs/browser_audit_ui_20261005.md",
+      "bytes": 643
+    },
+    {
+      "path": "logs/final_audit_compileall.log",
+      "bytes": 0
+    },
+    {
+      "path": "logs/final_audit_compileall_after_stage1.log",
+      "bytes": 0
+    },
+    {
+      "path": "logs/final_audit_integrations.log",
+      "bytes": 1613
+    },
+    {
+      "path": "logs/final_audit_mq.log",
+      "bytes": 109
+    },
+    {
+      "path": "logs/final_audit_mq_after_stage1.log",
+      "bytes": 129
+    },
+    {
+      "path": "logs/final_audit_stage1_leader.err.log",
+      "bytes": 0
+    },
+    {
+      "path": "logs/final_audit_stage1_leader.log",
+      "bytes": 679
+    },
+    {
+      "path": "logs/final_audit_stage1_leader_after_stage1.log",
+      "bytes": 920
+    },
+    {
+      "path": "logs/final_audit_stage1_resource.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/final_audit_stage1_resource.log",
+      "bytes": 346
+    },
+    {
+      "path": "logs/final_audit_stage1_resource_after_stage1.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/final_audit_stage1_resource_after_stage1.log",
+      "bytes": 287
+    },
+    {
+      "path": "logs/final_audit_stage2.log",
+      "bytes": 205
+    },
+    {
+      "path": "logs/final_audit_stage2_after_stage1.log",
+      "bytes": 205
+    },
+    {
+      "path": "logs/final_audit_stage4_60.log",
+      "bytes": 35
+    },
+    {
+      "path": "logs/final_audit_stage4_60_post_commit.log",
+      "bytes": 35
+    },
+    {
+      "path": "logs/final_audit_stage5.log",
+      "bytes": 324
+    },
+    {
+      "path": "logs/final_audit_stage5_after_stage1.log",
+      "bytes": 324
+    },
+    {
+      "path": "logs/final_audit_tests.log",
+      "bytes": 11636
+    },
+    {
+      "path": "logs/final_audit_tests_20261005.log",
+      "bytes": 1092
+    },
+    {
+      "path": "logs/final_audit_tests_post_commit.log",
+      "bytes": 1083
+    },
+    {
+      "path": "logs/final_audit_unittest.log",
+      "bytes": 10324
+    },
+    {
+      "path": "logs/final_audit_unittest_after_stage1.log",
+      "bytes": 11467
+    },
+    {
+      "path": "logs/final_leader_console.log",
+      "bytes": 758
+    },
+    {
+      "path": "logs/final_project_audit_zip_check_20261005.log",
+      "bytes": 81
+    },
+    {
+      "path": "logs/final_resource_console.err.log",
+      "bytes": 202
+    },
+    {
+      "path": "logs/final_resource_console.log",
+      "bytes": 518
+    },
+    {
+      "path": "logs/full_unittest-20261005.log",
+      "bytes": 12271
+    },
+    {
+      "path": "logs/full_unittest.log",
+      "bytes": 1083
+    },
+    {
+      "path": "logs/heartbeat.jsonl",
+      "bytes": 224
+    },
+    {
+      "path": "logs/leader.jsonl",
+      "bytes": 114026
+    },
+    {
+      "path": "logs/leader_console.err.log",
+      "bytes": 0
+    },
+    {
+      "path": "logs/leader_console.log",
+      "bytes": 497
+    },
+    {
+      "path": "logs/leader_inbox.jsonl",
+      "bytes": 25970
+    },
+    {
+      "path": "logs/leader_inbox_runtime.log",
+      "bytes": 3668
+    },
+    {
+      "path": "logs/local_check_leader.log",
+      "bytes": 905
+    },
+    {
+      "path": "logs/local_check_resource.err",
+      "bytes": 203
+    },
+    {
+      "path": "logs/local_check_resource.log",
+      "bytes": 346
+    },
+    {
+      "path": "logs/message.jsonl",
+      "bytes": 919237
+    },
+    {
+      "path": "logs/metrics.jsonl",
+      "bytes": 222
+    },
+    {
+      "path": "logs/mq_inbox_integration.log",
+      "bytes": 233
+    },
+    {
+      "path": "logs/mq_inbox_run_output.log",
+      "bytes": 129
+    },
+    {
+      "path": "logs/mq_platform_live_20261005.log",
+      "bytes": 2029
+    },
+    {
+      "path": "logs/mq_platform_preflight-20261005.log",
+      "bytes": 512
+    },
+    {
+      "path": "logs/resource.jsonl",
+      "bytes": 12064
+    },
+    {
+      "path": "logs/resource_partner_inbox.log",
+      "bytes": 10912
+    },
+    {
+      "path": "logs/resource_v1.jsonl",
+      "bytes": 380358
+    },
+    {
+      "path": "logs/setup.log",
+      "bytes": 3570
+    },
+    {
+      "path": "logs/stage2_baseline_leader.log",
+      "bytes": 758
+    },
+    {
+      "path": "logs/stage2_baseline_resource.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/stage2_baseline_resource.log",
+      "bytes": 346
+    },
+    {
+      "path": "logs/stage2_integration_output.log",
+      "bytes": 205
+    },
+    {
+      "path": "logs/stage2_leader.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/stage2_leader.jsonl",
+      "bytes": 373886
+    },
+    {
+      "path": "logs/stage2_leader.jsonl.1",
+      "bytes": 20678021
+    },
+    {
+      "path": "logs/stage2_leader.log",
+      "bytes": 999
+    },
+    {
+      "path": "logs/stage2_leader_restart.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/stage2_leader_restart.log",
+      "bytes": 127
+    },
+    {
+      "path": "logs/stage2_live_leader.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/stage2_live_leader.log",
+      "bytes": 1927
+    },
+    {
+      "path": "logs/stage2_live_resource.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/stage2_live_resource.log",
+      "bytes": 401
+    },
+    {
+      "path": "logs/stage2_live_workorder.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/stage2_live_workorder.log",
+      "bytes": 287
+    },
+    {
+      "path": "logs/stage2_resource.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/stage2_resource.log",
+      "bytes": 401
+    },
+    {
+      "path": "logs/stage2_runtime_audio.err.log",
+      "bytes": 202
+    },
+    {
+      "path": "logs/stage2_runtime_audio.log",
+      "bytes": 1310
+    },
+    {
+      "path": "logs/stage2_runtime_leader.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/stage2_runtime_leader.log",
+      "bytes": 36915
+    },
+    {
+      "path": "logs/stage2_runtime_resource.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/stage2_runtime_resource.log",
+      "bytes": 17139
+    },
+    {
+      "path": "logs/stage2_runtime_workorder.err.log",
+      "bytes": 202
+    },
+    {
+      "path": "logs/stage2_runtime_workorder.log",
+      "bytes": 1538
+    },
+    {
+      "path": "logs/stage2_workorder.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/stage2_workorder.log",
+      "bytes": 401
+    },
+    {
+      "path": "logs/stage3_leader.jsonl",
+      "bytes": 133282
+    },
+    {
+      "path": "logs/stage5_audio.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/stage5_audio.log",
+      "bytes": 118
+    },
+    {
+      "path": "logs/stage5_integration_output.log",
+      "bytes": 324
+    },
+    {
+      "path": "logs/stage5_leader.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/stage5_leader.log",
+      "bytes": 940
+    },
+    {
+      "path": "logs/stage5_leader_recovery.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/stage5_leader_recovery.log",
+      "bytes": 267
+    },
+    {
+      "path": "logs/stage5_resource.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/stage5_resource.log",
+      "bytes": 629
+    },
+    {
+      "path": "logs/stage5_workorder.err.log",
+      "bytes": 203
+    },
+    {
+      "path": "logs/stage5_workorder.log",
+      "bytes": 173
+    },
+    {
+      "path": "logs/system.jsonl",
+      "bytes": 39036
+    },
+    {
+      "path": "logs/web_app_18011.err.log",
+      "bytes": 0
+    },
+    {
+      "path": "logs/web_app_18011.out.log",
+      "bytes": 0
+    },
+    {
+      "path": "logs/workorder_partner_inbox.log",
+      "bytes": 7216
+    },
+    {
+      "path": "logs/workorder_v1.jsonl",
+      "bytes": 190000
+    },
+    {
+      "path": "models/audio/mimii_pump_baseline.json",
+      "bytes": 3432
+    },
+    {
+      "path": "platform/README.md",
+      "bytes": 924
+    },
+    {
+      "path": "reports/agentic-baseline-unittest-20261005.log",
+      "bytes": 12577
+    },
+    {
+      "path": "reports/agentic-conversation-demo-20261005.md",
+      "bytes": 1393
+    },
+    {
+      "path": "reports/agentic-full-unittest-20261005.log",
+      "bytes": 13912
+    },
+    {
+      "path": "reports/agentic-full-unittest-20261006.log",
+      "bytes": 15698
+    },
+    {
+      "path": "reports/agentic-local-acceptance-20261005.md",
+      "bytes": 2992
+    },
+    {
+      "path": "reports/agentic-stage2-6-tests-20261005.log",
+      "bytes": 3103
+    },
+    {
+      "path": "reports/agentic-stage2-9-tests-20261005.log",
+      "bytes": 3857
+    },
+    {
+      "path": "reports/agentic-stage2-blackbox-20261005.log",
+      "bytes": 205
+    },
+    {
+      "path": "reports/agentic-stage2-blackbox-20261006.log",
+      "bytes": 205
+    },
+    {
+      "path": "reports/agentic-stage2-tests-20261005.log",
+      "bytes": 13260
+    },
+    {
+      "path": "reports/agentic-stage5-blackbox-20261005.log",
+      "bytes": 324
+    },
+    {
+      "path": "reports/agentic-stage5-blackbox-20261006.log",
+      "bytes": 324
+    },
+    {
+      "path": "reports/dingdang-direct-call-acceptance-20261006.md",
+      "bytes": 5588
+    },
+    {
+      "path": "reports/dingdang-live-acceptance-20261006.md",
+      "bytes": 8134
+    },
+    {
+      "path": "reports/frontend-refactor-acceptance-20261006.md",
+      "bytes": 3340
+    },
+    {
+      "path": "reports/gongwei-agentic-redesign-review-20261005.zip",
+      "bytes": 149655
+    },
+    {
+      "path": "reports/gongwei-agentic-redesign-review-20261006.zip",
+      "bytes": 197616
+    },
+    {
+      "path": "reports/gongwei-final-project-audit-20261005.zip",
+      "bytes": 177025
+    },
+    {
+      "path": "reports/gongwei-hybrid-platform-review-20261006.zip",
+      "bytes": 339895
+    },
+    {
+      "path": "reports/gongwei-platform-fixes-review-20261007.zip",
+      "bytes": 860750
+    },
+    {
+      "path": "reports/gongwei-platform-followup-review-20261007.zip",
+      "bytes": 1160189
+    },
+    {
+      "path": "reports/gongwei-platform-self-audit-review-20261006.zip",
+      "bytes": 512942
+    },
+    {
+      "path": "reports/gongwei-reregister-review-20261006.zip",
+      "bytes": 739517
+    },
+    {
+      "path": "reports/hybrid-platform-integration-20261006.md",
+      "bytes": 12547
+    },
+    {
+      "path": "reports/mq-cert-bootstrap-20261005.md",
+      "bytes": 2933
+    },
+    {
+      "path": "reports/mq-live-integration-20261005.md",
+      "bytes": 1934
+    },
+    {
+      "path": "reports/mq-local-integration-report.md",
+      "bytes": 15909
+    },
+    {
+      "path": "reports/server-deployment-20261006.md",
+      "bytes": 2677
+    },
+    {
+      "path": "reports/stage4-60-scenarios.json",
+      "bytes": 7766
+    },
+    {
+      "path": "reports/stage4-60-scenarios.md",
+      "bytes": 291
+    },
+    {
+      "path": "reports/acs_1_1_0_draft/leader.json",
+      "bytes": 3082
+    },
+    {
+      "path": "reports/acs_1_1_0_draft/README.md",
+      "bytes": 525
+    },
+    {
+      "path": "reports/acs_1_1_0_draft/resource_partner.json",
+      "bytes": 1896
+    },
+    {
+      "path": "reports/acs_1_1_0_draft/work_order_partner.json",
+      "bytes": 1823
+    },
+    {
+      "path": "reports/dingdang-live/database-direct-call-state-20261006.json",
+      "bytes": 177
+    },
+    {
+      "path": "reports/dingdang-live/dingdang-rounds-20261006.txt",
+      "bytes": 1593
+    },
+    {
+      "path": "reports/dingdang-live/discovery-cli--20261006.json",
+      "bytes": 39796
+    },
+    {
+      "path": "reports/dingdang-live/discovery-cli-gongwei-leader-create-request-20261006.json",
+      "bytes": 5228
+    },
+    {
+      "path": "reports/dingdang-live/discovery-cli-leader-20261006-utf8.json",
+      "bytes": 7439
+    },
+    {
+      "path": "reports/dingdang-live/discovery-cli-leader-20261006.json",
+      "bytes": 3691
+    },
+    {
+      "path": "reports/dingdang-live/discovery-cli-leader-aic-20261006.json",
+      "bytes": 427
+    },
+    {
+      "path": "reports/dingdang-live/discovery-cli-Partner-20261006.json",
+      "bytes": 20736
+    },
+    {
+      "path": "reports/dingdang-live/discovery-cli-resource-20261006-utf8.json",
+      "bytes": 20896
+    },
+    {
+      "path": "reports/dingdang-live/discovery-cli-resource-20261006.json",
+      "bytes": 18982
+    },
+    {
+      "path": "reports/dingdang-live/discovery-cli-workorder-20261006-utf8.json",
+      "bytes": 41821
+    },
+    {
+      "path": "reports/dingdang-live/discovery-cli-workorder-20261006.json",
+      "bytes": 37613
+    },
+    {
+      "path": "reports/dingdang-live/discovery-real-response-20261006.json",
+      "bytes": 1084
+    },
+    {
+      "path": "reports/dingdang-live/discovery-resolver-official-20261006.json",
+      "bytes": 734
+    },
+    {
+      "path": "reports/dingdang-live/leader-acs-1.1.0-archive.json",
+      "bytes": 2680
+    },
+    {
+      "path": "reports/dingdang-live/leader-inbox-direct-call-20261006.log",
+      "bytes": 3456
+    },
+    {
+      "path": "reports/dingdang-live/leader-mq-runtime-20261006.log",
+      "bytes": 1622
+    },
+    {
+      "path": "reports/dingdang-live/mq-process-status-20261006.json",
+      "bytes": 1281
+    },
+    {
+      "path": "reports/dingdang-live/platform-leader-approved-acs.json",
+      "bytes": 2029
+    },
+    {
+      "path": "reports/dingdang-live/resource-partner-inbox-direct-call-20261006.log",
+      "bytes": 10912
+    },
+    {
+      "path": "reports/dingdang-live/resource-partner-mq-runtime-20261006.log",
+      "bytes": 8468
+    },
+    {
+      "path": "reports/dingdang-live/workorder-partner-inbox-direct-call-20261006.log",
+      "bytes": 7216
+    },
+    {
+      "path": "reports/dingdang-live/workorder-partner-mq-runtime-20261006.log",
+      "bytes": 5768
+    },
+    {
+      "path": "reports/final-project-audit/00_PROJECT_SUMMARY.md",
+      "bytes": 1265
+    },
+    {
+      "path": "reports/final-project-audit/01_CURRENT_ARCHITECTURE.md",
+      "bytes": 795
+    },
+    {
+      "path": "reports/final-project-audit/02_FEATURE_MATRIX.md",
+      "bytes": 1610
+    },
+    {
+      "path": "reports/final-project-audit/03_PLATFORM_INTEGRATION_STATUS.md",
+      "bytes": 1137
+    },
+    {
+      "path": "reports/final-project-audit/04_TEST_REPORT.md",
+      "bytes": 1625
+    },
+    {
+      "path": "reports/final-project-audit/05_FILE_INVENTORY.md",
+      "bytes": 18581
+    },
+    {
+      "path": "reports/final-project-audit/06_CLEANUP_REPORT.md",
+      "bytes": 1507
+    },
+    {
+      "path": "reports/final-project-audit/07_SECURITY_AUDIT.md",
+      "bytes": 617
+    },
+    {
+      "path": "reports/final-project-audit/08_KNOWN_ISSUES_AND_NEXT_STEPS.md",
+      "bytes": 598
+    },
+    {
+      "path": "reports/final-project-audit/09_HUMAN_ACTIONS_REQUIRED.md",
+      "bytes": 418
+    },
+    {
+      "path": "reports/final-project-audit/FILE_TREE.txt",
+      "bytes": 19178
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/60-scenarios.log",
+      "bytes": 35
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/blocker-explanation-recheck.md",
+      "bytes": 3961
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/certificate-metadata.json",
+      "bytes": 1439
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/discovery-filtered-leader.json",
+      "bytes": 1021
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/discovery-filtered-resource.json",
+      "bytes": 1023
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/discovery-filtered-workorder.json",
+      "bytes": 1024
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/discovery-leader.json",
+      "bytes": 25905
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/discovery-recheck-20261006.json",
+      "bytes": 3580
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/discovery-resource.json",
+      "bytes": 26782
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/discovery-workorder.json",
+      "bytes": 29378
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/full-unittest.log",
+      "bytes": 42068
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/intermediate-133-unittest.log",
+      "bytes": 39111
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/leader-acs-1.1.0.json",
+      "bytes": 3082
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/leader-approved-acs.json",
+      "bytes": 1954
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/leader-approved-readonly.jpg",
+      "bytes": 43601
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/leader-save-disabled.jpg",
+      "bytes": 34434
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/mq-leader-preflight-local.json",
+      "bytes": 991
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/mq-leader-preflight-local.log",
+      "bytes": 2594
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/mq-leader-preflight-server.json",
+      "bytes": 977
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/mq-leader-preflight-server.log",
+      "bytes": 2575
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/mq-resource-preflight-server.json",
+      "bytes": 345
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/mq-resource-preflight-server.log",
+      "bytes": 803
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/mq-workorder-preflight-server.json",
+      "bytes": 346
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/mq-workorder-preflight-server.log",
+      "bytes": 804
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/secret-upload-metadata.json",
+      "bytes": 1485
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/server-final-state.json",
+      "bytes": 1911
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/server-native-unittest.log",
+      "bytes": 11852
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/server-staged-release.log",
+      "bytes": 296
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/stage2-local-rpc.log",
+      "bytes": 205
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/stage5-reliability.log",
+      "bytes": 324
+    },
+    {
+      "path": "reports/hybrid-platform-20261006/tls-client-cert-request-recheck.json",
+      "bytes": 2356
+    },
+    {
+      "path": "reports/platform-card-recheck-20261007/discovery-alive-sync.json",
+      "bytes": 1073
+    },
+    {
+      "path": "reports/platform-card-recheck-20261007/discovery-leader.json",
+      "bytes": 9541
+    },
+    {
+      "path": "reports/platform-card-recheck-20261007/discovery-resource.json",
+      "bytes": 6380
+    },
+    {
+      "path": "reports/platform-card-recheck-20261007/discovery-workorder.json",
+      "bytes": 6322
+    },
+    {
+      "path": "reports/platform-card-recheck-20261007/public-leader-continue.json",
+      "bytes": 32576
+    },
+    {
+      "path": "reports/platform-card-recheck-20261007/README.md",
+      "bytes": 3540
+    },
+    {
+      "path": "reports/platform-card-recheck-20261007/recent-cards.json",
+      "bytes": 28632
+    },
+    {
+      "path": "reports/platform-card-recheck-20261007/runtime.json",
+      "bytes": 2074
+    },
+    {
+      "path": "reports/platform-fixes-20261007/amp-kafka-tls-probe.json",
+      "bytes": 319
+    },
+    {
+      "path": "reports/platform-fixes-20261007/dingdang-awaiting-input.jpg",
+      "bytes": 110204
+    },
+    {
+      "path": "reports/platform-fixes-20261007/dingdang-id-map.csv",
+      "bytes": 887
+    },
+    {
+      "path": "reports/platform-fixes-20261007/dingdang-leader-selected.jpg",
+      "bytes": 95508
+    },
+    {
+      "path": "reports/platform-fixes-20261007/dingdang-retry-round1.jpg",
+      "bytes": 110171
+    },
+    {
+      "path": "reports/platform-fixes-20261007/dingdang-retry-round2.jpg",
+      "bytes": 106163
+    },
+    {
+      "path": "reports/platform-fixes-20261007/dingdang-retry-round2.txt",
+      "bytes": 210
+    },
+    {
+      "path": "reports/platform-fixes-20261007/dingdang-retry-timing.json",
+      "bytes": 226
+    },
+    {
+      "path": "reports/platform-fixes-20261007/dingdang-round1.txt",
+      "bytes": 368
+    },
+    {
+      "path": "reports/platform-fixes-20261007/dingdang-round2-failure.jpg",
+      "bytes": 105691
+    },
+    {
+      "path": "reports/platform-fixes-20261007/dingdang-round2.txt",
+      "bytes": 368
+    },
+    {
+      "path": "reports/platform-fixes-20261007/discovery-leader.json",
+      "bytes": 9541
+    },
+    {
+      "path": "reports/platform-fixes-20261007/discovery-resource.json",
+      "bytes": 6380
+    },
+    {
+      "path": "reports/platform-fixes-20261007/discovery-workorder.json",
+      "bytes": 6322
+    },
+    {
+      "path": "reports/platform-fixes-20261007/final-checks.log",
+      "bytes": 1336
+    },
+    {
+      "path": "reports/platform-fixes-20261007/flat-credentials-green.log",
+      "bytes": 1690
+    },
+    {
+      "path": "reports/platform-fixes-20261007/flat-credentials-red.log",
+      "bytes": 3384
+    },
+    {
+      "path": "reports/platform-fixes-20261007/leader-approved-acs.json",
+      "bytes": 2976
+    },
+    {
+      "path": "reports/platform-fixes-20261007/leader-approved-detail.jpg",
+      "bytes": 22026
+    },
+    {
+      "path": "reports/platform-fixes-20261007/leader-cancel-fix-restart.log",
+      "bytes": 0
+    },
+    {
+      "path": "reports/platform-fixes-20261007/leader-final-start.log",
+      "bytes": 131
+    },
+    {
+      "path": "reports/platform-fixes-20261007/leader-flat-credential-start.log",
+      "bytes": 0
+    },
+    {
+      "path": "reports/platform-fixes-20261007/leader-start.log",
+      "bytes": 274
+    },
+    {
+      "path": "reports/platform-fixes-20261007/linux-regression.log",
+      "bytes": 6655
+    },
+    {
+      "path": "reports/platform-fixes-20261007/nginx-readonly.log",
+      "bytes": 2019
+    },
+    {
+      "path": "reports/platform-fixes-20261007/nginx-routes-before.jsonl",
+      "bytes": 3008
+    },
+    {
+      "path": "reports/platform-fixes-20261007/nginx-stream-install.log",
+      "bytes": 2684
+    },
+    {
+      "path": "reports/platform-fixes-20261007/package-result.json",
+      "bytes": 326
+    },
+    {
+      "path": "reports/platform-fixes-20261007/partner-services-start.log",
+      "bytes": 495
+    },
+    {
+      "path": "reports/platform-fixes-20261007/platform-ranking-check.json",
+      "bytes": 42
+    },
+    {
+      "path": "reports/platform-fixes-20261007/public-five-sites.json",
+      "bytes": 1070
+    },
+    {
+      "path": "reports/platform-fixes-20261007/public-leader-mtls.json",
+      "bytes": 14758
+    },
+    {
+      "path": "reports/platform-fixes-20261007/README.md",
+      "bytes": 11486
+    },
+    {
+      "path": "reports/platform-fixes-20261007/replay-gate-green.log",
+      "bytes": 949
+    },
+    {
+      "path": "reports/platform-fixes-20261007/replay-gate-red.log",
+      "bytes": 1794
+    },
+    {
+      "path": "reports/platform-fixes-20261007/secret-upload-metadata.json",
+      "bytes": 1021
+    },
+    {
+      "path": "reports/platform-fixes-20261007/server-backup.json",
+      "bytes": 185
+    },
+    {
+      "path": "reports/platform-fixes-20261007/server-final-state.json",
+      "bytes": 34349
+    },
+    {
+      "path": "reports/platform-fixes-20261007/server-kafka-tls-probe.log",
+      "bytes": 315
+    },
+    {
+      "path": "reports/platform-fixes-20261007/server-kafka-tls-result.json",
+      "bytes": 212
+    },
+    {
+      "path": "reports/platform-fixes-20261007/server-leader-mtls.json",
+      "bytes": 11245
+    },
+    {
+      "path": "reports/platform-fixes-20261007/server-leader.log",
+      "bytes": 5462
+    },
+    {
+      "path": "reports/platform-fixes-20261007/server-partner-inbox-final.json",
+      "bytes": 5631
+    },
+    {
+      "path": "reports/platform-fixes-20261007/server-partner-inbox.json",
+      "bytes": 6976
+    },
+    {
+      "path": "reports/platform-fixes-20261007/server-resource-inbox.log",
+      "bytes": 1028
+    },
+    {
+      "path": "reports/platform-fixes-20261007/server-workorder-inbox.log",
+      "bytes": 1032
+    },
+    {
+      "path": "reports/platform-fixes-20261007/sni-baseline.log",
+      "bytes": 6183
+    },
+    {
+      "path": "reports/platform-fixes-20261007/sni-cutover.json",
+      "bytes": 2451
+    },
+    {
+      "path": "reports/platform-fixes-20261007/stage2-regression.log",
+      "bytes": 205
+    },
+    {
+      "path": "reports/platform-fixes-20261007/stage5-regression.log",
+      "bytes": 324
+    },
+    {
+      "path": "reports/platform-fixes-20261007/three-agent-mq-workflow-final.json",
+      "bytes": 117106
+    },
+    {
+      "path": "reports/platform-fixes-20261007/three-agent-mq-workflow-final.log",
+      "bytes": 158546
+    },
+    {
+      "path": "reports/platform-fixes-20261007/three-agent-mq-workflow.json",
+      "bytes": 86561
+    },
+    {
+      "path": "reports/platform-fixes-20261007/three-agent-mq-workflow.log",
+      "bytes": 158546
+    },
+    {
+      "path": "reports/platform-fixes-20261007/three-approved-agents.jpg",
+      "bytes": 26303
+    },
+    {
+      "path": "reports/platform-fixes-20261007/unittest-after-cancel-fix.log",
+      "bytes": 55955
+    },
+    {
+      "path": "reports/platform-fixes-20261007/unittest-final.log",
+      "bytes": 53492
+    },
+    {
+      "path": "reports/platform-fixes-20261007/unittest.log",
+      "bytes": 49479
+    },
+    {
+      "path": "reports/platform-fixes-20261007/web-health-client-ip.json",
+      "bytes": 172
+    },
+    {
+      "path": "reports/platform-fixes-20261007/workorder-certificate-attempt1.json",
+      "bytes": 189
+    },
+    {
+      "path": "reports/platform-fixes-20261007/workorder-certificate-validation.json",
+      "bytes": 309
+    },
+    {
+      "path": "reports/platform-fixes-20261007/workorder-eab-after-login.json",
+      "bytes": 193
+    },
+    {
+      "path": "reports/platform-fixes-20261007/workorder-eab-retry.json",
+      "bytes": 238
+    },
+    {
+      "path": "reports/platform-fixes-20261007/discovery-final/discovery-leader.json",
+      "bytes": 9542
+    },
+    {
+      "path": "reports/platform-fixes-20261007/discovery-final/discovery-resource.json",
+      "bytes": 2200
+    },
+    {
+      "path": "reports/platform-fixes-20261007/discovery-final/discovery-workorder.json",
+      "bytes": 5856
+    },
+    {
+      "path": "reports/platform-fixes-20261007/discovery-final/network-retry.json",
+      "bytes": 6296
+    },
+    {
+      "path": "reports/platform-followup-20261007/aiokafka-metadata-reference.txt",
+      "bytes": 2083
+    },
+    {
+      "path": "reports/platform-followup-20261007/aiokafka-real-client-offline-metadata.json",
+      "bytes": 246
+    },
+    {
+      "path": "reports/platform-followup-20261007/amp-bounded-probe.json",
+      "bytes": 3588
+    },
+    {
+      "path": "reports/platform-followup-20261007/amp-bounded-probe.log",
+      "bytes": 0
+    },
+    {
+      "path": "reports/platform-followup-20261007/amp-heartbeat-forwarder-all-tests.log",
+      "bytes": 61515
+    },
+    {
+      "path": "reports/platform-followup-20261007/amp-heartbeat-forwarder-green.log",
+      "bytes": 4183
+    },
+    {
+      "path": "reports/platform-followup-20261007/amp-heartbeat-metadata-green.log",
+      "bytes": 4957
+    },
+    {
+      "path": "reports/platform-followup-20261007/amp-heartbeat-metadata-red-confirmed.log",
+      "bytes": 7938
+    },
+    {
+      "path": "reports/platform-followup-20261007/amp-heartbeat-metadata-red.log",
+      "bytes": 8672
+    },
+    {
+      "path": "reports/platform-followup-20261007/amp-linux-tests.log",
+      "bytes": 4874
+    },
+    {
+      "path": "reports/platform-followup-20261007/amp-own-heartbeat-readback.json",
+      "bytes": 331
+    },
+    {
+      "path": "reports/platform-followup-20261007/amp-readonly-group-offsets.json",
+      "bytes": 377
+    },
+    {
+      "path": "reports/platform-followup-20261007/amp-readonly-watermarks.json",
+      "bytes": 332
+    },
+    {
+      "path": "reports/platform-followup-20261007/amp-service-install.json",
+      "bytes": 1306
+    },
+    {
+      "path": "reports/platform-followup-20261007/amp-service-preflight.json",
+      "bytes": 775
+    },
+    {
+      "path": "reports/platform-followup-20261007/amp-service-restart.json",
+      "bytes": 10186
+    },
+    {
+      "path": "reports/platform-followup-20261007/amp-service-runtime.json",
+      "bytes": 15879
+    },
+    {
+      "path": "reports/platform-followup-20261007/amp-service.log",
+      "bytes": 7949
+    },
+    {
+      "path": "reports/platform-followup-20261007/business-regression-result.json",
+      "bytes": 191
+    },
+    {
+      "path": "reports/platform-followup-20261007/dingdang-continuation-round1.jpg",
+      "bytes": 105960
+    },
+    {
+      "path": "reports/platform-followup-20261007/dingdang-continuation-round2.jpg",
+      "bytes": 106386
+    },
+    {
+      "path": "reports/platform-followup-20261007/dingdang-continuation-round2.txt",
+      "bytes": 18028
+    },
+    {
+      "path": "reports/platform-followup-20261007/dingdang-id-map.csv",
+      "bytes": 620
+    },
+    {
+      "path": "reports/platform-followup-20261007/dingdang-response-times.json",
+      "bytes": 577
+    },
+    {
+      "path": "reports/platform-followup-20261007/discovery-alive-sync-final.json",
+      "bytes": 1073
+    },
+    {
+      "path": "reports/platform-followup-20261007/discovery-alive-sync-status.json",
+      "bytes": 1018
+    },
+    {
+      "path": "reports/platform-followup-20261007/discovery-openapi.json",
+      "bytes": 61644
+    },
+    {
+      "path": "reports/platform-followup-20261007/final-checks.json",
+      "bytes": 1321
+    },
+    {
+      "path": "reports/platform-followup-20261007/git-diff-check.log",
+      "bytes": 754
+    },
+    {
+      "path": "reports/platform-followup-20261007/package-result.json",
+      "bytes": 330
+    },
+    {
+      "path": "reports/platform-followup-20261007/README.md",
+      "bytes": 10357
+    },
+    {
+      "path": "reports/platform-followup-20261007/resource-alive-unknown.json",
+      "bytes": 4471
+    },
+    {
+      "path": "reports/platform-followup-20261007/run_stage2_tests.log",
+      "bytes": 205
+    },
+    {
+      "path": "reports/platform-followup-20261007/run_stage5_tests.log",
+      "bytes": 324
+    },
+    {
+      "path": "reports/platform-followup-20261007/server-final-state.json",
+      "bytes": 42843
+    },
+    {
+      "path": "reports/platform-followup-20261007/server-leader.log",
+      "bytes": 6173
+    },
+    {
+      "path": "reports/platform-followup-20261007/server-resource-inbox.log",
+      "bytes": 1028
+    },
+    {
+      "path": "reports/platform-followup-20261007/server-workorder-inbox.log",
+      "bytes": 1032
+    },
+    {
+      "path": "reports/platform-followup-20261007/unittest-after-metadata-fix.log",
+      "bytes": 59548
+    },
+    {
+      "path": "reports/platform-followup-20261007/unittest-final.json",
+      "bytes": 649
+    },
+    {
+      "path": "reports/platform-followup-20261007/unittest-final.log",
+      "bytes": 59548
+    },
+    {
+      "path": "reports/platform-followup-20261007/discovery-after-heartbeat/discovery-leader.json",
+      "bytes": 9541
+    },
+    {
+      "path": "reports/platform-followup-20261007/discovery-after-heartbeat/discovery-resource.json",
+      "bytes": 6380
+    },
+    {
+      "path": "reports/platform-followup-20261007/discovery-after-heartbeat/discovery-workorder.json",
+      "bytes": 6322
+    },
+    {
+      "path": "reports/platform-followup-20261007/discovery-before/discovery-leader.json",
+      "bytes": 9541
+    },
+    {
+      "path": "reports/platform-followup-20261007/discovery-before/discovery-resource.json",
+      "bytes": 6380
+    },
+    {
+      "path": "reports/platform-followup-20261007/discovery-before/discovery-workorder.json",
+      "bytes": 6322
+    },
+    {
+      "path": "reports/platform-followup-20261007/discovery-final/discovery-leader.json",
+      "bytes": 9541
+    },
+    {
+      "path": "reports/platform-followup-20261007/discovery-final/discovery-resource.json",
+      "bytes": 6380
+    },
+    {
+      "path": "reports/platform-followup-20261007/discovery-final/discovery-workorder.json",
+      "bytes": 6322
+    },
+    {
+      "path": "reports/platform-reregister-20261006/acs-validation.json",
+      "bytes": 2473
+    },
+    {
+      "path": "reports/platform-reregister-20261006/all-three-submitted.jpg",
+      "bytes": 13979
+    },
+    {
+      "path": "reports/platform-reregister-20261006/current-records-list.jpg",
+      "bytes": 32891
+    },
+    {
+      "path": "reports/platform-reregister-20261006/eab-results.json",
+      "bytes": 650
+    },
+    {
+      "path": "reports/platform-reregister-20261006/final-list-state.json",
+      "bytes": 755
+    },
+    {
+      "path": "reports/platform-reregister-20261006/final-review-status-full.jpg",
+      "bytes": 12020
+    },
+    {
+      "path": "reports/platform-reregister-20261006/final-review-status.jpg",
+      "bytes": 11484
+    },
+    {
+      "path": "reports/platform-reregister-20261006/full-unittest.log",
+      "bytes": 47397
+    },
+    {
+      "path": "reports/platform-reregister-20261006/leader-after-user-deletion.jpg",
+      "bytes": 35744
+    },
+    {
+      "path": "reports/platform-reregister-20261006/leader-after-user-deletion.json",
+      "bytes": 1954
+    },
+    {
+      "path": "reports/platform-reregister-20261006/leader-approved-acs.json",
+      "bytes": 2976
+    },
+    {
+      "path": "reports/platform-reregister-20261006/leader-approved-before-reset.json",
+      "bytes": 1954
+    },
+    {
+      "path": "reports/platform-reregister-20261006/leader-approved-detail.jpg",
+      "bytes": 36055
+    },
+    {
+      "path": "reports/platform-reregister-20261006/leader-approved-final.jpg",
+      "bytes": 12668
+    },
+    {
+      "path": "reports/platform-reregister-20261006/leader-eab-request-result.json",
+      "bytes": 312
+    },
+    {
+      "path": "reports/platform-reregister-20261006/leader-form-before-save.jpg",
+      "bytes": 41960
+    },
+    {
+      "path": "reports/platform-reregister-20261006/leader-submitted-acs.json",
+      "bytes": 2931
+    },
+    {
+      "path": "reports/platform-reregister-20261006/leader-submitted-detail.jpg",
+      "bytes": 26564
+    },
+    {
+      "path": "reports/platform-reregister-20261006/new-certificate-results.json",
+      "bytes": 2959
+    },
+    {
+      "path": "reports/platform-reregister-20261006/new-identity-tls-mtls-check.json",
+      "bytes": 1030
+    },
+    {
+      "path": "reports/platform-reregister-20261006/new-leader-discovery.json",
+      "bytes": 1021
+    },
+    {
+      "path": "reports/platform-reregister-20261006/new-leader-mq-preflight.json",
+      "bytes": 1094
+    },
+    {
+      "path": "reports/platform-reregister-20261006/new-resource-discovery.json",
+      "bytes": 1023
+    },
+    {
+      "path": "reports/platform-reregister-20261006/new-resource-mq-preflight.json",
+      "bytes": 405
+    },
+    {
+      "path": "reports/platform-reregister-20261006/old-identity-summary.json",
+      "bytes": 778
+    },
+    {
+      "path": "reports/platform-reregister-20261006/old-records-list.jpg",
+      "bytes": 39304
+    },
+    {
+      "path": "reports/platform-reregister-20261006/README.md",
+      "bytes": 8812
+    },
+    {
+      "path": "reports/platform-reregister-20261006/registration-records.json",
+      "bytes": 1792
+    },
+    {
+      "path": "reports/platform-reregister-20261006/resource-approved-acs.json",
+      "bytes": 1880
+    },
+    {
+      "path": "reports/platform-reregister-20261006/resource-approved-detail.jpg",
+      "bytes": 13696
+    },
+    {
+      "path": "reports/platform-reregister-20261006/resource-form-before-save.jpg",
+      "bytes": 42162
+    },
+    {
+      "path": "reports/platform-reregister-20261006/resource-submitted-acs.json",
+      "bytes": 1795
+    },
+    {
+      "path": "reports/platform-reregister-20261006/resource-submitted-detail.jpg",
+      "bytes": 26526
+    },
+    {
+      "path": "reports/platform-reregister-20261006/resource-submitted.jpg",
+      "bytes": 37060
+    },
+    {
+      "path": "reports/platform-reregister-20261006/retired-identity-guard.json",
+      "bytes": 391
+    },
+    {
+      "path": "reports/platform-reregister-20261006/review-package-result.json",
+      "bytes": 292
+    },
+    {
+      "path": "reports/platform-reregister-20261006/sdk-model-compatibility.json",
+      "bytes": 1961
+    },
+    {
+      "path": "reports/platform-reregister-20261006/server-retired-identities.json",
+      "bytes": 701
+    },
+    {
+      "path": "reports/platform-reregister-20261006/stage2-local-rpc.log",
+      "bytes": 205
+    },
+    {
+      "path": "reports/platform-reregister-20261006/stage5-reliability.log",
+      "bytes": 324
+    },
+    {
+      "path": "reports/platform-reregister-20261006/workorder-submitted-acs.json",
+      "bytes": 1722
+    },
+    {
+      "path": "reports/platform-reregister-20261006/workorder-submitted-detail.jpg",
+      "bytes": 26542
+    },
+    {
+      "path": "reports/platform-reregister-20261006/workorder-submitted.jpg",
+      "bytes": 40513
+    },
+    {
+      "path": "reports/platform-reregister-20261006/acs/leader.json",
+      "bytes": 3035
+    },
+    {
+      "path": "reports/platform-reregister-20261006/acs/resource_partner.json",
+      "bytes": 1862
+    },
+    {
+      "path": "reports/platform-reregister-20261006/acs/work_order_partner.json",
+      "bytes": 1789
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/discovery-all-liveness.json",
+      "bytes": 13074
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/discovery-availability-comparison.json",
+      "bytes": 3845
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/discovery-availability-error.json",
+      "bytes": 248
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/discovery-explicit-offline.json",
+      "bytes": 851
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/discovery-leader.json",
+      "bytes": 9541
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/discovery-live-api-description.md",
+      "bytes": 3434
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/discovery-live-capabilities.json",
+      "bytes": 1892
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/discovery-liveness-classification.json",
+      "bytes": 15098
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/discovery-resource.json",
+      "bytes": 6380
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/discovery-workorder.json",
+      "bytes": 110
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/group-auth-endpoint-comparison.json",
+      "bytes": 4189
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/homepage-cards.jpg",
+      "bytes": 71291
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/homepage-online-query.jpg",
+      "bytes": 75441
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/homepage-recent-discovery.json",
+      "bytes": 28920
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/homepage.html",
+      "bytes": 128718
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/official-group-resource-final.json",
+      "bytes": 7270
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/official-group-resource-final.log",
+      "bytes": 21097
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/official-group-resource-fixed.json",
+      "bytes": 4363
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/official-group-resource-fixed.log",
+      "bytes": 22532
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/official-group-resource-query.json",
+      "bytes": 979
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/official-group-resource-recheck.log",
+      "bytes": 8116
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/platform-docs.html",
+      "bytes": 25437
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/README.md",
+      "bytes": 10331
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/registry-current.jpg",
+      "bytes": 33288
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/registry-infra-help.jpg",
+      "bytes": 40298
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/review-package-result.json",
+      "bytes": 343
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/server-services-readonly.txt",
+      "bytes": 486
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/source-fetch.json",
+      "bytes": 800
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/stage2.log",
+      "bytes": 205
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/stage5.log",
+      "bytes": 324
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/unittest.log",
+      "bytes": 46095
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/workorder-approved-acs.json",
+      "bytes": 1808
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/workorder-approved.jpg",
+      "bytes": 35978
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/workorder-eab-result.json",
+      "bytes": 267
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/final-discovery/discovery-leader.json",
+      "bytes": 9541
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/final-discovery/discovery-resource.json",
+      "bytes": 6380
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/final-discovery/discovery-workorder.json",
+      "bytes": 6324
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/official-source/discovery-openapi.json",
+      "bytes": 35255
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/official-source/discovery-query.py",
+      "bytes": 69857
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/official-source/discovery-schema.py",
+      "bytes": 10689
+    },
+    {
+      "path": "reports/platform-self-audit-20261006/official-source/discovery-service.py",
+      "bytes": 24168
+    },
+    {
+      "path": "reports/platform_mq_acs/leader.json",
+      "bytes": 2583
+    },
+    {
+      "path": "reports/platform_mq_acs/mq-runtime-parameters.json",
+      "bytes": 251
+    },
+    {
+      "path": "reports/platform_mq_acs/resource_partner.json",
+      "bytes": 1877
+    },
+    {
+      "path": "reports/platform_mq_acs/work_order_partner.json",
+      "bytes": 1804
+    },
+    {
+      "path": "scripts/build_agentic_acs_draft.py",
+      "bytes": 2224
+    },
+    {
+      "path": "scripts/build_hybrid_leader_acs.py",
+      "bytes": 2405
+    },
+    {
+      "path": "scripts/build_mq_acs.py",
+      "bytes": 5106
+    },
+    {
+      "path": "scripts/build_platform_acs.py",
+      "bytes": 3206
+    },
+    {
+      "path": "scripts/export_review_package.cmd",
+      "bytes": 117
+    },
+    {
+      "path": "scripts/make_agentic_review_package.py",
+      "bytes": 4341
+    },
+    {
+      "path": "scripts/make_final_project_audit.py",
+      "bytes": 4210
+    },
+    {
+      "path": "scripts/make_hybrid_review_package.py",
+      "bytes": 3907
+    },
+    {
+      "path": "scripts/make_platform_fixes_review_package.py",
+      "bytes": 5984
+    },
+    {
+      "path": "scripts/prepare_mimii.py",
+      "bytes": 11144
+    },
+    {
+      "path": "scripts/probe_group_resource.py",
+      "bytes": 9209
+    },
+    {
+      "path": "scripts/probe_group_workflow.py",
+      "bytes": 11690
+    },
+    {
+      "path": "scripts/probe_hybrid_discovery.py",
+      "bytes": 3784
+    },
+    {
+      "path": "scripts/probe_platform_identity.py",
+      "bytes": 3424
+    },
+    {
+      "path": "scripts/reset_demo_data.cmd",
+      "bytes": 298
+    },
+    {
+      "path": "scripts/run_60_scenarios.py",
+      "bytes": 5011
+    },
+    {
+      "path": "scripts/run_all_tests.cmd",
+      "bytes": 407
+    },
+    {
+      "path": "scripts/setup_windows.ps1",
+      "bytes": 370
+    },
+    {
+      "path": "scripts/start_local_windows.cmd",
+      "bytes": 78
+    },
+    {
+      "path": "scripts/start_mq_local.ps1",
+      "bytes": 748
+    },
+    {
+      "path": "scripts/stop_local_windows.cmd",
+      "bytes": 77
+    },
+    {
+      "path": "scripts/train_audio_model.py",
+      "bytes": 4302
+    },
+    {
+      "path": "scripts/__pycache__/build_hybrid_leader_acs.cpython-314.pyc",
+      "bytes": 3283
+    },
+    {
+      "path": "scripts/__pycache__/build_mq_acs.cpython-311.pyc",
+      "bytes": 7328
+    },
+    {
+      "path": "scripts/__pycache__/build_mq_acs.cpython-314.pyc",
+      "bytes": 7441
+    },
+    {
+      "path": "scripts/__pycache__/build_platform_acs.cpython-311.pyc",
+      "bytes": 5896
+    },
+    {
+      "path": "scripts/__pycache__/build_platform_acs.cpython-314.pyc",
+      "bytes": 5658
+    },
+    {
+      "path": "scripts/__pycache__/make_hybrid_review_package.cpython-314.pyc",
+      "bytes": 6419
+    },
+    {
+      "path": "scripts/__pycache__/make_platform_fixes_review_package.cpython-314.pyc",
+      "bytes": 7434
+    },
+    {
+      "path": "scripts/__pycache__/probe_group_resource.cpython-314.pyc",
+      "bytes": 15870
+    },
+    {
+      "path": "scripts/__pycache__/probe_group_workflow.cpython-314.pyc",
+      "bytes": 20032
+    },
+    {
+      "path": "scripts/__pycache__/probe_hybrid_discovery.cpython-314.pyc",
+      "bytes": 6247
+    },
+    {
+      "path": "scripts/__pycache__/probe_platform_identity.cpython-314.pyc",
+      "bytes": 6083
+    },
+    {
+      "path": "web/app.js",
+      "bytes": 33188
+    },
+    {
+      "path": "web/index.html",
+      "bytes": 18868
+    },
+    {
+      "path": "web/styles.css",
+      "bytes": 26436
+    },
+    {
+      "path": "__pycache__/agentic_core.cpython-311.pyc",
+      "bytes": 17423
+    },
+    {
+      "path": "__pycache__/agentic_core.cpython-314.pyc",
+      "bytes": 19385
+    },
+    {
+      "path": "__pycache__/agent_core.cpython-311.pyc",
+      "bytes": 233
+    },
+    {
+      "path": "__pycache__/agent_core.cpython-314.pyc",
+      "bytes": 280
+    },
+    {
+      "path": "__pycache__/amp_heartbeat_forwarder.cpython-314.pyc",
+      "bytes": 29024
+    },
+    {
+      "path": "__pycache__/amp_runtime.cpython-314.pyc",
+      "bytes": 9801
+    },
+    {
+      "path": "__pycache__/audio_data.cpython-311.pyc",
+      "bytes": 4650
+    },
+    {
+      "path": "__pycache__/audio_data.cpython-314.pyc",
+      "bytes": 4272
+    },
+    {
+      "path": "__pycache__/audio_detector.cpython-311.pyc",
+      "bytes": 14325
+    },
+    {
+      "path": "__pycache__/audio_detector.cpython-314.pyc",
+      "bytes": 15085
+    },
+    {
+      "path": "__pycache__/audio_partner_v1.cpython-314.pyc",
+      "bytes": 4118
+    },
+    {
+      "path": "__pycache__/audio_service.cpython-311.pyc",
+      "bytes": 11048
+    },
+    {
+      "path": "__pycache__/audio_service.cpython-314.pyc",
+      "bytes": 11163
+    },
+    {
+      "path": "__pycache__/business.cpython-311.pyc",
+      "bytes": 3714
+    },
+    {
+      "path": "__pycache__/business.cpython-314.pyc",
+      "bytes": 3544
+    },
+    {
+      "path": "__pycache__/leader.cpython-311.pyc",
+      "bytes": 10867
+    },
+    {
+      "path": "__pycache__/leader.cpython-314.pyc",
+      "bytes": 10773
+    },
+    {
+      "path": "__pycache__/leader_external_flow.cpython-314.pyc",
+      "bytes": 24391
+    },
+    {
+      "path": "__pycache__/leader_inbox_runtime.cpython-311.pyc",
+      "bytes": 4761
+    },
+    {
+      "path": "__pycache__/leader_inbox_runtime.cpython-314.pyc",
+      "bytes": 8454
+    },
+    {
+      "path": "__pycache__/leader_rpc_runtime.cpython-314.pyc",
+      "bytes": 38734
+    },
+    {
+      "path": "__pycache__/llm_provider.cpython-314.pyc",
+      "bytes": 6227
+    },
+    {
+      "path": "__pycache__/local_log.cpython-311.pyc",
+      "bytes": 6010
+    },
+    {
+      "path": "__pycache__/local_log.cpython-314.pyc",
+      "bytes": 6157
+    },
+    {
+      "path": "__pycache__/mq_group_transport.cpython-311.pyc",
+      "bytes": 22538
+    },
+    {
+      "path": "__pycache__/mq_group_transport.cpython-314.pyc",
+      "bytes": 24296
+    },
+    {
+      "path": "__pycache__/partner_resolver.cpython-311.pyc",
+      "bytes": 13488
+    },
+    {
+      "path": "__pycache__/partner_resolver.cpython-314.pyc",
+      "bytes": 15570
+    },
+    {
+      "path": "__pycache__/platform_runtime.cpython-311.pyc",
+      "bytes": 5486
+    },
+    {
+      "path": "__pycache__/platform_runtime.cpython-314.pyc",
+      "bytes": 5896
+    },
+    {
+      "path": "__pycache__/platform_runtime_config.cpython-314.pyc",
+      "bytes": 11506
+    },
+    {
+      "path": "__pycache__/resource_agent.cpython-314.pyc",
+      "bytes": 4693
+    },
+    {
+      "path": "__pycache__/resource_partner_v1.cpython-311.pyc",
+      "bytes": 3771
+    },
+    {
+      "path": "__pycache__/resource_partner_v1.cpython-314.pyc",
+      "bytes": 3802
+    },
+    {
+      "path": "__pycache__/run_leader_inbox.cpython-314.pyc",
+      "bytes": 6433
+    },
+    {
+      "path": "__pycache__/run_leader_rpc.cpython-314.pyc",
+      "bytes": 12784
+    },
+    {
+      "path": "__pycache__/run_mq_inbox_integration.cpython-311.pyc",
+      "bytes": 5488
+    },
+    {
+      "path": "__pycache__/run_mq_inbox_integration.cpython-314.pyc",
+      "bytes": 5399
+    },
+    {
+      "path": "__pycache__/run_partner_inbox.cpython-314.pyc",
+      "bytes": 7533
+    },
+    {
+      "path": "__pycache__/run_stage2_tests.cpython-314.pyc",
+      "bytes": 12888
+    },
+    {
+      "path": "__pycache__/run_stage5_tests.cpython-314.pyc",
+      "bytes": 13144
+    },
+    {
+      "path": "__pycache__/stage2_aip.cpython-311.pyc",
+      "bytes": 11845
+    },
+    {
+      "path": "__pycache__/stage2_aip.cpython-314.pyc",
+      "bytes": 12297
+    },
+    {
+      "path": "__pycache__/stage2_business_actions.cpython-311.pyc",
+      "bytes": 3079
+    },
+    {
+      "path": "__pycache__/stage2_business_actions.cpython-314.pyc",
+      "bytes": 2874
+    },
+    {
+      "path": "__pycache__/stage2_db.cpython-311.pyc",
+      "bytes": 14177
+    },
+    {
+      "path": "__pycache__/stage2_db.cpython-314.pyc",
+      "bytes": 16054
+    },
+    {
+      "path": "__pycache__/stage2_domain.cpython-311.pyc",
+      "bytes": 52244
+    },
+    {
+      "path": "__pycache__/stage2_domain.cpython-314.pyc",
+      "bytes": 49321
+    },
+    {
+      "path": "__pycache__/stage2_partner_common.cpython-314.pyc",
+      "bytes": 5147
+    },
+    {
+      "path": "__pycache__/stage3_leader_aip.cpython-311.pyc",
+      "bytes": 5782
+    },
+    {
+      "path": "__pycache__/stage3_leader_aip.cpython-314.pyc",
+      "bytes": 6345
+    },
+    {
+      "path": "__pycache__/state_mapping.cpython-311.pyc",
+      "bytes": 1673
+    },
+    {
+      "path": "__pycache__/state_mapping.cpython-314.pyc",
+      "bytes": 1809
+    },
+    {
+      "path": "__pycache__/test_agentic_core.cpython-311.pyc",
+      "bytes": 4828
+    },
+    {
+      "path": "__pycache__/test_agentic_core.cpython-314.pyc",
+      "bytes": 4403
+    },
+    {
+      "path": "__pycache__/test_amp_heartbeat_forwarder.cpython-314.pyc",
+      "bytes": 43975
+    },
+    {
+      "path": "__pycache__/test_amp_runtime.cpython-314.pyc",
+      "bytes": 47303
+    },
+    {
+      "path": "__pycache__/test_audio_data.cpython-311.pyc",
+      "bytes": 4466
+    },
+    {
+      "path": "__pycache__/test_audio_data.cpython-314.pyc",
+      "bytes": 3749
+    },
+    {
+      "path": "__pycache__/test_audio_detector.cpython-311.pyc",
+      "bytes": 3809
+    },
+    {
+      "path": "__pycache__/test_audio_detector.cpython-314.pyc",
+      "bytes": 3670
+    },
+    {
+      "path": "__pycache__/test_audio_flow.cpython-311.pyc",
+      "bytes": 4674
+    },
+    {
+      "path": "__pycache__/test_audio_flow.cpython-314.pyc",
+      "bytes": 4125
+    },
+    {
+      "path": "__pycache__/test_audio_partner.cpython-311.pyc",
+      "bytes": 6949
+    },
+    {
+      "path": "__pycache__/test_audio_partner.cpython-314.pyc",
+      "bytes": 6753
+    },
+    {
+      "path": "__pycache__/test_audio_pluggable.cpython-311.pyc",
+      "bytes": 6379
+    },
+    {
+      "path": "__pycache__/test_audio_pluggable.cpython-314.pyc",
+      "bytes": 5948
+    },
+    {
+      "path": "__pycache__/test_business.cpython-311.pyc",
+      "bytes": 5399
+    },
+    {
+      "path": "__pycache__/test_business.cpython-314.pyc",
+      "bytes": 4531
+    },
+    {
+      "path": "__pycache__/test_business_actions.cpython-311.pyc",
+      "bytes": 4040
+    },
+    {
+      "path": "__pycache__/test_business_actions.cpython-314.pyc",
+      "bytes": 3811
+    },
+    {
+      "path": "__pycache__/test_final_audit_features.cpython-311.pyc",
+      "bytes": 11602
+    },
+    {
+      "path": "__pycache__/test_final_audit_features.cpython-314.pyc",
+      "bytes": 10212
+    },
+    {
+      "path": "__pycache__/test_leader_external_flow.cpython-314.pyc",
+      "bytes": 5608
+    },
+    {
+      "path": "__pycache__/test_leader_inbox_runtime.cpython-311.pyc",
+      "bytes": 1970
+    },
+    {
+      "path": "__pycache__/test_leader_inbox_runtime.cpython-314.pyc",
+      "bytes": 5127
+    },
+    {
+      "path": "__pycache__/test_leader_rpc_runtime.cpython-314.pyc",
+      "bytes": 98907
+    },
+    {
+      "path": "__pycache__/test_mq_acs.cpython-311.pyc",
+      "bytes": 6134
+    },
+    {
+      "path": "__pycache__/test_mq_acs.cpython-314.pyc",
+      "bytes": 5545
+    },
+    {
+      "path": "__pycache__/test_mq_group_transport.cpython-311.pyc",
+      "bytes": 10224
+    },
+    {
+      "path": "__pycache__/test_mq_group_transport.cpython-314.pyc",
+      "bytes": 10109
+    },
+    {
+      "path": "__pycache__/test_mq_inbox_integration.cpython-311.pyc",
+      "bytes": 1791
+    },
+    {
+      "path": "__pycache__/test_mq_inbox_integration.cpython-314.pyc",
+      "bytes": 1547
+    },
+    {
+      "path": "__pycache__/test_partner_inbox_entrypoint.cpython-314.pyc",
+      "bytes": 3233
+    },
+    {
+      "path": "__pycache__/test_partner_resolver.cpython-311.pyc",
+      "bytes": 3213
+    },
+    {
+      "path": "__pycache__/test_partner_resolver.cpython-314.pyc",
+      "bytes": 9548
+    },
+    {
+      "path": "__pycache__/test_platform_diagnostics.cpython-314.pyc",
+      "bytes": 4410
+    },
+    {
+      "path": "__pycache__/test_platform_runtime.cpython-311.pyc",
+      "bytes": 5206
+    },
+    {
+      "path": "__pycache__/test_platform_runtime.cpython-314.pyc",
+      "bytes": 4509
+    },
+    {
+      "path": "__pycache__/test_platform_runtime_config.cpython-314.pyc",
+      "bytes": 12349
+    },
+    {
+      "path": "__pycache__/test_runtime_config.cpython-311.pyc",
+      "bytes": 4354
+    },
+    {
+      "path": "__pycache__/test_runtime_config.cpython-314.pyc",
+      "bytes": 4241
+    },
+    {
+      "path": "__pycache__/test_stage2_api.cpython-311.pyc",
+      "bytes": 14055
+    },
+    {
+      "path": "__pycache__/test_stage2_api.cpython-314.pyc",
+      "bytes": 13117
+    },
+    {
+      "path": "__pycache__/test_stage2_domain.cpython-311.pyc",
+      "bytes": 16285
+    },
+    {
+      "path": "__pycache__/test_stage2_domain.cpython-314.pyc",
+      "bytes": 14247
+    },
+    {
+      "path": "__pycache__/test_stage2_partners.cpython-311.pyc",
+      "bytes": 7332
+    },
+    {
+      "path": "__pycache__/test_stage2_partners.cpython-314.pyc",
+      "bytes": 7134
+    },
+    {
+      "path": "__pycache__/test_stage3_leader_aip.cpython-311.pyc",
+      "bytes": 5889
+    },
+    {
+      "path": "__pycache__/test_stage3_leader_aip.cpython-314.pyc",
+      "bytes": 5694
+    },
+    {
+      "path": "__pycache__/test_stage5_resilience.cpython-311.pyc",
+      "bytes": 14033
+    },
+    {
+      "path": "__pycache__/test_stage5_resilience.cpython-314.pyc",
+      "bytes": 15857
+    },
+    {
+      "path": "__pycache__/test_transport_mode.cpython-311.pyc",
+      "bytes": 7132
+    },
+    {
+      "path": "__pycache__/test_transport_mode.cpython-314.pyc",
+      "bytes": 6599
+    },
+    {
+      "path": "__pycache__/transport_mode.cpython-311.pyc",
+      "bytes": 14383
+    },
+    {
+      "path": "__pycache__/transport_mode.cpython-314.pyc",
+      "bytes": 13911
+    },
+    {
+      "path": "__pycache__/web_app.cpython-311.pyc",
+      "bytes": 30035
+    },
+    {
+      "path": "__pycache__/web_app.cpython-314.pyc",
+      "bytes": 31425
+    },
+    {
+      "path": "__pycache__/work_order_partner_v1.cpython-311.pyc",
+      "bytes": 3674
+    },
+    {
+      "path": "__pycache__/work_order_partner_v1.cpython-314.pyc",
+      "bytes": 3726
+    }
+  ],
+  "totals": {
+    "(root files)": {
+      "files": 87,
+      "bytes": 623206
+    },
+    "archive": {
+      "files": 53,
+      "bytes": 945600
+    },
+    "data": {
+      "files": 166,
+      "bytes": 94414585
+    },
+    "deploy": {
+      "files": 33,
+      "bytes": 100220
+    },
+    "docs": {
+      "files": 22,
+      "bytes": 35661
+    },
+    "logs": {
+      "files": 111,
+      "bytes": 23190768
+    },
+    "models": {
+      "files": 1,
+      "bytes": 3432
+    },
+    "platform": {
+      "files": 1,
+      "bytes": 924
+    },
+    "reports": {
+      "files": 315,
+      "bytes": 8401546
+    },
+    "scripts": {
+      "files": 33,
+      "bytes": 173733
+    },
+    "web": {
+      "files": 3,
+      "bytes": 78492
+    },
+    "__pycache__": {
+      "files": 111,
+      "bytes": 1234980
+    }
+  }
+}

@@ -1,0 +1,39 @@
+[Unit]
+Description=Gongwei fresh SDK heartbeat forwarder (public metadata only)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# DynamicUser source logs are private. This isolated reader needs root access.
+User=root
+WorkingDirectory=/opt/gongwei/tools/amp-diagnostics
+ExecStart=/opt/gongwei/tools/amp-diagnostics/venv/bin/python -B /opt/gongwei/tools/amp-diagnostics/amp_heartbeat_forwarder.py --config /etc/gongwei/amp-heartbeat.json --public-heartbeat-plaintext
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=15
+Environment=PYTHONUNBUFFERED=1
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CapabilityBoundingSet=CAP_DAC_READ_SEARCH
+InaccessiblePaths=-/opt/gongwei/secrets -/opt/gongwei/shared/secrets -/run/credentials
+# Hide every other /var/log entry; expose just the SDK heartbeat directories.
+# Existing DynamicUser LogsDirectory symlinks resolve to /var/log/private.
+TemporaryFileSystem=/var/log:ro
+BindReadOnlyPaths=/var/log/private/gongwei-leader/amp:/var/log/gongwei-leader/amp
+BindReadOnlyPaths=/var/log/private/gongwei-resource-inbox/amp:/var/log/gongwei-resource-inbox/amp
+BindReadOnlyPaths=/var/log/private/gongwei-workorder-inbox/amp:/var/log/gongwei-workorder-inbox/amp
+UMask=0077
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

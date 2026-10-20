@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2026-10-09T13:26:13.674516Z",
+    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+    "method": "start",
+    "caller_aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+    "callee_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+    "trace_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "span_id": "d76ddab58f9bacc0",
+    "parent_span_id": "bbbbbbbbbbbbbbbb",
+    "correlation_id": "traceprobe-423d3d9dc058-task",
+    "status_code": 200
+  },
+  {
+    "timestamp": "2026-10-09T13:26:14.052190Z",
+    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+    "method": "cancel",
+    "caller_aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+    "callee_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+    "trace_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "span_id": "66497cbbb0c11cf4",
+    "parent_span_id": "bbbbbbbbbbbbbbbb",
+    "correlation_id": "traceprobe-423d3d9dc058-task",
+    "status_code": 200
+  }
+]

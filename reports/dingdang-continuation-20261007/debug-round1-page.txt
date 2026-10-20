@@ -1,0 +1,67 @@
+Browser tab: 14, Title: "梧桐智能体互联平台", URL: "https://wt.ioa.pub/".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~							410 button 发送, ID: developerSendBtn
+~								417 text 状态：awaiting-input
++							418 text {
+  "content": "智能体正在处理任务",
+  "agent_result": {
+    "state": "accepted",
+    "data_items": [],
+    "products": []
+  },
+  "task_id": "5caf3f09-19c1-4573-be2a-0a283821c438",
+  "metrics": {
+    "execution_time": 0,
+    "poll_count": 0,
+    "elapsed_time": 1.3266357313841581,
+    "transport": "http_jsonrpc"
+  },
+  "status": "accepted",
+  "poll_count": 0,
+  "elapsed_time": 1.3266357313841581,
+  "agent_name": "工维联核心业务 Leader",
+  "debug_session_id": "e152de31161e40ee9841a8d02a8a210e"
+}
+
+{
+  "content": "请补充：开始时间、预计时长\n{\"sessionId\": \"debug_4808e66359da4b3380540679941a4cbf\", \"taskId\": \"5caf3f09-19c1-4573-be2a-0a283821c438\", \"messageId\": \"cmd-0260f51c-038b-4171-a007-20ebea73751b\", \"missingFields\": [\"start_time\", \"duration_minutes\"], \"question\": \"请补充：开始时间、预计时长\", \"parserMode\": \"deterministic_fallback\", \"nextCommand\": \"continue\", \"continuation\": {\"sessionId\": \"debug_4808e66359da4b3380540679941a4cbf\", \"taskId\": \"5caf3f09-19c1-4573-be2a-0a283821c438\", \"instruction\": \"收集用户补充后，对此任务发送 continue；不要取消后重新 start。\"}}",
+  "agent_result": {
+    "state": "awaiting-input",
+    "data_items": [
+      {
+        "type": "text",
+        "text": "请补充：开始时间、预计时长",
+        "data": null
+      },
+      {
+        "type": "text",
+        "text": "{\"sessionId\": \"debug_4808e66359da4b3380540679941a4cbf\", \"taskId\": \"5caf3f09-19c1-4573-be2a-0a283821c438\", \"messageId\": \"cmd-0260f51c-038b-4171-a007-20ebea73751b\", \"missingFields\": [\"start_time\", \"duration_minutes\"], \"question\": \"请补充：开始时间、预计时长\", \"parserMode\": \"deterministic_fallback\", \"nextCommand\": \"continue\", \"continuation\": {\"sessionId\": \"debug_4808e66359da4b3380540679941a4cbf\", \"taskId\": \"5caf3f09-19c1-4573-be2a-0a283821c438\", \"instruction\": \"收集用户补充后，对此任务发送 continue；不要取消后重新 start。\"}}",
+        "data": null
+      }
+    ],
+    "products": [
+      {
+        "id": "leader-product-5caf3f09-19c1-4573-be2a-0a283821c438",
+        "name": "gongwei-leader-result",
+        "dataItems": [
+          {
+            "type": "text",
+            "text": "{\"sessionId\": \"debug_4808e66359da4b3380540679941a4cbf\", \"taskId\": \"5caf3f09-19c1-4573-be2a-0a283821c438\", \"messageId\": \"cmd-0260f51c-038b-4171-a007-20ebea73751b\", \"missingFields\": [\"start_time\", \"duration_minutes\"], \"question\": \"请补充：开始时间、预计时长\", \"parserMode\": \"deterministic_fallback\", \"nextCommand\": \"continue\", \"continuation\": {\"sessionId\": \"debug_4808e66359da4b3380540679941a4cbf\", \"taskId\": \"5caf3f09-19c1-4573-be2a-0a283821c438\", \"instruction\": \"收集用户补充后，对此任务发送 continue；不要取消后重新 start。\"}}"
+          }
+        ]
+      }
+    ]
+  },
+  "task_id": "5caf3f09-19c1-4573-be2a-0a283821c438",
+  "metrics": {
+    "transport": "http_jsonrpc",
+    "poll_count": 1,
+    "elapsed_time": 4.162052613683045
+  },
+  "status": "awaiting-input",
+  "poll_count": 1,
+  "elapsed_time": 4.162052613683045,
+  "agent_name": "工维联核心业务 Leader",
+  "debug_session_id": "e152de31161e40ee9841a8d02a8a210e"
+}
+The focused UI element is 143 AXWebArea 叮当, URL: wt.ioa.pub/dingdang/

@@ -1,0 +1,75 @@
+- link "跳到主要内容":
+  - /url: "#main-content"
+- complementary:
+  - link "返回工维联协作页":
+    - /url: "#/home"
+    - generic: 工
+    - strong: 工维联
+  - navigation "主导航":
+    - button "主协作":
+      - generic: 主协作
+    - button "方案确认" [active]:
+      - generic: 方案确认
+    - button "工单中心":
+      - generic: 工单中心
+    - button "资源与审计":
+      - generic: 资源与审计
+  - generic: 模拟业务数据
+- banner:
+  - text: 工维联
+  - generic: /
+  - strong: 方案确认
+  - status:
+    - generic: 业务服务可用
+- main:
+  - status: 方案已生成。确认前不会预留资源或创建工单。
+  - region "检查方案":
+    - heading "检查方案" [level=1]
+    - generic: 待确认
+    - button "← 返回对话"
+    - region "检查安排":
+      - heading "检查安排" [level=2]
+      - generic: 循环水泵 002
+      - paragraph: 水泵002运行异常，明天下午三点开始检查，预计一小时，需要泵体检查技能。
+      - strong: 2026-10-09 15:00–16:00
+      - generic: 预计 60 分钟
+      - heading "检查安排" [level=3]
+      - term: 检查技能
+      - definition: 泵体检查
+      - term: 检查人员
+      - definition: 模拟人员丙
+      - heading "工具与配件" [level=3]
+      - table:
+        - rowgroup:
+          - row "物品名称 本次用量":
+            - columnheader "物品名称"
+            - columnheader "本次用量"
+        - rowgroup:
+          - row "机械密封圈 1 件":
+            - cell "机械密封圈"
+            - cell "1 件"
+          - row "便携检查工具包 1 套":
+            - cell "便携检查工具包"
+            - cell "1 套"
+      - paragraph: 资源查询已完成，尚未预留。
+      - generic "查看检查对话"
+    - complementary:
+      - heading "执行前确认" [level=2]
+      - generic: 设备
+      - strong: pump-002
+      - generic: 计划时间
+      - strong: 2026-10-09 15:00–16:00
+      - generic: 资源状态
+      - strong: 已查询，待确认
+      - generic: 下一步
+      - strong: 确认并创建工单
+      - generic: 待确认
+      - paragraph: 确认后预留人员和物品，并创建检查工单。
+      - button "确认并创建工单"
+      - button "修改安排"
+      - button "取消安排"
+      - button "查看协作记录 →"
+  - generic "技术详情"
+- contentinfo:
+  - generic: 工维联 · 设备维护协作台
+  - generic: 模拟业务数据 · 平台完整验收待完成

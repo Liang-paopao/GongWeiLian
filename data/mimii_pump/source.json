@@ -1,0 +1,24 @@
+{
+  "doi": "10.5281/zenodo.3384388",
+  "record_url": "https://zenodo.org/records/3384388",
+  "license": "CC BY-SA 4.0",
+  "version": "public 1.0",
+  "retrieved_at": "2026-10-02T19:24:46.645414+00:00",
+  "archives": [
+    {
+      "key": "0_dB_pump.zip",
+      "size": 7869431302,
+      "checksum": "md5:488748295c3f60b25de07b58fe75b049",
+      "url": "https://zenodo.org/api/records/3384388/files/0_dB_pump.zip/content"
+    }
+  ],
+  "selection": {
+    "per_label_per_group": 3,
+    "archives": [
+      "0_dB_pump.zip"
+    ],
+    "mode": "offline_cached_rebuild",
+    "cached_valid_wav_count": 22,
+    "note": "Labels are manifest ground truth metadata only; detector input excludes member names and labels. The fixed local subset was rebuilt from validated cached WAV members after a resumable range-download interruption; invalid partial files were excluded."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "aic": "",
+  "active": true,
+  "lastModifiedTime": "2026-10-03T03:00:00Z",
+  "protocolVersion": "02.02",
+  "name": "工维联核心业务 Leader",
+  "description": "负责接收文字或结构化设备检查请求（设备编号、异常描述、期望时间、紧急程度、所需技能和工具），在缺少必要字段时返回 awaiting_input；通过资源与工单 Partner 协调检查方案和工单。声音上传是可选辅助，声音结果只提供“未发现明显异常”或“疑似异常”，不会直接推断具体零件损坏。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。",
+  "version": "1.0.0",
+  "provider": {
+    "countryCode": "CN",
+    "organization": "工维联项目组",
+    "department": "设备运维系统",
+    "name": "LiangPaoPao"
+  },
+  "securitySchemes": {
+    "mtls": {
+      "type": "mutualTLS"
+    }
+  },
+  "endPoints": [
+    {
+      "url": "amqps://wt.ioa.pub:5671/acps?inbox=inbox_{AIC}",
+      "transport": "AMQP",
+      "security": [
+        {
+          "mtls": []
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "notification": false,
+    "messageQueue": [
+      "rabbitmq:>=4.2"
+    ]
+  },
+  "defaultInputModes": [
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "gongwei.leader.accept-text-request",
+      "name": "接收文字与结构化检查请求",
+      "description": "接收设备编号、异常描述、期望时间、紧急程度、所需技能和工具；缺失必要字段时返回 awaiting_input。",
+      "tags": [
+        "inspection",
+        "text",
+        "input"
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "gongwei.leader.create-request",
+      "name": "创建设备检查请求",
+      "description": "校验请求并创建检查任务。",
+      "tags": [
+        "inspection",
+        "request"
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "gongwei.leader.propose",
+      "name": "生成检查方案",
+      "description": "调用资源 Partner 查询可用性并生成方案建议。",
+      "tags": [
+        "inspection",
+        "plan"
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "gongwei.leader.timeline",
+      "name": "查询检查过程",
+      "description": "返回请求、事件和工单视图。",
+      "tags": [
+        "inspection",
+        "timeline"
+      ],
+      "version": "1.0.0"
+    }
+  ],
+  "visibility": "public"
+}

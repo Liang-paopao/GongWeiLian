@@ -1,0 +1,118 @@
+{
+  "scope": "official MQ diagnostic against running Partners; not DingDang",
+  "sessionId": "mq-rejoin-036300ce924a428dbefbd310d57c6914",
+  "rounds": [
+    {
+      "round": 1,
+      "duration_ms": 17773.18,
+      "result": {
+        "simulated": true,
+        "ok": true,
+        "partner": "resource",
+        "action": "query_resources",
+        "result": {
+          "simulated": true,
+          "request_id": "req-6d5215b6-a268-4bb2-81bb-c6b512794013",
+          "workers": [
+            {
+              "id": "worker-01",
+              "name": "模拟人员甲",
+              "role": "机械维护"
+            },
+            {
+              "id": "worker-03",
+              "name": "模拟人员丙",
+              "role": "综合维护"
+            }
+          ],
+          "inventory": [
+            {
+              "id": "part-seal-ring",
+              "name": "机械密封圈",
+              "category": "part",
+              "available_qty": 4,
+              "unit": "件"
+            },
+            {
+              "id": "tool-inspection-kit",
+              "name": "便携检查工具包",
+              "category": "tool",
+              "available_qty": 1,
+              "unit": "套"
+            }
+          ],
+          "required_skill": "pump_inspection",
+          "required_inventory": [
+            "tool-inspection-kit",
+            "part-seal-ring"
+          ],
+          "available": true,
+          "reasons": [],
+          "start_at": "2026-10-08T15:00:00",
+          "end_at": "2026-10-08T16:00:00"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "duration_ms": 29313.74,
+      "result": {
+        "simulated": true,
+        "ok": true,
+        "partner": "resource",
+        "action": "query_resources",
+        "result": {
+          "simulated": true,
+          "request_id": "req-6d5215b6-a268-4bb2-81bb-c6b512794013",
+          "workers": [
+            {
+              "id": "worker-01",
+              "name": "模拟人员甲",
+              "role": "机械维护"
+            },
+            {
+              "id": "worker-03",
+              "name": "模拟人员丙",
+              "role": "综合维护"
+            }
+          ],
+          "inventory": [
+            {
+              "id": "part-seal-ring",
+              "name": "机械密封圈",
+              "category": "part",
+              "available_qty": 4,
+              "unit": "件"
+            },
+            {
+              "id": "tool-inspection-kit",
+              "name": "便携检查工具包",
+              "category": "tool",
+              "available_qty": 1,
+              "unit": "套"
+            }
+          ],
+          "required_skill": "pump_inspection",
+          "required_inventory": [
+            "tool-inspection-kit",
+            "part-seal-ring"
+          ],
+          "available": true,
+          "reasons": [],
+          "start_at": "2026-10-08T15:00:00",
+          "end_at": "2026-10-08T16:00:00"
+        }
+      }
+    }
+  ],
+  "platform_verified": false,
+  "before": {
+    "orders": 1,
+    "active_reservations": 3
+  },
+  "after": {
+    "orders": 1,
+    "active_reservations": 3
+  },
+  "pass_result": true
+}

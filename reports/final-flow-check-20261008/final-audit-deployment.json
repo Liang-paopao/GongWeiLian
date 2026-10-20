@@ -1,0 +1,111 @@
+{
+  "backup": "/opt/gongwei/backups/20261008-234234-final-audit",
+  "before": {
+    "web": {
+      "MainPID": "3475537",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource": {
+      "MainPID": "3475510",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder": {
+      "MainPID": "3475518",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "audio": {
+      "MainPID": "3475527",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "leader": {
+      "MainPID": "3487321",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource-inbox": {
+      "MainPID": "3492146",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder-inbox": {
+      "MainPID": "3492178",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "amp-heartbeat": {
+      "MainPID": "2367812",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    }
+  },
+  "platform_verified": false,
+  "changed_files": [
+    {
+      "path": "/opt/gongwei/releases/20261007-120338-maintenance/plan_continuation.py",
+      "sha256": "ed084c9a29ee0a196ba77f9a92618e37730244fab276b741da462cda4b742ad5"
+    },
+    {
+      "path": "/opt/gongwei/releases/20261007-120338-maintenance/leader_external_flow.py",
+      "sha256": "cb63ad1cd8bb728ef2b7f553cb7725e1fed9dacbc00e96c158bb69fd85b65f8c"
+    },
+    {
+      "path": "/opt/gongwei/releases/20261006-211426-maintenance/web/app.js",
+      "sha256": "0a4818040160db2e04bdd0219667d99702646154e3020c95b8cb604d778f934e"
+    },
+    {
+      "path": "/opt/gongwei/releases/20261006-211426-maintenance/web/index.html",
+      "sha256": "393c77a6ea5b8b23503335e5e3dc4b2cb8a7b8c03bd2276084e115e887c88725"
+    }
+  ],
+  "tests": {
+    "count": 27,
+    "pass": true
+  },
+  "after": {
+    "web": {
+      "MainPID": "3475537",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource": {
+      "MainPID": "3475510",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder": {
+      "MainPID": "3475518",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "audio": {
+      "MainPID": "3475527",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "leader": {
+      "MainPID": "3513841",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource-inbox": {
+      "MainPID": "3492146",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder-inbox": {
+      "MainPID": "3492178",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "amp-heartbeat": {
+      "MainPID": "2367812",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    }
+  },
+  "pass_result": true
+}

@@ -1,0 +1,17 @@
+{
+  "mode": "local_rpc_isolated_test",
+  "url": "http://127.0.0.1:62428/",
+  "settings": {
+    "GONGWEI_TRANSPORT_MODE": "local_rpc",
+    "GONGWEI_RUNTIME_MODE": "local",
+    "GONGWEI_STAGE2_DB": "C:\\WINDOWS\\TEMP\\gongwei-ui-audit-25zi0232\\qa.db",
+    "GONGWEI_LOG_DIR": "C:\\WINDOWS\\TEMP\\gongwei-ui-audit-25zi0232\\logs",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "GONGWEI_STAGE2_RESOURCE_PORT": "62425",
+    "GONGWEI_STAGE2_WORKORDER_PORT": "62426",
+    "GONGWEI_STAGE2_AUDIO_PORT": "62427",
+    "GONGWEI_STAGE2_LEADER_PORT": "62428"
+  },
+  "exit_code": 0,
+  "output": "Healthy resource_partner_v1:app on 62425.\nHealthy work_order_partner_v1:app on 62426.\nHealthy audio_partner_v1:app on 62427.\nHealthy web_app:app on 62428.\nLocal services are healthy. Open http://127.0.0.1:62428/\n"
+}

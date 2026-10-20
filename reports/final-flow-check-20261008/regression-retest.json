@@ -1,0 +1,11 @@
+{
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-m",
+    "unittest",
+    "discover"
+  ],
+  "exit_code": 0,
+  "seconds": 58.34403,
+  "log": "check-3-after-fix.log"
+}

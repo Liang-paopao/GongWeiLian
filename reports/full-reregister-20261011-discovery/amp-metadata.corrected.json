@@ -1,0 +1,17 @@
+{
+  "broker": "wt.ioa.pub:19092",
+  "sources": [
+    {
+      "role": "leader",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9"
+    },
+    {
+      "role": "resource-inbox",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA"
+    },
+    {
+      "role": "workorder-inbox",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF"
+    }
+  ]
+}

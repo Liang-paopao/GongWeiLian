@@ -1,0 +1,220 @@
+{
+  "checked_at": "2026-10-07T11:20:01.778953+00:00",
+  "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+  "query": {
+    "type": "filtered",
+    "limit": 10,
+    "filter": {
+      "conditions": [
+        {
+          "field": "aic",
+          "op": "eq",
+          "value": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45"
+        }
+      ],
+      "logic": "and"
+    }
+  },
+  "dingdang_verified": false,
+  "http_status": 200,
+  "response": {
+    "result": {
+      "acsMap": {
+        "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45": {
+          "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "name": "工维联核心业务 Leader",
+          "active": true,
+          "skills": [
+            {
+              "id": "gongwei.leader.handle-maintenance-request",
+              "name": "理解设备异常请求",
+              "tags": [
+                "leader",
+                "agentic"
+              ],
+              "version": "1.1.0",
+              "description": "接收中文自然语言和结构化检查请求，缺失字段时询问用户。"
+            },
+            {
+              "id": "gongwei.leader.plan-collaboration",
+              "name": "规划检查协作",
+              "tags": [
+                "leader",
+                "agentic"
+              ],
+              "version": "1.1.0",
+              "description": "生成资源查询、确认和工单协作计划。"
+            },
+            {
+              "id": "gongwei.leader.discover-and-delegate",
+              "name": "发现并委派 Partner",
+              "tags": [
+                "leader",
+                "agentic"
+              ],
+              "version": "1.1.0",
+              "description": "按能力、安全和在线状态发现并选择 Partner。"
+            },
+            {
+              "id": "gongwei.leader.resume-multiturn-task",
+              "name": "恢复多轮任务",
+              "tags": [
+                "leader",
+                "agentic"
+              ],
+              "version": "1.1.0",
+              "description": "使用同一 session、task 和 message 关联补充信息。"
+            },
+            {
+              "id": "gongwei.leader.track-and-summarize",
+              "name": "跟踪并汇总结果",
+              "tags": [
+                "leader",
+                "agentic"
+              ],
+              "version": "1.1.0",
+              "description": "返回协作轨迹、资源证据和工单结果。"
+            }
+          ],
+          "version": "1.1.0",
+          "provider": {
+            "name": "LiangPaoPao",
+            "department": "设备运维系统",
+            "countryCode": "CN",
+            "organization": "工维联项目组"
+          },
+          "endPoints": [
+            {
+              "url": "https://leader.yanyi.online/rpc",
+              "security": [
+                {
+                  "mtls": []
+                }
+              ],
+              "transport": "JSONRPC"
+            }
+          ],
+          "certificate": {
+            "altNames": {
+              "dns": [
+                "leader.yanyi.online"
+              ]
+            }
+          },
+          "description": "工维联设备检查协调智能体。接受中文自然语言或 JSON 设备异常请求，多轮补充设备、日期、开始时间、时长与技能；在线发现并通过正式 MQ 调用资源协调 Partner，查询人员、时间、工具和库存后返回待确认方案。仅用户明确确认后预留资源并调用工单处理 Partner，创建唯一检查工单并返回编号、人员、物品、时间及状态。支持任务查询、补充、确认、取消、重复确认保护和服务重启恢复。声音检测为可选辅助，不推断具体零件损坏。",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "protocolVersion": "02.02",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS"
+            }
+          },
+          "lastModifiedTime": "2026-10-06T22:34:01.315584+08:00",
+          "defaultInputModes": [
+            "text/plain",
+            "application/json"
+          ],
+          "defaultOutputModes": [
+            "text/plain",
+            "application/json"
+          ]
+        }
+      },
+      "agents": [
+        {
+          "group": "filtered",
+          "agentSkills": [
+            {
+              "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+              "skillId": "gongwei.leader.discover-and-delegate",
+              "ranking": 1,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+              "skillId": "gongwei.leader.handle-maintenance-request",
+              "ranking": 2,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+              "skillId": "gongwei.leader.plan-collaboration",
+              "ranking": 3,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+              "skillId": "gongwei.leader.resume-multiturn-task",
+              "ranking": 4,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+              "skillId": "gongwei.leader.track-and-summarize",
+              "ranking": 5,
+              "memo": "Filtered query result"
+            }
+          ]
+        }
+      ],
+      "routes": [
+        {
+          "forwardChain": [
+            "AIC-DS-A"
+          ],
+          "agentGroups": [
+            {
+              "group": "filtered",
+              "agentSkills": [
+                {
+                  "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                  "skillId": "gongwei.leader.discover-and-delegate",
+                  "ranking": 1,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                  "skillId": "gongwei.leader.handle-maintenance-request",
+                  "ranking": 2,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                  "skillId": "gongwei.leader.plan-collaboration",
+                  "ranking": 3,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                  "skillId": "gongwei.leader.resume-multiturn-task",
+                  "ranking": 4,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                  "skillId": "gongwei.leader.track-and-summarize",
+                  "ranking": 5,
+                  "memo": "Filtered query result"
+                }
+              ]
+            }
+          ],
+          "status": "ok",
+          "durationMs": 3
+        }
+      ],
+      "aliveMap": {
+        "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45": {
+          "alive": true,
+          "aliveLastSeenAt": "2026-10-07T11:19:42.304Z"
+        }
+      }
+    }
+  },
+  "success": true,
+  "target_found": true
+}

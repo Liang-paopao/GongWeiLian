@@ -1,0 +1,31 @@
+# Not installed. Requires nginx stream module and a successful DNS-SAN mTLS
+# preflight before moving existing HTTPS listeners to 127.0.0.1:1443.
+# Those HTTP listeners MUST enable `ssl proxy_protocol`, trust only loopback
+# with set_real_ip_from, and set real_ip_header proxy_protocol, preserving each
+# existing website's client IP. Do not apply this file alone.
+# This top-level block is outside http {}; other domains retain their own TLS.
+stream {
+    map $ssl_preread_server_name $gongwei_tls_upstream {
+        leader.yanyi.online 127.0.0.1:18444;
+        default            127.0.0.1:1443;
+    }
+    server {
+        listen 443;
+        listen [::]:443;
+        ssl_preread on;
+        proxy_protocol on;
+        proxy_connect_timeout 10s;
+        # Existing HTTP upstream timeouts reach 180s; do not shorten them.
+        proxy_timeout 1h;
+        proxy_pass $gongwei_tls_upstream;
+    }
+    # Strip PROXY framing before the untouched TLS stream reaches Uvicorn.
+    # The client TLS certificate travels end to end and is checked by the SDK.
+    server {
+        listen 127.0.0.1:18444 proxy_protocol;
+        proxy_protocol off;
+        proxy_pass 127.0.0.1:18443;
+        proxy_connect_timeout 10s;
+        proxy_timeout 1h;
+    }
+}

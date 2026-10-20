@@ -1,0 +1,1607 @@
+{
+  "checked_at": "2026-10-08T14:26:47.216959+00:00",
+  "services": {
+    "web": {
+      "MainPID": "3475537",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource": {
+      "MainPID": "3475510",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder": {
+      "MainPID": "3475518",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "audio": {
+      "MainPID": "3475527",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "leader": {
+      "MainPID": "2811653",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource-inbox": {
+      "MainPID": "2753079",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder-inbox": {
+      "MainPID": "2753083",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "amp-heartbeat": {
+      "MainPID": "2367812",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    }
+  },
+  "business": {
+    "work_orders": [
+      {
+        "id": "wo-63d7edf6-f338-4646-99ef-f1e42e2d0aa0",
+        "number": "WO-20261007-89643E",
+        "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+        "plan_id": "plan-7bc2f92e-d103-45ec-afac-60d5b00f9891",
+        "status": "cancelled",
+        "failure_reason": null,
+        "created_at": "2026-10-07T08:41:42.557901+00:00",
+        "updated_at": "2026-10-08T14:17:40.540718+00:00"
+      },
+      {
+        "id": "wo-5fbb7dc9-5e74-4bf0-ad19-9852a9ff1e02",
+        "number": "WO-20261007-8DC4AC",
+        "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9",
+        "plan_id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145",
+        "status": "cancelled",
+        "failure_reason": null,
+        "created_at": "2026-10-07T11:23:07.004894+00:00",
+        "updated_at": "2026-10-08T14:23:58.640737+00:00"
+      },
+      {
+        "id": "wo-c1f828d2-bb50-440f-bdc0-04d90fdc3c40",
+        "number": "WO-20261008-3D7B9C",
+        "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "plan_id": "plan-febb7dbd-0d2b-4439-a87e-a17835c156dc",
+        "status": "completed",
+        "failure_reason": null,
+        "created_at": "2026-10-08T14:20:35.892513+00:00",
+        "updated_at": "2026-10-08T14:23:19.378900+00:00"
+      },
+      {
+        "id": "wo-0883dc0e-00fa-462a-9fe4-45053fd85c58",
+        "number": "WO-20261008-1C8738",
+        "request_id": "req-acf860e1-5767-411b-913c-fbab04cb9a4e",
+        "plan_id": "plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2",
+        "status": "confirmed",
+        "failure_reason": null,
+        "created_at": "2026-10-08T14:24:44.169136+00:00",
+        "updated_at": "2026-10-08T14:24:44.169136+00:00"
+      }
+    ],
+    "reservations": [
+      {
+        "id": "reservation-ef1ae5c6-c3a8-4675-82fc-04303a37833d",
+        "plan_id": "plan-7bc2f92e-d103-45ec-afac-60d5b00f9891",
+        "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+        "resource_type": "worker",
+        "resource_id": "worker-01",
+        "quantity": 1,
+        "status": "released",
+        "start_at": "2026-10-08T14:00:00",
+        "end_at": "2026-10-08T15:00:00",
+        "created_at": "2026-10-07T08:41:41.330086+00:00",
+        "released_at": "2026-10-08T14:17:40.540718+00:00"
+      },
+      {
+        "id": "reservation-6491f764-5f20-4a12-95ca-7dacb21b44d0",
+        "plan_id": "plan-7bc2f92e-d103-45ec-afac-60d5b00f9891",
+        "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+        "resource_type": "inventory",
+        "resource_id": "part-seal-ring",
+        "quantity": 1,
+        "status": "released",
+        "start_at": "2026-10-08T14:00:00",
+        "end_at": "2026-10-08T15:00:00",
+        "created_at": "2026-10-07T08:41:41.330086+00:00",
+        "released_at": "2026-10-08T14:17:40.540718+00:00"
+      },
+      {
+        "id": "reservation-fdd057b2-65d2-4edd-bffa-dd538f7287b6",
+        "plan_id": "plan-7bc2f92e-d103-45ec-afac-60d5b00f9891",
+        "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+        "resource_type": "inventory",
+        "resource_id": "tool-inspection-kit",
+        "quantity": 1,
+        "status": "released",
+        "start_at": "2026-10-08T14:00:00",
+        "end_at": "2026-10-08T15:00:00",
+        "created_at": "2026-10-07T08:41:41.330086+00:00",
+        "released_at": "2026-10-08T14:17:40.540718+00:00"
+      },
+      {
+        "id": "reservation-2b5cac77-6c8b-4266-8fc9-aed56271d234",
+        "plan_id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145",
+        "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9",
+        "resource_type": "worker",
+        "resource_id": "worker-01",
+        "quantity": 1,
+        "status": "released",
+        "start_at": "2026-10-08T15:00:00",
+        "end_at": "2026-10-08T16:00:00",
+        "created_at": "2026-10-07T11:23:05.169503+00:00",
+        "released_at": "2026-10-08T14:23:58.640737+00:00"
+      },
+      {
+        "id": "reservation-1970a022-4de3-4201-b555-2d354acce280",
+        "plan_id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145",
+        "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9",
+        "resource_type": "inventory",
+        "resource_id": "part-seal-ring",
+        "quantity": 1,
+        "status": "released",
+        "start_at": "2026-10-08T15:00:00",
+        "end_at": "2026-10-08T16:00:00",
+        "created_at": "2026-10-07T11:23:05.169503+00:00",
+        "released_at": "2026-10-08T14:23:58.640737+00:00"
+      },
+      {
+        "id": "reservation-f9110f8a-7f05-4449-9e65-493b7151f04e",
+        "plan_id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145",
+        "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9",
+        "resource_type": "inventory",
+        "resource_id": "tool-inspection-kit",
+        "quantity": 1,
+        "status": "released",
+        "start_at": "2026-10-08T15:00:00",
+        "end_at": "2026-10-08T16:00:00",
+        "created_at": "2026-10-07T11:23:05.169503+00:00",
+        "released_at": "2026-10-08T14:23:58.640737+00:00"
+      },
+      {
+        "id": "reservation-3a8dd485-e67a-45cb-8911-d63fc300a1fd",
+        "plan_id": "plan-febb7dbd-0d2b-4439-a87e-a17835c156dc",
+        "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "resource_type": "worker",
+        "resource_id": "worker-01",
+        "quantity": 1,
+        "status": "active",
+        "start_at": "2026-10-09T15:00:00",
+        "end_at": "2026-10-09T16:00:00",
+        "created_at": "2026-10-08T14:20:35.848918+00:00",
+        "released_at": null
+      },
+      {
+        "id": "reservation-b23b8518-1c72-4983-a88e-c753763f5d0d",
+        "plan_id": "plan-febb7dbd-0d2b-4439-a87e-a17835c156dc",
+        "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "resource_type": "inventory",
+        "resource_id": "part-seal-ring",
+        "quantity": 1,
+        "status": "active",
+        "start_at": "2026-10-09T15:00:00",
+        "end_at": "2026-10-09T16:00:00",
+        "created_at": "2026-10-08T14:20:35.848918+00:00",
+        "released_at": null
+      },
+      {
+        "id": "reservation-e5990958-9b99-46e5-932c-197405d7efd5",
+        "plan_id": "plan-febb7dbd-0d2b-4439-a87e-a17835c156dc",
+        "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "resource_type": "inventory",
+        "resource_id": "tool-inspection-kit",
+        "quantity": 1,
+        "status": "active",
+        "start_at": "2026-10-09T15:00:00",
+        "end_at": "2026-10-09T16:00:00",
+        "created_at": "2026-10-08T14:20:35.848918+00:00",
+        "released_at": null
+      },
+      {
+        "id": "reservation-4ad500ee-6778-4545-9a15-f90269db17ee",
+        "plan_id": "plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2",
+        "request_id": "req-acf860e1-5767-411b-913c-fbab04cb9a4e",
+        "resource_type": "worker",
+        "resource_id": "worker-01",
+        "quantity": 1,
+        "status": "active",
+        "start_at": "2026-10-09T14:00:00",
+        "end_at": "2026-10-09T15:00:00",
+        "created_at": "2026-10-08T14:24:42.300161+00:00",
+        "released_at": null
+      },
+      {
+        "id": "reservation-8de020c9-86df-407c-883a-3b01dea19487",
+        "plan_id": "plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2",
+        "request_id": "req-acf860e1-5767-411b-913c-fbab04cb9a4e",
+        "resource_type": "inventory",
+        "resource_id": "part-seal-ring",
+        "quantity": 1,
+        "status": "active",
+        "start_at": "2026-10-09T14:00:00",
+        "end_at": "2026-10-09T15:00:00",
+        "created_at": "2026-10-08T14:24:42.300161+00:00",
+        "released_at": null
+      },
+      {
+        "id": "reservation-d92c4727-dfc0-43a7-993a-684174d375b8",
+        "plan_id": "plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2",
+        "request_id": "req-acf860e1-5767-411b-913c-fbab04cb9a4e",
+        "resource_type": "inventory",
+        "resource_id": "tool-inspection-kit",
+        "quantity": 1,
+        "status": "active",
+        "start_at": "2026-10-09T14:00:00",
+        "end_at": "2026-10-09T15:00:00",
+        "created_at": "2026-10-08T14:24:42.300161+00:00",
+        "released_at": null
+      }
+    ],
+    "inventory_items": [
+      {
+        "id": "tool-inspection-kit",
+        "name": "便携检查工具包",
+        "category": "tool",
+        "total_qty": 2,
+        "available_qty": 0,
+        "unit": "套",
+        "simulated": 1
+      },
+      {
+        "id": "tool-vibration-meter",
+        "name": "振动测量仪",
+        "category": "tool",
+        "total_qty": 1,
+        "available_qty": 1,
+        "unit": "台",
+        "simulated": 1
+      },
+      {
+        "id": "part-seal-ring",
+        "name": "机械密封圈",
+        "category": "part",
+        "total_qty": 5,
+        "available_qty": 3,
+        "unit": "件",
+        "simulated": 1
+      },
+      {
+        "id": "part-gasket",
+        "name": "泵体垫片",
+        "category": "part",
+        "total_qty": 8,
+        "available_qty": 8,
+        "unit": "件",
+        "simulated": 1
+      },
+      {
+        "id": "tool-lockout-tag",
+        "name": "检修挂牌套装",
+        "category": "tool",
+        "total_qty": 3,
+        "available_qty": 3,
+        "unit": "套",
+        "simulated": 1
+      }
+    ],
+    "agent_tasks": [
+      {
+        "task_id": "server-mtls-4e132677ed-task",
+        "session_id": "server-mtls-4e132677ed-session",
+        "external_task_id": "server-mtls-4e132677ed-task",
+        "request_id": null,
+        "plan_id": null,
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。\"}, \"missing_fields\": [\"start_time\", \"duration_minutes\"], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+        "created_at": "2026-10-06T16:45:01.927831+00:00",
+        "updated_at": "2026-10-06T16:45:01.982796+00:00"
+      },
+      {
+        "task_id": "server-mtls-452639c3df-task",
+        "session_id": "server-mtls-452639c3df-session",
+        "external_task_id": "server-mtls-452639c3df-task",
+        "request_id": null,
+        "plan_id": null,
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。\"}, \"missing_fields\": [\"start_time\", \"duration_minutes\"], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+        "created_at": "2026-10-06T16:48:30.143212+00:00",
+        "updated_at": "2026-10-06T16:48:30.199898+00:00"
+      },
+      {
+        "task_id": "public-mtls-1717d39d86-task",
+        "session_id": "public-mtls-1717d39d86-session",
+        "external_task_id": "public-mtls-1717d39d86-task",
+        "request_id": null,
+        "plan_id": null,
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。\"}, \"missing_fields\": [\"start_time\", \"duration_minutes\"], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+        "created_at": "2026-10-06T16:55:14.780537+00:00",
+        "updated_at": "2026-10-06T16:55:24.567713+00:00"
+      },
+      {
+        "task_id": "87ee5e18-72f2-4dee-90f6-2ee75cefd764",
+        "session_id": "session_1699",
+        "external_task_id": "87ee5e18-72f2-4dee-90f6-2ee75cefd764",
+        "request_id": null,
+        "plan_id": null,
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}, \"missing_fields\": [\"start_time\", \"duration_minutes\"], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+        "created_at": "2026-10-06T16:57:43.973046+00:00",
+        "updated_at": "2026-10-06T17:01:56.183659+00:00"
+      },
+      {
+        "task_id": "c08c35ae-137c-453d-aa88-6aa6ad900082",
+        "session_id": "session_1700",
+        "external_task_id": "c08c35ae-137c-453d-aa88-6aa6ad900082",
+        "request_id": null,
+        "plan_id": null,
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}, \"missing_fields\": [\"start_time\", \"duration_minutes\"], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+        "created_at": "2026-10-06T17:18:36.755999+00:00",
+        "updated_at": "2026-10-06T17:19:17.119328+00:00"
+      },
+      {
+        "task_id": "19f8e6da-bc45-4afd-85fd-85fc8a570347",
+        "session_id": "session_1700",
+        "external_task_id": "19f8e6da-bc45-4afd-85fd-85fc8a570347",
+        "request_id": "req-6218f46d-e600-46d8-8383-19bb761eedec",
+        "plan_id": null,
+        "status": "ready_for_plan",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"start_time\": \"14:00\", \"duration_minutes\": 30, \"required_skill\": \"泵体检查\", \"description\": \"用户原始需求：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：为安排水泵001明天下午的异常检查，还需要两项信息：1）明天下午的具体开始时间（例如 14:00 或 15:00）；2）预计检查时长（分钟，例如 30 分钟或 60 分钟）。请提供这两项，以便排定检查时间。\\n用户回答：下午两点开始，预计一小时，需要泵体检查技能。\\n\\n该智能体的专属补充任务：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}, \"missing_fields\": [], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": null}",
+        "created_at": "2026-10-06T17:19:18.172804+00:00",
+        "updated_at": "2026-10-06T17:19:18.194806+00:00"
+      },
+      {
+        "task_id": "2a705116-016c-492b-b088-347b0f82e72a",
+        "session_id": "session_1701",
+        "external_task_id": "2a705116-016c-492b-b088-347b0f82e72a",
+        "request_id": null,
+        "plan_id": null,
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}, \"missing_fields\": [\"start_time\", \"duration_minutes\"], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+        "created_at": "2026-10-06T18:17:28.429224+00:00",
+        "updated_at": "2026-10-06T18:18:13.906600+00:00"
+      },
+      {
+        "task_id": "c57cd75f-9ebc-43c0-bed5-7b36c25979df",
+        "session_id": "session_1701",
+        "external_task_id": "c57cd75f-9ebc-43c0-bed5-7b36c25979df",
+        "request_id": "req-51fa8900-3ecb-498c-8ee2-a7930e502559",
+        "plan_id": null,
+        "status": "ready_for_plan",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"description\": \"用户原始需求：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：为安排“水泵001运行异常”的检查任务，还需要您补充两项信息：\\n1）开始时间：明天下午的具体几点开始（例如 14:00）；\\n2）预计时长：本次检查大约需要多少分钟（例如 60 分钟）。\\n未提供这两项时，检查任务无法排入明天下午的日程；请直接回复时间点与时长即可。\\n用户回答：补充上一轮缺少的信息：明天下午两点开始，预计一小时。这是当前任务的补充，请继续同一个任务。\\n\\n该智能体的专属补充任务：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}, \"missing_fields\": [], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": null}",
+        "created_at": "2026-10-06T18:18:14.977996+00:00",
+        "updated_at": "2026-10-06T18:18:15.001791+00:00"
+      },
+      {
+        "task_id": "public-continue-db00d48834b4-task",
+        "session_id": "public-continue-db00d48834b4-session",
+        "external_task_id": "public-continue-db00d48834b4-task",
+        "request_id": null,
+        "plan_id": null,
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。\", \"start_time\": \"14:00\"}, \"missing_fields\": [\"duration_minutes\"], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+        "created_at": "2026-10-06T18:59:40.743968+00:00",
+        "updated_at": "2026-10-06T18:59:41.030985+00:00"
+      },
+      {
+        "task_id": "public-continue-183ab980a167-task",
+        "session_id": "public-continue-183ab980a167-session",
+        "external_task_id": "public-continue-183ab980a167-task",
+        "request_id": null,
+        "plan_id": null,
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。\", \"start_time\": \"14:00\"}, \"missing_fields\": [\"duration_minutes\"], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+        "created_at": "2026-10-06T20:10:36.947282+00:00",
+        "updated_at": "2026-10-06T20:10:37.246826+00:00"
+      },
+      {
+        "task_id": "192cf143-e90e-4092-a44d-9fcca5520102",
+        "session_id": "session_1702",
+        "external_task_id": "192cf143-e90e-4092-a44d-9fcca5520102",
+        "request_id": null,
+        "plan_id": null,
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}, \"missing_fields\": [\"start_time\", \"duration_minutes\"], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+        "created_at": "2026-10-06T20:11:12.619206+00:00",
+        "updated_at": "2026-10-06T20:11:56.259586+00:00"
+      },
+      {
+        "task_id": "cfe51e30-0e42-4637-b322-2eea65663a00",
+        "session_id": "session_1702",
+        "external_task_id": "cfe51e30-0e42-4637-b322-2eea65663a00",
+        "request_id": "req-75db480b-e137-4cd3-a493-5166ea545487",
+        "plan_id": null,
+        "status": "ready_for_plan",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"required_skill\": \"泵体检查\", \"description\": \"用户原始需求：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：工维联核心业务 Leader 需要补充信息才能安排水泵001明天下午的检查：请提供具体的开始时间（例如明天14:00）和预计检查时长（分钟或小时）。收到后将继续安排。\\n用户回答：下午两点开始，预计一小时，需要泵体检查技能。\\n\\n该智能体的专属补充任务：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}, \"missing_fields\": [], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": null}",
+        "created_at": "2026-10-06T20:11:57.585692+00:00",
+        "updated_at": "2026-10-06T20:11:57.605703+00:00"
+      },
+      {
+        "task_id": "c9ea98aa-fcf7-42b3-89da-36b26aa1ec2b",
+        "session_id": "session_1703",
+        "external_task_id": "c9ea98aa-fcf7-42b3-89da-36b26aa1ec2b",
+        "request_id": null,
+        "plan_id": null,
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}, \"missing_fields\": [\"start_time\", \"duration_minutes\"], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+        "created_at": "2026-10-06T21:06:09.787498+00:00",
+        "updated_at": "2026-10-06T21:07:12.597799+00:00"
+      },
+      {
+        "task_id": "c3a2809e-d5e5-4246-8f1e-1eb86daad30e",
+        "session_id": "session_1703",
+        "external_task_id": "c3a2809e-d5e5-4246-8f1e-1eb86daad30e",
+        "request_id": "req-d9d3d534-9bea-4cfe-add3-543e42978eaf",
+        "plan_id": "plan-41fd52a6-1cae-4ec5-a7ed-206df95e04ba",
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"start_time\": \"14:00\", \"duration_minutes\": 30, \"required_skill\": \"泵体检查\", \"description\": \"用户原始需求：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：为了安排水泵001明天下午的检查，请补充两项信息：1）开始时间：明天下午具体几点开始（例如 14:00、15:30）；2）预计时长：本次检查预计需要多少分钟（例如 30 分钟、60 分钟）。收到后我会按该时间向工维联核心业务 Leader 继续下达派工，不会取消当前任务重新开始。\\n用户回答：下午两点开始，预计一小时，需要泵体检查技能。\\n\\n该智能体的专属补充任务：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}, \"missing_fields\": [], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": null}",
+        "created_at": "2026-10-06T21:07:13.192656+00:00",
+        "updated_at": "2026-10-06T21:18:33.708970+00:00"
+      },
+      {
+        "task_id": "5caf3f09-19c1-4573-be2a-0a283821c438",
+        "session_id": "debug_4808e66359da4b3380540679941a4cbf",
+        "external_task_id": "5caf3f09-19c1-4573-be2a-0a283821c438",
+        "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+        "plan_id": "plan-7bc2f92e-d103-45ec-afac-60d5b00f9891",
+        "status": "completed",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"required_skill\": \"泵体检查\"}, \"missing_fields\": [], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+        "created_at": "2026-10-07T08:39:55.268273+00:00",
+        "updated_at": "2026-10-07T08:41:44.731627+00:00"
+      },
+      {
+        "task_id": "4ebd484a-7eee-46dd-954f-0f50642a5d90",
+        "session_id": "debug_03b555a68a974bf498d0cb1c69853f9d",
+        "external_task_id": "4ebd484a-7eee-46dd-954f-0f50642a5d90",
+        "request_id": "req-2dab6b9e-4039-4239-bca7-6664e271bcae",
+        "plan_id": "plan-1ac57203-7f0c-47e0-b860-6f99c4161e96",
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-002\", \"work_date\": \"2026-10-08\", \"start_time\": \"15:00\", \"duration_minutes\": 60, \"required_skill\": \"泵体检查\", \"description\": \"水泵002运行异常，安排明天下午三点检查一小时，需要泵体检查技能。\"}, \"missing_fields\": [], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": null}",
+        "created_at": "2026-10-07T08:44:03.553415+00:00",
+        "updated_at": "2026-10-07T08:45:19.432180+00:00"
+      },
+      {
+        "task_id": "c0c8efeb-5fc7-483f-8061-3110364c6bac",
+        "session_id": "session_1723",
+        "external_task_id": "c0c8efeb-5fc7-483f-8061-3110364c6bac",
+        "request_id": null,
+        "plan_id": null,
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-002\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"水泵002运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}, \"missing_fields\": [\"start_time\", \"duration_minutes\"], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+        "created_at": "2026-10-07T09:14:21.542055+00:00",
+        "updated_at": "2026-10-07T09:16:22.839484+00:00"
+      },
+      {
+        "task_id": "826e7f98-dedd-4553-96d2-6424a5bdb3ba",
+        "session_id": "session_1723",
+        "external_task_id": "826e7f98-dedd-4553-96d2-6424a5bdb3ba",
+        "request_id": "req-d582e39e-acd4-47cf-a6d8-5be629207a53",
+        "plan_id": "plan-d1150a62-6cf5-4d35-85dc-60454ea722b2",
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-002\", \"work_date\": \"2026-10-08\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"required_skill\": \"泵体检查\", \"description\": \"水泵002运行异常，帮我安排明天下午检查。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：关于明天下午检查水泵002的安排，还需要您补充两项信息才能创建工单：1）具体开始时间——您说的“明天下午”具体是几点（例如明天14:00）？2）预计检查时长——需要多少分钟或小时（例如60分钟）？请提供这两项，我据此安排明天下午的检查。\\n用户回答：下午三点开始，预计一小时，需要泵体检查技能。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}, \"missing_fields\": [], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": null}",
+        "created_at": "2026-10-07T09:16:23.646453+00:00",
+        "updated_at": "2026-10-07T09:29:07.670713+00:00"
+      },
+      {
+        "task_id": "4f099dd8-9909-4e70-a078-814a4a4e5548",
+        "session_id": "session_1723",
+        "external_task_id": "4f099dd8-9909-4e70-a078-814a4a4e5548",
+        "request_id": "req-6d5215b6-a268-4bb2-81bb-c6b512794013",
+        "plan_id": null,
+        "status": "ready_for_plan",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-002\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"水泵002运行异常，帮我安排明天下午检查。\", \"start_time\": \"15:00\", \"duration_minutes\": 60, \"required_skill\": \"泵体检查\"}, \"missing_fields\": [], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+        "created_at": "2026-10-07T09:29:08.225483+00:00",
+        "updated_at": "2026-10-07T09:29:08.247883+00:00"
+      },
+      {
+        "task_id": "0baf36fd-73ff-4ce0-8fb0-501247cb6423",
+        "session_id": "session_1726",
+        "external_task_id": "0baf36fd-73ff-4ce0-8fb0-501247cb6423",
+        "request_id": null,
+        "plan_id": null,
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-002\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}, \"missing_fields\": [\"start_time\", \"duration_minutes\"], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+        "created_at": "2026-10-07T11:20:39.535870+00:00",
+        "updated_at": "2026-10-07T11:21:40.203506+00:00"
+      },
+      {
+        "task_id": "6887e4c3-572c-4086-95db-8798ee5e42fd",
+        "session_id": "session_1726",
+        "external_task_id": "6887e4c3-572c-4086-95db-8798ee5e42fd",
+        "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9",
+        "plan_id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145",
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-002\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。\", \"start_time\": \"15:00\", \"duration_minutes\": 60, \"required_skill\": \"泵体检查\"}, \"missing_fields\": [], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\", \"confirmation_offer\": {\"reference\": \"GW-2ec569cd1fa191e1beda84849cc6b680\", \"fingerprint\": \"e87e280b00280bdb76c7bf9d4a1d757a1e4ebe99d44ed794960058b711aea531\", \"plan_id\": \"plan-7152f38a-5af3-4a62-a12e-82cb6b029145\", \"issued_at\": \"2026-10-07T11:21:58.764572+00:00\"}}",
+        "created_at": "2026-10-07T11:21:40.831343+00:00",
+        "updated_at": "2026-10-07T11:23:02.856542+00:00"
+      },
+      {
+        "task_id": "7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8",
+        "session_id": "session_1726",
+        "external_task_id": "7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8",
+        "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9",
+        "plan_id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145",
+        "status": "completed",
+        "context_json": "{\"plan_continuation\": {\"source_task_id\": \"6887e4c3-572c-4086-95db-8798ee5e42fd\", \"plan_id\": \"plan-7152f38a-5af3-4a62-a12e-82cb6b029145\", \"reference\": \"GW-2ec569cd1fa191e1beda84849cc6b680\", \"session_id\": \"session_1726\", \"sender_id\": \"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\", \"confirmation_message_id\": \"cmd-c4a2cf43-b722-49df-acfd-d87961499672\", \"confirmed_at\": \"2026-10-07T11:23:04.316867+00:00\"}}",
+        "created_at": "2026-10-07T11:23:04.307880+00:00",
+        "updated_at": "2026-10-07T11:23:09.567250+00:00"
+      },
+      {
+        "task_id": "task-e9505e30-6f6d-46f7-847d-f3d415d694be",
+        "session_id": "session-4149a52a-6f4e-42be-b5f3-1ebf1a6b80bc",
+        "external_task_id": "task-e9505e30-6f6d-46f7-847d-f3d415d694be",
+        "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "plan_id": "plan-febb7dbd-0d2b-4439-a87e-a17835c156dc",
+        "status": "completed",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-09\", \"requested_period\": \"afternoon\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。本次为全流程验收。\", \"start_time\": \"15:00\", \"duration_minutes\": 60, \"required_skill\": \"泵体检查\"}, \"missing_fields\": [], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+        "created_at": "2026-10-08T14:09:38.490805+00:00",
+        "updated_at": "2026-10-08T14:22:34.261403+00:00"
+      },
+      {
+        "task_id": "5cd15141-6add-42de-b50c-1fa88c551bbb",
+        "session_id": "session_1822",
+        "external_task_id": "5cd15141-6add-42de-b50c-1fa88c551bbb",
+        "request_id": null,
+        "plan_id": null,
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-002\", \"work_date\": \"2026-10-09\", \"requested_period\": \"afternoon\", \"description\": \"请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}, \"missing_fields\": [\"start_time\", \"duration_minutes\"], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+        "created_at": "2026-10-08T14:14:39.873054+00:00",
+        "updated_at": "2026-10-08T14:18:40.863021+00:00"
+      },
+      {
+        "task_id": "3dc5ed5c-0eeb-434d-8e0b-bd1357e2cf13",
+        "session_id": "session_1822",
+        "external_task_id": "3dc5ed5c-0eeb-434d-8e0b-bd1357e2cf13",
+        "request_id": "req-acf860e1-5767-411b-913c-fbab04cb9a4e",
+        "plan_id": "plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2",
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-002\", \"work_date\": \"2026-10-09\", \"requested_period\": \"afternoon\", \"description\": \"请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"required_skill\": \"泵体检查\"}, \"missing_fields\": [], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\", \"confirmation_offer\": {\"reference\": \"GW-b469b938862008c3525395088c5fb3ed\", \"fingerprint\": \"edf2b3210d4272a6abf608e1dd9355662d5558fe88bc4b6c0bc9156085e4e6c3\", \"plan_id\": \"plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2\", \"issued_at\": \"2026-10-08T14:19:00.664550+00:00\"}}",
+        "created_at": "2026-10-08T14:18:45.056381+00:00",
+        "updated_at": "2026-10-08T14:24:31.828100+00:00"
+      },
+      {
+        "task_id": "public-continue-020b2203c810-task",
+        "session_id": "public-continue-020b2203c810-session",
+        "external_task_id": "public-continue-020b2203c810-task",
+        "request_id": null,
+        "plan_id": null,
+        "status": "cancelled",
+        "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-09\", \"requested_period\": \"afternoon\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。\", \"start_time\": \"14:00\"}, \"missing_fields\": [\"duration_minutes\"], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+        "created_at": "2026-10-08T14:22:05.624515+00:00",
+        "updated_at": "2026-10-08T14:22:06.015229+00:00"
+      },
+      {
+        "task_id": "c7b49b4d-e14f-457b-8f4f-6de4f02ee60f",
+        "session_id": "session_1822",
+        "external_task_id": "c7b49b4d-e14f-457b-8f4f-6de4f02ee60f",
+        "request_id": "req-acf860e1-5767-411b-913c-fbab04cb9a4e",
+        "plan_id": "plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2",
+        "status": "completed",
+        "context_json": "{\"plan_continuation\": {\"source_task_id\": \"3dc5ed5c-0eeb-434d-8e0b-bd1357e2cf13\", \"plan_id\": \"plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2\", \"reference\": \"GW-b469b938862008c3525395088c5fb3ed\", \"session_id\": \"session_1822\", \"sender_id\": \"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\", \"confirmation_message_id\": \"cmd-0e2dd094-4b41-46d5-bb7a-c775eda1333f\", \"confirmed_at\": \"2026-10-08T14:24:39.185143+00:00\"}}",
+        "created_at": "2026-10-08T14:24:39.173733+00:00",
+        "updated_at": "2026-10-08T14:24:45.744573+00:00"
+      }
+    ],
+    "task_subtasks": [
+      {
+        "subtask_id": "subtask-c3a2809e-d5e5-4246-8f1e-1eb86daad30e:resource:01",
+        "parent_task_id": "c3a2809e-d5e5-4246-8f1e-1eb86daad30e",
+        "external_task_id": "c3a2809e-d5e5-4246-8f1e-1eb86daad30e:resource:01",
+        "partner": "resource",
+        "action": "query_resources",
+        "message_id": "cmd-cd790800-5d5b-45c4-9c52-74fd5f00ac0d",
+        "status": "completed",
+        "result_json": "{\"simulated\": true, \"ok\": true, \"partner\": \"resource\", \"action\": \"query_resources\", \"result\": {\"simulated\": true, \"request_id\": \"req-d9d3d534-9bea-4cfe-add3-543e42978eaf\", \"workers\": [{\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, {\"id\": \"worker-03\", \"name\": \"模拟人员丙\", \"role\": \"综合维护\"}], \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"available_qty\": 5, \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"available_qty\": 2, \"unit\": \"套\"}], \"required_skill\": \"pump_inspection\", \"required_inventory\": [\"tool-inspection-kit\", \"part-seal-ring\"], \"available\": true, \"reasons\": [], \"start_at\": \"2026-10-08T14:00:00\", \"end_at\": \"2026-10-08T14:30:00\"}}",
+        "created_at": "2026-10-06T21:07:13.596177+00:00",
+        "updated_at": "2026-10-06T21:07:24.840464+00:00"
+      },
+      {
+        "subtask_id": "subtask-c3a2809e-d5e5-4246-8f1e-1eb86daad30e:resource:release:01",
+        "parent_task_id": "c3a2809e-d5e5-4246-8f1e-1eb86daad30e",
+        "external_task_id": "c3a2809e-d5e5-4246-8f1e-1eb86daad30e:resource:release:01",
+        "partner": "resource",
+        "action": "release_resources",
+        "message_id": "cmd-66139e14-e881-43f4-84d1-82ebc8f7127b",
+        "status": "completed",
+        "result_json": "{}",
+        "created_at": "2026-10-06T21:18:13.013681+00:00",
+        "updated_at": "2026-10-06T21:18:33.702881+00:00"
+      },
+      {
+        "subtask_id": "subtask-5caf3f09-19c1-4573-be2a-0a283821c438:resource:01",
+        "parent_task_id": "5caf3f09-19c1-4573-be2a-0a283821c438",
+        "external_task_id": "5caf3f09-19c1-4573-be2a-0a283821c438:resource:01",
+        "partner": "resource",
+        "action": "query_resources",
+        "message_id": "cmd-a6b49359-1ce3-4eaa-a8e5-c186b094d298",
+        "status": "completed",
+        "result_json": "{\"simulated\": true, \"ok\": true, \"partner\": \"resource\", \"action\": \"query_resources\", \"result\": {\"simulated\": true, \"request_id\": \"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\", \"workers\": [{\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, {\"id\": \"worker-03\", \"name\": \"模拟人员丙\", \"role\": \"综合维护\"}], \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"available_qty\": 5, \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"available_qty\": 2, \"unit\": \"套\"}], \"required_skill\": \"pump_inspection\", \"required_inventory\": [\"tool-inspection-kit\", \"part-seal-ring\"], \"available\": true, \"reasons\": [], \"start_at\": \"2026-10-08T14:00:00\", \"end_at\": \"2026-10-08T15:00:00\"}}",
+        "created_at": "2026-10-07T08:40:32.421623+00:00",
+        "updated_at": "2026-10-07T08:40:46.848260+00:00"
+      },
+      {
+        "subtask_id": "subtask-5caf3f09-19c1-4573-be2a-0a283821c438:resource:02",
+        "parent_task_id": "5caf3f09-19c1-4573-be2a-0a283821c438",
+        "external_task_id": "5caf3f09-19c1-4573-be2a-0a283821c438:resource:02",
+        "partner": "resource",
+        "action": "reserve_resources",
+        "message_id": "cmd-025cb114-bf9c-43e6-8890-47ad1c8b201b",
+        "status": "completed",
+        "result_json": "{}",
+        "created_at": "2026-10-07T08:41:41.199749+00:00",
+        "updated_at": "2026-10-07T08:41:42.429543+00:00"
+      },
+      {
+        "subtask_id": "subtask-5caf3f09-19c1-4573-be2a-0a283821c438:workorder:01",
+        "parent_task_id": "5caf3f09-19c1-4573-be2a-0a283821c438",
+        "external_task_id": "5caf3f09-19c1-4573-be2a-0a283821c438:workorder:01",
+        "partner": "workorder",
+        "action": "create_work_order",
+        "message_id": "cmd-025cb114-bf9c-43e6-8890-47ad1c8b201b",
+        "status": "completed",
+        "result_json": "{\"simulated\": true, \"ok\": true, \"partner\": \"workorder\", \"action\": \"create_work_order\", \"result\": {\"simulated\": true, \"work_order\": {\"id\": \"wo-63d7edf6-f338-4646-99ef-f1e42e2d0aa0\", \"number\": \"WO-20261007-89643E\", \"request_id\": \"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\", \"plan_id\": \"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\", \"status\": \"confirmed\", \"failure_reason\": null, \"created_at\": \"2026-10-07T08:41:42.557901+00:00\", \"updated_at\": \"2026-10-07T08:41:42.557901+00:00\"}}}",
+        "created_at": "2026-10-07T08:41:42.435341+00:00",
+        "updated_at": "2026-10-07T08:41:44.726896+00:00"
+      },
+      {
+        "subtask_id": "subtask-4ebd484a-7eee-46dd-954f-0f50642a5d90:resource:01",
+        "parent_task_id": "4ebd484a-7eee-46dd-954f-0f50642a5d90",
+        "external_task_id": "4ebd484a-7eee-46dd-954f-0f50642a5d90:resource:01",
+        "partner": "resource",
+        "action": "query_resources",
+        "message_id": "cmd-704e50aa-0f38-4027-901f-8b2f26a53ceb",
+        "status": "completed",
+        "result_json": "{\"simulated\": true, \"ok\": true, \"partner\": \"resource\", \"action\": \"query_resources\", \"result\": {\"simulated\": true, \"request_id\": \"req-2dab6b9e-4039-4239-bca7-6664e271bcae\", \"workers\": [{\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, {\"id\": \"worker-03\", \"name\": \"模拟人员丙\", \"role\": \"综合维护\"}], \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"available_qty\": 4, \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"available_qty\": 1, \"unit\": \"套\"}], \"required_skill\": \"pump_inspection\", \"required_inventory\": [\"tool-inspection-kit\", \"part-seal-ring\"], \"available\": true, \"reasons\": [], \"start_at\": \"2026-10-08T15:00:00\", \"end_at\": \"2026-10-08T16:00:00\"}}",
+        "created_at": "2026-10-07T08:44:05.412584+00:00",
+        "updated_at": "2026-10-07T08:44:19.971247+00:00"
+      },
+      {
+        "subtask_id": "subtask-826e7f98-dedd-4553-96d2-6424a5bdb3ba:resource:01",
+        "parent_task_id": "826e7f98-dedd-4553-96d2-6424a5bdb3ba",
+        "external_task_id": "826e7f98-dedd-4553-96d2-6424a5bdb3ba:resource:01",
+        "partner": "resource",
+        "action": "query_resources",
+        "message_id": "cmd-16390293-b24a-45d2-8472-b7d5f3c8bec4",
+        "status": "completed",
+        "result_json": "{\"simulated\": true, \"ok\": true, \"partner\": \"resource\", \"action\": \"query_resources\", \"result\": {\"simulated\": true, \"request_id\": \"req-d582e39e-acd4-47cf-a6d8-5be629207a53\", \"workers\": [{\"id\": \"worker-03\", \"name\": \"模拟人员丙\", \"role\": \"综合维护\"}], \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"available_qty\": 4, \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"available_qty\": 1, \"unit\": \"套\"}], \"required_skill\": \"pump_inspection\", \"required_inventory\": [\"tool-inspection-kit\", \"part-seal-ring\"], \"available\": true, \"reasons\": [], \"start_at\": \"2026-10-08T14:00:00\", \"end_at\": \"2026-10-08T15:00:00\"}}",
+        "created_at": "2026-10-07T09:16:24.069621+00:00",
+        "updated_at": "2026-10-07T09:16:41.972778+00:00"
+      },
+      {
+        "subtask_id": "subtask-4f099dd8-9909-4e70-a078-814a4a4e5548:resource:01",
+        "parent_task_id": "4f099dd8-9909-4e70-a078-814a4a4e5548",
+        "external_task_id": "4f099dd8-9909-4e70-a078-814a4a4e5548:resource:01",
+        "partner": "resource",
+        "action": "query_resources",
+        "message_id": "cmd-949f6f0a-b9f7-4e3f-8923-ffdbe64a1154",
+        "status": "working",
+        "result_json": "{}",
+        "created_at": "2026-10-07T09:29:08.969498+00:00",
+        "updated_at": "2026-10-07T09:29:08.969498+00:00"
+      },
+      {
+        "subtask_id": "subtask-6887e4c3-572c-4086-95db-8798ee5e42fd:resource:01",
+        "parent_task_id": "6887e4c3-572c-4086-95db-8798ee5e42fd",
+        "external_task_id": "6887e4c3-572c-4086-95db-8798ee5e42fd:resource:01",
+        "partner": "resource",
+        "action": "query_resources",
+        "message_id": "cmd-4f386f0e-a6f6-42a2-9ab4-ad4b80cb07b1",
+        "status": "completed",
+        "result_json": "{\"simulated\": true, \"ok\": true, \"partner\": \"resource\", \"action\": \"query_resources\", \"result\": {\"simulated\": true, \"request_id\": \"req-91d5a06d-0f32-4b60-823c-7b90cec78df9\", \"workers\": [{\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, {\"id\": \"worker-03\", \"name\": \"模拟人员丙\", \"role\": \"综合维护\"}], \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"available_qty\": 4, \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"available_qty\": 1, \"unit\": \"套\"}], \"required_skill\": \"pump_inspection\", \"required_inventory\": [\"tool-inspection-kit\", \"part-seal-ring\"], \"available\": true, \"reasons\": [], \"start_at\": \"2026-10-08T15:00:00\", \"end_at\": \"2026-10-08T16:00:00\"}}",
+        "created_at": "2026-10-07T11:21:42.020561+00:00",
+        "updated_at": "2026-10-07T11:21:58.745261+00:00"
+      },
+      {
+        "subtask_id": "subtask-7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8:resource:02",
+        "parent_task_id": "7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8",
+        "external_task_id": "7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8:resource:02",
+        "partner": "resource",
+        "action": "reserve_resources",
+        "message_id": "cmd-c4a2cf43-b722-49df-acfd-d87961499672",
+        "status": "completed",
+        "result_json": "{}",
+        "created_at": "2026-10-07T11:23:04.720688+00:00",
+        "updated_at": "2026-10-07T11:23:06.775027+00:00"
+      },
+      {
+        "subtask_id": "subtask-7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8:workorder:01",
+        "parent_task_id": "7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8",
+        "external_task_id": "7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8:workorder:01",
+        "partner": "workorder",
+        "action": "create_work_order",
+        "message_id": "cmd-c4a2cf43-b722-49df-acfd-d87961499672",
+        "status": "completed",
+        "result_json": "{\"simulated\": true, \"ok\": true, \"partner\": \"workorder\", \"action\": \"create_work_order\", \"result\": {\"simulated\": true, \"work_order\": {\"id\": \"wo-5fbb7dc9-5e74-4bf0-ad19-9852a9ff1e02\", \"number\": \"WO-20261007-8DC4AC\", \"request_id\": \"req-91d5a06d-0f32-4b60-823c-7b90cec78df9\", \"plan_id\": \"plan-7152f38a-5af3-4a62-a12e-82cb6b029145\", \"status\": \"confirmed\", \"failure_reason\": null, \"created_at\": \"2026-10-07T11:23:07.004894+00:00\", \"updated_at\": \"2026-10-07T11:23:07.004894+00:00\"}}}",
+        "created_at": "2026-10-07T11:23:06.780739+00:00",
+        "updated_at": "2026-10-07T11:23:09.561061+00:00"
+      },
+      {
+        "subtask_id": "subtask-task-e9505e30-6f6d-46f7-847d-f3d415d694be:resource:query:39d8cfb78ad9820b94330677",
+        "parent_task_id": "task-e9505e30-6f6d-46f7-847d-f3d415d694be",
+        "external_task_id": "task-e9505e30-6f6d-46f7-847d-f3d415d694be:resource:query:39d8cfb78ad9820b94330677",
+        "partner": "resource",
+        "action": "query_resources",
+        "message_id": "message-815d3b2f-dee1-40fb-9a70-4c11ac45a377",
+        "status": "working",
+        "result_json": "{}",
+        "created_at": "2026-10-08T14:11:08.572408+00:00",
+        "updated_at": "2026-10-08T14:11:08.572408+00:00"
+      },
+      {
+        "subtask_id": "subtask-task-e9505e30-6f6d-46f7-847d-f3d415d694be:resource:query:78472dfdd85af10117165791",
+        "parent_task_id": "task-e9505e30-6f6d-46f7-847d-f3d415d694be",
+        "external_task_id": "task-e9505e30-6f6d-46f7-847d-f3d415d694be:resource:query:78472dfdd85af10117165791",
+        "partner": "resource",
+        "action": "query_resources",
+        "message_id": "message-9afd9e06-515f-4164-be95-5aa8224bae4d",
+        "status": "completed",
+        "result_json": "{\"simulated\": true, \"ok\": true, \"partner\": \"resource\", \"action\": \"query_resources\", \"result\": {\"simulated\": true, \"request_id\": \"req-e60a8640-d260-4485-87de-578768e6aa32\", \"workers\": [{\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, {\"id\": \"worker-03\", \"name\": \"模拟人员丙\", \"role\": \"综合维护\"}], \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"available_qty\": 3, \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"available_qty\": 0, \"unit\": \"套\"}], \"required_skill\": \"pump_inspection\", \"required_inventory\": [\"tool-inspection-kit\", \"part-seal-ring\"], \"available\": false, \"reasons\": [\"库存不足：便携检查工具包\"], \"start_at\": \"2026-10-09T14:00:00\", \"end_at\": \"2026-10-09T15:00:00\"}}",
+        "created_at": "2026-10-08T14:14:45.261366+00:00",
+        "updated_at": "2026-10-08T14:14:45.328471+00:00"
+      },
+      {
+        "subtask_id": "subtask-task-e9505e30-6f6d-46f7-847d-f3d415d694be:resource:query:5c6b9273ba8d8cff51ab0fd5",
+        "parent_task_id": "task-e9505e30-6f6d-46f7-847d-f3d415d694be",
+        "external_task_id": "task-e9505e30-6f6d-46f7-847d-f3d415d694be:resource:query:5c6b9273ba8d8cff51ab0fd5",
+        "partner": "resource",
+        "action": "query_resources",
+        "message_id": "message-343d17d1-4148-4804-8492-898b08bcb8e7",
+        "status": "completed",
+        "result_json": "{\"simulated\": true, \"ok\": true, \"partner\": \"resource\", \"action\": \"query_resources\", \"result\": {\"simulated\": true, \"request_id\": \"req-e60a8640-d260-4485-87de-578768e6aa32\", \"workers\": [{\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, {\"id\": \"worker-03\", \"name\": \"模拟人员丙\", \"role\": \"综合维护\"}], \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"available_qty\": 4, \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"available_qty\": 1, \"unit\": \"套\"}], \"required_skill\": \"pump_inspection\", \"required_inventory\": [\"tool-inspection-kit\", \"part-seal-ring\"], \"available\": true, \"reasons\": [], \"start_at\": \"2026-10-09T15:00:00\", \"end_at\": \"2026-10-09T16:00:00\"}}",
+        "created_at": "2026-10-08T14:18:36.622778+00:00",
+        "updated_at": "2026-10-08T14:18:36.668178+00:00"
+      },
+      {
+        "subtask_id": "subtask-3dc5ed5c-0eeb-434d-8e0b-bd1357e2cf13:resource:01",
+        "parent_task_id": "3dc5ed5c-0eeb-434d-8e0b-bd1357e2cf13",
+        "external_task_id": "3dc5ed5c-0eeb-434d-8e0b-bd1357e2cf13:resource:01",
+        "partner": "resource",
+        "action": "query_resources",
+        "message_id": "cmd-94760f34-7eec-4cdc-aeba-dbb3d3bd3df0",
+        "status": "completed",
+        "result_json": "{\"simulated\": true, \"ok\": true, \"partner\": \"resource\", \"action\": \"query_resources\", \"result\": {\"simulated\": true, \"request_id\": \"req-acf860e1-5767-411b-913c-fbab04cb9a4e\", \"workers\": [{\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, {\"id\": \"worker-03\", \"name\": \"模拟人员丙\", \"role\": \"综合维护\"}], \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"available_qty\": 4, \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"available_qty\": 1, \"unit\": \"套\"}], \"required_skill\": \"pump_inspection\", \"required_inventory\": [\"tool-inspection-kit\", \"part-seal-ring\"], \"available\": true, \"reasons\": [], \"start_at\": \"2026-10-09T14:00:00\", \"end_at\": \"2026-10-09T15:00:00\"}}",
+        "created_at": "2026-10-08T14:18:49.329589+00:00",
+        "updated_at": "2026-10-08T14:19:00.640436+00:00"
+      },
+      {
+        "subtask_id": "subtask-c7b49b4d-e14f-457b-8f4f-6de4f02ee60f:resource:02",
+        "parent_task_id": "c7b49b4d-e14f-457b-8f4f-6de4f02ee60f",
+        "external_task_id": "c7b49b4d-e14f-457b-8f4f-6de4f02ee60f:resource:02",
+        "partner": "resource",
+        "action": "reserve_resources",
+        "message_id": "cmd-0e2dd094-4b41-46d5-bb7a-c775eda1333f",
+        "status": "completed",
+        "result_json": "{}",
+        "created_at": "2026-10-08T14:24:42.166578+00:00",
+        "updated_at": "2026-10-08T14:24:42.966876+00:00"
+      },
+      {
+        "subtask_id": "subtask-c7b49b4d-e14f-457b-8f4f-6de4f02ee60f:workorder:01",
+        "parent_task_id": "c7b49b4d-e14f-457b-8f4f-6de4f02ee60f",
+        "external_task_id": "c7b49b4d-e14f-457b-8f4f-6de4f02ee60f:workorder:01",
+        "partner": "workorder",
+        "action": "create_work_order",
+        "message_id": "cmd-0e2dd094-4b41-46d5-bb7a-c775eda1333f",
+        "status": "completed",
+        "result_json": "{\"simulated\": true, \"ok\": true, \"partner\": \"workorder\", \"action\": \"create_work_order\", \"result\": {\"simulated\": true, \"work_order\": {\"id\": \"wo-0883dc0e-00fa-462a-9fe4-45053fd85c58\", \"number\": \"WO-20261008-1C8738\", \"request_id\": \"req-acf860e1-5767-411b-913c-fbab04cb9a4e\", \"plan_id\": \"plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2\", \"status\": \"confirmed\", \"failure_reason\": null, \"created_at\": \"2026-10-08T14:24:44.169136+00:00\", \"updated_at\": \"2026-10-08T14:24:44.169136+00:00\"}}}",
+        "created_at": "2026-10-08T14:24:42.974801+00:00",
+        "updated_at": "2026-10-08T14:24:45.738746+00:00"
+      }
+    ],
+    "user_confirmations": [
+      {
+        "confirmation_id": "confirmation-5caf3f09-19c1-4573-be2a-0a283821c438",
+        "task_id": "5caf3f09-19c1-4573-be2a-0a283821c438",
+        "action": "create_work_order",
+        "decision": "confirmed",
+        "payload_json": "{\"plan_id\": \"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\"}",
+        "created_at": "2026-10-07T08:41:44.731667+00:00"
+      },
+      {
+        "confirmation_id": "confirmation-7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8",
+        "task_id": "7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8",
+        "action": "create_work_order",
+        "decision": "confirmed",
+        "payload_json": "{\"plan_id\": \"plan-7152f38a-5af3-4a62-a12e-82cb6b029145\"}",
+        "created_at": "2026-10-07T11:23:09.567293+00:00"
+      },
+      {
+        "confirmation_id": "confirmation-63288f70-4d82-4e4d-9130-af662d64e744",
+        "task_id": "task-e9505e30-6f6d-46f7-847d-f3d415d694be",
+        "action": "create_work_order",
+        "decision": "confirmed",
+        "payload_json": "{\"plan_id\": \"plan-febb7dbd-0d2b-4439-a87e-a17835c156dc\"}",
+        "created_at": "2026-10-08T14:20:35.906891+00:00"
+      },
+      {
+        "confirmation_id": "confirmation-ec907a45-8664-4de6-872f-01591cbcff74",
+        "task_id": "task-e9505e30-6f6d-46f7-847d-f3d415d694be",
+        "action": "create_work_order",
+        "decision": "confirmed",
+        "payload_json": "{\"plan_id\": \"plan-febb7dbd-0d2b-4439-a87e-a17835c156dc\"}",
+        "created_at": "2026-10-08T14:22:34.261475+00:00"
+      },
+      {
+        "confirmation_id": "confirmation-c7b49b4d-e14f-457b-8f4f-6de4f02ee60f",
+        "task_id": "c7b49b4d-e14f-457b-8f4f-6de4f02ee60f",
+        "action": "create_work_order",
+        "decision": "confirmed",
+        "payload_json": "{\"plan_id\": \"plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2\"}",
+        "created_at": "2026-10-08T14:24:45.744631+00:00"
+      }
+    ],
+    "task_events": [
+      {
+        "id": 1,
+        "request_id": "req-6218f46d-e600-46d8-8383-19bb761eedec",
+        "work_order_id": null,
+        "event_type": "request_created",
+        "actor": "leader",
+        "details_json": "{\"missing_fields\": [], \"simulated\": true}",
+        "created_at": "2026-10-06T17:19:18.188213+00:00"
+      },
+      {
+        "id": 2,
+        "request_id": "req-51fa8900-3ecb-498c-8ee2-a7930e502559",
+        "work_order_id": null,
+        "event_type": "request_created",
+        "actor": "leader",
+        "details_json": "{\"missing_fields\": [], \"simulated\": true}",
+        "created_at": "2026-10-06T18:18:14.993649+00:00"
+      },
+      {
+        "id": 3,
+        "request_id": "req-75db480b-e137-4cd3-a493-5166ea545487",
+        "work_order_id": null,
+        "event_type": "request_created",
+        "actor": "leader",
+        "details_json": "{\"missing_fields\": [], \"simulated\": true}",
+        "created_at": "2026-10-06T20:11:57.599314+00:00"
+      },
+      {
+        "id": 4,
+        "request_id": "req-d9d3d534-9bea-4cfe-add3-543e42978eaf",
+        "work_order_id": null,
+        "event_type": "request_created",
+        "actor": "leader",
+        "details_json": "{\"missing_fields\": [], \"simulated\": true}",
+        "created_at": "2026-10-06T21:07:13.205867+00:00"
+      },
+      {
+        "id": 5,
+        "request_id": "req-d9d3d534-9bea-4cfe-add3-543e42978eaf",
+        "work_order_id": null,
+        "event_type": "plan_generated",
+        "actor": "leader",
+        "details_json": "{\"plan_id\": \"plan-41fd52a6-1cae-4ec5-a7ed-206df95e04ba\", \"worker_id\": \"worker-01\", \"inventory\": [\"part-seal-ring\", \"tool-inspection-kit\"]}",
+        "created_at": "2026-10-06T21:07:24.847647+00:00"
+      },
+      {
+        "id": 6,
+        "request_id": "req-d9d3d534-9bea-4cfe-add3-543e42978eaf",
+        "work_order_id": null,
+        "event_type": "resource_released",
+        "actor": "resource_partner",
+        "details_json": "{\"plan_id\": \"plan-41fd52a6-1cae-4ec5-a7ed-206df95e04ba\", \"reservation_ids\": []}",
+        "created_at": "2026-10-06T21:18:29.554586+00:00"
+      },
+      {
+        "id": 7,
+        "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+        "work_order_id": null,
+        "event_type": "request_created",
+        "actor": "leader",
+        "details_json": "{\"missing_fields\": [], \"simulated\": true}",
+        "created_at": "2026-10-07T08:40:30.463348+00:00"
+      },
+      {
+        "id": 8,
+        "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+        "work_order_id": null,
+        "event_type": "plan_generated",
+        "actor": "leader",
+        "details_json": "{\"plan_id\": \"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\", \"worker_id\": \"worker-01\", \"inventory\": [\"part-seal-ring\", \"tool-inspection-kit\"]}",
+        "created_at": "2026-10-07T08:40:46.855077+00:00"
+      },
+      {
+        "id": 9,
+        "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+        "work_order_id": null,
+        "event_type": "resource_reserved",
+        "actor": "resource_partner",
+        "details_json": "{\"plan_id\": \"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\", \"reservations\": [{\"id\": \"reservation-ef1ae5c6-c3a8-4675-82fc-04303a37833d\", \"resource_type\": \"worker\", \"resource_id\": \"worker-01\", \"quantity\": 1}, {\"id\": \"reservation-6491f764-5f20-4a12-95ca-7dacb21b44d0\", \"resource_type\": \"inventory\", \"resource_id\": \"part-seal-ring\", \"quantity\": 1}, {\"id\": \"reservation-fdd057b2-65d2-4edd-bffa-dd538f7287b6\", \"resource_type\": \"inventory\", \"resource_id\": \"tool-inspection-kit\", \"quantity\": 1}]}",
+        "created_at": "2026-10-07T08:41:41.330265+00:00"
+      },
+      {
+        "id": 10,
+        "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+        "work_order_id": "wo-63d7edf6-f338-4646-99ef-f1e42e2d0aa0",
+        "event_type": "work_order_created",
+        "actor": "work_order_partner",
+        "details_json": "{\"plan_id\": \"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\", \"number\": \"WO-20261007-89643E\"}",
+        "created_at": "2026-10-07T08:41:42.557989+00:00"
+      },
+      {
+        "id": 11,
+        "request_id": "req-2dab6b9e-4039-4239-bca7-6664e271bcae",
+        "work_order_id": null,
+        "event_type": "request_created",
+        "actor": "leader",
+        "details_json": "{\"missing_fields\": [], \"simulated\": true}",
+        "created_at": "2026-10-07T08:44:03.566660+00:00"
+      },
+      {
+        "id": 12,
+        "request_id": "req-2dab6b9e-4039-4239-bca7-6664e271bcae",
+        "work_order_id": null,
+        "event_type": "plan_generated",
+        "actor": "leader",
+        "details_json": "{\"plan_id\": \"plan-1ac57203-7f0c-47e0-b860-6f99c4161e96\", \"worker_id\": \"worker-01\", \"inventory\": [\"part-seal-ring\", \"tool-inspection-kit\"]}",
+        "created_at": "2026-10-07T08:44:19.980849+00:00"
+      },
+      {
+        "id": 13,
+        "request_id": "req-d582e39e-acd4-47cf-a6d8-5be629207a53",
+        "work_order_id": null,
+        "event_type": "request_created",
+        "actor": "leader",
+        "details_json": "{\"missing_fields\": [], \"simulated\": true}",
+        "created_at": "2026-10-07T09:16:23.660226+00:00"
+      },
+      {
+        "id": 14,
+        "request_id": "req-d582e39e-acd4-47cf-a6d8-5be629207a53",
+        "work_order_id": null,
+        "event_type": "plan_generated",
+        "actor": "leader",
+        "details_json": "{\"plan_id\": \"plan-d1150a62-6cf5-4d35-85dc-60454ea722b2\", \"worker_id\": \"worker-03\", \"inventory\": [\"part-seal-ring\", \"tool-inspection-kit\"]}",
+        "created_at": "2026-10-07T09:16:41.982840+00:00"
+      },
+      {
+        "id": 15,
+        "request_id": "req-6d5215b6-a268-4bb2-81bb-c6b512794013",
+        "work_order_id": null,
+        "event_type": "request_created",
+        "actor": "leader",
+        "details_json": "{\"missing_fields\": [], \"simulated\": true}",
+        "created_at": "2026-10-07T09:29:08.241438+00:00"
+      },
+      {
+        "id": 16,
+        "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9",
+        "work_order_id": null,
+        "event_type": "request_created",
+        "actor": "leader",
+        "details_json": "{\"missing_fields\": [], \"simulated\": true}",
+        "created_at": "2026-10-07T11:21:40.845664+00:00"
+      },
+      {
+        "id": 17,
+        "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9",
+        "work_order_id": null,
+        "event_type": "plan_generated",
+        "actor": "leader",
+        "details_json": "{\"plan_id\": \"plan-7152f38a-5af3-4a62-a12e-82cb6b029145\", \"worker_id\": \"worker-01\", \"inventory\": [\"part-seal-ring\", \"tool-inspection-kit\"]}",
+        "created_at": "2026-10-07T11:21:58.752884+00:00"
+      },
+      {
+        "id": 18,
+        "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9",
+        "work_order_id": null,
+        "event_type": "resource_reserved",
+        "actor": "resource_partner",
+        "details_json": "{\"plan_id\": \"plan-7152f38a-5af3-4a62-a12e-82cb6b029145\", \"reservations\": [{\"id\": \"reservation-2b5cac77-6c8b-4266-8fc9-aed56271d234\", \"resource_type\": \"worker\", \"resource_id\": \"worker-01\", \"quantity\": 1}, {\"id\": \"reservation-1970a022-4de3-4201-b555-2d354acce280\", \"resource_type\": \"inventory\", \"resource_id\": \"part-seal-ring\", \"quantity\": 1}, {\"id\": \"reservation-f9110f8a-7f05-4449-9e65-493b7151f04e\", \"resource_type\": \"inventory\", \"resource_id\": \"tool-inspection-kit\", \"quantity\": 1}]}",
+        "created_at": "2026-10-07T11:23:05.169694+00:00"
+      },
+      {
+        "id": 19,
+        "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9",
+        "work_order_id": "wo-5fbb7dc9-5e74-4bf0-ad19-9852a9ff1e02",
+        "event_type": "work_order_created",
+        "actor": "work_order_partner",
+        "details_json": "{\"plan_id\": \"plan-7152f38a-5af3-4a62-a12e-82cb6b029145\", \"number\": \"WO-20261007-8DC4AC\"}",
+        "created_at": "2026-10-07T11:23:07.004983+00:00"
+      },
+      {
+        "id": 20,
+        "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "work_order_id": null,
+        "event_type": "request_created",
+        "actor": "leader",
+        "details_json": "{\"missing_fields\": [], \"simulated\": true}",
+        "created_at": "2026-10-08T14:11:08.545336+00:00"
+      },
+      {
+        "id": 21,
+        "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "work_order_id": null,
+        "event_type": "request_updated",
+        "actor": "leader",
+        "details_json": "{\"missing_fields\": []}",
+        "created_at": "2026-10-08T14:14:45.243205+00:00"
+      },
+      {
+        "id": 22,
+        "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+        "work_order_id": "wo-63d7edf6-f338-4646-99ef-f1e42e2d0aa0",
+        "event_type": "work_order_cancelled",
+        "actor": "work_order_partner",
+        "details_json": "{\"released_reservations\": [\"reservation-ef1ae5c6-c3a8-4675-82fc-04303a37833d\", \"reservation-6491f764-5f20-4a12-95ca-7dacb21b44d0\", \"reservation-fdd057b2-65d2-4edd-bffa-dd538f7287b6\"]}",
+        "created_at": "2026-10-08T14:17:40.540899+00:00"
+      },
+      {
+        "id": 23,
+        "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "work_order_id": null,
+        "event_type": "request_updated",
+        "actor": "leader",
+        "details_json": "{\"missing_fields\": []}",
+        "created_at": "2026-10-08T14:18:36.600068+00:00"
+      },
+      {
+        "id": 24,
+        "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "work_order_id": null,
+        "event_type": "plan_generated",
+        "actor": "leader",
+        "details_json": "{\"plan_id\": \"plan-febb7dbd-0d2b-4439-a87e-a17835c156dc\", \"worker_id\": \"worker-01\", \"inventory\": [\"part-seal-ring\", \"tool-inspection-kit\"]}",
+        "created_at": "2026-10-08T14:18:36.675772+00:00"
+      },
+      {
+        "id": 25,
+        "request_id": "req-acf860e1-5767-411b-913c-fbab04cb9a4e",
+        "work_order_id": null,
+        "event_type": "request_created",
+        "actor": "leader",
+        "details_json": "{\"missing_fields\": [], \"simulated\": true}",
+        "created_at": "2026-10-08T14:18:45.071977+00:00"
+      },
+      {
+        "id": 26,
+        "request_id": "req-acf860e1-5767-411b-913c-fbab04cb9a4e",
+        "work_order_id": null,
+        "event_type": "plan_generated",
+        "actor": "leader",
+        "details_json": "{\"plan_id\": \"plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2\", \"worker_id\": \"worker-01\", \"inventory\": [\"part-seal-ring\", \"tool-inspection-kit\"]}",
+        "created_at": "2026-10-08T14:19:00.650166+00:00"
+      },
+      {
+        "id": 27,
+        "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "work_order_id": null,
+        "event_type": "resource_reserved",
+        "actor": "resource_partner",
+        "details_json": "{\"plan_id\": \"plan-febb7dbd-0d2b-4439-a87e-a17835c156dc\", \"reservations\": [{\"id\": \"reservation-3a8dd485-e67a-45cb-8911-d63fc300a1fd\", \"resource_type\": \"worker\", \"resource_id\": \"worker-01\", \"quantity\": 1}, {\"id\": \"reservation-b23b8518-1c72-4983-a88e-c753763f5d0d\", \"resource_type\": \"inventory\", \"resource_id\": \"part-seal-ring\", \"quantity\": 1}, {\"id\": \"reservation-e5990958-9b99-46e5-932c-197405d7efd5\", \"resource_type\": \"inventory\", \"resource_id\": \"tool-inspection-kit\", \"quantity\": 1}]}",
+        "created_at": "2026-10-08T14:20:35.849089+00:00"
+      },
+      {
+        "id": 28,
+        "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "work_order_id": "wo-c1f828d2-bb50-440f-bdc0-04d90fdc3c40",
+        "event_type": "work_order_created",
+        "actor": "work_order_partner",
+        "details_json": "{\"plan_id\": \"plan-febb7dbd-0d2b-4439-a87e-a17835c156dc\", \"number\": \"WO-20261008-3D7B9C\"}",
+        "created_at": "2026-10-08T14:20:35.892597+00:00"
+      },
+      {
+        "id": 29,
+        "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "work_order_id": "wo-c1f828d2-bb50-440f-bdc0-04d90fdc3c40",
+        "event_type": "work_order_status_updated",
+        "actor": "work_order_partner",
+        "details_json": "{\"status\": \"in_progress\"}",
+        "created_at": "2026-10-08T14:22:51.778804+00:00"
+      },
+      {
+        "id": 30,
+        "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "work_order_id": "wo-c1f828d2-bb50-440f-bdc0-04d90fdc3c40",
+        "event_type": "work_order_status_updated",
+        "actor": "work_order_partner",
+        "details_json": "{\"status\": \"completed\"}",
+        "created_at": "2026-10-08T14:23:19.378942+00:00"
+      },
+      {
+        "id": 31,
+        "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9",
+        "work_order_id": "wo-5fbb7dc9-5e74-4bf0-ad19-9852a9ff1e02",
+        "event_type": "work_order_cancelled",
+        "actor": "work_order_partner",
+        "details_json": "{\"released_reservations\": [\"reservation-2b5cac77-6c8b-4266-8fc9-aed56271d234\", \"reservation-1970a022-4de3-4201-b555-2d354acce280\", \"reservation-f9110f8a-7f05-4449-9e65-493b7151f04e\"]}",
+        "created_at": "2026-10-08T14:23:58.640913+00:00"
+      },
+      {
+        "id": 32,
+        "request_id": "req-acf860e1-5767-411b-913c-fbab04cb9a4e",
+        "work_order_id": null,
+        "event_type": "resource_reserved",
+        "actor": "resource_partner",
+        "details_json": "{\"plan_id\": \"plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2\", \"reservations\": [{\"id\": \"reservation-4ad500ee-6778-4545-9a15-f90269db17ee\", \"resource_type\": \"worker\", \"resource_id\": \"worker-01\", \"quantity\": 1}, {\"id\": \"reservation-8de020c9-86df-407c-883a-3b01dea19487\", \"resource_type\": \"inventory\", \"resource_id\": \"part-seal-ring\", \"quantity\": 1}, {\"id\": \"reservation-d92c4727-dfc0-43a7-993a-684174d375b8\", \"resource_type\": \"inventory\", \"resource_id\": \"tool-inspection-kit\", \"quantity\": 1}]}",
+        "created_at": "2026-10-08T14:24:42.300367+00:00"
+      },
+      {
+        "id": 33,
+        "request_id": "req-acf860e1-5767-411b-913c-fbab04cb9a4e",
+        "work_order_id": "wo-0883dc0e-00fa-462a-9fe4-45053fd85c58",
+        "event_type": "work_order_created",
+        "actor": "work_order_partner",
+        "details_json": "{\"plan_id\": \"plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2\", \"number\": \"WO-20261008-1C8738\"}",
+        "created_at": "2026-10-08T14:24:44.169225+00:00"
+      }
+    ]
+  },
+  "integrity": "ok",
+  "counts": {
+    "work_orders": 4,
+    "active_reservations": 6
+  },
+  "rpc": [
+    {
+      "task_id": "server-mtls-4e132677ed-task",
+      "session_id": "server-mtls-4e132677ed-session",
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-170880ba-3f03-4e80-8944-b202658c3e98\",\"sentAt\":\"2026-10-06T16:45:01.985510+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"server-mtls-4e132677ed-session\",\"taskId\":\"server-mtls-4e132677ed-task\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T16:45:01.985493+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-server-mtls-4e132677ed-task\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"server-mtls-4e132677ed-session\\\", \\\"taskId\\\": \\\"server-mtls-4e132677ed-task\\\", \\\"messageId\\\": \\\"server-mtls-4e132677ed-dadf7f\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"server-mtls-4e132677ed-72f3af\",\"sentAt\":\"2026-10-06T16:45:01.896799+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"水泵001运行异常，帮我安排明天下午检查。\"}],\"groupId\":null,\"sessionId\":\"server-mtls-4e132677ed-session\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"server-mtls-4e132677ed-task\"},{\"type\":\"task-command\",\"id\":\"server-mtls-4e132677ed-dadf7f\",\"sentAt\":\"2026-10-06T16:45:01.965309+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\",\"mentions\":null,\"dataItems\":[],\"groupId\":null,\"sessionId\":\"server-mtls-4e132677ed-session\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"server-mtls-4e132677ed-task\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T16:45:01.916027+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T16:45:01.923501+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-06T16:45:01.939497+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：开始时间、预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T16:45:01.971194+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T16:45:01.975688+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T16:45:01.985493+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "server-mtls-452639c3df-task",
+      "session_id": "server-mtls-452639c3df-session",
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-58867598-4341-4360-b0fa-aeaa4759537a\",\"sentAt\":\"2026-10-06T16:48:30.202345+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"server-mtls-452639c3df-session\",\"taskId\":\"server-mtls-452639c3df-task\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T16:48:30.202322+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-server-mtls-452639c3df-task\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"server-mtls-452639c3df-session\\\", \\\"taskId\\\": \\\"server-mtls-452639c3df-task\\\", \\\"messageId\\\": \\\"server-mtls-452639c3df-0a9941\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"server-mtls-452639c3df-48a7b7\",\"sentAt\":\"2026-10-06T16:48:30.114042+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"水泵001运行异常，帮我安排明天下午检查。\"}],\"groupId\":null,\"sessionId\":\"server-mtls-452639c3df-session\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"server-mtls-452639c3df-task\"},{\"type\":\"task-command\",\"id\":\"server-mtls-452639c3df-0a9941\",\"sentAt\":\"2026-10-06T16:48:30.182397+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\",\"mentions\":null,\"dataItems\":[],\"groupId\":null,\"sessionId\":\"server-mtls-452639c3df-session\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"server-mtls-452639c3df-task\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T16:48:30.133805+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T16:48:30.138728+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-06T16:48:30.155477+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：开始时间、预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T16:48:30.188289+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T16:48:30.192692+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T16:48:30.202322+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "public-mtls-1717d39d86-task",
+      "session_id": "public-mtls-1717d39d86-session",
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-ed03df48-f31e-4a43-b512-d6120fd7c8bb\",\"sentAt\":\"2026-10-06T16:55:24.573824+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"public-mtls-1717d39d86-session\",\"taskId\":\"public-mtls-1717d39d86-task\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T16:55:24.573805+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-public-mtls-1717d39d86-task\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"public-mtls-1717d39d86-session\\\", \\\"taskId\\\": \\\"public-mtls-1717d39d86-task\\\", \\\"messageId\\\": \\\"public-mtls-1717d39d86-2a59f4\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"public-mtls-1717d39d86-0ee63d\",\"sentAt\":\"2026-10-06T16:55:12.694013+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"水泵001运行异常，帮我安排明天下午检查。\"}],\"groupId\":null,\"sessionId\":\"public-mtls-1717d39d86-session\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"public-mtls-1717d39d86-task\"},{\"type\":\"task-command\",\"id\":\"public-mtls-1717d39d86-2a59f4\",\"sentAt\":\"2026-10-06T16:55:21.390969+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\",\"mentions\":null,\"dataItems\":[],\"groupId\":null,\"sessionId\":\"public-mtls-1717d39d86-session\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"public-mtls-1717d39d86-task\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T16:55:14.767919+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T16:55:14.775575+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-06T16:55:14.793361+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：开始时间、预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T16:55:24.554278+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T16:55:24.560076+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T16:55:24.573805+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "87ee5e18-72f2-4dee-90f6-2ee75cefd764",
+      "session_id": "session_1699",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-46684b0d-39f6-4a29-baba-09e06ef43161\",\"sentAt\":\"2026-10-06T17:01:56.188394+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1699\",\"taskId\":\"87ee5e18-72f2-4dee-90f6-2ee75cefd764\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T17:01:56.188374+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-87ee5e18-72f2-4dee-90f6-2ee75cefd764\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"session_1699\\\", \\\"taskId\\\": \\\"87ee5e18-72f2-4dee-90f6-2ee75cefd764\\\", \\\"messageId\\\": \\\"cmd-e9ae8a77-ecb9-4013-83e2-95396b7ab420\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-8097b948-29ee-4566-9e0c-b142c3d4924f\",\"sentAt\":\"2026-10-06T16:57:43.177032+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1699\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"87ee5e18-72f2-4dee-90f6-2ee75cefd764\"},{\"type\":\"task-command\",\"id\":\"cmd-e9ae8a77-ecb9-4013-83e2-95396b7ab420\",\"sentAt\":\"2026-10-06T17:01:52.826023+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1699\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"87ee5e18-72f2-4dee-90f6-2ee75cefd764\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T16:57:43.959835+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T16:57:43.968485+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-06T16:57:43.984959+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：开始时间、预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T17:01:56.168925+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T17:01:56.176071+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T17:01:56.188374+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "c08c35ae-137c-453d-aa88-6aa6ad900082",
+      "session_id": "session_1700",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-2545884f-b6f1-4c62-932e-2b43b6c90b63\",\"sentAt\":\"2026-10-06T17:19:17.124920+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1700\",\"taskId\":\"c08c35ae-137c-453d-aa88-6aa6ad900082\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T17:19:17.124902+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-c08c35ae-137c-453d-aa88-6aa6ad900082\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"session_1700\\\", \\\"taskId\\\": \\\"c08c35ae-137c-453d-aa88-6aa6ad900082\\\", \\\"messageId\\\": \\\"cmd-59a14be3-bb8b-4503-a1cb-445135757bd8\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-ede74a59-f475-4056-977c-02223a420997\",\"sentAt\":\"2026-10-06T17:18:35.860148+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1700\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"c08c35ae-137c-453d-aa88-6aa6ad900082\"},{\"type\":\"task-command\",\"id\":\"cmd-59a14be3-bb8b-4503-a1cb-445135757bd8\",\"sentAt\":\"2026-10-06T17:19:14.915532+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1700\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"c08c35ae-137c-453d-aa88-6aa6ad900082\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T17:18:36.743785+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T17:18:36.750588+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-06T17:18:36.774037+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：开始时间、预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T17:19:17.105040+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T17:19:17.111235+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T17:19:17.124902+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "19f8e6da-bc45-4afd-85fd-85fc8a570347",
+      "session_id": "session_1700",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-7c29ef21-6724-4349-9a86-4000b6599697\",\"sentAt\":\"2026-10-06T17:19:19.309959+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1700\",\"taskId\":\"19f8e6da-bc45-4afd-85fd-85fc8a570347\",\"status\":{\"state\":\"failed\",\"stateChangedAt\":\"2026-10-06T17:19:19.309914+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"没有符合能力和安全要求的 Partner。\"}]},\"products\":null,\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-dd5d54da-a7ff-4130-bbea-92b99728a5d4\",\"sentAt\":\"2026-10-06T17:19:17.759943+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"用户原始需求：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：为安排水泵001明天下午的异常检查，还需要两项信息：1）明天下午的具体开始时间（例如 14:00 或 15:00）；2）预计检查时长（分钟，例如 30 分钟或 60 分钟）。请提供这两项，以便排定检查时间。\\n用户回答：下午两点开始，预计一小时，需要泵体检查技能。\\n\\n该智能体的专属补充任务：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1700\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"19f8e6da-bc45-4afd-85fd-85fc8a570347\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T17:19:18.159823+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T17:19:18.168245+00:00\",\"dataItems\":[]},{\"state\":\"failed\",\"stateChangedAt\":\"2026-10-06T17:19:19.309914+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"没有符合能力和安全要求的 Partner。\"}]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "2a705116-016c-492b-b088-347b0f82e72a",
+      "session_id": "session_1701",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-8bd73c26-58fc-4c13-aa4f-db39765228ba\",\"sentAt\":\"2026-10-06T18:18:13.912618+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1701\",\"taskId\":\"2a705116-016c-492b-b088-347b0f82e72a\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T18:18:13.912595+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-2a705116-016c-492b-b088-347b0f82e72a\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"session_1701\\\", \\\"taskId\\\": \\\"2a705116-016c-492b-b088-347b0f82e72a\\\", \\\"messageId\\\": \\\"cmd-3bbdaf97-a2cc-4ceb-9de0-9204531b0aae\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-de42cafe-34c7-42dc-9e50-329cdb770a2e\",\"sentAt\":\"2026-10-06T18:17:27.877001+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1701\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"2a705116-016c-492b-b088-347b0f82e72a\"},{\"type\":\"task-command\",\"id\":\"cmd-3bbdaf97-a2cc-4ceb-9de0-9204531b0aae\",\"sentAt\":\"2026-10-06T18:18:13.127482+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1701\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"2a705116-016c-492b-b088-347b0f82e72a\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T18:17:28.419727+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T18:17:28.424752+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-06T18:17:28.442203+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：开始时间、预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T18:18:13.893384+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T18:18:13.899052+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T18:18:13.912595+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "c57cd75f-9ebc-43c0-bed5-7b36c25979df",
+      "session_id": "session_1701",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-ecf107c4-b033-45e5-ad12-61be293c8144\",\"sentAt\":\"2026-10-06T18:18:15.810178+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1701\",\"taskId\":\"c57cd75f-9ebc-43c0-bed5-7b36c25979df\",\"status\":{\"state\":\"failed\",\"stateChangedAt\":\"2026-10-06T18:18:15.810138+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"没有符合能力和安全要求的 Partner。\"}]},\"products\":null,\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-44b448e7-a5f1-475d-9559-9750781da470\",\"sentAt\":\"2026-10-06T18:18:14.427930+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"用户原始需求：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：为安排“水泵001运行异常”的检查任务，还需要您补充两项信息：\\n1）开始时间：明天下午的具体几点开始（例如 14:00）；\\n2）预计时长：本次检查大约需要多少分钟（例如 60 分钟）。\\n未提供这两项时，检查任务无法排入明天下午的日程；请直接回复时间点与时长即可。\\n用户回答：补充上一轮缺少的信息：明天下午两点开始，预计一小时。这是当前任务的补充，请继续同一个任务。\\n\\n该智能体的专属补充任务：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1701\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"c57cd75f-9ebc-43c0-bed5-7b36c25979df\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T18:18:14.965426+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T18:18:14.972463+00:00\",\"dataItems\":[]},{\"state\":\"failed\",\"stateChangedAt\":\"2026-10-06T18:18:15.810138+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"没有符合能力和安全要求的 Partner。\"}]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "public-continue-db00d48834b4-task",
+      "session_id": "public-continue-db00d48834b4-session",
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-1666a124-46a8-4688-bf58-842e05b2ba74\",\"sentAt\":\"2026-10-06T18:59:41.034065+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"public-continue-db00d48834b4-session\",\"taskId\":\"public-continue-db00d48834b4-task\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T18:59:41.034047+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-public-continue-db00d48834b4-task\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"public-continue-db00d48834b4-session\\\", \\\"taskId\\\": \\\"public-continue-db00d48834b4-task\\\", \\\"messageId\\\": \\\"public-continue-db00d48834b4-2065516b\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"public-continue-db00d48834b4-adc3b68e\",\"sentAt\":\"2026-10-06T18:59:40.712189+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"水泵001运行异常，帮我安排明天下午检查。\"}],\"groupId\":null,\"sessionId\":\"public-continue-db00d48834b4-session\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"public-continue-db00d48834b4-task\"},{\"type\":\"task-command\",\"id\":\"public-continue-db00d48834b4-f585c851\",\"sentAt\":\"2026-10-06T18:59:40.870079+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"下午两点开始。\"}],\"groupId\":null,\"sessionId\":\"public-continue-db00d48834b4-session\",\"command\":\"continue\",\"commandParams\":null,\"taskId\":\"public-continue-db00d48834b4-task\"},{\"type\":\"task-command\",\"id\":\"public-continue-db00d48834b4-2065516b\",\"sentAt\":\"2026-10-06T18:59:41.009574+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\",\"mentions\":null,\"dataItems\":[],\"groupId\":null,\"sessionId\":\"public-continue-db00d48834b4-session\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"public-continue-db00d48834b4-task\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T18:59:40.734888+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T18:59:40.739801+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-06T18:59:40.752054+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：开始时间、预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T18:59:40.878853+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T18:59:40.883281+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-06T18:59:40.892958+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T18:59:41.019061+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T18:59:41.023911+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T18:59:41.034047+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "public-continue-183ab980a167-task",
+      "session_id": "public-continue-183ab980a167-session",
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-5ebadb52-0bce-44c8-8176-1b7839cc499c\",\"sentAt\":\"2026-10-06T20:10:37.249348+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"public-continue-183ab980a167-session\",\"taskId\":\"public-continue-183ab980a167-task\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T20:10:37.249331+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-public-continue-183ab980a167-task\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"public-continue-183ab980a167-session\\\", \\\"taskId\\\": \\\"public-continue-183ab980a167-task\\\", \\\"messageId\\\": \\\"public-continue-183ab980a167-8a4a017a\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"public-continue-183ab980a167-704f7071\",\"sentAt\":\"2026-10-06T20:10:36.902995+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"水泵001运行异常，帮我安排明天下午检查。\"}],\"groupId\":null,\"sessionId\":\"public-continue-183ab980a167-session\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"public-continue-183ab980a167-task\"},{\"type\":\"task-command\",\"id\":\"public-continue-183ab980a167-bd46def8\",\"sentAt\":\"2026-10-06T20:10:37.084865+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"下午两点开始。\"}],\"groupId\":null,\"sessionId\":\"public-continue-183ab980a167-session\",\"command\":\"continue\",\"commandParams\":null,\"taskId\":\"public-continue-183ab980a167-task\"},{\"type\":\"task-command\",\"id\":\"public-continue-183ab980a167-8a4a017a\",\"sentAt\":\"2026-10-06T20:10:37.226072+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\",\"mentions\":null,\"dataItems\":[],\"groupId\":null,\"sessionId\":\"public-continue-183ab980a167-session\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"public-continue-183ab980a167-task\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T20:10:36.935411+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T20:10:36.942275+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-06T20:10:36.959202+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：开始时间、预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T20:10:37.094282+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T20:10:37.098567+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-06T20:10:37.109262+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T20:10:37.235547+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T20:10:37.239938+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T20:10:37.249331+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "192cf143-e90e-4092-a44d-9fcca5520102",
+      "session_id": "session_1702",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-6b9a7572-afff-4327-8fb3-dfc6783a2556\",\"sentAt\":\"2026-10-06T20:11:56.264293+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1702\",\"taskId\":\"192cf143-e90e-4092-a44d-9fcca5520102\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T20:11:56.264275+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-192cf143-e90e-4092-a44d-9fcca5520102\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"session_1702\\\", \\\"taskId\\\": \\\"192cf143-e90e-4092-a44d-9fcca5520102\\\", \\\"messageId\\\": \\\"cmd-02fb3001-dab9-4fb6-aeff-056ff7719229\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-e90136ce-bd6f-4981-b8f0-0593fc2df0a9\",\"sentAt\":\"2026-10-06T20:11:11.714455+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1702\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"192cf143-e90e-4092-a44d-9fcca5520102\"},{\"type\":\"task-command\",\"id\":\"cmd-02fb3001-dab9-4fb6-aeff-056ff7719229\",\"sentAt\":\"2026-10-06T20:11:53.148586+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1702\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"192cf143-e90e-4092-a44d-9fcca5520102\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T20:11:12.606707+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T20:11:12.612374+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-06T20:11:12.635851+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：开始时间、预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T20:11:56.246371+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T20:11:56.252096+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T20:11:56.264275+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "cfe51e30-0e42-4637-b322-2eea65663a00",
+      "session_id": "session_1702",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-404181ef-e5da-4233-83fa-da7d0531a86f\",\"sentAt\":\"2026-10-06T20:11:59.660879+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1702\",\"taskId\":\"cfe51e30-0e42-4637-b322-2eea65663a00\",\"status\":{\"state\":\"failed\",\"stateChangedAt\":\"2026-10-06T20:11:59.660825+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"没有符合能力和安全要求的 Partner。\"}]},\"products\":null,\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-5983a7cb-e1d7-4a13-aa30-b51ed8d33577\",\"sentAt\":\"2026-10-06T20:11:56.785612+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"用户原始需求：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：工维联核心业务 Leader 需要补充信息才能安排水泵001明天下午的检查：请提供具体的开始时间（例如明天14:00）和预计检查时长（分钟或小时）。收到后将继续安排。\\n用户回答：下午两点开始，预计一小时，需要泵体检查技能。\\n\\n该智能体的专属补充任务：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1702\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"cfe51e30-0e42-4637-b322-2eea65663a00\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T20:11:57.574326+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T20:11:57.580053+00:00\",\"dataItems\":[]},{\"state\":\"failed\",\"stateChangedAt\":\"2026-10-06T20:11:59.660825+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"没有符合能力和安全要求的 Partner。\"}]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "c9ea98aa-fcf7-42b3-89da-36b26aa1ec2b",
+      "session_id": "session_1703",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-9dc1127d-36a4-4634-a30f-aaa701f6a1b1\",\"sentAt\":\"2026-10-06T21:07:12.602815+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1703\",\"taskId\":\"c9ea98aa-fcf7-42b3-89da-36b26aa1ec2b\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T21:07:12.602787+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-c9ea98aa-fcf7-42b3-89da-36b26aa1ec2b\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"session_1703\\\", \\\"taskId\\\": \\\"c9ea98aa-fcf7-42b3-89da-36b26aa1ec2b\\\", \\\"messageId\\\": \\\"cmd-2bc06296-dfd2-42dd-8352-45764f6d477a\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-596d0ee8-811e-4237-a4c4-16b8d9bf8fbf\",\"sentAt\":\"2026-10-06T21:06:09.294048+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1703\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"c9ea98aa-fcf7-42b3-89da-36b26aa1ec2b\"},{\"type\":\"task-command\",\"id\":\"cmd-2bc06296-dfd2-42dd-8352-45764f6d477a\",\"sentAt\":\"2026-10-06T21:07:11.209869+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1703\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"c9ea98aa-fcf7-42b3-89da-36b26aa1ec2b\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T21:06:09.777794+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T21:06:09.782584+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-06T21:06:09.803435+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：开始时间、预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T21:07:12.582812+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T21:07:12.588657+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T21:07:12.602787+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "c3a2809e-d5e5-4246-8f1e-1eb86daad30e",
+      "session_id": "session_1703",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-744233a0-48b2-490a-a842-2854dddd56ea\",\"sentAt\":\"2026-10-06T21:18:33.713510+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1703\",\"taskId\":\"c3a2809e-d5e5-4246-8f1e-1eb86daad30e\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T21:18:33.713482+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-c3a2809e-d5e5-4246-8f1e-1eb86daad30e\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"session_1703\\\", \\\"taskId\\\": \\\"c3a2809e-d5e5-4246-8f1e-1eb86daad30e\\\", \\\"messageId\\\": \\\"cmd-66139e14-e881-43f4-84d1-82ebc8f7127b\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-cd790800-5d5b-45c4-9c52-74fd5f00ac0d\",\"sentAt\":\"2026-10-06T21:07:13.117018+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"用户原始需求：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：为了安排水泵001明天下午的检查，请补充两项信息：1）开始时间：明天下午具体几点开始（例如 14:00、15:30）；2）预计时长：本次检查预计需要多少分钟（例如 30 分钟、60 分钟）。收到后我会按该时间向工维联核心业务 Leader 继续下达派工，不会取消当前任务重新开始。\\n用户回答：下午两点开始，预计一小时，需要泵体检查技能。\\n\\n该智能体的专属补充任务：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1703\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"c3a2809e-d5e5-4246-8f1e-1eb86daad30e\"},{\"type\":\"task-command\",\"id\":\"cmd-66139e14-e881-43f4-84d1-82ebc8f7127b\",\"sentAt\":\"2026-10-06T21:18:11.103966+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1703\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"c3a2809e-d5e5-4246-8f1e-1eb86daad30e\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T21:07:13.182354+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T21:07:13.187566+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-completion\",\"stateChangedAt\":\"2026-10-06T21:07:24.861470+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"检查方案已生成，请向用户展示人员、时间、工具和配件，并等待用户明确确认。用户同意后，请对当前任务发送 continue，内容为“确认这个方案并创建工单。”；空 complete 不能代替用户确认。\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-06T21:18:12.995242+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-06T21:18:13.001153+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-06T21:18:33.713482+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "5caf3f09-19c1-4573-be2a-0a283821c438",
+      "session_id": "debug_4808e66359da4b3380540679941a4cbf",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-1b395fa6-9ff9-4289-b3cb-09bc9ec273eb\",\"sentAt\":\"2026-10-07T08:41:44.738557+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"debug_4808e66359da4b3380540679941a4cbf\",\"taskId\":\"5caf3f09-19c1-4573-be2a-0a283821c438\",\"status\":{\"state\":\"completed\",\"stateChangedAt\":\"2026-10-07T08:41:44.738529+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-5caf3f09-19c1-4573-be2a-0a283821c438\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"debug_4808e66359da4b3380540679941a4cbf\\\", \\\"taskId\\\": \\\"5caf3f09-19c1-4573-be2a-0a283821c438\\\", \\\"messageId\\\": \\\"cmd-025cb114-bf9c-43e6-8890-47ad1c8b201b\\\", \\\"status\\\": \\\"completed\\\", \\\"plan\\\": {\\\"id\\\": \\\"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\\\", \\\"request_id\\\": \\\"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\\\", \\\"status\\\": \\\"confirmed\\\", \\\"version\\\": 1, \\\"worker_id\\\": \\\"worker-01\\\", \\\"inventory_json\\\": [\\\"part-seal-ring\\\", \\\"tool-inspection-kit\\\"], \\\"reason\\\": \\\"按技能、时段和库存生成的模拟方案\\\", \\\"work_order_id\\\": \\\"wo-63d7edf6-f338-4646-99ef-f1e42e2d0aa0\\\", \\\"created_at\\\": \\\"2026-10-07T08:40:46.855016+00:00\\\", \\\"updated_at\\\": \\\"2026-10-07T08:41:42.557901+00:00\\\", \\\"request\\\": {\\\"id\\\": \\\"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\\\", \\\"pump_id\\\": \\\"pump-001\\\", \\\"work_date\\\": \\\"2026-10-08\\\", \\\"start_time\\\": \\\"14:00\\\", \\\"duration_minutes\\\": 60, \\\"end_time\\\": \\\"15:00\\\", \\\"description\\\": \\\"水泵001运行异常，帮我安排明天下午检查。\\\", \\\"required_skill\\\": \\\"泵体检查\\\", \\\"status\\\": \\\"confirmed\\\", \\\"missing_fields\\\": [], \\\"created_at\\\": \\\"2026-10-07T08:40:30.462809+00:00\\\", \\\"updated_at\\\": \\\"2026-10-07T08:41:42.557901+00:00\\\"}, \\\"worker\\\": {\\\"id\\\": \\\"worker-01\\\", \\\"name\\\": \\\"模拟人员甲\\\", \\\"role\\\": \\\"机械维护\\\"}, \\\"inventory\\\": [{\\\"id\\\": \\\"part-seal-ring\\\", \\\"name\\\": \\\"机械密封圈\\\", \\\"category\\\": \\\"part\\\", \\\"unit\\\": \\\"件\\\"}, {\\\"id\\\": \\\"tool-inspection-kit\\\", \\\"name\\\": \\\"便携检查工具包\\\", \\\"category\\\": \\\"tool\\\", \\\"unit\\\": \\\"套\\\"}], \\\"work_order\\\": {\\\"id\\\": \\\"wo-63d7edf6-f338-4646-99ef-f1e42e2d0aa0\\\", \\\"number\\\": \\\"WO-20261007-89643E\\\", \\\"request_id\\\": \\\"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\\\", \\\"plan_id\\\": \\\"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\\\", \\\"status\\\": \\\"confirmed\\\", \\\"failure_reason\\\": null, \\\"created_at\\\": \\\"2026-10-07T08:41:42.557901+00:00\\\", \\\"updated_at\\\": \\\"2026-10-07T08:41:42.557901+00:00\\\", \\\"request\\\": {\\\"id\\\": \\\"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\\\", \\\"pump_id\\\": \\\"pump-001\\\", \\\"work_date\\\": \\\"2026-10-08\\\", \\\"start_time\\\": \\\"14:00\\\", \\\"duration_minutes\\\": 60, \\\"end_time\\\": \\\"15:00\\\", \\\"description\\\": \\\"水泵001运行异常，帮我安排明天下午检查。\\\", \\\"required_skill\\\": \\\"泵体检查\\\", \\\"status\\\": \\\"confirmed\\\", \\\"missing_fields\\\": [], \\\"created_at\\\": \\\"2026-10-07T08:40:30.462809+00:00\\\", \\\"updated_at\\\": \\\"2026-10-07T08:41:42.557901+00:00\\\"}, \\\"reservations\\\": [{\\\"id\\\": \\\"reservation-ef1ae5c6-c3a8-4675-82fc-04303a37833d\\\", \\\"plan_id\\\": \\\"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\\\", \\\"request_id\\\": \\\"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\\\", \\\"resource_type\\\": \\\"worker\\\", \\\"resource_id\\\": \\\"worker-01\\\", \\\"quantity\\\": 1, \\\"status\\\": \\\"active\\\", \\\"start_at\\\": \\\"2026-10-08T14:00:00\\\", \\\"end_at\\\": \\\"2026-10-08T15:00:00\\\", \\\"created_at\\\": \\\"2026-10-07T08:41:41.330086+00:00\\\", \\\"released_at\\\": null}, {\\\"id\\\": \\\"reservation-6491f764-5f20-4a12-95ca-7dacb21b44d0\\\", \\\"plan_id\\\": \\\"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\\\", \\\"request_id\\\": \\\"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\\\", \\\"resource_type\\\": \\\"inventory\\\", \\\"resource_id\\\": \\\"part-seal-ring\\\", \\\"quantity\\\": 1, \\\"status\\\": \\\"active\\\", \\\"start_at\\\": \\\"2026-10-08T14:00:00\\\", \\\"end_at\\\": \\\"2026-10-08T15:00:00\\\", \\\"created_at\\\": \\\"2026-10-07T08:41:41.330086+00:00\\\", \\\"released_at\\\": null}, {\\\"id\\\": \\\"reservation-fdd057b2-65d2-4edd-bffa-dd538f7287b6\\\", \\\"plan_id\\\": \\\"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\\\", \\\"request_id\\\": \\\"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\\\", \\\"resource_type\\\": \\\"inventory\\\", \\\"resource_id\\\": \\\"tool-inspection-kit\\\", \\\"quantity\\\": 1, \\\"status\\\": \\\"active\\\", \\\"start_at\\\": \\\"2026-10-08T14:00:00\\\", \\\"end_at\\\": \\\"2026-10-08T15:00:00\\\", \\\"created_at\\\": \\\"2026-10-07T08:41:41.330086+00:00\\\", \\\"released_at\\\": null}]}}, \\\"workOrder\\\": {\\\"id\\\": \\\"wo-63d7edf6-f338-4646-99ef-f1e42e2d0aa0\\\", \\\"number\\\": \\\"WO-20261007-89643E\\\", \\\"request_id\\\": \\\"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\\\", \\\"plan_id\\\": \\\"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\\\", \\\"status\\\": \\\"confirmed\\\", \\\"failure_reason\\\": null, \\\"created_at\\\": \\\"2026-10-07T08:41:42.557901+00:00\\\", \\\"updated_at\\\": \\\"2026-10-07T08:41:42.557901+00:00\\\"}, \\\"idempotent\\\": false}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-0260f51c-038b-4171-a007-20ebea73751b\",\"sentAt\":\"2026-10-07T08:39:54.052551+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"水泵001运行异常，帮我安排明天下午检查。\"}],\"groupId\":null,\"sessionId\":\"debug_4808e66359da4b3380540679941a4cbf\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"5caf3f09-19c1-4573-be2a-0a283821c438\"},{\"type\":\"task-command\",\"id\":\"cmd-a6b49359-1ce3-4eaa-a8e5-c186b094d298\",\"sentAt\":\"2026-10-07T08:40:29.923962+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"下午两点开始，预计一小时，需要泵体检查技能。\"}],\"groupId\":null,\"sessionId\":\"debug_4808e66359da4b3380540679941a4cbf\",\"command\":\"continue\",\"commandParams\":null,\"taskId\":\"5caf3f09-19c1-4573-be2a-0a283821c438\"},{\"type\":\"task-command\",\"id\":\"cmd-025cb114-bf9c-43e6-8890-47ad1c8b201b\",\"sentAt\":\"2026-10-07T08:41:37.914464+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"确认这个方案并创建工单。\"}],\"groupId\":null,\"sessionId\":\"debug_4808e66359da4b3380540679941a4cbf\",\"command\":\"continue\",\"commandParams\":null,\"taskId\":\"5caf3f09-19c1-4573-be2a-0a283821c438\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-07T08:39:55.258801+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-07T08:39:55.264195+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-07T08:39:55.283441+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：开始时间、预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-07T08:40:30.442225+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-07T08:40:30.447547+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-07T08:40:46.869383+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"待确认检查方案：设备 pump-001；2026-10-08 14:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。确认请回复“确认这个方案并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-07T08:41:38.523456+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-07T08:41:38.528546+00:00\",\"dataItems\":[]},{\"state\":\"completed\",\"stateChangedAt\":\"2026-10-07T08:41:44.738529+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "4ebd484a-7eee-46dd-954f-0f50642a5d90",
+      "session_id": "debug_03b555a68a974bf498d0cb1c69853f9d",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-39c1314e-73ba-40f4-aaed-33f119bf96bb\",\"sentAt\":\"2026-10-07T08:45:19.437631+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"debug_03b555a68a974bf498d0cb1c69853f9d\",\"taskId\":\"4ebd484a-7eee-46dd-954f-0f50642a5d90\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-07T08:45:19.437604+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-4ebd484a-7eee-46dd-954f-0f50642a5d90\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"debug_03b555a68a974bf498d0cb1c69853f9d\\\", \\\"taskId\\\": \\\"4ebd484a-7eee-46dd-954f-0f50642a5d90\\\", \\\"messageId\\\": \\\"cmd-64130544-b243-4af8-a9d8-960023359f29\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-704e50aa-0f38-4027-901f-8b2f26a53ceb\",\"sentAt\":\"2026-10-07T08:44:02.644581+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"水泵002运行异常，安排明天下午三点检查一小时，需要泵体检查技能。\"}],\"groupId\":null,\"sessionId\":\"debug_03b555a68a974bf498d0cb1c69853f9d\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"4ebd484a-7eee-46dd-954f-0f50642a5d90\"},{\"type\":\"task-command\",\"id\":\"cmd-64130544-b243-4af8-a9d8-960023359f29\",\"sentAt\":\"2026-10-07T08:45:18.127382+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"取消任务\"}],\"groupId\":null,\"sessionId\":\"debug_03b555a68a974bf498d0cb1c69853f9d\",\"command\":\"continue\",\"commandParams\":null,\"taskId\":\"4ebd484a-7eee-46dd-954f-0f50642a5d90\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-07T08:44:03.543608+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-07T08:44:03.549022+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-07T08:44:19.995522+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"待确认检查方案：设备 pump-002；2026-10-08 15:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。确认请回复“确认这个方案并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-07T08:45:19.413436+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-07T08:45:19.419103+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-07T08:45:19.437604+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "c0c8efeb-5fc7-483f-8061-3110364c6bac",
+      "session_id": "session_1723",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-772ab9f9-1c77-431c-b3e5-d85ce8551ced\",\"sentAt\":\"2026-10-07T09:16:22.844693+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1723\",\"taskId\":\"c0c8efeb-5fc7-483f-8061-3110364c6bac\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-07T09:16:22.844675+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-c0c8efeb-5fc7-483f-8061-3110364c6bac\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"session_1723\\\", \\\"taskId\\\": \\\"c0c8efeb-5fc7-483f-8061-3110364c6bac\\\", \\\"messageId\\\": \\\"cmd-cb99c773-eec2-4be4-8662-3c74bf17804f\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-5c04d252-9618-43a2-963b-48b0dda5999b\",\"sentAt\":\"2026-10-07T09:14:20.678124+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"水泵002运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1723\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"c0c8efeb-5fc7-483f-8061-3110364c6bac\"},{\"type\":\"task-command\",\"id\":\"cmd-cb99c773-eec2-4be4-8662-3c74bf17804f\",\"sentAt\":\"2026-10-07T09:16:21.412311+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1723\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"c0c8efeb-5fc7-483f-8061-3110364c6bac\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-07T09:14:21.530430+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-07T09:14:21.536845+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-07T09:14:21.555947+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：开始时间、预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-07T09:16:22.824547+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-07T09:16:22.831196+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-07T09:16:22.844675+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "826e7f98-dedd-4553-96d2-6424a5bdb3ba",
+      "session_id": "session_1723",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-1fc0c9b7-e811-46fc-8aea-796720ea9985\",\"sentAt\":\"2026-10-07T09:29:07.675622+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1723\",\"taskId\":\"826e7f98-dedd-4553-96d2-6424a5bdb3ba\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-07T09:29:07.675603+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-826e7f98-dedd-4553-96d2-6424a5bdb3ba\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"session_1723\\\", \\\"taskId\\\": \\\"826e7f98-dedd-4553-96d2-6424a5bdb3ba\\\", \\\"messageId\\\": \\\"cmd-25080db1-b311-4dcd-a927-fd35a82fe672\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-16390293-b24a-45d2-8472-b7d5f3c8bec4\",\"sentAt\":\"2026-10-07T09:16:23.422485+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"水泵002运行异常，帮我安排明天下午检查。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：关于明天下午检查水泵002的安排，还需要您补充两项信息才能创建工单：1）具体开始时间——您说的“明天下午”具体是几点（例如明天14:00）？2）预计检查时长——需要多少分钟或小时（例如60分钟）？请提供这两项，我据此安排明天下午的检查。\\n用户回答：下午三点开始，预计一小时，需要泵体检查技能。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1723\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"826e7f98-dedd-4553-96d2-6424a5bdb3ba\"},{\"type\":\"task-command\",\"id\":\"cmd-25080db1-b311-4dcd-a927-fd35a82fe672\",\"sentAt\":\"2026-10-07T09:29:07.129527+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1723\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"826e7f98-dedd-4553-96d2-6424a5bdb3ba\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-07T09:16:23.635922+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-07T09:16:23.640913+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-07T09:16:41.997256+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"待确认检查方案：设备 pump-002；2026-10-08 14:00 开始，预计 60 分钟；人员：模拟人员丙；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。确认请回复“确认这个方案并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-07T09:29:07.650133+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-07T09:29:07.657334+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-07T09:29:07.675603+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "4f099dd8-9909-4e70-a078-814a4a4e5548",
+      "session_id": "session_1723",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-1013f533-c3a1-4739-9e04-e77c765ef12c\",\"sentAt\":\"2026-10-07T09:34:15.584603+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1723\",\"taskId\":\"4f099dd8-9909-4e70-a078-814a4a4e5548\",\"status\":{\"state\":\"failed\",\"stateChangedAt\":\"2026-10-07T09:34:15.584562+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"Leader 处理失败（PartnerCallError），请按任务编号检查服务日志。\"}]},\"products\":null,\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-949f6f0a-b9f7-4e3f-8923-ffdbe64a1154\",\"sentAt\":\"2026-10-07T09:29:08.171746+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"水泵002运行异常，帮我安排明天下午检查。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：关于明天下午检查水泵002的安排，还需要您补充两项信息才能创建工单：1）具体开始时间——您说的“明天下午”具体是几点（例如明天14:00）？2）预计检查时长——需要多少分钟或小时（例如60分钟）？请提供这两项，我据此安排明天下午的检查。\\n用户回答：下午三点开始，预计一小时，需要泵体检查技能。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：工维联核心业务 Leader 已生成待确认检查方案，需要您确认后才能预留资源并创建工单。方案内容：设备 pump-002（循环水泵 002，位于二号机房，型号 GW-150）；检查日期 2026-10-08（明天）；方案拟定开始时间 14:00，预计时长 60 分钟（即 14:00–15:00）；执行人员：模拟人员丙（综合维护）；工具/配件：机械密封圈、便携检查工具包；技能要求：泵体检查。当前状态：尚未预留资源，尚未创建工单。请注意：您刚才回复的是“下午三点开始、预计一小时”，与本方案中的 14:00 开始不一致。请选择一项：1）按您说的下午 15:00 开始、时长 60 分钟（15:00–16:00）创建工单；2）按当前方案 14:00–15:00 创建工单；3）调整其他内容（例如改时间、换人员、增减工具或配件），请说明具体修改要求；4）取消任务。\\n用户回答：把检查时间改为明天下午三点，预计一小时，需要泵体检查技能。请先返回新的待确认方案，暂不创建工单。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1723\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"4f099dd8-9909-4e70-a078-814a4a4e5548\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-07T09:29:08.215360+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-07T09:29:08.220825+00:00\",\"dataItems\":[]},{\"state\":\"failed\",\"stateChangedAt\":\"2026-10-07T09:34:15.584562+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"Leader 处理失败（PartnerCallError），请按任务编号检查服务日志。\"}]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "0baf36fd-73ff-4ce0-8fb0-501247cb6423",
+      "session_id": "session_1726",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-d300b575-1a4a-45b9-9632-e7e37634f467\",\"sentAt\":\"2026-10-07T11:21:40.207629+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1726\",\"taskId\":\"0baf36fd-73ff-4ce0-8fb0-501247cb6423\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-07T11:21:40.207601+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-0baf36fd-73ff-4ce0-8fb0-501247cb6423\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"session_1726\\\", \\\"taskId\\\": \\\"0baf36fd-73ff-4ce0-8fb0-501247cb6423\\\", \\\"messageId\\\": \\\"cmd-cf6254d4-d710-47ec-9d50-41575f6044c8\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-5ce00134-d7dd-4523-9d99-8e26d371d2f0\",\"sentAt\":\"2026-10-07T11:20:38.004352+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1726\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"0baf36fd-73ff-4ce0-8fb0-501247cb6423\"},{\"type\":\"task-command\",\"id\":\"cmd-cf6254d4-d710-47ec-9d50-41575f6044c8\",\"sentAt\":\"2026-10-07T11:21:39.162867+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1726\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"0baf36fd-73ff-4ce0-8fb0-501247cb6423\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-07T11:20:39.525260+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-07T11:20:39.531032+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-07T11:20:39.552047+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：开始时间、预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-07T11:21:40.191250+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-07T11:21:40.196167+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-07T11:21:40.207601+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "6887e4c3-572c-4086-95db-8798ee5e42fd",
+      "session_id": "session_1726",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-c9c7bae4-c0cb-4999-9f76-933519d873c0\",\"sentAt\":\"2026-10-07T11:23:02.860999+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1726\",\"taskId\":\"6887e4c3-572c-4086-95db-8798ee5e42fd\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-07T11:23:02.860977+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-6887e4c3-572c-4086-95db-8798ee5e42fd\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"session_1726\\\", \\\"taskId\\\": \\\"6887e4c3-572c-4086-95db-8798ee5e42fd\\\", \\\"messageId\\\": \\\"cmd-4987ae2b-53f9-480e-a847-a88689c4c6ff\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-4f386f0e-a6f6-42a2-9ab4-ad4b80cb07b1\",\"sentAt\":\"2026-10-07T11:21:40.746814+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：关于“水泵002运行异常，安排明天下午检查”，要生成明天的检查安排，还缺两项信息：\\n1）开始时间：明天下午的具体开始时刻（例如 14:00、15:00、16:00，或您指定的其他时间）；\\n2）预计时长：本次检查预计需要多久（例如 30 分钟、60 分钟、90 分钟，或您指定的其他时长）。\\n请直接回复这两项内容；收到后我会在同一个任务上继续（continue）下发，不会取消后重新创建。\\n用户回答：下午三点开始，预计一小时，需要泵体检查技能。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1726\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"6887e4c3-572c-4086-95db-8798ee5e42fd\"},{\"type\":\"task-command\",\"id\":\"cmd-4987ae2b-53f9-480e-a847-a88689c4c6ff\",\"sentAt\":\"2026-10-07T11:23:01.720045+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1726\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"6887e4c3-572c-4086-95db-8798ee5e42fd\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-07T11:21:40.821263+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-07T11:21:40.826982+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-07T11:21:58.772349+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"待确认检查方案：设备 pump-002；2026-10-08 15:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-2ec569cd1fa191e1beda84849cc6b680。确认请回复“确认方案 GW-2ec569cd1fa191e1beda84849cc6b680 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-07T11:23:02.838057+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-07T11:23:02.844907+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-07T11:23:02.860977+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8",
+      "session_id": "session_1726",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-aeba9237-ecc4-428a-b16f-c957b2df75b7\",\"sentAt\":\"2026-10-07T11:23:09.574495+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1726\",\"taskId\":\"7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8\",\"status\":{\"state\":\"completed\",\"stateChangedAt\":\"2026-10-07T11:23:09.574469+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"session_1726\\\", \\\"taskId\\\": \\\"7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8\\\", \\\"messageId\\\": \\\"cmd-c4a2cf43-b722-49df-acfd-d87961499672\\\", \\\"status\\\": \\\"completed\\\", \\\"plan\\\": {\\\"id\\\": \\\"plan-7152f38a-5af3-4a62-a12e-82cb6b029145\\\", \\\"request_id\\\": \\\"req-91d5a06d-0f32-4b60-823c-7b90cec78df9\\\", \\\"status\\\": \\\"confirmed\\\", \\\"version\\\": 1, \\\"worker_id\\\": \\\"worker-01\\\", \\\"inventory_json\\\": [\\\"part-seal-ring\\\", \\\"tool-inspection-kit\\\"], \\\"reason\\\": \\\"按技能、时段和库存生成的模拟方案\\\", \\\"work_order_id\\\": \\\"wo-5fbb7dc9-5e74-4bf0-ad19-9852a9ff1e02\\\", \\\"created_at\\\": \\\"2026-10-07T11:21:58.752820+00:00\\\", \\\"updated_at\\\": \\\"2026-10-07T11:23:07.004894+00:00\\\", \\\"request\\\": {\\\"id\\\": \\\"req-91d5a06d-0f32-4b60-823c-7b90cec78df9\\\", \\\"pump_id\\\": \\\"pump-002\\\", \\\"work_date\\\": \\\"2026-10-08\\\", \\\"start_time\\\": \\\"15:00\\\", \\\"duration_minutes\\\": 60, \\\"end_time\\\": \\\"16:00\\\", \\\"description\\\": \\\"请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。\\\", \\\"required_skill\\\": \\\"泵体检查\\\", \\\"status\\\": \\\"confirmed\\\", \\\"missing_fields\\\": [], \\\"created_at\\\": \\\"2026-10-07T11:21:40.845146+00:00\\\", \\\"updated_at\\\": \\\"2026-10-07T11:23:07.004894+00:00\\\"}, \\\"worker\\\": {\\\"id\\\": \\\"worker-01\\\", \\\"name\\\": \\\"模拟人员甲\\\", \\\"role\\\": \\\"机械维护\\\"}, \\\"inventory\\\": [{\\\"id\\\": \\\"part-seal-ring\\\", \\\"name\\\": \\\"机械密封圈\\\", \\\"category\\\": \\\"part\\\", \\\"unit\\\": \\\"件\\\"}, {\\\"id\\\": \\\"tool-inspection-kit\\\", \\\"name\\\": \\\"便携检查工具包\\\", \\\"category\\\": \\\"tool\\\", \\\"unit\\\": \\\"套\\\"}], \\\"work_order\\\": {\\\"id\\\": \\\"wo-5fbb7dc9-5e74-4bf0-ad19-9852a9ff1e02\\\", \\\"number\\\": \\\"WO-20261007-8DC4AC\\\", \\\"request_id\\\": \\\"req-91d5a06d-0f32-4b60-823c-7b90cec78df9\\\", \\\"plan_id\\\": \\\"plan-7152f38a-5af3-4a62-a12e-82cb6b029145\\\", \\\"status\\\": \\\"confirmed\\\", \\\"failure_reason\\\": null, \\\"created_at\\\": \\\"2026-10-07T11:23:07.004894+00:00\\\", \\\"updated_at\\\": \\\"2026-10-07T11:23:07.004894+00:00\\\", \\\"request\\\": {\\\"id\\\": \\\"req-91d5a06d-0f32-4b60-823c-7b90cec78df9\\\", \\\"pump_id\\\": \\\"pump-002\\\", \\\"work_date\\\": \\\"2026-10-08\\\", \\\"start_time\\\": \\\"15:00\\\", \\\"duration_minutes\\\": 60, \\\"end_time\\\": \\\"16:00\\\", \\\"description\\\": \\\"请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。\\\", \\\"required_skill\\\": \\\"泵体检查\\\", \\\"status\\\": \\\"confirmed\\\", \\\"missing_fields\\\": [], \\\"created_at\\\": \\\"2026-10-07T11:21:40.845146+00:00\\\", \\\"updated_at\\\": \\\"2026-10-07T11:23:07.004894+00:00\\\"}, \\\"reservations\\\": [{\\\"id\\\": \\\"reservation-2b5cac77-6c8b-4266-8fc9-aed56271d234\\\", \\\"plan_id\\\": \\\"plan-7152f38a-5af3-4a62-a12e-82cb6b029145\\\", \\\"request_id\\\": \\\"req-91d5a06d-0f32-4b60-823c-7b90cec78df9\\\", \\\"resource_type\\\": \\\"worker\\\", \\\"resource_id\\\": \\\"worker-01\\\", \\\"quantity\\\": 1, \\\"status\\\": \\\"active\\\", \\\"start_at\\\": \\\"2026-10-08T15:00:00\\\", \\\"end_at\\\": \\\"2026-10-08T16:00:00\\\", \\\"created_at\\\": \\\"2026-10-07T11:23:05.169503+00:00\\\", \\\"released_at\\\": null}, {\\\"id\\\": \\\"reservation-1970a022-4de3-4201-b555-2d354acce280\\\", \\\"plan_id\\\": \\\"plan-7152f38a-5af3-4a62-a12e-82cb6b029145\\\", \\\"request_id\\\": \\\"req-91d5a06d-0f32-4b60-823c-7b90cec78df9\\\", \\\"resource_type\\\": \\\"inventory\\\", \\\"resource_id\\\": \\\"part-seal-ring\\\", \\\"quantity\\\": 1, \\\"status\\\": \\\"active\\\", \\\"start_at\\\": \\\"2026-10-08T15:00:00\\\", \\\"end_at\\\": \\\"2026-10-08T16:00:00\\\", \\\"created_at\\\": \\\"2026-10-07T11:23:05.169503+00:00\\\", \\\"released_at\\\": null}, {\\\"id\\\": \\\"reservation-f9110f8a-7f05-4449-9e65-493b7151f04e\\\", \\\"plan_id\\\": \\\"plan-7152f38a-5af3-4a62-a12e-82cb6b029145\\\", \\\"request_id\\\": \\\"req-91d5a06d-0f32-4b60-823c-7b90cec78df9\\\", \\\"resource_type\\\": \\\"inventory\\\", \\\"resource_id\\\": \\\"tool-inspection-kit\\\", \\\"quantity\\\": 1, \\\"status\\\": \\\"active\\\", \\\"start_at\\\": \\\"2026-10-08T15:00:00\\\", \\\"end_at\\\": \\\"2026-10-08T16:00:00\\\", \\\"created_at\\\": \\\"2026-10-07T11:23:05.169503+00:00\\\", \\\"released_at\\\": null}]}}, \\\"workOrder\\\": {\\\"id\\\": \\\"wo-5fbb7dc9-5e74-4bf0-ad19-9852a9ff1e02\\\", \\\"number\\\": \\\"WO-20261007-8DC4AC\\\", \\\"request_id\\\": \\\"req-91d5a06d-0f32-4b60-823c-7b90cec78df9\\\", \\\"plan_id\\\": \\\"plan-7152f38a-5af3-4a62-a12e-82cb6b029145\\\", \\\"status\\\": \\\"confirmed\\\", \\\"failure_reason\\\": null, \\\"created_at\\\": \\\"2026-10-07T11:23:07.004894+00:00\\\", \\\"updated_at\\\": \\\"2026-10-07T11:23:07.004894+00:00\\\"}, \\\"idempotent\\\": false, \\\"planContinuation\\\": {\\\"source_task_id\\\": \\\"6887e4c3-572c-4086-95db-8798ee5e42fd\\\", \\\"plan_id\\\": \\\"plan-7152f38a-5af3-4a62-a12e-82cb6b029145\\\", \\\"reference\\\": \\\"GW-2ec569cd1fa191e1beda84849cc6b680\\\", \\\"session_id\\\": \\\"session_1726\\\", \\\"sender_id\\\": \\\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\\\", \\\"confirmation_message_id\\\": \\\"cmd-c4a2cf43-b722-49df-acfd-d87961499672\\\", \\\"confirmed_at\\\": \\\"2026-10-07T11:23:04.316867+00:00\\\"}}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-c4a2cf43-b722-49df-acfd-d87961499672\",\"sentAt\":\"2026-10-07T11:23:03.793085+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：关于“水泵002运行异常，安排明天下午检查”，要生成明天的检查安排，还缺两项信息：\\n1）开始时间：明天下午的具体开始时刻（例如 14:00、15:00、16:00，或您指定的其他时间）；\\n2）预计时长：本次检查预计需要多久（例如 30 分钟、60 分钟、90 分钟，或您指定的其他时长）。\\n请直接回复这两项内容；收到后我会在同一个任务上继续（continue）下发，不会取消后重新创建。\\n用户回答：下午三点开始，预计一小时，需要泵体检查技能。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：工维联核心业务 Leader 已生成一份待确认的检查方案（方案编号 GW-2ec569cd1fa191e1beda84849cc6b680），需要你确认后才会预留资源并创建工单，当前尚未预留资源、也未创建工单。方案内容如下：\\n- 设备：循环水泵 002（pump-002，型号 GW-150，位置：二号机房）\\n- 检查时间：2026-10-08（明天）15:00 开始，预计 60 分钟，16:00 结束\\n- 技能要求：泵体检查\\n- 指派人员：模拟人员甲（机械维护）\\n- 工具/配件：机械密封圈 1 件、便携检查工具包 1 套\\n请选择其中一种回复方式：\\n1）确认执行：回复“确认方案 GW-2ec569cd1fa191e1beda84849cc6b680 并创建工单。”，随后我会对当前任务发送 continue，预留上述人员与工具配件并创建工单；\\n2）修改方案：直接说明要改的内容（例如开始时间、预计时长、人员、工具或配件），我会更新方案后再次请你确认；\\n3）取消：回复“取消任务”，本次检查安排终止，不预留任何资源、不创建工单。\\n用户回答：确认方案 GW-2ec569cd1fa191e1beda84849cc6b680 并创建工单。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1726\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-07T11:23:04.297607+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-07T11:23:04.302837+00:00\",\"dataItems\":[]},{\"state\":\"completed\",\"stateChangedAt\":\"2026-10-07T11:23:09.574469+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "5cd15141-6add-42de-b50c-1fa88c551bbb",
+      "session_id": "session_1822",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-4764ab93-0a22-43bd-8441-03da2cd6f19b\",\"sentAt\":\"2026-10-08T14:18:40.868526+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1822\",\"taskId\":\"5cd15141-6add-42de-b50c-1fa88c551bbb\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-08T14:18:40.868506+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-5cd15141-6add-42de-b50c-1fa88c551bbb\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"session_1822\\\", \\\"taskId\\\": \\\"5cd15141-6add-42de-b50c-1fa88c551bbb\\\", \\\"messageId\\\": \\\"cmd-2a03afbc-48b1-440c-af22-a66b1b4ca30a\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-2dab8c60-9b96-4348-8f7d-0b4a68915d18\",\"sentAt\":\"2026-10-08T14:14:38.227847+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1822\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"5cd15141-6add-42de-b50c-1fa88c551bbb\"},{\"type\":\"task-command\",\"id\":\"cmd-2a03afbc-48b1-440c-af22-a66b1b4ca30a\",\"sentAt\":\"2026-10-08T14:18:37.414700+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1822\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"5cd15141-6add-42de-b50c-1fa88c551bbb\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-08T14:14:39.858598+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-08T14:14:39.866359+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-08T14:14:39.894674+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：开始时间、预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-08T14:18:40.844805+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-08T14:18:40.852662+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-08T14:18:40.868506+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "3dc5ed5c-0eeb-434d-8e0b-bd1357e2cf13",
+      "session_id": "session_1822",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-7ba32ced-9ff7-478e-a5d2-d5764936e603\",\"sentAt\":\"2026-10-08T14:24:31.833546+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1822\",\"taskId\":\"3dc5ed5c-0eeb-434d-8e0b-bd1357e2cf13\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-08T14:24:31.833521+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-3dc5ed5c-0eeb-434d-8e0b-bd1357e2cf13\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"session_1822\\\", \\\"taskId\\\": \\\"3dc5ed5c-0eeb-434d-8e0b-bd1357e2cf13\\\", \\\"messageId\\\": \\\"cmd-dc8180f0-5a2b-4427-99fa-e30ccde7eeed\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-94760f34-7eec-4cdc-aeba-dbb3d3bd3df0\",\"sentAt\":\"2026-10-08T14:18:44.467757+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：安排水泵002运行异常的检查，还需要您补充两项信息：\\n1）开始时间：您说“明天下午”，请给出具体时间点（例如明天下午14:00）。\\n2）预计时长：这次检查预计需要多长时间（分钟或小时，例如60分钟、2小时）。\\n补充后我会继续该任务完成排期，不需要重新发起。\\n用户回答：下午两点开始，预计一小时，需要泵体检查技能。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1822\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"3dc5ed5c-0eeb-434d-8e0b-bd1357e2cf13\"},{\"type\":\"task-command\",\"id\":\"cmd-dc8180f0-5a2b-4427-99fa-e30ccde7eeed\",\"sentAt\":\"2026-10-08T14:24:30.801451+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1822\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"3dc5ed5c-0eeb-434d-8e0b-bd1357e2cf13\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-08T14:18:45.042823+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-08T14:18:45.050864+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-08T14:19:00.673867+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"待确认检查方案：设备 pump-002；2026-10-09 14:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-b469b938862008c3525395088c5fb3ed。确认请回复“确认方案 GW-b469b938862008c3525395088c5fb3ed 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-08T14:24:31.806445+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-08T14:24:31.814587+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-08T14:24:31.833521+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "public-continue-020b2203c810-task",
+      "session_id": "public-continue-020b2203c810-session",
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-347cbdf5-90da-46f8-8c5c-cb8d509269ce\",\"sentAt\":\"2026-10-08T14:22:06.018457+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"public-continue-020b2203c810-session\",\"taskId\":\"public-continue-020b2203c810-task\",\"status\":{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-08T14:22:06.018438+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-public-continue-020b2203c810-task\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"public-continue-020b2203c810-session\\\", \\\"taskId\\\": \\\"public-continue-020b2203c810-task\\\", \\\"messageId\\\": \\\"public-continue-020b2203c810-a1da4bf3\\\", \\\"status\\\": \\\"cancelled\\\"}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"public-continue-020b2203c810-42190c4b\",\"sentAt\":\"2026-10-08T14:22:05.579618+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"水泵001运行异常，帮我安排明天下午检查。\"}],\"groupId\":null,\"sessionId\":\"public-continue-020b2203c810-session\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"public-continue-020b2203c810-task\"},{\"type\":\"task-command\",\"id\":\"public-continue-020b2203c810-659f2a76\",\"sentAt\":\"2026-10-08T14:22:05.834927+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"下午两点开始。\"}],\"groupId\":null,\"sessionId\":\"public-continue-020b2203c810-session\",\"command\":\"continue\",\"commandParams\":null,\"taskId\":\"public-continue-020b2203c810-task\"},{\"type\":\"task-command\",\"id\":\"public-continue-020b2203c810-a1da4bf3\",\"sentAt\":\"2026-10-08T14:22:05.989214+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\",\"mentions\":null,\"dataItems\":[],\"groupId\":null,\"sessionId\":\"public-continue-020b2203c810-session\",\"command\":\"cancel\",\"commandParams\":null,\"taskId\":\"public-continue-020b2203c810-task\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-08T14:22:05.611339+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-08T14:22:05.618877+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-08T14:22:05.634856+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：开始时间、预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-08T14:22:05.845383+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-08T14:22:05.854369+00:00\",\"dataItems\":[]},{\"state\":\"awaiting-input\",\"stateChangedAt\":\"2026-10-08T14:22:05.868986+00:00\",\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请补充：预计时长\"}]},{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-08T14:22:05.999546+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-08T14:22:06.006582+00:00\",\"dataItems\":[]},{\"state\":\"canceled\",\"stateChangedAt\":\"2026-10-08T14:22:06.018438+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    },
+    {
+      "task_id": "c7b49b4d-e14f-457b-8f4f-6de4f02ee60f",
+      "session_id": "session_1822",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot_json": "{\"type\":\"task-result\",\"id\":\"result-a4e63c65-eb6c-4011-813b-469e1d7a0e6c\",\"sentAt\":\"2026-10-08T14:24:45.755243+00:00\",\"senderRole\":\"partner\",\"senderId\":\"1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45\",\"mentions\":null,\"dataItems\":null,\"groupId\":null,\"sessionId\":\"session_1822\",\"taskId\":\"c7b49b4d-e14f-457b-8f4f-6de4f02ee60f\",\"status\":{\"state\":\"completed\",\"stateChangedAt\":\"2026-10-08T14:24:45.755210+00:00\",\"dataItems\":[]},\"products\":[{\"id\":\"leader-product-c7b49b4d-e14f-457b-8f4f-6de4f02ee60f\",\"name\":\"gongwei-leader-result\",\"description\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"{\\\"sessionId\\\": \\\"session_1822\\\", \\\"taskId\\\": \\\"c7b49b4d-e14f-457b-8f4f-6de4f02ee60f\\\", \\\"messageId\\\": \\\"cmd-0e2dd094-4b41-46d5-bb7a-c775eda1333f\\\", \\\"status\\\": \\\"completed\\\", \\\"plan\\\": {\\\"id\\\": \\\"plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2\\\", \\\"request_id\\\": \\\"req-acf860e1-5767-411b-913c-fbab04cb9a4e\\\", \\\"status\\\": \\\"confirmed\\\", \\\"version\\\": 1, \\\"worker_id\\\": \\\"worker-01\\\", \\\"inventory_json\\\": [\\\"part-seal-ring\\\", \\\"tool-inspection-kit\\\"], \\\"reason\\\": \\\"按技能、时段和库存生成的模拟方案\\\", \\\"work_order_id\\\": \\\"wo-0883dc0e-00fa-462a-9fe4-45053fd85c58\\\", \\\"created_at\\\": \\\"2026-10-08T14:19:00.650074+00:00\\\", \\\"updated_at\\\": \\\"2026-10-08T14:24:44.169136+00:00\\\", \\\"request\\\": {\\\"id\\\": \\\"req-acf860e1-5767-411b-913c-fbab04cb9a4e\\\", \\\"pump_id\\\": \\\"pump-002\\\", \\\"work_date\\\": \\\"2026-10-09\\\", \\\"start_time\\\": \\\"14:00\\\", \\\"duration_minutes\\\": 60, \\\"end_time\\\": \\\"15:00\\\", \\\"description\\\": \\\"请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。\\\", \\\"required_skill\\\": \\\"泵体检查\\\", \\\"status\\\": \\\"confirmed\\\", \\\"missing_fields\\\": [], \\\"created_at\\\": \\\"2026-10-08T14:18:45.070960+00:00\\\", \\\"updated_at\\\": \\\"2026-10-08T14:24:44.169136+00:00\\\"}, \\\"worker\\\": {\\\"id\\\": \\\"worker-01\\\", \\\"name\\\": \\\"模拟人员甲\\\", \\\"role\\\": \\\"机械维护\\\"}, \\\"inventory\\\": [{\\\"id\\\": \\\"part-seal-ring\\\", \\\"name\\\": \\\"机械密封圈\\\", \\\"category\\\": \\\"part\\\", \\\"unit\\\": \\\"件\\\"}, {\\\"id\\\": \\\"tool-inspection-kit\\\", \\\"name\\\": \\\"便携检查工具包\\\", \\\"category\\\": \\\"tool\\\", \\\"unit\\\": \\\"套\\\"}], \\\"work_order\\\": {\\\"id\\\": \\\"wo-0883dc0e-00fa-462a-9fe4-45053fd85c58\\\", \\\"number\\\": \\\"WO-20261008-1C8738\\\", \\\"request_id\\\": \\\"req-acf860e1-5767-411b-913c-fbab04cb9a4e\\\", \\\"plan_id\\\": \\\"plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2\\\", \\\"status\\\": \\\"confirmed\\\", \\\"failure_reason\\\": null, \\\"created_at\\\": \\\"2026-10-08T14:24:44.169136+00:00\\\", \\\"updated_at\\\": \\\"2026-10-08T14:24:44.169136+00:00\\\", \\\"request\\\": {\\\"id\\\": \\\"req-acf860e1-5767-411b-913c-fbab04cb9a4e\\\", \\\"pump_id\\\": \\\"pump-002\\\", \\\"work_date\\\": \\\"2026-10-09\\\", \\\"start_time\\\": \\\"14:00\\\", \\\"duration_minutes\\\": 60, \\\"end_time\\\": \\\"15:00\\\", \\\"description\\\": \\\"请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。\\\", \\\"required_skill\\\": \\\"泵体检查\\\", \\\"status\\\": \\\"confirmed\\\", \\\"missing_fields\\\": [], \\\"created_at\\\": \\\"2026-10-08T14:18:45.070960+00:00\\\", \\\"updated_at\\\": \\\"2026-10-08T14:24:44.169136+00:00\\\"}, \\\"reservations\\\": [{\\\"id\\\": \\\"reservation-4ad500ee-6778-4545-9a15-f90269db17ee\\\", \\\"plan_id\\\": \\\"plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2\\\", \\\"request_id\\\": \\\"req-acf860e1-5767-411b-913c-fbab04cb9a4e\\\", \\\"resource_type\\\": \\\"worker\\\", \\\"resource_id\\\": \\\"worker-01\\\", \\\"quantity\\\": 1, \\\"status\\\": \\\"active\\\", \\\"start_at\\\": \\\"2026-10-09T14:00:00\\\", \\\"end_at\\\": \\\"2026-10-09T15:00:00\\\", \\\"created_at\\\": \\\"2026-10-08T14:24:42.300161+00:00\\\", \\\"released_at\\\": null}, {\\\"id\\\": \\\"reservation-8de020c9-86df-407c-883a-3b01dea19487\\\", \\\"plan_id\\\": \\\"plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2\\\", \\\"request_id\\\": \\\"req-acf860e1-5767-411b-913c-fbab04cb9a4e\\\", \\\"resource_type\\\": \\\"inventory\\\", \\\"resource_id\\\": \\\"part-seal-ring\\\", \\\"quantity\\\": 1, \\\"status\\\": \\\"active\\\", \\\"start_at\\\": \\\"2026-10-09T14:00:00\\\", \\\"end_at\\\": \\\"2026-10-09T15:00:00\\\", \\\"created_at\\\": \\\"2026-10-08T14:24:42.300161+00:00\\\", \\\"released_at\\\": null}, {\\\"id\\\": \\\"reservation-d92c4727-dfc0-43a7-993a-684174d375b8\\\", \\\"plan_id\\\": \\\"plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2\\\", \\\"request_id\\\": \\\"req-acf860e1-5767-411b-913c-fbab04cb9a4e\\\", \\\"resource_type\\\": \\\"inventory\\\", \\\"resource_id\\\": \\\"tool-inspection-kit\\\", \\\"quantity\\\": 1, \\\"status\\\": \\\"active\\\", \\\"start_at\\\": \\\"2026-10-09T14:00:00\\\", \\\"end_at\\\": \\\"2026-10-09T15:00:00\\\", \\\"created_at\\\": \\\"2026-10-08T14:24:42.300161+00:00\\\", \\\"released_at\\\": null}]}}, \\\"workOrder\\\": {\\\"id\\\": \\\"wo-0883dc0e-00fa-462a-9fe4-45053fd85c58\\\", \\\"number\\\": \\\"WO-20261008-1C8738\\\", \\\"request_id\\\": \\\"req-acf860e1-5767-411b-913c-fbab04cb9a4e\\\", \\\"plan_id\\\": \\\"plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2\\\", \\\"status\\\": \\\"confirmed\\\", \\\"failure_reason\\\": null, \\\"created_at\\\": \\\"2026-10-08T14:24:44.169136+00:00\\\", \\\"updated_at\\\": \\\"2026-10-08T14:24:44.169136+00:00\\\"}, \\\"idempotent\\\": false, \\\"planContinuation\\\": {\\\"source_task_id\\\": \\\"3dc5ed5c-0eeb-434d-8e0b-bd1357e2cf13\\\", \\\"plan_id\\\": \\\"plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2\\\", \\\"reference\\\": \\\"GW-b469b938862008c3525395088c5fb3ed\\\", \\\"session_id\\\": \\\"session_1822\\\", \\\"sender_id\\\": \\\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\\\", \\\"confirmation_message_id\\\": \\\"cmd-0e2dd094-4b41-46d5-bb7a-c775eda1333f\\\", \\\"confirmed_at\\\": \\\"2026-10-08T14:24:39.185143+00:00\\\"}}\"}]}],\"commandHistory\":[{\"type\":\"task-command\",\"id\":\"cmd-0e2dd094-4b41-46d5-bb7a-c775eda1333f\",\"sentAt\":\"2026-10-08T14:24:38.612207+00:00\",\"senderRole\":\"leader\",\"senderId\":\"1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT\",\"mentions\":null,\"dataItems\":[{\"metadata\":null,\"type\":\"text\",\"text\":\"请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：安排水泵002运行异常的检查，还需要您补充两项信息：\\n1）开始时间：您说“明天下午”，请给出具体时间点（例如明天下午14:00）。\\n2）预计时长：这次检查预计需要多长时间（分钟或小时，例如60分钟、2小时）。\\n补充后我会继续该任务完成排期，不需要重新发起。\\n用户回答：下午两点开始，预计一小时，需要泵体检查技能。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：检查方案待您确认后才能预留资源并创建工单，请选择以下一种回复：\\n\\n【方案内容】\\n- 设备：pump-002 循环水泵 002（位置：二号机房，型号：GW-150）\\n- 时间：2026-10-09（明天）14:00 开始，预计 60 分钟，15:00 结束\\n- 所需技能：泵体检查\\n- 人员：模拟人员甲（机械维护）\\n- 工具/配件：机械密封圈、便携检查工具包\\n- 方案编号：GW-b469b938862008c3525395088c5fb3ed\\n当前状态：尚未预留任何资源，也未创建工单。\\n\\n【回复选项】\\n1）回复“确认方案 GW-b469b938862008c3525395088c5fb3ed 并创建工单。” —— 按上述方案预留资源并创建工单；\\n2）回复您要修改的内容（例如改时间、改时长、换人员、增减工具或配件）—— 我会据此调整方案后再次请您确认；\\n3）回复“取消任务” —— 终止本次检查安排。\\n\\n请明确告知您选择哪一项，以及如需修改请给出具体修改要求。\\n用户回答：确认方案 GW-b469b938862008c3525395088c5fb3ed 并创建工单。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}],\"groupId\":null,\"sessionId\":\"session_1822\",\"command\":\"start\",\"commandParams\":null,\"taskId\":\"c7b49b4d-e14f-457b-8f4f-6de4f02ee60f\"}],\"statusHistory\":[{\"state\":\"accepted\",\"stateChangedAt\":\"2026-10-08T14:24:39.159894+00:00\",\"dataItems\":[]},{\"state\":\"working\",\"stateChangedAt\":\"2026-10-08T14:24:39.167984+00:00\",\"dataItems\":[]},{\"state\":\"completed\",\"stateChangedAt\":\"2026-10-08T14:24:45.755210+00:00\",\"dataItems\":[]}]}",
+      "pending_json": null,
+      "cancel_json": null
+    }
+  ],
+  "receipts": [
+    {
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "message_id": "server-mtls-4e132677ed-72f3af",
+      "task_id": "server-mtls-4e132677ed-task"
+    },
+    {
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "message_id": "server-mtls-4e132677ed-dadf7f",
+      "task_id": "server-mtls-4e132677ed-task"
+    },
+    {
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "message_id": "server-mtls-452639c3df-48a7b7",
+      "task_id": "server-mtls-452639c3df-task"
+    },
+    {
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "message_id": "server-mtls-452639c3df-0a9941",
+      "task_id": "server-mtls-452639c3df-task"
+    },
+    {
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "message_id": "public-mtls-1717d39d86-0ee63d",
+      "task_id": "public-mtls-1717d39d86-task"
+    },
+    {
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "message_id": "public-mtls-1717d39d86-2a59f4",
+      "task_id": "public-mtls-1717d39d86-task"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-8097b948-29ee-4566-9e0c-b142c3d4924f",
+      "task_id": "87ee5e18-72f2-4dee-90f6-2ee75cefd764"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-e9ae8a77-ecb9-4013-83e2-95396b7ab420",
+      "task_id": "87ee5e18-72f2-4dee-90f6-2ee75cefd764"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-ede74a59-f475-4056-977c-02223a420997",
+      "task_id": "c08c35ae-137c-453d-aa88-6aa6ad900082"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-59a14be3-bb8b-4503-a1cb-445135757bd8",
+      "task_id": "c08c35ae-137c-453d-aa88-6aa6ad900082"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-dd5d54da-a7ff-4130-bbea-92b99728a5d4",
+      "task_id": "19f8e6da-bc45-4afd-85fd-85fc8a570347"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-de42cafe-34c7-42dc-9e50-329cdb770a2e",
+      "task_id": "2a705116-016c-492b-b088-347b0f82e72a"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-3bbdaf97-a2cc-4ceb-9de0-9204531b0aae",
+      "task_id": "2a705116-016c-492b-b088-347b0f82e72a"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-44b448e7-a5f1-475d-9559-9750781da470",
+      "task_id": "c57cd75f-9ebc-43c0-bed5-7b36c25979df"
+    },
+    {
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "message_id": "public-continue-db00d48834b4-adc3b68e",
+      "task_id": "public-continue-db00d48834b4-task"
+    },
+    {
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "message_id": "public-continue-db00d48834b4-f585c851",
+      "task_id": "public-continue-db00d48834b4-task"
+    },
+    {
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "message_id": "public-continue-db00d48834b4-2065516b",
+      "task_id": "public-continue-db00d48834b4-task"
+    },
+    {
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "message_id": "public-continue-183ab980a167-704f7071",
+      "task_id": "public-continue-183ab980a167-task"
+    },
+    {
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "message_id": "public-continue-183ab980a167-bd46def8",
+      "task_id": "public-continue-183ab980a167-task"
+    },
+    {
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "message_id": "public-continue-183ab980a167-8a4a017a",
+      "task_id": "public-continue-183ab980a167-task"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-e90136ce-bd6f-4981-b8f0-0593fc2df0a9",
+      "task_id": "192cf143-e90e-4092-a44d-9fcca5520102"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-02fb3001-dab9-4fb6-aeff-056ff7719229",
+      "task_id": "192cf143-e90e-4092-a44d-9fcca5520102"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-5983a7cb-e1d7-4a13-aa30-b51ed8d33577",
+      "task_id": "cfe51e30-0e42-4637-b322-2eea65663a00"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-596d0ee8-811e-4237-a4c4-16b8d9bf8fbf",
+      "task_id": "c9ea98aa-fcf7-42b3-89da-36b26aa1ec2b"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-2bc06296-dfd2-42dd-8352-45764f6d477a",
+      "task_id": "c9ea98aa-fcf7-42b3-89da-36b26aa1ec2b"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-cd790800-5d5b-45c4-9c52-74fd5f00ac0d",
+      "task_id": "c3a2809e-d5e5-4246-8f1e-1eb86daad30e"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-66139e14-e881-43f4-84d1-82ebc8f7127b",
+      "task_id": "c3a2809e-d5e5-4246-8f1e-1eb86daad30e"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-0260f51c-038b-4171-a007-20ebea73751b",
+      "task_id": "5caf3f09-19c1-4573-be2a-0a283821c438"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-a6b49359-1ce3-4eaa-a8e5-c186b094d298",
+      "task_id": "5caf3f09-19c1-4573-be2a-0a283821c438"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-025cb114-bf9c-43e6-8890-47ad1c8b201b",
+      "task_id": "5caf3f09-19c1-4573-be2a-0a283821c438"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-704e50aa-0f38-4027-901f-8b2f26a53ceb",
+      "task_id": "4ebd484a-7eee-46dd-954f-0f50642a5d90"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-64130544-b243-4af8-a9d8-960023359f29",
+      "task_id": "4ebd484a-7eee-46dd-954f-0f50642a5d90"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-5c04d252-9618-43a2-963b-48b0dda5999b",
+      "task_id": "c0c8efeb-5fc7-483f-8061-3110364c6bac"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-cb99c773-eec2-4be4-8662-3c74bf17804f",
+      "task_id": "c0c8efeb-5fc7-483f-8061-3110364c6bac"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-16390293-b24a-45d2-8472-b7d5f3c8bec4",
+      "task_id": "826e7f98-dedd-4553-96d2-6424a5bdb3ba"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-25080db1-b311-4dcd-a927-fd35a82fe672",
+      "task_id": "826e7f98-dedd-4553-96d2-6424a5bdb3ba"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-949f6f0a-b9f7-4e3f-8923-ffdbe64a1154",
+      "task_id": "4f099dd8-9909-4e70-a078-814a4a4e5548"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-5ce00134-d7dd-4523-9d99-8e26d371d2f0",
+      "task_id": "0baf36fd-73ff-4ce0-8fb0-501247cb6423"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-cf6254d4-d710-47ec-9d50-41575f6044c8",
+      "task_id": "0baf36fd-73ff-4ce0-8fb0-501247cb6423"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-4f386f0e-a6f6-42a2-9ab4-ad4b80cb07b1",
+      "task_id": "6887e4c3-572c-4086-95db-8798ee5e42fd"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-4987ae2b-53f9-480e-a847-a88689c4c6ff",
+      "task_id": "6887e4c3-572c-4086-95db-8798ee5e42fd"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-c4a2cf43-b722-49df-acfd-d87961499672",
+      "task_id": "7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-2dab8c60-9b96-4348-8f7d-0b4a68915d18",
+      "task_id": "5cd15141-6add-42de-b50c-1fa88c551bbb"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-2a03afbc-48b1-440c-af22-a66b1b4ca30a",
+      "task_id": "5cd15141-6add-42de-b50c-1fa88c551bbb"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-94760f34-7eec-4cdc-aeba-dbb3d3bd3df0",
+      "task_id": "3dc5ed5c-0eeb-434d-8e0b-bd1357e2cf13"
+    },
+    {
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "message_id": "public-continue-020b2203c810-42190c4b",
+      "task_id": "public-continue-020b2203c810-task"
+    },
+    {
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "message_id": "public-continue-020b2203c810-659f2a76",
+      "task_id": "public-continue-020b2203c810-task"
+    },
+    {
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "message_id": "public-continue-020b2203c810-a1da4bf3",
+      "task_id": "public-continue-020b2203c810-task"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-dc8180f0-5a2b-4427-99fa-e30ccde7eeed",
+      "task_id": "3dc5ed5c-0eeb-434d-8e0b-bd1357e2cf13"
+    },
+    {
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "message_id": "cmd-0e2dd094-4b41-46d5-bb7a-c775eda1333f",
+      "task_id": "c7b49b4d-e14f-457b-8f4f-6de4f02ee60f"
+    }
+  ]
+}

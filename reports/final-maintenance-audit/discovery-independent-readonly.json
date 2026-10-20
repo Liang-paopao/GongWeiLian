@@ -1,0 +1,651 @@
+{
+  "checked_at": "2026-10-06T19:22:03.768742+00:00",
+  "sdk_version": "2.2.0",
+  "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+  "read_only": true,
+  "roles": {
+    "leader": {
+      "default": {
+        "query": {
+          "type": "filtered",
+          "limit": 10,
+          "filter": {
+            "conditions": [
+              {
+                "field": "active",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "skills.id",
+                "op": "eq",
+                "value": "gongwei.leader.handle-maintenance-request"
+              },
+              {
+                "field": "aic",
+                "op": "eq",
+                "value": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45"
+              }
+            ],
+            "logic": "and"
+          }
+        },
+        "http": 200,
+        "success": true,
+        "result": {
+          "acsMap": {},
+          "agents": [
+            {
+              "group": "filtered",
+              "agentSkills": []
+            }
+          ],
+          "routes": [
+            {
+              "forwardChain": [
+                "AIC-DS-A"
+              ],
+              "agentGroups": [
+                {
+                  "group": "filtered",
+                  "agentSkills": []
+                }
+              ],
+              "status": "ok",
+              "durationMs": 3
+            }
+          ]
+        },
+        "error": null
+      },
+      "all_alive_states": {
+        "query": {
+          "type": "filtered",
+          "limit": 10,
+          "filter": {
+            "conditions": [
+              {
+                "field": "active",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "skills.id",
+                "op": "eq",
+                "value": "gongwei.leader.handle-maintenance-request"
+              },
+              {
+                "field": "aic",
+                "op": "eq",
+                "value": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45"
+              }
+            ],
+            "logic": "and"
+          },
+          "extFilter": {
+            "conditions": [
+              {
+                "field": "alive",
+                "op": "in",
+                "value": [
+                  "online",
+                  "offline",
+                  "unknown"
+                ]
+              }
+            ]
+          }
+        },
+        "http": 200,
+        "success": true,
+        "result": {
+          "acsMap": {
+            "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45": {
+              "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+              "name": "工维联核心业务 Leader",
+              "active": true,
+              "skills": [
+                {
+                  "id": "gongwei.leader.handle-maintenance-request",
+                  "name": "理解设备异常请求",
+                  "tags": [
+                    "leader",
+                    "agentic"
+                  ],
+                  "version": "1.1.0",
+                  "description": "接收中文自然语言和结构化检查请求，缺失字段时询问用户。"
+                },
+                {
+                  "id": "gongwei.leader.plan-collaboration",
+                  "name": "规划检查协作",
+                  "tags": [
+                    "leader",
+                    "agentic"
+                  ],
+                  "version": "1.1.0",
+                  "description": "生成资源查询、确认和工单协作计划。"
+                },
+                {
+                  "id": "gongwei.leader.discover-and-delegate",
+                  "name": "发现并委派 Partner",
+                  "tags": [
+                    "leader",
+                    "agentic"
+                  ],
+                  "version": "1.1.0",
+                  "description": "按能力、安全和在线状态发现并选择 Partner。"
+                },
+                {
+                  "id": "gongwei.leader.resume-multiturn-task",
+                  "name": "恢复多轮任务",
+                  "tags": [
+                    "leader",
+                    "agentic"
+                  ],
+                  "version": "1.1.0",
+                  "description": "使用同一 session、task 和 message 关联补充信息。"
+                },
+                {
+                  "id": "gongwei.leader.track-and-summarize",
+                  "name": "跟踪并汇总结果",
+                  "tags": [
+                    "leader",
+                    "agentic"
+                  ],
+                  "version": "1.1.0",
+                  "description": "返回协作轨迹、资源证据和工单结果。"
+                }
+              ],
+              "version": "1.1.0",
+              "provider": {
+                "name": "LiangPaoPao",
+                "department": "设备运维系统",
+                "countryCode": "CN",
+                "organization": "工维联项目组"
+              },
+              "endPoints": [
+                {
+                  "url": "https://leader.yanyi.online/rpc",
+                  "security": [
+                    {
+                      "mtls": []
+                    }
+                  ],
+                  "transport": "JSONRPC"
+                }
+              ],
+              "certificate": {
+                "altNames": {
+                  "dns": [
+                    "leader.yanyi.online"
+                  ]
+                }
+              },
+              "description": "工维联设备检查协调智能体。接受中文自然语言或 JSON 设备异常请求，多轮补充设备、日期、开始时间、时长与技能；在线发现并通过正式 MQ 调用资源协调 Partner，查询人员、时间、工具和库存后返回待确认方案。仅用户明确确认后预留资源并调用工单处理 Partner，创建唯一检查工单并返回编号、人员、物品、时间及状态。支持任务查询、补充、确认、取消、重复确认保护和服务重启恢复。声音检测为可选辅助，不推断具体零件损坏。",
+              "capabilities": {
+                "streaming": false,
+                "messageQueue": [],
+                "notification": false
+              },
+              "protocolVersion": "02.02",
+              "securitySchemes": {
+                "mtls": {
+                  "type": "mutualTLS"
+                }
+              },
+              "lastModifiedTime": "2026-10-06T22:34:01.315584+08:00",
+              "defaultInputModes": [
+                "text/plain",
+                "application/json"
+              ],
+              "defaultOutputModes": [
+                "text/plain",
+                "application/json"
+              ]
+            }
+          },
+          "agents": [
+            {
+              "group": "filtered",
+              "agentSkills": [
+                {
+                  "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                  "skillId": "gongwei.leader.handle-maintenance-request",
+                  "ranking": 1,
+                  "memo": "Filtered query result"
+                }
+              ]
+            }
+          ],
+          "routes": [
+            {
+              "forwardChain": [
+                "AIC-DS-A"
+              ],
+              "agentGroups": [
+                {
+                  "group": "filtered",
+                  "agentSkills": [
+                    {
+                      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                      "skillId": "gongwei.leader.handle-maintenance-request",
+                      "ranking": 1,
+                      "memo": "Filtered query result"
+                    }
+                  ]
+                }
+              ],
+              "status": "ok",
+              "durationMs": 3
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    "resource": {
+      "default": {
+        "query": {
+          "type": "filtered",
+          "limit": 10,
+          "filter": {
+            "conditions": [
+              {
+                "field": "active",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "skills.id",
+                "op": "eq",
+                "value": "gongwei.resource.query"
+              },
+              {
+                "field": "aic",
+                "op": "eq",
+                "value": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA"
+              }
+            ],
+            "logic": "and"
+          }
+        },
+        "http": 200,
+        "success": true,
+        "result": {
+          "acsMap": {},
+          "agents": [
+            {
+              "group": "filtered",
+              "agentSkills": []
+            }
+          ],
+          "routes": [
+            {
+              "forwardChain": [
+                "AIC-DS-A"
+              ],
+              "agentGroups": [
+                {
+                  "group": "filtered",
+                  "agentSkills": []
+                }
+              ],
+              "status": "ok",
+              "durationMs": 25
+            }
+          ]
+        },
+        "error": null
+      },
+      "all_alive_states": {
+        "query": {
+          "type": "filtered",
+          "limit": 10,
+          "filter": {
+            "conditions": [
+              {
+                "field": "active",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "skills.id",
+                "op": "eq",
+                "value": "gongwei.resource.query"
+              },
+              {
+                "field": "aic",
+                "op": "eq",
+                "value": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA"
+              }
+            ],
+            "logic": "and"
+          },
+          "extFilter": {
+            "conditions": [
+              {
+                "field": "alive",
+                "op": "in",
+                "value": [
+                  "online",
+                  "offline",
+                  "unknown"
+                ]
+              }
+            ]
+          }
+        },
+        "http": 200,
+        "success": true,
+        "result": {
+          "acsMap": {
+            "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA": {
+              "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "name": "工维联资源协调 Partner",
+              "active": true,
+              "skills": [
+                {
+                  "id": "gongwei.resource.query",
+                  "name": "查询可用人员与库存",
+                  "tags": [
+                    "resource",
+                    "query"
+                  ],
+                  "version": "1.1.0",
+                  "description": "根据检查请求查询人员、技能、工具和配件可用性。"
+                },
+                {
+                  "id": "gongwei.resource.reserve",
+                  "name": "预留和释放检查资源",
+                  "tags": [
+                    "resource",
+                    "reserve"
+                  ],
+                  "version": "1.1.0",
+                  "description": "为已生成的检查方案预留资源并支持释放。"
+                }
+              ],
+              "version": "1.1.0",
+              "provider": {
+                "name": "LiangPaoPao",
+                "department": "设备运维系统",
+                "countryCode": "CN",
+                "organization": "工维联项目组"
+              },
+              "endPoints": [
+                {
+                  "url": "amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                  "security": [
+                    {
+                      "mtls": []
+                    }
+                  ],
+                  "transport": "AMQP"
+                }
+              ],
+              "description": "提供设备检查业务所需的人员、技能、可用时段、工具和配件查询，并支持按检查时段进行资源预留与释放。仅处理资源查询和预留，不负责维修决策、工单执行或声音诊断；缺少泵、时间或技能等必要参数时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。",
+              "capabilities": {
+                "streaming": false,
+                "messageQueue": [
+                  "rabbitmq:>=4.2"
+                ],
+                "notification": false
+              },
+              "protocolVersion": "02.02",
+              "securitySchemes": {
+                "mtls": {
+                  "type": "mutualTLS"
+                }
+              },
+              "lastModifiedTime": "2026-10-06T22:34:10.877744+08:00",
+              "defaultInputModes": [
+                "application/json"
+              ],
+              "defaultOutputModes": [
+                "application/json"
+              ]
+            }
+          },
+          "agents": [
+            {
+              "group": "filtered",
+              "agentSkills": [
+                {
+                  "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                  "skillId": "gongwei.resource.query",
+                  "ranking": 1,
+                  "memo": "Filtered query result"
+                }
+              ]
+            }
+          ],
+          "routes": [
+            {
+              "forwardChain": [
+                "AIC-DS-A"
+              ],
+              "agentGroups": [
+                {
+                  "group": "filtered",
+                  "agentSkills": [
+                    {
+                      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                      "skillId": "gongwei.resource.query",
+                      "ranking": 1,
+                      "memo": "Filtered query result"
+                    }
+                  ]
+                }
+              ],
+              "status": "ok",
+              "durationMs": 5
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    "workorder": {
+      "default": {
+        "query": {
+          "type": "filtered",
+          "limit": 10,
+          "filter": {
+            "conditions": [
+              {
+                "field": "active",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "skills.id",
+                "op": "eq",
+                "value": "gongwei.work-order.create"
+              },
+              {
+                "field": "aic",
+                "op": "eq",
+                "value": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF"
+              }
+            ],
+            "logic": "and"
+          }
+        },
+        "http": 200,
+        "success": true,
+        "result": {
+          "acsMap": {},
+          "agents": [
+            {
+              "group": "filtered",
+              "agentSkills": []
+            }
+          ],
+          "routes": [
+            {
+              "forwardChain": [
+                "AIC-DS-A"
+              ],
+              "agentGroups": [
+                {
+                  "group": "filtered",
+                  "agentSkills": []
+                }
+              ],
+              "status": "ok",
+              "durationMs": 5
+            }
+          ]
+        },
+        "error": null
+      },
+      "all_alive_states": {
+        "query": {
+          "type": "filtered",
+          "limit": 10,
+          "filter": {
+            "conditions": [
+              {
+                "field": "active",
+                "op": "eq",
+                "value": true
+              },
+              {
+                "field": "skills.id",
+                "op": "eq",
+                "value": "gongwei.work-order.create"
+              },
+              {
+                "field": "aic",
+                "op": "eq",
+                "value": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF"
+              }
+            ],
+            "logic": "and"
+          },
+          "extFilter": {
+            "conditions": [
+              {
+                "field": "alive",
+                "op": "in",
+                "value": [
+                  "online",
+                  "offline",
+                  "unknown"
+                ]
+              }
+            ]
+          }
+        },
+        "http": 200,
+        "success": true,
+        "result": {
+          "acsMap": {
+            "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF": {
+              "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+              "name": "工维联工单处理 Partner",
+              "active": true,
+              "skills": [
+                {
+                  "id": "gongwei.work-order.create",
+                  "name": "创建检查工单",
+                  "tags": [
+                    "work-order",
+                    "create"
+                  ],
+                  "version": "1.1.0",
+                  "description": "仅为已确认检查方案创建幂等工单。"
+                },
+                {
+                  "id": "gongwei.work-order.lifecycle",
+                  "name": "更新和取消工单",
+                  "tags": [
+                    "work-order",
+                    "lifecycle"
+                  ],
+                  "version": "1.1.0",
+                  "description": "更新工单状态或取消工单，并在取消时释放资源。"
+                }
+              ],
+              "version": "1.1.0",
+              "provider": {
+                "name": "LiangPaoPao",
+                "department": "设备运维系统",
+                "countryCode": "CN",
+                "organization": "工维联项目组"
+              },
+              "endPoints": [
+                {
+                  "url": "amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                  "security": [
+                    {
+                      "mtls": []
+                    }
+                  ],
+                  "transport": "AMQP"
+                }
+              ],
+              "description": "提供设备检查工单的创建、查询、状态更新和取消能力。仅处理已确认方案的工单生命周期，不负责资源查询、人员排班或声音诊断；缺少方案编号或状态不允许时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。",
+              "capabilities": {
+                "streaming": false,
+                "messageQueue": [
+                  "rabbitmq:>=4.2"
+                ],
+                "notification": false
+              },
+              "protocolVersion": "02.02",
+              "securitySchemes": {
+                "mtls": {
+                  "type": "mutualTLS"
+                }
+              },
+              "lastModifiedTime": "2026-10-06T23:37:38.239969+08:00",
+              "defaultInputModes": [
+                "application/json"
+              ],
+              "defaultOutputModes": [
+                "application/json"
+              ]
+            }
+          },
+          "agents": [
+            {
+              "group": "filtered",
+              "agentSkills": [
+                {
+                  "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                  "skillId": "gongwei.work-order.create",
+                  "ranking": 1,
+                  "memo": "Filtered query result"
+                }
+              ]
+            }
+          ],
+          "routes": [
+            {
+              "forwardChain": [
+                "AIC-DS-A"
+              ],
+              "agentGroups": [
+                {
+                  "group": "filtered",
+                  "agentSkills": [
+                    {
+                      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                      "skillId": "gongwei.work-order.create",
+                      "ranking": 1,
+                      "memo": "Filtered query result"
+                    }
+                  ]
+                }
+              ],
+              "status": "ok",
+              "durationMs": 5
+            }
+          ]
+        },
+        "error": null
+      }
+    }
+  }
+}

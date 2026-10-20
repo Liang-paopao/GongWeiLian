@@ -1,0 +1,70 @@
+[
+  {
+    "sessionId": "session_1723",
+    "taskId": "c0c8efeb-5fc7-483f-8061-3110364c6bac",
+    "state": "canceled",
+    "commands": [
+      {
+        "type": "task-command",
+        "id": "cmd-5c04d252-9618-43a2-963b-48b0dda5999b",
+        "sentAt": "2026-10-07T09:14:20.678124+00:00",
+        "senderRole": "leader",
+        "senderId": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+        "mentions": null,
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "水泵002运行异常，帮我安排明天下午检查。\n\nDAG 指定的上游产物摘要：\n叮当已完成协作规划并开始按 DAG 派发。"
+          }
+        ],
+        "groupId": null,
+        "sessionId": "session_1723",
+        "command": "start",
+        "commandParams": null,
+        "taskId": "c0c8efeb-5fc7-483f-8061-3110364c6bac"
+      },
+      {
+        "type": "task-command",
+        "id": "cmd-cb99c773-eec2-4be4-8662-3c74bf17804f",
+        "sentAt": "2026-10-07T09:16:21.412311+00:00",
+        "senderRole": "leader",
+        "senderId": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+        "mentions": null,
+        "dataItems": null,
+        "groupId": null,
+        "sessionId": "session_1723",
+        "command": "cancel",
+        "commandParams": null,
+        "taskId": "c0c8efeb-5fc7-483f-8061-3110364c6bac"
+      }
+    ]
+  },
+  {
+    "sessionId": "session_1723",
+    "taskId": "826e7f98-dedd-4553-96d2-6424a5bdb3ba",
+    "state": "awaiting-input",
+    "commands": [
+      {
+        "type": "task-command",
+        "id": "cmd-16390293-b24a-45d2-8472-b7d5f3c8bec4",
+        "sentAt": "2026-10-07T09:16:23.422485+00:00",
+        "senderRole": "leader",
+        "senderId": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+        "mentions": null,
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "水泵002运行异常，帮我安排明天下午检查。\n\n上一轮候选结果：\n\n叮当请求补充：关于明天下午检查水泵002的安排，还需要您补充两项信息才能创建工单：1）具体开始时间——您说的“明天下午”具体是几点（例如明天14:00）？2）预计检查时长——需要多少分钟或小时（例如60分钟）？请提供这两项，我据此安排明天下午的检查。\n用户回答：下午三点开始，预计一小时，需要泵体检查技能。\n\nDAG 指定的上游产物摘要：\n叮当已完成协作规划并开始按 DAG 派发。"
+          }
+        ],
+        "groupId": null,
+        "sessionId": "session_1723",
+        "command": "start",
+        "commandParams": null,
+        "taskId": "826e7f98-dedd-4553-96d2-6424a5bdb3ba"
+      }
+    ]
+  }
+]

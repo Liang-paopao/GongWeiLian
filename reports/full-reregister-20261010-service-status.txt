@@ -1,0 +1,9 @@
+  gongwei-amp-heartbeat.service            loaded    active   running Gongwei fresh SDK heartbeat forwarder (public metadata only)
+  gongwei-amp-metadata.service             loaded    active   running Gongwei approved protocol metadata forwarder
+  gongwei-audio.service                    loaded    active   running Gongwei optional audio Partner
+  gongwei-leader.service                   loaded    active   running Gongwei official mTLS Leader RPC with MQ Partners
+  gongwei-resource-inbox.service           loaded    active   running Gongwei official resource MQ Inbox
+  gongwei-resource.service                 loaded    active   running Gongwei resource Partner
+  gongwei-web.service                      loaded    active   running Gongwei web and Leader API
+  gongwei-workorder-inbox.service          loaded    active   running Gongwei official workorder MQ Inbox
+  gongwei-workorder.service                loaded    active   running Gongwei work-order Partner

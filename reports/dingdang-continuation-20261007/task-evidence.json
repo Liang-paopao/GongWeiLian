@@ -1,0 +1,299 @@
+[
+  {
+    "task_id": "5caf3f09-19c1-4573-be2a-0a283821c438",
+    "session_id": "debug_4808e66359da4b3380540679941a4cbf",
+    "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+    "snapshot": {
+      "type": "task-result",
+      "id": "result-1b395fa6-9ff9-4289-b3cb-09bc9ec273eb",
+      "sentAt": "2026-10-07T08:41:44.738557+00:00",
+      "senderRole": "partner",
+      "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "mentions": null,
+      "dataItems": null,
+      "groupId": null,
+      "sessionId": "debug_4808e66359da4b3380540679941a4cbf",
+      "taskId": "5caf3f09-19c1-4573-be2a-0a283821c438",
+      "status": {
+        "state": "completed",
+        "stateChangedAt": "2026-10-07T08:41:44.738529+00:00",
+        "dataItems": []
+      },
+      "products": [
+        {
+          "id": "leader-product-5caf3f09-19c1-4573-be2a-0a283821c438",
+          "name": "gongwei-leader-result",
+          "description": null,
+          "dataItems": [
+            {
+              "metadata": null,
+              "type": "text",
+              "text": "{\"sessionId\": \"debug_4808e66359da4b3380540679941a4cbf\", \"taskId\": \"5caf3f09-19c1-4573-be2a-0a283821c438\", \"messageId\": \"cmd-025cb114-bf9c-43e6-8890-47ad1c8b201b\", \"status\": \"completed\", \"plan\": {\"id\": \"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\", \"request_id\": \"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\", \"status\": \"confirmed\", \"version\": 1, \"worker_id\": \"worker-01\", \"inventory_json\": [\"part-seal-ring\", \"tool-inspection-kit\"], \"reason\": \"按技能、时段和库存生成的模拟方案\", \"work_order_id\": \"wo-63d7edf6-f338-4646-99ef-f1e42e2d0aa0\", \"created_at\": \"2026-10-07T08:40:46.855016+00:00\", \"updated_at\": \"2026-10-07T08:41:42.557901+00:00\", \"request\": {\"id\": \"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。\", \"required_skill\": \"泵体检查\", \"status\": \"confirmed\", \"missing_fields\": [], \"created_at\": \"2026-10-07T08:40:30.462809+00:00\", \"updated_at\": \"2026-10-07T08:41:42.557901+00:00\"}, \"worker\": {\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"unit\": \"套\"}], \"work_order\": {\"id\": \"wo-63d7edf6-f338-4646-99ef-f1e42e2d0aa0\", \"number\": \"WO-20261007-89643E\", \"request_id\": \"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\", \"plan_id\": \"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\", \"status\": \"confirmed\", \"failure_reason\": null, \"created_at\": \"2026-10-07T08:41:42.557901+00:00\", \"updated_at\": \"2026-10-07T08:41:42.557901+00:00\", \"request\": {\"id\": \"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。\", \"required_skill\": \"泵体检查\", \"status\": \"confirmed\", \"missing_fields\": [], \"created_at\": \"2026-10-07T08:40:30.462809+00:00\", \"updated_at\": \"2026-10-07T08:41:42.557901+00:00\"}, \"reservations\": [{\"id\": \"reservation-ef1ae5c6-c3a8-4675-82fc-04303a37833d\", \"plan_id\": \"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\", \"request_id\": \"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\", \"resource_type\": \"worker\", \"resource_id\": \"worker-01\", \"quantity\": 1, \"status\": \"active\", \"start_at\": \"2026-10-08T14:00:00\", \"end_at\": \"2026-10-08T15:00:00\", \"created_at\": \"2026-10-07T08:41:41.330086+00:00\", \"released_at\": null}, {\"id\": \"reservation-6491f764-5f20-4a12-95ca-7dacb21b44d0\", \"plan_id\": \"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\", \"request_id\": \"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\", \"resource_type\": \"inventory\", \"resource_id\": \"part-seal-ring\", \"quantity\": 1, \"status\": \"active\", \"start_at\": \"2026-10-08T14:00:00\", \"end_at\": \"2026-10-08T15:00:00\", \"created_at\": \"2026-10-07T08:41:41.330086+00:00\", \"released_at\": null}, {\"id\": \"reservation-fdd057b2-65d2-4edd-bffa-dd538f7287b6\", \"plan_id\": \"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\", \"request_id\": \"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\", \"resource_type\": \"inventory\", \"resource_id\": \"tool-inspection-kit\", \"quantity\": 1, \"status\": \"active\", \"start_at\": \"2026-10-08T14:00:00\", \"end_at\": \"2026-10-08T15:00:00\", \"created_at\": \"2026-10-07T08:41:41.330086+00:00\", \"released_at\": null}]}}, \"workOrder\": {\"id\": \"wo-63d7edf6-f338-4646-99ef-f1e42e2d0aa0\", \"number\": \"WO-20261007-89643E\", \"request_id\": \"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\", \"plan_id\": \"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\", \"status\": \"confirmed\", \"failure_reason\": null, \"created_at\": \"2026-10-07T08:41:42.557901+00:00\", \"updated_at\": \"2026-10-07T08:41:42.557901+00:00\"}, \"idempotent\": false}"
+            }
+          ]
+        }
+      ],
+      "commandHistory": [
+        {
+          "type": "task-command",
+          "id": "cmd-0260f51c-038b-4171-a007-20ebea73751b",
+          "sentAt": "2026-10-07T08:39:54.052551+00:00",
+          "senderRole": "leader",
+          "senderId": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+          "mentions": null,
+          "dataItems": [
+            {
+              "metadata": null,
+              "type": "text",
+              "text": "水泵001运行异常，帮我安排明天下午检查。"
+            }
+          ],
+          "groupId": null,
+          "sessionId": "debug_4808e66359da4b3380540679941a4cbf",
+          "command": "start",
+          "commandParams": null,
+          "taskId": "5caf3f09-19c1-4573-be2a-0a283821c438"
+        },
+        {
+          "type": "task-command",
+          "id": "cmd-a6b49359-1ce3-4eaa-a8e5-c186b094d298",
+          "sentAt": "2026-10-07T08:40:29.923962+00:00",
+          "senderRole": "leader",
+          "senderId": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+          "mentions": null,
+          "dataItems": [
+            {
+              "metadata": null,
+              "type": "text",
+              "text": "下午两点开始，预计一小时，需要泵体检查技能。"
+            }
+          ],
+          "groupId": null,
+          "sessionId": "debug_4808e66359da4b3380540679941a4cbf",
+          "command": "continue",
+          "commandParams": null,
+          "taskId": "5caf3f09-19c1-4573-be2a-0a283821c438"
+        },
+        {
+          "type": "task-command",
+          "id": "cmd-025cb114-bf9c-43e6-8890-47ad1c8b201b",
+          "sentAt": "2026-10-07T08:41:37.914464+00:00",
+          "senderRole": "leader",
+          "senderId": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+          "mentions": null,
+          "dataItems": [
+            {
+              "metadata": null,
+              "type": "text",
+              "text": "确认这个方案并创建工单。"
+            }
+          ],
+          "groupId": null,
+          "sessionId": "debug_4808e66359da4b3380540679941a4cbf",
+          "command": "continue",
+          "commandParams": null,
+          "taskId": "5caf3f09-19c1-4573-be2a-0a283821c438"
+        }
+      ],
+      "statusHistory": [
+        {
+          "state": "accepted",
+          "stateChangedAt": "2026-10-07T08:39:55.258801+00:00",
+          "dataItems": []
+        },
+        {
+          "state": "working",
+          "stateChangedAt": "2026-10-07T08:39:55.264195+00:00",
+          "dataItems": []
+        },
+        {
+          "state": "awaiting-input",
+          "stateChangedAt": "2026-10-07T08:39:55.283441+00:00",
+          "dataItems": [
+            {
+              "metadata": null,
+              "type": "text",
+              "text": "请补充：开始时间、预计时长"
+            }
+          ]
+        },
+        {
+          "state": "accepted",
+          "stateChangedAt": "2026-10-07T08:40:30.442225+00:00",
+          "dataItems": []
+        },
+        {
+          "state": "working",
+          "stateChangedAt": "2026-10-07T08:40:30.447547+00:00",
+          "dataItems": []
+        },
+        {
+          "state": "awaiting-input",
+          "stateChangedAt": "2026-10-07T08:40:46.869383+00:00",
+          "dataItems": [
+            {
+              "metadata": null,
+              "type": "text",
+              "text": "待确认检查方案：设备 pump-001；2026-10-08 14:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。确认请回复“确认这个方案并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+            }
+          ]
+        },
+        {
+          "state": "accepted",
+          "stateChangedAt": "2026-10-07T08:41:38.523456+00:00",
+          "dataItems": []
+        },
+        {
+          "state": "working",
+          "stateChangedAt": "2026-10-07T08:41:38.528546+00:00",
+          "dataItems": []
+        },
+        {
+          "state": "completed",
+          "stateChangedAt": "2026-10-07T08:41:44.738529+00:00",
+          "dataItems": []
+        }
+      ]
+    },
+    "receipts": [
+      {
+        "message_id": "cmd-0260f51c-038b-4171-a007-20ebea73751b",
+        "task_id": "5caf3f09-19c1-4573-be2a-0a283821c438"
+      },
+      {
+        "message_id": "cmd-a6b49359-1ce3-4eaa-a8e5-c186b094d298",
+        "task_id": "5caf3f09-19c1-4573-be2a-0a283821c438"
+      },
+      {
+        "message_id": "cmd-025cb114-bf9c-43e6-8890-47ad1c8b201b",
+        "task_id": "5caf3f09-19c1-4573-be2a-0a283821c438"
+      }
+    ]
+  },
+  {
+    "task_id": "4ebd484a-7eee-46dd-954f-0f50642a5d90",
+    "session_id": "debug_03b555a68a974bf498d0cb1c69853f9d",
+    "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+    "snapshot": {
+      "type": "task-result",
+      "id": "result-39c1314e-73ba-40f4-aaed-33f119bf96bb",
+      "sentAt": "2026-10-07T08:45:19.437631+00:00",
+      "senderRole": "partner",
+      "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "mentions": null,
+      "dataItems": null,
+      "groupId": null,
+      "sessionId": "debug_03b555a68a974bf498d0cb1c69853f9d",
+      "taskId": "4ebd484a-7eee-46dd-954f-0f50642a5d90",
+      "status": {
+        "state": "canceled",
+        "stateChangedAt": "2026-10-07T08:45:19.437604+00:00",
+        "dataItems": []
+      },
+      "products": [
+        {
+          "id": "leader-product-4ebd484a-7eee-46dd-954f-0f50642a5d90",
+          "name": "gongwei-leader-result",
+          "description": null,
+          "dataItems": [
+            {
+              "metadata": null,
+              "type": "text",
+              "text": "{\"sessionId\": \"debug_03b555a68a974bf498d0cb1c69853f9d\", \"taskId\": \"4ebd484a-7eee-46dd-954f-0f50642a5d90\", \"messageId\": \"cmd-64130544-b243-4af8-a9d8-960023359f29\", \"status\": \"cancelled\"}"
+            }
+          ]
+        }
+      ],
+      "commandHistory": [
+        {
+          "type": "task-command",
+          "id": "cmd-704e50aa-0f38-4027-901f-8b2f26a53ceb",
+          "sentAt": "2026-10-07T08:44:02.644581+00:00",
+          "senderRole": "leader",
+          "senderId": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+          "mentions": null,
+          "dataItems": [
+            {
+              "metadata": null,
+              "type": "text",
+              "text": "水泵002运行异常，安排明天下午三点检查一小时，需要泵体检查技能。"
+            }
+          ],
+          "groupId": null,
+          "sessionId": "debug_03b555a68a974bf498d0cb1c69853f9d",
+          "command": "start",
+          "commandParams": null,
+          "taskId": "4ebd484a-7eee-46dd-954f-0f50642a5d90"
+        },
+        {
+          "type": "task-command",
+          "id": "cmd-64130544-b243-4af8-a9d8-960023359f29",
+          "sentAt": "2026-10-07T08:45:18.127382+00:00",
+          "senderRole": "leader",
+          "senderId": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+          "mentions": null,
+          "dataItems": [
+            {
+              "metadata": null,
+              "type": "text",
+              "text": "取消任务"
+            }
+          ],
+          "groupId": null,
+          "sessionId": "debug_03b555a68a974bf498d0cb1c69853f9d",
+          "command": "continue",
+          "commandParams": null,
+          "taskId": "4ebd484a-7eee-46dd-954f-0f50642a5d90"
+        }
+      ],
+      "statusHistory": [
+        {
+          "state": "accepted",
+          "stateChangedAt": "2026-10-07T08:44:03.543608+00:00",
+          "dataItems": []
+        },
+        {
+          "state": "working",
+          "stateChangedAt": "2026-10-07T08:44:03.549022+00:00",
+          "dataItems": []
+        },
+        {
+          "state": "awaiting-input",
+          "stateChangedAt": "2026-10-07T08:44:19.995522+00:00",
+          "dataItems": [
+            {
+              "metadata": null,
+              "type": "text",
+              "text": "待确认检查方案：设备 pump-002；2026-10-08 15:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。确认请回复“确认这个方案并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+            }
+          ]
+        },
+        {
+          "state": "accepted",
+          "stateChangedAt": "2026-10-07T08:45:19.413436+00:00",
+          "dataItems": []
+        },
+        {
+          "state": "working",
+          "stateChangedAt": "2026-10-07T08:45:19.419103+00:00",
+          "dataItems": []
+        },
+        {
+          "state": "canceled",
+          "stateChangedAt": "2026-10-07T08:45:19.437604+00:00",
+          "dataItems": []
+        }
+      ]
+    },
+    "receipts": [
+      {
+        "message_id": "cmd-704e50aa-0f38-4027-901f-8b2f26a53ceb",
+        "task_id": "4ebd484a-7eee-46dd-954f-0f50642a5d90"
+      },
+      {
+        "message_id": "cmd-64130544-b243-4af8-a9d8-960023359f29",
+        "task_id": "4ebd484a-7eee-46dd-954f-0f50642a5d90"
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "orders": [
+    {
+      "id": "wo-f9592ec4-aacb-4074-ac6f-a0feeb847cd6",
+      "number": "WO-20261007-3950EB",
+      "request_id": "req-22aa537d-2095-47b7-b6c6-51276e367d72",
+      "plan_id": "plan-1e6b2f1e-7efa-4437-9a51-48207f85cf62",
+      "status": "cancelled",
+      "failure_reason": null,
+      "created_at": "2026-10-06T19:40:56.987706+00:00",
+      "updated_at": "2026-10-06T19:45:24.541440+00:00"
+    }
+  ],
+  "active_reservations": 0,
+  "integrity": "ok"
+}

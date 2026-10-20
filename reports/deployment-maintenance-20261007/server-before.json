@@ -1,0 +1,111 @@
+{
+  "services": {
+    "web": {
+      "MainPID": "2240412",
+      "ExecStart": "{ path=/opt/gongwei/.venv/bin/python ; argv[]=/opt/gongwei/.venv/bin/python -m uvicorn web_app:app --host 127.0.0.1 --port 18110 ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+      "EnvironmentFiles": "/opt/gongwei/gongwei.env (ignore_errors=no)",
+      "WorkingDirectory": "/opt/gongwei/current",
+      "User": "ubuntu",
+      "Group": "ubuntu",
+      "ActiveState": "active",
+      "FragmentPath": "/etc/systemd/system/gongwei-web.service",
+      "DropInPaths": ""
+    },
+    "resource": {
+      "MainPID": "2240409",
+      "ExecStart": "{ path=/opt/gongwei/.venv/bin/python ; argv[]=/opt/gongwei/.venv/bin/python -m uvicorn resource_partner_v1:app --host 127.0.0.1 --port 18112 ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+      "EnvironmentFiles": "/opt/gongwei/gongwei.env (ignore_errors=no)",
+      "WorkingDirectory": "/opt/gongwei/current",
+      "User": "ubuntu",
+      "Group": "ubuntu",
+      "ActiveState": "active",
+      "FragmentPath": "/etc/systemd/system/gongwei-resource.service",
+      "DropInPaths": ""
+    },
+    "workorder": {
+      "MainPID": "2240410",
+      "ExecStart": "{ path=/opt/gongwei/.venv/bin/python ; argv[]=/opt/gongwei/.venv/bin/python -m uvicorn work_order_partner_v1:app --host 127.0.0.1 --port 18113 ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+      "EnvironmentFiles": "/opt/gongwei/gongwei.env (ignore_errors=no)",
+      "WorkingDirectory": "/opt/gongwei/current",
+      "User": "ubuntu",
+      "Group": "ubuntu",
+      "ActiveState": "active",
+      "FragmentPath": "/etc/systemd/system/gongwei-workorder.service",
+      "DropInPaths": ""
+    },
+    "audio": {
+      "MainPID": "2240411",
+      "ExecStart": "{ path=/opt/gongwei/.venv/bin/python ; argv[]=/opt/gongwei/.venv/bin/python -m uvicorn audio_partner_v1:app --host 127.0.0.1 --port 18114 ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+      "EnvironmentFiles": "/opt/gongwei/gongwei.env (ignore_errors=no)",
+      "WorkingDirectory": "/opt/gongwei/current",
+      "User": "ubuntu",
+      "Group": "ubuntu",
+      "ActiveState": "active",
+      "FragmentPath": "/etc/systemd/system/gongwei-audio.service",
+      "DropInPaths": ""
+    },
+    "leader": {
+      "MainPID": "2345992",
+      "ExecStart": "{ path=/opt/gongwei/.venv/bin/python ; argv[]=/opt/gongwei/.venv/bin/python run_leader_rpc.py ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+      "EnvironmentFiles": "/opt/gongwei/platform/leader.env (ignore_errors=no)",
+      "WorkingDirectory": "/opt/gongwei/releases/20261007-platform",
+      "User": "gongwei-leader",
+      "Group": "gongwei-leader",
+      "ActiveState": "active",
+      "FragmentPath": "/etc/systemd/system/gongwei-leader.service",
+      "DropInPaths": ""
+    },
+    "resource-inbox": {
+      "MainPID": "2341716",
+      "ExecStart": "{ path=/opt/gongwei/.venv/bin/python ; argv[]=/opt/gongwei/.venv/bin/python run_partner_inbox.py --role resource ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+      "EnvironmentFiles": "/opt/gongwei/platform/leader.env (ignore_errors=no)",
+      "WorkingDirectory": "/opt/gongwei/releases/20261007-platform",
+      "User": "gongwei-resource-mq",
+      "Group": "gongwei-resource-mq",
+      "ActiveState": "active",
+      "FragmentPath": "/etc/systemd/system/gongwei-resource-inbox.service",
+      "DropInPaths": ""
+    },
+    "workorder-inbox": {
+      "MainPID": "2341718",
+      "ExecStart": "{ path=/opt/gongwei/.venv/bin/python ; argv[]=/opt/gongwei/.venv/bin/python run_partner_inbox.py --role workorder ; ignore_errors=no ; start_time=[n/a] ; stop_time=[n/a] ; pid=0 ; code=(null) ; status=0/0 }",
+      "EnvironmentFiles": "/opt/gongwei/platform/leader.env (ignore_errors=no)",
+      "WorkingDirectory": "/opt/gongwei/releases/20261007-platform",
+      "User": "gongwei-workorder-mq",
+      "Group": "gongwei-workorder-mq",
+      "ActiveState": "active",
+      "FragmentPath": "/etc/systemd/system/gongwei-workorder-inbox.service",
+      "DropInPaths": ""
+    },
+    "amp-heartbeat": {
+      "MainPID": "2367812",
+      "ExecStart": "{ path=/opt/gongwei/tools/amp-diagnostics/venv/bin/python ; argv[]=/opt/gongwei/tools/amp-diagnostics/venv/bin/python -B /opt/gongwei/tools/amp-diagnostics/amp_heartbeat_forwarder.py --config /etc/gongwei/amp-heartbeat.json --public-heartbeat-plaintext ; ignore_errors=no ; start_time=[Wed 2026-10-07 02:43:04 CST] ; stop_time=[n/a] ; pid=2367812 ; code=(null) ; status=0/0 }",
+      "WorkingDirectory": "/opt/gongwei/tools/amp-diagnostics",
+      "User": "root",
+      "Group": "",
+      "ActiveState": "active",
+      "FragmentPath": "/etc/systemd/system/gongwei-amp-heartbeat.service",
+      "DropInPaths": ""
+    }
+  },
+  "links": {
+    "current": "/opt/gongwei/releases/20261006-1807",
+    "data": null,
+    "logs": null,
+    "models": null
+  },
+  "releases": [
+    "20261006-1800",
+    "20261006-hybrid",
+    "20261006-1807",
+    "20261007-platform"
+  ],
+  "nginx_exists": true,
+  "gongwei-platform_exists": false,
+  "gongwei-secrets_exists": false,
+  "db": {
+    "integrity": "ok",
+    "orders": 0,
+    "active_reservations": 0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-08T14:09:09.720010+00:00",
+  "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+  "query": {
+    "type": "filtered",
+    "limit": 10,
+    "filter": {
+      "conditions": [
+        {
+          "field": "aic",
+          "op": "eq",
+          "value": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF"
+        }
+      ],
+      "logic": "and"
+    }
+  },
+  "dingdang_verified": false,
+  "success": false,
+  "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>"
+}

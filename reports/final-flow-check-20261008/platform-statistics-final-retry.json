@@ -1,0 +1,139 @@
+{
+  "url": "https://wt.ioa.pub/internal/matched-stats/top?startAt=2026-10-08T21%3A00%3A00%2B08%3A00&endAt=2026-10-09T01%3A00%3A00%2B08%3A00&n=200",
+  "checked_at": "2026-10-08T23:54:15.316446+08:00",
+  "previous_error": "URLError: <urlopen error _ssl.c:1064: The handshake operation timed out>",
+  "http_status": 200,
+  "response": {
+    "timezone": "Asia/Shanghai",
+    "unit": "task",
+    "n": 200,
+    "timeRange": {
+      "startAt": "2026-10-08T21:00:00+08:00",
+      "endAt": "2026-10-09T00:00:00+08:00"
+    },
+    "caller": [
+      {
+        "aic": "1.2.156.3088.1.BUPT.D9HGF4.ZH01K7.KLS103.0D4L",
+        "count": 128,
+        "accessCount": 128,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.1.LDR001.LDR001.1.0002",
+        "count": 58,
+        "accessCount": 58,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.V2OEMK.9SXTTI.PXTEY2.0O9X",
+        "count": 18,
+        "accessCount": 18,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.I9JB16.39U12G.8KHJZM.01HW",
+        "count": 3,
+        "accessCount": 0,
+        "messageCount": 3
+      }
+    ],
+    "callee": [
+      {
+        "aic": "1.2.156.3088.1.BUPT.BNN2UD.A0G0KD.YYTVI4.1DHO",
+        "count": 58,
+        "accessCount": 58,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.D9HGF4.I6VEBH.ECINCD.0SYY",
+        "count": 38,
+        "accessCount": 38,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.D9HGF4.6L2DKF.WWQPEE.01OO",
+        "count": 30,
+        "accessCount": 30,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.D9HGF4.DZJWU5.VFCINL.00TX",
+        "count": 30,
+        "accessCount": 30,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.D9HGF4.O90UKI.T6NPWF.17ZS",
+        "count": 29,
+        "accessCount": 29,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.V2OEMK.EYC2E6.WKYLK7.1AJ8",
+        "count": 6,
+        "accessCount": 6,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.V2OEMK.Q0XIIX.H02Q5W.12LI",
+        "count": 6,
+        "accessCount": 6,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.V2OEMK.TSI8DF.88R9U9.19R6",
+        "count": 6,
+        "accessCount": 6,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.D9HGF4.4VLMAT.D33W8D.0QYG",
+        "count": 1,
+        "accessCount": 1,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.I9JB16.00Z99Q.ZIC2UL.0CFK",
+        "count": 1,
+        "accessCount": 0,
+        "messageCount": 1
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.I9JB16.QY7RKX.2NPYPU.14IC",
+        "count": 1,
+        "accessCount": 0,
+        "messageCount": 1
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.I9JB16.ZCJ6SB.N74XF5.0OEC",
+        "count": 1,
+        "accessCount": 0,
+        "messageCount": 1
+      }
+    ],
+    "callerNonInternal": [
+      {
+        "aic": "1.2.156.3088.1.1.LDR001.LDR001.1.0002",
+        "count": 58,
+        "accessCount": 58,
+        "messageCount": 0
+      }
+    ],
+    "calleeNonInternal": [
+      {
+        "aic": "1.2.156.3088.1.BUPT.BNN2UD.A0G0KD.YYTVI4.1DHO",
+        "count": 58,
+        "accessCount": 58,
+        "messageCount": 0
+      }
+    ],
+    "meta": {
+      "currentHourOpen": true,
+      "accessComputedAt": "2026-10-08T14:59:50.671000+00:00",
+      "messageComputedAt": "2026-10-08T14:59:13.085000+00:00",
+      "accessMissingHours": [],
+      "messageMissingHours": []
+    }
+  },
+  "own_aics_present": false
+}

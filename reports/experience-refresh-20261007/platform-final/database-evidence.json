@@ -1,0 +1,55 @@
+{
+  "tasks": [
+    {
+      "task_id": "c9ea98aa-fcf7-42b3-89da-36b26aa1ec2b",
+      "session_id": "session_1703",
+      "external_task_id": "c9ea98aa-fcf7-42b3-89da-36b26aa1ec2b",
+      "request_id": null,
+      "plan_id": null,
+      "status": "cancelled",
+      "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}, \"missing_fields\": [\"start_time\", \"duration_minutes\"], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+      "created_at": "2026-10-06T21:06:09.787498+00:00",
+      "updated_at": "2026-10-06T21:07:12.597799+00:00"
+    },
+    {
+      "task_id": "c3a2809e-d5e5-4246-8f1e-1eb86daad30e",
+      "session_id": "session_1703",
+      "external_task_id": "c3a2809e-d5e5-4246-8f1e-1eb86daad30e",
+      "request_id": "req-d9d3d534-9bea-4cfe-add3-543e42978eaf",
+      "plan_id": "plan-41fd52a6-1cae-4ec5-a7ed-206df95e04ba",
+      "status": "cancelled",
+      "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"start_time\": \"14:00\", \"duration_minutes\": 30, \"required_skill\": \"泵体检查\", \"description\": \"用户原始需求：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\n上一轮候选结果：\\n\\n叮当请求补充：为了安排水泵001明天下午的检查，请补充两项信息：1）开始时间：明天下午具体几点开始（例如 14:00、15:30）；2）预计时长：本次检查预计需要多少分钟（例如 30 分钟、60 分钟）。收到后我会按该时间向工维联核心业务 Leader 继续下达派工，不会取消当前任务重新开始。\\n用户回答：下午两点开始，预计一小时，需要泵体检查技能。\\n\\n该智能体的专属补充任务：\\n水泵001运行异常，帮我安排明天下午检查。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\"}, \"missing_fields\": [], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": null}",
+      "created_at": "2026-10-06T21:07:13.192656+00:00",
+      "updated_at": "2026-10-06T21:18:33.708970+00:00"
+    }
+  ],
+  "subtasks": [
+    {
+      "subtask_id": "subtask-c3a2809e-d5e5-4246-8f1e-1eb86daad30e:resource:01",
+      "parent_task_id": "c3a2809e-d5e5-4246-8f1e-1eb86daad30e",
+      "external_task_id": "c3a2809e-d5e5-4246-8f1e-1eb86daad30e:resource:01",
+      "partner": "resource",
+      "action": "query_resources",
+      "message_id": "cmd-cd790800-5d5b-45c4-9c52-74fd5f00ac0d",
+      "status": "completed",
+      "result_json": "{\"simulated\": true, \"ok\": true, \"partner\": \"resource\", \"action\": \"query_resources\", \"result\": {\"simulated\": true, \"request_id\": \"req-d9d3d534-9bea-4cfe-add3-543e42978eaf\", \"workers\": [{\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, {\"id\": \"worker-03\", \"name\": \"模拟人员丙\", \"role\": \"综合维护\"}], \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"available_qty\": 5, \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"available_qty\": 2, \"unit\": \"套\"}], \"required_skill\": \"pump_inspection\", \"required_inventory\": [\"tool-inspection-kit\", \"part-seal-ring\"], \"available\": true, \"reasons\": [], \"start_at\": \"2026-10-08T14:00:00\", \"end_at\": \"2026-10-08T14:30:00\"}}",
+      "created_at": "2026-10-06T21:07:13.596177+00:00",
+      "updated_at": "2026-10-06T21:07:24.840464+00:00"
+    },
+    {
+      "subtask_id": "subtask-c3a2809e-d5e5-4246-8f1e-1eb86daad30e:resource:release:01",
+      "parent_task_id": "c3a2809e-d5e5-4246-8f1e-1eb86daad30e",
+      "external_task_id": "c3a2809e-d5e5-4246-8f1e-1eb86daad30e:resource:release:01",
+      "partner": "resource",
+      "action": "release_resources",
+      "message_id": "cmd-66139e14-e881-43f4-84d1-82ebc8f7127b",
+      "status": "completed",
+      "result_json": "{}",
+      "created_at": "2026-10-06T21:18:13.013681+00:00",
+      "updated_at": "2026-10-06T21:18:33.702881+00:00"
+    }
+  ],
+  "work_orders": [],
+  "reservations": [],
+  "integrity": "ok"
+}

@@ -1,0 +1,975 @@
+{
+  "/opt/gongwei/releases/20261006-1807": [
+    {
+      "name": "pyproject.toml",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_business.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "01_prepare.cmd",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "KNOWN_ISSUES.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_mq_inbox_integration.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "llm_provider.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "docs",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "resource_partner_v1.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "mq_group_transport.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_leader_external_flow.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_transport_mode.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "SOURCES.txt",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "platform",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "scripts",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "test_agentic_core.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_leader_inbox_runtime.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "stage2_domain.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "CHECK_STATUS.json",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "models",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "PRODUCT.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "leader.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "stage2_business_actions.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_runtime_config.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "ARCHITECTURE.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "STATUS.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "deploy",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "local_log.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "transport_mode.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "web",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "audio_partner_v1.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": ".env.example",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "data",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "partner_resolver.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_stage5_resilience.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "run_mq_inbox_integration.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "leader_external_flow.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "stage3_leader_aip.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "agent_core.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "SECURITY.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "resource_agent.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "__pycache__",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "test_partner_inbox_entrypoint.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_audio_detector.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "audio_service.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_business_actions.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_stage2_domain.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "DESIGN.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "02_start_resource.cmd",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_platform_runtime.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "README.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "audio_data.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "platform_runtime_config.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": ".python-version",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_audio_data.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "03_run_leader.cmd",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "audio_detector.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "reports",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "run_leader_inbox.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "agentic_core.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "work_order_partner_v1.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "web_app.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "run_stage5_tests.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_partner_resolver.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "stop_stage2.cmd",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_final_audit_features.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "uv.lock",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "leader_inbox_runtime.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_stage3_leader_aip.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_mq_acs.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "platform_runtime.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": ".gitignore",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_audio_partner.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_audio_pluggable.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "HUMAN_ACTIONS.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "stage2_partner_common.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "run_partner_inbox.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "CHANGELOG.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "business.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_stage2_partners.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "run_stage2_tests.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_stage2_api.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "stage2_db.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_audio_flow.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "stage2_aip.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "logs",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "state_mapping.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "start_stage2.cmd",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_mq_group_transport.py",
+      "link": null,
+      "dir": false
+    }
+  ],
+  "/opt/gongwei/releases/20261007-platform": [
+    {
+      "name": "pyproject.toml",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "leader_rpc_runtime.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_business.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "01_prepare.cmd",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "KNOWN_ISSUES.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_mq_inbox_integration.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "llm_provider.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "docs",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "resource_partner_v1.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "mq_group_transport.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "run_leader_rpc.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_leader_external_flow.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_amp_runtime.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_transport_mode.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "SOURCES.txt",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "platform",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "scripts",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "test_agentic_core.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_leader_inbox_runtime.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "stage2_domain.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "CHECK_STATUS.json",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "amp_runtime.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "models",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "PRODUCT.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "leader.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "stage2_business_actions.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_runtime_config.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "ARCHITECTURE.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "STATUS.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "deploy",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "local_log.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "transport_mode.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_platform_runtime_config.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "web",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "audio_partner_v1.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": ".env.example",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "data",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "test_leader_rpc_runtime.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "partner_resolver.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_stage5_resilience.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "run_mq_inbox_integration.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "leader_external_flow.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "stage3_leader_aip.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "agent_core.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "SECURITY.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "resource_agent.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "__pycache__",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "test_partner_inbox_entrypoint.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_audio_detector.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "audio_service.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_business_actions.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_stage2_domain.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "DESIGN.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "02_start_resource.cmd",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_platform_runtime.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "README.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "audio_data.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "platform_runtime_config.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": ".python-version",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_audio_data.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "03_run_leader.cmd",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "audio_detector.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "reports",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "run_leader_inbox.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "agentic_core.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "work_order_partner_v1.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "web_app.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "run_stage5_tests.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_partner_resolver.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "stop_stage2.cmd",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_platform_diagnostics.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_final_audit_features.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "uv.lock",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "leader_inbox_runtime.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_stage3_leader_aip.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_mq_acs.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "platform_runtime.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": ".gitignore",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_audio_partner.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_audio_pluggable.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "HUMAN_ACTIONS.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "stage2_partner_common.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "run_partner_inbox.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "CHANGELOG.md",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "business.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_stage2_partners.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "run_stage2_tests.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_stage2_api.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "stage2_db.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_audio_flow.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "stage2_aip.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "logs",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "state_mapping.py",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "start_stage2.cmd",
+      "link": null,
+      "dir": false
+    },
+    {
+      "name": "test_mq_group_transport.py",
+      "link": null,
+      "dir": false
+    }
+  ],
+  "/opt/gongwei/shared": [
+    {
+      "name": "data",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "reports",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "logs",
+      "link": null,
+      "dir": true
+    }
+  ],
+  "/opt/gongwei/secrets/generations/20261007": [
+    {
+      "name": "leader",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "workorder",
+      "link": null,
+      "dir": true
+    },
+    {
+      "name": "resource",
+      "link": null,
+      "dir": true
+    }
+  ],
+  "web_unit": "# /etc/systemd/system/gongwei-web.service\n[Unit]\nDescription=Gongwei web and Leader API\nAfter=network-online.target\nWants=network-online.target\n\n[Service]\nType=simple\nUser=ubuntu\nGroup=ubuntu\nWorkingDirectory=/opt/gongwei/current\nEnvironmentFile=/opt/gongwei/gongwei.env\nExecStart=/opt/gongwei/.venv/bin/python -m uvicorn web_app:app --host 127.0.0.1 --port 18110\nRestart=on-failure\nRestartSec=5\nNoNewPrivileges=true\nPrivateTmp=true\nUMask=0077\nReadWritePaths=/opt/gongwei\nStandardOutput=append:/opt/gongwei/shared/logs/web.service.log\nStandardError=append:/opt/gongwei/shared/logs/web.service.log\n\n[Install]\nWantedBy=multi-user.target\n",
+  "leader_unit": "# /etc/systemd/system/gongwei-leader.service\n[Unit]\nDescription=Gongwei official mTLS Leader RPC with MQ Partners\nAfter=network-online.target\nWants=network-online.target\nStartLimitIntervalSec=120\nStartLimitBurst=3\n\n[Service]\nType=simple\nUser=gongwei-leader\nDynamicUser=yes\nSupplementaryGroups=gongwei-data\nWorkingDirectory=/opt/gongwei/releases/20261007-platform\nEnvironmentFile=/opt/gongwei/platform/leader.env\nLoadCredential=identity:/opt/gongwei/secrets/generations/20261007/leader\nEnvironment=GONGWEI_SECRETS_DIR=%d\nEnvironment=GONGWEI_AICS_FILE=%d/identity_aics.json\nEnvironment=MQ_CERT_FILE=%d/identity_certs_leader.crt\nEnvironment=MQ_KEY_FILE=%d/identity_certs_private_leader.key\nEnvironment=MQ_CA_FILE=%d/identity_certs_trust-bundle.pem\nEnvironment=GONGWEI_LEADER_SERVER_CERT=%d/identity_certs_leader-server.crt\nEnvironment=GONGWEI_LEADER_SERVER_KEY=%d/identity_certs_private_leader-server.key\nEnvironment=GONGWEI_LEADER_CLIENT_CA=%d/identity_certs_trust-bundle.pem\nEnvironment=GONGWEI_LEADER_RPC_STATE_DB=/var/lib/gongwei-leader/rpc.sqlite3\nEnvironment=GONGWEI_LOG_DIR=/var/log/gongwei-leader\nStateDirectory=gongwei-leader\nLogsDirectory=gongwei-leader\nExecStart=/opt/gongwei/.venv/bin/python run_leader_rpc.py\nRestart=on-failure\nRestartSec=10\nTimeoutStopSec=45\nNoNewPrivileges=true\nPrivateTmp=true\nProtectSystem=strict\nProtectHome=true\nProtectKernelTunables=true\nProtectKernelModules=true\nProtectControlGroups=true\nRestrictSUIDSGID=true\nReadWritePaths=/opt/gongwei/shared/data\nUMask=0007\nStandardOutput=journal\nStandardError=journal\n\n[Install]\nWantedBy=multi-user.target\n",
+  "resource-inbox_unit": "# /etc/systemd/system/gongwei-resource-inbox.service\n[Unit]\nDescription=Gongwei official resource MQ Inbox\nAfter=network-online.target\nWants=network-online.target\nStartLimitIntervalSec=120\nStartLimitBurst=3\n\n[Service]\nType=simple\nUser=gongwei-resource-mq\nDynamicUser=yes\nSupplementaryGroups=gongwei-data\nWorkingDirectory=/opt/gongwei/releases/20261007-platform\nEnvironmentFile=/opt/gongwei/platform/leader.env\nLoadCredential=identity:/opt/gongwei/secrets/generations/20261007/resource\nEnvironment=GONGWEI_SECRETS_DIR=%d\nEnvironment=GONGWEI_AICS_FILE=%d/identity_aics.json\nEnvironment=MQ_CERT_FILE=%d/identity_certs_resource_partner.crt\nEnvironment=MQ_KEY_FILE=%d/identity_certs_private_resource_partner.key\nEnvironment=MQ_CA_FILE=%d/identity_certs_trust-bundle.pem\nEnvironment=GONGWEI_LOG_DIR=/var/log/gongwei-resource-inbox\nLogsDirectory=gongwei-resource-inbox\nExecStart=/opt/gongwei/.venv/bin/python run_partner_inbox.py --role resource\nRestart=on-failure\nRestartSec=10\nTimeoutStopSec=45\nNoNewPrivileges=true\nPrivateTmp=true\nProtectSystem=strict\nProtectHome=true\nProtectKernelTunables=true\nProtectKernelModules=true\nProtectControlGroups=true\nRestrictSUIDSGID=true\nReadWritePaths=/opt/gongwei/shared/data\nUMask=0007\nStandardOutput=journal\nStandardError=journal\n\n[Install]\nWantedBy=multi-user.target\n",
+  "workorder-inbox_unit": "# /etc/systemd/system/gongwei-workorder-inbox.service\n[Unit]\nDescription=Gongwei official workorder MQ Inbox\nAfter=network-online.target\nWants=network-online.target\nStartLimitIntervalSec=120\nStartLimitBurst=3\n\n[Service]\nType=simple\nUser=gongwei-workorder-mq\nDynamicUser=yes\nSupplementaryGroups=gongwei-data\nWorkingDirectory=/opt/gongwei/releases/20261007-platform\nEnvironmentFile=/opt/gongwei/platform/leader.env\nLoadCredential=identity:/opt/gongwei/secrets/generations/20261007/workorder\nEnvironment=GONGWEI_SECRETS_DIR=%d\nEnvironment=GONGWEI_AICS_FILE=%d/identity_aics.json\nEnvironment=MQ_CERT_FILE=%d/identity_certs_workorder.crt\nEnvironment=MQ_KEY_FILE=%d/identity_certs_private_workorder.key\nEnvironment=MQ_CA_FILE=%d/identity_certs_trust-bundle.pem\nEnvironment=GONGWEI_LOG_DIR=/var/log/gongwei-workorder-inbox\nLogsDirectory=gongwei-workorder-inbox\nExecStart=/opt/gongwei/.venv/bin/python run_partner_inbox.py --role workorder\nRestart=on-failure\nRestartSec=10\nTimeoutStopSec=45\nNoNewPrivileges=true\nPrivateTmp=true\nProtectSystem=strict\nProtectHome=true\nProtectKernelTunables=true\nProtectKernelModules=true\nProtectControlGroups=true\nRestrictSUIDSGID=true\nReadWritePaths=/opt/gongwei/shared/data\nUMask=0007\nStandardOutput=journal\nStandardError=journal\n\n[Install]\nWantedBy=multi-user.target\n",
+  "/opt/gongwei/gongwei.env": {
+    "GONGWEI_TRANSPORT_MODE": "local_rpc"
+  },
+  "/opt/gongwei/platform/leader.env": {
+    "GONGWEI_TRANSPORT_MODE": "platform_mq_inbox",
+    "GONGWEI_DISCOVERY_URL": "https://wt.ioa.pub/discovery",
+    "MQ_BROKER_URL": "amqps://wt.ioa.pub:5671",
+    "MQ_AUTH_SERVICE_URL": "https://wt.ioa.pub:9007",
+    "MQ_VHOST": "/acps"
+  },
+  "deps": {
+    "acps-sdk": "2.2.0",
+    "cryptography": "46.0.5",
+    "numpy": "2.5.3",
+    "fastapi": "0.142.2"
+  }
+}

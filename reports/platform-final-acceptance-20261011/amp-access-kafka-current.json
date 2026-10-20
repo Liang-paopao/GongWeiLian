@@ -1,0 +1,340 @@
+{
+  "broker": "wt.ioa.pub:19092",
+  "count": 18,
+  "leader_aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+  "read_only": {
+    "enable_auto_commit": false,
+    "group_id": null,
+    "producer_used": false,
+    "records_written_to_kafka": false
+  },
+  "records": [
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "0e41b088-5af1-407d-bb74-73a64afbc156",
+      "kafka_timestamp": "2026-10-10T18:56:42.257000+00:00",
+      "log_type": "access",
+      "method": "start",
+      "offset": 7328,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T18:56:41.768855Z"
+    },
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "0e41b088-5af1-407d-bb74-73a64afbc156",
+      "kafka_timestamp": "2026-10-10T18:56:44.380000+00:00",
+      "log_type": "access",
+      "method": "get",
+      "offset": 7329,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T18:56:43.933620Z"
+    },
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "0e41b088-5af1-407d-bb74-73a64afbc156",
+      "kafka_timestamp": "2026-10-10T18:57:10.546000+00:00",
+      "log_type": "access",
+      "method": "cancel",
+      "offset": 7330,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T18:57:09.584468Z"
+    },
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "98272851-2271-4d82-8950-3f5b6542c207",
+      "kafka_timestamp": "2026-10-10T18:57:10.630000+00:00",
+      "log_type": "access",
+      "method": "start",
+      "offset": 7331,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T18:57:10.190829Z"
+    },
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "98272851-2271-4d82-8950-3f5b6542c207",
+      "kafka_timestamp": "2026-10-10T18:57:13.730000+00:00",
+      "log_type": "access",
+      "method": "get",
+      "offset": 7332,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T18:57:12.714347Z"
+    },
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "98272851-2271-4d82-8950-3f5b6542c207",
+      "kafka_timestamp": "2026-10-10T18:57:15.855000+00:00",
+      "log_type": "access",
+      "method": "get",
+      "offset": 7333,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T18:57:14.827770Z"
+    },
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "98272851-2271-4d82-8950-3f5b6542c207",
+      "kafka_timestamp": "2026-10-10T18:57:17.952000+00:00",
+      "log_type": "access",
+      "method": "get",
+      "offset": 7334,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T18:57:16.955644Z"
+    },
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "98272851-2271-4d82-8950-3f5b6542c207",
+      "kafka_timestamp": "2026-10-10T18:57:20.078000+00:00",
+      "log_type": "access",
+      "method": "get",
+      "offset": 7335,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T18:57:19.062196Z"
+    },
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "98272851-2271-4d82-8950-3f5b6542c207",
+      "kafka_timestamp": "2026-10-10T18:57:22.175000+00:00",
+      "log_type": "access",
+      "method": "get",
+      "offset": 7336,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T18:57:21.190934Z"
+    },
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "98272851-2271-4d82-8950-3f5b6542c207",
+      "kafka_timestamp": "2026-10-10T18:57:24.980000+00:00",
+      "log_type": "access",
+      "method": "get",
+      "offset": 7337,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T18:57:23.454820Z"
+    },
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "98272851-2271-4d82-8950-3f5b6542c207",
+      "kafka_timestamp": "2026-10-10T18:57:29.340000+00:00",
+      "log_type": "access",
+      "method": "get",
+      "offset": 7338,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T18:57:25.559113Z"
+    },
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "98272851-2271-4d82-8950-3f5b6542c207",
+      "kafka_timestamp": "2026-10-10T19:01:22.009000+00:00",
+      "log_type": "access",
+      "method": "cancel",
+      "offset": 7340,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T19:01:21.680835Z"
+    },
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "d919fe7e-7c84-4271-a08f-3e4f66e0823d",
+      "kafka_timestamp": "2026-10-10T19:01:23.106000+00:00",
+      "log_type": "access",
+      "method": "start",
+      "offset": 7341,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T19:01:22.847672Z"
+    },
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "d919fe7e-7c84-4271-a08f-3e4f66e0823d",
+      "kafka_timestamp": "2026-10-10T19:01:35.363000+00:00",
+      "log_type": "access",
+      "method": "get",
+      "offset": 7342,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T19:01:27.242480Z"
+    },
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "d919fe7e-7c84-4271-a08f-3e4f66e0823d",
+      "kafka_timestamp": "2026-10-10T19:01:35.480000+00:00",
+      "log_type": "access",
+      "method": "get",
+      "offset": 7343,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T19:01:29.730322Z"
+    },
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "d919fe7e-7c84-4271-a08f-3e4f66e0823d",
+      "kafka_timestamp": "2026-10-10T19:01:35.914000+00:00",
+      "log_type": "access",
+      "method": "get",
+      "offset": 7344,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T19:01:32.680601Z"
+    },
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "3b9d9b26-3757-4607-88eb-9bbd98bfcd0d",
+      "kafka_timestamp": "2026-10-10T19:02:55.438000+00:00",
+      "log_type": "access",
+      "method": "start",
+      "offset": 7345,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T19:02:54.576813Z"
+    },
+    {
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "callee": {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+        "serviceName": "gongwei-leader_rpc"
+      },
+      "caller": {
+        "aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT"
+      },
+      "correlation_id": "3b9d9b26-3757-4607-88eb-9bbd98bfcd0d",
+      "kafka_timestamp": "2026-10-10T19:02:57.527000+00:00",
+      "log_type": "access",
+      "method": "get",
+      "offset": 7346,
+      "partition": 10,
+      "status_code": 200,
+      "timestamp": "2026-10-10T19:02:57.236883Z"
+    }
+  ],
+  "topic": "amp.access",
+  "window_end": "2026-10-10T19:06:00+00:00",
+  "window_start": "2026-10-10T18:50:00+00:00"
+}

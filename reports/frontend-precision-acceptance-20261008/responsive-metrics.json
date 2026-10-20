@@ -1,0 +1,257 @@
+[
+  {
+    "page": "home",
+    "requested": [
+      1366,
+      768
+    ],
+    "clientWidth": 1351,
+    "confirm": 0,
+    "height": 768,
+    "scrollWidth": 1351,
+    "scrollY": 0,
+    "send": 696,
+    "technicalOpen": false,
+    "title": "安排设备检查",
+    "width": 1366
+  },
+  {
+    "page": "plan",
+    "requested": [
+      1366,
+      768
+    ],
+    "clientWidth": 1351,
+    "confirm": 659.8500366210938,
+    "height": 768,
+    "scrollWidth": 1351,
+    "scrollY": 0,
+    "send": 0,
+    "technicalOpen": false,
+    "title": "检查方案",
+    "width": 1366
+  },
+  {
+    "page": "orders",
+    "requested": [
+      1366,
+      768
+    ],
+    "clientWidth": 1351,
+    "confirm": 0,
+    "height": 768,
+    "scrollWidth": 1351,
+    "scrollY": 0,
+    "send": 0,
+    "technicalOpen": false,
+    "title": "工单中心",
+    "width": 1366
+  },
+  {
+    "page": "resources",
+    "requested": [
+      1366,
+      768
+    ],
+    "clientWidth": 1351,
+    "confirm": 0,
+    "height": 768,
+    "scrollWidth": 1351,
+    "scrollY": 0,
+    "send": 0,
+    "technicalOpen": false,
+    "title": "资源与审计",
+    "width": 1366
+  },
+  {
+    "page": "home",
+    "requested": [
+      1440,
+      900
+    ],
+    "clientWidth": 1425,
+    "confirm": 0,
+    "height": 900,
+    "scrollWidth": 1425,
+    "scrollY": 0,
+    "send": 825.6000366210938,
+    "technicalOpen": false,
+    "title": "安排设备检查",
+    "width": 1440
+  },
+  {
+    "page": "plan",
+    "requested": [
+      1440,
+      900
+    ],
+    "clientWidth": 1425,
+    "confirm": 669.8500366210938,
+    "height": 900,
+    "scrollWidth": 1425,
+    "scrollY": 0,
+    "send": 0,
+    "technicalOpen": false,
+    "title": "检查方案",
+    "width": 1440
+  },
+  {
+    "page": "orders",
+    "requested": [
+      1440,
+      900
+    ],
+    "clientWidth": 1425,
+    "confirm": 0,
+    "height": 900,
+    "scrollWidth": 1425,
+    "scrollY": 0,
+    "send": 0,
+    "technicalOpen": false,
+    "title": "工单中心",
+    "width": 1440
+  },
+  {
+    "page": "resources",
+    "requested": [
+      1440,
+      900
+    ],
+    "clientWidth": 1425,
+    "confirm": 0,
+    "height": 900,
+    "scrollWidth": 1425,
+    "scrollY": 0,
+    "send": 0,
+    "technicalOpen": false,
+    "title": "资源与审计",
+    "width": 1440
+  },
+  {
+    "page": "home",
+    "requested": [
+      1920,
+      1080
+    ],
+    "clientWidth": 1905,
+    "confirm": 0,
+    "height": 1080,
+    "scrollWidth": 1905,
+    "scrollY": 0,
+    "send": 999.6000366210938,
+    "technicalOpen": false,
+    "title": "安排设备检查",
+    "width": 1920
+  },
+  {
+    "page": "plan",
+    "requested": [
+      1920,
+      1080
+    ],
+    "clientWidth": 1905,
+    "confirm": 675.8500366210938,
+    "height": 1080,
+    "scrollWidth": 1905,
+    "scrollY": 0,
+    "send": 0,
+    "technicalOpen": false,
+    "title": "检查方案",
+    "width": 1920
+  },
+  {
+    "page": "orders",
+    "requested": [
+      1920,
+      1080
+    ],
+    "clientWidth": 1920,
+    "confirm": 0,
+    "height": 1080,
+    "scrollWidth": 1920,
+    "scrollY": 0,
+    "send": 0,
+    "technicalOpen": false,
+    "title": "工单中心",
+    "width": 1920
+  },
+  {
+    "page": "resources",
+    "requested": [
+      1920,
+      1080
+    ],
+    "clientWidth": 1920,
+    "confirm": 0,
+    "height": 1080,
+    "scrollWidth": 1920,
+    "scrollY": 0,
+    "send": 0,
+    "technicalOpen": false,
+    "title": "资源与审计",
+    "width": 1920
+  },
+  {
+    "page": "home",
+    "requested": [
+      390,
+      844
+    ],
+    "clientWidth": 375,
+    "confirm": 0,
+    "height": 844,
+    "scrollWidth": 375,
+    "scrollY": 0,
+    "send": 739.6000366210938,
+    "technicalOpen": false,
+    "title": "安排设备检查",
+    "width": 390
+  },
+  {
+    "page": "plan",
+    "requested": [
+      390,
+      844
+    ],
+    "clientWidth": 375,
+    "confirm": 1465.6500244140625,
+    "height": 844,
+    "scrollWidth": 375,
+    "scrollY": 0,
+    "send": 0,
+    "technicalOpen": false,
+    "title": "检查方案",
+    "width": 390
+  },
+  {
+    "page": "orders",
+    "requested": [
+      390,
+      844
+    ],
+    "clientWidth": 375,
+    "height": 844,
+    "scrollWidth": 375,
+    "scrollY": 0,
+    "tableWidth": 570,
+    "technicalOpen": false,
+    "title": "工单中心",
+    "width": 390
+  },
+  {
+    "page": "resources",
+    "requested": [
+      390,
+      844
+    ],
+    "clientWidth": 375,
+    "confirm": 0,
+    "height": 844,
+    "scrollWidth": 375,
+    "scrollY": 0,
+    "send": 0,
+    "technicalOpen": false,
+    "title": "资源与审计",
+    "width": 390
+  }
+]

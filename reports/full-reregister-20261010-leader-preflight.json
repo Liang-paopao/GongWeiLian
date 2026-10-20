@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-10T15:14:32.657784+00:00",
+  "role": "leader",
+  "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+  "broker": "amqps://wt.ioa.pub:5671",
+  "auth_service_url": "https://wt.ioa.pub:9007",
+  "sdk_vhost": "acps",
+  "identity_binding_enabled": true,
+  "platform_verified": false,
+  "amqps_and_inbox": "PASS",
+  "acl_probe_group_id": "1b9350cb-ef32-4498-b7b9-974b7d857584",
+  "group_acl": "PASS",
+  "probe_cleanup": "PASS"
+}

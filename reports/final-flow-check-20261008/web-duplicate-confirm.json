@@ -1,0 +1,199 @@
+{
+  "scope": "same real web task confirmation API; not DingDang",
+  "taskId": "task-e9505e30-6f6d-46f7-847d-f3d415d694be",
+  "sessionId": "session-4149a52a-6f4e-42be-b5f3-1ebf1a6b80bc",
+  "before": {
+    "orders": 3,
+    "active_reservations": 6
+  },
+  "after": {
+    "orders": 3,
+    "active_reservations": 6
+  },
+  "response": {
+    "task_id": "task-e9505e30-6f6d-46f7-847d-f3d415d694be",
+    "status": "completed",
+    "simulated": true,
+    "ok": true,
+    "plan": {
+      "id": "plan-febb7dbd-0d2b-4439-a87e-a17835c156dc",
+      "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+      "status": "confirmed",
+      "version": 1,
+      "worker_id": "worker-01",
+      "inventory_json": [
+        "part-seal-ring",
+        "tool-inspection-kit"
+      ],
+      "reason": "按技能、时段和库存生成的模拟方案",
+      "work_order_id": "wo-c1f828d2-bb50-440f-bdc0-04d90fdc3c40",
+      "created_at": "2026-10-08T14:18:36.675686+00:00",
+      "updated_at": "2026-10-08T14:20:35.892513+00:00",
+      "request": {
+        "id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "pump_id": "pump-001",
+        "work_date": "2026-10-09",
+        "start_time": "15:00",
+        "duration_minutes": 60,
+        "end_time": "16:00",
+        "description": "水泵001运行异常，帮我安排明天下午检查。本次为全流程验收。",
+        "required_skill": "泵体检查",
+        "status": "confirmed",
+        "missing_fields": [],
+        "created_at": "2026-10-08T14:11:08.544752+00:00",
+        "updated_at": "2026-10-08T14:20:35.892513+00:00"
+      },
+      "worker": {
+        "id": "worker-01",
+        "name": "模拟人员甲",
+        "role": "机械维护"
+      },
+      "inventory": [
+        {
+          "id": "part-seal-ring",
+          "name": "机械密封圈",
+          "category": "part",
+          "unit": "件"
+        },
+        {
+          "id": "tool-inspection-kit",
+          "name": "便携检查工具包",
+          "category": "tool",
+          "unit": "套"
+        }
+      ],
+      "work_order": {
+        "id": "wo-c1f828d2-bb50-440f-bdc0-04d90fdc3c40",
+        "number": "WO-20261008-3D7B9C",
+        "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "plan_id": "plan-febb7dbd-0d2b-4439-a87e-a17835c156dc",
+        "status": "confirmed",
+        "failure_reason": null,
+        "created_at": "2026-10-08T14:20:35.892513+00:00",
+        "updated_at": "2026-10-08T14:20:35.892513+00:00",
+        "request": {
+          "id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+          "pump_id": "pump-001",
+          "work_date": "2026-10-09",
+          "start_time": "15:00",
+          "duration_minutes": 60,
+          "end_time": "16:00",
+          "description": "水泵001运行异常，帮我安排明天下午检查。本次为全流程验收。",
+          "required_skill": "泵体检查",
+          "status": "confirmed",
+          "missing_fields": [],
+          "created_at": "2026-10-08T14:11:08.544752+00:00",
+          "updated_at": "2026-10-08T14:20:35.892513+00:00"
+        },
+        "reservations": [
+          {
+            "id": "reservation-3a8dd485-e67a-45cb-8911-d63fc300a1fd",
+            "plan_id": "plan-febb7dbd-0d2b-4439-a87e-a17835c156dc",
+            "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+            "resource_type": "worker",
+            "resource_id": "worker-01",
+            "quantity": 1,
+            "status": "active",
+            "start_at": "2026-10-09T15:00:00",
+            "end_at": "2026-10-09T16:00:00",
+            "created_at": "2026-10-08T14:20:35.848918+00:00",
+            "released_at": null
+          },
+          {
+            "id": "reservation-b23b8518-1c72-4983-a88e-c753763f5d0d",
+            "plan_id": "plan-febb7dbd-0d2b-4439-a87e-a17835c156dc",
+            "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+            "resource_type": "inventory",
+            "resource_id": "part-seal-ring",
+            "quantity": 1,
+            "status": "active",
+            "start_at": "2026-10-09T15:00:00",
+            "end_at": "2026-10-09T16:00:00",
+            "created_at": "2026-10-08T14:20:35.848918+00:00",
+            "released_at": null
+          },
+          {
+            "id": "reservation-e5990958-9b99-46e5-932c-197405d7efd5",
+            "plan_id": "plan-febb7dbd-0d2b-4439-a87e-a17835c156dc",
+            "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+            "resource_type": "inventory",
+            "resource_id": "tool-inspection-kit",
+            "quantity": 1,
+            "status": "active",
+            "start_at": "2026-10-09T15:00:00",
+            "end_at": "2026-10-09T16:00:00",
+            "created_at": "2026-10-08T14:20:35.848918+00:00",
+            "released_at": null
+          }
+        ]
+      }
+    },
+    "work_order": {
+      "id": "wo-c1f828d2-bb50-440f-bdc0-04d90fdc3c40",
+      "number": "WO-20261008-3D7B9C",
+      "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+      "plan_id": "plan-febb7dbd-0d2b-4439-a87e-a17835c156dc",
+      "status": "confirmed",
+      "failure_reason": null,
+      "created_at": "2026-10-08T14:20:35.892513+00:00",
+      "updated_at": "2026-10-08T14:20:35.892513+00:00",
+      "request": {
+        "id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "pump_id": "pump-001",
+        "work_date": "2026-10-09",
+        "start_time": "15:00",
+        "duration_minutes": 60,
+        "end_time": "16:00",
+        "description": "水泵001运行异常，帮我安排明天下午检查。本次为全流程验收。",
+        "required_skill": "泵体检查",
+        "status": "confirmed",
+        "missing_fields": [],
+        "created_at": "2026-10-08T14:11:08.544752+00:00",
+        "updated_at": "2026-10-08T14:20:35.892513+00:00"
+      },
+      "reservations": [
+        {
+          "id": "reservation-3a8dd485-e67a-45cb-8911-d63fc300a1fd",
+          "plan_id": "plan-febb7dbd-0d2b-4439-a87e-a17835c156dc",
+          "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+          "resource_type": "worker",
+          "resource_id": "worker-01",
+          "quantity": 1,
+          "status": "active",
+          "start_at": "2026-10-09T15:00:00",
+          "end_at": "2026-10-09T16:00:00",
+          "created_at": "2026-10-08T14:20:35.848918+00:00",
+          "released_at": null
+        },
+        {
+          "id": "reservation-b23b8518-1c72-4983-a88e-c753763f5d0d",
+          "plan_id": "plan-febb7dbd-0d2b-4439-a87e-a17835c156dc",
+          "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+          "resource_type": "inventory",
+          "resource_id": "part-seal-ring",
+          "quantity": 1,
+          "status": "active",
+          "start_at": "2026-10-09T15:00:00",
+          "end_at": "2026-10-09T16:00:00",
+          "created_at": "2026-10-08T14:20:35.848918+00:00",
+          "released_at": null
+        },
+        {
+          "id": "reservation-e5990958-9b99-46e5-932c-197405d7efd5",
+          "plan_id": "plan-febb7dbd-0d2b-4439-a87e-a17835c156dc",
+          "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+          "resource_type": "inventory",
+          "resource_id": "tool-inspection-kit",
+          "quantity": 1,
+          "status": "active",
+          "start_at": "2026-10-09T15:00:00",
+          "end_at": "2026-10-09T16:00:00",
+          "created_at": "2026-10-08T14:20:35.848918+00:00",
+          "released_at": null
+        }
+      ]
+    },
+    "idempotent": true
+  },
+  "pass_result": true
+}

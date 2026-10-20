@@ -1,0 +1,278 @@
+{
+  "tasks": [
+    {
+      "task_id": "task-d720382a-d342-4463-a11f-e10f7fadaf9c",
+      "session_id": "session-ab31895c-55ca-4efc-83e1-88b4301cb697",
+      "external_task_id": "task-d720382a-d342-4463-a11f-e10f7fadaf9c",
+      "request_id": "req-4de2638e-c79b-40de-9bac-eaf54e94b1c4",
+      "plan_id": "plan-be2357bc-bde9-4bc6-8f04-5ef8bf2349e9",
+      "status": "completed"
+    },
+    {
+      "task_id": "task-2311beef-20c2-44ab-ab91-eca97e9727cd",
+      "session_id": "session-a9c3eca4-3cdf-4a2e-98e3-f98daef6e8b2",
+      "external_task_id": "task-2311beef-20c2-44ab-ab91-eca97e9727cd",
+      "request_id": null,
+      "plan_id": null,
+      "status": "cancelled"
+    },
+    {
+      "task_id": "task-6d6b6c68-7e44-41c3-8659-56b556834250",
+      "session_id": "session-10f83bb1-aeb3-4808-bc35-afc638e036b0",
+      "external_task_id": "task-6d6b6c68-7e44-41c3-8659-56b556834250",
+      "request_id": "req-1a033271-368c-4833-8c31-b0b4db614e0b",
+      "plan_id": "plan-64355e75-ac8d-4644-bc56-5013bce122bc",
+      "status": "completed"
+    },
+    {
+      "task_id": "task-4f495cb3-d554-4370-bb55-68c8c786561f",
+      "session_id": "session-c34f6d7b-2b47-4971-bb91-10a2f6adc0a6",
+      "external_task_id": "task-4f495cb3-d554-4370-bb55-68c8c786561f",
+      "request_id": "req-6b870606-e5ae-42bb-afa1-fc51031ebd71",
+      "plan_id": "plan-165fe464-b8c9-4972-bebc-465de278ad9b",
+      "status": "cancelled"
+    },
+    {
+      "task_id": "task-519f92d2-f7f9-47e8-8318-f361fd88268e",
+      "session_id": "session-0bc25f75-fc29-426f-ae47-ec3552d8663b",
+      "external_task_id": "task-519f92d2-f7f9-47e8-8318-f361fd88268e",
+      "request_id": "req-dcc1a748-0aa1-497e-8835-c03d512d8868",
+      "plan_id": "plan-ee38825b-0c75-4264-9eb5-237c60986eed",
+      "status": "cancelled"
+    }
+  ],
+  "messages": [
+    {
+      "message_id": "message-8bb0056a-6282-4e88-8cf8-9e8bb7522150",
+      "session_id": "session-ab31895c-55ca-4efc-83e1-88b4301cb697",
+      "task_id": "task-d720382a-d342-4463-a11f-e10f7fadaf9c",
+      "role": "user",
+      "content": "水泵001运行异常，帮我安排明天下午检查。",
+      "created_at": "2026-10-08T12:44:25.697682+00:00"
+    },
+    {
+      "message_id": "message-170d19e6-7959-4d10-a5eb-5240d6b3cb4b",
+      "session_id": "session-ab31895c-55ca-4efc-83e1-88b4301cb697",
+      "task_id": "task-d720382a-d342-4463-a11f-e10f7fadaf9c",
+      "role": "user",
+      "content": "下午两点开始，预计一小时，需要泵体检查技能。",
+      "created_at": "2026-10-08T12:44:43.920383+00:00"
+    },
+    {
+      "message_id": "message-20da34d2-3c8e-4e31-a076-9f5bd1dd212b",
+      "session_id": "session-ab31895c-55ca-4efc-83e1-88b4301cb697",
+      "task_id": "task-d720382a-d342-4463-a11f-e10f7fadaf9c",
+      "role": "user",
+      "content": "刚才那个方案时间不合适，改到下午三点。",
+      "created_at": "2026-10-08T12:46:49.292371+00:00"
+    },
+    {
+      "message_id": "message-e5ba5119-d694-4d9e-b3fa-a5e27c42e9bc",
+      "session_id": "session-a9c3eca4-3cdf-4a2e-98e3-f98daef6e8b2",
+      "task_id": "task-2311beef-20c2-44ab-ab91-eca97e9727cd",
+      "role": "user",
+      "content": "水泵001运行异常，帮我安排明天下午检查。",
+      "created_at": "2026-10-08T13:01:52.410251+00:00"
+    },
+    {
+      "message_id": "message-b62d3a1e-0c3d-430c-85ff-9af783513039",
+      "session_id": "session-10f83bb1-aeb3-4808-bc35-afc638e036b0",
+      "task_id": "task-6d6b6c68-7e44-41c3-8659-56b556834250",
+      "role": "user",
+      "content": "水泵001运行异常，帮我安排明天下午检查。",
+      "created_at": "2026-10-08T13:02:24.345053+00:00"
+    },
+    {
+      "message_id": "message-dc6b7e95-3838-4086-9a62-5c61d9383467",
+      "session_id": "session-10f83bb1-aeb3-4808-bc35-afc638e036b0",
+      "task_id": "task-6d6b6c68-7e44-41c3-8659-56b556834250",
+      "role": "user",
+      "content": "下午两点开始，预计一小时，需要泵体检查技能。",
+      "created_at": "2026-10-08T13:03:45.215039+00:00"
+    },
+    {
+      "message_id": "message-a3408b50-1509-4fe3-bb9e-4299c7a9381c",
+      "session_id": "session-c34f6d7b-2b47-4971-bb91-10a2f6adc0a6",
+      "task_id": "task-4f495cb3-d554-4370-bb55-68c8c786561f",
+      "role": "user",
+      "content": "水泵002运行异常，帮我安排明天下午检查。",
+      "created_at": "2026-10-08T13:13:02.746270+00:00"
+    },
+    {
+      "message_id": "message-f667f85f-675c-482f-b6f3-e4568985e69f",
+      "session_id": "session-c34f6d7b-2b47-4971-bb91-10a2f6adc0a6",
+      "task_id": "task-4f495cb3-d554-4370-bb55-68c8c786561f",
+      "role": "user",
+      "content": "下午两点开始，预计一小时，需要泵体检查技能。",
+      "created_at": "2026-10-08T13:14:12.211710+00:00"
+    },
+    {
+      "message_id": "message-6cb16256-68e0-4420-b7d1-f13342ac561d",
+      "session_id": "session-0bc25f75-fc29-426f-ae47-ec3552d8663b",
+      "task_id": "task-519f92d2-f7f9-47e8-8318-f361fd88268e",
+      "role": "user",
+      "content": "水泵002运行异常，安排明天下午两点开始检查，预计一小时，需要泵体检查技能。",
+      "created_at": "2026-10-08T13:18:01.074679+00:00"
+    }
+  ],
+  "subtasks": [
+    {
+      "subtask_id": "subtask-task-d720382a-d342-4463-a11f-e10f7fadaf9c:resource:query:546b83486ac8bad7eb98c00a",
+      "parent_task_id": "task-d720382a-d342-4463-a11f-e10f7fadaf9c",
+      "external_task_id": "task-d720382a-d342-4463-a11f-e10f7fadaf9c:resource:query:546b83486ac8bad7eb98c00a",
+      "partner": "resource",
+      "action": "query_resources",
+      "message_id": "message-170d19e6-7959-4d10-a5eb-5240d6b3cb4b",
+      "status": "completed"
+    },
+    {
+      "subtask_id": "subtask-task-d720382a-d342-4463-a11f-e10f7fadaf9c:resource:query:4116e5042e358917301ebfd6",
+      "parent_task_id": "task-d720382a-d342-4463-a11f-e10f7fadaf9c",
+      "external_task_id": "task-d720382a-d342-4463-a11f-e10f7fadaf9c:resource:query:4116e5042e358917301ebfd6",
+      "partner": "resource",
+      "action": "query_resources",
+      "message_id": "message-20da34d2-3c8e-4e31-a076-9f5bd1dd212b",
+      "status": "completed"
+    },
+    {
+      "subtask_id": "subtask-task-6d6b6c68-7e44-41c3-8659-56b556834250:resource:query:63442efd3321bd8618ce8187",
+      "parent_task_id": "task-6d6b6c68-7e44-41c3-8659-56b556834250",
+      "external_task_id": "task-6d6b6c68-7e44-41c3-8659-56b556834250:resource:query:63442efd3321bd8618ce8187",
+      "partner": "resource",
+      "action": "query_resources",
+      "message_id": "message-dc6b7e95-3838-4086-9a62-5c61d9383467",
+      "status": "completed"
+    },
+    {
+      "subtask_id": "subtask-task-4f495cb3-d554-4370-bb55-68c8c786561f:resource:query:60c093ee4d25ffe6dbd1f657",
+      "parent_task_id": "task-4f495cb3-d554-4370-bb55-68c8c786561f",
+      "external_task_id": "task-4f495cb3-d554-4370-bb55-68c8c786561f:resource:query:60c093ee4d25ffe6dbd1f657",
+      "partner": "resource",
+      "action": "query_resources",
+      "message_id": "message-f667f85f-675c-482f-b6f3-e4568985e69f",
+      "status": "completed"
+    },
+    {
+      "subtask_id": "subtask-task-519f92d2-f7f9-47e8-8318-f361fd88268e:resource:query:94f9c621ca4a3442634d983a",
+      "parent_task_id": "task-519f92d2-f7f9-47e8-8318-f361fd88268e",
+      "external_task_id": "task-519f92d2-f7f9-47e8-8318-f361fd88268e:resource:query:94f9c621ca4a3442634d983a",
+      "partner": "resource",
+      "action": "query_resources",
+      "message_id": "message-6cb16256-68e0-4420-b7d1-f13342ac561d",
+      "status": "completed"
+    }
+  ],
+  "orders": [
+    {
+      "id": "wo-eac8fe4b-7623-44ab-8ab0-b3cd3a203f9c",
+      "number": "WO-20261008-6AB9EA",
+      "request_id": "req-4de2638e-c79b-40de-9bac-eaf54e94b1c4",
+      "plan_id": "plan-be2357bc-bde9-4bc6-8f04-5ef8bf2349e9",
+      "status": "cancelled",
+      "failure_reason": null,
+      "created_at": "2026-10-08T12:47:57.675741+00:00",
+      "updated_at": "2026-10-08T13:01:03.059076+00:00"
+    },
+    {
+      "id": "wo-f59135de-e640-498f-a1b5-e910e3cedef0",
+      "number": "WO-20261008-2B4A62",
+      "request_id": "req-1a033271-368c-4833-8c31-b0b4db614e0b",
+      "plan_id": "plan-64355e75-ac8d-4644-bc56-5013bce122bc",
+      "status": "completed",
+      "failure_reason": null,
+      "created_at": "2026-10-08T13:07:18.863981+00:00",
+      "updated_at": "2026-10-08T13:12:31.038243+00:00"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "reservation-4581775b-5030-4720-9ecc-c310424d6270",
+      "plan_id": "plan-be2357bc-bde9-4bc6-8f04-5ef8bf2349e9",
+      "request_id": "req-4de2638e-c79b-40de-9bac-eaf54e94b1c4",
+      "resource_type": "worker",
+      "resource_id": "worker-01",
+      "quantity": 1,
+      "status": "released",
+      "start_at": "2026-10-09T15:00:00",
+      "end_at": "2026-10-09T16:00:00",
+      "created_at": "2026-10-08T12:47:57.329248+00:00",
+      "released_at": "2026-10-08T13:01:03.059076+00:00"
+    },
+    {
+      "id": "reservation-8f24395c-e996-4bce-841c-263f3d0f53dd",
+      "plan_id": "plan-be2357bc-bde9-4bc6-8f04-5ef8bf2349e9",
+      "request_id": "req-4de2638e-c79b-40de-9bac-eaf54e94b1c4",
+      "resource_type": "inventory",
+      "resource_id": "part-seal-ring",
+      "quantity": 1,
+      "status": "released",
+      "start_at": "2026-10-09T15:00:00",
+      "end_at": "2026-10-09T16:00:00",
+      "created_at": "2026-10-08T12:47:57.329248+00:00",
+      "released_at": "2026-10-08T13:01:03.059076+00:00"
+    },
+    {
+      "id": "reservation-954b61fd-7b30-4f08-9f81-6733ca3d979c",
+      "plan_id": "plan-be2357bc-bde9-4bc6-8f04-5ef8bf2349e9",
+      "request_id": "req-4de2638e-c79b-40de-9bac-eaf54e94b1c4",
+      "resource_type": "inventory",
+      "resource_id": "tool-inspection-kit",
+      "quantity": 1,
+      "status": "released",
+      "start_at": "2026-10-09T15:00:00",
+      "end_at": "2026-10-09T16:00:00",
+      "created_at": "2026-10-08T12:47:57.329248+00:00",
+      "released_at": "2026-10-08T13:01:03.059076+00:00"
+    },
+    {
+      "id": "reservation-1352d847-dfeb-4bf3-a7fa-b1b5f5596751",
+      "plan_id": "plan-64355e75-ac8d-4644-bc56-5013bce122bc",
+      "request_id": "req-1a033271-368c-4833-8c31-b0b4db614e0b",
+      "resource_type": "worker",
+      "resource_id": "worker-01",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-09T14:00:00",
+      "end_at": "2026-10-09T15:00:00",
+      "created_at": "2026-10-08T13:07:18.726085+00:00",
+      "released_at": null
+    },
+    {
+      "id": "reservation-ad5f28cc-8190-4057-b656-19348227961c",
+      "plan_id": "plan-64355e75-ac8d-4644-bc56-5013bce122bc",
+      "request_id": "req-1a033271-368c-4833-8c31-b0b4db614e0b",
+      "resource_type": "inventory",
+      "resource_id": "part-seal-ring",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-09T14:00:00",
+      "end_at": "2026-10-09T15:00:00",
+      "created_at": "2026-10-08T13:07:18.726085+00:00",
+      "released_at": null
+    },
+    {
+      "id": "reservation-6ad784b9-f30a-4c65-ba83-5487e437636b",
+      "plan_id": "plan-64355e75-ac8d-4644-bc56-5013bce122bc",
+      "request_id": "req-1a033271-368c-4833-8c31-b0b4db614e0b",
+      "resource_type": "inventory",
+      "resource_id": "tool-inspection-kit",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-09T14:00:00",
+      "end_at": "2026-10-09T15:00:00",
+      "created_at": "2026-10-08T13:07:18.726085+00:00",
+      "released_at": null
+    }
+  ],
+  "audio": [
+    {
+      "id": "audio-ff63b3d72283414088e576089ccd76ef",
+      "original_filename": "00000000.wav",
+      "anomaly_score": 7.807125,
+      "verdict": "疑似异常",
+      "user_confirmed": 0,
+      "status": "analyzed"
+    }
+  ],
+  "integrity": "ok"
+}

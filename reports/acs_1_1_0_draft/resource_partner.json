@@ -1,0 +1,68 @@
+{
+  "aic": "",
+  "active": true,
+  "lastModifiedTime": "2026-10-06T00:00:00Z",
+  "protocolVersion": "02.02",
+  "name": "工维联资源协调 Partner",
+  "description": "提供设备检查业务所需的人员、技能、可用时段、工具和配件查询，并支持按检查时段进行资源预留与释放。仅处理资源查询和预留，不负责维修决策、工单执行或声音诊断；缺少泵、时间或技能等必要参数时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。",
+  "version": "1.1.0",
+  "provider": {
+    "countryCode": "CN",
+    "organization": "工维联项目组",
+    "department": "设备运维系统",
+    "name": "LiangPaoPao"
+  },
+  "securitySchemes": {
+    "mtls": {
+      "type": "mutualTLS"
+    }
+  },
+  "endPoints": [
+    {
+      "url": "amqps://wt.ioa.pub:5671/acps?inbox=inbox_{AIC}",
+      "transport": "AMQP",
+      "security": [
+        {
+          "mtls": []
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "notification": false,
+    "messageQueue": [
+      "rabbitmq:>=4.2"
+    ]
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "gongwei.resource.query",
+      "name": "查询可用人员与库存",
+      "description": "根据检查请求查询人员、技能、工具和配件可用性。",
+      "tags": [
+        "resource",
+        "query"
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "gongwei.resource.reserve",
+      "name": "预留和释放检查资源",
+      "description": "为已生成的检查方案预留资源并支持释放。",
+      "tags": [
+        "resource",
+        "reserve"
+      ],
+      "version": "1.0.0"
+    }
+  ],
+  "visibility": "public"
+}

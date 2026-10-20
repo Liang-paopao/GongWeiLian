@@ -1,0 +1,158 @@
+[
+  {
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "view": "主协作",
+    "heading": [
+      "安排一次设备检查"
+    ],
+    "scrollTop": 0,
+    "scrollWidth": 1351,
+    "width": 1366
+  },
+  {
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "view": "方案确认",
+    "heading": [
+      "确认检查方案"
+    ],
+    "scrollTop": 0,
+    "scrollWidth": 1351,
+    "width": 1366
+  },
+  {
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "view": "工单中心",
+    "heading": [
+      "工单中心"
+    ],
+    "scrollTop": 0,
+    "scrollWidth": 1351,
+    "width": 1366
+  },
+  {
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "view": "资源与审计",
+    "heading": [
+      "资源与协作记录"
+    ],
+    "scrollTop": 0,
+    "scrollWidth": 1351,
+    "width": 1366
+  },
+  {
+    "size": {
+      "width": 1440,
+      "height": 900
+    },
+    "view": "主协作",
+    "heading": [
+      "安排一次设备检查"
+    ],
+    "scrollTop": 0,
+    "scrollWidth": 1425,
+    "width": 1440
+  },
+  {
+    "size": {
+      "width": 1440,
+      "height": 900
+    },
+    "view": "方案确认",
+    "heading": [
+      "确认检查方案"
+    ],
+    "scrollTop": 0,
+    "scrollWidth": 1425,
+    "width": 1440
+  },
+  {
+    "size": {
+      "width": 1440,
+      "height": 900
+    },
+    "view": "工单中心",
+    "heading": [
+      "工单中心"
+    ],
+    "scrollTop": 0,
+    "scrollWidth": 1425,
+    "width": 1440
+  },
+  {
+    "size": {
+      "width": 1440,
+      "height": 900
+    },
+    "view": "资源与审计",
+    "heading": [
+      "资源与协作记录"
+    ],
+    "scrollTop": 0,
+    "scrollWidth": 1425,
+    "width": 1440
+  },
+  {
+    "size": {
+      "width": 1920,
+      "height": 1080
+    },
+    "view": "主协作",
+    "heading": [
+      "安排一次设备检查"
+    ],
+    "scrollTop": 0,
+    "scrollWidth": 1905,
+    "width": 1920
+  },
+  {
+    "size": {
+      "width": 1920,
+      "height": 1080
+    },
+    "view": "方案确认",
+    "heading": [
+      "确认检查方案"
+    ],
+    "scrollTop": 0,
+    "scrollWidth": 1905,
+    "width": 1920
+  },
+  {
+    "size": {
+      "width": 1920,
+      "height": 1080
+    },
+    "view": "工单中心",
+    "heading": [
+      "工单中心"
+    ],
+    "scrollTop": 0,
+    "scrollWidth": 1920,
+    "width": 1920
+  },
+  {
+    "size": {
+      "width": 1920,
+      "height": 1080
+    },
+    "view": "资源与审计",
+    "heading": [
+      "资源与协作记录"
+    ],
+    "scrollTop": 0,
+    "scrollWidth": 1920,
+    "width": 1920
+  }
+]

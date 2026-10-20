@@ -1,0 +1,21 @@
+[project]
+name = "gongwei-local-step1"
+version = "0.1.0"
+description = "Local-only AIP resource-query exercise; not a platform-verified product"
+requires-python = ">=3.14,<3.15"
+dependencies = [
+  "acps-sdk==2.2.0",
+  "cryptography>=46.0.5,<51",
+  "numpy>=2.5,<3",
+  "scipy>=1.18,<2",
+  "soundfile>=0.14,<1",
+  "scikit-learn>=1.9,<2",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+# Official v2.2.0 tag archive. Using the archive avoids Git history fetches
+# while keeping the SDK source and version pinned to the official release.
+acps-sdk = { url = "https://github.com/AIP-PUB/ACPs-community/archive/refs/tags/v2.2.0.zip", subdirectory = "acps-sdk" }

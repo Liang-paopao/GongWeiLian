@@ -1,0 +1,55 @@
+{
+  "orders": [
+    {
+      "id": "wo-26df9e27-f0da-43fc-b9ef-d8710e1495d9",
+      "number": "WO-20261007-FEF4BA",
+      "request_id": "req-0b6842a1-8baf-4675-a330-17c84747f646",
+      "plan_id": "plan-e7812f58-f08b-4f4e-83f7-75389fdac32d",
+      "status": "confirmed",
+      "failure_reason": null,
+      "created_at": "2026-10-06T20:59:04.427220+00:00",
+      "updated_at": "2026-10-06T20:59:04.427220+00:00"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "reservation-3ea05790-8646-497d-b964-7fe6dadbfde7",
+      "plan_id": "plan-e7812f58-f08b-4f4e-83f7-75389fdac32d",
+      "request_id": "req-0b6842a1-8baf-4675-a330-17c84747f646",
+      "resource_type": "worker",
+      "resource_id": "worker-01",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-08T15:00:00",
+      "end_at": "2026-10-08T16:00:00",
+      "created_at": "2026-10-06T20:59:04.357390+00:00",
+      "released_at": null
+    },
+    {
+      "id": "reservation-f4ecb7f4-1608-4717-a040-4766637db4fe",
+      "plan_id": "plan-e7812f58-f08b-4f4e-83f7-75389fdac32d",
+      "request_id": "req-0b6842a1-8baf-4675-a330-17c84747f646",
+      "resource_type": "inventory",
+      "resource_id": "part-seal-ring",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-08T15:00:00",
+      "end_at": "2026-10-08T16:00:00",
+      "created_at": "2026-10-06T20:59:04.357390+00:00",
+      "released_at": null
+    },
+    {
+      "id": "reservation-010ab7af-aa13-4217-9840-d3f6d148a240",
+      "plan_id": "plan-e7812f58-f08b-4f4e-83f7-75389fdac32d",
+      "request_id": "req-0b6842a1-8baf-4675-a330-17c84747f646",
+      "resource_type": "inventory",
+      "resource_id": "tool-inspection-kit",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-08T15:00:00",
+      "end_at": "2026-10-08T16:00:00",
+      "created_at": "2026-10-06T20:59:04.357390+00:00",
+      "released_at": null
+    }
+  ]
+}

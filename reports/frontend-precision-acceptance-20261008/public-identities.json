@@ -1,0 +1,17 @@
+{
+  "工维联核心业务 Leader": {
+    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+    "approval_status": "APPROVED",
+    "is_active": true
+  },
+  "工维联资源协调 Partner": {
+    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+    "approval_status": "APPROVED",
+    "is_active": true
+  },
+  "工维联工单处理 Partner": {
+    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+    "approval_status": "APPROVED",
+    "is_active": true
+  }
+}

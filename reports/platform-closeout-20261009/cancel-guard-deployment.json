@@ -1,0 +1,27 @@
+{
+  "backup": "/opt/gongwei/backups/20261009-015437-cancel-guard",
+  "before_pids": {
+    "web": "907",
+    "resource": "905",
+    "workorder": "910",
+    "audio": "900",
+    "resource-inbox": "904",
+    "workorder-inbox": "908",
+    "amp-heartbeat": "899",
+    "amp-metadata": "909"
+  },
+  "changed_file": "/opt/gongwei/releases/20261007-120338-maintenance/leader_external_flow.py",
+  "sha256": "41d402bc22649986a569aad4669516a4ca8de17030788ba5b802c375d6b0dc64",
+  "platform_verified": false,
+  "after_pids": {
+    "web": "907",
+    "resource": "905",
+    "workorder": "910",
+    "audio": "900",
+    "resource-inbox": "904",
+    "workorder-inbox": "908",
+    "amp-heartbeat": "899",
+    "amp-metadata": "909"
+  },
+  "pass_result": true
+}

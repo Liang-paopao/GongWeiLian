@@ -1,0 +1,13 @@
+{
+  "scope": "Browser observation timestamps include debugging pauses; not request latency",
+  "times": {
+    "dingdangDiscoverySentAt": "2026-10-08T14:11:26.624Z",
+    "dingdangFirstExecuteAt": "2026-10-08T14:14:35.951Z",
+    "dingdangFirstObservedAt": "2026-10-08T14:17:08.304Z",
+    "dingdangSecondSentAt": "2026-10-08T14:18:35.920Z",
+    "dingdangSecondObservedAt": "2026-10-08T14:20:33.764Z",
+    "dingdangConfirmSentAt": "2026-10-08T14:24:29.233Z",
+    "dingdangCompletedObservedAt": "2026-10-08T14:26:20.223Z",
+    "dingdangDuplicateSentAt": "2026-10-08T14:27:37.144Z"
+  }
+}

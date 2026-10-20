@@ -1,0 +1,68 @@
+{
+  "aic": "",
+  "active": true,
+  "lastModifiedTime": "2026-10-06T00:00:00Z",
+  "protocolVersion": "02.02",
+  "name": "工维联工单处理 Partner",
+  "description": "提供设备检查工单的创建、查询、状态更新和取消能力。仅处理已确认方案的工单生命周期，不负责资源查询、人员排班或声音诊断；缺少方案编号或状态不允许时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。",
+  "version": "1.1.0",
+  "provider": {
+    "countryCode": "CN",
+    "organization": "工维联项目组",
+    "department": "设备运维系统",
+    "name": "LiangPaoPao"
+  },
+  "securitySchemes": {
+    "mtls": {
+      "type": "mutualTLS"
+    }
+  },
+  "endPoints": [
+    {
+      "url": "amqps://wt.ioa.pub:5671/acps?inbox=inbox_{AIC}",
+      "transport": "AMQP",
+      "security": [
+        {
+          "mtls": []
+        }
+      ]
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "notification": false,
+    "messageQueue": [
+      "rabbitmq:>=4.2"
+    ]
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "gongwei.work-order.create",
+      "name": "创建检查工单",
+      "description": "仅为已确认检查方案创建幂等工单。",
+      "tags": [
+        "work-order",
+        "create"
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "id": "gongwei.work-order.lifecycle",
+      "name": "更新和取消工单",
+      "description": "更新工单状态或取消工单，并在取消时释放资源。",
+      "tags": [
+        "work-order",
+        "lifecycle"
+      ],
+      "version": "1.0.0"
+    }
+  ],
+  "visibility": "public"
+}

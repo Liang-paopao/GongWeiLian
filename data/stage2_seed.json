@@ -1,0 +1,35 @@
+{
+  "simulated": true,
+  "description": "阶段二演示数据，手工编写，不是公开数据集或真实工厂数据。",
+  "pumps": [
+    {"id": "pump-001", "name": "循环水泵 001", "location": "一号机房", "model": "GW-150"},
+    {"id": "pump-002", "name": "循环水泵 002", "location": "二号机房", "model": "GW-150"},
+    {"id": "pump-003", "name": "冷却水泵 003", "location": "冷却站", "model": "GW-220"}
+  ],
+  "workers": [
+    {"id": "worker-01", "name": "模拟人员甲", "role": "机械维护", "skills": ["pump_inspection"]},
+    {"id": "worker-02", "name": "模拟人员乙", "role": "电气维护", "skills": ["electrical_inspection"]},
+    {"id": "worker-03", "name": "模拟人员丙", "role": "综合维护", "skills": ["pump_inspection", "electrical_inspection"]},
+    {"id": "worker-04", "name": "模拟人员丁", "role": "机械维护", "skills": ["pump_inspection"]},
+    {"id": "worker-05", "name": "模拟人员戊", "role": "综合维护", "skills": ["pump_inspection", "electrical_inspection"]},
+    {"id": "worker-06", "name": "模拟人员己", "role": "仪表维护", "skills": ["electrical_inspection"]}
+  ],
+  "availability": [
+    {"worker_id": "worker-01", "work_date": "*", "start_time": "08:00", "end_time": "17:00"},
+    {"worker_id": "worker-02", "work_date": "*", "start_time": "08:00", "end_time": "17:00"},
+    {"worker_id": "worker-03", "work_date": "*", "start_time": "13:00", "end_time": "18:00"},
+    {"worker_id": "worker-04", "work_date": "*", "start_time": "08:00", "end_time": "16:00"},
+    {"worker_id": "worker-05", "work_date": "*", "start_time": "10:00", "end_time": "19:00"},
+    {"worker_id": "worker-06", "work_date": "*", "start_time": "09:00", "end_time": "18:00"}
+  ],
+  "inventory": [
+    {"id": "tool-inspection-kit", "name": "便携检查工具包", "category": "tool", "total_qty": 5, "available_qty": 5, "unit": "套"},
+    {"id": "tool-vibration-meter", "name": "振动测量仪", "category": "tool", "total_qty": 4, "available_qty": 4, "unit": "台"},
+    {"id": "part-seal-ring", "name": "机械密封圈", "category": "part", "total_qty": 5, "available_qty": 5, "unit": "件"},
+    {"id": "part-gasket", "name": "泵体垫片", "category": "part", "total_qty": 8, "available_qty": 8, "unit": "件"},
+    {"id": "tool-lockout-tag", "name": "检修挂牌套装", "category": "tool", "total_qty": 6, "available_qty": 6, "unit": "套"},
+    {"id": "tool-thermal-camera", "name": "红外热成像仪", "category": "tool", "total_qty": 4, "available_qty": 4, "unit": "台"},
+    {"id": "tool-pressure-gauge", "name": "数字压力表", "category": "tool", "total_qty": 5, "available_qty": 5, "unit": "只"},
+    {"id": "tool-insulation-tester", "name": "绝缘电阻测试仪", "category": "tool", "total_qty": 4, "available_qty": 4, "unit": "台"}
+  ]
+}

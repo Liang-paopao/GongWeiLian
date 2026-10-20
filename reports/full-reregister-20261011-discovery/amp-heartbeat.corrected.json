@@ -1,0 +1,20 @@
+{
+  "broker": "wt.ioa.pub:19092",
+  "sources": [
+    {
+      "role": "leader",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "log_path": "/var/log/gongwei-leader/amp/amp_heartbeat_leader_rpc_037c95c89c455cb413c4b755b9446c4f1f94e6f764ac6a268e32f3cb1c850595.jsonl"
+    },
+    {
+      "role": "resource-inbox",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "log_path": "/var/log/gongwei-resource-inbox/amp/amp_heartbeat_resource_21586e25f00f8f61999a9424c0a78dc39b6c235fda0789691e98552063b0a836.jsonl"
+    },
+    {
+      "role": "workorder-inbox",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "log_path": "/var/log/gongwei-workorder-inbox/amp/amp_heartbeat_workorder_3ee6b3c24a2a0bfe804a70bd28f98cd5b1988f01c56be2ceef6d7b4da5357f2b.jsonl"
+    }
+  ]
+}

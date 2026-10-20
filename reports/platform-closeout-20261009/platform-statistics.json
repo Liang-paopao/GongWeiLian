@@ -1,0 +1,129 @@
+{
+  "url": "https://wt.ioa.pub/internal/matched-stats/top?startAt=2026-10-09T01%3A00%3A00%2B08%3A00&endAt=2026-10-09T04%3A00%3A00%2B08%3A00&n=200",
+  "checked_at": "2026-10-09T03:59:53.195808+08:00",
+  "scope": "formal SDK diagnostics and real DingDang sessions 1841/1842; aggregate counts are not individual business-operation counts",
+  "http_status": 200,
+  "response": {
+    "timezone": "Asia/Shanghai",
+    "unit": "task",
+    "n": 200,
+    "timeRange": {
+      "startAt": "2026-10-09T01:00:00+08:00",
+      "endAt": "2026-10-09T04:00:00+08:00"
+    },
+    "caller": [
+      {
+        "aic": "1.2.156.3088.1.1.LDR001.LDR001.1.0002",
+        "count": 60,
+        "accessCount": 60,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+        "count": 20,
+        "accessCount": 0,
+        "messageCount": 20
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.AGZXNJ.IDO77A.DTNLEB.0MUF",
+        "count": 15,
+        "accessCount": 15,
+        "messageCount": 0
+      }
+    ],
+    "callee": [
+      {
+        "aic": "1.2.156.3088.1.BUPT.BNN2UD.A0G0KD.YYTVI4.1DHO",
+        "count": 60,
+        "accessCount": 60,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+        "count": 10,
+        "accessCount": 0,
+        "messageCount": 10
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+        "count": 10,
+        "accessCount": 0,
+        "messageCount": 10
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.AGZXNJ.Z159XP.CY42VL.0W0K",
+        "count": 6,
+        "accessCount": 6,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.AGZXNJ.19NPSX.PZEMGP.0WH0",
+        "count": 3,
+        "accessCount": 3,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.AGZXNJ.4JFH6S.8VWS14.0S87",
+        "count": 3,
+        "accessCount": 3,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.AGZXNJ.BZ6LPM.319VE2.04SD",
+        "count": 3,
+        "accessCount": 3,
+        "messageCount": 0
+      }
+    ],
+    "callerNonInternal": [
+      {
+        "aic": "1.2.156.3088.1.1.LDR001.LDR001.1.0002",
+        "count": 60,
+        "accessCount": 60,
+        "messageCount": 0
+      }
+    ],
+    "calleeNonInternal": [
+      {
+        "aic": "1.2.156.3088.1.BUPT.BNN2UD.A0G0KD.YYTVI4.1DHO",
+        "count": 60,
+        "accessCount": 60,
+        "messageCount": 0
+      }
+    ],
+    "meta": {
+      "currentHourOpen": true,
+      "accessComputedAt": "2026-10-08T18:59:18.256000+00:00",
+      "messageComputedAt": "2026-10-08T18:59:44.828000+00:00",
+      "accessMissingHours": [],
+      "messageMissingHours": []
+    }
+  },
+  "own_entries": {
+    "caller": [
+      {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+        "count": 20,
+        "accessCount": 0,
+        "messageCount": 20
+      }
+    ],
+    "callee": [
+      {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+        "count": 10,
+        "accessCount": 0,
+        "messageCount": 10
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+        "count": 10,
+        "accessCount": 0,
+        "messageCount": 10
+      }
+    ],
+    "callerNonInternal": [],
+    "calleeNonInternal": []
+  },
+  "own_aics_present": true
+}

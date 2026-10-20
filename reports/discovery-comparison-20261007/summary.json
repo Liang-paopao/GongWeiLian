@@ -1,0 +1,9 @@
+{
+  "checks": "PASS",
+  "exact_queries": 10,
+  "own_default_found": 0,
+  "own_catalog_found": 3,
+  "other_default_found": 2,
+  "business_code_changed": false,
+  "platform_verified": false
+}

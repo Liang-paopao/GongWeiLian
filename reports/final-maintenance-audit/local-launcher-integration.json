@@ -1,0 +1,24 @@
+[
+  {
+    "command": "start_stage2.cmd",
+    "returncode": 0,
+    "stdout": "Healthy resource_partner_v1:app on 57123.\nHealthy work_order_partner_v1:app on 57124.\nHealthy audio_partner_v1:app on 57125.\nHealthy web_app:app on 57126.\nLocal services are healthy. Open http://127.0.0.1:57126/\n",
+    "stderr": ""
+  },
+  {
+    "command": "start_stage2.cmd",
+    "returncode": 0,
+    "stdout": "All recorded local services are healthy.\n",
+    "stderr": ""
+  },
+  {
+    "command": "stop_stage2.cmd",
+    "returncode": 0,
+    "stdout": "Stopped web_app:app on 57126.\nStopped audio_partner_v1:app on 57125.\nStopped work_order_partner_v1:app on 57124.\nStopped resource_partner_v1:app on 57123.\n",
+    "stderr": ""
+  },
+  {
+    "remaining_managed_ports": [],
+    "cleanup_returncode": 0
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "package": "reports\\gongwei-platform-final-acceptance-review-20261011.zip",
+  "files": 102,
+  "bytes": 230857,
+  "sha256": "5d430f36a54bf8bef8016a92decbc4fd00807c141e951e38a8f257a6d5048e82",
+  "secrets_excluded": true,
+  "forbidden_scan": "no private key/certificate markers; no secrets directory"
+}

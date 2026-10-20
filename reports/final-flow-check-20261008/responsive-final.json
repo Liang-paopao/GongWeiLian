@@ -1,0 +1,146 @@
+[
+  {
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "page": "home",
+    "heading": "安排设备检查",
+    "height": 768,
+    "overflow": false,
+    "technicalOpen": false,
+    "width": 1366
+  },
+  {
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "page": "plan",
+    "heading": "检查方案",
+    "height": 768,
+    "overflow": false,
+    "technicalOpen": false,
+    "width": 1366
+  },
+  {
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "page": "orders",
+    "heading": "工单中心",
+    "height": 768,
+    "overflow": false,
+    "technicalOpen": false,
+    "width": 1366
+  },
+  {
+    "size": {
+      "width": 1366,
+      "height": 768
+    },
+    "page": "resources",
+    "heading": "资源与审计",
+    "height": 768,
+    "overflow": false,
+    "technicalOpen": false,
+    "width": 1366
+  },
+  {
+    "size": {
+      "width": 1440,
+      "height": 900
+    },
+    "page": "home",
+    "heading": "安排设备检查",
+    "height": 900,
+    "overflow": false,
+    "technicalOpen": false,
+    "width": 1440
+  },
+  {
+    "size": {
+      "width": 1440,
+      "height": 900
+    },
+    "page": "plan",
+    "heading": "检查方案",
+    "height": 900,
+    "overflow": false,
+    "technicalOpen": false,
+    "width": 1440
+  },
+  {
+    "size": {
+      "width": 1440,
+      "height": 900
+    },
+    "page": "orders",
+    "heading": "工单中心",
+    "height": 900,
+    "overflow": false,
+    "technicalOpen": false,
+    "width": 1440
+  },
+  {
+    "size": {
+      "width": 1440,
+      "height": 900
+    },
+    "page": "resources",
+    "heading": "资源与审计",
+    "height": 900,
+    "overflow": false,
+    "technicalOpen": false,
+    "width": 1440
+  },
+  {
+    "size": {
+      "width": 1920,
+      "height": 1080
+    },
+    "page": "home",
+    "heading": "安排设备检查",
+    "height": 1080,
+    "overflow": false,
+    "technicalOpen": false,
+    "width": 1920
+  },
+  {
+    "size": {
+      "width": 1920,
+      "height": 1080
+    },
+    "page": "plan",
+    "heading": "检查方案",
+    "height": 1080,
+    "overflow": false,
+    "technicalOpen": false,
+    "width": 1920
+  },
+  {
+    "size": {
+      "width": 1920,
+      "height": 1080
+    },
+    "page": "orders",
+    "heading": "工单中心",
+    "height": 1080,
+    "overflow": false,
+    "technicalOpen": false,
+    "width": 1920
+  },
+  {
+    "size": {
+      "width": 1920,
+      "height": 1080
+    },
+    "page": "resources",
+    "heading": "资源与审计",
+    "height": 1080,
+    "overflow": false,
+    "technicalOpen": false,
+    "width": 1920
+  }
+]

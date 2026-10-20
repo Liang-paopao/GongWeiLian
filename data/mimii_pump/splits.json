@@ -1,0 +1,34 @@
+{
+  "seed": 20261003,
+  "offline_rebuild": true,
+  "splits": {
+    "train": [
+      "pump/id_02/abnormal/00000000.wav",
+      "pump/id_02/abnormal/00000001.wav",
+      "pump/id_02/abnormal/00000002.wav",
+      "pump/id_02/normal/00000000.wav",
+      "pump/id_02/normal/00000001.wav",
+      "pump/id_06/abnormal/00000000.wav",
+      "pump/id_06/abnormal/00000001.wav",
+      "pump/id_06/abnormal/00000002.wav",
+      "pump/id_06/normal/00000000.wav",
+      "pump/id_06/normal/00000001.wav"
+    ],
+    "validation": [
+      "pump/id_04/abnormal/00000000.wav",
+      "pump/id_04/abnormal/00000001.wav",
+      "pump/id_04/abnormal/00000002.wav",
+      "pump/id_04/normal/00000000.wav",
+      "pump/id_04/normal/00000001.wav",
+      "pump/id_04/normal/00000002.wav"
+    ],
+    "test": [
+      "pump/id_00/abnormal/00000000.wav",
+      "pump/id_00/abnormal/00000001.wav",
+      "pump/id_00/abnormal/00000002.wav",
+      "pump/id_00/normal/00000000.wav",
+      "pump/id_00/normal/00000001.wav",
+      "pump/id_00/normal/00000002.wav"
+    ]
+  }
+}

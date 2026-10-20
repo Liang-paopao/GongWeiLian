@@ -1,0 +1,73 @@
+{
+  "checked_at": "2026-10-07T09:07:55.789634+00:00",
+  "services": {
+    "leader": {
+      "MainPID": "2720873",
+      "WorkingDirectory": "/opt/gongwei/releases/20261007-083559-maintenance",
+      "ActiveState": "active"
+    },
+    "resource-inbox": {
+      "MainPID": "2435368",
+      "WorkingDirectory": "/opt/gongwei/releases/20261006-211426-maintenance",
+      "ActiveState": "active"
+    },
+    "workorder-inbox": {
+      "MainPID": "2435370",
+      "WorkingDirectory": "/opt/gongwei/releases/20261006-211426-maintenance",
+      "ActiveState": "active"
+    },
+    "amp-heartbeat": {
+      "MainPID": "2367812",
+      "WorkingDirectory": "/opt/gongwei/tools/amp-diagnostics",
+      "ActiveState": "active"
+    }
+  },
+  "heartbeats": [
+    {
+      "role": "leader",
+      "file": "/var/log/gongwei-leader/amp/amp_heartbeat_leader_rpc_dae58220ff780270d49a400debca476af82d3c173bbb03e23ed338bfe09eef58.jsonl",
+      "record": {
+        "schema_version": "1.0",
+        "log_id": "3c8cfc73-a46e-48cb-92be-f00bda8e24a2",
+        "log_type": "heartbeat",
+        "timestamp": "2026-10-07T09:07:53.268854+00:00",
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+        "body": {
+          "uptimeSeconds": 1695.146
+        }
+      },
+      "age_seconds": 2.527808
+    },
+    {
+      "role": "resource-inbox",
+      "file": "/var/log/gongwei-resource-inbox/amp/amp_heartbeat_resource_21586e25f00f8f61999a9424c0a78dc39b6c235fda0789691e98552063b0a836.jsonl",
+      "record": {
+        "schema_version": "1.0",
+        "log_id": "a0eb83fd-6036-4cfd-a862-cc0bb8241367",
+        "log_type": "heartbeat",
+        "timestamp": "2026-10-07T09:07:43.856281+00:00",
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+        "body": {
+          "uptimeSeconds": 42609.27
+        }
+      },
+      "age_seconds": 11.946455
+    },
+    {
+      "role": "workorder-inbox",
+      "file": "/var/log/gongwei-workorder-inbox/amp/amp_heartbeat_workorder_3ee6b3c24a2a0bfe804a70bd28f98cd5b1988f01c56be2ceef6d7b4da5357f2b.jsonl",
+      "record": {
+        "schema_version": "1.0",
+        "log_id": "a23e785b-e90b-42d4-935b-e5c2ae05ab5b",
+        "log_type": "heartbeat",
+        "timestamp": "2026-10-07T09:07:42.474293+00:00",
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+        "body": {
+          "uptimeSeconds": 42609.226
+        }
+      },
+      "age_seconds": 13.33442
+    }
+  ],
+  "forwarder_log": "{\"role\":\"workorder-inbox\",\"log_id\":\"b0da99c4-04e8-4482-bdde-4bdeaf5d0c44\",\"partition\":0,\"offset\":6509089,\"timestamp_type\":1}\n{\"role\":\"resource-inbox\",\"log_id\":\"37e22eef-26fa-4749-88a0-7ceb4b0f51b5\",\"partition\":0,\"offset\":6509103,\"timestamp_type\":1}\n{\"role\":\"leader\",\"log_id\":\"41eefe58-9774-4cab-903d-bf7233c54d65\",\"partition\":0,\"offset\":6509203,\"timestamp_type\":1}\n{\"role\":\"workorder-inbox\",\"log_id\":\"79a2dda1-04af-43a5-b79d-9752ad56bd2d\",\"partition\":0,\"offset\":6509224,\"timestamp_type\":1}\n{\"role\":\"resource-inbox\",\"log_id\":\"b333964d-63c8-433b-8088-507737ebaa03\",\"partition\":0,\"offset\":6509228,\"timestamp_type\":1}\n{\"role\":\"leader\",\"log_id\":\"14492568-50de-416f-b807-822d84949a03\",\"partition\":0,\"offset\":6509334,\"timestamp_type\":1}\n{\"role\":\"workorder-inbox\",\"log_id\":\"9de1eb58-3749-4e7b-9853-0eac3c157701\",\"partition\":0,\"offset\":6509371,\"timestamp_type\":1}\n{\"role\":\"resource-inbox\",\"log_id\":\"21595b16-c803-4d71-98b1-56479fd881d9\",\"partition\":0,\"offset\":6509401,\"timestamp_type\":1}\n{\"role\":\"leader\",\"log_id\":\"9145af27-fa5d-4085-b98b-add0ec4d1108\",\"partition\":0,\"offset\":6509463,\"timestamp_type\":1}\n{\"role\":\"workorder-inbox\",\"log_id\":\"244b01b2-ba42-472e-9c2b-56d5af1a5433\",\"partition\":0,\"offset\":6509493,\"timestamp_type\":1}\n{\"role\":\"resource-inbox\",\"log_id\":\"c603cf50-6acc-4b9e-a270-eabaee2fe40f\",\"partition\":0,\"offset\":6509502,\"timestamp_type\":1}\n{\"role\":\"leader\",\"log_id\":\"6dd0d62f-3c91-4c36-aea7-62f3100c30e0\",\"partition\":0,\"offset\":6509602,\"timestamp_type\":1}\n{\"role\":\"workorder-inbox\",\"log_id\":\"a23e785b-e90b-42d4-935b-e5c2ae05ab5b\",\"partition\":0,\"offset\":6509645,\"timestamp_type\":1}\n{\"role\":\"resource-inbox\",\"log_id\":\"a0eb83fd-6036-4cfd-a862-cc0bb8241367\",\"partition\":0,\"offset\":6509656,\"timestamp_type\":1}\n{\"role\":\"leader\",\"log_id\":\"3c8cfc73-a46e-48cb-92be-f00bda8e24a2\",\"partition\":0,\"offset\":6509733,\"timestamp_type\":1}\n"
+}

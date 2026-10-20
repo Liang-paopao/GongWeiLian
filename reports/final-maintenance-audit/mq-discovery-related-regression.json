@@ -1,0 +1,21 @@
+{
+  "sdk_version": "2.2.0",
+  "tests_run": 139,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 1,
+  "modules": [
+    "test_partner_resolver",
+    "test_amp_runtime",
+    "test_amp_heartbeat_forwarder",
+    "test_platform_runtime_config",
+    "test_mq_group_transport",
+    "test_partner_inbox_entrypoint",
+    "test_platform_diagnostics",
+    "test_transport_mode",
+    "test_stage3_leader_aip",
+    "test_leader_inbox_runtime",
+    "test_leader_rpc_runtime",
+    "test_leader_external_flow"
+  ]
+}

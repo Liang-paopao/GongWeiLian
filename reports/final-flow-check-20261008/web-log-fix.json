@@ -1,0 +1,112 @@
+{
+  "backup": "/opt/gongwei/backups/20261008-final-flow-logs-221422",
+  "log_directory": "/opt/gongwei/shared/logs/aip",
+  "before_pids": {
+    "web": "2435366",
+    "resource": "2435360",
+    "workorder": "2435362",
+    "audio": "2435364",
+    "leader": "2811653",
+    "resource-inbox": "2753079",
+    "workorder-inbox": "2753083",
+    "amp-heartbeat": "2367812"
+  },
+  "health": {
+    "resource": {
+      "status": "ok",
+      "partner": "stage2-gongwei-resource",
+      "mode": "local_simulation_only",
+      "runtime_mode": "local",
+      "external_ready": true,
+      "configuration_errors": [],
+      "platform_verified": false
+    },
+    "workorder": {
+      "status": "ok",
+      "partner": "stage2-gongwei-work-order",
+      "mode": "local_simulation_only",
+      "runtime_mode": "local",
+      "external_ready": true,
+      "configuration_errors": [],
+      "platform_verified": false
+    },
+    "audio": {
+      "status": "ok",
+      "partner": "stage2-gongwei-audio",
+      "detector_backend": "logmel_gaussian",
+      "audio_enabled": true,
+      "model_version": "mimii-pump-logmel-gaussian-v1",
+      "model_role": "auxiliary_smoke_baseline",
+      "verdicts": [
+        "未发现明显异常",
+        "疑似异常"
+      ],
+      "mode": "local_simulation_only",
+      "runtime_mode": "local",
+      "external_ready": true,
+      "configuration_errors": [],
+      "platform_verified": false
+    },
+    "web": {
+      "status": "ok",
+      "service": "stage2-leader",
+      "database": "/opt/gongwei/shared/data/stage2.db",
+      "mode": "local_simulation_only",
+      "runtime_mode": "local",
+      "transport_mode": "local_rpc",
+      "mq_configuration": {
+        "mode": "local_rpc",
+        "configured": true,
+        "missing": [],
+        "invalid": [],
+        "broker_url": null,
+        "auth_service_url": null,
+        "vhost": null,
+        "tls_mode": null,
+        "inbox_endpoint_template": null,
+        "platform_verified": false
+      },
+      "https_configuration": {
+        "mode": "local_rpc",
+        "configured": true,
+        "missing": [],
+        "invalid": [],
+        "urls": {
+          "leader_rpc_url": null,
+          "resource_rpc_url": null,
+          "workorder_rpc_url": null
+        },
+        "aics": {
+          "leader_aic": null,
+          "resource_aic": null,
+          "workorder_aic": null
+        },
+        "certificate_files": {
+          "server_cert_file": null,
+          "client_cert_file": null,
+          "private_key_file": null,
+          "trust_bundle_file": null
+        },
+        "platform_verified": false
+      },
+      "external_ready": true,
+      "configuration_errors": [],
+      "platform_verified": false
+    }
+  },
+  "changes": [
+    "GONGWEI_LOG_DIR only"
+  ],
+  "platform_verified": false,
+  "success": true,
+  "after_pids": {
+    "web": "3475537",
+    "resource": "3475510",
+    "workorder": "3475518",
+    "audio": "3475527",
+    "leader": "2811653",
+    "resource-inbox": "2753079",
+    "workorder-inbox": "2753083",
+    "amp-heartbeat": "2367812"
+  }
+}

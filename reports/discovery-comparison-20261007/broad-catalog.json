@@ -1,0 +1,742 @@
+{
+  "checked_at": "2026-10-07T08:58:56.341001+00:00",
+  "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+  "request": {
+    "type": "filtered",
+    "limit": 10,
+    "filter": {
+      "conditions": [
+        {
+          "field": "active",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "logic": "and"
+    },
+    "extFilter": {
+      "conditions": [
+        {
+          "field": "alive",
+          "op": "in",
+          "value": [
+            "online",
+            "offline",
+            "unknown"
+          ]
+        }
+      ]
+    }
+  },
+  "http_status": 200,
+  "elapsed_ms": 1150.39,
+  "response": {
+    "result": {
+      "acsMap": {
+        "1.2.156.3088.1.0001.00001.0SZJMU.XG6WT1.00OW": {
+          "aic": "1.2.156.3088.1.0001.00001.0SZJMU.XG6WT1.00OW",
+          "name": "AIP基础学习智能体",
+          "active": true,
+          "skills": [
+            {
+              "id": "learning.echo",
+              "name": "AIP 文本任务测试",
+              "tags": [
+                "AIP",
+                "协议测试",
+                "文本任务"
+              ],
+              "version": "0.1.0",
+              "examples": [
+                "请处理第一条学习任务",
+                "你好，请返回一条 AIP 测试响应"
+              ],
+              "inputModes": [
+                "text/plain"
+              ],
+              "description": "接收文本形式的 AIP 任务命令，支持创建任务、查询任务状态和取消进行中的任务，用于验证 AIP v2 基础交互流程。",
+              "outputModes": [
+                "text/plain",
+                "application/json"
+              ]
+            }
+          ],
+          "version": "0.1.0",
+          "provider": {},
+          "endPoints": [
+            {
+              "url": "https://8.220.197.68:19022/rpc",
+              "security": [
+                {
+                  "mtls": []
+                }
+              ],
+              "transport": "JSONRPC"
+            }
+          ],
+          "certificate": {
+            "altNames": {
+              "ip": [
+                "8.220.197.68"
+              ]
+            },
+            "requestedValidity": 365
+          },
+          "description": "用于学习和验证 AIP v2 的基础 Partner 智能体。支持文本任务的 start、get 与 cancel 流程，返回规范的任务状态与文本产出物。当前版本仅用于协议接入学习和联调，不承诺生产级可用性。",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "protocolVersion": "02.01",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS",
+              "description": "智能体间 mTLS 双向认证"
+            }
+          },
+          "lastModifiedTime": "2026-09-02T14:43:36.431109+08:00",
+          "defaultInputModes": [
+            "text/plain"
+          ],
+          "defaultOutputModes": [
+            "text/plain",
+            "application/json"
+          ]
+        },
+        "1.2.156.3088.1.0001.00001.4ZK6DM.ENK1P3.0N6B": {
+          "aic": "1.2.156.3088.1.0001.00001.4ZK6DM.ENK1P3.0N6B",
+          "name": "Dingdang AIP 算术多轮测试智能体",
+          "active": true,
+          "skills": [
+            {
+              "id": "aip-arithmetic-multiturn",
+              "name": "算术多轮对话测试",
+              "tags": [
+                "算术",
+                "多轮对话",
+                "awaiting-input",
+                "AIP",
+                "Dingdang",
+                "测试"
+              ],
+              "version": "1.0.0",
+              "examples": [
+                "调用算术多轮测试智能体，开始答题",
+                "帮我找一个会出简单算术题、答错后继续追问的智能体",
+                "使用算术多轮测试智能体测试 AwaitingInput 和 Continue"
+              ],
+              "inputModes": [
+                "text/plain"
+              ],
+              "description": "首轮出一道简单算术题并进入 awaiting-input；答错时继续追问，答对后表扬用户并返回 completed，用于验证 Dingdang 的 ACPs AIP 多轮交互。",
+              "outputModes": [
+                "text/plain",
+                "text/markdown"
+              ]
+            }
+          ],
+          "version": "1.0.0",
+          "provider": {
+            "url": "https://wt.ioa.pub/dingdang/",
+            "department": "ACPs Integration",
+            "organization": "Dingdang Test"
+          },
+          "endPoints": [
+            {
+              "url": "https://localhost:9029/rpc",
+              "security": [
+                {
+                  "mtls": []
+                }
+              ],
+              "transport": "JSONRPC"
+            }
+          ],
+          "certificate": {
+            "altNames": {
+              "dns": [
+                "localhost"
+              ]
+            }
+          },
+          "description": "Dingdang 的 ACPs AIP 多轮交互测试智能体。它会出一道算术题，答错后保持 awaiting-input 并要求重算，答对后完成任务。",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "protocolVersion": "02.01",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS",
+              "description": "WT ACPs mTLS"
+            }
+          },
+          "lastModifiedTime": "2026-07-27T17:33:51.054819+08:00",
+          "defaultInputModes": [
+            "text/plain"
+          ],
+          "defaultOutputModes": [
+            "text/plain",
+            "text/markdown"
+          ]
+        },
+        "1.2.156.3088.1.0001.00001.50CWOH.7Q9J3B.12BL": {
+          "aic": "1.2.156.3088.1.0001.00001.50CWOH.7Q9J3B.12BL",
+          "name": "Dingdang AIP 回显测试智能体（localhost）",
+          "active": true,
+          "skills": [
+            {
+              "id": "aip-echo",
+              "name": "AIP 回显与链路诊断",
+              "tags": [
+                "aip-echo",
+                "链路诊断",
+                "mTLS",
+                "Dingdang",
+                "测试"
+              ],
+              "version": "1.0.0",
+              "examples": [
+                "帮我找到 Dingdang AIP 回显测试智能体并调用它，返回当前链路诊断信息",
+                "使用 AIP 回显测试智能体：请回显 Dingdang 与 WT ACPs mTLS 测试成功",
+                "搜索 aip-echo 智能体，并执行一次连接测试"
+              ],
+              "inputModes": [
+                "text/plain"
+              ],
+              "description": "回显输入文本，并返回 AIP_ECHO_OK、任务 ID、智能体 AIC 和 UTC 时间，用于验证 Dingdang 的 AIP/mTLS 调用链路。",
+              "outputModes": [
+                "text/plain",
+                "text/markdown",
+                "application/json"
+              ]
+            }
+          ],
+          "version": "1.0.0",
+          "provider": {
+            "url": "https://wt.ioa.pub/dingdang/",
+            "department": "ACPs Integration",
+            "organization": "Dingdang Test"
+          },
+          "endPoints": [
+            {
+              "url": "https://localhost:9028/rpc",
+              "security": [
+                {
+                  "mtls": []
+                }
+              ],
+              "transport": "JSONRPC"
+            }
+          ],
+          "certificate": {
+            "altNames": {
+              "dns": [
+                "localhost"
+              ]
+            }
+          },
+          "description": "用于验证 Dingdang 与 WT ACPs Discovery、AIP、mTLS 和任务轮询链路的回显诊断智能体。返回 AIP_ECHO_OK、原始输入、任务 ID、AIC 和 UTC 时间。",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "protocolVersion": "02.01",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS",
+              "description": "WT ACPs mTLS"
+            }
+          },
+          "lastModifiedTime": "2026-07-20T23:31:05.503558+08:00",
+          "defaultInputModes": [
+            "text/plain"
+          ],
+          "defaultOutputModes": [
+            "text/plain",
+            "text/markdown",
+            "application/json"
+          ]
+        },
+        "1.2.156.3088.1.0001.00001.8G0NNY.C2VKT3.128R": {
+          "aic": "1.2.156.3088.1.0001.00001.8G0NNY.C2VKT3.128R",
+          "name": "公网测试智能体",
+          "active": true,
+          "skills": [],
+          "version": "1.0.0",
+          "provider": {
+            "url": "https://test.com",
+            "organization": "Test"
+          },
+          "endPoints": [
+            {
+              "url": "https://localhost:443/test",
+              "security": [
+                {
+                  "mtls": []
+                }
+              ],
+              "transport": "JSONRPC"
+            }
+          ],
+          "webAppUrl": "https://example.com",
+          "description": "测试公网注册流程",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "protocolVersion": "02.01",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS",
+              "description": "mTLS"
+            }
+          },
+          "lastModifiedTime": "2026-07-14T18:58:58.819912+08:00",
+          "defaultInputModes": [],
+          "defaultOutputModes": []
+        },
+        "1.2.156.3088.1.0001.00001.D03HG5.EADND0.04ND": {
+          "aic": "1.2.156.3088.1.0001.00001.D03HG5.EADND0.04ND",
+          "name": "registry-server 9002 健康探针客户端",
+          "active": true,
+          "skills": [],
+          "version": "1.0.0",
+          "provider": {
+            "url": "https://localhost:9002/health",
+            "license": "Internal",
+            "department": "Registry Server",
+            "organization": "ACPs"
+          },
+          "endPoints": [],
+          "certificate": {
+            "altNames": {
+              "dns": [
+                "registry-server-9002-probe"
+              ]
+            },
+            "requestedValidity": 365
+          },
+          "description": "registry-server `9002` 健康检查与冒烟测试专用 mTLS 客户端身份。仅用于 `/health` 和探针验证，不参与业务 API 调用。",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "protocolVersion": "02.01",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS",
+              "description": "mTLS probe client identity for registry-server 9002"
+            }
+          },
+          "lastModifiedTime": "2026-07-14T12:50:58.103428+08:00",
+          "defaultInputModes": [],
+          "defaultOutputModes": []
+        },
+        "1.2.156.3088.1.0001.00001.EZTK03.000000.0KR8": {
+          "aic": "1.2.156.3088.1.0001.00001.EZTK03.000000.0KR8",
+          "name": "Dingdang Full ACPs Gateway",
+          "active": true,
+          "skills": [
+            {
+              "id": "dingdang-full.acps-gateway",
+              "name": "ACPs agent discovery and invocation",
+              "tags": [
+                "ACPs",
+                "AIP",
+                "mTLS",
+                "agent-discovery"
+              ],
+              "version": "1.0.0",
+              "inputModes": [
+                "application/json"
+              ],
+              "description": "Discovers approved ACPs agents and invokes their AIP endpoints using mTLS.",
+              "outputModes": [
+                "application/json"
+              ]
+            }
+          ],
+          "version": "1.0.0",
+          "provider": {
+            "name": "Dingdang Full",
+            "countryCode": "CN",
+            "organization": "Dingdang Full"
+          },
+          "endPoints": [],
+          "entityMeta": {
+            "deployment": {
+              "visibility": "internal-only",
+              "adapterPort": 59220,
+              "applicationPort": 8800
+            }
+          },
+          "description": "Internal-only Dingdang Full ACPs gateway.",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "protocolVersion": "02.00",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS",
+              "description": "ACPs mTLS client authentication"
+            }
+          },
+          "lastModifiedTime": "2026-07-20T17:59:15.684942+08:00",
+          "defaultInputModes": [
+            "application/json"
+          ],
+          "defaultOutputModes": [
+            "application/json"
+          ]
+        },
+        "1.2.156.3088.1.0001.00001.EZTK03.0D6Y11.0XJG": {
+          "aic": "1.2.156.3088.1.0001.00001.EZTK03.0D6Y11.0XJG",
+          "name": "Dingdang Full ACPs Gateway-0D6Y11",
+          "active": true,
+          "skills": [
+            {
+              "id": "dingdang-full.acps-gateway",
+              "name": "ACPs agent discovery and invocation",
+              "tags": [
+                "ACPs",
+                "AIP",
+                "mTLS",
+                "agent-discovery"
+              ],
+              "version": "1.0.0",
+              "inputModes": [
+                "application/json"
+              ],
+              "description": "Discovers approved ACPs agents and invokes their AIP endpoints using mTLS.",
+              "outputModes": [
+                "application/json"
+              ]
+            }
+          ],
+          "version": "1.0.0",
+          "provider": {
+            "name": "Dingdang Full",
+            "countryCode": "CN",
+            "organization": "Dingdang Full"
+          },
+          "endPoints": [],
+          "entityMeta": {
+            "kind": "user-aic",
+            "application": "dingdang"
+          },
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "entityUserId": "dingdang-1b319b925a38ee8a6607f28e",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS",
+              "description": "ACPs mTLS client authentication"
+            }
+          },
+          "lastModifiedTime": "2026-09-08T16:29:30.394763+08:00"
+        },
+        "1.2.156.3088.1.0001.00001.EZTK03.0IILSH.0Z0V": {
+          "aic": "1.2.156.3088.1.0001.00001.EZTK03.0IILSH.0Z0V",
+          "name": "Dingdang Full ACPs Gateway-0IILSH",
+          "active": true,
+          "skills": [
+            {
+              "id": "dingdang-full.acps-gateway",
+              "name": "ACPs agent discovery and invocation",
+              "tags": [
+                "ACPs",
+                "AIP",
+                "mTLS",
+                "agent-discovery"
+              ],
+              "version": "1.0.0",
+              "inputModes": [
+                "application/json"
+              ],
+              "description": "Discovers approved ACPs agents and invokes their AIP endpoints using mTLS.",
+              "outputModes": [
+                "application/json"
+              ]
+            }
+          ],
+          "version": "1.0.0",
+          "provider": {
+            "name": "Dingdang Full",
+            "countryCode": "CN",
+            "organization": "Dingdang Full"
+          },
+          "endPoints": [],
+          "entityMeta": {
+            "kind": "user-aic",
+            "application": "dingdang"
+          },
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "entityUserId": "dingdang-d1179c0a85ce50722b32ab59",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS",
+              "description": "ACPs mTLS client authentication"
+            }
+          },
+          "lastModifiedTime": "2026-08-29T14:36:43.751146+08:00"
+        },
+        "1.2.156.3088.1.0001.00001.EZTK03.0J0WFH.0FZ3": {
+          "aic": "1.2.156.3088.1.0001.00001.EZTK03.0J0WFH.0FZ3",
+          "name": "Dingdang Full ACPs Gateway-0J0WFH",
+          "active": true,
+          "skills": [
+            {
+              "id": "dingdang-full.acps-gateway",
+              "name": "ACPs agent discovery and invocation",
+              "tags": [
+                "ACPs",
+                "AIP",
+                "mTLS",
+                "agent-discovery"
+              ],
+              "version": "1.0.0",
+              "inputModes": [
+                "application/json"
+              ],
+              "description": "Discovers approved ACPs agents and invokes their AIP endpoints using mTLS.",
+              "outputModes": [
+                "application/json"
+              ]
+            }
+          ],
+          "version": "1.0.0",
+          "provider": {
+            "name": "Dingdang Full",
+            "countryCode": "CN",
+            "organization": "Dingdang Full"
+          },
+          "endPoints": [],
+          "entityMeta": {
+            "kind": "user-aic",
+            "application": "dingdang"
+          },
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "entityUserId": "dingdang-acb663ba324b5135748832bb",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS",
+              "description": "ACPs mTLS client authentication"
+            }
+          },
+          "lastModifiedTime": "2026-09-21T16:34:26.375277+08:00"
+        },
+        "1.2.156.3088.1.0001.00001.EZTK03.0KDEJS.0YTF": {
+          "aic": "1.2.156.3088.1.0001.00001.EZTK03.0KDEJS.0YTF",
+          "name": "Dingdang Full ACPs Gateway-0KDEJS",
+          "active": true,
+          "skills": [
+            {
+              "id": "dingdang-full.acps-gateway",
+              "name": "ACPs agent discovery and invocation",
+              "tags": [
+                "ACPs",
+                "AIP",
+                "mTLS",
+                "agent-discovery"
+              ],
+              "version": "1.0.0",
+              "inputModes": [
+                "application/json"
+              ],
+              "description": "Discovers approved ACPs agents and invokes their AIP endpoints using mTLS.",
+              "outputModes": [
+                "application/json"
+              ]
+            }
+          ],
+          "version": "1.0.0",
+          "provider": {
+            "name": "Dingdang Full",
+            "countryCode": "CN",
+            "organization": "Dingdang Full"
+          },
+          "endPoints": [],
+          "entityMeta": {
+            "kind": "user-aic",
+            "application": "dingdang"
+          },
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "entityUserId": "dingdang-564caa0b204d4c3f74ef2bb1",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS",
+              "description": "ACPs mTLS client authentication"
+            }
+          },
+          "lastModifiedTime": "2026-09-23T20:08:58.055617+08:00"
+        }
+      },
+      "agents": [
+        {
+          "group": "filtered",
+          "agentSkills": [
+            {
+              "aic": "1.2.156.3088.1.0001.00001.0SZJMU.XG6WT1.00OW",
+              "skillId": "learning.echo",
+              "ranking": 1,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.0001.00001.4ZK6DM.ENK1P3.0N6B",
+              "skillId": "aip-arithmetic-multiturn",
+              "ranking": 2,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.0001.00001.50CWOH.7Q9J3B.12BL",
+              "skillId": "aip-echo",
+              "ranking": 3,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.0001.00001.8G0NNY.C2VKT3.128R",
+              "skillId": "",
+              "ranking": 4,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.0001.00001.D03HG5.EADND0.04ND",
+              "skillId": "",
+              "ranking": 5,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.0001.00001.EZTK03.000000.0KR8",
+              "skillId": "dingdang-full.acps-gateway",
+              "ranking": 6,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.0001.00001.EZTK03.0D6Y11.0XJG",
+              "skillId": "dingdang-full.acps-gateway",
+              "ranking": 7,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.0001.00001.EZTK03.0IILSH.0Z0V",
+              "skillId": "dingdang-full.acps-gateway",
+              "ranking": 8,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.0001.00001.EZTK03.0J0WFH.0FZ3",
+              "skillId": "dingdang-full.acps-gateway",
+              "ranking": 9,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.0001.00001.EZTK03.0KDEJS.0YTF",
+              "skillId": "dingdang-full.acps-gateway",
+              "ranking": 10,
+              "memo": "Filtered query result"
+            }
+          ]
+        }
+      ],
+      "routes": [
+        {
+          "forwardChain": [
+            "AIC-DS-A"
+          ],
+          "agentGroups": [
+            {
+              "group": "filtered",
+              "agentSkills": [
+                {
+                  "aic": "1.2.156.3088.1.0001.00001.0SZJMU.XG6WT1.00OW",
+                  "skillId": "learning.echo",
+                  "ranking": 1,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.0001.00001.4ZK6DM.ENK1P3.0N6B",
+                  "skillId": "aip-arithmetic-multiturn",
+                  "ranking": 2,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.0001.00001.50CWOH.7Q9J3B.12BL",
+                  "skillId": "aip-echo",
+                  "ranking": 3,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.0001.00001.8G0NNY.C2VKT3.128R",
+                  "skillId": "",
+                  "ranking": 4,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.0001.00001.D03HG5.EADND0.04ND",
+                  "skillId": "",
+                  "ranking": 5,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.0001.00001.EZTK03.000000.0KR8",
+                  "skillId": "dingdang-full.acps-gateway",
+                  "ranking": 6,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.0001.00001.EZTK03.0D6Y11.0XJG",
+                  "skillId": "dingdang-full.acps-gateway",
+                  "ranking": 7,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.0001.00001.EZTK03.0IILSH.0Z0V",
+                  "skillId": "dingdang-full.acps-gateway",
+                  "ranking": 8,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.0001.00001.EZTK03.0J0WFH.0FZ3",
+                  "skillId": "dingdang-full.acps-gateway",
+                  "ranking": 9,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.0001.00001.EZTK03.0KDEJS.0YTF",
+                  "skillId": "dingdang-full.acps-gateway",
+                  "ranking": 10,
+                  "memo": "Filtered query result"
+                }
+              ]
+            }
+          ],
+          "status": "ok",
+          "durationMs": 16
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "url": "https://wt.ioa.pub/internal/matched-stats/top?startAt=2026-10-09T18%3A00%3A00%2B08%3A00&endAt=2026-10-09T22%3A00%3A00%2B08%3A00&n=200",
+  "checked_at": "2026-10-09T21:28:18.632258+08:00",
+  "scope": "read-only post-deploy traceparent probe; probe caller was resource Partner, not DingDang",
+  "http_status": 200,
+  "response": {
+    "timezone": "Asia/Shanghai",
+    "unit": "task",
+    "n": 200,
+    "timeRange": {
+      "startAt": "2026-10-09T18:00:00+08:00",
+      "endAt": "2026-10-09T22:00:00+08:00"
+    },
+    "caller": [
+      {
+        "aic": "1.2.156.3088.1.BUPT.HN9H10.CS4J5D.NPROTA.0RF9",
+        "count": 364,
+        "accessCount": 12,
+        "messageCount": 352
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.I9JB16.39U12G.8KHJZM.01HW",
+        "count": 110,
+        "accessCount": 47,
+        "messageCount": 63
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.HN9H10.AIU1Z0.3BKT96.0HEC",
+        "count": 71,
+        "accessCount": 0,
+        "messageCount": 71
+      },
+      {
+        "aic": "1.2.156.3088.1.1.LDR001.LDR001.1.0002",
+        "count": 69,
+        "accessCount": 69,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.HN9H10.8QIZ15.7VW5R0.08Q6",
+        "count": 66,
+        "accessCount": 0,
+        "messageCount": 66
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.HN9H10.0SBKGM.IZVL3D.16GT",
+        "count": 65,
+        "accessCount": 0,
+        "messageCount": 65
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.HN9H10.9XBQZH.V0UCAV.084B",
+        "count": 62,
+        "accessCount": 0,
+        "messageCount": 62
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7",
+        "count": 27,
+        "accessCount": 27,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.D9HGF4.GDEQRL.VUW7FB.1E3B",
+        "count": 10,
+        "accessCount": 10,
+        "messageCount": 0
+      }
+    ],
+    "callee": [
+      {
+        "aic": "1.2.156.3088.1.BUPT.HN9H10.9XBQZH.V0UCAV.084B",
+        "count": 166,
+        "accessCount": 0,
+        "messageCount": 166
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.HN9H10.0SBKGM.IZVL3D.16GT",
+        "count": 157,
+        "accessCount": 0,
+        "messageCount": 157
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.HN9H10.8QIZ15.7VW5R0.08Q6",
+        "count": 154,
+        "accessCount": 0,
+        "messageCount": 154
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.HN9H10.AIU1Z0.3BKT96.0HEC",
+        "count": 139,
+        "accessCount": 0,
+        "messageCount": 139
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.BNN2UD.A0G0KD.YYTVI4.1DHO",
+        "count": 69,
+        "accessCount": 69,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.I9JB16.KATBXS.AHHHKT.1D9E",
+        "count": 47,
+        "accessCount": 47,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.I9JB16.00Z99Q.ZIC2UL.0CFK",
+        "count": 21,
+        "accessCount": 0,
+        "messageCount": 21
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.I9JB16.QY7RKX.2NPYPU.14IC",
+        "count": 21,
+        "accessCount": 0,
+        "messageCount": 21
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.I9JB16.ZCJ6SB.N74XF5.0OEC",
+        "count": 21,
+        "accessCount": 0,
+        "messageCount": 21
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.L2K8YU.JWCQL2.8DFGI8.0FKI",
+        "count": 12,
+        "accessCount": 12,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.1MON3C.XDARX1.V8OR5W.0VJM",
+        "count": 11,
+        "accessCount": 11,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.1MON3C.BVKOG9.07HYVS.0OU3",
+        "count": 10,
+        "accessCount": 10,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.1MON3C.N1E7JH.U86RDI.055U",
+        "count": 6,
+        "accessCount": 6,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.D9HGF4.6L2DKF.WWQPEE.01OO",
+        "count": 3,
+        "accessCount": 3,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.D9HGF4.DZJWU5.VFCINL.00TX",
+        "count": 3,
+        "accessCount": 3,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.D9HGF4.O90UKI.T6NPWF.17ZS",
+        "count": 3,
+        "accessCount": 3,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.D9HGF4.6QVLS4.3C0XBG.103A",
+        "count": 1,
+        "accessCount": 1,
+        "messageCount": 0
+      }
+    ],
+    "callerNonInternal": [
+      {
+        "aic": "1.2.156.3088.1.1.LDR001.LDR001.1.0002",
+        "count": 69,
+        "accessCount": 69,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.HN9H10.CS4J5D.NPROTA.0RF9",
+        "count": 12,
+        "accessCount": 12,
+        "messageCount": 0
+      }
+    ],
+    "calleeNonInternal": [
+      {
+        "aic": "1.2.156.3088.1.BUPT.BNN2UD.A0G0KD.YYTVI4.1DHO",
+        "count": 69,
+        "accessCount": 69,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.L2K8YU.JWCQL2.8DFGI8.0FKI",
+        "count": 12,
+        "accessCount": 12,
+        "messageCount": 0
+      }
+    ],
+    "meta": {
+      "currentHourOpen": true,
+      "accessComputedAt": "2026-10-09T11:59:21.578000+00:00",
+      "messageComputedAt": "2026-10-09T11:59:13.997000+00:00",
+      "accessMissingHours": [],
+      "messageMissingHours": []
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "backup": "/opt/gongwei/backups/20261006-200337-maintenance",
+  "new_release": "/opt/gongwei/releases/20261006-200337-maintenance",
+  "old_web": "/opt/gongwei/releases/20261006-1807",
+  "old_formal": "/opt/gongwei/releases/20261007-platform",
+  "databases": {
+    "business": {
+      "integrity": "ok",
+      "bytes": 221184
+    },
+    "rpc": {
+      "integrity": "ok",
+      "bytes": 65536
+    }
+  },
+  "code_config_bytes": 541434,
+  "created_at": "2026-10-06T20:03:38.193055+00:00"
+}

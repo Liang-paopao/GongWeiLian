@@ -1,0 +1,3316 @@
+{
+  "checked_at": "2026-10-08T17:45:47.625958+00:00",
+  "endpoint": "https://leader.yanyi.online/rpc",
+  "caller": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+  "scope": "official SDK cancel/start compatibility on real public mTLS+MQ; NOT a browser DingDang conversation",
+  "sessionId": "public-continue-43a8de6e6435-session",
+  "taskId": "public-continue-43a8de6e6435-task",
+  "platform_verified": false,
+  "requests": [
+    {
+      "command": "start",
+      "messageId": "public-continue-43a8de6e6435-5991c3a3",
+      "http_status": 200,
+      "elapsed_ms": 449.943,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-5991c3a3",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.653623+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-79488f52",
+      "http_status": 200,
+      "elapsed_ms": 24.242,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-79488f52",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-4c13e86e",
+      "http_status": 200,
+      "elapsed_ms": 11.11,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-4c13e86e",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-5af433b1",
+      "http_status": 200,
+      "elapsed_ms": 11.201,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-5af433b1",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-a70aa652",
+      "http_status": 200,
+      "elapsed_ms": 13.196,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-a70aa652",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-7016d17a",
+      "http_status": 200,
+      "elapsed_ms": 19.048,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-7016d17a",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-289cb3b4",
+      "http_status": 200,
+      "elapsed_ms": 11.037,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-289cb3b4",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-e6b1b781",
+      "http_status": 200,
+      "elapsed_ms": 11.265,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-e6b1b781",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-7d7c4afe",
+      "http_status": 200,
+      "elapsed_ms": 11.576,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-7d7c4afe",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-c46f41c1",
+      "http_status": 200,
+      "elapsed_ms": 12.228,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-c46f41c1",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-9e3ad3d1",
+      "http_status": 200,
+      "elapsed_ms": 11.283,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-9e3ad3d1",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-603cacff",
+      "http_status": 200,
+      "elapsed_ms": 11.376,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-603cacff",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-6f89b9b7",
+      "http_status": 200,
+      "elapsed_ms": 11.154,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-6f89b9b7",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-9994bc87",
+      "http_status": 200,
+      "elapsed_ms": 11.076,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-9994bc87",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-8dd0816c",
+      "http_status": 200,
+      "elapsed_ms": 11.277,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-8dd0816c",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-ce294c3f",
+      "http_status": 200,
+      "elapsed_ms": 11.61,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-ce294c3f",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-e97d0033",
+      "http_status": 200,
+      "elapsed_ms": 11.188,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-e97d0033",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-9d336248",
+      "http_status": 200,
+      "elapsed_ms": 11.625,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-9d336248",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-7dd076ae",
+      "http_status": 200,
+      "elapsed_ms": 11.39,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-7dd076ae",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-11de1327",
+      "http_status": 200,
+      "elapsed_ms": 10.734,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-11de1327",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-5d2707a0",
+      "http_status": 200,
+      "elapsed_ms": 11.194,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-5d2707a0",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-6a9dddd4",
+      "http_status": 200,
+      "elapsed_ms": 11.418,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-6a9dddd4",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-23dd33b7",
+      "http_status": 200,
+      "elapsed_ms": 11.162,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-23dd33b7",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-4cc70d72",
+      "http_status": 200,
+      "elapsed_ms": 11.289,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-4cc70d72",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-af111c38",
+      "http_status": 200,
+      "elapsed_ms": 11.901,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-af111c38",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-3230b40c",
+      "http_status": 200,
+      "elapsed_ms": 12.319,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-3230b40c",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-8395c0e5",
+      "http_status": 200,
+      "elapsed_ms": 11.138,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-8395c0e5",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-c081f387",
+      "http_status": 200,
+      "elapsed_ms": 11.372,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-c081f387",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-9f56a12c",
+      "http_status": 200,
+      "elapsed_ms": 12.535,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-9f56a12c",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-00b0afd6",
+      "http_status": 200,
+      "elapsed_ms": 11.454,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-00b0afd6",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-adc9e2e2",
+      "http_status": 200,
+      "elapsed_ms": 11.841,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-adc9e2e2",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:47.660904+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-3c63e53e",
+      "http_status": 200,
+      "elapsed_ms": 11.385,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-3c63e53e",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:54.547405+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "awaiting-input",
+            "stateChangedAt": "2026-10-08T17:45:54.547372+00:00",
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "待确认检查方案：设备 pump-001；2026-10-10 14:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-9a0c56e8c73a5244b79d77ca977f06be。确认请回复“确认方案 GW-9a0c56e8c73a5244b79d77ca977f06be 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+              }
+            ]
+          },
+          "products": [
+            {
+              "id": "leader-product-public-continue-43a8de6e6435-task",
+              "name": "gongwei-leader-result",
+              "description": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "{\"sessionId\": \"public-continue-43a8de6e6435-session\", \"taskId\": \"public-continue-43a8de6e6435-task\", \"messageId\": \"public-continue-43a8de6e6435-5991c3a3\", \"status\": \"awaiting_user_confirmation\", \"requiresConfirmation\": true, \"confirmationReference\": \"GW-9a0c56e8c73a5244b79d77ca977f06be\", \"nextCommand\": \"continue\", \"request\": {\"id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:47.673939+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\", \"pump\": {\"id\": \"pump-001\", \"name\": \"循环水泵 001\", \"location\": \"一号机房\", \"model\": \"GW-150\", \"simulated\": 1}, \"plan\": {\"id\": \"plan-4be1aed7-a9f8-41d3-9e7b-647592e82bb5\", \"request_id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"status\": \"proposed\", \"version\": 1, \"worker_id\": \"worker-01\", \"inventory_json\": [\"part-seal-ring\", \"tool-inspection-kit\"], \"reason\": \"按技能、时段和库存生成的模拟方案\", \"work_order_id\": null, \"created_at\": \"2026-10-08T17:45:54.524609+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\", \"request\": {\"id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:47.673939+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\"}, \"worker\": {\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"unit\": \"套\"}], \"work_order\": null}}, \"plan\": {\"id\": \"plan-4be1aed7-a9f8-41d3-9e7b-647592e82bb5\", \"request_id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"status\": \"proposed\", \"version\": 1, \"worker_id\": \"worker-01\", \"inventory_json\": [\"part-seal-ring\", \"tool-inspection-kit\"], \"reason\": \"按技能、时段和库存生成的模拟方案\", \"work_order_id\": null, \"created_at\": \"2026-10-08T17:45:54.524609+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\", \"request\": {\"id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:47.673939+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\"}, \"worker\": {\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"unit\": \"套\"}], \"work_order\": null}, \"discovery\": {\"source\": \"discovery_catalog\", \"candidates\": [{\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"protocolVersion\": \"02.02\", \"skills\": [\"gongwei.resource.query\", \"gongwei.resource.reserve\"], \"inputModes\": [\"application/json\"], \"outputModes\": [\"application/json\"], \"transport\": \"AMQP\", \"endpoint\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [\"mtls\"], \"online\": false, \"acs\": {\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"skills\": [{\"id\": \"gongwei.resource.query\", \"name\": \"查询可用人员与库存\", \"tags\": [\"resource\", \"query\"], \"version\": \"1.1.0\", \"description\": \"根据检查请求查询人员、技能、工具和配件可用性。\"}, {\"id\": \"gongwei.resource.reserve\", \"name\": \"预留和释放检查资源\", \"tags\": [\"resource\", \"reserve\"], \"version\": \"1.1.0\", \"description\": \"为已生成的检查方案预留资源并支持释放。\"}], \"version\": \"1.1.0\", \"provider\": {\"name\": \"LiangPaoPao\", \"department\": \"设备运维系统\", \"countryCode\": \"CN\", \"organization\": \"工维联项目组\"}, \"endPoints\": [{\"url\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [{\"mtls\": []}], \"transport\": \"AMQP\"}], \"description\": \"提供设备检查业务所需的人员、技能、可用时段、工具和配件查询，并支持按检查时段进行资源预留与释放。仅处理资源查询和预留，不负责维修决策、工单执行或声音诊断；缺少泵、时间或技能等必要参数时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。\", \"capabilities\": {\"streaming\": false, \"messageQueue\": [\"rabbitmq:>=4.2\"], \"notification\": false}, \"protocolVersion\": \"02.02\", \"securitySchemes\": {\"mtls\": {\"type\": \"mutualTLS\"}}, \"lastModifiedTime\": \"2026-10-06T22:34:10.877744+08:00\", \"defaultInputModes\": [\"application/json\"], \"defaultOutputModes\": [\"application/json\"]}, \"liveness\": \"unknown\", \"discovery_policy\": \"platform_catalog\"}], \"filtered\": [], \"selected\": {\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"protocolVersion\": \"02.02\", \"skills\": [\"gongwei.resource.query\", \"gongwei.resource.reserve\"], \"inputModes\": [\"application/json\"], \"outputModes\": [\"application/json\"], \"transport\": \"AMQP\", \"endpoint\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [\"mtls\"], \"online\": false, \"acs\": {\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"skills\": [{\"id\": \"gongwei.resource.query\", \"name\": \"查询可用人员与库存\", \"tags\": [\"resource\", \"query\"], \"version\": \"1.1.0\", \"description\": \"根据检查请求查询人员、技能、工具和配件可用性。\"}, {\"id\": \"gongwei.resource.reserve\", \"name\": \"预留和释放检查资源\", \"tags\": [\"resource\", \"reserve\"], \"version\": \"1.1.0\", \"description\": \"为已生成的检查方案预留资源并支持释放。\"}], \"version\": \"1.1.0\", \"provider\": {\"name\": \"LiangPaoPao\", \"department\": \"设备运维系统\", \"countryCode\": \"CN\", \"organization\": \"工维联项目组\"}, \"endPoints\": [{\"url\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [{\"mtls\": []}], \"transport\": \"AMQP\"}], \"description\": \"提供设备检查业务所需的人员、技能、可用时段、工具和配件查询，并支持按检查时段进行资源预留与释放。仅处理资源查询和预留，不负责维修决策、工单执行或声音诊断；缺少泵、时间或技能等必要参数时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。\", \"capabilities\": {\"streaming\": false, \"messageQueue\": [\"rabbitmq:>=4.2\"], \"notification\": false}, \"protocolVersion\": \"02.02\", \"securitySchemes\": {\"mtls\": {\"type\": \"mutualTLS\"}}, \"lastModifiedTime\": \"2026-10-06T22:34:10.877744+08:00\", \"defaultInputModes\": [\"application/json\"], \"defaultOutputModes\": [\"application/json\"]}, \"liveness\": \"unknown\", \"discovery_policy\": \"platform_catalog\"}, \"duration_ms\": 385.68, \"error\": null, \"http_status\": null}}"
+                }
+              ]
+            }
+          ],
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "awaiting-input",
+              "stateChangedAt": "2026-10-08T17:45:54.547372+00:00",
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "待确认检查方案：设备 pump-001；2026-10-10 14:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-9a0c56e8c73a5244b79d77ca977f06be。确认请回复“确认方案 GW-9a0c56e8c73a5244b79d77ca977f06be 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+                }
+              ]
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "cancel",
+      "messageId": "public-continue-43a8de6e6435-8559a8bd",
+      "http_status": 200,
+      "elapsed_ms": 43.526,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-8559a8bd",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:54.701664+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "canceled",
+            "stateChangedAt": "2026-10-08T17:45:54.701637+00:00",
+            "dataItems": []
+          },
+          "products": [
+            {
+              "id": "leader-product-public-continue-43a8de6e6435-task",
+              "name": "gongwei-leader-result",
+              "description": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "{\"sessionId\": \"public-continue-43a8de6e6435-session\", \"taskId\": \"public-continue-43a8de6e6435-task\", \"messageId\": \"public-continue-43a8de6e6435-8559a8bd\", \"status\": \"cancelled\", \"plan\": {\"id\": \"plan-4be1aed7-a9f8-41d3-9e7b-647592e82bb5\", \"request_id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"status\": \"proposed\", \"version\": 1, \"worker_id\": \"worker-01\", \"inventory_json\": [\"part-seal-ring\", \"tool-inspection-kit\"], \"reason\": \"按技能、时段和库存生成的模拟方案\", \"work_order_id\": null, \"created_at\": \"2026-10-08T17:45:54.524609+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\", \"request\": {\"id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:47.673939+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\"}, \"worker\": {\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"unit\": \"套\"}], \"work_order\": null}, \"workOrder\": null, \"idempotent\": false}"
+                }
+              ]
+            }
+          ],
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            },
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-8559a8bd",
+              "sentAt": "2026-10-08T17:45:54.664704+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "cancel",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "awaiting-input",
+              "stateChangedAt": "2026-10-08T17:45:54.547372+00:00",
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "待确认检查方案：设备 pump-001；2026-10-10 14:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-9a0c56e8c73a5244b79d77ca977f06be。确认请回复“确认方案 GW-9a0c56e8c73a5244b79d77ca977f06be 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+                }
+              ]
+            },
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:54.673940+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:54.680244+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "canceled",
+              "stateChangedAt": "2026-10-08T17:45:54.701637+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "start",
+      "messageId": "public-continue-43a8de6e6435-eb6234a3",
+      "http_status": 200,
+      "elapsed_ms": 46.835,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-eb6234a3",
+        "result": {
+          "type": "task-result",
+          "id": "result-f0451b93-e3e7-4bbc-aff6-d95f10afce88",
+          "sentAt": "2026-10-08T17:45:54.718322+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-cancel-operation",
+          "status": {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-08T17:45:54.718290+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-eb6234a3",
+              "sentAt": "2026-10-08T17:45:54.708408+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\n\n上一轮候选结果：方案\n叮当请求补充：请选择\n用户回答：取消任务"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-cancel-operation"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:54.718290+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-a6081789",
+      "http_status": 200,
+      "elapsed_ms": 11.191,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-a6081789",
+        "result": {
+          "type": "task-result",
+          "id": "result-f0451b93-e3e7-4bbc-aff6-d95f10afce88",
+          "sentAt": "2026-10-08T17:45:54.749907+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-cancel-operation",
+          "status": {
+            "state": "completed",
+            "stateChangedAt": "2026-10-08T17:45:54.749880+00:00",
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "已取消待确认方案 GW-9a0c56e8c73a5244b79d77ca977f06be；未预留资源，未创建工单。"
+              }
+            ]
+          },
+          "products": [
+            {
+              "id": "leader-product-public-continue-43a8de6e6435-cancel-operation",
+              "name": "gongwei-leader-result",
+              "description": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "{\"sessionId\": \"public-continue-43a8de6e6435-session\", \"taskId\": \"public-continue-43a8de6e6435-cancel-operation\", \"messageId\": \"public-continue-43a8de6e6435-eb6234a3\", \"status\": \"cancelled\", \"plan\": {\"id\": \"plan-4be1aed7-a9f8-41d3-9e7b-647592e82bb5\", \"request_id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"status\": \"cancelled\", \"version\": 1, \"worker_id\": \"worker-01\", \"inventory_json\": [\"part-seal-ring\", \"tool-inspection-kit\"], \"reason\": \"按技能、时段和库存生成的模拟方案\", \"work_order_id\": null, \"created_at\": \"2026-10-08T17:45:54.524609+00:00\", \"updated_at\": \"2026-10-08T17:45:54.735398+00:00\", \"request\": {\"id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"cancelled\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:47.673939+00:00\", \"updated_at\": \"2026-10-08T17:45:54.735425+00:00\"}, \"worker\": {\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"unit\": \"套\"}], \"work_order\": null}, \"workOrder\": null, \"idempotent\": false, \"cancellationContinuation\": {\"source_task_id\": \"public-continue-43a8de6e6435-task\", \"plan_id\": \"plan-4be1aed7-a9f8-41d3-9e7b-647592e82bb5\", \"reference\": \"GW-9a0c56e8c73a5244b79d77ca977f06be\", \"session_id\": \"public-continue-43a8de6e6435-session\", \"sender_id\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"message_id\": \"public-continue-43a8de6e6435-eb6234a3\", \"command_type\": \"start\"}, \"operation\": \"cancel_plan\", \"summary\": \"已取消待确认方案 GW-9a0c56e8c73a5244b79d77ca977f06be；未预留资源，未创建工单。\"}"
+                }
+              ]
+            }
+          ],
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-eb6234a3",
+              "sentAt": "2026-10-08T17:45:54.708408+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\n\n上一轮候选结果：方案\n叮当请求补充：请选择\n用户回答：取消任务"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-cancel-operation"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:54.718290+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:54.723617+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "completed",
+              "stateChangedAt": "2026-10-08T17:45:54.749880+00:00",
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "已取消待确认方案 GW-9a0c56e8c73a5244b79d77ca977f06be；未预留资源，未创建工单。"
+                }
+              ]
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "start",
+      "messageId": "public-continue-43a8de6e6435-0479aecb",
+      "http_status": 200,
+      "elapsed_ms": 425.027,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-0479aecb",
+        "result": {
+          "type": "task-result",
+          "id": "result-cabb7056-e06d-4d6f-8a86-ddb3494e0859",
+          "sentAt": "2026-10-08T17:45:54.977010+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-cancel-duplicate",
+          "status": {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-08T17:45:54.976976+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-0479aecb",
+              "sentAt": "2026-10-08T17:45:54.967296+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\n\n上一轮候选结果：方案\n叮当请求补充：请选择\n用户回答：取消任务"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-cancel-duplicate"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:54.976976+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-6db71d95",
+      "http_status": 200,
+      "elapsed_ms": 11.417,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-6db71d95",
+        "result": {
+          "type": "task-result",
+          "id": "result-cabb7056-e06d-4d6f-8a86-ddb3494e0859",
+          "sentAt": "2026-10-08T17:45:54.983207+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-cancel-duplicate",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:54.983193+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-0479aecb",
+              "sentAt": "2026-10-08T17:45:54.967296+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\n\n上一轮候选结果：方案\n叮当请求补充：请选择\n用户回答：取消任务"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-cancel-duplicate"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:54.976976+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:54.983193+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-d96d0805",
+      "http_status": 200,
+      "elapsed_ms": 10.907,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-d96d0805",
+        "result": {
+          "type": "task-result",
+          "id": "result-cabb7056-e06d-4d6f-8a86-ddb3494e0859",
+          "sentAt": "2026-10-08T17:45:54.983207+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-cancel-duplicate",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:54.983193+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-0479aecb",
+              "sentAt": "2026-10-08T17:45:54.967296+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\n\n上一轮候选结果：方案\n叮当请求补充：请选择\n用户回答：取消任务"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-cancel-duplicate"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:54.976976+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:54.983193+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-da9960b5",
+      "http_status": 200,
+      "elapsed_ms": 11.631,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-da9960b5",
+        "result": {
+          "type": "task-result",
+          "id": "result-cabb7056-e06d-4d6f-8a86-ddb3494e0859",
+          "sentAt": "2026-10-08T17:45:54.983207+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-cancel-duplicate",
+          "status": {
+            "state": "working",
+            "stateChangedAt": "2026-10-08T17:45:54.983193+00:00",
+            "dataItems": []
+          },
+          "products": null,
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-0479aecb",
+              "sentAt": "2026-10-08T17:45:54.967296+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\n\n上一轮候选结果：方案\n叮当请求补充：请选择\n用户回答：取消任务"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-cancel-duplicate"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:54.976976+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:54.983193+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "get",
+      "messageId": "public-continue-43a8de6e6435-ca91acf6",
+      "http_status": 200,
+      "elapsed_ms": 11.617,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-ca91acf6",
+        "result": {
+          "type": "task-result",
+          "id": "result-cabb7056-e06d-4d6f-8a86-ddb3494e0859",
+          "sentAt": "2026-10-08T17:45:56.143278+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-cancel-duplicate",
+          "status": {
+            "state": "awaiting-input",
+            "stateChangedAt": "2026-10-08T17:45:56.143242+00:00",
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "待确认检查方案：设备 pump-001；2026-10-10 14:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-60df93b1c7bb80d139b1385f34173661。确认请回复“确认方案 GW-60df93b1c7bb80d139b1385f34173661 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+              }
+            ]
+          },
+          "products": [
+            {
+              "id": "leader-product-public-continue-43a8de6e6435-cancel-duplicate",
+              "name": "gongwei-leader-result",
+              "description": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "{\"sessionId\": \"public-continue-43a8de6e6435-session\", \"taskId\": \"public-continue-43a8de6e6435-cancel-duplicate\", \"messageId\": \"public-continue-43a8de6e6435-0479aecb\", \"status\": \"awaiting_user_confirmation\", \"requiresConfirmation\": true, \"confirmationReference\": \"GW-60df93b1c7bb80d139b1385f34173661\", \"nextCommand\": \"continue\", \"request\": {\"id\": \"req-ebf963f9-bbcf-4ff6-bc2b-3ce0430495e9\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:54.996141+00:00\", \"updated_at\": \"2026-10-08T17:45:56.128936+00:00\", \"pump\": {\"id\": \"pump-001\", \"name\": \"循环水泵 001\", \"location\": \"一号机房\", \"model\": \"GW-150\", \"simulated\": 1}, \"plan\": {\"id\": \"plan-14ac493b-935b-4a54-8db2-5e184f8163e2\", \"request_id\": \"req-ebf963f9-bbcf-4ff6-bc2b-3ce0430495e9\", \"status\": \"proposed\", \"version\": 1, \"worker_id\": \"worker-01\", \"inventory_json\": [\"part-seal-ring\", \"tool-inspection-kit\"], \"reason\": \"按技能、时段和库存生成的模拟方案\", \"work_order_id\": null, \"created_at\": \"2026-10-08T17:45:56.128936+00:00\", \"updated_at\": \"2026-10-08T17:45:56.128936+00:00\", \"request\": {\"id\": \"req-ebf963f9-bbcf-4ff6-bc2b-3ce0430495e9\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:54.996141+00:00\", \"updated_at\": \"2026-10-08T17:45:56.128936+00:00\"}, \"worker\": {\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"unit\": \"套\"}], \"work_order\": null}}, \"plan\": {\"id\": \"plan-14ac493b-935b-4a54-8db2-5e184f8163e2\", \"request_id\": \"req-ebf963f9-bbcf-4ff6-bc2b-3ce0430495e9\", \"status\": \"proposed\", \"version\": 1, \"worker_id\": \"worker-01\", \"inventory_json\": [\"part-seal-ring\", \"tool-inspection-kit\"], \"reason\": \"按技能、时段和库存生成的模拟方案\", \"work_order_id\": null, \"created_at\": \"2026-10-08T17:45:56.128936+00:00\", \"updated_at\": \"2026-10-08T17:45:56.128936+00:00\", \"request\": {\"id\": \"req-ebf963f9-bbcf-4ff6-bc2b-3ce0430495e9\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:54.996141+00:00\", \"updated_at\": \"2026-10-08T17:45:56.128936+00:00\"}, \"worker\": {\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"unit\": \"套\"}], \"work_order\": null}, \"discovery\": {\"source\": \"discovery_catalog\", \"candidates\": [{\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"protocolVersion\": \"02.02\", \"skills\": [\"gongwei.resource.query\", \"gongwei.resource.reserve\"], \"inputModes\": [\"application/json\"], \"outputModes\": [\"application/json\"], \"transport\": \"AMQP\", \"endpoint\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [\"mtls\"], \"online\": false, \"acs\": {\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"skills\": [{\"id\": \"gongwei.resource.query\", \"name\": \"查询可用人员与库存\", \"tags\": [\"resource\", \"query\"], \"version\": \"1.1.0\", \"description\": \"根据检查请求查询人员、技能、工具和配件可用性。\"}, {\"id\": \"gongwei.resource.reserve\", \"name\": \"预留和释放检查资源\", \"tags\": [\"resource\", \"reserve\"], \"version\": \"1.1.0\", \"description\": \"为已生成的检查方案预留资源并支持释放。\"}], \"version\": \"1.1.0\", \"provider\": {\"name\": \"LiangPaoPao\", \"department\": \"设备运维系统\", \"countryCode\": \"CN\", \"organization\": \"工维联项目组\"}, \"endPoints\": [{\"url\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [{\"mtls\": []}], \"transport\": \"AMQP\"}], \"description\": \"提供设备检查业务所需的人员、技能、可用时段、工具和配件查询，并支持按检查时段进行资源预留与释放。仅处理资源查询和预留，不负责维修决策、工单执行或声音诊断；缺少泵、时间或技能等必要参数时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。\", \"capabilities\": {\"streaming\": false, \"messageQueue\": [\"rabbitmq:>=4.2\"], \"notification\": false}, \"protocolVersion\": \"02.02\", \"securitySchemes\": {\"mtls\": {\"type\": \"mutualTLS\"}}, \"lastModifiedTime\": \"2026-10-06T22:34:10.877744+08:00\", \"defaultInputModes\": [\"application/json\"], \"defaultOutputModes\": [\"application/json\"]}, \"liveness\": \"unknown\", \"discovery_policy\": \"platform_catalog\"}], \"filtered\": [], \"selected\": {\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"protocolVersion\": \"02.02\", \"skills\": [\"gongwei.resource.query\", \"gongwei.resource.reserve\"], \"inputModes\": [\"application/json\"], \"outputModes\": [\"application/json\"], \"transport\": \"AMQP\", \"endpoint\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [\"mtls\"], \"online\": false, \"acs\": {\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"skills\": [{\"id\": \"gongwei.resource.query\", \"name\": \"查询可用人员与库存\", \"tags\": [\"resource\", \"query\"], \"version\": \"1.1.0\", \"description\": \"根据检查请求查询人员、技能、工具和配件可用性。\"}, {\"id\": \"gongwei.resource.reserve\", \"name\": \"预留和释放检查资源\", \"tags\": [\"resource\", \"reserve\"], \"version\": \"1.1.0\", \"description\": \"为已生成的检查方案预留资源并支持释放。\"}], \"version\": \"1.1.0\", \"provider\": {\"name\": \"LiangPaoPao\", \"department\": \"设备运维系统\", \"countryCode\": \"CN\", \"organization\": \"工维联项目组\"}, \"endPoints\": [{\"url\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [{\"mtls\": []}], \"transport\": \"AMQP\"}], \"description\": \"提供设备检查业务所需的人员、技能、可用时段、工具和配件查询，并支持按检查时段进行资源预留与释放。仅处理资源查询和预留，不负责维修决策、工单执行或声音诊断；缺少泵、时间或技能等必要参数时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。\", \"capabilities\": {\"streaming\": false, \"messageQueue\": [\"rabbitmq:>=4.2\"], \"notification\": false}, \"protocolVersion\": \"02.02\", \"securitySchemes\": {\"mtls\": {\"type\": \"mutualTLS\"}}, \"lastModifiedTime\": \"2026-10-06T22:34:10.877744+08:00\", \"defaultInputModes\": [\"application/json\"], \"defaultOutputModes\": [\"application/json\"]}, \"liveness\": \"unknown\", \"discovery_policy\": \"platform_catalog\"}, \"duration_ms\": 377.25, \"error\": null, \"http_status\": null}}"
+                }
+              ]
+            }
+          ],
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-0479aecb",
+              "sentAt": "2026-10-08T17:45:54.967296+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\n\n上一轮候选结果：方案\n叮当请求补充：请选择\n用户回答：取消任务"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-cancel-duplicate"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:54.976976+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:54.983193+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "awaiting-input",
+              "stateChangedAt": "2026-10-08T17:45:56.143242+00:00",
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "待确认检查方案：设备 pump-001；2026-10-10 14:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-60df93b1c7bb80d139b1385f34173661。确认请回复“确认方案 GW-60df93b1c7bb80d139b1385f34173661 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+                }
+              ]
+            }
+          ]
+        },
+        "error": null
+      }
+    },
+    {
+      "command": "cancel",
+      "messageId": "public-continue-43a8de6e6435-55d106ec",
+      "http_status": 200,
+      "elapsed_ms": 17.112,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "public-continue-43a8de6e6435-55d106ec",
+        "result": {
+          "type": "task-result",
+          "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+          "sentAt": "2026-10-08T17:45:54.701664+00:00",
+          "senderRole": "partner",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "mentions": null,
+          "dataItems": null,
+          "groupId": null,
+          "sessionId": "public-continue-43a8de6e6435-session",
+          "taskId": "public-continue-43a8de6e6435-task",
+          "status": {
+            "state": "canceled",
+            "stateChangedAt": "2026-10-08T17:45:54.701637+00:00",
+            "dataItems": []
+          },
+          "products": [
+            {
+              "id": "leader-product-public-continue-43a8de6e6435-task",
+              "name": "gongwei-leader-result",
+              "description": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "{\"sessionId\": \"public-continue-43a8de6e6435-session\", \"taskId\": \"public-continue-43a8de6e6435-task\", \"messageId\": \"public-continue-43a8de6e6435-8559a8bd\", \"status\": \"cancelled\", \"plan\": {\"id\": \"plan-4be1aed7-a9f8-41d3-9e7b-647592e82bb5\", \"request_id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"status\": \"proposed\", \"version\": 1, \"worker_id\": \"worker-01\", \"inventory_json\": [\"part-seal-ring\", \"tool-inspection-kit\"], \"reason\": \"按技能、时段和库存生成的模拟方案\", \"work_order_id\": null, \"created_at\": \"2026-10-08T17:45:54.524609+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\", \"request\": {\"id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:47.673939+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\"}, \"worker\": {\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"unit\": \"套\"}], \"work_order\": null}, \"workOrder\": null, \"idempotent\": false}"
+                }
+              ]
+            }
+          ],
+          "commandHistory": [
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-5991c3a3",
+              "sentAt": "2026-10-08T17:45:47.628129+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+                }
+              ],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "start",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            },
+            {
+              "type": "task-command",
+              "id": "public-continue-43a8de6e6435-8559a8bd",
+              "sentAt": "2026-10-08T17:45:54.664704+00:00",
+              "senderRole": "leader",
+              "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "mentions": null,
+              "dataItems": [],
+              "groupId": null,
+              "sessionId": "public-continue-43a8de6e6435-session",
+              "command": "cancel",
+              "commandParams": null,
+              "taskId": "public-continue-43a8de6e6435-task"
+            }
+          ],
+          "statusHistory": [
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "awaiting-input",
+              "stateChangedAt": "2026-10-08T17:45:54.547372+00:00",
+              "dataItems": [
+                {
+                  "metadata": null,
+                  "type": "text",
+                  "text": "待确认检查方案：设备 pump-001；2026-10-10 14:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-9a0c56e8c73a5244b79d77ca977f06be。确认请回复“确认方案 GW-9a0c56e8c73a5244b79d77ca977f06be 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+                }
+              ]
+            },
+            {
+              "state": "accepted",
+              "stateChangedAt": "2026-10-08T17:45:54.673940+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "working",
+              "stateChangedAt": "2026-10-08T17:45:54.680244+00:00",
+              "dataItems": []
+            },
+            {
+              "state": "canceled",
+              "stateChangedAt": "2026-10-08T17:45:54.701637+00:00",
+              "dataItems": []
+            }
+          ]
+        },
+        "error": null
+      }
+    }
+  ],
+  "before": {
+    "orders": 4,
+    "active_reservations": 0,
+    "integrity": "ok"
+  },
+  "proposal": {
+    "type": "task-result",
+    "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+    "sentAt": "2026-10-08T17:45:54.547405+00:00",
+    "senderRole": "partner",
+    "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+    "mentions": null,
+    "dataItems": null,
+    "groupId": null,
+    "sessionId": "public-continue-43a8de6e6435-session",
+    "taskId": "public-continue-43a8de6e6435-task",
+    "status": {
+      "state": "awaiting-input",
+      "stateChangedAt": "2026-10-08T17:45:54.547372+00:00",
+      "dataItems": [
+        {
+          "metadata": null,
+          "type": "text",
+          "text": "待确认检查方案：设备 pump-001；2026-10-10 14:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-9a0c56e8c73a5244b79d77ca977f06be。确认请回复“确认方案 GW-9a0c56e8c73a5244b79d77ca977f06be 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+        }
+      ]
+    },
+    "products": [
+      {
+        "id": "leader-product-public-continue-43a8de6e6435-task",
+        "name": "gongwei-leader-result",
+        "description": null,
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "{\"sessionId\": \"public-continue-43a8de6e6435-session\", \"taskId\": \"public-continue-43a8de6e6435-task\", \"messageId\": \"public-continue-43a8de6e6435-5991c3a3\", \"status\": \"awaiting_user_confirmation\", \"requiresConfirmation\": true, \"confirmationReference\": \"GW-9a0c56e8c73a5244b79d77ca977f06be\", \"nextCommand\": \"continue\", \"request\": {\"id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:47.673939+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\", \"pump\": {\"id\": \"pump-001\", \"name\": \"循环水泵 001\", \"location\": \"一号机房\", \"model\": \"GW-150\", \"simulated\": 1}, \"plan\": {\"id\": \"plan-4be1aed7-a9f8-41d3-9e7b-647592e82bb5\", \"request_id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"status\": \"proposed\", \"version\": 1, \"worker_id\": \"worker-01\", \"inventory_json\": [\"part-seal-ring\", \"tool-inspection-kit\"], \"reason\": \"按技能、时段和库存生成的模拟方案\", \"work_order_id\": null, \"created_at\": \"2026-10-08T17:45:54.524609+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\", \"request\": {\"id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:47.673939+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\"}, \"worker\": {\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"unit\": \"套\"}], \"work_order\": null}}, \"plan\": {\"id\": \"plan-4be1aed7-a9f8-41d3-9e7b-647592e82bb5\", \"request_id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"status\": \"proposed\", \"version\": 1, \"worker_id\": \"worker-01\", \"inventory_json\": [\"part-seal-ring\", \"tool-inspection-kit\"], \"reason\": \"按技能、时段和库存生成的模拟方案\", \"work_order_id\": null, \"created_at\": \"2026-10-08T17:45:54.524609+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\", \"request\": {\"id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:47.673939+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\"}, \"worker\": {\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"unit\": \"套\"}], \"work_order\": null}, \"discovery\": {\"source\": \"discovery_catalog\", \"candidates\": [{\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"protocolVersion\": \"02.02\", \"skills\": [\"gongwei.resource.query\", \"gongwei.resource.reserve\"], \"inputModes\": [\"application/json\"], \"outputModes\": [\"application/json\"], \"transport\": \"AMQP\", \"endpoint\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [\"mtls\"], \"online\": false, \"acs\": {\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"skills\": [{\"id\": \"gongwei.resource.query\", \"name\": \"查询可用人员与库存\", \"tags\": [\"resource\", \"query\"], \"version\": \"1.1.0\", \"description\": \"根据检查请求查询人员、技能、工具和配件可用性。\"}, {\"id\": \"gongwei.resource.reserve\", \"name\": \"预留和释放检查资源\", \"tags\": [\"resource\", \"reserve\"], \"version\": \"1.1.0\", \"description\": \"为已生成的检查方案预留资源并支持释放。\"}], \"version\": \"1.1.0\", \"provider\": {\"name\": \"LiangPaoPao\", \"department\": \"设备运维系统\", \"countryCode\": \"CN\", \"organization\": \"工维联项目组\"}, \"endPoints\": [{\"url\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [{\"mtls\": []}], \"transport\": \"AMQP\"}], \"description\": \"提供设备检查业务所需的人员、技能、可用时段、工具和配件查询，并支持按检查时段进行资源预留与释放。仅处理资源查询和预留，不负责维修决策、工单执行或声音诊断；缺少泵、时间或技能等必要参数时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。\", \"capabilities\": {\"streaming\": false, \"messageQueue\": [\"rabbitmq:>=4.2\"], \"notification\": false}, \"protocolVersion\": \"02.02\", \"securitySchemes\": {\"mtls\": {\"type\": \"mutualTLS\"}}, \"lastModifiedTime\": \"2026-10-06T22:34:10.877744+08:00\", \"defaultInputModes\": [\"application/json\"], \"defaultOutputModes\": [\"application/json\"]}, \"liveness\": \"unknown\", \"discovery_policy\": \"platform_catalog\"}], \"filtered\": [], \"selected\": {\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"protocolVersion\": \"02.02\", \"skills\": [\"gongwei.resource.query\", \"gongwei.resource.reserve\"], \"inputModes\": [\"application/json\"], \"outputModes\": [\"application/json\"], \"transport\": \"AMQP\", \"endpoint\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [\"mtls\"], \"online\": false, \"acs\": {\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"skills\": [{\"id\": \"gongwei.resource.query\", \"name\": \"查询可用人员与库存\", \"tags\": [\"resource\", \"query\"], \"version\": \"1.1.0\", \"description\": \"根据检查请求查询人员、技能、工具和配件可用性。\"}, {\"id\": \"gongwei.resource.reserve\", \"name\": \"预留和释放检查资源\", \"tags\": [\"resource\", \"reserve\"], \"version\": \"1.1.0\", \"description\": \"为已生成的检查方案预留资源并支持释放。\"}], \"version\": \"1.1.0\", \"provider\": {\"name\": \"LiangPaoPao\", \"department\": \"设备运维系统\", \"countryCode\": \"CN\", \"organization\": \"工维联项目组\"}, \"endPoints\": [{\"url\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [{\"mtls\": []}], \"transport\": \"AMQP\"}], \"description\": \"提供设备检查业务所需的人员、技能、可用时段、工具和配件查询，并支持按检查时段进行资源预留与释放。仅处理资源查询和预留，不负责维修决策、工单执行或声音诊断；缺少泵、时间或技能等必要参数时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。\", \"capabilities\": {\"streaming\": false, \"messageQueue\": [\"rabbitmq:>=4.2\"], \"notification\": false}, \"protocolVersion\": \"02.02\", \"securitySchemes\": {\"mtls\": {\"type\": \"mutualTLS\"}}, \"lastModifiedTime\": \"2026-10-06T22:34:10.877744+08:00\", \"defaultInputModes\": [\"application/json\"], \"defaultOutputModes\": [\"application/json\"]}, \"liveness\": \"unknown\", \"discovery_policy\": \"platform_catalog\"}, \"duration_ms\": 385.68, \"error\": null, \"http_status\": null}}"
+          }
+        ]
+      }
+    ],
+    "commandHistory": [
+      {
+        "type": "task-command",
+        "id": "public-continue-43a8de6e6435-5991c3a3",
+        "sentAt": "2026-10-08T17:45:47.628129+00:00",
+        "senderRole": "leader",
+        "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+        "mentions": null,
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+          }
+        ],
+        "groupId": null,
+        "sessionId": "public-continue-43a8de6e6435-session",
+        "command": "start",
+        "commandParams": null,
+        "taskId": "public-continue-43a8de6e6435-task"
+      }
+    ],
+    "statusHistory": [
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "awaiting-input",
+        "stateChangedAt": "2026-10-08T17:45:54.547372+00:00",
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "待确认检查方案：设备 pump-001；2026-10-10 14:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-9a0c56e8c73a5244b79d77ca977f06be。确认请回复“确认方案 GW-9a0c56e8c73a5244b79d77ca977f06be 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+          }
+        ]
+      }
+    ]
+  },
+  "confirmation_reference": "GW-9a0c56e8c73a5244b79d77ca977f06be",
+  "routing_cancel": {
+    "type": "task-result",
+    "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+    "sentAt": "2026-10-08T17:45:54.701664+00:00",
+    "senderRole": "partner",
+    "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+    "mentions": null,
+    "dataItems": null,
+    "groupId": null,
+    "sessionId": "public-continue-43a8de6e6435-session",
+    "taskId": "public-continue-43a8de6e6435-task",
+    "status": {
+      "state": "canceled",
+      "stateChangedAt": "2026-10-08T17:45:54.701637+00:00",
+      "dataItems": []
+    },
+    "products": [
+      {
+        "id": "leader-product-public-continue-43a8de6e6435-task",
+        "name": "gongwei-leader-result",
+        "description": null,
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "{\"sessionId\": \"public-continue-43a8de6e6435-session\", \"taskId\": \"public-continue-43a8de6e6435-task\", \"messageId\": \"public-continue-43a8de6e6435-8559a8bd\", \"status\": \"cancelled\", \"plan\": {\"id\": \"plan-4be1aed7-a9f8-41d3-9e7b-647592e82bb5\", \"request_id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"status\": \"proposed\", \"version\": 1, \"worker_id\": \"worker-01\", \"inventory_json\": [\"part-seal-ring\", \"tool-inspection-kit\"], \"reason\": \"按技能、时段和库存生成的模拟方案\", \"work_order_id\": null, \"created_at\": \"2026-10-08T17:45:54.524609+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\", \"request\": {\"id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:47.673939+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\"}, \"worker\": {\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"unit\": \"套\"}], \"work_order\": null}, \"workOrder\": null, \"idempotent\": false}"
+          }
+        ]
+      }
+    ],
+    "commandHistory": [
+      {
+        "type": "task-command",
+        "id": "public-continue-43a8de6e6435-5991c3a3",
+        "sentAt": "2026-10-08T17:45:47.628129+00:00",
+        "senderRole": "leader",
+        "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+        "mentions": null,
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+          }
+        ],
+        "groupId": null,
+        "sessionId": "public-continue-43a8de6e6435-session",
+        "command": "start",
+        "commandParams": null,
+        "taskId": "public-continue-43a8de6e6435-task"
+      },
+      {
+        "type": "task-command",
+        "id": "public-continue-43a8de6e6435-8559a8bd",
+        "sentAt": "2026-10-08T17:45:54.664704+00:00",
+        "senderRole": "leader",
+        "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+        "mentions": null,
+        "dataItems": [],
+        "groupId": null,
+        "sessionId": "public-continue-43a8de6e6435-session",
+        "command": "cancel",
+        "commandParams": null,
+        "taskId": "public-continue-43a8de6e6435-task"
+      }
+    ],
+    "statusHistory": [
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "awaiting-input",
+        "stateChangedAt": "2026-10-08T17:45:54.547372+00:00",
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "待确认检查方案：设备 pump-001；2026-10-10 14:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-9a0c56e8c73a5244b79d77ca977f06be。确认请回复“确认方案 GW-9a0c56e8c73a5244b79d77ca977f06be 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+          }
+        ]
+      },
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T17:45:54.673940+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T17:45:54.680244+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "canceled",
+        "stateChangedAt": "2026-10-08T17:45:54.701637+00:00",
+        "dataItems": []
+      }
+    ]
+  },
+  "cancel_operation": {
+    "type": "task-result",
+    "id": "result-f0451b93-e3e7-4bbc-aff6-d95f10afce88",
+    "sentAt": "2026-10-08T17:45:54.749907+00:00",
+    "senderRole": "partner",
+    "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+    "mentions": null,
+    "dataItems": null,
+    "groupId": null,
+    "sessionId": "public-continue-43a8de6e6435-session",
+    "taskId": "public-continue-43a8de6e6435-cancel-operation",
+    "status": {
+      "state": "completed",
+      "stateChangedAt": "2026-10-08T17:45:54.749880+00:00",
+      "dataItems": [
+        {
+          "metadata": null,
+          "type": "text",
+          "text": "已取消待确认方案 GW-9a0c56e8c73a5244b79d77ca977f06be；未预留资源，未创建工单。"
+        }
+      ]
+    },
+    "products": [
+      {
+        "id": "leader-product-public-continue-43a8de6e6435-cancel-operation",
+        "name": "gongwei-leader-result",
+        "description": null,
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "{\"sessionId\": \"public-continue-43a8de6e6435-session\", \"taskId\": \"public-continue-43a8de6e6435-cancel-operation\", \"messageId\": \"public-continue-43a8de6e6435-eb6234a3\", \"status\": \"cancelled\", \"plan\": {\"id\": \"plan-4be1aed7-a9f8-41d3-9e7b-647592e82bb5\", \"request_id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"status\": \"cancelled\", \"version\": 1, \"worker_id\": \"worker-01\", \"inventory_json\": [\"part-seal-ring\", \"tool-inspection-kit\"], \"reason\": \"按技能、时段和库存生成的模拟方案\", \"work_order_id\": null, \"created_at\": \"2026-10-08T17:45:54.524609+00:00\", \"updated_at\": \"2026-10-08T17:45:54.735398+00:00\", \"request\": {\"id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"cancelled\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:47.673939+00:00\", \"updated_at\": \"2026-10-08T17:45:54.735425+00:00\"}, \"worker\": {\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"unit\": \"套\"}], \"work_order\": null}, \"workOrder\": null, \"idempotent\": false, \"cancellationContinuation\": {\"source_task_id\": \"public-continue-43a8de6e6435-task\", \"plan_id\": \"plan-4be1aed7-a9f8-41d3-9e7b-647592e82bb5\", \"reference\": \"GW-9a0c56e8c73a5244b79d77ca977f06be\", \"session_id\": \"public-continue-43a8de6e6435-session\", \"sender_id\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"message_id\": \"public-continue-43a8de6e6435-eb6234a3\", \"command_type\": \"start\"}, \"operation\": \"cancel_plan\", \"summary\": \"已取消待确认方案 GW-9a0c56e8c73a5244b79d77ca977f06be；未预留资源，未创建工单。\"}"
+          }
+        ]
+      }
+    ],
+    "commandHistory": [
+      {
+        "type": "task-command",
+        "id": "public-continue-43a8de6e6435-eb6234a3",
+        "sentAt": "2026-10-08T17:45:54.708408+00:00",
+        "senderRole": "leader",
+        "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+        "mentions": null,
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\n\n上一轮候选结果：方案\n叮当请求补充：请选择\n用户回答：取消任务"
+          }
+        ],
+        "groupId": null,
+        "sessionId": "public-continue-43a8de6e6435-session",
+        "command": "start",
+        "commandParams": null,
+        "taskId": "public-continue-43a8de6e6435-cancel-operation"
+      }
+    ],
+    "statusHistory": [
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T17:45:54.718290+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T17:45:54.723617+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "completed",
+        "stateChangedAt": "2026-10-08T17:45:54.749880+00:00",
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "已取消待确认方案 GW-9a0c56e8c73a5244b79d77ca977f06be；未预留资源，未创建工单。"
+          }
+        ]
+      }
+    ]
+  },
+  "business_cancellation": {
+    "sessionId": "public-continue-43a8de6e6435-session",
+    "taskId": "public-continue-43a8de6e6435-cancel-operation",
+    "messageId": "public-continue-43a8de6e6435-eb6234a3",
+    "status": "cancelled",
+    "plan": {
+      "id": "plan-4be1aed7-a9f8-41d3-9e7b-647592e82bb5",
+      "request_id": "req-80fa075a-4daf-41f9-90ba-aeabb6504e61",
+      "status": "cancelled",
+      "version": 1,
+      "worker_id": "worker-01",
+      "inventory_json": [
+        "part-seal-ring",
+        "tool-inspection-kit"
+      ],
+      "reason": "按技能、时段和库存生成的模拟方案",
+      "work_order_id": null,
+      "created_at": "2026-10-08T17:45:54.524609+00:00",
+      "updated_at": "2026-10-08T17:45:54.735398+00:00",
+      "request": {
+        "id": "req-80fa075a-4daf-41f9-90ba-aeabb6504e61",
+        "pump_id": "pump-001",
+        "work_date": "2026-10-10",
+        "start_time": "14:00",
+        "duration_minutes": 60,
+        "end_time": "15:00",
+        "description": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。",
+        "required_skill": "泵体检查",
+        "status": "cancelled",
+        "missing_fields": [],
+        "created_at": "2026-10-08T17:45:47.673939+00:00",
+        "updated_at": "2026-10-08T17:45:54.735425+00:00"
+      },
+      "worker": {
+        "id": "worker-01",
+        "name": "模拟人员甲",
+        "role": "机械维护"
+      },
+      "inventory": [
+        {
+          "id": "part-seal-ring",
+          "name": "机械密封圈",
+          "category": "part",
+          "unit": "件"
+        },
+        {
+          "id": "tool-inspection-kit",
+          "name": "便携检查工具包",
+          "category": "tool",
+          "unit": "套"
+        }
+      ],
+      "work_order": null
+    },
+    "workOrder": null,
+    "idempotent": false,
+    "cancellationContinuation": {
+      "source_task_id": "public-continue-43a8de6e6435-task",
+      "plan_id": "plan-4be1aed7-a9f8-41d3-9e7b-647592e82bb5",
+      "reference": "GW-9a0c56e8c73a5244b79d77ca977f06be",
+      "session_id": "public-continue-43a8de6e6435-session",
+      "sender_id": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "message_id": "public-continue-43a8de6e6435-eb6234a3",
+      "command_type": "start"
+    },
+    "operation": "cancel_plan",
+    "summary": "已取消待确认方案 GW-9a0c56e8c73a5244b79d77ca977f06be；未预留资源，未创建工单。"
+  },
+  "actual_plan_state": "cancelled",
+  "duplicate_operation": {
+    "type": "task-result",
+    "id": "result-cabb7056-e06d-4d6f-8a86-ddb3494e0859",
+    "sentAt": "2026-10-08T17:45:56.143278+00:00",
+    "senderRole": "partner",
+    "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+    "mentions": null,
+    "dataItems": null,
+    "groupId": null,
+    "sessionId": "public-continue-43a8de6e6435-session",
+    "taskId": "public-continue-43a8de6e6435-cancel-duplicate",
+    "status": {
+      "state": "awaiting-input",
+      "stateChangedAt": "2026-10-08T17:45:56.143242+00:00",
+      "dataItems": [
+        {
+          "metadata": null,
+          "type": "text",
+          "text": "待确认检查方案：设备 pump-001；2026-10-10 14:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-60df93b1c7bb80d139b1385f34173661。确认请回复“确认方案 GW-60df93b1c7bb80d139b1385f34173661 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+        }
+      ]
+    },
+    "products": [
+      {
+        "id": "leader-product-public-continue-43a8de6e6435-cancel-duplicate",
+        "name": "gongwei-leader-result",
+        "description": null,
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "{\"sessionId\": \"public-continue-43a8de6e6435-session\", \"taskId\": \"public-continue-43a8de6e6435-cancel-duplicate\", \"messageId\": \"public-continue-43a8de6e6435-0479aecb\", \"status\": \"awaiting_user_confirmation\", \"requiresConfirmation\": true, \"confirmationReference\": \"GW-60df93b1c7bb80d139b1385f34173661\", \"nextCommand\": \"continue\", \"request\": {\"id\": \"req-ebf963f9-bbcf-4ff6-bc2b-3ce0430495e9\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:54.996141+00:00\", \"updated_at\": \"2026-10-08T17:45:56.128936+00:00\", \"pump\": {\"id\": \"pump-001\", \"name\": \"循环水泵 001\", \"location\": \"一号机房\", \"model\": \"GW-150\", \"simulated\": 1}, \"plan\": {\"id\": \"plan-14ac493b-935b-4a54-8db2-5e184f8163e2\", \"request_id\": \"req-ebf963f9-bbcf-4ff6-bc2b-3ce0430495e9\", \"status\": \"proposed\", \"version\": 1, \"worker_id\": \"worker-01\", \"inventory_json\": [\"part-seal-ring\", \"tool-inspection-kit\"], \"reason\": \"按技能、时段和库存生成的模拟方案\", \"work_order_id\": null, \"created_at\": \"2026-10-08T17:45:56.128936+00:00\", \"updated_at\": \"2026-10-08T17:45:56.128936+00:00\", \"request\": {\"id\": \"req-ebf963f9-bbcf-4ff6-bc2b-3ce0430495e9\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:54.996141+00:00\", \"updated_at\": \"2026-10-08T17:45:56.128936+00:00\"}, \"worker\": {\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"unit\": \"套\"}], \"work_order\": null}}, \"plan\": {\"id\": \"plan-14ac493b-935b-4a54-8db2-5e184f8163e2\", \"request_id\": \"req-ebf963f9-bbcf-4ff6-bc2b-3ce0430495e9\", \"status\": \"proposed\", \"version\": 1, \"worker_id\": \"worker-01\", \"inventory_json\": [\"part-seal-ring\", \"tool-inspection-kit\"], \"reason\": \"按技能、时段和库存生成的模拟方案\", \"work_order_id\": null, \"created_at\": \"2026-10-08T17:45:56.128936+00:00\", \"updated_at\": \"2026-10-08T17:45:56.128936+00:00\", \"request\": {\"id\": \"req-ebf963f9-bbcf-4ff6-bc2b-3ce0430495e9\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:54.996141+00:00\", \"updated_at\": \"2026-10-08T17:45:56.128936+00:00\"}, \"worker\": {\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"unit\": \"套\"}], \"work_order\": null}, \"discovery\": {\"source\": \"discovery_catalog\", \"candidates\": [{\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"protocolVersion\": \"02.02\", \"skills\": [\"gongwei.resource.query\", \"gongwei.resource.reserve\"], \"inputModes\": [\"application/json\"], \"outputModes\": [\"application/json\"], \"transport\": \"AMQP\", \"endpoint\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [\"mtls\"], \"online\": false, \"acs\": {\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"skills\": [{\"id\": \"gongwei.resource.query\", \"name\": \"查询可用人员与库存\", \"tags\": [\"resource\", \"query\"], \"version\": \"1.1.0\", \"description\": \"根据检查请求查询人员、技能、工具和配件可用性。\"}, {\"id\": \"gongwei.resource.reserve\", \"name\": \"预留和释放检查资源\", \"tags\": [\"resource\", \"reserve\"], \"version\": \"1.1.0\", \"description\": \"为已生成的检查方案预留资源并支持释放。\"}], \"version\": \"1.1.0\", \"provider\": {\"name\": \"LiangPaoPao\", \"department\": \"设备运维系统\", \"countryCode\": \"CN\", \"organization\": \"工维联项目组\"}, \"endPoints\": [{\"url\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [{\"mtls\": []}], \"transport\": \"AMQP\"}], \"description\": \"提供设备检查业务所需的人员、技能、可用时段、工具和配件查询，并支持按检查时段进行资源预留与释放。仅处理资源查询和预留，不负责维修决策、工单执行或声音诊断；缺少泵、时间或技能等必要参数时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。\", \"capabilities\": {\"streaming\": false, \"messageQueue\": [\"rabbitmq:>=4.2\"], \"notification\": false}, \"protocolVersion\": \"02.02\", \"securitySchemes\": {\"mtls\": {\"type\": \"mutualTLS\"}}, \"lastModifiedTime\": \"2026-10-06T22:34:10.877744+08:00\", \"defaultInputModes\": [\"application/json\"], \"defaultOutputModes\": [\"application/json\"]}, \"liveness\": \"unknown\", \"discovery_policy\": \"platform_catalog\"}], \"filtered\": [], \"selected\": {\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"protocolVersion\": \"02.02\", \"skills\": [\"gongwei.resource.query\", \"gongwei.resource.reserve\"], \"inputModes\": [\"application/json\"], \"outputModes\": [\"application/json\"], \"transport\": \"AMQP\", \"endpoint\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [\"mtls\"], \"online\": false, \"acs\": {\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"skills\": [{\"id\": \"gongwei.resource.query\", \"name\": \"查询可用人员与库存\", \"tags\": [\"resource\", \"query\"], \"version\": \"1.1.0\", \"description\": \"根据检查请求查询人员、技能、工具和配件可用性。\"}, {\"id\": \"gongwei.resource.reserve\", \"name\": \"预留和释放检查资源\", \"tags\": [\"resource\", \"reserve\"], \"version\": \"1.1.0\", \"description\": \"为已生成的检查方案预留资源并支持释放。\"}], \"version\": \"1.1.0\", \"provider\": {\"name\": \"LiangPaoPao\", \"department\": \"设备运维系统\", \"countryCode\": \"CN\", \"organization\": \"工维联项目组\"}, \"endPoints\": [{\"url\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [{\"mtls\": []}], \"transport\": \"AMQP\"}], \"description\": \"提供设备检查业务所需的人员、技能、可用时段、工具和配件查询，并支持按检查时段进行资源预留与释放。仅处理资源查询和预留，不负责维修决策、工单执行或声音诊断；缺少泵、时间或技能等必要参数时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。\", \"capabilities\": {\"streaming\": false, \"messageQueue\": [\"rabbitmq:>=4.2\"], \"notification\": false}, \"protocolVersion\": \"02.02\", \"securitySchemes\": {\"mtls\": {\"type\": \"mutualTLS\"}}, \"lastModifiedTime\": \"2026-10-06T22:34:10.877744+08:00\", \"defaultInputModes\": [\"application/json\"], \"defaultOutputModes\": [\"application/json\"]}, \"liveness\": \"unknown\", \"discovery_policy\": \"platform_catalog\"}, \"duration_ms\": 377.25, \"error\": null, \"http_status\": null}}"
+          }
+        ]
+      }
+    ],
+    "commandHistory": [
+      {
+        "type": "task-command",
+        "id": "public-continue-43a8de6e6435-0479aecb",
+        "sentAt": "2026-10-08T17:45:54.967296+00:00",
+        "senderRole": "leader",
+        "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+        "mentions": null,
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\n\n上一轮候选结果：方案\n叮当请求补充：请选择\n用户回答：取消任务"
+          }
+        ],
+        "groupId": null,
+        "sessionId": "public-continue-43a8de6e6435-session",
+        "command": "start",
+        "commandParams": null,
+        "taskId": "public-continue-43a8de6e6435-cancel-duplicate"
+      }
+    ],
+    "statusHistory": [
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T17:45:54.976976+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T17:45:54.983193+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "awaiting-input",
+        "stateChangedAt": "2026-10-08T17:45:56.143242+00:00",
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "待确认检查方案：设备 pump-001；2026-10-10 14:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-60df93b1c7bb80d139b1385f34173661。确认请回复“确认方案 GW-60df93b1c7bb80d139b1385f34173661 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+          }
+        ]
+      }
+    ]
+  },
+  "error": {
+    "type": "AssertionError",
+    "message": ""
+  },
+  "cleanup": {
+    "type": "task-result",
+    "id": "result-69b55d37-2560-4bce-bfac-683d5215794a",
+    "sentAt": "2026-10-08T17:45:54.701664+00:00",
+    "senderRole": "partner",
+    "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+    "mentions": null,
+    "dataItems": null,
+    "groupId": null,
+    "sessionId": "public-continue-43a8de6e6435-session",
+    "taskId": "public-continue-43a8de6e6435-task",
+    "status": {
+      "state": "canceled",
+      "stateChangedAt": "2026-10-08T17:45:54.701637+00:00",
+      "dataItems": []
+    },
+    "products": [
+      {
+        "id": "leader-product-public-continue-43a8de6e6435-task",
+        "name": "gongwei-leader-result",
+        "description": null,
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "{\"sessionId\": \"public-continue-43a8de6e6435-session\", \"taskId\": \"public-continue-43a8de6e6435-task\", \"messageId\": \"public-continue-43a8de6e6435-8559a8bd\", \"status\": \"cancelled\", \"plan\": {\"id\": \"plan-4be1aed7-a9f8-41d3-9e7b-647592e82bb5\", \"request_id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"status\": \"proposed\", \"version\": 1, \"worker_id\": \"worker-01\", \"inventory_json\": [\"part-seal-ring\", \"tool-inspection-kit\"], \"reason\": \"按技能、时段和库存生成的模拟方案\", \"work_order_id\": null, \"created_at\": \"2026-10-08T17:45:54.524609+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\", \"request\": {\"id\": \"req-80fa075a-4daf-41f9-90ba-aeabb6504e61\", \"pump_id\": \"pump-001\", \"work_date\": \"2026-10-10\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T17:45:47.673939+00:00\", \"updated_at\": \"2026-10-08T17:45:54.524609+00:00\"}, \"worker\": {\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"unit\": \"套\"}], \"work_order\": null}, \"workOrder\": null, \"idempotent\": false}"
+          }
+        ]
+      }
+    ],
+    "commandHistory": [
+      {
+        "type": "task-command",
+        "id": "public-continue-43a8de6e6435-5991c3a3",
+        "sentAt": "2026-10-08T17:45:47.628129+00:00",
+        "senderRole": "leader",
+        "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+        "mentions": null,
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "水泵001运行异常，明天下午两点开始，预计一小时，需要泵体检查技能。"
+          }
+        ],
+        "groupId": null,
+        "sessionId": "public-continue-43a8de6e6435-session",
+        "command": "start",
+        "commandParams": null,
+        "taskId": "public-continue-43a8de6e6435-task"
+      },
+      {
+        "type": "task-command",
+        "id": "public-continue-43a8de6e6435-8559a8bd",
+        "sentAt": "2026-10-08T17:45:54.664704+00:00",
+        "senderRole": "leader",
+        "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+        "mentions": null,
+        "dataItems": [],
+        "groupId": null,
+        "sessionId": "public-continue-43a8de6e6435-session",
+        "command": "cancel",
+        "commandParams": null,
+        "taskId": "public-continue-43a8de6e6435-task"
+      }
+    ],
+    "statusHistory": [
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T17:45:47.653590+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T17:45:47.660890+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "awaiting-input",
+        "stateChangedAt": "2026-10-08T17:45:54.547372+00:00",
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "待确认检查方案：设备 pump-001；2026-10-10 14:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-9a0c56e8c73a5244b79d77ca977f06be。确认请回复“确认方案 GW-9a0c56e8c73a5244b79d77ca977f06be 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+          }
+        ]
+      },
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T17:45:54.673940+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T17:45:54.680244+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "canceled",
+        "stateChangedAt": "2026-10-08T17:45:54.701637+00:00",
+        "dataItems": []
+      }
+    ]
+  },
+  "after": {
+    "orders": 4,
+    "active_reservations": 0,
+    "integrity": "ok"
+  },
+  "pass_result": false
+}

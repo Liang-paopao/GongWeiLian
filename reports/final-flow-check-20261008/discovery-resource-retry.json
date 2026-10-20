@@ -1,0 +1,147 @@
+{
+  "checked_at": "2026-10-08T14:21:47.799689+00:00",
+  "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+  "query": {
+    "type": "filtered",
+    "limit": 10,
+    "filter": {
+      "conditions": [
+        {
+          "field": "aic",
+          "op": "eq",
+          "value": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA"
+        }
+      ],
+      "logic": "and"
+    }
+  },
+  "dingdang_verified": false,
+  "http_status": 200,
+  "response": {
+    "result": {
+      "acsMap": {
+        "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA": {
+          "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+          "name": "工维联资源协调 Partner",
+          "active": true,
+          "skills": [
+            {
+              "id": "gongwei.resource.query",
+              "name": "查询可用人员与库存",
+              "tags": [
+                "resource",
+                "query"
+              ],
+              "version": "1.1.0",
+              "description": "根据检查请求查询人员、技能、工具和配件可用性。"
+            },
+            {
+              "id": "gongwei.resource.reserve",
+              "name": "预留和释放检查资源",
+              "tags": [
+                "resource",
+                "reserve"
+              ],
+              "version": "1.1.0",
+              "description": "为已生成的检查方案预留资源并支持释放。"
+            }
+          ],
+          "version": "1.1.0",
+          "provider": {
+            "name": "LiangPaoPao",
+            "department": "设备运维系统",
+            "countryCode": "CN",
+            "organization": "工维联项目组"
+          },
+          "endPoints": [
+            {
+              "url": "amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "security": [
+                {
+                  "mtls": []
+                }
+              ],
+              "transport": "AMQP"
+            }
+          ],
+          "description": "提供设备检查业务所需的人员、技能、可用时段、工具和配件查询，并支持按检查时段进行资源预留与释放。仅处理资源查询和预留，不负责维修决策、工单执行或声音诊断；缺少泵、时间或技能等必要参数时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [
+              "rabbitmq:>=4.2"
+            ],
+            "notification": false
+          },
+          "protocolVersion": "02.02",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS"
+            }
+          },
+          "lastModifiedTime": "2026-10-06T22:34:10.877744+08:00",
+          "defaultInputModes": [
+            "application/json"
+          ],
+          "defaultOutputModes": [
+            "application/json"
+          ]
+        }
+      },
+      "agents": [
+        {
+          "group": "filtered",
+          "agentSkills": [
+            {
+              "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "skillId": "gongwei.resource.query",
+              "ranking": 1,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+              "skillId": "gongwei.resource.reserve",
+              "ranking": 2,
+              "memo": "Filtered query result"
+            }
+          ]
+        }
+      ],
+      "routes": [
+        {
+          "forwardChain": [
+            "AIC-DS-A"
+          ],
+          "agentGroups": [
+            {
+              "group": "filtered",
+              "agentSkills": [
+                {
+                  "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                  "skillId": "gongwei.resource.query",
+                  "ranking": 1,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                  "skillId": "gongwei.resource.reserve",
+                  "ranking": 2,
+                  "memo": "Filtered query result"
+                }
+              ]
+            }
+          ],
+          "status": "ok",
+          "durationMs": 3
+        }
+      ],
+      "aliveMap": {
+        "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA": {
+          "alive": true,
+          "aliveLastSeenAt": "2026-10-08T14:21:27.320Z"
+        }
+      }
+    }
+  },
+  "success": true,
+  "target_found": true
+}

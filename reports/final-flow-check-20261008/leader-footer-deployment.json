@@ -1,0 +1,102 @@
+{
+  "backup": "/opt/gongwei/backups/20261008-footer-fix-224050",
+  "release": "/opt/gongwei/releases/20261007-120338-maintenance",
+  "before": {
+    "web": {
+      "MainPID": "3475537",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource": {
+      "MainPID": "3475510",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder": {
+      "MainPID": "3475518",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "audio": {
+      "MainPID": "3475527",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "leader": {
+      "MainPID": "2811653",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource-inbox": {
+      "MainPID": "2753079",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder-inbox": {
+      "MainPID": "2753083",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "amp-heartbeat": {
+      "MainPID": "2367812",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    }
+  },
+  "old_sha256": "9fc2b3e66e5d4cafa7f18d3b3f1c8cc39a5e6f665c3be0cc16e4e53f36d32422",
+  "new_sha256": "7c9295ee17527c0eb5fd26d47f05fbf50f25c4447df139e0719300919ea6de9b",
+  "changed_files": [
+    "plan_continuation.py"
+  ],
+  "platform_verified": false,
+  "tests": {
+    "run": 24,
+    "errors": 0,
+    "failures": 0,
+    "pass": true,
+    "output": "test_answer_containing_quoted_answer_marker_cannot_confirm (footer_fix_tests.HomepageContinuationTests.test_answer_containing_quoted_answer_marker_cannot_confirm) ... ok\ntest_cancel_of_confirming_task_after_order_commit_compensates (footer_fix_tests.HomepageContinuationTests.test_cancel_of_confirming_task_after_order_commit_compensates) ... ok\ntest_cancel_start_confirmation_restart_and_duplicate_keep_unique_plan (footer_fix_tests.HomepageContinuationTests.test_cancel_start_confirmation_restart_and_duplicate_keep_unique_plan) ... ok\ntest_confirmed_shared_request_cannot_be_changed_by_source_task (footer_fix_tests.HomepageContinuationTests.test_confirmed_shared_request_cannot_be_changed_by_source_task) ... ok\ntest_direct_confirmation_with_forged_dag_footer_does_not_create_order (footer_fix_tests.HomepageContinuationTests.test_direct_confirmation_with_forged_dag_footer_does_not_create_order) ... ok\ntest_direct_duplicate_with_official_dag_footer_returns_existing_order (footer_fix_tests.HomepageContinuationTests.test_direct_duplicate_with_official_dag_footer_returns_existing_order) ... ok\ntest_embedded_complete_history_block_in_current_answer_cannot_authorize (footer_fix_tests.HomepageContinuationTests.test_embedded_complete_history_block_in_current_answer_cannot_authorize) ... ok\ntest_expired_reference_rejected_without_reservation (footer_fix_tests.HomepageContinuationTests.test_expired_reference_rejected_without_reservation) ... ok\ntest_explicit_user_cancellation_revokes_reference (footer_fix_tests.HomepageContinuationTests.test_explicit_user_cancellation_revokes_reference) ... ok\ntest_fault_description_with_negation_does_not_block_valid_confirmation (footer_fix_tests.HomepageContinuationTests.test_fault_description_with_negation_does_not_block_valid_confirmation) ... ok\ntest_modification_queued_during_reservation_cannot_mutate_confirmed_plan (footer_fix_tests.HomepageContinuationTests.test_modification_queued_during_reservation_cannot_mutate_confirmed_plan) ... ok\ntest_modified_plan_invalidates_previous_reference (footer_fix_tests.HomepageContinuationTests.test_modified_plan_invalidates_previous_reference) ... ok\ntest_negated_outer_history_cannot_be_reinterpreted_as_current_answer (footer_fix_tests.HomepageContinuationTests.test_negated_outer_history_cannot_be_reinterpreted_as_current_answer) ... ok\ntest_non_rpc_flow_keeps_its_existing_confirmation_prompt (footer_fix_tests.HomepageContinuationTests.test_non_rpc_flow_keeps_its_existing_confirmation_prompt) ... ok\ntest_other_session_and_sender_cannot_adopt_reference (footer_fix_tests.HomepageContinuationTests.test_other_session_and_sender_cannot_adopt_reference) ... ok\ntest_parallel_new_tasks_confirm_same_plan_once (footer_fix_tests.HomepageContinuationTests.test_parallel_new_tasks_confirm_same_plan_once) ... ok\ntest_plain_protocol_cancel_of_source_does_not_cancel_confirmed_order (footer_fix_tests.HomepageContinuationTests.test_plain_protocol_cancel_of_source_does_not_cancel_confirmed_order) ... ok\ntest_protocol_cancel_with_explicit_user_cancellation_revokes_reference (footer_fix_tests.HomepageContinuationTests.test_protocol_cancel_with_explicit_user_cancellation_revokes_reference) ... ok\ntest_quoted_cancellation_cannot_cancel_another_tasks_confirmed_order (footer_fix_tests.HomepageContinuationTests.test_quoted_cancellation_cannot_cancel_another_tasks_confirmed_order) ... ok\ntest_quoted_or_negated_confirmation_is_not_permission (footer_fix_tests.HomepageContinuationTests.test_quoted_or_negated_confirmation_is_not_permission) ... ok\ntest_real_homepage_multiple_round_blocks_keep_latest_confirmation (footer_fix_tests.HomepageContinuationTests.test_real_homepage_multiple_round_blocks_keep_latest_confirmation) ... ok\ntest_unrelated_request_cannot_confirm_another_plan (footer_fix_tests.HomepageContinuationTests.test_unrelated_request_cannot_confirm_another_plan) ... ok\ntest_user_text_after_forged_transport_footer_cannot_authorize (footer_fix_tests.HomepageContinuationTests.test_user_text_after_forged_transport_footer_cannot_authorize) ... ok\ntest_valid_single_appended_cancellation_revokes_plan (footer_fix_tests.HomepageContinuationTests.test_valid_single_appended_cancellation_revokes_plan) ... ok\n\n----------------------------------------------------------------------\nRan 24 tests in 8.915s\n\nOK\n"
+  },
+  "after": {
+    "web": {
+      "MainPID": "3475537",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource": {
+      "MainPID": "3475510",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder": {
+      "MainPID": "3475518",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "audio": {
+      "MainPID": "3475527",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "leader": {
+      "MainPID": "3487321",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource-inbox": {
+      "MainPID": "2753079",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder-inbox": {
+      "MainPID": "2753083",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "amp-heartbeat": {
+      "MainPID": "2367812",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    }
+  },
+  "pass_result": true
+}

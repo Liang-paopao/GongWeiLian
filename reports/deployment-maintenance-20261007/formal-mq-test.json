@@ -1,0 +1,3091 @@
+{
+  "exit_code": 0,
+  "elapsed_s": 102.02,
+  "stdout": "{\"pass\": true, \"error\": null, \"phases\": 2}\n",
+  "stderr": "",
+  "report": {
+    "checked_at": "2026-10-06T20:07:36.121838+00:00",
+    "group_api": "https://wt.ioa.pub:9007",
+    "broker": "amqps://wt.ioa.pub:5671",
+    "database": "isolated seeded diagnostic database",
+    "restart_scope": "all three SDK clients reconstructed; not OS/server reboot",
+    "dingdang_test": false,
+    "online_discovery_test": false,
+    "platform_verified": false,
+    "session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+    "second_session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+    "parent_task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main",
+    "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+    "identities": {
+      "leader": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "resource": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "workorder": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF"
+    },
+    "phases": [
+      {
+        "phase": 1,
+        "fresh_sdk_clients": true,
+        "events": [
+          {
+            "event": "inbox_invitation",
+            "type": "group-invitation",
+            "id": "invite-4b8393b7-681d-4a54-87f3-d9c26e968418",
+            "sessionId": null,
+            "taskId": null,
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:07:50.169657+00:00"
+          },
+          {
+            "event": "inbox_invitation",
+            "type": "group-invitation",
+            "id": "invite-c07abd17-36b3-48e3-a958-f298ae6d677c",
+            "sessionId": null,
+            "taskId": null,
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:07:52.209649+00:00"
+          },
+          {
+            "event": "inbox_invitation",
+            "type": "group-invitation",
+            "id": "invite-430e248c-a8d9-4723-8d20-736f08043cef",
+            "sessionId": null,
+            "taskId": null,
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:07:56.295948+00:00"
+          },
+          {
+            "event": "inbox_invitation",
+            "type": "group-invitation",
+            "id": "invite-151784e7-ed63-4bc0-b9d9-5c136160d524",
+            "sessionId": null,
+            "taskId": null,
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:07:59.135657+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-9d093677-ab2e-42ae-ba0b-cfa6413a307d",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:0:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:03.111205+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-9d093677-ab2e-42ae-ba0b-cfa6413a307d",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:0:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:03.111205+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-9d093677-ab2e-42ae-ba0b-cfa6413a307d",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:0:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:03.111205+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-9d093677-ab2e-42ae-ba0b-cfa6413a307d",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:0:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:03.111205+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-a5d37f28-71ca-4df2-b3a4-74002ad555ed",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:0:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:03.734196+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-a5d37f28-71ca-4df2-b3a4-74002ad555ed",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:0:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:03.734196+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-a5d37f28-71ca-4df2-b3a4-74002ad555ed",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:0:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:03.734196+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-a78ae247-298d-4478-b020-838394f710e4",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:1:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:03.997488+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-a5d37f28-71ca-4df2-b3a4-74002ad555ed",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:0:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:03.734196+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-a78ae247-298d-4478-b020-838394f710e4",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:1:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:03.997488+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-a78ae247-298d-4478-b020-838394f710e4",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:1:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:03.997488+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-a78ae247-298d-4478-b020-838394f710e4",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:1:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:03.997488+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-75b286be-bf99-4f0a-ab1e-4f6cde3e86a1",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:1:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:05.714189+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-75b286be-bf99-4f0a-ab1e-4f6cde3e86a1",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:1:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:05.714189+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-75b286be-bf99-4f0a-ab1e-4f6cde3e86a1",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:1:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:05.714189+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-75b286be-bf99-4f0a-ab1e-4f6cde3e86a1",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:1:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:05.714189+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-c094d702-6ecd-401b-8b53-c079fafaad78",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:2:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:06.027158+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-c094d702-6ecd-401b-8b53-c079fafaad78",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:2:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:06.027158+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-c094d702-6ecd-401b-8b53-c079fafaad78",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:2:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:06.027158+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-c094d702-6ecd-401b-8b53-c079fafaad78",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:2:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:06.027158+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-900c4e36-1d26-489a-af62-13099bbf6e8f",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:2:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:06.946430+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-900c4e36-1d26-489a-af62-13099bbf6e8f",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:2:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:06.946430+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-900c4e36-1d26-489a-af62-13099bbf6e8f",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:2:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:06.946430+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-900c4e36-1d26-489a-af62-13099bbf6e8f",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:2:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:06.946430+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-2f124858-c947-4a34-88b2-efc51945b761",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:3:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:07.648904+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-2f124858-c947-4a34-88b2-efc51945b761",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:3:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:07.648904+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-2f124858-c947-4a34-88b2-efc51945b761",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:3:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:07.648904+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-2f124858-c947-4a34-88b2-efc51945b761",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:3:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:07.648904+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-80fc2ae5-6a1e-4df7-89fa-c213dcc134a2",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:3:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:08.064548+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-80fc2ae5-6a1e-4df7-89fa-c213dcc134a2",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:3:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:08.064548+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-80fc2ae5-6a1e-4df7-89fa-c213dcc134a2",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:3:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:08.064548+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-80fc2ae5-6a1e-4df7-89fa-c213dcc134a2",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:3:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:08.064548+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-4113669a-f24f-4285-9bbd-aca4f562c8ae",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:4:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:08.930386+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-4113669a-f24f-4285-9bbd-aca4f562c8ae",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:4:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:08.930386+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-4113669a-f24f-4285-9bbd-aca4f562c8ae",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:4:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:08.930386+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-d290089e-85b8-4944-b7dc-c682bbee71f5",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:4:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:09.896305+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-d290089e-85b8-4944-b7dc-c682bbee71f5",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:4:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:09.896305+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-4113669a-f24f-4285-9bbd-aca4f562c8ae",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:4:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:08.930386+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-d290089e-85b8-4944-b7dc-c682bbee71f5",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:4:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:09.896305+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-276d243b-381f-4e0a-beef-90db41939e65",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:11.214575+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-276d243b-381f-4e0a-beef-90db41939e65",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:11.214575+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-d290089e-85b8-4944-b7dc-c682bbee71f5",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:4:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:09.896305+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-276d243b-381f-4e0a-beef-90db41939e65",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:11.214575+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-5229d729-27cf-4573-8316-aeec4232d8ab",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:12.585061+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-5229d729-27cf-4573-8316-aeec4232d8ab",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:12.585061+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-276d243b-381f-4e0a-beef-90db41939e65",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:11.214575+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-5229d729-27cf-4573-8316-aeec4232d8ab",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:12.585061+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-276d243b-381f-4e0a-beef-90db41939e65",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:11.214575+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-276d243b-381f-4e0a-beef-90db41939e65",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:11.214575+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-5229d729-27cf-4573-8316-aeec4232d8ab",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:12.585061+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-276d243b-381f-4e0a-beef-90db41939e65",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:11.214575+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-276d243b-381f-4e0a-beef-90db41939e65",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:11.214575+00:00",
+            "mentioned": true,
+            "duplicate": true,
+            "ok": true
+          }
+        ],
+        "tasks": [
+          {
+            "session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:0:resource",
+            "parent_task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main",
+            "role": "resource",
+            "action": "query_resources",
+            "elapsed_ms": 886.26,
+            "messages": [
+              {
+                "type": "task-command",
+                "id": "cmd-9d093677-ab2e-42ae-ba0b-cfa6413a307d",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:0:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:08:03.111205+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-2b9f833a-0bd8-4a59-81ee-b07fc2227886",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:0:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:03.228328+00:00",
+                "state": "accepted"
+              },
+              {
+                "type": "task-result",
+                "id": "result-22d803bd-70f2-4b19-9c1f-7a6fe760707c",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:0:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:03.340304+00:00",
+                "state": "working"
+              },
+              {
+                "type": "task-result",
+                "id": "result-a2ad6897-dca2-403a-981d-552b9c200c13",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:0:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:03.593226+00:00",
+                "state": "awaiting-completion"
+              },
+              {
+                "type": "task-command",
+                "id": "cmd-a5d37f28-71ca-4df2-b3a4-74002ad555ed",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:0:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:08:03.734196+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-f57f5fb1-a6ae-487e-a6e6-06c2ad30a9e7",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:0:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:03.845019+00:00",
+                "state": "completed"
+              }
+            ],
+            "result": {
+              "simulated": true,
+              "ok": true,
+              "partner": "resource",
+              "action": "query_resources",
+              "result": {
+                "simulated": true,
+                "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+                "workers": [
+                  {
+                    "id": "worker-01",
+                    "name": "模拟人员甲",
+                    "role": "机械维护"
+                  },
+                  {
+                    "id": "worker-03",
+                    "name": "模拟人员丙",
+                    "role": "综合维护"
+                  }
+                ],
+                "inventory": [
+                  {
+                    "id": "part-seal-ring",
+                    "name": "机械密封圈",
+                    "category": "part",
+                    "available_qty": 5,
+                    "unit": "件"
+                  },
+                  {
+                    "id": "tool-inspection-kit",
+                    "name": "便携检查工具包",
+                    "category": "tool",
+                    "available_qty": 2,
+                    "unit": "套"
+                  }
+                ],
+                "required_skill": "pump_inspection",
+                "required_inventory": [
+                  "tool-inspection-kit",
+                  "part-seal-ring"
+                ],
+                "available": true,
+                "reasons": [],
+                "start_at": "2026-10-08T14:00:00",
+                "end_at": "2026-10-08T15:00:00"
+              }
+            }
+          },
+          {
+            "session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:1:resource",
+            "parent_task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main",
+            "role": "resource",
+            "action": "query_resources",
+            "elapsed_ms": 2021.3,
+            "messages": [
+              {
+                "type": "task-command",
+                "id": "cmd-a78ae247-298d-4478-b020-838394f710e4",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:1:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:08:03.997488+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-cee093ea-e354-4c1b-8c0c-aedc0696d86a",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:1:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:04.111657+00:00",
+                "state": "accepted"
+              },
+              {
+                "type": "task-result",
+                "id": "result-495835bc-b55b-43cb-a544-f3dc36cf9135",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:1:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:04.344683+00:00",
+                "state": "working"
+              },
+              {
+                "type": "task-result",
+                "id": "result-f0ac7f94-34a0-4b25-86ad-44c961de5209",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:1:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:04.577711+00:00",
+                "state": "awaiting-completion"
+              },
+              {
+                "type": "task-command",
+                "id": "cmd-75b286be-bf99-4f0a-ab1e-4f6cde3e86a1",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:1:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:08:05.714189+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-f658f413-4452-4e0a-a675-fe1b7bc30900",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:1:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:05.822431+00:00",
+                "state": "completed"
+              }
+            ],
+            "result": {
+              "simulated": true,
+              "ok": true,
+              "partner": "resource",
+              "action": "query_resources",
+              "result": {
+                "simulated": true,
+                "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+                "workers": [
+                  {
+                    "id": "worker-01",
+                    "name": "模拟人员甲",
+                    "role": "机械维护"
+                  },
+                  {
+                    "id": "worker-03",
+                    "name": "模拟人员丙",
+                    "role": "综合维护"
+                  }
+                ],
+                "inventory": [
+                  {
+                    "id": "part-seal-ring",
+                    "name": "机械密封圈",
+                    "category": "part",
+                    "available_qty": 5,
+                    "unit": "件"
+                  },
+                  {
+                    "id": "tool-inspection-kit",
+                    "name": "便携检查工具包",
+                    "category": "tool",
+                    "available_qty": 2,
+                    "unit": "套"
+                  }
+                ],
+                "required_skill": "pump_inspection",
+                "required_inventory": [
+                  "tool-inspection-kit",
+                  "part-seal-ring"
+                ],
+                "available": true,
+                "reasons": [],
+                "start_at": "2026-10-08T14:00:00",
+                "end_at": "2026-10-08T15:00:00"
+              }
+            }
+          },
+          {
+            "session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:2:resource",
+            "parent_task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main",
+            "role": "resource",
+            "action": "reserve_resources",
+            "elapsed_ms": 1621.74,
+            "messages": [
+              {
+                "type": "task-command",
+                "id": "cmd-c094d702-6ecd-401b-8b53-c079fafaad78",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:2:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:08:06.027158+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-641fad2b-861a-4cdf-92a0-5129ef874933",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:2:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:06.139603+00:00",
+                "state": "accepted"
+              },
+              {
+                "type": "task-result",
+                "id": "result-c3368941-23b9-4765-a872-4db224656b9a",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:2:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:06.244923+00:00",
+                "state": "working"
+              },
+              {
+                "type": "task-result",
+                "id": "result-40548a8a-ba8d-4ad2-a9eb-d0a1013e5414",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:2:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:06.347026+00:00",
+                "state": "awaiting-completion"
+              },
+              {
+                "type": "task-command",
+                "id": "cmd-900c4e36-1d26-489a-af62-13099bbf6e8f",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:2:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:08:06.946430+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-fcdee6c0-6a41-4c65-8318-aa2cf4db40a3",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:2:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:07.033255+00:00",
+                "state": "completed"
+              }
+            ],
+            "result": {
+              "simulated": true,
+              "ok": true,
+              "partner": "resource",
+              "action": "reserve_resources",
+              "result": {
+                "reservations": [
+                  {
+                    "id": "reservation-323fec45-d41d-4a06-b27d-247c1a226102",
+                    "resource_type": "worker",
+                    "resource_id": "worker-01",
+                    "quantity": 1
+                  },
+                  {
+                    "id": "reservation-52c33580-eb3d-4313-b6ea-d5f499bd84d0",
+                    "resource_type": "inventory",
+                    "resource_id": "part-seal-ring",
+                    "quantity": 1
+                  },
+                  {
+                    "id": "reservation-e57b8e75-be59-4587-893b-902a745ce0f4",
+                    "resource_type": "inventory",
+                    "resource_id": "tool-inspection-kit",
+                    "quantity": 1
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:3:resource",
+            "parent_task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main",
+            "role": "resource",
+            "action": "reserve_resources",
+            "elapsed_ms": 1281.47,
+            "messages": [
+              {
+                "type": "task-command",
+                "id": "cmd-2f124858-c947-4a34-88b2-efc51945b761",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:3:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:08:07.648904+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-73f4387b-6085-45ed-bb6c-71466956164c",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:3:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:07.737366+00:00",
+                "state": "accepted"
+              },
+              {
+                "type": "task-result",
+                "id": "result-8a6b00d2-454e-4793-ab51-32677897dcaa",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:3:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:07.833902+00:00",
+                "state": "working"
+              },
+              {
+                "type": "task-result",
+                "id": "result-8e312909-3c76-4a05-80a3-69e45ead5d2c",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:3:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:07.934546+00:00",
+                "state": "awaiting-completion"
+              },
+              {
+                "type": "task-command",
+                "id": "cmd-80fc2ae5-6a1e-4df7-89fa-c213dcc134a2",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:3:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:08:08.064548+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-c89b1f82-2323-4b13-824b-9124ad888912",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:3:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:08.168012+00:00",
+                "state": "completed"
+              }
+            ],
+            "result": {
+              "simulated": true,
+              "ok": true,
+              "partner": "resource",
+              "action": "reserve_resources",
+              "result": {
+                "reservations": [
+                  {
+                    "id": "reservation-323fec45-d41d-4a06-b27d-247c1a226102",
+                    "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+                    "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+                    "resource_type": "worker",
+                    "resource_id": "worker-01",
+                    "quantity": 1,
+                    "status": "active",
+                    "start_at": "2026-10-08T14:00:00",
+                    "end_at": "2026-10-08T15:00:00",
+                    "created_at": "2026-10-06T20:08:06.134670+00:00",
+                    "released_at": null
+                  },
+                  {
+                    "id": "reservation-52c33580-eb3d-4313-b6ea-d5f499bd84d0",
+                    "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+                    "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+                    "resource_type": "inventory",
+                    "resource_id": "part-seal-ring",
+                    "quantity": 1,
+                    "status": "active",
+                    "start_at": "2026-10-08T14:00:00",
+                    "end_at": "2026-10-08T15:00:00",
+                    "created_at": "2026-10-06T20:08:06.134670+00:00",
+                    "released_at": null
+                  },
+                  {
+                    "id": "reservation-e57b8e75-be59-4587-893b-902a745ce0f4",
+                    "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+                    "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+                    "resource_type": "inventory",
+                    "resource_id": "tool-inspection-kit",
+                    "quantity": 1,
+                    "status": "active",
+                    "start_at": "2026-10-08T14:00:00",
+                    "end_at": "2026-10-08T15:00:00",
+                    "created_at": "2026-10-06T20:08:06.134670+00:00",
+                    "released_at": null
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:4:workorder",
+            "parent_task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main",
+            "role": "workorder",
+            "action": "create_work_order",
+            "elapsed_ms": 2284.16,
+            "messages": [
+              {
+                "type": "task-command",
+                "id": "cmd-4113669a-f24f-4285-9bbd-aca4f562c8ae",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:4:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:08:08.930386+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-dabddd72-da36-40e4-9e23-276161f85d5b",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:4:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:09.365429+00:00",
+                "state": "accepted"
+              },
+              {
+                "type": "task-result",
+                "id": "result-6cc934df-69c6-4e25-95ba-2a3a04a4cf07",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:4:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:09.480490+00:00",
+                "state": "working"
+              },
+              {
+                "type": "task-result",
+                "id": "result-acd92e46-7fd1-4207-9fad-759c0bfe75ce",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:4:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:09.740357+00:00",
+                "state": "awaiting-completion"
+              },
+              {
+                "type": "task-command",
+                "id": "cmd-d290089e-85b8-4944-b7dc-c682bbee71f5",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:4:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:08:09.896305+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-3ee8c032-b922-435b-abe7-51d936a11257",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:4:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:11.079293+00:00",
+                "state": "completed"
+              }
+            ],
+            "result": {
+              "simulated": true,
+              "ok": true,
+              "partner": "workorder",
+              "action": "create_work_order",
+              "result": {
+                "simulated": true,
+                "work_order": {
+                  "id": "wo-a6cf11e0-d835-4718-a004-820b1a6bc211",
+                  "number": "WO-20261007-F33602",
+                  "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+                  "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+                  "status": "confirmed",
+                  "failure_reason": null,
+                  "created_at": "2026-10-06T20:08:09.360405+00:00",
+                  "updated_at": "2026-10-06T20:08:09.360405+00:00"
+                }
+              }
+            }
+          },
+          {
+            "session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+            "parent_task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main",
+            "role": "workorder",
+            "action": "create_work_order",
+            "elapsed_ms": 1736.01,
+            "messages": [
+              {
+                "type": "task-command",
+                "id": "cmd-276d243b-381f-4e0a-beef-90db41939e65",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:08:11.214575+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-8efd6f3c-cd5e-4d84-8df6-5051c5eb6b27",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:11.760603+00:00",
+                "state": "accepted"
+              },
+              {
+                "type": "task-result",
+                "id": "result-3a29cc4a-d2c4-4cb2-8f66-b6bf14ee961b",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:11.875265+00:00",
+                "state": "working"
+              },
+              {
+                "type": "task-result",
+                "id": "result-088262b6-bba6-47b2-9671-ff9fbccc2554",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:12.422367+00:00",
+                "state": "awaiting-completion"
+              },
+              {
+                "type": "task-command",
+                "id": "cmd-5229d729-27cf-4573-8316-aeec4232d8ab",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:08:12.585061+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-0a85c310-7436-4b43-8a83-e9943fa5af05",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:08:12.795876+00:00",
+                "state": "completed"
+              }
+            ],
+            "result": {
+              "simulated": true,
+              "ok": true,
+              "partner": "workorder",
+              "action": "create_work_order",
+              "result": {
+                "simulated": true,
+                "work_order": {
+                  "id": "wo-a6cf11e0-d835-4718-a004-820b1a6bc211",
+                  "number": "WO-20261007-F33602",
+                  "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+                  "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+                  "status": "confirmed",
+                  "failure_reason": null,
+                  "created_at": "2026-10-06T20:08:09.360405+00:00",
+                  "updated_at": "2026-10-06T20:08:09.360405+00:00"
+                }
+              }
+            }
+          }
+        ],
+        "group": {
+          "session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+          "group_id": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+          "invited": [
+            "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+            "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF"
+          ]
+        },
+        "second_group": {
+          "session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+          "group_id": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+          "invited": [
+            "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+            "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF"
+          ]
+        },
+        "two_live_groups_query_passed": true,
+        "duplicate_receipt": {
+          "event": "command_processed",
+          "role": "workorder",
+          "type": "task-command",
+          "id": "cmd-276d243b-381f-4e0a-beef-90db41939e65",
+          "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+          "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase1:5:workorder",
+          "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "senderRole": "leader",
+          "sentAt": "2026-10-06T20:08:11.214575+00:00",
+          "mentioned": true,
+          "duplicate": true,
+          "ok": true
+        },
+        "database": {
+          "work_orders": [
+            {
+              "id": "wo-a6cf11e0-d835-4718-a004-820b1a6bc211",
+              "number": "WO-20261007-F33602",
+              "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+              "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+              "status": "confirmed",
+              "failure_reason": null,
+              "created_at": "2026-10-06T20:08:09.360405+00:00",
+              "updated_at": "2026-10-06T20:08:09.360405+00:00"
+            }
+          ],
+          "reservations": [
+            {
+              "id": "reservation-323fec45-d41d-4a06-b27d-247c1a226102",
+              "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+              "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+              "resource_type": "worker",
+              "resource_id": "worker-01",
+              "quantity": 1,
+              "status": "active",
+              "start_at": "2026-10-08T14:00:00",
+              "end_at": "2026-10-08T15:00:00",
+              "created_at": "2026-10-06T20:08:06.134670+00:00",
+              "released_at": null
+            },
+            {
+              "id": "reservation-52c33580-eb3d-4313-b6ea-d5f499bd84d0",
+              "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+              "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+              "resource_type": "inventory",
+              "resource_id": "part-seal-ring",
+              "quantity": 1,
+              "status": "active",
+              "start_at": "2026-10-08T14:00:00",
+              "end_at": "2026-10-08T15:00:00",
+              "created_at": "2026-10-06T20:08:06.134670+00:00",
+              "released_at": null
+            },
+            {
+              "id": "reservation-e57b8e75-be59-4587-893b-902a745ce0f4",
+              "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+              "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+              "resource_type": "inventory",
+              "resource_id": "tool-inspection-kit",
+              "quantity": 1,
+              "status": "active",
+              "start_at": "2026-10-08T14:00:00",
+              "end_at": "2026-10-08T15:00:00",
+              "created_at": "2026-10-06T20:08:06.134670+00:00",
+              "released_at": null
+            }
+          ],
+          "inventory": [
+            {
+              "id": "tool-inspection-kit",
+              "available_qty": 1
+            },
+            {
+              "id": "tool-vibration-meter",
+              "available_qty": 1
+            },
+            {
+              "id": "part-seal-ring",
+              "available_qty": 4
+            },
+            {
+              "id": "part-gasket",
+              "available_qty": 8
+            },
+            {
+              "id": "tool-lockout-tag",
+              "available_qty": 3
+            }
+          ]
+        },
+        "pass_result": true,
+        "exact_message_replayed": "cmd-276d243b-381f-4e0a-beef-90db41939e65",
+        "clients_and_group_closed": true
+      },
+      {
+        "phase": 2,
+        "fresh_sdk_clients": true,
+        "events": [
+          {
+            "event": "inbox_invitation",
+            "type": "group-invitation",
+            "id": "invite-1082ff62-95b5-4086-8286-c75a635b72fc",
+            "sessionId": null,
+            "taskId": null,
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:48.161369+00:00"
+          },
+          {
+            "event": "inbox_invitation",
+            "type": "group-invitation",
+            "id": "invite-f7cb379a-1e64-4ce2-84c2-35cbf95f3dd8",
+            "sessionId": null,
+            "taskId": null,
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:50.460550+00:00"
+          },
+          {
+            "event": "inbox_invitation",
+            "type": "group-invitation",
+            "id": "invite-85ca8f9f-afbc-4288-a708-72533f546213",
+            "sessionId": null,
+            "taskId": null,
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:55.002342+00:00"
+          },
+          {
+            "event": "inbox_invitation",
+            "type": "group-invitation",
+            "id": "invite-23443572-fe38-4f8b-9377-71c0b9f80735",
+            "sessionId": null,
+            "taskId": null,
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:08:57.908685+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-58ecde4f-776c-468d-876a-46e832f7ec99",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:0:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:00.079622+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-58ecde4f-776c-468d-876a-46e832f7ec99",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:0:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:00.079622+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-58ecde4f-776c-468d-876a-46e832f7ec99",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:0:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:00.079622+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-58ecde4f-776c-468d-876a-46e832f7ec99",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:0:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:00.079622+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-336d90b6-80d6-493a-8bce-03cf502f8914",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:0:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:01.032464+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-336d90b6-80d6-493a-8bce-03cf502f8914",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:0:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:01.032464+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-336d90b6-80d6-493a-8bce-03cf502f8914",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:0:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:01.032464+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-336d90b6-80d6-493a-8bce-03cf502f8914",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:0:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:01.032464+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-61cbac48-448e-4027-8ab6-6083ab3a68da",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:1:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:01.600550+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-61cbac48-448e-4027-8ab6-6083ab3a68da",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:1:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:01.600550+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-61cbac48-448e-4027-8ab6-6083ab3a68da",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:1:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:01.600550+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-61cbac48-448e-4027-8ab6-6083ab3a68da",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:1:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:01.600550+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-7d8ac572-c269-4c3f-bdc1-bc0957ba9f2e",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:1:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:02.578513+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-7d8ac572-c269-4c3f-bdc1-bc0957ba9f2e",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:1:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:02.578513+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-7d8ac572-c269-4c3f-bdc1-bc0957ba9f2e",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:1:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:02.578513+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-7d8ac572-c269-4c3f-bdc1-bc0957ba9f2e",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:1:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:02.578513+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-b9e65793-c051-431b-ab21-a30c515201a3",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:2:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:03.295874+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-b9e65793-c051-431b-ab21-a30c515201a3",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:2:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:03.295874+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-b9e65793-c051-431b-ab21-a30c515201a3",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:2:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:03.295874+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-b9e65793-c051-431b-ab21-a30c515201a3",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:2:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:03.295874+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-0d39e5a6-401f-45ff-9cba-734bf3267ad2",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:2:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:03.767493+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-0d39e5a6-401f-45ff-9cba-734bf3267ad2",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:2:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:03.767493+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-0d39e5a6-401f-45ff-9cba-734bf3267ad2",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:2:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:03.767493+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-0d39e5a6-401f-45ff-9cba-734bf3267ad2",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:2:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:03.767493+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-6849e724-8462-43bc-8436-9270123424dc",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:3:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:04.400905+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-6849e724-8462-43bc-8436-9270123424dc",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:3:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:04.400905+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-6849e724-8462-43bc-8436-9270123424dc",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:3:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:04.400905+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-6849e724-8462-43bc-8436-9270123424dc",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:3:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:04.400905+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-ac0c14e9-661f-4438-9589-a2643a88fb09",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:3:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.063983+00:00"
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-ac0c14e9-661f-4438-9589-a2643a88fb09",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:3:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.063983+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-ac0c14e9-661f-4438-9589-a2643a88fb09",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:3:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.063983+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-ac0c14e9-661f-4438-9589-a2643a88fb09",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:3:resource",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.063983+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-08308e23-ee81-48ce-a33f-d21050ac1f04",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:4:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.330867+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-08308e23-ee81-48ce-a33f-d21050ac1f04",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:4:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.330867+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-08308e23-ee81-48ce-a33f-d21050ac1f04",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:4:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.330867+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-08308e23-ee81-48ce-a33f-d21050ac1f04",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:4:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.330867+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-94b68ad0-bc63-4b11-93ed-14ade7e4e96c",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:4:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.700081+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-94b68ad0-bc63-4b11-93ed-14ade7e4e96c",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:4:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.700081+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-94b68ad0-bc63-4b11-93ed-14ade7e4e96c",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:4:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.700081+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-94b68ad0-bc63-4b11-93ed-14ade7e4e96c",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:4:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.700081+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-186ff908-65e6-4730-b635-1234a05013b2",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.915841+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-186ff908-65e6-4730-b635-1234a05013b2",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.915841+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-186ff908-65e6-4730-b635-1234a05013b2",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.915841+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-186ff908-65e6-4730-b635-1234a05013b2",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.915841+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-56ee16e0-824e-4eef-8719-0ea8256f5678",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:06.784999+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-56ee16e0-824e-4eef-8719-0ea8256f5678",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:06.784999+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-56ee16e0-824e-4eef-8719-0ea8256f5678",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:06.784999+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-56ee16e0-824e-4eef-8719-0ea8256f5678",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:06.784999+00:00",
+            "mentioned": true,
+            "duplicate": false,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-186ff908-65e6-4730-b635-1234a05013b2",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.915841+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "workorder",
+            "type": "task-command",
+            "id": "cmd-186ff908-65e6-4730-b635-1234a05013b2",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.915841+00:00",
+            "mentioned": true,
+            "duplicate": true,
+            "ok": true
+          },
+          {
+            "event": "received_command",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-186ff908-65e6-4730-b635-1234a05013b2",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.915841+00:00"
+          },
+          {
+            "event": "command_processed",
+            "role": "resource",
+            "type": "task-command",
+            "id": "cmd-186ff908-65e6-4730-b635-1234a05013b2",
+            "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+            "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+            "senderRole": "leader",
+            "sentAt": "2026-10-06T20:09:05.915841+00:00",
+            "mentioned": false,
+            "duplicate": false,
+            "ok": true
+          }
+        ],
+        "tasks": [
+          {
+            "session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+            "task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:0:resource",
+            "parent_task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main",
+            "role": "resource",
+            "action": "query_resources",
+            "elapsed_ms": 1520.91,
+            "messages": [
+              {
+                "type": "task-command",
+                "id": "cmd-58ecde4f-776c-468d-876a-46e832f7ec99",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:0:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:09:00.079622+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-5f0ca0a7-0fef-4efa-9b1b-09f57be89d27",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:0:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:00.175289+00:00",
+                "state": "accepted"
+              },
+              {
+                "type": "task-result",
+                "id": "result-f11004da-9be3-4d3b-82c0-adc63201a343",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:0:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:00.266607+00:00",
+                "state": "working"
+              },
+              {
+                "type": "task-result",
+                "id": "result-56291b9f-57d1-4a8f-b0a1-e2e5003de78e",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:0:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:00.354727+00:00",
+                "state": "awaiting-completion"
+              },
+              {
+                "type": "task-command",
+                "id": "cmd-336d90b6-80d6-493a-8bce-03cf502f8914",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:0:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:09:01.032464+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-a6f487a5-5e4c-4a2e-8765-842168e86e35",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:0:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:01.113771+00:00",
+                "state": "completed"
+              }
+            ],
+            "result": {
+              "simulated": true,
+              "ok": true,
+              "partner": "resource",
+              "action": "query_resources",
+              "result": {
+                "simulated": true,
+                "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+                "workers": [
+                  {
+                    "id": "worker-03",
+                    "name": "模拟人员丙",
+                    "role": "综合维护"
+                  }
+                ],
+                "inventory": [
+                  {
+                    "id": "part-seal-ring",
+                    "name": "机械密封圈",
+                    "category": "part",
+                    "available_qty": 4,
+                    "unit": "件"
+                  },
+                  {
+                    "id": "tool-inspection-kit",
+                    "name": "便携检查工具包",
+                    "category": "tool",
+                    "available_qty": 1,
+                    "unit": "套"
+                  }
+                ],
+                "required_skill": "pump_inspection",
+                "required_inventory": [
+                  "tool-inspection-kit",
+                  "part-seal-ring"
+                ],
+                "available": true,
+                "reasons": [],
+                "start_at": "2026-10-08T14:00:00",
+                "end_at": "2026-10-08T15:00:00"
+              }
+            }
+          },
+          {
+            "session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:1:resource",
+            "parent_task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main",
+            "role": "resource",
+            "action": "query_resources",
+            "elapsed_ms": 1695.29,
+            "messages": [
+              {
+                "type": "task-command",
+                "id": "cmd-61cbac48-448e-4027-8ab6-6083ab3a68da",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:1:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:09:01.600550+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-93a21ae3-2653-4be6-8be3-179476a2b517",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:1:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:01.721579+00:00",
+                "state": "accepted"
+              },
+              {
+                "type": "task-result",
+                "id": "result-c8d2ff58-fa96-45d7-8590-9941d2570ec9",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:1:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:01.833670+00:00",
+                "state": "working"
+              },
+              {
+                "type": "task-result",
+                "id": "result-82bb9e4b-89e0-46cb-9451-96ca807f2a09",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:1:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:01.945538+00:00",
+                "state": "awaiting-completion"
+              },
+              {
+                "type": "task-command",
+                "id": "cmd-7d8ac572-c269-4c3f-bdc1-bc0957ba9f2e",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:1:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:09:02.578513+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-b4910ce6-703f-4fbd-aa82-d3bb70b739c8",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:1:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:02.693290+00:00",
+                "state": "completed"
+              }
+            ],
+            "result": {
+              "simulated": true,
+              "ok": true,
+              "partner": "resource",
+              "action": "query_resources",
+              "result": {
+                "simulated": true,
+                "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+                "workers": [
+                  {
+                    "id": "worker-03",
+                    "name": "模拟人员丙",
+                    "role": "综合维护"
+                  }
+                ],
+                "inventory": [
+                  {
+                    "id": "part-seal-ring",
+                    "name": "机械密封圈",
+                    "category": "part",
+                    "available_qty": 4,
+                    "unit": "件"
+                  },
+                  {
+                    "id": "tool-inspection-kit",
+                    "name": "便携检查工具包",
+                    "category": "tool",
+                    "available_qty": 1,
+                    "unit": "套"
+                  }
+                ],
+                "required_skill": "pump_inspection",
+                "required_inventory": [
+                  "tool-inspection-kit",
+                  "part-seal-ring"
+                ],
+                "available": true,
+                "reasons": [],
+                "start_at": "2026-10-08T14:00:00",
+                "end_at": "2026-10-08T15:00:00"
+              }
+            }
+          },
+          {
+            "session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:2:resource",
+            "parent_task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main",
+            "role": "resource",
+            "action": "reserve_resources",
+            "elapsed_ms": 1105.01,
+            "messages": [
+              {
+                "type": "task-command",
+                "id": "cmd-b9e65793-c051-431b-ab21-a30c515201a3",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:2:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:09:03.295874+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-41d8266b-25a6-4de4-97c6-9c8decd107ee",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:2:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:03.412813+00:00",
+                "state": "accepted"
+              },
+              {
+                "type": "task-result",
+                "id": "result-c25bad82-e59b-4c0c-8807-eccdf91e61fc",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:2:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:03.523253+00:00",
+                "state": "working"
+              },
+              {
+                "type": "task-result",
+                "id": "result-c04e0627-a05e-4d57-9472-079bc57d748e",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:2:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:03.629873+00:00",
+                "state": "awaiting-completion"
+              },
+              {
+                "type": "task-command",
+                "id": "cmd-0d39e5a6-401f-45ff-9cba-734bf3267ad2",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:2:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:09:03.767493+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-b9eec392-1195-4ff3-bec4-89ec9d8d80dd",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:2:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:03.871358+00:00",
+                "state": "completed"
+              }
+            ],
+            "result": {
+              "simulated": true,
+              "ok": true,
+              "partner": "resource",
+              "action": "reserve_resources",
+              "result": {
+                "reservations": [
+                  {
+                    "id": "reservation-323fec45-d41d-4a06-b27d-247c1a226102",
+                    "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+                    "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+                    "resource_type": "worker",
+                    "resource_id": "worker-01",
+                    "quantity": 1,
+                    "status": "active",
+                    "start_at": "2026-10-08T14:00:00",
+                    "end_at": "2026-10-08T15:00:00",
+                    "created_at": "2026-10-06T20:08:06.134670+00:00",
+                    "released_at": null
+                  },
+                  {
+                    "id": "reservation-52c33580-eb3d-4313-b6ea-d5f499bd84d0",
+                    "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+                    "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+                    "resource_type": "inventory",
+                    "resource_id": "part-seal-ring",
+                    "quantity": 1,
+                    "status": "active",
+                    "start_at": "2026-10-08T14:00:00",
+                    "end_at": "2026-10-08T15:00:00",
+                    "created_at": "2026-10-06T20:08:06.134670+00:00",
+                    "released_at": null
+                  },
+                  {
+                    "id": "reservation-e57b8e75-be59-4587-893b-902a745ce0f4",
+                    "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+                    "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+                    "resource_type": "inventory",
+                    "resource_id": "tool-inspection-kit",
+                    "quantity": 1,
+                    "status": "active",
+                    "start_at": "2026-10-08T14:00:00",
+                    "end_at": "2026-10-08T15:00:00",
+                    "created_at": "2026-10-06T20:08:06.134670+00:00",
+                    "released_at": null
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:3:resource",
+            "parent_task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main",
+            "role": "resource",
+            "action": "reserve_resources",
+            "elapsed_ms": 929.94,
+            "messages": [
+              {
+                "type": "task-command",
+                "id": "cmd-6849e724-8462-43bc-8436-9270123424dc",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:3:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:09:04.400905+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-e2172e95-f520-44d5-8012-22582a77a428",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:3:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:04.502872+00:00",
+                "state": "accepted"
+              },
+              {
+                "type": "task-result",
+                "id": "result-5c214304-4482-4c9f-9da2-174d0930e10a",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:3:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:04.596477+00:00",
+                "state": "working"
+              },
+              {
+                "type": "task-result",
+                "id": "result-99a2fdc7-8d19-45e9-9572-9969f80d3777",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:3:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:04.688482+00:00",
+                "state": "awaiting-completion"
+              },
+              {
+                "type": "task-command",
+                "id": "cmd-ac0c14e9-661f-4438-9589-a2643a88fb09",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:3:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:09:05.063983+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-6886eded-7c47-463b-92c3-952f2393d7b8",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:3:resource",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:05.146447+00:00",
+                "state": "completed"
+              }
+            ],
+            "result": {
+              "simulated": true,
+              "ok": true,
+              "partner": "resource",
+              "action": "reserve_resources",
+              "result": {
+                "reservations": [
+                  {
+                    "id": "reservation-323fec45-d41d-4a06-b27d-247c1a226102",
+                    "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+                    "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+                    "resource_type": "worker",
+                    "resource_id": "worker-01",
+                    "quantity": 1,
+                    "status": "active",
+                    "start_at": "2026-10-08T14:00:00",
+                    "end_at": "2026-10-08T15:00:00",
+                    "created_at": "2026-10-06T20:08:06.134670+00:00",
+                    "released_at": null
+                  },
+                  {
+                    "id": "reservation-52c33580-eb3d-4313-b6ea-d5f499bd84d0",
+                    "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+                    "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+                    "resource_type": "inventory",
+                    "resource_id": "part-seal-ring",
+                    "quantity": 1,
+                    "status": "active",
+                    "start_at": "2026-10-08T14:00:00",
+                    "end_at": "2026-10-08T15:00:00",
+                    "created_at": "2026-10-06T20:08:06.134670+00:00",
+                    "released_at": null
+                  },
+                  {
+                    "id": "reservation-e57b8e75-be59-4587-893b-902a745ce0f4",
+                    "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+                    "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+                    "resource_type": "inventory",
+                    "resource_id": "tool-inspection-kit",
+                    "quantity": 1,
+                    "status": "active",
+                    "start_at": "2026-10-08T14:00:00",
+                    "end_at": "2026-10-08T15:00:00",
+                    "created_at": "2026-10-06T20:08:06.134670+00:00",
+                    "released_at": null
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:4:workorder",
+            "parent_task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main",
+            "role": "workorder",
+            "action": "create_work_order",
+            "elapsed_ms": 584.98,
+            "messages": [
+              {
+                "type": "task-command",
+                "id": "cmd-08308e23-ee81-48ce-a33f-d21050ac1f04",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:4:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:09:05.330867+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-4549b057-1a44-44de-bedb-d70a0531bae9",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:4:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:05.416163+00:00",
+                "state": "accepted"
+              },
+              {
+                "type": "task-result",
+                "id": "result-5b05d500-7cf6-47cd-8366-aa9b68855cf3",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:4:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:05.500088+00:00",
+                "state": "working"
+              },
+              {
+                "type": "task-result",
+                "id": "result-7cca81a9-ff49-4b14-a21e-37775cc22e81",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:4:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:05.583850+00:00",
+                "state": "awaiting-completion"
+              },
+              {
+                "type": "task-command",
+                "id": "cmd-94b68ad0-bc63-4b11-93ed-14ade7e4e96c",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:4:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:09:05.700081+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-62a8b63d-1e22-41dd-85df-96dcd22bfdfc",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:4:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:05.794326+00:00",
+                "state": "completed"
+              }
+            ],
+            "result": {
+              "simulated": true,
+              "ok": true,
+              "partner": "workorder",
+              "action": "create_work_order",
+              "result": {
+                "simulated": true,
+                "work_order": {
+                  "id": "wo-a6cf11e0-d835-4718-a004-820b1a6bc211",
+                  "number": "WO-20261007-F33602",
+                  "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+                  "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+                  "status": "confirmed",
+                  "failure_reason": null,
+                  "created_at": "2026-10-06T20:08:09.360405+00:00",
+                  "updated_at": "2026-10-06T20:08:09.360405+00:00"
+                }
+              }
+            }
+          },
+          {
+            "session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+            "task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+            "parent_task_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main",
+            "role": "workorder",
+            "action": "create_work_order",
+            "elapsed_ms": 1135.47,
+            "messages": [
+              {
+                "type": "task-command",
+                "id": "cmd-186ff908-65e6-4730-b635-1234a05013b2",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:09:05.915841+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-8e00a9ba-8136-4791-aa15-f0be0a8ef6a4",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:06.013179+00:00",
+                "state": "accepted"
+              },
+              {
+                "type": "task-result",
+                "id": "result-d6b03645-5a73-4a4d-9f9a-f94d22560416",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:06.117085+00:00",
+                "state": "working"
+              },
+              {
+                "type": "task-result",
+                "id": "result-cc5234de-13fa-4a85-8e66-67bb5f356ed6",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:06.225953+00:00",
+                "state": "awaiting-completion"
+              },
+              {
+                "type": "task-command",
+                "id": "cmd-56ee16e0-824e-4eef-8719-0ea8256f5678",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+                "senderRole": "leader",
+                "sentAt": "2026-10-06T20:09:06.784999+00:00"
+              },
+              {
+                "type": "task-result",
+                "id": "result-4eb896ed-8598-4714-b7d4-813684925b3e",
+                "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+                "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+                "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "senderRole": "partner",
+                "sentAt": "2026-10-06T20:09:06.901253+00:00",
+                "state": "completed"
+              }
+            ],
+            "result": {
+              "simulated": true,
+              "ok": true,
+              "partner": "workorder",
+              "action": "create_work_order",
+              "result": {
+                "simulated": true,
+                "work_order": {
+                  "id": "wo-a6cf11e0-d835-4718-a004-820b1a6bc211",
+                  "number": "WO-20261007-F33602",
+                  "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+                  "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+                  "status": "confirmed",
+                  "failure_reason": null,
+                  "created_at": "2026-10-06T20:08:09.360405+00:00",
+                  "updated_at": "2026-10-06T20:08:09.360405+00:00"
+                }
+              }
+            }
+          }
+        ],
+        "group": {
+          "session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+          "group_id": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+          "invited": [
+            "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+            "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF"
+          ]
+        },
+        "second_group": {
+          "session_id": "mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+          "group_id": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97-second",
+          "invited": [
+            "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+            "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF"
+          ]
+        },
+        "two_live_groups_query_passed": true,
+        "duplicate_receipt": {
+          "event": "command_processed",
+          "role": "workorder",
+          "type": "task-command",
+          "id": "cmd-186ff908-65e6-4730-b635-1234a05013b2",
+          "sessionId": "mq-fix-b9d5684de2fc48528fef5dd368765c97",
+          "taskId": "mq-fix-b9d5684de2fc48528fef5dd368765c97-main:phase2:5:workorder",
+          "groupId": "group-mq-fix-b9d5684de2fc48528fef5dd368765c97",
+          "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+          "senderRole": "leader",
+          "sentAt": "2026-10-06T20:09:05.915841+00:00",
+          "mentioned": true,
+          "duplicate": true,
+          "ok": true
+        },
+        "database": {
+          "work_orders": [
+            {
+              "id": "wo-a6cf11e0-d835-4718-a004-820b1a6bc211",
+              "number": "WO-20261007-F33602",
+              "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+              "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+              "status": "confirmed",
+              "failure_reason": null,
+              "created_at": "2026-10-06T20:08:09.360405+00:00",
+              "updated_at": "2026-10-06T20:08:09.360405+00:00"
+            }
+          ],
+          "reservations": [
+            {
+              "id": "reservation-323fec45-d41d-4a06-b27d-247c1a226102",
+              "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+              "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+              "resource_type": "worker",
+              "resource_id": "worker-01",
+              "quantity": 1,
+              "status": "active",
+              "start_at": "2026-10-08T14:00:00",
+              "end_at": "2026-10-08T15:00:00",
+              "created_at": "2026-10-06T20:08:06.134670+00:00",
+              "released_at": null
+            },
+            {
+              "id": "reservation-52c33580-eb3d-4313-b6ea-d5f499bd84d0",
+              "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+              "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+              "resource_type": "inventory",
+              "resource_id": "part-seal-ring",
+              "quantity": 1,
+              "status": "active",
+              "start_at": "2026-10-08T14:00:00",
+              "end_at": "2026-10-08T15:00:00",
+              "created_at": "2026-10-06T20:08:06.134670+00:00",
+              "released_at": null
+            },
+            {
+              "id": "reservation-e57b8e75-be59-4587-893b-902a745ce0f4",
+              "plan_id": "plan-621fb5d7-138e-49f2-9b2c-f3bf25356a40",
+              "request_id": "req-df938457-40a8-47f2-a332-5c28a4f2c926",
+              "resource_type": "inventory",
+              "resource_id": "tool-inspection-kit",
+              "quantity": 1,
+              "status": "active",
+              "start_at": "2026-10-08T14:00:00",
+              "end_at": "2026-10-08T15:00:00",
+              "created_at": "2026-10-06T20:08:06.134670+00:00",
+              "released_at": null
+            }
+          ],
+          "inventory": [
+            {
+              "id": "tool-inspection-kit",
+              "available_qty": 1
+            },
+            {
+              "id": "tool-vibration-meter",
+              "available_qty": 1
+            },
+            {
+              "id": "part-seal-ring",
+              "available_qty": 4
+            },
+            {
+              "id": "part-gasket",
+              "available_qty": 8
+            },
+            {
+              "id": "tool-lockout-tag",
+              "available_qty": 3
+            }
+          ]
+        },
+        "pass_result": true,
+        "exact_message_replayed": "cmd-186ff908-65e6-4730-b635-1234a05013b2",
+        "clients_and_group_closed": true
+      }
+    ],
+    "pass_result": true
+  },
+  "restored_services": {
+    "resource-inbox": {
+      "start_exit": 0,
+      "active": "active"
+    },
+    "workorder-inbox": {
+      "start_exit": 0,
+      "active": "active"
+    },
+    "leader": {
+      "start_exit": 0,
+      "active": "active"
+    }
+  }
+}

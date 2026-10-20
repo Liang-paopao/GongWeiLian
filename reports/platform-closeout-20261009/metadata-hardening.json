@@ -1,0 +1,21 @@
+{
+  "backup": "/opt/gongwei/backups/20261009-040902-metadata-hardening",
+  "service": "active",
+  "unchanged_other_own_pids": true,
+  "sandbox_visibility": {
+    "backup_root_visible": true,
+    "credential_backup_visible": false,
+    "amp_root_visible": true
+  },
+  "inaccessible_paths": "-/opt/gongwei/secrets -/opt/gongwei/backups -/opt/gongwei/platform -/opt/gongwei/shared/data -/var/lib/gongwei-leader -/run/credentials",
+  "backup_contents_check": {
+    "host_backup_entry_count": 28,
+    "service_namespace_entry_count": 0,
+    "backup_contents_hidden": true,
+    "pid": "69406",
+    "kafka_connections": [
+      "ESTAB      0      0      10.3.0.6:51234   49.232.42.120:19092 users:((\"python\",pid=899,fd=6))                        "
+    ],
+    "service_state": "active"
+  }
+}

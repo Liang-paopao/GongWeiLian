@@ -1,0 +1,6 @@
+{
+  "backup": "/opt/gongwei/backups/20261009-013124-reboot",
+  "boot_before": "6b8a5804-6a61-40e8-8fb8-60326c71974c",
+  "reboot_requested": true,
+  "ssh_exit": 0
+}

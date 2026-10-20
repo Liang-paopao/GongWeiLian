@@ -1,0 +1,378 @@
+{
+  "experiment": "stage4-fixed-60-scenes",
+  "platform_verified": false,
+  "transport": "local_shared_domain",
+  "total": 60,
+  "passed": 60,
+  "failed": 0,
+  "groups": {
+    "complete": 10,
+    "awaiting_input": 10,
+    "conflict": 10,
+    "cancel": 10,
+    "replan": 10,
+    "recovery": 10
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "group": "complete",
+      "passed": true,
+      "detail": "created_and_confirmed"
+    },
+    {
+      "scene": 2,
+      "group": "complete",
+      "passed": true,
+      "detail": "created_and_confirmed"
+    },
+    {
+      "scene": 3,
+      "group": "complete",
+      "passed": true,
+      "detail": "created_and_confirmed"
+    },
+    {
+      "scene": 4,
+      "group": "complete",
+      "passed": true,
+      "detail": "created_and_confirmed"
+    },
+    {
+      "scene": 5,
+      "group": "complete",
+      "passed": true,
+      "detail": "created_and_confirmed"
+    },
+    {
+      "scene": 6,
+      "group": "complete",
+      "passed": true,
+      "detail": "created_and_confirmed"
+    },
+    {
+      "scene": 7,
+      "group": "complete",
+      "passed": true,
+      "detail": "created_and_confirmed"
+    },
+    {
+      "scene": 8,
+      "group": "complete",
+      "passed": true,
+      "detail": "created_and_confirmed"
+    },
+    {
+      "scene": 9,
+      "group": "complete",
+      "passed": true,
+      "detail": "created_and_confirmed"
+    },
+    {
+      "scene": 10,
+      "group": "complete",
+      "passed": true,
+      "detail": "created_and_confirmed"
+    },
+    {
+      "scene": 11,
+      "group": "awaiting_input",
+      "passed": true,
+      "detail": "awaiting_input"
+    },
+    {
+      "scene": 12,
+      "group": "awaiting_input",
+      "passed": true,
+      "detail": "awaiting_input"
+    },
+    {
+      "scene": 13,
+      "group": "awaiting_input",
+      "passed": true,
+      "detail": "awaiting_input"
+    },
+    {
+      "scene": 14,
+      "group": "awaiting_input",
+      "passed": true,
+      "detail": "awaiting_input"
+    },
+    {
+      "scene": 15,
+      "group": "awaiting_input",
+      "passed": true,
+      "detail": "awaiting_input"
+    },
+    {
+      "scene": 16,
+      "group": "awaiting_input",
+      "passed": true,
+      "detail": "awaiting_input"
+    },
+    {
+      "scene": 17,
+      "group": "awaiting_input",
+      "passed": true,
+      "detail": "awaiting_input"
+    },
+    {
+      "scene": 18,
+      "group": "awaiting_input",
+      "passed": true,
+      "detail": "awaiting_input"
+    },
+    {
+      "scene": 19,
+      "group": "awaiting_input",
+      "passed": true,
+      "detail": "awaiting_input"
+    },
+    {
+      "scene": 20,
+      "group": "awaiting_input",
+      "passed": true,
+      "detail": "awaiting_input"
+    },
+    {
+      "scene": 21,
+      "group": "conflict",
+      "passed": true,
+      "detail": "没有可用人员"
+    },
+    {
+      "scene": 22,
+      "group": "conflict",
+      "passed": true,
+      "detail": "没有可用人员"
+    },
+    {
+      "scene": 23,
+      "group": "conflict",
+      "passed": true,
+      "detail": "没有可用人员"
+    },
+    {
+      "scene": 24,
+      "group": "conflict",
+      "passed": true,
+      "detail": "没有可用人员"
+    },
+    {
+      "scene": 25,
+      "group": "conflict",
+      "passed": true,
+      "detail": "没有可用人员"
+    },
+    {
+      "scene": 26,
+      "group": "conflict",
+      "passed": true,
+      "detail": "没有可用人员"
+    },
+    {
+      "scene": 27,
+      "group": "conflict",
+      "passed": true,
+      "detail": "没有可用人员"
+    },
+    {
+      "scene": 28,
+      "group": "conflict",
+      "passed": true,
+      "detail": "没有可用人员"
+    },
+    {
+      "scene": 29,
+      "group": "conflict",
+      "passed": true,
+      "detail": "没有可用人员"
+    },
+    {
+      "scene": 30,
+      "group": "conflict",
+      "passed": true,
+      "detail": "没有可用人员"
+    },
+    {
+      "scene": 31,
+      "group": "cancel",
+      "passed": true,
+      "detail": "cancelled"
+    },
+    {
+      "scene": 32,
+      "group": "cancel",
+      "passed": true,
+      "detail": "cancelled"
+    },
+    {
+      "scene": 33,
+      "group": "cancel",
+      "passed": true,
+      "detail": "cancelled"
+    },
+    {
+      "scene": 34,
+      "group": "cancel",
+      "passed": true,
+      "detail": "cancelled"
+    },
+    {
+      "scene": 35,
+      "group": "cancel",
+      "passed": true,
+      "detail": "cancelled"
+    },
+    {
+      "scene": 36,
+      "group": "cancel",
+      "passed": true,
+      "detail": "cancelled"
+    },
+    {
+      "scene": 37,
+      "group": "cancel",
+      "passed": true,
+      "detail": "cancelled"
+    },
+    {
+      "scene": 38,
+      "group": "cancel",
+      "passed": true,
+      "detail": "cancelled"
+    },
+    {
+      "scene": 39,
+      "group": "cancel",
+      "passed": true,
+      "detail": "cancelled"
+    },
+    {
+      "scene": 40,
+      "group": "cancel",
+      "passed": true,
+      "detail": "cancelled"
+    },
+    {
+      "scene": 41,
+      "group": "replan",
+      "passed": true,
+      "detail": "version=2"
+    },
+    {
+      "scene": 42,
+      "group": "replan",
+      "passed": true,
+      "detail": "version=2"
+    },
+    {
+      "scene": 43,
+      "group": "replan",
+      "passed": true,
+      "detail": "version=2"
+    },
+    {
+      "scene": 44,
+      "group": "replan",
+      "passed": true,
+      "detail": "version=2"
+    },
+    {
+      "scene": 45,
+      "group": "replan",
+      "passed": true,
+      "detail": "version=2"
+    },
+    {
+      "scene": 46,
+      "group": "replan",
+      "passed": true,
+      "detail": "version=2"
+    },
+    {
+      "scene": 47,
+      "group": "replan",
+      "passed": true,
+      "detail": "version=2"
+    },
+    {
+      "scene": 48,
+      "group": "replan",
+      "passed": true,
+      "detail": "version=2"
+    },
+    {
+      "scene": 49,
+      "group": "replan",
+      "passed": true,
+      "detail": "version=2"
+    },
+    {
+      "scene": 50,
+      "group": "replan",
+      "passed": true,
+      "detail": "version=2"
+    },
+    {
+      "scene": 51,
+      "group": "recovery",
+      "passed": true,
+      "detail": "{'compensated': 1, 'reconciled': 0}"
+    },
+    {
+      "scene": 52,
+      "group": "recovery",
+      "passed": true,
+      "detail": "{'compensated': 1, 'reconciled': 0}"
+    },
+    {
+      "scene": 53,
+      "group": "recovery",
+      "passed": true,
+      "detail": "{'compensated': 1, 'reconciled': 0}"
+    },
+    {
+      "scene": 54,
+      "group": "recovery",
+      "passed": true,
+      "detail": "{'compensated': 1, 'reconciled': 0}"
+    },
+    {
+      "scene": 55,
+      "group": "recovery",
+      "passed": true,
+      "detail": "{'compensated': 1, 'reconciled': 0}"
+    },
+    {
+      "scene": 56,
+      "group": "recovery",
+      "passed": true,
+      "detail": "{'compensated': 1, 'reconciled': 0}"
+    },
+    {
+      "scene": 57,
+      "group": "recovery",
+      "passed": true,
+      "detail": "{'compensated': 1, 'reconciled': 0}"
+    },
+    {
+      "scene": 58,
+      "group": "recovery",
+      "passed": true,
+      "detail": "{'compensated': 1, 'reconciled': 0}"
+    },
+    {
+      "scene": 59,
+      "group": "recovery",
+      "passed": true,
+      "detail": "{'compensated': 1, 'reconciled': 0}"
+    },
+    {
+      "scene": 60,
+      "group": "recovery",
+      "passed": true,
+      "detail": "{'compensated': 1, 'reconciled': 0}"
+    }
+  ]
+}

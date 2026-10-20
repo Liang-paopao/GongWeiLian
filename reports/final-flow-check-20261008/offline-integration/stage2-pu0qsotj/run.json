@@ -1,0 +1,9 @@
+{
+  "transport": "local_rpc",
+  "ports": {
+    "resource": 58232,
+    "workorder": 58233,
+    "leader": 58234
+  },
+  "temporary_database": "C:\\WINDOWS\\TEMP\\gongwei-stage2-7ktacfyg\\stage2.db"
+}

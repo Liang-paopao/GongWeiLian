@@ -1,0 +1,78 @@
+{
+  "unique_new_work_order": [
+    {
+      "id": "wo-ac98972b-6494-43f0-b479-258c9a519179",
+      "number": "WO-20261009-A1044F",
+      "request_id": "req-f1c1f18e-75ed-4502-ad20-343ef03f0ce1",
+      "plan_id": "plan-4a88c9f9-ab75-4361-9a8c-90ec0d67805a",
+      "status": "confirmed",
+      "failure_reason": null,
+      "created_at": "2026-10-08T18:01:25.257176+00:00",
+      "updated_at": "2026-10-08T18:01:25.257176+00:00"
+    }
+  ],
+  "exactly_three_new_active_reservations": [
+    {
+      "id": "reservation-52f94598-cc86-4466-a58f-caaaad6bf19c",
+      "plan_id": "plan-4a88c9f9-ab75-4361-9a8c-90ec0d67805a",
+      "request_id": "req-f1c1f18e-75ed-4502-ad20-343ef03f0ce1",
+      "resource_type": "worker",
+      "resource_id": "worker-01",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-10T14:00:00",
+      "end_at": "2026-10-10T15:00:00",
+      "created_at": "2026-10-08T18:01:22.641621+00:00",
+      "released_at": null
+    },
+    {
+      "id": "reservation-04df83aa-d6c0-46b3-beca-6a626151a670",
+      "plan_id": "plan-4a88c9f9-ab75-4361-9a8c-90ec0d67805a",
+      "request_id": "req-f1c1f18e-75ed-4502-ad20-343ef03f0ce1",
+      "resource_type": "inventory",
+      "resource_id": "part-seal-ring",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-10T14:00:00",
+      "end_at": "2026-10-10T15:00:00",
+      "created_at": "2026-10-08T18:01:22.641621+00:00",
+      "released_at": null
+    },
+    {
+      "id": "reservation-9c55d142-972d-4a22-be94-fb4aee6cab3a",
+      "plan_id": "plan-4a88c9f9-ab75-4361-9a8c-90ec0d67805a",
+      "request_id": "req-f1c1f18e-75ed-4502-ad20-343ef03f0ce1",
+      "resource_type": "inventory",
+      "resource_id": "tool-inspection-kit",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-10T14:00:00",
+      "end_at": "2026-10-10T15:00:00",
+      "created_at": "2026-10-08T18:01:22.641621+00:00",
+      "released_at": null
+    }
+  ],
+  "before": {
+    "integrity": "ok",
+    "work_orders": 4,
+    "active_reservations": 0
+  },
+  "after": {
+    "integrity": "ok",
+    "work_orders": 5,
+    "active_reservations": 3
+  },
+  "repeat": {
+    "integrity": "ok",
+    "work_orders": 5,
+    "active_reservations": 3
+  },
+  "after_modify_cancel": {
+    "integrity": "ok",
+    "work_orders": 5,
+    "active_reservations": 3
+  },
+  "partner_subtasks_main_session": 3,
+  "assertions": "PASS",
+  "seed_resources_are_simulated": true
+}

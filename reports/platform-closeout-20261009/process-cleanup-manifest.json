@@ -1,0 +1,91 @@
+{
+  "created_at": "2026-10-10T00:35:35.5947207+08:00",
+  "active_project": "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1",
+  "status": "process_artifacts_removed_from_active_directories",
+  "moved_stale_review_archives": [
+    {
+      "path": "reports\\gongwei-continuation-review-20261007.zip",
+      "hold_path": "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\archive\\cleanup-hold-20261010\\gongwei-continuation-review-20261007.zip",
+      "bytes": 5865701
+    },
+    {
+      "path": "reports\\gongwei-deployed-review-20261007.zip",
+      "hold_path": "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\archive\\cleanup-hold-20261010\\gongwei-deployed-review-20261007.zip",
+      "bytes": 1216122
+    },
+    {
+      "path": "reports\\gongwei-discovery-continuation-review-20261007.zip",
+      "hold_path": "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\archive\\cleanup-hold-20261010\\gongwei-discovery-continuation-review-20261007.zip",
+      "bytes": 6312870
+    },
+    {
+      "path": "reports\\gongwei-experience-review-20261007.zip",
+      "hold_path": "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\archive\\cleanup-hold-20261010\\gongwei-experience-review-20261007.zip",
+      "bytes": 5434238
+    },
+    {
+      "path": "reports\\gongwei-final-flow-review-20261008.zip",
+      "hold_path": "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\archive\\cleanup-hold-20261010\\gongwei-final-flow-review-20261008.zip",
+      "bytes": 11362221
+    },
+    {
+      "path": "reports\\gongwei-homepage-continuation-review-20261007.zip",
+      "hold_path": "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\archive\\cleanup-hold-20261010\\gongwei-homepage-continuation-review-20261007.zip",
+      "bytes": 6420871
+    },
+    {
+      "path": "reports\\gongwei-maintenance-review-20261007.zip",
+      "hold_path": "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\archive\\cleanup-hold-20261010\\gongwei-maintenance-review-20261007.zip",
+      "bytes": 881893
+    },
+    {
+      "path": "reports\\gongwei-precision-final-review-20261008.zip",
+      "hold_path": "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\archive\\cleanup-hold-20261010\\gongwei-precision-final-review-20261008.zip",
+      "bytes": 11115707
+    }
+  ],
+  "moved_python_caches": [
+    {
+      "path": "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\__pycache__",
+      "hold_path": "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\archive\\cleanup-hold-20261010\\python-cache\\__pycache__"
+    },
+    {
+      "path": "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\deploy\\__pycache__",
+      "hold_path": "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\archive\\cleanup-hold-20261010\\python-cache\\deploy____pycache__"
+    },
+    {
+      "path": "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\scripts\\__pycache__",
+      "hold_path": "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\archive\\cleanup-hold-20261010\\python-cache\\scripts____pycache__"
+    }
+  ],
+  "preserved": [
+    "reports\\platform-closeout-20261009\\",
+    "reports\\gongwei-platform-closeout-review-20261009.zip",
+    "archive\\evidence-before-cleanup-20261007.zip",
+    "source files and tests",
+    "data and models",
+    "secrets and certificates",
+    "SQLite databases",
+    "deploy and systemd configuration",
+    "logs and formal evidence"
+  ],
+  "reason": "Reversible cleanup: generated process artifacts moved to ignored cleanup hold; credentials, databases, deployment configs and formal evidence preserved.",
+  "post_test_cache_cleanup": {
+    "count": 2,
+    "hold_path": "archive/cleanup-hold-20261010/python-cache-post-tests"
+  },
+  "post_package_cache_cleanup": {
+    "count": 1,
+    "hold_path": "archive/cleanup-hold-20261010/python-cache-post-package"
+  },
+  "current_run_breakdown": {
+    "stale_review_archives": 8,
+    "project_python_cache_dirs": 8
+  },
+  "cache_cleanup_passes": [
+    "initial",
+    "post-test",
+    "post-package",
+    "final-package-rebuild"
+  ]
+}

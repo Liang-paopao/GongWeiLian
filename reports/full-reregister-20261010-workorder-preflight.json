@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-10-10T15:16:07.428559+00:00",
+  "role": "workorder",
+  "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+  "broker": "amqps://wt.ioa.pub:5671",
+  "auth_service_url": "https://wt.ioa.pub:9007",
+  "sdk_vhost": "acps",
+  "identity_binding_enabled": true,
+  "platform_verified": false,
+  "amqps_and_inbox": "PASS"
+}

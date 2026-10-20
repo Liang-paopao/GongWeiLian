@@ -1,0 +1,4243 @@
+{
+  "checked_at": "2026-10-08T19:59:47.845505+00:00",
+  "boot_id": "6d3e165f-9b6a-445d-9d0b-f10b0e242564",
+  "own_services": {
+    "web": {
+      "MainPID": "907",
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled"
+    },
+    "resource": {
+      "MainPID": "905",
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled"
+    },
+    "workorder": {
+      "MainPID": "910",
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled"
+    },
+    "audio": {
+      "MainPID": "900",
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled"
+    },
+    "leader": {
+      "MainPID": "12399",
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled"
+    },
+    "resource-inbox": {
+      "MainPID": "904",
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled"
+    },
+    "workorder-inbox": {
+      "MainPID": "908",
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled"
+    },
+    "amp-heartbeat": {
+      "MainPID": "899",
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled"
+    },
+    "amp-metadata": {
+      "MainPID": "909",
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled"
+    }
+  },
+  "other_services": {
+    "nginx": {
+      "MainPID": "1006",
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled"
+    },
+    "mysql": {
+      "MainPID": "1367",
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled"
+    },
+    "postgresql": {
+      "MainPID": "0",
+      "ActiveState": "active",
+      "SubState": "exited",
+      "UnitFileState": "enabled"
+    },
+    "php8.3-fpm": {
+      "MainPID": "920",
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled"
+    },
+    "pm2-ubuntu": {
+      "MainPID": "1526",
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled"
+    },
+    "gaokao-backend": {
+      "MainPID": "1514",
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled"
+    },
+    "gaokao-frontend": {
+      "MainPID": "898",
+      "ActiveState": "active",
+      "SubState": "running",
+      "UnitFileState": "enabled"
+    }
+  },
+  "platform_verified": false,
+  "business": {
+    "integrity": "ok",
+    "orders": [
+      {
+        "id": "wo-63d7edf6-f338-4646-99ef-f1e42e2d0aa0",
+        "number": "WO-20261007-89643E",
+        "status": "cancelled",
+        "plan_id": "plan-7bc2f92e-d103-45ec-afac-60d5b00f9891",
+        "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0"
+      },
+      {
+        "id": "wo-5fbb7dc9-5e74-4bf0-ad19-9852a9ff1e02",
+        "number": "WO-20261007-8DC4AC",
+        "status": "cancelled",
+        "plan_id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145",
+        "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9"
+      },
+      {
+        "id": "wo-c1f828d2-bb50-440f-bdc0-04d90fdc3c40",
+        "number": "WO-20261008-3D7B9C",
+        "status": "completed",
+        "plan_id": "plan-febb7dbd-0d2b-4439-a87e-a17835c156dc",
+        "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32"
+      },
+      {
+        "id": "wo-0883dc0e-00fa-462a-9fe4-45053fd85c58",
+        "number": "WO-20261008-1C8738",
+        "status": "cancelled",
+        "plan_id": "plan-3fa64ada-6fb7-42c3-9b6e-2a5592c81ab2",
+        "request_id": "req-acf860e1-5767-411b-913c-fbab04cb9a4e"
+      },
+      {
+        "id": "wo-ac98972b-6494-43f0-b479-258c9a519179",
+        "number": "WO-20261009-A1044F",
+        "status": "confirmed",
+        "plan_id": "plan-4a88c9f9-ab75-4361-9a8c-90ec0d67805a",
+        "request_id": "req-f1c1f18e-75ed-4502-ad20-343ef03f0ce1"
+      }
+    ],
+    "reservation_counts": {
+      "active": 3,
+      "consumed": 1,
+      "released": 11
+    },
+    "inventory": [
+      {
+        "id": "tool-inspection-kit",
+        "category": "tool",
+        "available_qty": 1,
+        "total_qty": 2
+      },
+      {
+        "id": "tool-vibration-meter",
+        "category": "tool",
+        "available_qty": 1,
+        "total_qty": 1
+      },
+      {
+        "id": "part-seal-ring",
+        "category": "part",
+        "available_qty": 3,
+        "total_qty": 5
+      },
+      {
+        "id": "part-gasket",
+        "category": "part",
+        "available_qty": 8,
+        "total_qty": 8
+      },
+      {
+        "id": "tool-lockout-tag",
+        "category": "tool",
+        "available_qty": 3,
+        "total_qty": 3
+      }
+    ]
+  },
+  "amqps_connections": [
+    "ESTAB      0      0      10.3.0.6:60420   49.232.42.120:5671  users:((\"python\",pid=12399,fd=9))                      ",
+    "ESTAB      0      0      10.3.0.6:46862   49.232.42.120:5671  users:((\"python\",pid=908,fd=7))                        ",
+    "ESTAB      0      0      10.3.0.6:46872   49.232.42.120:5671  users:((\"python\",pid=904,fd=7))                        "
+  ],
+  "inbox_events": {
+    "leader": [
+      "2026-10-09 01:35:30,484 INFO acps_sdk.aip.aip_group_leader event=partner_invite_route_selected session_id=public-continue-cc0b467dc108-session partner=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA route=inbox inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "2026-10-09 01:35:30,816 INFO acps_sdk.aip.aip_group_leader event=partner_invite_inbox_sent group_id=group-public-continue-cc0b467dc108-session partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "2026-10-09 01:35:32,501 INFO acps_sdk.aip.aip_group_leader event=partner_invited session_id=public-continue-cc0b467dc108-session partner=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA route=inbox",
+      "2026-10-09 01:35:32,501 INFO acps_sdk.aip.aip_group_leader event=partner_invite_route_selected session_id=public-continue-cc0b467dc108-session partner=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF route=inbox inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "2026-10-09 01:35:34,032 INFO acps_sdk.aip.aip_group_leader event=partner_invite_inbox_sent group_id=group-public-continue-cc0b467dc108-session partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "2026-10-09 01:35:35,026 INFO acps_sdk.aip.aip_group_leader event=partner_invited session_id=public-continue-cc0b467dc108-session partner=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF route=inbox",
+      "2026-10-09 01:45:49,342 INFO acps_sdk.aip.aip_group_leader event=partner_invite_route_selected session_id=public-continue-43a8de6e6435-session partner=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA route=inbox inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "2026-10-09 01:45:49,683 INFO acps_sdk.aip.aip_group_leader event=partner_invite_inbox_sent group_id=group-public-continue-43a8de6e6435-session partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "2026-10-09 01:45:51,949 INFO acps_sdk.aip.aip_group_leader event=partner_invited session_id=public-continue-43a8de6e6435-session partner=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA route=inbox",
+      "2026-10-09 01:45:51,949 INFO acps_sdk.aip.aip_group_leader event=partner_invite_route_selected session_id=public-continue-43a8de6e6435-session partner=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF route=inbox inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "2026-10-09 01:45:52,287 INFO acps_sdk.aip.aip_group_leader event=partner_invite_inbox_sent group_id=group-public-continue-43a8de6e6435-session partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "2026-10-09 01:45:53,675 INFO acps_sdk.aip.aip_group_leader event=partner_invited session_id=public-continue-43a8de6e6435-session partner=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF route=inbox",
+      "2026-10-09 01:57:08,594 INFO acps_sdk.aip.aip_group_leader event=partner_invite_route_selected session_id=public-continue-28776fa98d93-session partner=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA route=inbox inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "2026-10-09 01:57:09,589 INFO acps_sdk.aip.aip_group_leader event=partner_invite_inbox_sent group_id=group-public-continue-28776fa98d93-session partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "2026-10-09 01:57:10,981 INFO acps_sdk.aip.aip_group_leader event=partner_invited session_id=public-continue-28776fa98d93-session partner=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA route=inbox",
+      "2026-10-09 01:57:10,981 INFO acps_sdk.aip.aip_group_leader event=partner_invite_route_selected session_id=public-continue-28776fa98d93-session partner=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF route=inbox inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "2026-10-09 01:57:11,330 INFO acps_sdk.aip.aip_group_leader event=partner_invite_inbox_sent group_id=group-public-continue-28776fa98d93-session partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "2026-10-09 01:57:16,018 INFO acps_sdk.aip.aip_group_leader event=partner_invited session_id=public-continue-28776fa98d93-session partner=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF route=inbox",
+      "2026-10-09 01:59:54,204 INFO acps_sdk.aip.aip_group_leader event=partner_invite_route_selected session_id=session_1841 partner=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA route=inbox inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "2026-10-09 01:59:54,556 INFO acps_sdk.aip.aip_group_leader event=partner_invite_inbox_sent group_id=group-session-1841 partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "2026-10-09 01:59:56,113 INFO acps_sdk.aip.aip_group_leader event=partner_invited session_id=session_1841 partner=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA route=inbox",
+      "2026-10-09 01:59:56,113 INFO acps_sdk.aip.aip_group_leader event=partner_invite_route_selected session_id=session_1841 partner=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF route=inbox inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "2026-10-09 01:59:56,459 INFO acps_sdk.aip.aip_group_leader event=partner_invite_inbox_sent group_id=group-session-1841 partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "2026-10-09 02:00:00,288 INFO acps_sdk.aip.aip_group_leader event=partner_invited session_id=session_1841 partner=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF route=inbox",
+      "2026-10-09 02:15:54,965 INFO acps_sdk.aip.aip_group_leader event=partner_invite_route_selected session_id=session_1842 partner=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA route=inbox inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "2026-10-09 02:15:55,319 INFO acps_sdk.aip.aip_group_leader event=partner_invite_inbox_sent group_id=group-session-1842 partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "2026-10-09 02:15:59,493 INFO acps_sdk.aip.aip_group_leader event=partner_invited session_id=session_1842 partner=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA route=inbox",
+      "2026-10-09 02:15:59,494 INFO acps_sdk.aip.aip_group_leader event=partner_invite_route_selected session_id=session_1842 partner=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF route=inbox inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "2026-10-09 02:15:59,844 INFO acps_sdk.aip.aip_group_leader event=partner_invite_inbox_sent group_id=group-session-1842 partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "2026-10-09 02:16:01,588 INFO acps_sdk.aip.aip_group_leader event=partner_invited session_id=session_1842 partner=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF route=inbox"
+    ],
+    "resource-inbox": [
+      "Started gongwei-resource-inbox.service - Gongwei official resource MQ Inbox.",
+      "2026-10-09 01:32:19,380 INFO __main__ event=partner_inbox_start role=resource aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "2026-10-09 01:32:20,668 INFO acps_sdk.aip.group_partner event=partner_inbox_queue_ready partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA queue=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA expires_ms=5184000000 message_ttl_ms=604800000",
+      "2026-10-09 01:32:20,669 INFO acps_sdk.aip.group_partner event=partner_inbox_consumer_start partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA queue=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "2026-10-09 01:32:20,754 INFO __main__ event=partner_inbox_listening role=resource aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "2026-10-09 01:33:33,717 INFO acps_sdk.aip.group_partner event=partner_inbox_invitation_received partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-public-continue-4bf5aadcb0ef-session leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:33:33,717 INFO acps_sdk.aip.group_partner event=partner_invitation_processing partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-public-continue-4bf5aadcb0ef-session route=inbox",
+      "2026-10-09 01:33:33,717 INFO __main__ event=partner_inbox_invitation_received role=resource group_id=group-public-continue-4bf5aadcb0ef-session leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:33:36,150 INFO acps_sdk.aip.group_partner event=partner_invitation_accepted partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-public-continue-4bf5aadcb0ef-session route=inbox",
+      "2026-10-09 01:35:30,784 INFO acps_sdk.aip.group_partner event=partner_inbox_invitation_received partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-public-continue-cc0b467dc108-session leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:35:30,784 INFO acps_sdk.aip.group_partner event=partner_invitation_processing partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-public-continue-cc0b467dc108-session route=inbox",
+      "2026-10-09 01:35:30,784 INFO __main__ event=partner_inbox_invitation_received role=resource group_id=group-public-continue-cc0b467dc108-session leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:35:32,504 INFO acps_sdk.aip.group_partner event=partner_invitation_accepted partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-public-continue-cc0b467dc108-session route=inbox",
+      "2026-10-09 01:45:49,651 INFO acps_sdk.aip.group_partner event=partner_inbox_invitation_received partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-public-continue-43a8de6e6435-session leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:45:49,651 INFO acps_sdk.aip.group_partner event=partner_invitation_processing partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-public-continue-43a8de6e6435-session route=inbox",
+      "2026-10-09 01:45:49,651 INFO __main__ event=partner_inbox_invitation_received role=resource group_id=group-public-continue-43a8de6e6435-session leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:45:51,446 INFO acps_sdk.aip.group_partner event=partner_invitation_accepted partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-public-continue-43a8de6e6435-session route=inbox",
+      "2026-10-09 01:57:09,255 INFO acps_sdk.aip.group_partner event=partner_inbox_invitation_received partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-public-continue-28776fa98d93-session leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:57:09,255 INFO acps_sdk.aip.group_partner event=partner_invitation_processing partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-public-continue-28776fa98d93-session route=inbox",
+      "2026-10-09 01:57:09,255 INFO __main__ event=partner_inbox_invitation_received role=resource group_id=group-public-continue-28776fa98d93-session leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:57:10,982 INFO acps_sdk.aip.group_partner event=partner_invitation_accepted partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-public-continue-28776fa98d93-session route=inbox",
+      "2026-10-09 01:59:54,535 INFO acps_sdk.aip.group_partner event=partner_inbox_invitation_received partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-session-1841 leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:59:54,535 INFO acps_sdk.aip.group_partner event=partner_invitation_processing partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-session-1841 route=inbox",
+      "2026-10-09 01:59:54,535 INFO __main__ event=partner_inbox_invitation_received role=resource group_id=group-session-1841 leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:59:56,113 INFO acps_sdk.aip.group_partner event=partner_invitation_accepted partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-session-1841 route=inbox",
+      "2026-10-09 02:15:55,312 INFO acps_sdk.aip.group_partner event=partner_inbox_invitation_received partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-session-1842 leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 02:15:55,312 INFO acps_sdk.aip.group_partner event=partner_invitation_processing partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-session-1842 route=inbox",
+      "2026-10-09 02:15:55,312 INFO __main__ event=partner_inbox_invitation_received role=resource group_id=group-session-1842 leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 02:15:59,168 INFO acps_sdk.aip.group_partner event=partner_invitation_accepted partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-session-1842 route=inbox"
+    ],
+    "workorder-inbox": [
+      "Started gongwei-workorder-inbox.service - Gongwei official workorder MQ Inbox.",
+      "2026-10-09 01:32:19,373 INFO __main__ event=partner_inbox_start role=workorder aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "2026-10-09 01:32:20,686 INFO acps_sdk.aip.group_partner event=partner_inbox_queue_ready partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF queue=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF expires_ms=5184000000 message_ttl_ms=604800000",
+      "2026-10-09 01:32:20,687 INFO acps_sdk.aip.group_partner event=partner_inbox_consumer_start partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF queue=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "2026-10-09 01:32:20,780 INFO __main__ event=partner_inbox_listening role=workorder aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "2026-10-09 01:33:36,452 INFO acps_sdk.aip.group_partner event=partner_inbox_invitation_received partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-public-continue-4bf5aadcb0ef-session leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:33:36,452 INFO acps_sdk.aip.group_partner event=partner_invitation_processing partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-public-continue-4bf5aadcb0ef-session route=inbox",
+      "2026-10-09 01:33:36,452 INFO __main__ event=partner_inbox_invitation_received role=workorder group_id=group-public-continue-4bf5aadcb0ef-session leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:33:38,349 INFO acps_sdk.aip.group_partner event=partner_invitation_accepted partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-public-continue-4bf5aadcb0ef-session route=inbox",
+      "2026-10-09 01:35:34,003 INFO acps_sdk.aip.group_partner event=partner_inbox_invitation_received partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-public-continue-cc0b467dc108-session leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:35:34,003 INFO acps_sdk.aip.group_partner event=partner_invitation_processing partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-public-continue-cc0b467dc108-session route=inbox",
+      "2026-10-09 01:35:34,003 INFO __main__ event=partner_inbox_invitation_received role=workorder group_id=group-public-continue-cc0b467dc108-session leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:35:34,996 INFO acps_sdk.aip.group_partner event=partner_invitation_accepted partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-public-continue-cc0b467dc108-session route=inbox",
+      "2026-10-09 01:45:52,288 INFO acps_sdk.aip.group_partner event=partner_inbox_invitation_received partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-public-continue-43a8de6e6435-session leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:45:52,288 INFO acps_sdk.aip.group_partner event=partner_invitation_processing partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-public-continue-43a8de6e6435-session route=inbox",
+      "2026-10-09 01:45:52,288 INFO __main__ event=partner_inbox_invitation_received role=workorder group_id=group-public-continue-43a8de6e6435-session leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:45:53,649 INFO acps_sdk.aip.group_partner event=partner_invitation_accepted partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-public-continue-43a8de6e6435-session route=inbox",
+      "2026-10-09 01:57:11,297 INFO acps_sdk.aip.group_partner event=partner_inbox_invitation_received partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-public-continue-28776fa98d93-session leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:57:11,297 INFO acps_sdk.aip.group_partner event=partner_invitation_processing partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-public-continue-28776fa98d93-session route=inbox",
+      "2026-10-09 01:57:11,297 INFO __main__ event=partner_inbox_invitation_received role=workorder group_id=group-public-continue-28776fa98d93-session leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:57:16,018 INFO acps_sdk.aip.group_partner event=partner_invitation_accepted partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-public-continue-28776fa98d93-session route=inbox",
+      "2026-10-09 01:59:56,426 INFO acps_sdk.aip.group_partner event=partner_inbox_invitation_received partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-session-1841 leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 01:59:56,426 INFO acps_sdk.aip.group_partner event=partner_invitation_processing partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-session-1841 route=inbox",
+      "2026-10-09 01:59:56,426 INFO __main__ event=partner_inbox_invitation_received role=workorder group_id=group-session-1841 leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 02:00:00,288 INFO acps_sdk.aip.group_partner event=partner_invitation_accepted partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-session-1841 route=inbox",
+      "2026-10-09 02:15:59,845 INFO acps_sdk.aip.group_partner event=partner_inbox_invitation_received partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-session-1842 leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 02:15:59,845 INFO acps_sdk.aip.group_partner event=partner_invitation_processing partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-session-1842 route=inbox",
+      "2026-10-09 02:15:59,845 INFO __main__ event=partner_inbox_invitation_received role=workorder group_id=group-session-1842 leader_aic=1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "2026-10-09 02:16:01,823 INFO acps_sdk.aip.group_partner event=partner_invitation_accepted partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-session-1842 route=inbox"
+    ]
+  },
+  "metadata_ack_events": [
+    {
+      "log_type": "access",
+      "log_id": "3eb3bc34-2f59-4540-8f6e-b9f632abf105",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5753
+    },
+    {
+      "log_type": "access",
+      "log_id": "f322db54-47e4-4144-ad35-1da333154a9d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5754
+    },
+    {
+      "log_type": "access",
+      "log_id": "09d15ed9-05c1-403a-8fee-3878ff335a07",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5755
+    },
+    {
+      "log_type": "access",
+      "log_id": "22ace4a8-2dae-40ab-9208-09f25f34f2b4",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5756
+    },
+    {
+      "log_type": "access",
+      "log_id": "4443e804-f063-483d-af6c-8958bd7c62d7",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5757
+    },
+    {
+      "log_type": "access",
+      "log_id": "c671ac23-02e7-42b5-acd8-3b6689d8b81b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5758
+    },
+    {
+      "log_type": "access",
+      "log_id": "95a47ce5-a62f-458c-a426-bba24e957b0a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5759
+    },
+    {
+      "log_type": "access",
+      "log_id": "c2cb7c38-c184-4c35-a9a8-0e9030f8ce2b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5760
+    },
+    {
+      "log_type": "access",
+      "log_id": "368d99f6-8569-4e4c-bf26-642cf9c73ba2",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5761
+    },
+    {
+      "log_type": "access",
+      "log_id": "75da4a20-d10a-4d37-a58a-cb884c43d941",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5762
+    },
+    {
+      "log_type": "access",
+      "log_id": "4dcd7cc0-3b48-4d0a-b932-12cf39cc3674",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5763
+    },
+    {
+      "log_type": "access",
+      "log_id": "677f46ac-351f-4b21-b2fc-601b70788e63",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5764
+    },
+    {
+      "log_type": "access",
+      "log_id": "1b7a4652-d8c6-4ef5-bd51-af75c22fe3b8",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5765
+    },
+    {
+      "log_type": "access",
+      "log_id": "7f9e50da-3e28-4499-835f-145c16ff0261",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5766
+    },
+    {
+      "log_type": "access",
+      "log_id": "cae33002-7e63-4b4e-a333-fbda28c8677b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5767
+    },
+    {
+      "log_type": "access",
+      "log_id": "568a104c-3209-42fc-9386-9596c8e799af",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5768
+    },
+    {
+      "log_type": "access",
+      "log_id": "91e694b8-08e7-4f0c-a1fa-b94ca4c4ee72",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5769
+    },
+    {
+      "log_type": "access",
+      "log_id": "1c180002-13ed-43fe-8813-02b88f79556c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5770
+    },
+    {
+      "log_type": "access",
+      "log_id": "057d9fb0-8170-41f4-bf5d-3ce6d06f6078",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5771
+    },
+    {
+      "log_type": "access",
+      "log_id": "68fd20ed-368c-4ecf-9e7f-6b1f6be6c539",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5772
+    },
+    {
+      "log_type": "access",
+      "log_id": "5e74f159-af2c-4250-a682-b55689491b62",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5773
+    },
+    {
+      "log_type": "access",
+      "log_id": "71e08bac-1b49-44e0-b8ad-bf295803e68b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5774
+    },
+    {
+      "log_type": "access",
+      "log_id": "3cc30aac-aeb6-4079-94a8-64c4d14f6b78",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5775
+    },
+    {
+      "log_type": "access",
+      "log_id": "f72eb856-c4b5-4695-8549-db4f66c23a7d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5776
+    },
+    {
+      "log_type": "access",
+      "log_id": "88755a4d-3c31-4996-8c15-4f965477c833",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5777
+    },
+    {
+      "log_type": "access",
+      "log_id": "dfa83b4c-18fa-4f2b-b463-def2db413882",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5778
+    },
+    {
+      "log_type": "access",
+      "log_id": "1f41cc58-c589-484a-8a51-34152be74ee5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5779
+    },
+    {
+      "log_type": "access",
+      "log_id": "a1a117a6-9c73-447b-9eb2-abc189b52d75",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5780
+    },
+    {
+      "log_type": "access",
+      "log_id": "08b15d16-5fe8-4aa3-9020-8bf87850dad3",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5781
+    },
+    {
+      "log_type": "access",
+      "log_id": "5e32c88f-be6f-43f1-88e6-b2fa619bdc53",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5782
+    },
+    {
+      "log_type": "access",
+      "log_id": "919a1ad5-fe7b-403b-a615-03ff8a1923ec",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5783
+    },
+    {
+      "log_type": "access",
+      "log_id": "990d0b9e-911a-443c-a1f9-d3a6ce80c3e3",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5784
+    },
+    {
+      "log_type": "access",
+      "log_id": "1c30f3d3-082a-48e3-ac1a-4d5c18e4822d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5785
+    },
+    {
+      "log_type": "access",
+      "log_id": "7689e4bb-abc1-484e-9457-88b16d2ec178",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5786
+    },
+    {
+      "log_type": "access",
+      "log_id": "2bcf7328-c441-49db-a6ca-974f62209e21",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5787
+    },
+    {
+      "log_type": "access",
+      "log_id": "ee0fff34-9b03-4ef1-9127-d1d3018ebdbe",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5788
+    },
+    {
+      "log_type": "access",
+      "log_id": "a7be1e69-d1fe-415d-8b47-1e689af26f23",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5789
+    },
+    {
+      "log_type": "access",
+      "log_id": "ded620f5-0125-4e20-baa3-bb02b85c5f48",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5790
+    },
+    {
+      "log_type": "access",
+      "log_id": "84f89dcb-d8d6-4a8f-933f-befc90b5bdc8",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5791
+    },
+    {
+      "log_type": "access",
+      "log_id": "e07810c4-41ee-4b82-9214-7aeb4cbf6950",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5792
+    },
+    {
+      "log_type": "access",
+      "log_id": "8b876417-cfc4-4ae5-9434-57de17840ca6",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5793
+    },
+    {
+      "log_type": "access",
+      "log_id": "00cf2db1-7f44-4cfc-a51f-f50e9e4a0b42",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5794
+    },
+    {
+      "log_type": "access",
+      "log_id": "168f9027-35b3-4766-848a-a2a98db1a29f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5795
+    },
+    {
+      "log_type": "access",
+      "log_id": "4b9e5ed1-8f4e-4100-87ba-32d37ac347ac",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5796
+    },
+    {
+      "log_type": "access",
+      "log_id": "69b8a8b4-41be-4854-a9c1-9623b139bdff",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5797
+    },
+    {
+      "log_type": "access",
+      "log_id": "e2871456-b316-4736-9af7-06b951b76983",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5798
+    },
+    {
+      "log_type": "access",
+      "log_id": "f0b8b3bf-b9b2-4b42-ad2b-c893c2c80510",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5799
+    },
+    {
+      "log_type": "access",
+      "log_id": "493ca5bc-d611-46c3-a616-c7615fce40f5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5800
+    },
+    {
+      "log_type": "access",
+      "log_id": "3a6ba8ae-4ad4-46f1-abb6-dc4ec456fa93",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5801
+    },
+    {
+      "log_type": "access",
+      "log_id": "62a26363-b28a-45a6-ba02-72e06654110f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5802
+    },
+    {
+      "log_type": "access",
+      "log_id": "69db2138-55d2-4719-a692-46c4b9d645cf",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5803
+    },
+    {
+      "log_type": "access",
+      "log_id": "a8aa40a8-55df-4eb8-8d37-dc026ea29cee",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5804
+    },
+    {
+      "log_type": "access",
+      "log_id": "80135af5-0474-48c9-8791-0f24a6675bfc",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5805
+    },
+    {
+      "log_type": "access",
+      "log_id": "a442ad79-9e16-41c1-8163-d872d7e7a092",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5806
+    },
+    {
+      "log_type": "access",
+      "log_id": "ee36bc3c-8688-4900-ab1b-c20bcd662e19",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5807
+    },
+    {
+      "log_type": "access",
+      "log_id": "789caff0-acd5-4ae3-a842-fe2ed97d4a57",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5808
+    },
+    {
+      "log_type": "access",
+      "log_id": "15e72918-f249-444b-973c-4b2a504c9681",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5809
+    },
+    {
+      "log_type": "access",
+      "log_id": "f3cfa07b-a507-406b-8ae7-0ff84e2b8d3d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5810
+    },
+    {
+      "log_type": "access",
+      "log_id": "71fc294f-4224-49b5-a040-a613c8efb79c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5811
+    },
+    {
+      "log_type": "access",
+      "log_id": "4c5a0de0-942f-4206-bfbf-1b9340cec637",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5812
+    },
+    {
+      "log_type": "access",
+      "log_id": "5406141a-a504-4c74-8e44-de8f16db3d43",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5813
+    },
+    {
+      "log_type": "access",
+      "log_id": "7000a0fd-9063-4dbe-817d-986a1f0fdab0",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5814
+    },
+    {
+      "log_type": "access",
+      "log_id": "d1311ff7-c0e4-48bb-9ec3-6354f8cb7b07",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5815
+    },
+    {
+      "log_type": "access",
+      "log_id": "3053153e-b8ce-46ee-adb7-9365c2fd03e5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5816
+    },
+    {
+      "log_type": "message",
+      "log_id": "a33cb9e0-ae9d-40d1-98fc-635777b462c9",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3108
+    },
+    {
+      "log_type": "message",
+      "log_id": "0527f379-7ce3-498c-9557-b850c26cafe6",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3109
+    },
+    {
+      "log_type": "message",
+      "log_id": "48b148f2-0540-44e7-a9ee-1e1e85bb09e6",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3110
+    },
+    {
+      "log_type": "message",
+      "log_id": "95e893b7-6122-4aa9-985e-bfb3d1ece61c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3111
+    },
+    {
+      "log_type": "message",
+      "log_id": "3a61ee50-4c76-44ca-81eb-c0aa3ee009b5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3112
+    },
+    {
+      "log_type": "message",
+      "log_id": "b51d72da-86a3-44e8-8099-9e2015fdd43a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3113
+    },
+    {
+      "log_type": "message",
+      "log_id": "3104074d-1a25-4df5-93ae-8cef0ceee819",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3114
+    },
+    {
+      "log_type": "message",
+      "log_id": "205988d8-479f-490b-93a2-cec31430812b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3115
+    },
+    {
+      "log_type": "message",
+      "log_id": "44805c1f-1cfd-4048-a156-75976e0b2882",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3116
+    },
+    {
+      "log_type": "message",
+      "log_id": "b41153fc-f2aa-4853-8d48-060ab56aa303",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3117
+    },
+    {
+      "log_type": "message",
+      "log_id": "6701f002-02ae-4881-a239-78545c7775e4",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3118
+    },
+    {
+      "log_type": "message",
+      "log_id": "456a67f8-795e-4d39-aed6-6e314797d1fe",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3119
+    },
+    {
+      "log_type": "message",
+      "log_id": "6d634829-982e-43f5-9fd5-dc7520d648ff",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3120
+    },
+    {
+      "log_type": "message",
+      "log_id": "c06fb81a-c479-48c1-b066-1d874c4260af",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2614
+    },
+    {
+      "log_type": "message",
+      "log_id": "69500f34-bbe2-4231-9b6a-70e8a0ddf3cb",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2615
+    },
+    {
+      "log_type": "message",
+      "log_id": "89118d1f-d0e6-4bfa-bd3e-614d87207e60",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2616
+    },
+    {
+      "log_type": "message",
+      "log_id": "6deba219-24e3-4ff6-baab-6ac95859b2a4",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2617
+    },
+    {
+      "log_type": "message",
+      "log_id": "431ccb28-5664-40d4-83d6-d5eb2af8e3d0",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2618
+    },
+    {
+      "log_type": "message",
+      "log_id": "27ac6419-1ecb-4304-aa7e-e39de4e545bd",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2619
+    },
+    {
+      "log_type": "message",
+      "log_id": "5c4dc0c4-7262-47a5-82e9-f62a8b1f643e",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2620
+    },
+    {
+      "log_type": "message",
+      "log_id": "af77e3de-a16c-468a-abc7-f41b36745aef",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2621
+    },
+    {
+      "log_type": "message",
+      "log_id": "43454f71-7bbb-4918-9697-34a051999eab",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2622
+    },
+    {
+      "log_type": "message",
+      "log_id": "84786617-1628-4f30-8dfb-7d4abeaec007",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2623
+    },
+    {
+      "log_type": "message",
+      "log_id": "127239fd-3a98-4960-86bd-6a6011669f93",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2624
+    },
+    {
+      "log_type": "message",
+      "log_id": "4c809441-5a0b-4cd4-981e-77f9dfc94a8b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2712
+    },
+    {
+      "log_type": "message",
+      "log_id": "0b1a8ae2-4c92-4106-a892-5c2feafe0970",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2713
+    },
+    {
+      "log_type": "message",
+      "log_id": "8be45480-a148-4021-b86a-e35ff10181ae",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2714
+    },
+    {
+      "log_type": "message",
+      "log_id": "d7a93b90-bd8b-46da-8e9f-b2213621ea88",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2715
+    },
+    {
+      "log_type": "message",
+      "log_id": "b90e1fee-04f7-4694-972f-7b0218fc6880",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2716
+    },
+    {
+      "log_type": "message",
+      "log_id": "21052b32-f866-4a51-bfba-c0b9a15c0bc1",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2717
+    },
+    {
+      "log_type": "access",
+      "log_id": "b5d8f002-2214-40c4-9db4-bbcc6997d374",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5817
+    },
+    {
+      "log_type": "access",
+      "log_id": "e4d37502-f29c-4374-8d72-bb317fdb3e6b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5818
+    },
+    {
+      "log_type": "access",
+      "log_id": "b0985068-6ae3-4970-8ed0-1577af7abcbb",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5819
+    },
+    {
+      "log_type": "access",
+      "log_id": "2c855528-9e01-4c46-b2fc-f1349cbe83e7",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5820
+    },
+    {
+      "log_type": "access",
+      "log_id": "c9396d15-c0bb-40a5-95a6-be57181e201d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5821
+    },
+    {
+      "log_type": "access",
+      "log_id": "73461e9d-ccf5-4e70-a959-dea4a64c84d0",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5822
+    },
+    {
+      "log_type": "access",
+      "log_id": "4b65c119-4b8d-4158-84c4-df73a0fc2d09",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5823
+    },
+    {
+      "log_type": "access",
+      "log_id": "5d26a2c3-ab5c-4db0-a89c-2451f1371c5d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5824
+    },
+    {
+      "log_type": "access",
+      "log_id": "e35ff4f0-fed5-4364-ac4f-67028635c640",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5825
+    },
+    {
+      "log_type": "access",
+      "log_id": "9158be52-24ff-44f5-a0a4-caa249101093",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5826
+    },
+    {
+      "log_type": "access",
+      "log_id": "ea0702a8-d8c9-4c33-b390-2590450199c8",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5827
+    },
+    {
+      "log_type": "access",
+      "log_id": "093d491c-1bdc-4fbb-bc70-f8daae80b010",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5828
+    },
+    {
+      "log_type": "access",
+      "log_id": "01cd6f61-880f-49d9-b177-4f8dd95ae87c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5829
+    },
+    {
+      "log_type": "access",
+      "log_id": "dacba111-edc9-4c4f-9dd3-68dc4a390298",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5830
+    },
+    {
+      "log_type": "access",
+      "log_id": "fd5c2938-15da-4cda-9522-b55c6d6751f3",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5831
+    },
+    {
+      "log_type": "access",
+      "log_id": "be1b58d8-6fd5-4413-bb7c-a67dd804fbcb",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5832
+    },
+    {
+      "log_type": "access",
+      "log_id": "e0cebebe-92b5-477a-b2d9-482ddb83bbd5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5833
+    },
+    {
+      "log_type": "access",
+      "log_id": "a1c34617-16a9-46c1-aaba-120bce45fe34",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5834
+    },
+    {
+      "log_type": "access",
+      "log_id": "d0346c16-cbb6-448f-95ba-666b2c6dc752",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5835
+    },
+    {
+      "log_type": "access",
+      "log_id": "df8f34ff-d6d5-4675-8417-914dc968aec6",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5836
+    },
+    {
+      "log_type": "access",
+      "log_id": "86296e23-17cd-4160-8cc7-b22eded39937",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5837
+    },
+    {
+      "log_type": "access",
+      "log_id": "56533bd8-9e6a-405d-8eb9-9d01df2fda7e",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5838
+    },
+    {
+      "log_type": "access",
+      "log_id": "6896695c-7555-48ee-aa09-98c58de03cad",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5839
+    },
+    {
+      "log_type": "access",
+      "log_id": "327cc1ec-9277-4414-b669-8ca93458ca3f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5840
+    },
+    {
+      "log_type": "access",
+      "log_id": "5b8bf0e8-9514-4895-be32-2deee15eb5eb",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5841
+    },
+    {
+      "log_type": "access",
+      "log_id": "746203ce-2267-481a-bca7-7055000ea0ab",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5842
+    },
+    {
+      "log_type": "access",
+      "log_id": "7e8566f4-ca21-42e9-959f-66ac329b7d11",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5843
+    },
+    {
+      "log_type": "access",
+      "log_id": "08676ec4-7de6-40e6-b3ed-82a61e2765b1",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5844
+    },
+    {
+      "log_type": "access",
+      "log_id": "94cb8036-e955-47dd-9ce9-9d381556fc04",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5845
+    },
+    {
+      "log_type": "access",
+      "log_id": "b6c362fb-ef16-477a-9d5b-29a1c5d7f6a7",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5846
+    },
+    {
+      "log_type": "access",
+      "log_id": "5167cc34-b287-43a5-9ac1-3bf1c1696346",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5847
+    },
+    {
+      "log_type": "access",
+      "log_id": "b8bd4868-1c83-4330-b541-33d9abd47ec5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5848
+    },
+    {
+      "log_type": "access",
+      "log_id": "48af9701-89dc-4023-a37d-057d7e38dca2",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5849
+    },
+    {
+      "log_type": "access",
+      "log_id": "df98e3d3-1620-45a6-bfd1-d92108ecfdb1",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5850
+    },
+    {
+      "log_type": "access",
+      "log_id": "57ccb819-8d69-410d-b2fe-309350159107",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5851
+    },
+    {
+      "log_type": "access",
+      "log_id": "1e896c78-0501-4ea5-934b-a0f5bcd6ef2b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5852
+    },
+    {
+      "log_type": "access",
+      "log_id": "247dd042-15af-4a56-b18e-c547d7b2e744",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5853
+    },
+    {
+      "log_type": "access",
+      "log_id": "988033b3-07d5-4fb9-bf68-365615fdb5f3",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5854
+    },
+    {
+      "log_type": "access",
+      "log_id": "778ce749-ab7c-485c-815b-f3762d084186",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5855
+    },
+    {
+      "log_type": "message",
+      "log_id": "ce66320f-13d2-470c-a405-5ef1546abad3",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3121
+    },
+    {
+      "log_type": "message",
+      "log_id": "37d28435-236d-4315-b622-601c1cb40922",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3122
+    },
+    {
+      "log_type": "message",
+      "log_id": "a8b648f4-8810-446c-8a95-4e7d08b9d316",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3123
+    },
+    {
+      "log_type": "message",
+      "log_id": "e91ddc34-aae2-461f-8885-095c9abee53f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3124
+    },
+    {
+      "log_type": "message",
+      "log_id": "d0591dd7-b830-44d0-8083-c30523ff1394",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3125
+    },
+    {
+      "log_type": "message",
+      "log_id": "4465bbb5-c70f-4bb7-a5a4-09b6568f27c9",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3126
+    },
+    {
+      "log_type": "message",
+      "log_id": "ae9eeb71-e2e1-4305-b232-54d0a7bc4877",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3127
+    },
+    {
+      "log_type": "message",
+      "log_id": "9b21f3f5-2c03-41b7-96b8-b2df726c316d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3128
+    },
+    {
+      "log_type": "message",
+      "log_id": "bcef50ac-5060-48b5-b502-30e2493d3297",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3129
+    },
+    {
+      "log_type": "message",
+      "log_id": "1c7cd207-b60d-4e56-b173-19be5533c0f9",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3130
+    },
+    {
+      "log_type": "message",
+      "log_id": "5a30a349-4e94-4e58-a27e-0ed096112ed8",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3131
+    },
+    {
+      "log_type": "message",
+      "log_id": "af82f9b1-a807-4669-ae61-c28b84a72564",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3132
+    },
+    {
+      "log_type": "message",
+      "log_id": "8dbbaa1d-c872-4b1e-9d54-3f82dca2050a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3133
+    },
+    {
+      "log_type": "message",
+      "log_id": "05126a19-c502-496c-b164-745aad56a4bf",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2625
+    },
+    {
+      "log_type": "message",
+      "log_id": "08fe0cc8-b77c-4430-97ed-35a849ebbcc1",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2626
+    },
+    {
+      "log_type": "message",
+      "log_id": "9f17d89c-34a9-48e8-b84e-7d01ba26480c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2627
+    },
+    {
+      "log_type": "message",
+      "log_id": "77d827f2-f354-4d40-90e7-e0b48ccdc977",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2628
+    },
+    {
+      "log_type": "message",
+      "log_id": "f8a6a4c7-1482-4c7e-9726-738dd61ff3d0",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2629
+    },
+    {
+      "log_type": "message",
+      "log_id": "ecc66a6d-da22-4b90-8eee-2c4fa96e4af5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2630
+    },
+    {
+      "log_type": "message",
+      "log_id": "cca16206-717e-4c0e-899d-7a4999089509",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2631
+    },
+    {
+      "log_type": "message",
+      "log_id": "1a7621a3-c84e-4093-a4cb-40090e14dff6",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2632
+    },
+    {
+      "log_type": "message",
+      "log_id": "596ad6fe-b06d-427e-ab18-b781e20fe212",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2633
+    },
+    {
+      "log_type": "message",
+      "log_id": "5408df40-f8c2-4557-ba20-c8b8df73c9e2",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2634
+    },
+    {
+      "log_type": "message",
+      "log_id": "b7d06ee5-c97a-4729-be2e-009a246c7a89",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2635
+    },
+    {
+      "log_type": "message",
+      "log_id": "da405d05-209a-4c35-80e6-10f0d319e723",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2718
+    },
+    {
+      "log_type": "message",
+      "log_id": "2ef84484-2e00-40b2-af95-8b88ec506c3e",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2719
+    },
+    {
+      "log_type": "message",
+      "log_id": "7cea96bf-e8aa-4fdb-a91e-878ed3cffa4f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2720
+    },
+    {
+      "log_type": "message",
+      "log_id": "06043310-192c-401a-b436-c310de493ddf",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2721
+    },
+    {
+      "log_type": "message",
+      "log_id": "886984e2-efc9-4fc0-a4dc-25138f23ea58",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2722
+    },
+    {
+      "log_type": "message",
+      "log_id": "0d922ba6-7f90-4eca-9804-dc90573b70c4",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2723
+    },
+    {
+      "log_type": "access",
+      "log_id": "d2af7a46-1405-426a-a3cb-710f5c65cc01",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5856
+    },
+    {
+      "log_type": "access",
+      "log_id": "200747ea-4cd8-4b5a-8296-c8c2fa9c15b4",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5857
+    },
+    {
+      "log_type": "access",
+      "log_id": "cb844805-33be-4f2a-aec3-0094952caffd",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5858
+    },
+    {
+      "log_type": "access",
+      "log_id": "d8527064-b595-4d1e-832e-9f9811ce55cc",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5859
+    },
+    {
+      "log_type": "access",
+      "log_id": "48902be2-b967-4366-ad64-716da6e70548",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5860
+    },
+    {
+      "log_type": "access",
+      "log_id": "61b449e0-7b0b-4b19-bb44-5793048f6bca",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5861
+    },
+    {
+      "log_type": "access",
+      "log_id": "a4feed7a-c0fb-4dc9-8594-b35878356264",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5862
+    },
+    {
+      "log_type": "access",
+      "log_id": "25c5fc03-73f1-4337-a6dd-533595293c41",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5863
+    },
+    {
+      "log_type": "access",
+      "log_id": "fb75a382-0513-447e-84d7-1c1ce584f2ed",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5864
+    },
+    {
+      "log_type": "access",
+      "log_id": "1d63fd5d-5548-4042-b985-c9fdf19989e5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5865
+    },
+    {
+      "log_type": "access",
+      "log_id": "283e76d3-4f7b-46eb-94af-1ad27b9e5efe",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5866
+    },
+    {
+      "log_type": "access",
+      "log_id": "80753f0f-64a9-41d5-83ba-78cb529cb6a3",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5867
+    },
+    {
+      "log_type": "access",
+      "log_id": "7529c50c-aebf-476b-aa4a-9bccb3390fef",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5868
+    },
+    {
+      "log_type": "access",
+      "log_id": "02dee174-5d99-4db2-a4b1-ba24d4f9275c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5869
+    },
+    {
+      "log_type": "access",
+      "log_id": "e39a3e38-aa8b-43f1-b8c0-cead46d5b97f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5870
+    },
+    {
+      "log_type": "access",
+      "log_id": "217b75d9-de48-4b68-95d3-6ae2fd8db44f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5871
+    },
+    {
+      "log_type": "access",
+      "log_id": "e5dfc425-7775-46a3-b44d-85246c298c0d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5872
+    },
+    {
+      "log_type": "access",
+      "log_id": "8e60a0f5-b99a-426a-9f3b-74bc1e1596de",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5873
+    },
+    {
+      "log_type": "access",
+      "log_id": "15a9f14e-acd4-4499-959c-5d671146f453",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5874
+    },
+    {
+      "log_type": "access",
+      "log_id": "6e675e82-6433-421c-b891-373fb8169f57",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5875
+    },
+    {
+      "log_type": "access",
+      "log_id": "4141b426-d1cb-4816-aa15-7a51ae598e3c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5876
+    },
+    {
+      "log_type": "access",
+      "log_id": "c911e648-8ca7-4468-9db9-d3ca5d696219",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5877
+    },
+    {
+      "log_type": "access",
+      "log_id": "ca503a26-c918-4460-ba84-a3c09818b5ba",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5878
+    },
+    {
+      "log_type": "access",
+      "log_id": "de46fa84-68ef-49df-b4f7-c3aad3e66847",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5879
+    },
+    {
+      "log_type": "access",
+      "log_id": "f7f059a0-e51e-4623-97d8-cc95d40b6306",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5880
+    },
+    {
+      "log_type": "access",
+      "log_id": "7c72bb96-21d6-4373-926b-f82ae80df84d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5881
+    },
+    {
+      "log_type": "access",
+      "log_id": "df4405a9-eabd-408a-b7c8-90eaf0fecf63",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5882
+    },
+    {
+      "log_type": "access",
+      "log_id": "d17cb293-edab-44f6-9ecd-417477b7e1d5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5883
+    },
+    {
+      "log_type": "access",
+      "log_id": "1679242d-3d5d-4f61-99d7-122767f0c336",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5884
+    },
+    {
+      "log_type": "access",
+      "log_id": "f04ba155-d3e6-4256-a73c-311bfc7a0064",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5885
+    },
+    {
+      "log_type": "access",
+      "log_id": "97e39c69-de95-4529-ac84-5cfd6f7d72af",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5886
+    },
+    {
+      "log_type": "access",
+      "log_id": "426ea0f0-7f9a-4a68-9a23-16fe525588c2",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5887
+    },
+    {
+      "log_type": "access",
+      "log_id": "17985523-8bbe-4a85-9d8f-7d8e40042484",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5888
+    },
+    {
+      "log_type": "access",
+      "log_id": "05adbb76-4029-47ba-8d38-324b551ae004",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5889
+    },
+    {
+      "log_type": "access",
+      "log_id": "e0e221ba-e446-4cf2-9ad9-7731a70feae2",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5890
+    },
+    {
+      "log_type": "access",
+      "log_id": "f1eb0ce2-a4d5-4ebe-823e-b3e9b321b9a7",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5891
+    },
+    {
+      "log_type": "message",
+      "log_id": "a13eed64-e14f-440b-a86a-3f65803bb207",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3134
+    },
+    {
+      "log_type": "message",
+      "log_id": "15515536-49c2-44d1-9ed9-f941e6ba308c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3135
+    },
+    {
+      "log_type": "message",
+      "log_id": "9ebbf841-b730-4bc9-be38-fa262abb279e",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3136
+    },
+    {
+      "log_type": "message",
+      "log_id": "d7648417-bb74-4b29-948b-fbfefae9a795",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3137
+    },
+    {
+      "log_type": "message",
+      "log_id": "5687120d-0976-434e-8a2c-44a740dc8953",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3138
+    },
+    {
+      "log_type": "message",
+      "log_id": "2d6aecd8-05ca-4ac7-beb5-acc17dbb57af",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3139
+    },
+    {
+      "log_type": "message",
+      "log_id": "7eddecba-2a75-42be-8b02-3d4ba501ce9b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3140
+    },
+    {
+      "log_type": "message",
+      "log_id": "415733e4-95ab-49fd-a239-4b8948fc17d8",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3141
+    },
+    {
+      "log_type": "message",
+      "log_id": "cf7c2016-8b9a-4f55-813c-dbad2f48902f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3142
+    },
+    {
+      "log_type": "message",
+      "log_id": "29b190fe-1f56-46f4-a22e-87e98914d6cd",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3143
+    },
+    {
+      "log_type": "message",
+      "log_id": "696dc838-a684-42c4-a22b-71e269a6633a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3144
+    },
+    {
+      "log_type": "message",
+      "log_id": "bf52899c-161b-4a58-b4fb-4e92c630b75c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3145
+    },
+    {
+      "log_type": "message",
+      "log_id": "5c801aa1-e1b2-4389-8e49-bb39dc5a1a39",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3146
+    },
+    {
+      "log_type": "message",
+      "log_id": "1a9dbe82-e6ad-45c3-bfaa-2b6a2d4684f4",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3147
+    },
+    {
+      "log_type": "message",
+      "log_id": "9f61027b-bfee-4785-9928-873c317b1285",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3148
+    },
+    {
+      "log_type": "message",
+      "log_id": "4b92f8f5-7aa9-4ff5-abb3-916e573c3cf3",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3149
+    },
+    {
+      "log_type": "message",
+      "log_id": "c942ba39-96f5-4276-95df-5df6e5397b4e",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3150
+    },
+    {
+      "log_type": "message",
+      "log_id": "9730bcc3-2d5c-4fee-8225-32fabcbf982c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3151
+    },
+    {
+      "log_type": "message",
+      "log_id": "cc5b008f-0466-4166-a8e8-5cbbbc7e7f5b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3152
+    },
+    {
+      "log_type": "message",
+      "log_id": "c6cb7517-5102-4607-8b3c-f5f1d2598bf1",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3153
+    },
+    {
+      "log_type": "message",
+      "log_id": "6d04dc4a-7950-4532-9c5b-5cecf0bc9c19",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3154
+    },
+    {
+      "log_type": "message",
+      "log_id": "29254d0e-5832-47a5-80fd-93e7d96d0f99",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3155
+    },
+    {
+      "log_type": "message",
+      "log_id": "706fe0db-cb51-4995-8819-a84c08530049",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3156
+    },
+    {
+      "log_type": "message",
+      "log_id": "1c7817ce-f670-40e6-a22a-7902ab07fc2a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3157
+    },
+    {
+      "log_type": "message",
+      "log_id": "3210069a-7308-4389-8f84-26d0570ef43a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3158
+    },
+    {
+      "log_type": "message",
+      "log_id": "090eecad-2192-4c94-a3c2-abcf2112b9ed",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3159
+    },
+    {
+      "log_type": "message",
+      "log_id": "bdf69cfc-4759-427f-959b-62d205f380fa",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2636
+    },
+    {
+      "log_type": "message",
+      "log_id": "56171917-d7dc-41f0-89ae-21f580ad270f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2637
+    },
+    {
+      "log_type": "message",
+      "log_id": "5c8cb94b-2d18-4abf-943e-4231affcd6a3",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2638
+    },
+    {
+      "log_type": "message",
+      "log_id": "1a9e2cfa-4ae2-43a7-938e-ef19137b65ac",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2639
+    },
+    {
+      "log_type": "message",
+      "log_id": "749d442f-ec07-40eb-924c-39dffd6a5a38",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2640
+    },
+    {
+      "log_type": "message",
+      "log_id": "6e920466-24a6-432e-bcd2-b20cb5bc9434",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2641
+    },
+    {
+      "log_type": "message",
+      "log_id": "bbc605fe-0a57-4ba4-be98-91217a45b74c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2642
+    },
+    {
+      "log_type": "message",
+      "log_id": "20d6dfa1-8841-46d6-9356-2de46a13d787",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2643
+    },
+    {
+      "log_type": "message",
+      "log_id": "2f3b192e-1267-4883-aee6-0fedddadf43a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2644
+    },
+    {
+      "log_type": "message",
+      "log_id": "5412ac24-941a-43a0-9a90-23eaa3725746",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2645
+    },
+    {
+      "log_type": "message",
+      "log_id": "05cc1bb1-5e65-4257-bdb2-9934c22b4bb5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2646
+    },
+    {
+      "log_type": "message",
+      "log_id": "72526a23-715a-475b-a31d-5a5dbd95b417",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2647
+    },
+    {
+      "log_type": "message",
+      "log_id": "50693e58-60f4-4f66-b36c-5b9b993bf7de",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2648
+    },
+    {
+      "log_type": "message",
+      "log_id": "72a1008f-b1cf-41e2-bba1-41300bcf4b47",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2649
+    },
+    {
+      "log_type": "message",
+      "log_id": "7f66caaf-e84b-4d68-8c8e-08382c3aa19f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2650
+    },
+    {
+      "log_type": "message",
+      "log_id": "501b03a7-b840-4f1a-b41c-1f87bcf71cdb",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2651
+    },
+    {
+      "log_type": "message",
+      "log_id": "932163b9-1d81-480e-82c4-c5ed95cefe33",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2652
+    },
+    {
+      "log_type": "message",
+      "log_id": "d1dfb6e7-c9e4-4cd0-b8c4-91e4022907c8",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2653
+    },
+    {
+      "log_type": "message",
+      "log_id": "1fd4bbe1-72b3-4e74-9444-5250b3f130f5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2654
+    },
+    {
+      "log_type": "message",
+      "log_id": "051a474d-3d29-4094-9c89-2ff471ff4e4d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2655
+    },
+    {
+      "log_type": "message",
+      "log_id": "874cd87a-ef19-4e05-ad95-620f5108566d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2656
+    },
+    {
+      "log_type": "message",
+      "log_id": "8be234a3-7719-417e-a289-4faa5514b950",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2657
+    },
+    {
+      "log_type": "message",
+      "log_id": "424f64e6-a15d-489b-a78a-8a1eba319965",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2724
+    },
+    {
+      "log_type": "message",
+      "log_id": "fc6d828f-e442-4802-848d-cade53d54382",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2725
+    },
+    {
+      "log_type": "message",
+      "log_id": "2c1d18ec-3564-472b-8631-42893aa5ca71",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2726
+    },
+    {
+      "log_type": "message",
+      "log_id": "851d9b00-c016-46d1-825b-21805f193968",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2727
+    },
+    {
+      "log_type": "message",
+      "log_id": "87956b0f-cb07-453a-95b8-61f89eaf3e4f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2728
+    },
+    {
+      "log_type": "message",
+      "log_id": "154959b0-6054-4b40-8e83-5f87c63a1bd9",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2729
+    },
+    {
+      "log_type": "message",
+      "log_id": "6e36b6c7-4bf0-47e5-abd7-b3add13042e6",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2730
+    },
+    {
+      "log_type": "message",
+      "log_id": "dc735dca-aacc-4401-9fef-5c2c36a789d1",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2731
+    },
+    {
+      "log_type": "message",
+      "log_id": "8a924ba1-62e5-442d-b26a-913aae3504da",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2732
+    },
+    {
+      "log_type": "message",
+      "log_id": "9536db10-0e32-4e58-bf42-5f5f59e9819f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2733
+    },
+    {
+      "log_type": "message",
+      "log_id": "85129a72-8509-40b2-9071-c3669330d087",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2734
+    },
+    {
+      "log_type": "message",
+      "log_id": "e02f0d77-bd03-4f09-adc4-5a2383fd6fcf",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2735
+    },
+    {
+      "log_type": "access",
+      "log_id": "2d570663-7a26-41db-b1dd-185f800a9861",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5892
+    },
+    {
+      "log_type": "access",
+      "log_id": "3115a3f3-f631-4e70-b779-87d9ab4ba9c3",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5893
+    },
+    {
+      "log_type": "access",
+      "log_id": "5311adb2-82db-43df-a447-f498340eab00",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5894
+    },
+    {
+      "log_type": "access",
+      "log_id": "4d3c8d42-6c16-480f-aa37-7bec86637052",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5895
+    },
+    {
+      "log_type": "access",
+      "log_id": "8976f8a3-8bb8-4a03-b719-12835e47c264",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5896
+    },
+    {
+      "log_type": "access",
+      "log_id": "302a74f6-c27e-43b9-a95d-3518af1539c2",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5898
+    },
+    {
+      "log_type": "access",
+      "log_id": "9c075e02-46df-4141-8d59-afd17b55f151",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5899
+    },
+    {
+      "log_type": "access",
+      "log_id": "7d8ceced-4141-4dbe-8f1c-f08ddf9600a0",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5900
+    },
+    {
+      "log_type": "access",
+      "log_id": "097ccb01-b272-405e-8f58-efd4201b091c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5901
+    },
+    {
+      "log_type": "access",
+      "log_id": "a73b40aa-442c-4923-9480-e2eeda66817a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5902
+    },
+    {
+      "log_type": "access",
+      "log_id": "6685f77d-d0a2-4c00-95c9-22623bccf9e0",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5903
+    },
+    {
+      "log_type": "access",
+      "log_id": "cca77803-f830-4f64-b011-9fd1c9cd95f9",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5904
+    },
+    {
+      "log_type": "access",
+      "log_id": "52a769cd-7e3a-4ba7-bb40-8dbeee5aef30",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5905
+    },
+    {
+      "log_type": "access",
+      "log_id": "fcb376dd-49f2-4f93-b86c-f576fc1a968b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5906
+    },
+    {
+      "log_type": "access",
+      "log_id": "d00db60b-de8c-40d2-8996-1fd30ff606ac",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5907
+    },
+    {
+      "log_type": "access",
+      "log_id": "6152622d-175b-4d8a-990a-d250163117db",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5908
+    },
+    {
+      "log_type": "access",
+      "log_id": "96fc017b-2de2-48c4-81b9-39784b2cfd99",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5909
+    },
+    {
+      "log_type": "access",
+      "log_id": "8643d001-f0e5-4c97-93cb-7de6f7d9174c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5910
+    },
+    {
+      "log_type": "access",
+      "log_id": "dbb18862-c2e0-40fe-9765-9e5a98084d03",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5911
+    },
+    {
+      "log_type": "access",
+      "log_id": "38b70b7f-f8d6-4162-bab1-7ea4e261ed7d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5912
+    },
+    {
+      "log_type": "access",
+      "log_id": "9e81eb4a-b283-4a81-a277-acb9576607eb",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5913
+    },
+    {
+      "log_type": "access",
+      "log_id": "1ea1ccb3-38e7-43f5-a6ea-907d5b05fdfb",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5914
+    },
+    {
+      "log_type": "access",
+      "log_id": "971289a5-0d31-43b7-90f6-c932af605fa2",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5915
+    },
+    {
+      "log_type": "access",
+      "log_id": "03d01513-7693-4c71-afce-e1d5ddd98f39",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5916
+    },
+    {
+      "log_type": "access",
+      "log_id": "c7d4eba2-6a0b-48cf-9952-9d4a659f3b84",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5917
+    },
+    {
+      "log_type": "access",
+      "log_id": "6c7d146f-8f00-4f51-9284-fc518afe9338",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5918
+    },
+    {
+      "log_type": "access",
+      "log_id": "e26b7c72-8ef5-4ee2-935f-f2fe047dd646",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5919
+    },
+    {
+      "log_type": "access",
+      "log_id": "5383b0a6-1071-46b3-9fdb-b28ee5310401",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5920
+    },
+    {
+      "log_type": "access",
+      "log_id": "1e522111-2eea-4640-8db0-934a6a3359b4",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5921
+    },
+    {
+      "log_type": "access",
+      "log_id": "6598a544-1dd8-42b5-8b6e-b7c43546d10b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5922
+    },
+    {
+      "log_type": "access",
+      "log_id": "e0d48102-a6b3-4486-8ce8-352557bf6ede",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5923
+    },
+    {
+      "log_type": "access",
+      "log_id": "d276e42c-dde6-43ff-b162-1a1de96b40f9",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5924
+    },
+    {
+      "log_type": "access",
+      "log_id": "04fd4f5f-d19f-43dd-a563-995d0e929eb5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5925
+    },
+    {
+      "log_type": "access",
+      "log_id": "55ddee3f-ade2-47cb-a26e-18ec2452d97e",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5926
+    },
+    {
+      "log_type": "access",
+      "log_id": "a549c186-1157-4fdd-8a9a-dad1ab558f45",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5927
+    },
+    {
+      "log_type": "access",
+      "log_id": "79301a1a-4bd9-47c7-bc78-0cdcd64aae50",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5928
+    },
+    {
+      "log_type": "access",
+      "log_id": "c8bd569b-b724-457b-8c90-0d65e8a5ca6b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5929
+    },
+    {
+      "log_type": "access",
+      "log_id": "b1428bc5-26f4-410c-bd76-e929402c9e6c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5930
+    },
+    {
+      "log_type": "access",
+      "log_id": "f88d317f-a6cb-40da-9a27-1a963ec225e3",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5931
+    },
+    {
+      "log_type": "access",
+      "log_id": "b0a08f95-0ffe-43ac-a558-06647f508b3d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5932
+    },
+    {
+      "log_type": "access",
+      "log_id": "107d13d0-63f4-4a12-a739-6a8eb1a86f41",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5933
+    },
+    {
+      "log_type": "access",
+      "log_id": "85b5911a-d1d9-4bbf-912e-6f1ba14081a0",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5934
+    },
+    {
+      "log_type": "access",
+      "log_id": "0d8ca9c4-52d7-459e-a184-d5dc5c3a6dbd",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5935
+    },
+    {
+      "log_type": "access",
+      "log_id": "302d14df-5e65-4f81-a925-7062cc0f47ec",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5936
+    },
+    {
+      "log_type": "access",
+      "log_id": "30cd01e9-250a-4d7f-bc6b-984616a6ed22",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5937
+    },
+    {
+      "log_type": "access",
+      "log_id": "e2e443f5-1084-4517-87e7-7e80eb7e2cf7",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5938
+    },
+    {
+      "log_type": "access",
+      "log_id": "e48d1f6e-8bfc-44cc-8e1d-a489a9d0bfea",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5939
+    },
+    {
+      "log_type": "access",
+      "log_id": "e346f0a3-98c9-4dc3-b140-d3e200c0534b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5940
+    },
+    {
+      "log_type": "access",
+      "log_id": "d50b2be8-b9f6-4f91-a7e7-304d16568109",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5941
+    },
+    {
+      "log_type": "access",
+      "log_id": "37ee40f3-c33e-4de5-86e9-1836a9e32769",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5942
+    },
+    {
+      "log_type": "access",
+      "log_id": "25dc7afb-d8da-41ca-8aa9-3250db73bfac",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5943
+    },
+    {
+      "log_type": "access",
+      "log_id": "0d6fceae-d258-4f87-ae3c-f97d39bcc0b2",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5944
+    },
+    {
+      "log_type": "access",
+      "log_id": "005e9212-d8d5-4378-9fe8-71db4c050d82",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5945
+    },
+    {
+      "log_type": "access",
+      "log_id": "3904a21f-4315-4925-95c4-9e8b0d4ad670",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5946
+    },
+    {
+      "log_type": "access",
+      "log_id": "96226b68-c426-462a-978b-0d70368d6321",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5947
+    },
+    {
+      "log_type": "access",
+      "log_id": "516190a5-45dc-4d5f-a3ea-cef695407118",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5948
+    },
+    {
+      "log_type": "access",
+      "log_id": "52572759-42d7-4cab-8dc4-0c0cb8f8f1df",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5949
+    },
+    {
+      "log_type": "access",
+      "log_id": "10f4f911-6366-41cc-9586-56446b4597b7",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5950
+    },
+    {
+      "log_type": "access",
+      "log_id": "d082b1ac-44fa-4d07-addb-b6a412b05bde",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5951
+    },
+    {
+      "log_type": "access",
+      "log_id": "6566fd0e-b245-4486-a6a7-0c804f32ec30",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5952
+    },
+    {
+      "log_type": "access",
+      "log_id": "25b2b9c4-535b-47bc-8265-845a6b39f85f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5953
+    },
+    {
+      "log_type": "access",
+      "log_id": "e3050861-38cc-4e2a-a701-b91e4681ac8c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5954
+    },
+    {
+      "log_type": "access",
+      "log_id": "816db6e3-16b3-42e6-9abf-8530c60d53f0",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5955
+    },
+    {
+      "log_type": "access",
+      "log_id": "17b4c03f-0038-4de4-a485-b011db609114",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5956
+    },
+    {
+      "log_type": "access",
+      "log_id": "8f07cffc-690b-4fd5-8ed0-b17de4581029",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5957
+    },
+    {
+      "log_type": "access",
+      "log_id": "0821c1a2-9e49-4ade-baf1-f64d2ef0eedd",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5958
+    },
+    {
+      "log_type": "access",
+      "log_id": "78ca3380-7123-4727-835e-212ebaccf814",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5959
+    },
+    {
+      "log_type": "access",
+      "log_id": "e8e3c111-51cc-41f8-8ccd-44a7a443ca98",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5960
+    },
+    {
+      "log_type": "access",
+      "log_id": "1c5c2e2e-7581-4e92-91c0-2f6fa1c6668c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5961
+    },
+    {
+      "log_type": "access",
+      "log_id": "af968be4-b8da-4150-ad66-69e8bd42c895",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5962
+    },
+    {
+      "log_type": "access",
+      "log_id": "d1b63b4c-4682-4790-9956-3bd541e0f710",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5963
+    },
+    {
+      "log_type": "access",
+      "log_id": "834aba96-6607-48cd-99fe-24a3a74315b5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5964
+    },
+    {
+      "log_type": "access",
+      "log_id": "7bc77043-bbac-4172-ba28-a25201968a06",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5965
+    },
+    {
+      "log_type": "access",
+      "log_id": "9a9b1d12-373f-4bd0-b22b-e46e3fccf1dd",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5966
+    },
+    {
+      "log_type": "access",
+      "log_id": "959429d0-ac72-4082-af1d-d1f2a97c2a7a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5967
+    },
+    {
+      "log_type": "access",
+      "log_id": "d0049a4b-9ec2-4d2c-b7a5-00144ef3b11a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5968
+    },
+    {
+      "log_type": "access",
+      "log_id": "17d68e40-b0c9-4d56-a1dc-21ccd18f5c50",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5969
+    },
+    {
+      "log_type": "access",
+      "log_id": "1cdad1f8-61c9-4640-9813-da2b3c33d1e8",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5970
+    },
+    {
+      "log_type": "access",
+      "log_id": "26d2e52a-a042-4af4-9058-acff57c3a905",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5971
+    },
+    {
+      "log_type": "access",
+      "log_id": "a6df3fd0-6dde-47c3-8d32-3c1da5c73ad8",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5972
+    },
+    {
+      "log_type": "access",
+      "log_id": "05b3b209-9f49-4f1c-969d-def322decb37",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5973
+    },
+    {
+      "log_type": "access",
+      "log_id": "95b91f5e-d4d9-4083-857e-0b3d5ee7ede6",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5974
+    },
+    {
+      "log_type": "access",
+      "log_id": "a5a81059-7a01-42c7-8a5a-2d49a9c6c382",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5975
+    },
+    {
+      "log_type": "access",
+      "log_id": "d588ec12-c0a1-4ce1-a944-88d4e1178088",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5976
+    },
+    {
+      "log_type": "access",
+      "log_id": "21d6bb93-48a8-40e5-96b9-2ceff5cd59a0",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5977
+    },
+    {
+      "log_type": "access",
+      "log_id": "2c69828a-06cf-41d1-b954-193d39265635",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5978
+    },
+    {
+      "log_type": "access",
+      "log_id": "7f792f1f-0e79-47f0-8611-63cc2777ab84",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5979
+    },
+    {
+      "log_type": "message",
+      "log_id": "479b8380-939b-4b42-bbff-b45bca87167a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3160
+    },
+    {
+      "log_type": "message",
+      "log_id": "a8ee10ef-62e7-4c4f-a535-774177f874a5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3161
+    },
+    {
+      "log_type": "message",
+      "log_id": "f85856aa-8cca-4795-ad0c-b3562425b313",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3162
+    },
+    {
+      "log_type": "message",
+      "log_id": "96c41ba4-ff7c-4e7a-97a7-a7048a9b8751",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3163
+    },
+    {
+      "log_type": "message",
+      "log_id": "977a6e3a-ad32-470c-8bcd-14a5aa09fdfb",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3164
+    },
+    {
+      "log_type": "message",
+      "log_id": "fb4be524-b5f8-4706-8456-2bb720a6c464",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3165
+    },
+    {
+      "log_type": "message",
+      "log_id": "cc098abb-bf55-44c5-ad21-cbf397425c61",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3166
+    },
+    {
+      "log_type": "message",
+      "log_id": "15eab6e9-a848-4ae1-996f-d7798e11c085",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3167
+    },
+    {
+      "log_type": "message",
+      "log_id": "67a24b90-da1c-41f4-8626-9360f0ca9e57",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3168
+    },
+    {
+      "log_type": "message",
+      "log_id": "5685e6af-de5b-45a1-83a4-f6a867cb6c28",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3169
+    },
+    {
+      "log_type": "message",
+      "log_id": "a6bc3561-83b3-46a3-946b-f33d3407948d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3170
+    },
+    {
+      "log_type": "message",
+      "log_id": "cf85a2eb-7ac7-4c5b-acea-2fd7cf897ae1",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3171
+    },
+    {
+      "log_type": "message",
+      "log_id": "d6eedb0c-19c3-4b5e-ab79-d4c363e85340",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3172
+    },
+    {
+      "log_type": "message",
+      "log_id": "010969f7-317b-482a-809e-b726eb053be9",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2658
+    },
+    {
+      "log_type": "message",
+      "log_id": "3ae225dd-bd91-4755-8ff0-6011bcf7781d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2659
+    },
+    {
+      "log_type": "message",
+      "log_id": "bdf0c209-a88e-4f5b-be9a-7e0dc591d2e2",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2660
+    },
+    {
+      "log_type": "message",
+      "log_id": "6f3fff4c-eeca-48df-bc08-9f27c1485c6d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2661
+    },
+    {
+      "log_type": "message",
+      "log_id": "f5bfd586-6e56-46b9-9004-1e64495e8af4",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2662
+    },
+    {
+      "log_type": "message",
+      "log_id": "20d880bb-f8c3-4641-a94b-4dbf264b237e",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2663
+    },
+    {
+      "log_type": "message",
+      "log_id": "1bfbcc6d-91d7-407b-a3a5-dd260be7ed98",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2664
+    },
+    {
+      "log_type": "message",
+      "log_id": "948ecc97-19b5-4d55-8b26-34c29be6a6d8",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2665
+    },
+    {
+      "log_type": "message",
+      "log_id": "46bce357-7c7e-4060-ae6e-ac690c647352",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2666
+    },
+    {
+      "log_type": "message",
+      "log_id": "861f4af9-5c4c-4d5d-a985-e4e1bcd3b250",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2667
+    },
+    {
+      "log_type": "message",
+      "log_id": "af637e52-fce0-441c-9f21-a5d1d60c7bc7",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2668
+    },
+    {
+      "log_type": "message",
+      "log_id": "87c629bb-ea8f-47c5-a1ab-d74b03cad362",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2736
+    },
+    {
+      "log_type": "message",
+      "log_id": "8817dfa9-8911-42ed-87aa-4b8ae203b37f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2737
+    },
+    {
+      "log_type": "message",
+      "log_id": "024af293-b451-467b-b87c-6346b97aaf3b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2738
+    },
+    {
+      "log_type": "message",
+      "log_id": "8d58cda6-f445-4394-af9b-dc5db5d857ff",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2739
+    },
+    {
+      "log_type": "message",
+      "log_id": "78fa7ba9-3d11-467c-a516-11f15ea06006",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2740
+    },
+    {
+      "log_type": "message",
+      "log_id": "ea1fbb40-ec03-4214-81d7-7d450016e94e",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2741
+    },
+    {
+      "log_type": "access",
+      "log_id": "11f3d390-7d6b-4c59-b394-4402ea583f88",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5980
+    },
+    {
+      "log_type": "access",
+      "log_id": "472c85b7-96d4-4105-83e4-a0e15b90f801",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5981
+    },
+    {
+      "log_type": "access",
+      "log_id": "6ea62901-f858-49d5-bacd-75658585c584",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5982
+    },
+    {
+      "log_type": "access",
+      "log_id": "f6324b69-0cdc-48f4-860b-f136e1316edf",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5983
+    },
+    {
+      "log_type": "access",
+      "log_id": "e1644df6-9945-4d83-b8f5-3b06923d6bd3",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5984
+    },
+    {
+      "log_type": "access",
+      "log_id": "446dd9a0-cac8-485d-a426-a49f0cac6739",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5985
+    },
+    {
+      "log_type": "access",
+      "log_id": "e64570e9-640b-4abf-99cc-2c0712c76750",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5986
+    },
+    {
+      "log_type": "access",
+      "log_id": "2d886da8-75c0-4e5e-9371-9b576815d5e3",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5987
+    },
+    {
+      "log_type": "message",
+      "log_id": "c90d449e-335e-41d4-a535-ccd4fc74467c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3173
+    },
+    {
+      "log_type": "message",
+      "log_id": "a0ce910e-6a45-4bbb-9b98-b10bbc4f2bf4",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3174
+    },
+    {
+      "log_type": "message",
+      "log_id": "7657a870-7931-4f31-9ac6-0dfbe1cd95b2",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3175
+    },
+    {
+      "log_type": "message",
+      "log_id": "f5fee1f1-0f83-4d12-8f0b-ddbd394ffcca",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3176
+    },
+    {
+      "log_type": "message",
+      "log_id": "3766eceb-e715-413c-8c50-02573cbcb3d9",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3177
+    },
+    {
+      "log_type": "message",
+      "log_id": "ddc7e985-d50d-4ee8-b526-07c37189cf0c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3178
+    },
+    {
+      "log_type": "message",
+      "log_id": "071ad12d-6c07-45a7-b54e-5f1342e4147f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3179
+    },
+    {
+      "log_type": "message",
+      "log_id": "9a3dce72-bc39-43b4-8d73-1c56ad74d820",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3180
+    },
+    {
+      "log_type": "message",
+      "log_id": "0965b615-179f-4099-9241-36ae0c456e6a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3181
+    },
+    {
+      "log_type": "message",
+      "log_id": "7fe5eab7-8eed-4b87-9407-cddb2b1f164a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3182
+    },
+    {
+      "log_type": "message",
+      "log_id": "31e82594-0662-4a3d-91db-2751bab75c22",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3183
+    },
+    {
+      "log_type": "message",
+      "log_id": "6d568a35-7da3-4595-9dec-c8ad9f2bc4b9",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3184
+    },
+    {
+      "log_type": "message",
+      "log_id": "4def50b6-b991-4a90-a755-620708f923d5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3185
+    },
+    {
+      "log_type": "message",
+      "log_id": "dc561b50-3b98-4009-a2a5-bb611ee40e6c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2669
+    },
+    {
+      "log_type": "message",
+      "log_id": "342ab720-601d-451a-92f1-ed16e34039f6",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2670
+    },
+    {
+      "log_type": "message",
+      "log_id": "6760d43b-69fd-4e76-894c-b2ab3d00a173",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2671
+    },
+    {
+      "log_type": "message",
+      "log_id": "72efaebb-a4ca-4b88-98c4-780e7c54715b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2672
+    },
+    {
+      "log_type": "message",
+      "log_id": "9a0d7133-4117-4ecc-a459-5e4ae197251e",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2673
+    },
+    {
+      "log_type": "message",
+      "log_id": "bf6be79d-bedd-43ee-a8be-9b5a02a0ea4d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2674
+    },
+    {
+      "log_type": "message",
+      "log_id": "219a4636-8e03-4bb7-ab39-f5006e930dc8",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2675
+    },
+    {
+      "log_type": "message",
+      "log_id": "947d8f07-475c-44bf-a4b9-4958b19c6d08",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2676
+    },
+    {
+      "log_type": "message",
+      "log_id": "5343f84f-7509-4273-8b49-a427f7f1f2c3",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2677
+    },
+    {
+      "log_type": "message",
+      "log_id": "ce34b2ef-7a65-4e06-890a-96b7750534f5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2678
+    },
+    {
+      "log_type": "message",
+      "log_id": "bf176b4f-6100-4ce8-ad37-4e986212d58f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2679
+    },
+    {
+      "log_type": "message",
+      "log_id": "9e8a6a56-fac3-4253-8172-01822be5c765",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2742
+    },
+    {
+      "log_type": "message",
+      "log_id": "362dd9ef-f8e2-4c68-a171-1ed4c93b4468",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2743
+    },
+    {
+      "log_type": "message",
+      "log_id": "b962e300-f27b-4d55-b412-a3547c960e77",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2744
+    },
+    {
+      "log_type": "message",
+      "log_id": "c90b6e1b-98ca-4bcc-8f4d-9acb1cb3bcd1",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2745
+    },
+    {
+      "log_type": "message",
+      "log_id": "c96dee09-7bae-47c8-a8ca-f3e780c83264",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2746
+    },
+    {
+      "log_type": "message",
+      "log_id": "95a69f94-d4c6-44be-81e3-0aefa0e8df76",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2747
+    },
+    {
+      "log_type": "access",
+      "log_id": "387b478a-0d92-451b-bb07-8076733881f5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5988
+    },
+    {
+      "log_type": "access",
+      "log_id": "6b3e6afe-9f1f-4039-bc58-aed211283482",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5989
+    },
+    {
+      "log_type": "access",
+      "log_id": "0a507df7-c823-4547-970b-8e1d3eb2759c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5990
+    },
+    {
+      "log_type": "message",
+      "log_id": "c3d65915-e2f8-4140-b3aa-1328e0bc8a8a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3186
+    },
+    {
+      "log_type": "message",
+      "log_id": "f2c9779b-d88d-4910-b017-3fc5386ce796",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3187
+    },
+    {
+      "log_type": "message",
+      "log_id": "9e4d0cff-621a-44dd-914d-ecae5dcefb53",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3188
+    },
+    {
+      "log_type": "message",
+      "log_id": "99e6c342-3766-42ab-998a-e28836989e3f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3189
+    },
+    {
+      "log_type": "message",
+      "log_id": "9f99faf7-a603-41fd-b4b1-c3c8a93f2e11",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3190
+    },
+    {
+      "log_type": "message",
+      "log_id": "a7789609-43d8-4b7d-b144-f8429ac20040",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2680
+    },
+    {
+      "log_type": "message",
+      "log_id": "55a3766d-93d7-41fa-bd44-db55bd0242e1",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2681
+    },
+    {
+      "log_type": "message",
+      "log_id": "b6f8b2a4-bc3f-4922-a12e-7091e12b64dc",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2682
+    },
+    {
+      "log_type": "message",
+      "log_id": "d36a1168-b885-45ab-b9ea-c2c9736e5ea2",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2683
+    },
+    {
+      "log_type": "message",
+      "log_id": "6dc685fc-68fc-42aa-8ffa-cc5bc856bee5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2684
+    },
+    {
+      "log_type": "message",
+      "log_id": "7ad48793-bd66-4cbb-9f8e-6a32bf0c98ae",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2748
+    },
+    {
+      "log_type": "message",
+      "log_id": "f3ba42fe-9504-4d28-9272-bc20582fb6da",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2749
+    },
+    {
+      "log_type": "access",
+      "log_id": "b0c0454b-b7d3-47e9-a9c6-f14ca082dc92",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5991
+    },
+    {
+      "log_type": "message",
+      "log_id": "a3e87bef-b3c6-4124-9913-5e04e2c69f69",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3191
+    },
+    {
+      "log_type": "message",
+      "log_id": "3ad77e9a-9b5f-434a-8e5d-bdfd9b2eee00",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3192
+    },
+    {
+      "log_type": "message",
+      "log_id": "bf6c538b-2aa7-4fdb-8389-ad3334053672",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3193
+    },
+    {
+      "log_type": "message",
+      "log_id": "92383470-d96d-431b-876e-eaa857ac02e5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3194
+    },
+    {
+      "log_type": "message",
+      "log_id": "5d5568ab-7e67-44c6-ae9c-123f6d55014f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3195
+    },
+    {
+      "log_type": "message",
+      "log_id": "174252cc-cc03-4783-a89f-50b9eaff8f6c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3196
+    },
+    {
+      "log_type": "message",
+      "log_id": "3b5eca65-b66e-497f-9828-20579f611cd5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3197
+    },
+    {
+      "log_type": "message",
+      "log_id": "5fef46dd-b539-441f-9241-4243e9a817a7",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3198
+    },
+    {
+      "log_type": "message",
+      "log_id": "171d1f78-746e-4eef-b2ac-c9eb2ae06509",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3199
+    },
+    {
+      "log_type": "message",
+      "log_id": "0996949c-4271-4632-a6d0-9621033d43a3",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3200
+    },
+    {
+      "log_type": "message",
+      "log_id": "09e9a3cc-51c1-4b24-a125-a0ab50accace",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3201
+    },
+    {
+      "log_type": "message",
+      "log_id": "2e56a002-969d-4ec3-9033-5fb71ccee6af",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3202
+    },
+    {
+      "log_type": "message",
+      "log_id": "6e54d7dd-65b6-4103-889a-38e160b60960",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3203
+    },
+    {
+      "log_type": "message",
+      "log_id": "8a09de29-1813-4054-aa10-748e381bf4b6",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3204
+    },
+    {
+      "log_type": "message",
+      "log_id": "2f54e0d5-5de4-4d9e-9af1-ca033f4745f1",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3205
+    },
+    {
+      "log_type": "message",
+      "log_id": "801e82f6-6ed9-4b8f-a6e9-9c461d96cb16",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3206
+    },
+    {
+      "log_type": "message",
+      "log_id": "88e19558-f663-4e14-b7cc-f30a1d07599f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3207
+    },
+    {
+      "log_type": "message",
+      "log_id": "c8bd3d38-7d29-41ee-a8e1-4812496d1b03",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3208
+    },
+    {
+      "log_type": "message",
+      "log_id": "76e27f81-edc1-4823-bc0d-f8f858fc8c62",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3209
+    },
+    {
+      "log_type": "message",
+      "log_id": "d0f55f3b-ede0-440b-b02b-10508f338255",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3210
+    },
+    {
+      "log_type": "message",
+      "log_id": "077a7f72-30c5-4d07-9ab9-11c765e23dea",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3211
+    },
+    {
+      "log_type": "message",
+      "log_id": "9b9f6cc1-9b84-4eda-9a9d-9b19e63d0726",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2685
+    },
+    {
+      "log_type": "message",
+      "log_id": "8b3831cd-7efb-4d65-b1a8-3c248f2d113d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2686
+    },
+    {
+      "log_type": "message",
+      "log_id": "e7f23e23-d4d6-497e-b6a1-fc3e16c4a240",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2687
+    },
+    {
+      "log_type": "message",
+      "log_id": "46d4e9f5-f972-4a38-86e3-952117c33902",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2688
+    },
+    {
+      "log_type": "message",
+      "log_id": "289031ad-bc11-489e-8c79-ad6dc5ac29b0",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2689
+    },
+    {
+      "log_type": "message",
+      "log_id": "c4636ab3-cb9a-42c0-93a7-21f1ae9f0915",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2690
+    },
+    {
+      "log_type": "message",
+      "log_id": "077e0eca-c0a4-4ba1-869f-2197a1890b03",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2691
+    },
+    {
+      "log_type": "message",
+      "log_id": "fe4b8674-5eaa-405e-a87c-da184e02ef9b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2692
+    },
+    {
+      "log_type": "message",
+      "log_id": "a51ff636-7e1e-4792-a311-3718a2374a6a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2693
+    },
+    {
+      "log_type": "message",
+      "log_id": "9847c1e4-235f-40e4-a50b-6c41a19cac0f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2694
+    },
+    {
+      "log_type": "message",
+      "log_id": "7dc3a336-940e-47aa-8623-3748ca7f3267",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2695
+    },
+    {
+      "log_type": "message",
+      "log_id": "94778b73-1ea3-4c91-a725-f3ac18156957",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2696
+    },
+    {
+      "log_type": "message",
+      "log_id": "7c3066a3-e272-4dad-b268-620e0bce037a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2750
+    },
+    {
+      "log_type": "message",
+      "log_id": "6af22aef-45d9-4c4a-b703-ff6127dbbf23",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2751
+    },
+    {
+      "log_type": "message",
+      "log_id": "aee42408-28cc-4a2f-a362-5d470b9a2df7",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2752
+    },
+    {
+      "log_type": "message",
+      "log_id": "dac05171-0c5a-4f55-b5df-5ee2f1a89234",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2753
+    },
+    {
+      "log_type": "message",
+      "log_id": "809d4acd-4b6a-4258-aed7-ed34fa61e846",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2754
+    },
+    {
+      "log_type": "message",
+      "log_id": "aa3cb670-daf7-4af6-94d1-89f61705bb3e",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2755
+    },
+    {
+      "log_type": "message",
+      "log_id": "967c96a6-5434-4347-9c43-deae426f62c0",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2756
+    },
+    {
+      "log_type": "message",
+      "log_id": "9554b0eb-cbc0-4169-8d26-a549bd819619",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2757
+    },
+    {
+      "log_type": "message",
+      "log_id": "ef6df122-99d7-4485-9dcb-9c3ef6c1495f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2758
+    },
+    {
+      "log_type": "message",
+      "log_id": "89adc3be-17d5-4d17-9580-53dc9d2f0672",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2759
+    },
+    {
+      "log_type": "message",
+      "log_id": "ae611339-c133-4265-972e-dfc22d251a09",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2760
+    },
+    {
+      "log_type": "message",
+      "log_id": "afa1f639-0585-4e3c-9075-eded3aa549f1",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2761
+    },
+    {
+      "log_type": "message",
+      "log_id": "493a5232-4aa6-4499-aa1f-0c5a8895f309",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2762
+    },
+    {
+      "log_type": "message",
+      "log_id": "79ed080f-57cd-4400-9d1c-fbcbc539e25e",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2763
+    },
+    {
+      "log_type": "message",
+      "log_id": "719e6792-1513-44ce-b553-b7492fe3f9d2",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2764
+    },
+    {
+      "log_type": "access",
+      "log_id": "2c8acf2e-2e1b-4ca0-92c0-c6519eb296ff",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5992
+    },
+    {
+      "log_type": "access",
+      "log_id": "53110b78-affc-4fce-8d86-fe4261638edf",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5993
+    },
+    {
+      "log_type": "access",
+      "log_id": "4343eded-a530-4ef1-b58f-6027c261ec06",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5994
+    },
+    {
+      "log_type": "access",
+      "log_id": "2f7bf59b-aa24-4578-912a-95faeb1fc115",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5996
+    },
+    {
+      "log_type": "access",
+      "log_id": "ee5d2216-e6f2-4353-aa46-435d4611416b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5997
+    },
+    {
+      "log_type": "access",
+      "log_id": "988c80d4-e9f5-48df-b3ce-0e91abcbea1a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5998
+    },
+    {
+      "log_type": "access",
+      "log_id": "4f4567e7-8f87-4312-841b-37774b82636a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 5999
+    },
+    {
+      "log_type": "message",
+      "log_id": "b87b8401-73b2-4d59-900e-b00f3dfed1c2",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3212
+    },
+    {
+      "log_type": "message",
+      "log_id": "f4cf01a1-d434-431b-a341-9ec72fc63d51",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3213
+    },
+    {
+      "log_type": "message",
+      "log_id": "1eaae2d7-c98e-4dc9-a613-55390a85481b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3214
+    },
+    {
+      "log_type": "message",
+      "log_id": "c0889064-88ac-4464-a1ee-08f35130d8c4",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3215
+    },
+    {
+      "log_type": "message",
+      "log_id": "ab0546f3-e8fe-40d6-8ec5-9a66c0f2a587",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3216
+    },
+    {
+      "log_type": "message",
+      "log_id": "d08aedff-7d7b-4dc2-80a8-037ebc1c6f7a",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3217
+    },
+    {
+      "log_type": "message",
+      "log_id": "f6a663ce-3268-47ce-b78e-c5ea5e49c5f5",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3218
+    },
+    {
+      "log_type": "message",
+      "log_id": "83177304-5005-403f-b2d7-db675a577398",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3219
+    },
+    {
+      "log_type": "message",
+      "log_id": "2a6694c0-bc0f-461c-b27d-0913a90db9f6",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3220
+    },
+    {
+      "log_type": "message",
+      "log_id": "cff3d793-0235-40e3-b1d7-ff24bc8c7d5d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3221
+    },
+    {
+      "log_type": "message",
+      "log_id": "a50f7a93-8417-4b8c-b207-e952cf672c67",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3222
+    },
+    {
+      "log_type": "message",
+      "log_id": "f40a8086-1fbf-4443-82d6-8af0ef969206",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3223
+    },
+    {
+      "log_type": "message",
+      "log_id": "b988adcb-0b54-490d-9cf2-5131c7eb7088",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3224
+    },
+    {
+      "log_type": "message",
+      "log_id": "f784f5d2-7691-4a62-a019-c345e92aa244",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3225
+    },
+    {
+      "log_type": "message",
+      "log_id": "bd20df8e-80b5-4519-96c1-842d7c5fde23",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3226
+    },
+    {
+      "log_type": "message",
+      "log_id": "d75253f1-85cc-4a15-a353-f0abaac112f2",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3227
+    },
+    {
+      "log_type": "message",
+      "log_id": "ecdc05aa-95fa-4eac-903e-e7e2734e3be8",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2697
+    },
+    {
+      "log_type": "message",
+      "log_id": "ff8273dd-c14e-4006-8660-f9f2da6e4887",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2698
+    },
+    {
+      "log_type": "message",
+      "log_id": "6c742b4c-b9a9-4dba-9cbb-e2912a1b1fd0",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2699
+    },
+    {
+      "log_type": "message",
+      "log_id": "2cc7cc9a-dbcb-428f-9c40-47b117dd8914",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2700
+    },
+    {
+      "log_type": "message",
+      "log_id": "6197ce1f-6da6-408c-b530-d3a7690c167d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2701
+    },
+    {
+      "log_type": "message",
+      "log_id": "8a94a578-64c0-401f-9e01-175695abd594",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2702
+    },
+    {
+      "log_type": "message",
+      "log_id": "c9bc7288-e8cf-4d31-96df-ba90d7422aaf",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2703
+    },
+    {
+      "log_type": "message",
+      "log_id": "2c6c5e93-8573-45da-8751-e578e6c18fcb",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2704
+    },
+    {
+      "log_type": "message",
+      "log_id": "15ba2fac-1ca7-4d3d-a372-d63c88a846f3",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2705
+    },
+    {
+      "log_type": "message",
+      "log_id": "ed2b16ef-03d0-43f6-a647-edc54eecfb0f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2706
+    },
+    {
+      "log_type": "message",
+      "log_id": "1899d9e3-e226-4720-b824-04e806f7ce9f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2707
+    },
+    {
+      "log_type": "message",
+      "log_id": "c5a49858-3862-4334-9786-653b77acabc1",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2708
+    },
+    {
+      "log_type": "message",
+      "log_id": "b84ceffe-c13a-45ab-9f50-b2af1978e2bc",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2709
+    },
+    {
+      "log_type": "message",
+      "log_id": "a89d383b-d348-4815-bb3b-6733bfcbb7f3",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2710
+    },
+    {
+      "log_type": "message",
+      "log_id": "3207e83f-9c57-4364-95e1-5f137cb92beb",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2765
+    },
+    {
+      "log_type": "message",
+      "log_id": "b46e7b19-cbee-4557-8439-8381426785a8",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2766
+    },
+    {
+      "log_type": "message",
+      "log_id": "cf7c7e31-b4f6-4126-8636-3aa28e2e9d34",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2767
+    },
+    {
+      "log_type": "message",
+      "log_id": "22ce168a-2f41-4351-8882-4f25514a29ba",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2768
+    },
+    {
+      "log_type": "message",
+      "log_id": "8ee2767e-6239-407e-bec2-3cf47115e1a0",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2769
+    },
+    {
+      "log_type": "message",
+      "log_id": "df626287-2350-407c-aaf4-7c5c503c6469",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2770
+    },
+    {
+      "log_type": "message",
+      "log_id": "81433ffe-6c78-4bd1-9e75-5043db989d2b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2771
+    },
+    {
+      "log_type": "message",
+      "log_id": "cc6d7355-e6db-4406-8cab-4182d4845e6d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2772
+    },
+    {
+      "log_type": "access",
+      "log_id": "a50e7c61-df08-4d3b-90c4-933c4cd3af50",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 6000
+    },
+    {
+      "log_type": "access",
+      "log_id": "82f2883b-21cd-4ec0-8906-960dc1d0e6e9",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 6001
+    },
+    {
+      "log_type": "access",
+      "log_id": "92a8e9c0-80d2-4e27-9cea-0686e6d1b440",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 6002
+    },
+    {
+      "log_type": "message",
+      "log_id": "cb3fb634-9538-43e4-a76b-39218d68dc38",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3228
+    },
+    {
+      "log_type": "message",
+      "log_id": "645a09c3-9f12-4ff8-a452-9c03249d8085",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2711
+    },
+    {
+      "log_type": "message",
+      "log_id": "c967388d-f4b9-467e-8a7f-525adbc053d6",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2712
+    },
+    {
+      "log_type": "message",
+      "log_id": "93a8c78a-5e65-4ce1-9e69-82c3d894b768",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2713
+    },
+    {
+      "log_type": "message",
+      "log_id": "3dc78e4d-4cbf-42a0-ba86-202e28121d9d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2714
+    },
+    {
+      "log_type": "message",
+      "log_id": "f7753076-c0ff-49b3-bcea-30645743d7ec",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2715
+    },
+    {
+      "log_type": "message",
+      "log_id": "d4b57d19-cec6-4167-a973-7765730d0854",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2716
+    },
+    {
+      "log_type": "message",
+      "log_id": "505429a0-2a4b-432f-823a-a71ee6963041",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2717
+    },
+    {
+      "log_type": "message",
+      "log_id": "e6ba9b57-198d-46c6-a758-f327244dba06",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "partition": 3,
+      "offset": 2718
+    },
+    {
+      "log_type": "message",
+      "log_id": "489df517-c06e-471a-b9b1-8165ca2304de",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2773
+    },
+    {
+      "log_type": "message",
+      "log_id": "e394bce5-90e8-4909-a568-ab783f878f02",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2774
+    },
+    {
+      "log_type": "message",
+      "log_id": "93f542ce-7f3d-4bed-9412-684b4f30b8c9",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2775
+    },
+    {
+      "log_type": "message",
+      "log_id": "7d135340-e79a-4510-86d3-a1ff9958c60f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "partition": 1,
+      "offset": 2776
+    },
+    {
+      "log_type": "access",
+      "log_id": "55f28c82-632e-41d3-902e-3d4e6249fc2f",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 6003
+    },
+    {
+      "log_type": "message",
+      "log_id": "8b4e83ff-ead5-4e70-b386-6dbb3af3cfdb",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3229
+    },
+    {
+      "log_type": "message",
+      "log_id": "7e22c161-d782-4b51-93bf-95d10a332b1e",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3230
+    },
+    {
+      "log_type": "message",
+      "log_id": "41c62f67-0169-4bc9-936c-1e0d18f224c0",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3231
+    },
+    {
+      "log_type": "message",
+      "log_id": "b7231093-e75d-463d-aeed-151b248df22c",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3232
+    },
+    {
+      "log_type": "message",
+      "log_id": "8c39c406-5bb4-4e2d-9555-2851c5c59dfc",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3233
+    },
+    {
+      "log_type": "message",
+      "log_id": "bd9854c4-4dc3-4685-90d0-f72d63df933b",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3234
+    },
+    {
+      "log_type": "message",
+      "log_id": "fdccdc76-fbdd-4afb-91f5-d4438784ed02",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3235
+    },
+    {
+      "log_type": "message",
+      "log_id": "671147e3-c080-45e0-a17d-b1fd73d863fc",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3236
+    },
+    {
+      "log_type": "message",
+      "log_id": "3c7038fa-1e6d-4b27-be39-6893273038a3",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 3237
+    },
+    {
+      "log_type": "access",
+      "log_id": "cd938f75-9804-46f4-a418-936120e234cf",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 6004
+    },
+    {
+      "log_type": "access",
+      "log_id": "7d178dd5-97a9-4c41-b4c2-a83e31113b71",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 6005
+    },
+    {
+      "log_type": "access",
+      "log_id": "570f05b8-591c-478f-921c-95eea18f484d",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+      "partition": 14,
+      "offset": 6006
+    }
+  ],
+  "metadata_sources": [
+    {
+      "role": "leader",
+      "file": "/var/log/gongwei-leader/amp/amp_access_leader_rpc_dae58220ff780270d49a400debca476af82d3c173bbb03e23ed338bfe09eef58.jsonl",
+      "validated_records": 252,
+      "invalid_records": 0,
+      "types": [
+        "access"
+      ],
+      "correlation_ids": [
+        "1847721f-6b88-40cb-a658-f51d415cbeb3",
+        "4379c96b-2dec-4c05-a335-ef13086c8a1f",
+        "a9f43cab-d4ce-4d11-b98b-432b9bf3180f",
+        "cc8b5d5b-7e7d-49af-974e-3df486381bf6",
+        "ce6f1ce3-d1b0-4a0a-b7be-aa8b3e623184",
+        "ead56793-f63f-49a1-9eab-ce42da7e5eaa",
+        "fa278faf-3d12-4ab9-a6db-11bfd61744d3",
+        "public-continue-28776fa98d93-cancel-duplicate",
+        "public-continue-28776fa98d93-cancel-operation",
+        "public-continue-28776fa98d93-task",
+        "public-continue-43a8de6e6435-cancel-duplicate",
+        "public-continue-43a8de6e6435-cancel-operation",
+        "public-continue-43a8de6e6435-task",
+        "public-continue-4bf5aadcb0ef-task",
+        "public-continue-cc0b467dc108-task"
+      ]
+    },
+    {
+      "role": "leader",
+      "file": "/var/log/gongwei-leader/amp/amp_message_leader_mq_dae58220ff780270d49a400debca476af82d3c173bbb03e23ed338bfe09eef58.jsonl",
+      "validated_records": 130,
+      "invalid_records": 0,
+      "types": [
+        "message"
+      ],
+      "correlation_ids": [
+        "1847721f-6b88-40cb-a658-f51d415cbeb3:resource:01",
+        "4379c96b-2dec-4c05-a335-ef13086c8a1f:resource:01",
+        "ce6f1ce3-d1b0-4a0a-b7be-aa8b3e623184:resource:02",
+        "ce6f1ce3-d1b0-4a0a-b7be-aa8b3e623184:workorder:01",
+        "fa278faf-3d12-4ab9-a6db-11bfd61744d3:resource:01",
+        "public-continue-28776fa98d93-task:resource:01",
+        "public-continue-43a8de6e6435-cancel-duplicate:resource:01",
+        "public-continue-43a8de6e6435-task:resource:01",
+        "public-continue-4bf5aadcb0ef-task:resource:01",
+        "public-continue-cc0b467dc108-task:resource:01"
+      ]
+    },
+    {
+      "role": "resource-inbox",
+      "file": "/var/log/gongwei-resource-inbox/amp/amp_message_partner_mq_21586e25f00f8f61999a9424c0a78dc39b6c235fda0789691e98552063b0a836.jsonl",
+      "validated_records": 105,
+      "invalid_records": 0,
+      "types": [
+        "message"
+      ],
+      "correlation_ids": [
+        "1847721f-6b88-40cb-a658-f51d415cbeb3:resource:01",
+        "4379c96b-2dec-4c05-a335-ef13086c8a1f:resource:01",
+        "ce6f1ce3-d1b0-4a0a-b7be-aa8b3e623184:resource:02",
+        "ce6f1ce3-d1b0-4a0a-b7be-aa8b3e623184:workorder:01",
+        "fa278faf-3d12-4ab9-a6db-11bfd61744d3:resource:01",
+        "public-continue-28776fa98d93-task:resource:01",
+        "public-continue-43a8de6e6435-cancel-duplicate:resource:01",
+        "public-continue-43a8de6e6435-task:resource:01",
+        "public-continue-4bf5aadcb0ef-task:resource:01",
+        "public-continue-cc0b467dc108-task:resource:01"
+      ]
+    },
+    {
+      "role": "workorder-inbox",
+      "file": "/var/log/gongwei-workorder-inbox/amp/amp_message_partner_mq_3ee6b3c24a2a0bfe804a70bd28f98cd5b1988f01c56be2ceef6d7b4da5357f2b.jsonl",
+      "validated_records": 65,
+      "invalid_records": 0,
+      "types": [
+        "message"
+      ],
+      "correlation_ids": [
+        "1847721f-6b88-40cb-a658-f51d415cbeb3:resource:01",
+        "4379c96b-2dec-4c05-a335-ef13086c8a1f:resource:01",
+        "ce6f1ce3-d1b0-4a0a-b7be-aa8b3e623184:resource:02",
+        "ce6f1ce3-d1b0-4a0a-b7be-aa8b3e623184:workorder:01",
+        "fa278faf-3d12-4ab9-a6db-11bfd61744d3:resource:01",
+        "public-continue-28776fa98d93-task:resource:01",
+        "public-continue-43a8de6e6435-cancel-duplicate:resource:01",
+        "public-continue-43a8de6e6435-task:resource:01",
+        "public-continue-4bf5aadcb0ef-task:resource:01",
+        "public-continue-cc0b467dc108-task:resource:01"
+      ]
+    }
+  ],
+  "all_services_active_enabled": true,
+  "boot_before": "6b8a5804-6a61-40e8-8fb8-60326c71974c",
+  "actual_reboot_verified": true
+}

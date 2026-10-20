@@ -1,0 +1,686 @@
+PATTERN: async function continueSecretaryCollaboration
+amContext.runtimeKey, 'attention');
+        }
+        setConversationLoading(streamContext.runtimeKey, false);
+    }
+}
+
+async function continueSecretaryCollaboration(text, interaction = null) {
+    const pending = state.pendingSecretaryCollaboration || interaction?.collaboration;
+    if (!pending) return;
+    const selectedAgents = Array.isArray(pending.selectedAgents)
+        ? pending.selectedAgents.filter(Boolean)
+        : [];
+    if (selectedAgents.length === 0) {
+        addErrorMessage('当前协作缺少已选智能体，无法继续；请重新发起智能体发现。');
+        return;
+    }
+
+    const continuationInteraction = secretaryContinuationInteraction(pending, interaction);
+    const execution = beginAgentContinuationExecution(continuationInteraction);
+    addMessageToUI({ role: 'user', content: text });
+    state.messages.push({ role: 'user', content: text });
+    elements.messageInput.value = '';
+    elements.messageInput.style.height = 'auto';
+    // 用户已经提交补充，不能继续显示“正在等待你的回复”。
+    clearActiveAgentInteraction();
+
+    try {
+        // The completion card has no native continue protocol. Starting a
+        // preference-driven collaboration therefore supersedes its paused run.
+        if (continuationInteraction.run_id) {
+            await cancelAgentInteraction(continuationInteraction);
+        }
+        const clientContext = await buildClientContext({ requireLocation: false });
+        const candidateContext = pending.candidateContent || pending.content || '';
+        const resumedQuery = `${pending.userQuery}\n\n上一轮候选结果：${candidateContext}\n\n叮当请求补充：${pending.question}\n用户回答：${text}`;
+        state.pendingSecretaryCollaboration = null;
+        createSecretaryContinuationCard(state.currentConversationId, pending, text);
+        const response = await fetch(`${API_BASE}/agent/execute`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+            body: JSON.stringify({
+                conversation_id: String(state.currentConversationId || ''),
+                selected_agents: selectedAgents,
+                user_query: resumedQuery,
+                continuation_user_input: text,
+                ioa_agents: pending.ioaAgents,
+                client_context: clientContext,
+                attachment_ids: pending.attachmentIds || []
+            }),
+            signal: execution.controller.signal
+        });
+        if (!response.ok) throw await createHttpError(response, '继续协作');
+        await processExecutionStream(response);
+    } catch (error) {
+        if (execution.controller.signal.aborted) return;
+        state.pendingSecretaryCollaboration = continuationInteraction.collaboration;
+        setActiveAgentInteraction(continuationInteraction);
+        addErrorMessage(`继续叮当多智能体协调失败：${error.message || '请稍后重试'}`);
+    } finally {
+        finishAgentContinuationExecution(execution.conversationId, execution.controller);
+        if (!state.pendingSecretaryCollaboration) elements.messageInput.placeholder = '输入消息...';
+    }
+}
+
+function secretaryContinuationInteraction(pending, source = null) {
+    const runId = String(pending?.runId || pending?.run_id || source?.run_id || '');
+    const collaboration = {
+        ...(pending || {}),
+        runId,
+    };
+    return {
+        interaction_kind: 'collaboration',
+        conversation_id: state.currentConversationId,
+        run_id: runId,
+        execution_origin: 'dingdang-collaboration',
+        collaboration_topology: pending?.collaborationTopology || source?.collaboration_topology || '',
+        node_source: pending?.nodeSource || pending?.node_source || source?.node_source || 'dingdang',
+        collaboration_task_id: pending?.collaborationTaskId || pending?.collaboration_task_id || source?.collaboration_task_id || '',
+        task_id: pending?.taskId || pending?.task_id || source?.task_id || '',
+        endpoint: pending?.endpoint || source?.endpoint || '',
+        aic: pending?.aic || source?.aic || '',
+        session_id: pending?.sessionId || pending?.session_id || source?.session_id || '',
+        agent: pending?.agent || source?.agent || '叮当',
+        agent_name: pending?.agent || pending?.agent_name || source?.agent_name || source?.agent || '叮当',
+        state: 'awaiting-input',
+        status: 'awaiting-input',
+        cancelable: Boolean(runId),
+        collaboration,
+    };
+}
+
+async function confirmSecretaryCompletion() {
+    const pending = state.pendingSecretaryCompletion;
+    if (!pending || state.isLoading) return;
+    state.isLoading = true;
+    try {
+        const completionMessage = {
+            role: 'assistant',
+            content: `已按你的确认完成协作。\n\
+
+PATTERN: async function continueActiveAgentInteraction
+addMessageToUI({ role: 'assistant', content: `好的，请补充你的偏好后继续协作。\n\n${pending.question || '请说明你希望调整的目标、约束或输出偏好。'}` });
+}
+
+async function continueActiveAgentInteraction(text) {
+    const interaction = state.activeAgentInteraction;
+    if (!interaction) return;
+
+    const execution = beginAgentContinuationExecution(interaction);
+
+    addMessageToUI({ role: 'user', content: text });
+    state.messages.push({ role: 'user', content: text });
+    elements.messageInput.value = '';
+    elements.messageInput.style.height = 'auto';
+    // 续办请求已经开始，立刻关闭旧的等待态；失败时才恢复。
+    clearActiveAgentInteraction();
+
+    try {
+        await continueAgentTask(interaction, text, { signal: execution.controller.signal });
+    } catch (error) {
+        if (execution.controller.signal.aborted) return;
+        console.error('Continue active agent interaction failed:', error);
+        setActiveAgentInteraction(interaction);
+        const errorText = normalizeUserFacingErrorText(error.message);
+        if (elements.agentInteractionStatusHint) elements.agentInteractionStatusHint.textContent = `发送失败：${errorText}`;
+        addErrorMessage(`继续智能体对话失败：${errorText}`);
+    } finally {
+        finishAgentContinuationExecution(execution.conversationId, execution.controller);
+    }
+}
+
+async function cancelAgentInteraction(interaction) {
+    const agentName = interaction.agent_name || interaction.agent || '智能体';
+    if (interaction.interaction_kind === 'collaboration') {
+        const collaborationTasks = Array.isArray(interaction.collaboration_tasks)
+            ? interaction.collaboration_tasks.filter(task => task && task.task_id)
+            : [];
+        const response = await fetch(`${API_BASE}/collaboration/${encodeURIComponent(interaction.run_id || '')}/cancel`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+            body: JSON.stringify({
+                task_id: interaction.node_source === 'external-agent' ? (interaction.task_id || interaction.taskId || '') : '',
+                tasks: collaborationTasks,
+                agent: interaction.agent_name || interaction.agent || '',
+                endpoint: interaction.endpoint || '',
+                aic: interaction.aic || '',
+                session_id: interaction.session_id || interaction.sessionId || ''
+            })
+        });
+        if (!response.ok) throw await createHttpError(response, '结束协作');
+        return;
+    }
+    if (interaction.cancelable === false || !(interaction.task_id || interaction.taskId)) {
+        throw new Error('该历史任务已结束或不可继续，不能取消。');
+    }
+    const response = await fetch(`${API_BASE}/agent/cancel`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+            body: JSON.stringify({
+                conversation_id: String(interaction.conversation_id || state.currentConversationId || ''),
+                agent: {
+                    name: agentName,
+                    endpoint: interaction.endpoint || '',
+                    aic: interaction.aic || ''
+                },
+                endpoint: interaction.endpoint || '',
+                aic: interaction.aic || '',
+                task_id: interaction.task_id || interaction.taskId || '',
+                session_id: interaction.session_id || interaction.sessionId || ''
+            })
+        });
+    if (!response.ok) throw await createHttpError(response, '结束多轮对话');
+}
+
+function markAgentInteractionCancelled(interaction) {
+    const agentName = interaction.agent_name || interaction.agent || '智能体';
+    const pollCount = Math.max(Number(interaction.poll_count ?? interaction.pollCount ?? 0), agentPollCounts[agentName] || 0);
+    const elapsedTime = Math.max(Number(interaction.elapsed_time ?? interaction.elapsedTime ?? 0), agentElapsedTimes[agentName] || 0);
+    updateAgentStatus(agentName, 'canceled', pollCount, elapsedTime);
+    if (statusUpdateInterval) {
+        clearInterval(statusUpdateInterval);
+        statusUpdateInterval = null;
+    }
+    executionStartTime = null;
+}
+
+async function endActiveAgentInteraction() {
+    const interaction = state.activeAgentInteraction;
+    if (!interaction || state.isLoading) return;
+    const agentName = interaction.agent_name || interaction.agent || '智能体';
+    if (!confirm(`确定结束与 ${agentName} 的本次多轮对话吗？`)) return;
+
+    state.isLoading = true;
+    elements.agentInteractionEndBtn.disabled = true;
+    try {
+        await cancelAgentInteraction(interaction);
+        markAgentInteractionCancelled(interaction);
+        clearActiveAgentInteraction();
+        addMessageToUI({ role: 'assistant
+
+PATTERN: async function sendMessage
+tResultMessage(btn, messageDomId) {
+    copyMessage(btn, state.rawAgentResultCopyTexts[messageDomId] || '');
+}
+
+// 发送消息
+async function sendMessage() {
+    const text = elements.messageInput.value.trim();
+    const hasImage = state.currentImage && state.currentImage.imageUrl;
+    const hasAttachment = state.currentAttachments.some(item => Boolean(item.artifactId));
+    if (!text && !hasImage && !hasAttachment) return;
+    if (getConversationRuntime(state.currentConversationId).loading) return;
+    if ((state.currentImage && state.currentImage.uploading) || state.currentAttachments.some(item => item.uploading)) {
+        alert('附件正在上传中，请稍候...');
+        return;
+    }
+
+    if (!state.user) {
+        showAuthModal();
+        return;
+    }
+    if (!await ensureFreshAccessToken()) {
+        showAuthModal();
+        return;
+    }
+
+    if (state.activeAgentInteraction) {
+        if (hasImage || hasAttachment) {
+            alert('多轮对话进行中，请先用文本补充信息，或结束本次对话后再上传附件。');
+            return;
+        }
+        if (state.activeAgentInteraction.collaboration) {
+            await continueSecretaryCollaboration(text, state.activeAgentInteraction);
+        } else {
+            await continueActiveAgentInteraction(text);
+        }
+        return;
+    }
+
+    if (state.pendingSecretaryCollaboration) {
+        if (hasImage || hasAttachment) {
+            alert('叮当正在等待文本补充，请先完成本轮协作。');
+            return;
+        }
+        await continueSecretaryCollaboration(text);
+        return;
+    }
+
+    const requestedConversationId = state.currentConversationId;
+    const runtimeKey = conversationRuntimeKey(requestedConversationId) || `draft-${Date.now()}`;
+    const requestController = new AbortController();
+    getConversationRuntime(runtimeKey);
+    setConversationLoading(runtimeKey, true, requestController);
+    state.selectedIoaAgents.clear();
+    state.currentWebAgents = [];
+    state.currentIoaAgents = [];
+    state.currentProcessCard = null;
+    currentStreamingMessage = null;
+    currentStreamingMeta = null;
+    state.hasAgentResultCardsInCurrentRun = false;
+    state.hasRawAgentResultsInCurrentRun = false;
+    state.rawAgentResultCopyTexts = {};
+    state.currentTaskIntent.weather = detectWeatherTaskIntent(text);
+    state.currentTaskIntent.queryText = text;
+    state.currentTaskIntent.preferredPresetId = detectAgentAppIntentPreset(text)?.id || '';
+    state.currentTaskIntent.attachmentIds = [
+        hasImage ? state.currentImage.artifactId : null,
+        ...state.currentAttachments.map(item => item.artifactId)
+    ].filter(Boolean);
+
+    const userMessage = {
+        role: 'user',
+        content: text,
+        image_url: hasImage ? state.currentImage.imageUrl : null
+    };
+    addMessageToUI(userMessage);
+    elements.messageInput.value = '';
+    elements.messageInput.style.height = 'auto';
+
+    const imageUrl = hasImage ? state.currentImage.imageUrl : null;
+    const attachmentIds = [...state.currentTaskIntent.attachmentIds];
+    clearCurrentImage();
+    clearCurrentAttachment();
+
+    createProcessCard(state.currentConversationId, text);
+
+    const typingId = addTypingIndicator();
+
+    const streamContext = {
+        requestedConversationId,
+        runtimeKey,
+    };
+    try {
+        await streamChatResponse(text, typingId, imageUrl, attachmentIds, requestController.signal, streamContext);
+    } catch (e) {
+        if (e.name === 'AbortError') return;
+        console.error('Error sending message:', e);
+        removeTypingIndicator(typingId);
+        markCurrentProcessCardError(e.message || '发送消息失败');
+        addErrorMessage(`抱歉，发生了错误：${e.message || '请稍后重试'}`);
+    } finally {
+        if (getConversationRuntime(streamContext.runtimeKey).activity === 'running') {
+            setConversationActivity(streamContext.runtimeKey, 'attention');
+        }
+        setConversationLoading(streamContext.runtimeKey, false);
+    }
+}
+
+async function continueSecretaryCollaboration(text, interaction = null) {
+    const pending = state.pendingSecretaryCollaboration || interaction?.collaboration;
+    if (!pending) return;
+    const selectedAgents = Array.isArray(pending.selectedAgents)
+        ? pending.selectedAgents.filter(Boolean)
+        : [];
+    if (selectedAgents.length === 0) {
+        addErrorMessage('当前协作缺少已选智能体，无法继续；请重新发起智能体发现。');
+        return;
+    }
+
+    const continuationInteraction = secretaryContinuationInteraction(pending, interaction);
+    const execution = beginAgentContinuationExecution(continuationInteraction);
+    addMessageToUI({ role: 'user', content: text });
+    state.messages.push({ role: 'user', content: text });
+    elements.messageInput.value
+
+PATTERN: function handleWorkflowHandoff
+rue });
+    }
+    updateRecentAgentAppEntry(page);
+    return true;
+}
+
+// 工作流交接由后续的 agent_result_card 唤起第二个协调应用页。
+async function handleWorkflowHandoff(event) {
+    const handoffId = String(event.handoff_id || event.handoffId || '');
+    if (!handoffId || state.workflowHandoffs[handoffId]) return;
+    state.workflowHandoffs[handoffId] = 'transitioning';
+
+    const firstRoundAgentName = event.agent || '前序智能体';
+    const nextAction = event.next_action || event.nextAction || {};
+    const targetAgentName = nextAction.agent?.name || '目标智能体';
+    addMessageToUI({
+        role: 'assistant',
+        content: event.message || `好的，我已经拿到本地智能体 ${firstRoundAgentName} 的天气结果了。接下来我会在第二轮通过 Discovery 查找并调用云端智能体 ${targetAgentName}。`
+    });
+    await new Promise(resolve => window.setTimeout(resolve, 300));
+
+    if (!['direct-invoke', 'discover-and-direct-invoke'].includes(nextAction.kind)
+        || !nextAction.task
+        || (!nextAction.discovery_query && !nextAction.agent)) {
+        state.workflowHandoffs[handoffId] = 'failed';
+        throw new Error('叮当未收到可执行的第二轮调用信息');
+    }
+
+    createProcessCard(
+        event.conversation_id || state.currentConversationId,
+        `第 2 轮：发现并调用云端智能体 ${targetAgentName}`,
+        {
+            title: '第 2 轮 · 云端智能体调用',
+            identity: `云端智能体：${targetAgentName}`,
+            stages: [
+                { index: 0, icon: '🌦️', title: '本地天气结果', defaultStatus: '待接收' },
+                { index: 1, icon: '🔍', title: '云端 Agent 发现', defaultStatus: '待执行' },
+                { index: 2, icon: '⚡', title: '云端 AIP 调用', defaultStatus: '待执行' },
+                { index: 3, icon: '✅', title: '云端结果返回', defaultStatus: '待执行' }
+            ]
+        }
+    );
+    const secondRoundCardId = state.currentProcessCard?.id;
+    if (secondRoundCardId) {
+        updateProcessStage(secondRoundCardId, 0, 'completed', {
+            detail: `本地智能体：${escapeHTML(firstRoundAgentName)} 已完成并返回天气结果`
+        });
+        updateProcessStage(secondRoundCardId, 1, 'running', {
+            detail: `正在通过 ACPs Discovery 查找云端智能体：${escapeHTML(targetAgentName)}…`
+        });
+    }
+
+    state.workflowHandoffs[handoffId] = 'discovering';
+    // 第二轮的结果呈现状态必须独立计数，不能继承第一轮天气 App 已经打开过的标志。
+    state.hasAgentResultCardsInCurrentRun = false;
+    state.hasRawAgentResultsInCurrentRun = false;
+    const response = await fetch(`${API_BASE}/agent/direct-invoke`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            ...getAuthHeaders()
+        },
+        body: JSON.stringify({
+            task: nextAction.task,
+            conversation_id: event.conversation_id || state.currentConversationId,
+            card_id: nextAction.card_id || '',
+            workflow_handoff_id: handoffId,
+            discovery_query: nextAction.discovery_query,
+            discovery_target: nextAction.discovery_target || '',
+            agent: nextAction.agent || null
+        })
+    });
+    if (!response.ok) {
+        state.workflowHandoffs[handoffId] = 'failed';
+        throw await createHttpError(response, '发起第二轮调用');
+    }
+
+    applyQuotaHeaders(response);
+    const terminalEvent = await processExecutionStream(response);
+    const targetIdentity = terminalEvent?.agent_name || terminalEvent?.agent || targetAgentName;
+    if (!terminalEvent || terminalEvent.type === 'execution_error') {
+        state.workflowHandoffs[handoffId] = 'failed';
+        if (!terminalEvent && secondRoundCardId) {
+            updateProcessStage(secondRoundCardId, 2, 'error', { detail: '第二轮响应提前结束，未收到执行终态' });
+            updateProcessStage(secondRoundCardId, 3, 'error', { detail: '未收到云端智能体的最终结果' });
+        }
+        addMessageToUI({
+            role: 'assistant',
+            content: terminalEvent
+                ? `云端智能体 ${targetIdentity} 执行失败：${terminalEvent.message || terminalEvent.content || '未返回可用结果'}`
+                : `云端智能体 ${targetAgentName} 的第二轮响应提前结束，未收到终态结果。`
+        });
+        return;
+    }
+    state.workflowHandoffs[handoffId] = 'completed';
+    addMessageToUI({
+        role: 'assistant',
+        content: `云端智能体 ${targetIdentity} 已执行完成并返回结果${terminalEvent.task_id ? `（Task ${terminalEvent.task_id}）` : ''}，结果应用已更新。`
+    });
+}
+
+// 兼容旧事件绑定名；实际关闭的是通用智能体应用。
+function closeWeatherAgentApp() {
+    closeAgentApp();
+}
+
+// 判断当前卡片是否来自 Partner 误把追问作为 completed 返回的兼容场景。
+function shouldRestartAgentTask(event) {
+    const hints = getAgentRenderHints(event);
+    const originalState = String(hints.protocol_state_original || hints.protocolStateOriginal || '').toLowerCase();
+    return hints.interaction_reason === 'weather-location-required'
+        || hints.interactionReason
+
+PATTERN: /agent/direct-invoke
+rdsInCurrentRun = false;
+    state.hasRawAgentResultsInCurrentRun = false;
+    const response = await fetch(`${API_BASE}/agent/direct-invoke`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            ...getAuthHeaders()
+        },
+        body: JSON.stringify({
+            task: nextAction.task,
+            conversation_id: event.conversation_id || state.currentConversationId,
+            card_id: nextAction.card_id || '',
+            workflow_handoff_id: handoffId,
+            discovery_query: nextAction.discovery_query,
+            discovery_target: nextAction.discovery_target || '',
+            agent: nextAction.agent || null
+        })
+    });
+    if (!response.ok) {
+        state.workflowHandoffs[handoffId] = 'failed';
+        throw await createHttpError(response, '发起第二轮调用');
+    }
+
+    applyQuotaHeaders(response);
+    const terminalEvent = await processExecutionStream(response);
+    const targetIdentity = terminalEvent?.agent_name || terminalEvent?.agent || targetAgentName;
+    if (!terminalEvent || terminalEvent.type === 'execution_error') {
+        state.workflowHandoffs[handoffId] = 'failed';
+        if (!terminalEvent && secondRoundCardId) {
+            updateProcessStage(secondRoundCardId, 2, 'error', { detail: '第二轮响应提前结束，未收到执行终态' });
+            updateProcessStage(secondRoundCardId, 3, 'error', { detail: '未收到云端智能体的最终结果' });
+        }
+        addMessageToUI({
+            role: 'assistant',
+            content: terminalEvent
+                ? `云端智能体 ${targetIdentity} 执行失败：${terminalEvent.message || terminalEvent.content || '未返回可用结果'}`
+                : `云端智能体 ${targetAgentName} 的第二轮响应提前结束，未收到终态结果。`
+        });
+        return;
+    }
+    state.workflowHandoffs[handoffId] = 'completed';
+    addMessageToUI({
+        role: 'assistant',
+        content: `云端智能体 ${targetIdentity} 已执行完成并返回结果${terminalEvent.task_id ? `（Task ${terminalEvent.task_id}）` : ''}，结果应用已更新。`
+    });
+}
+
+// 兼容旧事件绑定名；实际关闭的是通用智能体应用。
+function closeWeatherAgentApp() {
+    closeAgentApp();
+}
+
+// 判断当前卡片是否来自 Partner 误把追问作为 completed 返回的兼容场景。
+function shouldRestartAgentTask(event) {
+    const hints = getAgentRenderHints(event);
+    const originalState = String(hints.protocol_state_original || hints.protocolStateOriginal || '').toLowerCase();
+    return hints.interaction_reason === 'weather-location-required'
+        || hints.interactionReason === 'weather-location-required'
+        || originalState === 'completed';
+}
+
+// 将天气应用中的用户补充输入回传给后端，由后端选择 AIP continue 或重启任务。
+async function continueAgentTask(event, userInput, options = {}) {
+    const cardRef = event ? getAgentResultCardDomId(event) : getActiveAgentAppCardRef();
+    if (!event) {
+        setAgentAppContinueState(cardRef, {
+            status: 'error',
+            message: '找不到可继续的 AIP 任务，请重新发起调用。'
+        });
+        return;
+    }
+    const input = String(userInput || '').trim();
+    if (!input) {
+        setAgentAppContinueState(cardRef, {
+            status: 'error',
+            message: '请先补充智能体所需的信息。'
+        });
+        return;
+    }
+
+    setAgentAppContinueState(cardRef, {
+        status: 'pending',
+        input,
+        message: `正在向${event.agent_name || event.agent || '智能体'}发送补充信息...`
+    });
+
+    try {
+        const context = await buildClientContext({ requireLocation: options.requireLocation || false });
+        const payload = {
+            conversation_id: event.conversation_id || state.currentConversationId,
+            agent: {
+                name: event.agent_name || event.agent || '未知',
+                endpoint: event.endpoint || '',
+                aic: event.aic || ''
+            },
+            endpoint: event.endpoint || '',
+            aic: event.aic || '',
+            task_id: event.task_id || event.taskId || '',
+            session_id: event.session_id || event.sessionId || '',
+            card_id: event.card_id || event.cardId || '',
+            assigned_task: event.assigned_task || '',
+            user_input: input,
+            force_new_task: Boolean(options.forceNewTask || shouldRestartAgentTask(event)),
+            quota_continuation_token: event.quota_continuation_token || event.quotaContinuationToken || '',
+            client_context: context
+        };
+
+        const response = await fetch(`${API_BASE}/agent/continue`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                ...getAuthHeaders()
+            },
+            body: JSON.stringify(payload),
+            signal: options.signal
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to continue
+
+PATTERN: developerDebugCanContinue
+loads.size
+});
+
+let developerDebugSessionId = '';
+let developerDebugEvents = [];
+let developerDebugRunning = false;
+let developerDebugCanContinue = false;
+
+const developerTemplateMessages = {
+    start: JSON.stringify({query: '{任务目标}'}, null, 2),
+    continue: JSON.stringify({query: '{后续问题或补充要求}'}, null, 2),
+    cancel: JSON.stringify({query: '取消当前任务'}, null, 2),
+    supplement: JSON.stringify({query: '{补充信息}'}, null, 2),
+};
+
+const developerAcsTemplates = {
+    discovery: JSON.stringify({
+        aic: '1.2.156.3088.1.0001.00001.Z2L0JR.YLE7QO.0QD0',
+        name: '智能体发现Agent',
+        endPoints: [{
+            url: 'https://49.232.42.120:9988/acps/aip/v1/rpc',
+            transport: 'JSONRPC',
+        }],
+        protocolVersion: '02.01',
+        defaultInputModes: ['application/json'],
+        defaultOutputModes: ['application/json'],
+    }, null, 2),
+};
+
+function setDeveloperDebugStatus(message) {
+    if (elements.developerDebugStatus) {
+        elements.developerDebugStatus.textContent = message;
+    }
+}
+
+function renderDeveloperDebugEvents() {
+    if (elements.developerRawResponse) {
+        elements.developerRawResponse.textContent = developerDebugEvents
+            .map(event => JSON.stringify(event, null, 2))
+            .join('\n\n');
+    }
+}
+
+function setDeveloperDebugRunning(running) {
+    developerDebugRunning = running;
+    if (elements.developerSendBtn) elements.developerSendBtn.disabled = running;
+}
+
+async function developerDebugStream(url, payload) {
+    setDeveloperDebugRunning(true);
+    setDeveloperDebugStatus('正在发送消息…');
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json', ...getAuthHeaders()},
+            body: JSON.stringify(payload),
+        });
+        if (!response.ok) {
+            const errorBody = await response.text();
+            let errorMessage = '';
+            try {
+                const error = JSON.parse(errorBody);
+                const detail = error.detail || error.message;
+                errorMessage = typeof detail === 'string' ? detail : JSON.stringify(detail);
+            } catch (_error) {
+                errorMessage = errorBody;
+            }
+            developerDebugEvents.push({
+                type: "debug_response_error",
+                http_status: response.status,
+                raw_response: errorBody,
+            });
+            renderDeveloperDebugEvents();
+            throw new Error(errorMessage || `调试请求失败（HTTP ${response.status}）`);
+        }
+
+        setDeveloperDebugStatus('消息已发送，等待智能体响应…');
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        let pending = '';
+        while (true) {
+            const {done, value} = await reader.read();
+            if (done) break;
+            pending += decoder.decode(value, {stream: true});
+            let separator;
+            while ((separator = pending.indexOf('\n\n')) >= 0) {
+                const block = pending.slice(0, separator);
+                pending = pending.slice(separator + 2);
+                const line = block.split('\n').find(item => item.startsWith('data: '));
+                if (!line) continue;
+                const event = JSON.parse(line.slice(6));
+                developerDebugSessionId = event.debug_session_id || developerDebugSessionId;
+                developerDebugEvents.push(event);
+                renderDeveloperDebugEvents();
+                const state = event.error ? '调用失败' : (event.agent_result?.state || event.status || '运行中');
+                developerDebugCanContinue = state === 'awaiting-input';
+                setDeveloperDebugStatus(`状态：${state}`);
+            }
+        }
+    } finally {
+        setDeveloperDebugRunning(false);
+    }
+}
+
+async function loadDeveloperDebugLogs() {
+    const response = await fetch(`${API_BASE}/developer-tools/debug/logs`, {headers: getAuthHeaders()});
+    if (!response.ok) throw new Error('调试日志加载失败');
+    elements.developerLogsOutput.textContent = JSON.stringify(await response.json(), null, 2);
+}
+
+function setDeveloperToolsTab(tab) {
+    const logs = tab === 'logs';
+    elements.developerDebugPanel.hidden = logs;
+    elements.developerLogsPanel.hidden = !logs;
+    document.querySelectorAll('[data-debug-tab]').forEach(button => {
+        const selected = button.dataset.debugTab === tab;
+        button.classList.toggle('active', selected);
+        button.setAttribute('aria-selected', String(selected));
+    });
+}
+
+function setupDeveloperTools() {
+    elements.sidebarDeveloperTools?.addEventListener('click', () => {
+        closeSidebarAcco

@@ -1,0 +1,18 @@
+{
+  "unittest": {
+    "exit_code": 1,
+    "elapsed_s": 17.42
+  },
+  "stage2": {
+    "exit_code": 0,
+    "elapsed_s": 3.66
+  },
+  "stage5": {
+    "exit_code": 0,
+    "elapsed_s": 4.76
+  },
+  "scenarios60": {
+    "exit_code": 0,
+    "elapsed_s": 6.96
+  }
+}

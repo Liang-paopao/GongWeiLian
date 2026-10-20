@@ -1,0 +1,135 @@
+{
+  "work_orders": [
+    {
+      "id": "wo-f9592ec4-aacb-4074-ac6f-a0feeb847cd6",
+      "number": "WO-20261007-3950EB",
+      "request_id": "req-22aa537d-2095-47b7-b6c6-51276e367d72",
+      "plan_id": "plan-1e6b2f1e-7efa-4437-9a51-48207f85cf62",
+      "status": "confirmed",
+      "failure_reason": null,
+      "created_at": "2026-10-06T19:40:56.987706+00:00",
+      "updated_at": "2026-10-06T19:40:56.987706+00:00"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "reservation-4e3dec72-5365-4e09-b728-8e6f0e7cbd8b",
+      "plan_id": "plan-1e6b2f1e-7efa-4437-9a51-48207f85cf62",
+      "request_id": "req-22aa537d-2095-47b7-b6c6-51276e367d72",
+      "resource_type": "worker",
+      "resource_id": "worker-01",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-08T15:00:00",
+      "end_at": "2026-10-08T16:00:00",
+      "created_at": "2026-10-06T19:40:56.867963+00:00",
+      "released_at": null
+    },
+    {
+      "id": "reservation-95252d7c-fa4e-4889-afb4-62bc379de29b",
+      "plan_id": "plan-1e6b2f1e-7efa-4437-9a51-48207f85cf62",
+      "request_id": "req-22aa537d-2095-47b7-b6c6-51276e367d72",
+      "resource_type": "inventory",
+      "resource_id": "part-seal-ring",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-08T15:00:00",
+      "end_at": "2026-10-08T16:00:00",
+      "created_at": "2026-10-06T19:40:56.867963+00:00",
+      "released_at": null
+    },
+    {
+      "id": "reservation-322f53b7-f0b8-42bb-a830-bf7ff28c80d6",
+      "plan_id": "plan-1e6b2f1e-7efa-4437-9a51-48207f85cf62",
+      "request_id": "req-22aa537d-2095-47b7-b6c6-51276e367d72",
+      "resource_type": "inventory",
+      "resource_id": "tool-inspection-kit",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-08T15:00:00",
+      "end_at": "2026-10-08T16:00:00",
+      "created_at": "2026-10-06T19:40:56.867963+00:00",
+      "released_at": null
+    }
+  ],
+  "agent_tasks": [
+    {
+      "task_id": "task-6f9acffe-f3a5-416e-81b5-f5432bfa99de",
+      "session_id": "session-2d83326b-6392-4bea-946c-f7abcf78cb48",
+      "external_task_id": "task-6f9acffe-f3a5-416e-81b5-f5432bfa99de",
+      "request_id": "req-faf70235-f9df-4c82-8eb6-861e5db55164",
+      "plan_id": "plan-a6af698b-fb23-435e-b6ab-fbfbc54a2884",
+      "status": "ready_for_plan",
+      "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"下午两点开始，预计一小时，需要泵体检查技能。\", \"start_time\": \"15:00\", \"duration_minutes\": 60, \"required_skill\": \"泵体检查\"}, \"missing_fields\": [], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+      "created_at": "2026-10-06T19:30:21.696423+00:00",
+      "updated_at": "2026-10-06T19:31:23.909837+00:00"
+    },
+    {
+      "task_id": "task-32f80090-7bd2-4017-a97b-5661d9348cf7",
+      "session_id": "session-49f4ed5a-2d1b-4207-9824-1c89c4878fbe",
+      "external_task_id": "task-32f80090-7bd2-4017-a97b-5661d9348cf7",
+      "request_id": "req-22aa537d-2095-47b7-b6c6-51276e367d72",
+      "plan_id": "plan-1e6b2f1e-7efa-4437-9a51-48207f85cf62",
+      "status": "completed",
+      "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。\", \"start_time\": \"15:00\", \"duration_minutes\": 60, \"required_skill\": \"泵体检查\"}, \"missing_fields\": [], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+      "created_at": "2026-10-06T19:38:33.034825+00:00",
+      "updated_at": "2026-10-06T19:42:30.487636+00:00"
+    }
+  ],
+  "task_subtasks": [
+    {
+      "subtask_id": "subtask-task-32f80090-7bd2-4017-a97b-5661d9348cf7:resource:query:7948557ae32f59c23ffc0d3a",
+      "parent_task_id": "task-32f80090-7bd2-4017-a97b-5661d9348cf7",
+      "external_task_id": "task-32f80090-7bd2-4017-a97b-5661d9348cf7:resource:query:7948557ae32f59c23ffc0d3a",
+      "partner": "resource",
+      "action": "query_resources",
+      "message_id": "message-f111b088-5d9b-41e7-adc7-3773197ea66f",
+      "status": "completed",
+      "result_json": "{\"simulated\": true, \"ok\": true, \"partner\": \"resource\", \"action\": \"query_resources\", \"result\": {\"simulated\": true, \"request_id\": \"req-22aa537d-2095-47b7-b6c6-51276e367d72\", \"workers\": [{\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, {\"id\": \"worker-03\", \"name\": \"模拟人员丙\", \"role\": \"综合维护\"}], \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"available_qty\": 5, \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"available_qty\": 2, \"unit\": \"套\"}], \"required_skill\": \"pump_inspection\", \"required_inventory\": [\"tool-inspection-kit\", \"part-seal-ring\"], \"available\": true, \"reasons\": [], \"start_at\": \"2026-10-08T14:00:00\", \"end_at\": \"2026-10-08T15:00:00\"}}",
+      "created_at": "2026-10-06T19:38:44.456283+00:00",
+      "updated_at": "2026-10-06T19:38:44.583479+00:00"
+    },
+    {
+      "subtask_id": "subtask-task-32f80090-7bd2-4017-a97b-5661d9348cf7:resource:query:8106deef700f00bc91ddb4bd",
+      "parent_task_id": "task-32f80090-7bd2-4017-a97b-5661d9348cf7",
+      "external_task_id": "task-32f80090-7bd2-4017-a97b-5661d9348cf7:resource:query:8106deef700f00bc91ddb4bd",
+      "partner": "resource",
+      "action": "query_resources",
+      "message_id": "message-13d070b9-8c5e-430f-b2c1-2ebaf7444b59",
+      "status": "completed",
+      "result_json": "{\"simulated\": true, \"ok\": true, \"partner\": \"resource\", \"action\": \"query_resources\", \"result\": {\"simulated\": true, \"request_id\": \"req-22aa537d-2095-47b7-b6c6-51276e367d72\", \"workers\": [{\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, {\"id\": \"worker-03\", \"name\": \"模拟人员丙\", \"role\": \"综合维护\"}], \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"available_qty\": 5, \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"available_qty\": 2, \"unit\": \"套\"}], \"required_skill\": \"pump_inspection\", \"required_inventory\": [\"tool-inspection-kit\", \"part-seal-ring\"], \"available\": true, \"reasons\": [], \"start_at\": \"2026-10-08T15:00:00\", \"end_at\": \"2026-10-08T16:00:00\"}}",
+      "created_at": "2026-10-06T19:39:12.968087+00:00",
+      "updated_at": "2026-10-06T19:39:13.052396+00:00"
+    }
+  ],
+  "plans": [
+    {
+      "id": "plan-a6af698b-fb23-435e-b6ab-fbfbc54a2884",
+      "request_id": "req-faf70235-f9df-4c82-8eb6-861e5db55164",
+      "status": "proposed",
+      "version": 1,
+      "worker_id": "worker-01",
+      "inventory_json": "[\"part-seal-ring\", \"tool-inspection-kit\"]",
+      "reason": "按技能、时段和库存生成的模拟方案",
+      "work_order_id": null,
+      "created_at": "2026-10-06T19:30:29.305425+00:00",
+      "updated_at": "2026-10-06T19:30:29.305425+00:00"
+    },
+    {
+      "id": "plan-1e6b2f1e-7efa-4437-9a51-48207f85cf62",
+      "request_id": "req-22aa537d-2095-47b7-b6c6-51276e367d72",
+      "status": "confirmed",
+      "version": 2,
+      "worker_id": "worker-01",
+      "inventory_json": "[\"part-seal-ring\", \"tool-inspection-kit\"]",
+      "reason": "资源变化后重新生成的模拟方案",
+      "work_order_id": "wo-f9592ec4-aacb-4074-ac6f-a0feeb847cd6",
+      "created_at": "2026-10-06T19:38:44.606453+00:00",
+      "updated_at": "2026-10-06T19:40:56.987706+00:00"
+    }
+  ],
+  "checks": {
+    "work_orders": 1,
+    "active_reservations": 3
+  }
+}

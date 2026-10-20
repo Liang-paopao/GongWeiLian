@@ -1,0 +1,38 @@
+{
+  "url": "https://wt.ioa.pub/discovery/admin/alive-sync/status",
+  "checked_at": "2026-10-07T09:14:39.123701+00:00",
+  "response": {
+    "running": true,
+    "aliveCount": 120,
+    "knownCount": 218,
+    "checkpointCount": 1,
+    "shards": {
+      "hb-000": {
+        "lastSeenSeq": 2380012,
+        "cutoverSeq": 983569,
+        "kafkaNextOffset": 2380018,
+        "snapshotGeneratedAt": "2026-10-01T11:34:55.337000+00:00"
+      }
+    },
+    "lastBootstrapSuccessAt": "2026-10-01T11:34:55.380188Z",
+    "lastDeltaAppliedAt": "2026-10-06T11:58:48.559912Z",
+    "lastDeltaReceivedAt": "2026-10-06T11:58:48.559884Z",
+    "skipSeqGateCount": 6,
+    "consecutiveSkipSeqGate": 0,
+    "lastError": {
+      "at": "2026-10-07T09:14:09.232544Z",
+      "reason": "AliveSyncError: Provider /sync/snapshot 响应为空（无 meta 行）"
+    },
+    "snapshotRejectCount": 0,
+    "lastSnapshotReject": null,
+    "snapshotForceApplyCount": 0,
+    "lastSnapshotForceApply": null,
+    "resyncCount": 21,
+    "hardResyncCount": 1,
+    "lastResync": {
+      "at": "2026-10-07T09:14:39.249933Z",
+      "reason": "gap on shard hb-000",
+      "hard": false
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "backup": "/opt/gongwei/backups/20261009-011144-closeout",
+  "before": {
+    "web": {
+      "MainPID": "3475537",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource": {
+      "MainPID": "3475510",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder": {
+      "MainPID": "3475518",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "audio": {
+      "MainPID": "3475527",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "leader": {
+      "MainPID": "3513841",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource-inbox": {
+      "MainPID": "3492146",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder-inbox": {
+      "MainPID": "3492178",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "amp-heartbeat": {
+      "MainPID": "2367812",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    }
+  },
+  "platform_verified": false,
+  "changed_files": [
+    {
+      "path": "/opt/gongwei/releases/20261007-120338-maintenance/stage2_domain.py",
+      "sha256": "67b2a6a1492cdf67cfae5c6114caa0b3a3956d61265d9a7a602a027e4e1f2589"
+    },
+    {
+      "path": "/opt/gongwei/releases/20261007-120338-maintenance/leader_external_flow.py",
+      "sha256": "bbe47b8024b5cd4817a2fba6001562e57165bcc881306003db6be565b9b3d6be"
+    },
+    {
+      "path": "/opt/gongwei/releases/20261007-120338-maintenance/leader_rpc_runtime.py",
+      "sha256": "1ef6e3fad7894c16235ba6a531aefeed287b36de42c8ee8a7dd1840f8bff584f"
+    },
+    {
+      "path": "/opt/gongwei/releases/20261007-120338-maintenance/plan_continuation.py",
+      "sha256": "0cb1f9d7ab49421a2044cb699b6b97fd45fda2ba3e6835678331663f054c9f3a"
+    },
+    {
+      "path": "/opt/gongwei/releases/20261007-120338-maintenance/amp_telemetry.py",
+      "sha256": "7a7938df408bcc5a64d9e2cc96931fcb7e3504397e3b0e662a7164ae325c335e"
+    },
+    {
+      "path": "/opt/gongwei/releases/20261007-120338-maintenance/mq_group_transport.py",
+      "sha256": "24e54def866d01a056ec42bc2b6fc492d96d231c32d98d4dc4241685bb703e22"
+    },
+    {
+      "path": "/opt/gongwei/releases/20261007-120338-maintenance/mq_partner_runtime.py",
+      "sha256": "b4aba255ee4256ef82e98f39fddc0155b7cf7b43b144dc50da16d9404a2f4e83"
+    },
+    {
+      "path": "/opt/gongwei/releases/20261007-095036-maintenance/stage2_domain.py",
+      "sha256": "67b2a6a1492cdf67cfae5c6114caa0b3a3956d61265d9a7a602a027e4e1f2589"
+    },
+    {
+      "path": "/opt/gongwei/releases/20261007-095036-maintenance/amp_telemetry.py",
+      "sha256": "7a7938df408bcc5a64d9e2cc96931fcb7e3504397e3b0e662a7164ae325c335e"
+    },
+    {
+      "path": "/opt/gongwei/releases/20261007-095036-maintenance/mq_partner_runtime.py",
+      "sha256": "b4aba255ee4256ef82e98f39fddc0155b7cf7b43b144dc50da16d9404a2f4e83"
+    },
+    {
+      "path": "/opt/gongwei/releases/20261006-211426-maintenance/stage2_domain.py",
+      "sha256": "67b2a6a1492cdf67cfae5c6114caa0b3a3956d61265d9a7a602a027e4e1f2589"
+    },
+    {
+      "path": "/opt/gongwei/releases/20261006-211426-maintenance/web/app.js",
+      "sha256": "431ddbd3187a7f2dc571ae4aea5a0fb73c2b3a11cca152f9156b1c7156b74111"
+    },
+    {
+      "path": "/opt/gongwei/releases/20261006-211426-maintenance/web/index.html",
+      "sha256": "89b2ea8b68715884d65d4a48a98bdb2f3244e86fa97be660007da2ceabb11362"
+    }
+  ],
+  "after": {
+    "web": {
+      "MainPID": "3551614",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource": {
+      "MainPID": "3551606",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder": {
+      "MainPID": "3551602",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "audio": {
+      "MainPID": "3475527",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "leader": {
+      "MainPID": "3551612",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource-inbox": {
+      "MainPID": "3551666",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder-inbox": {
+      "MainPID": "3551661",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "amp-heartbeat": {
+      "MainPID": "2367812",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    }
+  },
+  "pass_result": true
+}

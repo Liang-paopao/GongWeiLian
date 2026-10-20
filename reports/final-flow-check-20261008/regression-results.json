@@ -1,0 +1,59 @@
+[
+  {
+    "command": [
+      "node",
+      "--check",
+      "web/app.js"
+    ],
+    "exit_code": 0,
+    "seconds": 0.141,
+    "log": "check-1.log"
+  },
+  {
+    "command": [
+      "node",
+      "scripts/test_web_controls.cjs"
+    ],
+    "exit_code": 0,
+    "seconds": 0.117,
+    "log": "check-2.log"
+  },
+  {
+    "command": [
+      "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\.venv\\Scripts\\python.exe",
+      "-m",
+      "unittest",
+      "discover"
+    ],
+    "exit_code": 1,
+    "seconds": 72.587,
+    "log": "check-3.log"
+  },
+  {
+    "command": [
+      "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\.venv\\Scripts\\python.exe",
+      "run_stage2_tests.py"
+    ],
+    "exit_code": 0,
+    "seconds": 6.86,
+    "log": "check-4.log"
+  },
+  {
+    "command": [
+      "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\.venv\\Scripts\\python.exe",
+      "run_stage5_tests.py"
+    ],
+    "exit_code": 0,
+    "seconds": 6.087,
+    "log": "check-5.log"
+  },
+  {
+    "command": [
+      "G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\.venv\\Scripts\\python.exe",
+      "scripts/run_60_scenarios.py"
+    ],
+    "exit_code": 0,
+    "seconds": 13.61,
+    "log": "check-6.log"
+  }
+]

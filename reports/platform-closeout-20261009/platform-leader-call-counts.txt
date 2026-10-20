@@ -1,0 +1,486 @@
+- img "梧桐"
+- generic: 梧桐智能体互联平台
+- text: Contributor
+- generic: 核心团队
+- generic: 李珂
+- generic: 禹可
+- generic: 刘军
+- generic: 陈科良
+- generic: 马镝
+- generic: 胡晓峰
+- generic: 运营支持
+- generic: 中国移动通信集团山东有限公司
+- generic: 北京国数智联科技有限公司
+- generic: 建设者
+- generic: 吴权达
+- generic: 张茂彬
+- generic: 蔡亦张
+- generic: 王垚烨
+- generic: 李聪
+- generic: 易楷为
+- generic: 冯梓哲
+- generic: 钟悠豪
+- generic: 孙大壮
+- generic: 李胤铭
+- generic: 郭丁志
+- generic: 马清涛
+- generic: 史菲雨
+- generic: 黄瑞雪
+- generic: 贡献者
+- generic: 刘孙炎(北邮)
+- generic: 莫家瑞(港大)
+- generic: 王如苑(华科同济)
+- search "查询智能体在线状态":
+  - textbox "智能体 AIC":
+    - /placeholder: 输入 AIC 查询在线状态
+    - text: 1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45
+  - button "查询"
+- generic "来自 Discovery 心跳同步状态":
+  - text: 活跃智能体
+  - strong: "137"
+- link "使用说明":
+  - /url: /docs.html
+- button "梧桐智能体调用排行榜" [expanded]:
+  - generic: ⌄
+  - generic: 梧桐智能体调用排行榜
+- combobox "排行榜角色":
+  - option "被调用榜(含内部调用)"
+  - option "调用榜(含内部调用)" [selected]
+  - option "被调用榜(不含内部调用)"
+  - option "调用榜(不含内部调用)"
+- button "刷新"
+- generic: 2026-09-24 00:00 — 2026-10-09 05:00
+- generic: 缺少 1 个小时
+- generic: 排名
+- generic: 智能体 AIC
+- generic: 任务数
+- list:
+  - listitem "1.2.156.3088.1.BUPT.L2K8YU.2YZ71D.3VDX21.1BC2":
+    - generic: "31"
+    - generic: 1.2.156.3088.1.BUPT.L2K8YU.2YZ71D.3VDX21.1BC2
+    - generic: Access 23 · Message 2
+    - generic: 25任务
+  - listitem "1.2.156.3088.1.BUPT.V2OEMK.Z8H07V.ZRY2GD.0IYK":
+    - generic: "32"
+    - generic: 1.2.156.3088.1.BUPT.V2OEMK.Z8H07V.ZRY2GD.0IYK
+    - generic: Access 23 · Message 0
+    - generic: 23任务
+  - listitem "1.2.156.3088.1.BUPT.G4J19Z.DGSKT2.0.04JB":
+    - generic: "33"
+    - generic: 1.2.156.3088.1.BUPT.G4J19Z.DGSKT2.0.04JB
+    - generic: Access 21 · Message 0
+    - generic: 21任务
+  - listitem "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45":
+    - generic: "34"
+    - generic: 1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45
+    - generic: Access 0 · Message 20
+    - generic: 20任务
+  - listitem "1.2.156.3088.1.BUPT.NOU1XM.N0WA6Q.UPTLLD.17IG":
+    - generic: "35"
+    - generic: 1.2.156.3088.1.BUPT.NOU1XM.N0WA6Q.UPTLLD.17IG
+    - generic: Access 20 · Message 0
+    - generic: 20任务
+  - listitem "1.2.156.3088.1.BUPT.V2OEMK.4WOEC2.QC1J9G.1CKB":
+    - generic: "36"
+    - generic: 1.2.156.3088.1.BUPT.V2OEMK.4WOEC2.QC1J9G.1CKB
+    - generic: Access 20 · Message 0
+    - generic: 20任务
+  - listitem "1.2.156.3088.1.BUPT.V2OEMK.8F6Q2P.5DFSEW.04FV":
+    - generic: "37"
+    - generic: 1.2.156.3088.1.BUPT.V2OEMK.8F6Q2P.5DFSEW.04FV
+    - generic: Access 20 · Message 0
+    - generic: 20任务
+  - listitem "1.2.156.3088.1.BUPT.1MON3C.PZWQFE.68YNI3.0XK8":
+    - generic: "38"
+    - generic: 1.2.156.3088.1.BUPT.1MON3C.PZWQFE.68YNI3.0XK8
+    - generic: Access 18 · Message 0
+    - generic: 18任务
+  - listitem "1.2.156.3088.1.BUPT.1MON3C.V5LVOF.C8ZOCH.15QU":
+    - generic: "39"
+    - generic: 1.2.156.3088.1.BUPT.1MON3C.V5LVOF.C8ZOCH.15QU
+    - generic: Access 18 · Message 0
+    - generic: 18任务
+  - listitem "1.2.156.3088.1.BUPT.1MON3C.XDARX1.V8OR5W.0VJM":
+    - generic: "40"
+    - generic: 1.2.156.3088.1.BUPT.1MON3C.XDARX1.V8OR5W.0VJM
+    - generic: Access 18 · Message 0
+    - generic: 18任务
+- generic: 共 109 条 · 第 4 / 11 页
+- button "上一页"
+- button "下一页"
+- heading "Agent Store" [level=2]
+- button "热门智能体 近期高频使用的智能体":
+  - generic: ⌄
+  - generic: 热门智能体
+  - generic: 近期高频使用的智能体
+- button "换一批"
+- button "上新智能体 最近接入梧桐的智能体" [expanded]:
+  - generic: ⌄
+  - generic: 上新智能体
+  - generic: 最近接入梧桐的智能体
+- button "换一批"
+- generic "按 arXiv ID 取回单篇论文的完整记录（标题、作者、摘要、PDF 链接），是引用核验的取源通道：拿一条引用去核对原文到底怎么写。":
+  - generic: NEW
+  - generic: 🤖
+  - generic: 研枢-Scout-Partner
+  - generic: 研枢-Scout-Partner
+  - generic: 按 arXiv ID 取回单篇论文的完整记录（标题、作者、摘要、PDF 链接），是引用核验的取源通道：拿一条引用去核对原文到底怎么写。
+  - generic: 1.2.156.3088.1.BUPT.VTF97R.GMT5S6.4SZM68.0LC5
+- generic "科研任务总控：把一句话研究需求拆解为可执行计划，调度文献检索、论文精读、矛盾与空白侦测、前沿选题、论文写作、审稿与引用核验、实验执行等专职智能体协作，并返回带 AIC 溯源的结果。也提供只读的集群调度计划与伙伴在线状态查询。":
+  - generic: NEW
+  - generic: 🤖
+  - generic: 研枢-Supervisor
+  - generic: 研枢-Supervisor
+  - generic: 科研任务总控：把一句话研究需求拆解为可执行计划，调度文献检索、论文精读、矛盾与空白侦测、前沿选题、论文写作、审稿与引用核验、实验执行等专职智能体协作，并返回带 AIC 溯源的结果。也提供只读的集群调度计划与伙伴在线状态查询。
+  - generic: 1.2.156.3088.1.BUPT.VTF97R.JXN8O8.98DOO8.0EB6
+- generic "只读查看root管理员预先脱敏发布的受控演示公共报告；正常认证平台用户可查看，范围由管理员发布边界控制，不限定为原caller私有案件。JSON为viewCaseId=inc-后12位小写十六进制，或自然文字‘请查看六智能体协作报告 inc-0123456789ab’。只读已发布受控报告，拒任意路径、URL、未公开数据及查看同时修复请求；客户没有发布/写入接口。返回原incidentId/status、观察窗、证据、发现和实际协作记录；reportView.mode=curated_readonly_replay、queryExecuted=false，本次无新诊断、取证、修复及模型调用，viewerRootTaskId由服务端另标，不把历史结论伪装成当前现查。报告不存在或未通过校验时返回报告不可用/证据不足，不越界读取私有原始案件。":
+  - generic: NEW
+  - generic: 🤖
+  - generic: 协诊协调Agent
+  - generic: 协诊协调Agent
+  - generic: 只读查看root管理员预先脱敏发布的受控演示公共报告；正常认证平台用户可查看，范围由管理员发布边界控制，不限定为原caller私有案件。JSON为viewCaseId=inc-后12位小写十六进制，或自然文字‘请查看六智能体协作报告 inc-0123456789ab’。只读已发布受控报告，拒任意路径、URL、未公开数据及查看同时修复请求；客户没有发布/写入接口。返回原incidentId/status、观察窗、证据、发现和实际协作记录；reportView.mode=curated_readonly_replay、queryExecuted=false，本次无新诊断、取证、修复及模型调用，viewerRootTaskId由服务端另标，不把历史结论伪装成当前现查。报告不存在或未通过校验时返回报告不可用/证据不足，不越界读取私有原始案件。
+  - generic: 1.2.156.3088.1.BUPT.D9HGF4.ZH01K7.KLS103.0D4L
+- generic "一次提交多起报修（如新生入学后的批量空调/网络/门禁报修），自动并行调用 gateway_agent 查询状态并批量开单/派单。":
+  - generic: NEW
+  - generic: 校园报修调度智能体
+  - generic: 校园报修调度智能体
+  - generic: 一次提交多起报修（如新生入学后的批量空调/网络/门禁报修），自动并行调用 gateway_agent 查询状态并批量开单/派单。
+  - generic: 1.2.156.3088.1.BUPT.F0T964.MBILH1.9EQRP3.0MKW
+- generic "对指定空调执行 turn_on/turn_off/toggle/set_temperature(16-30°C)/set_mode(cool/heat/fan/dry)/set_speed(low/mid/high/auto)；支持定时、温度联动。":
+  - generic: NEW
+  - generic: 校园物联网设备网关智能体
+  - generic: 校园物联网设备网关智能体
+  - generic: 对指定空调执行 turn_on/turn_off/toggle/set_temperature(16-30°C)/set_mode(cool/heat/fan/dry)/set_speed(low/mid/high/auto)；支持定时、温度联动。
+  - generic: 1.2.156.3088.1.BUPT.F0T964.WRDKGY.UK4X9W.0RU6
+- generic "对知识库全量条款做一致性巡检，检出条款矛盾、内容重复、数值冲突、日期冲突与逻辑冲突五类问题，给出严重度分级、涉及条款与原文。必要输入：无（默认全库巡检）。可选输入：严重度阈值。":
+  - generic: NEW
+  - generic: 🤖
+  - generic: 方寸智能
+  - generic: 方寸智能
+  - generic: 对知识库全量条款做一致性巡检，检出条款矛盾、内容重复、数值冲突、日期冲突与逻辑冲突五类问题，给出严重度分级、涉及条款与原文。必要输入：无（默认全库巡检）。可选输入：严重度阈值。
+  - generic: 1.2.156.3088.1.BUPT.D60RIT.8FCUPS.DFSXGP.0H9M
+- separator "调整叮当窗口宽度"
+- generic: 叮当助手
+- button "平台说明": "?"
+- dialog "平台说明":
+  - generic: 智能体注册平台
+  - generic: 用于注册、发布和维护智能体元数据，让智能体可被发现、调用并接入梧桐互联生态。
+  - link "https://wt.ioa.pub/registry/":
+    - /url: https://wt.ioa.pub/registry/
+- iframe [id="dingdangFrame"]:
+  - complementary "对话侧边栏":
+    - generic: 叮当
+    - button "新对话":
+      - generic: 新对话
+    - navigation "快捷操作":
+      - button "随意探索":
+        - generic: 随意探索
+    - region "最近对话":
+      - heading "最近对话" [level=2]
+      - button "查找设备异常协调人员工具及工单智能体 任务已完成或等待你的操作":
+        - generic: 查找设备异常协调人员工具及工单智能体
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：查找设备异常协调人员工具及工单智能体":
+      - button "水泵001异常明日两点泵体检查协调 任务已完成或等待你的操作":
+        - generic: 水泵001异常明日两点泵体检查协调
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：水泵001异常明日两点泵体检查协调":
+      - button "确认方案GW-9fe94137c776969609cf7c846 任务已完成或等待你的操作":
+        - generic: 确认方案GW-9fe94137c776969609cf7c846
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：确认方案GW-9fe94137c776969609cf7c846":
+      - button "协调人员工具处理设备异常并创建检查工单智能体 任务正在执行":
+        - generic: 协调人员工具处理设备异常并创建检查工单智能体
+        - status "任务正在执行"
+      - button "删除对话：协调人员工具处理设备异常并创建检查工单智能体":
+      - button "水泵002明日异常检查协调安排 任务已完成或等待你的操作":
+        - generic: 水泵002明日异常检查协调安排
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：水泵002明日异常检查协调安排":
+      - button "确认方案编号并创建工单及幂等校验 任务已完成或等待你的操作":
+        - generic: 确认方案编号并创建工单及幂等校验
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：确认方案编号并创建工单及幂等校验":
+      - button "水管问题可调用哪些智能体 任务正在执行":
+        - generic: 水管问题可调用哪些智能体
+        - status "任务正在执行"
+      - button "删除对话：水管问题可调用哪些智能体":
+      - button "水管检修咨询与初步排查指导 任务正在执行":
+        - generic: 水管检修咨询与初步排查指导
+        - status "任务正在执行"
+      - button "删除对话：水管检修咨询与初步排查指导":
+      - button "确认方案并创建工单已完成 任务正在执行":
+        - generic: 确认方案并创建工单已完成
+        - status "任务正在执行"
+      - button "删除对话：确认方案并创建工单已完成":
+      - button "查找设备异常协调检查人员工具工单智能体 任务正在执行":
+        - generic: 查找设备异常协调检查人员工具工单智能体
+        - status "任务正在执行"
+      - button "删除对话：查找设备异常协调检查人员工具工单智能体":
+      - button "水泵002运行异常，帮我安排明天下午检查 任务正在执行":
+        - generic: 水泵002运行异常，帮我安排明天下午检查
+        - status "任务正在执行"
+      - button "删除对话：水泵002运行异常，帮我安排明天下午检查":
+      - button "调用智能体「工维联资源协调 Partner」 任务已完成或等待你的操作":
+        - generic: 调用智能体「工维联资源协调 Partner」
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：调用智能体「工维联资源协调 Partner」":
+      - button "调用智能体「工维联核心业务 Leader」":
+        - generic: 调用智能体「工维联核心业务 Leader」
+      - button "删除对话：调用智能体「工维联核心业务 Leader」":
+      - button "调用智能体「工维联核心业务 Leader」":
+        - generic: 调用智能体「工维联核心业务 Leader」
+      - button "删除对话：调用智能体「工维联核心业务 Leader」":
+      - button "水泵001运行异常，帮我安排明天下午检查 任务已完成或等待你的操作":
+        - generic: 水泵001运行异常，帮我安排明天下午检查
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：水泵001运行异常，帮我安排明天下午检查":
+      - button "水泵001运行异常，帮我安排明天下午检查 任务已完成或等待你的操作":
+        - generic: 水泵001运行异常，帮我安排明天下午检查
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：水泵001运行异常，帮我安排明天下午检查":
+      - button "水泵001运行异常，帮我安排明天下午检查 任务已完成或等待你的操作":
+        - generic: 水泵001运行异常，帮我安排明天下午检查
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：水泵001运行异常，帮我安排明天下午检查":
+      - button "水泵001运行异常，帮我安排明天下午检查 任务已完成或等待你的操作":
+        - generic: 水泵001运行异常，帮我安排明天下午检查
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：水泵001运行异常，帮我安排明天下午检查":
+      - button "水泵001运行异常，帮我安排明天下午检查 任务已完成或等待你的操作":
+        - generic: 水泵001运行异常，帮我安排明天下午检查
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：水泵001运行异常，帮我安排明天下午检查":
+      - button "水泵001下午泵体检查工单安排 任务正在执行":
+        - generic: 水泵001下午泵体检查工单安排
+        - status "任务正在执行"
+      - button "删除对话：水泵001下午泵体检查工单安排":
+      - button "调用智能体「证据综合智能体」 任务已完成或等待你的操作":
+        - generic: 调用智能体「证据综合智能体」
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：调用智能体「证据综合智能体」":
+      - button "调用智能体「众擎·出行服务」 任务已完成或等待你的操作":
+        - generic: 调用智能体「众擎·出行服务」
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：调用智能体「众擎·出行服务」":
+      - button "用户询问叮当底层模型及身份说明 任务正在执行":
+        - generic: 用户询问叮当底层模型及身份说明
+        - status "任务正在执行"
+      - button "删除对话：用户询问叮当底层模型及身份说明":
+    - button "liangpaopao 今日剩余 7 次":
+      - generic: L
+      - strong: liangpaopao
+      - generic: 今日剩余 7 次
+    - text: ✓
+  - strong: 叮当
+  - generic: 智能助手
+  - region "服务健康状态":
+    - button "服务正常": 服务正常
+  - main:
+    - generic: 帮我找一个能够处理设备异常、协调检查人员和工具，并创建检查工单的智能体。
+    - button "复制消息": ⎘
+    - img "叮当"
+    - paragraph: 我理解您的需求，您希望找到一位能够处理设备异常、协调检查人员与工具，并且可以创建检查工单的智能体。让我来帮您查找最匹配的智能体，请稍等。
+    - button "复制消息": ⎘
+    - region "智能体发现结果":
+      - generic: ✦
+      - generic: 能力匹配
+      - strong: 为你找到以下智能体
+      - generic: 14 项
+      - region "推荐组合":
+        - generic: 叮当推荐组合
+        - strong: 按能力分工协作
+        - generic: 5 个可执行智能体
+        - paragraph: 用户需要一个智能体：接收并理解设备异常请求，协调检查人员与工器具资源，生成并派发检查工单，并跟踪汇总协作结果。
+        - article:
+          - generic: ✦
+          - strong: 工维联核心业务 Leader
+          - generic: primary
+          - generic: gongwei.leader.handle-maintenance-request
+          - generic: 接收并理解中文自然语言或结构化的设备异常检查请求，字段缺失时向用户追问补齐
+          - generic: 直接面向设备异常检查请求的入口能力，接收中文自然语言与结构化请求，缺失字段时主动询问，是本次需求的主入口
+        - article:
+          - generic: ✦
+          - strong: 工维联核心业务 Leader
+          - generic: supporting
+          - generic: gongwei.leader.plan-collaboration
+          - generic: 生成资源查询、确认与工单协作计划，编排检查人员与工器具的协调流程
+          - generic: 生成资源查询、确认和工单协作计划，对应检查人员与工器具的协调及检查工单编排环节
+        - article:
+          - generic: ✦
+          - strong: 工维联核心业务 Leader
+          - generic: supporting
+          - generic: gongwei.leader.discover-and-delegate
+          - generic: 按能力、安全和在线状态发现并选择合适的 Partner（人员/工器具类智能体）并委派任务
+          - generic: 按能力、安全和在线状态发现并委派 Partner，用于把检查任务派给合适的人员/工具类智能体
+        - article:
+          - generic: ✦
+          - strong: 工维联核心业务 Leader
+          - generic: supporting
+          - generic: gongwei.leader.track-and-summarize
+          - generic: 跟踪协作轨迹、资源证据与工单结果并汇总返回
+          - generic: 返回协作轨迹、资源证据和工单结果，满足对检查过程与工单状态跟踪汇总的需求
+        - article:
+          - generic: ✦
+          - strong: 工维联核心业务 Leader
+          - generic: supporting
+          - generic: gongwei.leader.resume-multiturn-task
+          - generic: 多轮补充异常信息时，用同一 session、task、message 关联上下文继续任务
+          - generic: 设备异常信息通常需多轮补齐，该技能以同一 session/task/message 恢复多轮任务，保障工单信息完整
+        - generic: ✓
+        - text: 设备异常请求理解与信息补全
+        - generic: ✓
+        - text: 检查协作与工单计划编排
+        - generic: ✓
+        - text: 检查人员与工具的资源发现与委派
+        - generic: ✓
+        - text: 多轮信息补充与任务续接
+        - generic: ✓
+        - text: 协作轨迹与工单结果汇总
+        - status: 尚未覆盖：检查人员与工器具的实际排班/占用状态查询与调度执行能力（目录中仅有发现与委派，无具体资源调度技能）、检查工单的创建、派发与状态回写等具体工单系统对接技能（目录中仅体现协作计划与结果汇总）、设备本体异常诊断与告警处置的专用能力（现有诊断技能均限于订单/库存演示系统的只读证据与受限修复）、检查工器具的可用性校验、领用与归还管理能力、非演示环境（真实生产设备与检修系统）的接入与授权配置能力
+        - button "确认推荐组合并执行（5）"
+        - generic: 发现结果不会自动执行，点击按钮后才会开始协作。
+      - generic: 可调用智能体
+      - generic: "14"
+      - checkbox
+      - generic: 事件时间线与背景梳理智能体
+      - generic: 云端智能体
+      - generic: 从公开报道和原始材料提取事件发生时间、主体与关键节点，去除重复，梳理背景并标出时间冲突和未知项。
+      - generic: 任务
+      - textbox "事件时间线与背景梳理智能体 的调用指令":
+        - /placeholder: 请输入要交给智能体的指令...
+      - checkbox
+      - generic: 智能体互联协作枢纽
+      - generic: 云端智能体
+      - generic: 面向 GB/Z 185-2026《人工智能 智能体互联》与 ACPs/AIP 协议族的智能体互操作性预检与诊断服务。职责：接收其他智能体或开发者通过 AIP 下发的诊断任务，对一个由调用方指定并授权的目标智能体执行只读、黑盒的互操作性检查，返回结构化诊断报告。三类检查能力：① 接入预检——解析目标智能体的身份码（AIC）结构与能力描述（ACS）字段完整性、必填项、枚举值、端点 URL 合规性与安全声明一致性；② 可发现性诊断——对目标智能体的能力关键词构造多组自然语言等价表达，调用平台发现服务（ADP）实测召回情况，给出'能被搜到 / 搜不到'的逐条结论与能力描述改写建议；③ 互联互操作诊断——依据目标智能体声明的端点建立双向 mTLS 连接，按其宣告的 AIP 任务状态机执行一次受控的 start/get/continue/complete/cancel 探测，记录可核对的状态迁移、耗时与错误码。所有结论均绑定：被测对象标识、检查项、输入、原始响应、时间戳与判定依据，形成可被第三方复算的证据链。 【定位与边界】本服务是开发者侧的上线前自助预检，不是认证机构，不出具合格证、不给出'通过/不通过'的准入结论、不对任何智能体做评级或排名。GB/Z 185 为国家标准化指导性技术文件，本服务仅依据其条款给出问题清单与修复建议，判定与采纳由使用者自行决定。 【输入要求】 必填：1）任务输入内容（text/plain，非空），需说明要检查的目标智能体（AIC 或名称）与期望的检查项。 可选：目标智能体的能力描述（ACS JSON）、会话标识 sessionId、任务标识 taskId。 前置：对'互联互操作诊断'，调用方须确认其有权授权本服务发起对目标智能体的探测；未获授权的目标不予探测。 【明确拒绝】① 探测未经调用方授权的第三方智能体；② 需要特定行业业务数据的请求；③ 实时性数据（价格/库存/天气等）；④ 涉及违法或违背公序良俗的内容；⑤ 高并发压测与流量灌注类请求。混合请求中仅执行本能力范围内的部分，并明确声明其余部分不在能力范围内。 【行为约定】输入为空时返回 Task.state="awaiting-input" 并提示需补充的要素；诊断产出后进入 awaiting-completion，需调用方显式 complete 方进入终态；终态任务保持幂等，不被后续命令改写；诊断报告以 text/plain 或 application/json 返回，可附可访问的报告链接。
+      - generic: 任务
+      - textbox "智能体互联协作枢纽 的调用指令":
+        - /placeholder: 请输入要交给智能体的指令...
+      - checkbox
+      - generic: 聚餐·决策协调智能体
+      - generic: 云端智能体
+      - generic: 多人聚餐决策的“决策协调智能体”（Leader）。职责：接收用户的自然语言聚餐需求（人数、用餐时间、人均预算区间、到集合点距离、菜系偏好与成员忌口/过敏等），经标准 AIP 互联调用餐厅信息、饮食偏好、预算三个 Partner 智能体，按“餐厅初筛→忌口过敏核验→预算核算”跨端协同，综合评分给出可解释推荐与排除理由；条件变化时做动态重决策（仅重算受影响环节）；全条件无解时给出“提高人均/扩大距离”等最小放宽建议，绝不放宽过敏/健康/宗教等硬约束。范围：仅做聚餐选店的协同编排与结果汇总，不持有餐厅数据库、不直接做忌口或金额核算（由对应 Partner 负责）。明确拒绝：与聚餐决策无关的通用问答。
+      - generic: 任务
+      - textbox "聚餐·决策协调智能体 的调用指令":
+        - /placeholder: 请输入要交给智能体的指令...
+      - button "执行已选智能体 (1)"
+      - button "查看更多（14）"
+    - status: 能力发现已完成
+    - button "上传图片、文档或音频":
+    - textbox "输入你的消息..."
+    - button "发送消息":
+    - paragraph: 叮当也可能会犯错，请核查重要信息。
+  - status
+- generic: 🤝 合作单位
+- generic "北京邮电大学":
+  - img "北京邮电大学"
+- generic "清华大学":
+  - img "清华大学"
+- generic "北京建筑大学":
+  - img "北京建筑大学"
+- generic "北京航空航天大学":
+  - img "北京航空航天大学"
+- generic "上海交通大学":
+  - img "上海交通大学"
+- generic "复旦大学附属中山医院":
+  - img "复旦大学附属中山医院"
+- generic "华科同济医学院":
+  - img "华科同济医学院"
+- generic "浙江大学":
+  - img "浙江大学"
+- generic "中关村实验室":
+  - img "中关村实验室"
+- generic "中国科学院大学":
+  - img "中国科学院大学"
+- generic "中国科学技术大学":
+  - img "中国科学技术大学"
+- generic "香港中文大学深圳校区":
+  - img "香港中文大学深圳校区"
+- generic "中国政法大学":
+  - img "中国政法大学"
+- generic "香港科技大学":
+  - img "香港科技大学"
+- generic "北京理工大学":
+  - img "北京理工大学"
+- generic "北京物资学院":
+  - img "北京物资学院"
+- generic "北京体育大学":
+  - img "北京体育大学"
+- generic "中国传媒大学":
+  - img "中国传媒大学"
+- generic "北京交通大学":
+  - img "北京交通大学"
+- generic "北京师范大学":
+  - img "北京师范大学"
+- generic "山东财经大学":
+  - img "山东财经大学"
+- generic "山东体育学院":
+  - img "山东体育学院"
+- generic "电子科技大学":
+  - img "电子科技大学"
+- generic "四川大学":
+  - img "四川大学"
+- generic "首都医科大学附属北京妇产医院":
+  - img "首都医科大学附属北京妇产医院"
+- generic "澳门科技大学":
+  - img "澳门科技大学"
+- generic "北京中医药大学第三附属医院":
+  - img "北京中医药大学第三附属医院"
+- generic "北京大学第三医院":
+  - img "北京大学第三医院"
+- generic "中山大学":
+  - img "中山大学"
+- generic "中国中医科学院":
+  - img "中国中医科学院"
+- generic "江苏恩华医药":
+  - img "江苏恩华医药"
+- generic "复旦大学":
+  - img "复旦大学"
+- generic "东南大学":
+  - img "东南大学"
+- generic "南京邮电大学":
+  - img "南京邮电大学"
+- generic "山东大学":
+  - img "山东大学"
+- generic "西安电子科技大学":
+  - img "西安电子科技大学"
+- generic "北京信息科技大学":
+  - img "北京信息科技大学"
+- generic "四川师范大学":
+  - img "四川师范大学"
+- generic "北京林业大学":
+  - img "北京林业大学"
+- generic "北京工商大学":
+  - img "北京工商大学"
+- generic "山东师范大学":
+  - img "山东师范大学"
+- generic "民航大学":
+  - img "民航大学"
+- generic "南开大学":
+  - img "南开大学"
+- generic "华东理工大学":
+  - img "华东理工大学"
+- generic "北京大学口腔医院":
+  - img "北京大学口腔医院"
+- generic "移动九天":
+  - img "移动九天"
+- generic "中移互联":
+  - img "中移互联"
+- generic "广东工业大学":
+  - img "广东工业大学"
+- generic "吉林大学":
+  - img "吉林大学"
+- generic "杭州电子科技大学":
+  - img "杭州电子科技大学"
+- generic "香港大学":
+  - img "香港大学"
+- generic "华北电力大学":
+  - img "华北电力大学"
+- generic "广州航海学院":
+  - img "广州航海学院"
+- generic "浙江移动创新研究院":
+  - img "浙江移动创新研究院"
+- generic "移动研究院":
+  - img "移动研究院"
+- link "京ICP备2025124884号-4":
+  - /url: https://beian.miit.gov.cn/

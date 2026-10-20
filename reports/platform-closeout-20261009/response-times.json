@@ -1,0 +1,112 @@
+[
+  {
+    "sessionId": "session_1841",
+    "taskId": "a9f43cab-d4ce-4d11-b98b-432b9bf3180f",
+    "start_command_messageId": "cmd-972fa88d-8046-4c76-8a87-7fb116880795",
+    "working_at": "2026-10-08T17:58:57.542613+00:00",
+    "business_result_at": "2026-10-08T17:58:57.562118+00:00",
+    "leader_processing_seconds": 0.02,
+    "scope": "Leader work interval; not browser LLM synthesis/network end-to-end",
+    "states": [
+      "accepted",
+      "working",
+      "awaiting-input",
+      "accepted",
+      "working",
+      "canceled"
+    ]
+  },
+  {
+    "sessionId": "session_1841",
+    "taskId": "1847721f-6b88-40cb-a658-f51d415cbeb3",
+    "start_command_messageId": "cmd-2d5baa06-c999-423f-999c-0d3530a4ff97",
+    "working_at": "2026-10-08T17:59:51.284067+00:00",
+    "business_result_at": "2026-10-08T18:00:02.525785+00:00",
+    "leader_processing_seconds": 11.242,
+    "scope": "Leader work interval; not browser LLM synthesis/network end-to-end",
+    "states": [
+      "accepted",
+      "working",
+      "awaiting-input",
+      "accepted",
+      "working",
+      "canceled"
+    ]
+  },
+  {
+    "sessionId": "session_1841",
+    "taskId": "ce6f1ce3-d1b0-4a0a-b7be-aa8b3e623184",
+    "start_command_messageId": "cmd-0ac6e41d-a69d-42f7-bc2e-7e91e7ec1651",
+    "working_at": "2026-10-08T18:01:19.665270+00:00",
+    "business_result_at": "2026-10-08T18:01:27.392101+00:00",
+    "leader_processing_seconds": 7.727,
+    "scope": "Leader work interval; not browser LLM synthesis/network end-to-end",
+    "states": [
+      "accepted",
+      "working",
+      "completed"
+    ]
+  },
+  {
+    "sessionId": "session_1841",
+    "taskId": "cc8b5d5b-7e7d-49af-974e-3df486381bf6",
+    "start_command_messageId": "cmd-607e8cd1-4b8e-48f9-b028-371436e12e57",
+    "working_at": "2026-10-08T18:06:57.882062+00:00",
+    "business_result_at": "2026-10-08T18:06:57.916259+00:00",
+    "leader_processing_seconds": 0.034,
+    "scope": "Leader work interval; not browser LLM synthesis/network end-to-end",
+    "states": [
+      "accepted",
+      "working",
+      "completed"
+    ]
+  },
+  {
+    "sessionId": "session_1842",
+    "taskId": "4379c96b-2dec-4c05-a335-ef13086c8a1f",
+    "start_command_messageId": "cmd-7a97b357-cb78-4836-8a73-87e375f2c936",
+    "working_at": "2026-10-08T18:15:52.258802+00:00",
+    "business_result_at": "2026-10-08T18:16:02.855276+00:00",
+    "leader_processing_seconds": 10.596,
+    "scope": "Leader work interval; not browser LLM synthesis/network end-to-end",
+    "states": [
+      "accepted",
+      "working",
+      "awaiting-input",
+      "accepted",
+      "working",
+      "canceled"
+    ]
+  },
+  {
+    "sessionId": "session_1842",
+    "taskId": "fa278faf-3d12-4ab9-a6db-11bfd61744d3",
+    "start_command_messageId": "cmd-a3b47fcd-8158-4da6-adc7-96c43328fc28",
+    "working_at": "2026-10-08T18:17:24.044145+00:00",
+    "business_result_at": "2026-10-08T18:17:27.018371+00:00",
+    "leader_processing_seconds": 2.974,
+    "scope": "Leader work interval; not browser LLM synthesis/network end-to-end",
+    "states": [
+      "accepted",
+      "working",
+      "awaiting-input",
+      "accepted",
+      "working",
+      "canceled"
+    ]
+  },
+  {
+    "sessionId": "session_1842",
+    "taskId": "ead56793-f63f-49a1-9eab-ce42da7e5eaa",
+    "start_command_messageId": "cmd-2b4b3b62-d342-457b-8b9d-2164088375da",
+    "working_at": "2026-10-08T18:18:48.373386+00:00",
+    "business_result_at": "2026-10-08T18:18:48.412821+00:00",
+    "leader_processing_seconds": 0.039,
+    "scope": "Leader work interval; not browser LLM synthesis/network end-to-end",
+    "states": [
+      "accepted",
+      "working",
+      "completed"
+    ]
+  }
+]

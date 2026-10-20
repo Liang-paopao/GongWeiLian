@@ -1,0 +1,1134 @@
+{
+  "checked_at": "2026-10-06T19:34:10.919936+00:00",
+  "platform_verified": false,
+  "services": {
+    "web": {
+      "MainPID": "2240412",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource": {
+      "MainPID": "2240409",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder": {
+      "MainPID": "2240410",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "audio": {
+      "MainPID": "2240411",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "leader": {
+      "MainPID": "2345992",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource-inbox": {
+      "MainPID": "2341716",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder-inbox": {
+      "MainPID": "2341718",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    }
+  },
+  "rpc_tasks": [
+    {
+      "task_id": "server-mtls-4e132677ed-task",
+      "session_id": "server-mtls-4e132677ed-session",
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "snapshot": {
+        "type": "task-result",
+        "id": "result-170880ba-3f03-4e80-8944-b202658c3e98",
+        "sentAt": "2026-10-06T16:45:01.985510+00:00",
+        "senderRole": "partner",
+        "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+        "mentions": null,
+        "dataItems": null,
+        "groupId": null,
+        "sessionId": "server-mtls-4e132677ed-session",
+        "taskId": "server-mtls-4e132677ed-task",
+        "status": {
+          "state": "canceled",
+          "stateChangedAt": "2026-10-06T16:45:01.985493+00:00",
+          "dataItems": []
+        },
+        "products": [
+          {
+            "id": "leader-product-server-mtls-4e132677ed-task",
+            "name": "gongwei-leader-result",
+            "description": null,
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "{\"sessionId\": \"server-mtls-4e132677ed-session\", \"taskId\": \"server-mtls-4e132677ed-task\", \"messageId\": \"server-mtls-4e132677ed-dadf7f\", \"status\": \"cancelled\"}"
+              }
+            ]
+          }
+        ],
+        "commandHistory": [
+          {
+            "type": "task-command",
+            "id": "server-mtls-4e132677ed-72f3af",
+            "sentAt": "2026-10-06T16:45:01.896799+00:00",
+            "senderRole": "leader",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+            "mentions": null,
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "水泵001运行异常，帮我安排明天下午检查。"
+              }
+            ],
+            "groupId": null,
+            "sessionId": "server-mtls-4e132677ed-session",
+            "command": "start",
+            "commandParams": null,
+            "taskId": "server-mtls-4e132677ed-task"
+          },
+          {
+            "type": "task-command",
+            "id": "server-mtls-4e132677ed-dadf7f",
+            "sentAt": "2026-10-06T16:45:01.965309+00:00",
+            "senderRole": "leader",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+            "mentions": null,
+            "dataItems": [],
+            "groupId": null,
+            "sessionId": "server-mtls-4e132677ed-session",
+            "command": "cancel",
+            "commandParams": null,
+            "taskId": "server-mtls-4e132677ed-task"
+          }
+        ],
+        "statusHistory": [
+          {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-06T16:45:01.916027+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "working",
+            "stateChangedAt": "2026-10-06T16:45:01.923501+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "awaiting-input",
+            "stateChangedAt": "2026-10-06T16:45:01.939497+00:00",
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "请补充：开始时间、预计时长"
+              }
+            ]
+          },
+          {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-06T16:45:01.971194+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "working",
+            "stateChangedAt": "2026-10-06T16:45:01.975688+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "canceled",
+            "stateChangedAt": "2026-10-06T16:45:01.985493+00:00",
+            "dataItems": []
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "message_id": "server-mtls-4e132677ed-72f3af",
+          "task_id": "server-mtls-4e132677ed-task"
+        },
+        {
+          "message_id": "server-mtls-4e132677ed-dadf7f",
+          "task_id": "server-mtls-4e132677ed-task"
+        }
+      ]
+    },
+    {
+      "task_id": "server-mtls-452639c3df-task",
+      "session_id": "server-mtls-452639c3df-session",
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "snapshot": {
+        "type": "task-result",
+        "id": "result-58867598-4341-4360-b0fa-aeaa4759537a",
+        "sentAt": "2026-10-06T16:48:30.202345+00:00",
+        "senderRole": "partner",
+        "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+        "mentions": null,
+        "dataItems": null,
+        "groupId": null,
+        "sessionId": "server-mtls-452639c3df-session",
+        "taskId": "server-mtls-452639c3df-task",
+        "status": {
+          "state": "canceled",
+          "stateChangedAt": "2026-10-06T16:48:30.202322+00:00",
+          "dataItems": []
+        },
+        "products": [
+          {
+            "id": "leader-product-server-mtls-452639c3df-task",
+            "name": "gongwei-leader-result",
+            "description": null,
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "{\"sessionId\": \"server-mtls-452639c3df-session\", \"taskId\": \"server-mtls-452639c3df-task\", \"messageId\": \"server-mtls-452639c3df-0a9941\", \"status\": \"cancelled\"}"
+              }
+            ]
+          }
+        ],
+        "commandHistory": [
+          {
+            "type": "task-command",
+            "id": "server-mtls-452639c3df-48a7b7",
+            "sentAt": "2026-10-06T16:48:30.114042+00:00",
+            "senderRole": "leader",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+            "mentions": null,
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "水泵001运行异常，帮我安排明天下午检查。"
+              }
+            ],
+            "groupId": null,
+            "sessionId": "server-mtls-452639c3df-session",
+            "command": "start",
+            "commandParams": null,
+            "taskId": "server-mtls-452639c3df-task"
+          },
+          {
+            "type": "task-command",
+            "id": "server-mtls-452639c3df-0a9941",
+            "sentAt": "2026-10-06T16:48:30.182397+00:00",
+            "senderRole": "leader",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+            "mentions": null,
+            "dataItems": [],
+            "groupId": null,
+            "sessionId": "server-mtls-452639c3df-session",
+            "command": "cancel",
+            "commandParams": null,
+            "taskId": "server-mtls-452639c3df-task"
+          }
+        ],
+        "statusHistory": [
+          {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-06T16:48:30.133805+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "working",
+            "stateChangedAt": "2026-10-06T16:48:30.138728+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "awaiting-input",
+            "stateChangedAt": "2026-10-06T16:48:30.155477+00:00",
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "请补充：开始时间、预计时长"
+              }
+            ]
+          },
+          {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-06T16:48:30.188289+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "working",
+            "stateChangedAt": "2026-10-06T16:48:30.192692+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "canceled",
+            "stateChangedAt": "2026-10-06T16:48:30.202322+00:00",
+            "dataItems": []
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "message_id": "server-mtls-452639c3df-48a7b7",
+          "task_id": "server-mtls-452639c3df-task"
+        },
+        {
+          "message_id": "server-mtls-452639c3df-0a9941",
+          "task_id": "server-mtls-452639c3df-task"
+        }
+      ]
+    },
+    {
+      "task_id": "public-mtls-1717d39d86-task",
+      "session_id": "public-mtls-1717d39d86-session",
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "snapshot": {
+        "type": "task-result",
+        "id": "result-ed03df48-f31e-4a43-b512-d6120fd7c8bb",
+        "sentAt": "2026-10-06T16:55:24.573824+00:00",
+        "senderRole": "partner",
+        "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+        "mentions": null,
+        "dataItems": null,
+        "groupId": null,
+        "sessionId": "public-mtls-1717d39d86-session",
+        "taskId": "public-mtls-1717d39d86-task",
+        "status": {
+          "state": "canceled",
+          "stateChangedAt": "2026-10-06T16:55:24.573805+00:00",
+          "dataItems": []
+        },
+        "products": [
+          {
+            "id": "leader-product-public-mtls-1717d39d86-task",
+            "name": "gongwei-leader-result",
+            "description": null,
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "{\"sessionId\": \"public-mtls-1717d39d86-session\", \"taskId\": \"public-mtls-1717d39d86-task\", \"messageId\": \"public-mtls-1717d39d86-2a59f4\", \"status\": \"cancelled\"}"
+              }
+            ]
+          }
+        ],
+        "commandHistory": [
+          {
+            "type": "task-command",
+            "id": "public-mtls-1717d39d86-0ee63d",
+            "sentAt": "2026-10-06T16:55:12.694013+00:00",
+            "senderRole": "leader",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+            "mentions": null,
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "水泵001运行异常，帮我安排明天下午检查。"
+              }
+            ],
+            "groupId": null,
+            "sessionId": "public-mtls-1717d39d86-session",
+            "command": "start",
+            "commandParams": null,
+            "taskId": "public-mtls-1717d39d86-task"
+          },
+          {
+            "type": "task-command",
+            "id": "public-mtls-1717d39d86-2a59f4",
+            "sentAt": "2026-10-06T16:55:21.390969+00:00",
+            "senderRole": "leader",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+            "mentions": null,
+            "dataItems": [],
+            "groupId": null,
+            "sessionId": "public-mtls-1717d39d86-session",
+            "command": "cancel",
+            "commandParams": null,
+            "taskId": "public-mtls-1717d39d86-task"
+          }
+        ],
+        "statusHistory": [
+          {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-06T16:55:14.767919+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "working",
+            "stateChangedAt": "2026-10-06T16:55:14.775575+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "awaiting-input",
+            "stateChangedAt": "2026-10-06T16:55:14.793361+00:00",
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "请补充：开始时间、预计时长"
+              }
+            ]
+          },
+          {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-06T16:55:24.554278+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "working",
+            "stateChangedAt": "2026-10-06T16:55:24.560076+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "canceled",
+            "stateChangedAt": "2026-10-06T16:55:24.573805+00:00",
+            "dataItems": []
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "message_id": "public-mtls-1717d39d86-0ee63d",
+          "task_id": "public-mtls-1717d39d86-task"
+        },
+        {
+          "message_id": "public-mtls-1717d39d86-2a59f4",
+          "task_id": "public-mtls-1717d39d86-task"
+        }
+      ]
+    },
+    {
+      "task_id": "87ee5e18-72f2-4dee-90f6-2ee75cefd764",
+      "session_id": "session_1699",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot": {
+        "type": "task-result",
+        "id": "result-46684b0d-39f6-4a29-baba-09e06ef43161",
+        "sentAt": "2026-10-06T17:01:56.188394+00:00",
+        "senderRole": "partner",
+        "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+        "mentions": null,
+        "dataItems": null,
+        "groupId": null,
+        "sessionId": "session_1699",
+        "taskId": "87ee5e18-72f2-4dee-90f6-2ee75cefd764",
+        "status": {
+          "state": "canceled",
+          "stateChangedAt": "2026-10-06T17:01:56.188374+00:00",
+          "dataItems": []
+        },
+        "products": [
+          {
+            "id": "leader-product-87ee5e18-72f2-4dee-90f6-2ee75cefd764",
+            "name": "gongwei-leader-result",
+            "description": null,
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "{\"sessionId\": \"session_1699\", \"taskId\": \"87ee5e18-72f2-4dee-90f6-2ee75cefd764\", \"messageId\": \"cmd-e9ae8a77-ecb9-4013-83e2-95396b7ab420\", \"status\": \"cancelled\"}"
+              }
+            ]
+          }
+        ],
+        "commandHistory": [
+          {
+            "type": "task-command",
+            "id": "cmd-8097b948-29ee-4566-9e0c-b142c3d4924f",
+            "sentAt": "2026-10-06T16:57:43.177032+00:00",
+            "senderRole": "leader",
+            "senderId": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+            "mentions": null,
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "水泵001运行异常，帮我安排明天下午检查。\n\nDAG 指定的上游产物摘要：\n叮当已完成协作规划并开始按 DAG 派发。"
+              }
+            ],
+            "groupId": null,
+            "sessionId": "session_1699",
+            "command": "start",
+            "commandParams": null,
+            "taskId": "87ee5e18-72f2-4dee-90f6-2ee75cefd764"
+          },
+          {
+            "type": "task-command",
+            "id": "cmd-e9ae8a77-ecb9-4013-83e2-95396b7ab420",
+            "sentAt": "2026-10-06T17:01:52.826023+00:00",
+            "senderRole": "leader",
+            "senderId": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+            "mentions": null,
+            "dataItems": null,
+            "groupId": null,
+            "sessionId": "session_1699",
+            "command": "cancel",
+            "commandParams": null,
+            "taskId": "87ee5e18-72f2-4dee-90f6-2ee75cefd764"
+          }
+        ],
+        "statusHistory": [
+          {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-06T16:57:43.959835+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "working",
+            "stateChangedAt": "2026-10-06T16:57:43.968485+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "awaiting-input",
+            "stateChangedAt": "2026-10-06T16:57:43.984959+00:00",
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "请补充：开始时间、预计时长"
+              }
+            ]
+          },
+          {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-06T17:01:56.168925+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "working",
+            "stateChangedAt": "2026-10-06T17:01:56.176071+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "canceled",
+            "stateChangedAt": "2026-10-06T17:01:56.188374+00:00",
+            "dataItems": []
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "message_id": "cmd-8097b948-29ee-4566-9e0c-b142c3d4924f",
+          "task_id": "87ee5e18-72f2-4dee-90f6-2ee75cefd764"
+        },
+        {
+          "message_id": "cmd-e9ae8a77-ecb9-4013-83e2-95396b7ab420",
+          "task_id": "87ee5e18-72f2-4dee-90f6-2ee75cefd764"
+        }
+      ]
+    },
+    {
+      "task_id": "c08c35ae-137c-453d-aa88-6aa6ad900082",
+      "session_id": "session_1700",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot": {
+        "type": "task-result",
+        "id": "result-2545884f-b6f1-4c62-932e-2b43b6c90b63",
+        "sentAt": "2026-10-06T17:19:17.124920+00:00",
+        "senderRole": "partner",
+        "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+        "mentions": null,
+        "dataItems": null,
+        "groupId": null,
+        "sessionId": "session_1700",
+        "taskId": "c08c35ae-137c-453d-aa88-6aa6ad900082",
+        "status": {
+          "state": "canceled",
+          "stateChangedAt": "2026-10-06T17:19:17.124902+00:00",
+          "dataItems": []
+        },
+        "products": [
+          {
+            "id": "leader-product-c08c35ae-137c-453d-aa88-6aa6ad900082",
+            "name": "gongwei-leader-result",
+            "description": null,
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "{\"sessionId\": \"session_1700\", \"taskId\": \"c08c35ae-137c-453d-aa88-6aa6ad900082\", \"messageId\": \"cmd-59a14be3-bb8b-4503-a1cb-445135757bd8\", \"status\": \"cancelled\"}"
+              }
+            ]
+          }
+        ],
+        "commandHistory": [
+          {
+            "type": "task-command",
+            "id": "cmd-ede74a59-f475-4056-977c-02223a420997",
+            "sentAt": "2026-10-06T17:18:35.860148+00:00",
+            "senderRole": "leader",
+            "senderId": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+            "mentions": null,
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "水泵001运行异常，帮我安排明天下午检查。\n\nDAG 指定的上游产物摘要：\n叮当已完成协作规划并开始按 DAG 派发。"
+              }
+            ],
+            "groupId": null,
+            "sessionId": "session_1700",
+            "command": "start",
+            "commandParams": null,
+            "taskId": "c08c35ae-137c-453d-aa88-6aa6ad900082"
+          },
+          {
+            "type": "task-command",
+            "id": "cmd-59a14be3-bb8b-4503-a1cb-445135757bd8",
+            "sentAt": "2026-10-06T17:19:14.915532+00:00",
+            "senderRole": "leader",
+            "senderId": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+            "mentions": null,
+            "dataItems": null,
+            "groupId": null,
+            "sessionId": "session_1700",
+            "command": "cancel",
+            "commandParams": null,
+            "taskId": "c08c35ae-137c-453d-aa88-6aa6ad900082"
+          }
+        ],
+        "statusHistory": [
+          {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-06T17:18:36.743785+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "working",
+            "stateChangedAt": "2026-10-06T17:18:36.750588+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "awaiting-input",
+            "stateChangedAt": "2026-10-06T17:18:36.774037+00:00",
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "请补充：开始时间、预计时长"
+              }
+            ]
+          },
+          {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-06T17:19:17.105040+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "working",
+            "stateChangedAt": "2026-10-06T17:19:17.111235+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "canceled",
+            "stateChangedAt": "2026-10-06T17:19:17.124902+00:00",
+            "dataItems": []
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "message_id": "cmd-ede74a59-f475-4056-977c-02223a420997",
+          "task_id": "c08c35ae-137c-453d-aa88-6aa6ad900082"
+        },
+        {
+          "message_id": "cmd-59a14be3-bb8b-4503-a1cb-445135757bd8",
+          "task_id": "c08c35ae-137c-453d-aa88-6aa6ad900082"
+        }
+      ]
+    },
+    {
+      "task_id": "19f8e6da-bc45-4afd-85fd-85fc8a570347",
+      "session_id": "session_1700",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot": {
+        "type": "task-result",
+        "id": "result-7c29ef21-6724-4349-9a86-4000b6599697",
+        "sentAt": "2026-10-06T17:19:19.309959+00:00",
+        "senderRole": "partner",
+        "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+        "mentions": null,
+        "dataItems": null,
+        "groupId": null,
+        "sessionId": "session_1700",
+        "taskId": "19f8e6da-bc45-4afd-85fd-85fc8a570347",
+        "status": {
+          "state": "failed",
+          "stateChangedAt": "2026-10-06T17:19:19.309914+00:00",
+          "dataItems": [
+            {
+              "metadata": null,
+              "type": "text",
+              "text": "没有符合能力和安全要求的 Partner。"
+            }
+          ]
+        },
+        "products": null,
+        "commandHistory": [
+          {
+            "type": "task-command",
+            "id": "cmd-dd5d54da-a7ff-4130-bbea-92b99728a5d4",
+            "sentAt": "2026-10-06T17:19:17.759943+00:00",
+            "senderRole": "leader",
+            "senderId": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+            "mentions": null,
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "用户原始需求：\n水泵001运行异常，帮我安排明天下午检查。\n\n上一轮候选结果：\n\n叮当请求补充：为安排水泵001明天下午的异常检查，还需要两项信息：1）明天下午的具体开始时间（例如 14:00 或 15:00）；2）预计检查时长（分钟，例如 30 分钟或 60 分钟）。请提供这两项，以便排定检查时间。\n用户回答：下午两点开始，预计一小时，需要泵体检查技能。\n\n该智能体的专属补充任务：\n水泵001运行异常，帮我安排明天下午检查。\n\nDAG 指定的上游产物摘要：\n叮当已完成协作规划并开始按 DAG 派发。"
+              }
+            ],
+            "groupId": null,
+            "sessionId": "session_1700",
+            "command": "start",
+            "commandParams": null,
+            "taskId": "19f8e6da-bc45-4afd-85fd-85fc8a570347"
+          }
+        ],
+        "statusHistory": [
+          {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-06T17:19:18.159823+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "working",
+            "stateChangedAt": "2026-10-06T17:19:18.168245+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "failed",
+            "stateChangedAt": "2026-10-06T17:19:19.309914+00:00",
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "没有符合能力和安全要求的 Partner。"
+              }
+            ]
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "message_id": "cmd-dd5d54da-a7ff-4130-bbea-92b99728a5d4",
+          "task_id": "19f8e6da-bc45-4afd-85fd-85fc8a570347"
+        }
+      ]
+    },
+    {
+      "task_id": "2a705116-016c-492b-b088-347b0f82e72a",
+      "session_id": "session_1701",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot": {
+        "type": "task-result",
+        "id": "result-8bd73c26-58fc-4c13-aa4f-db39765228ba",
+        "sentAt": "2026-10-06T18:18:13.912618+00:00",
+        "senderRole": "partner",
+        "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+        "mentions": null,
+        "dataItems": null,
+        "groupId": null,
+        "sessionId": "session_1701",
+        "taskId": "2a705116-016c-492b-b088-347b0f82e72a",
+        "status": {
+          "state": "canceled",
+          "stateChangedAt": "2026-10-06T18:18:13.912595+00:00",
+          "dataItems": []
+        },
+        "products": [
+          {
+            "id": "leader-product-2a705116-016c-492b-b088-347b0f82e72a",
+            "name": "gongwei-leader-result",
+            "description": null,
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "{\"sessionId\": \"session_1701\", \"taskId\": \"2a705116-016c-492b-b088-347b0f82e72a\", \"messageId\": \"cmd-3bbdaf97-a2cc-4ceb-9de0-9204531b0aae\", \"status\": \"cancelled\"}"
+              }
+            ]
+          }
+        ],
+        "commandHistory": [
+          {
+            "type": "task-command",
+            "id": "cmd-de42cafe-34c7-42dc-9e50-329cdb770a2e",
+            "sentAt": "2026-10-06T18:17:27.877001+00:00",
+            "senderRole": "leader",
+            "senderId": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+            "mentions": null,
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "水泵001运行异常，帮我安排明天下午检查。\n\nDAG 指定的上游产物摘要：\n叮当已完成协作规划并开始按 DAG 派发。"
+              }
+            ],
+            "groupId": null,
+            "sessionId": "session_1701",
+            "command": "start",
+            "commandParams": null,
+            "taskId": "2a705116-016c-492b-b088-347b0f82e72a"
+          },
+          {
+            "type": "task-command",
+            "id": "cmd-3bbdaf97-a2cc-4ceb-9de0-9204531b0aae",
+            "sentAt": "2026-10-06T18:18:13.127482+00:00",
+            "senderRole": "leader",
+            "senderId": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+            "mentions": null,
+            "dataItems": null,
+            "groupId": null,
+            "sessionId": "session_1701",
+            "command": "cancel",
+            "commandParams": null,
+            "taskId": "2a705116-016c-492b-b088-347b0f82e72a"
+          }
+        ],
+        "statusHistory": [
+          {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-06T18:17:28.419727+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "working",
+            "stateChangedAt": "2026-10-06T18:17:28.424752+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "awaiting-input",
+            "stateChangedAt": "2026-10-06T18:17:28.442203+00:00",
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "请补充：开始时间、预计时长"
+              }
+            ]
+          },
+          {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-06T18:18:13.893384+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "working",
+            "stateChangedAt": "2026-10-06T18:18:13.899052+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "canceled",
+            "stateChangedAt": "2026-10-06T18:18:13.912595+00:00",
+            "dataItems": []
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "message_id": "cmd-de42cafe-34c7-42dc-9e50-329cdb770a2e",
+          "task_id": "2a705116-016c-492b-b088-347b0f82e72a"
+        },
+        {
+          "message_id": "cmd-3bbdaf97-a2cc-4ceb-9de0-9204531b0aae",
+          "task_id": "2a705116-016c-492b-b088-347b0f82e72a"
+        }
+      ]
+    },
+    {
+      "task_id": "c57cd75f-9ebc-43c0-bed5-7b36c25979df",
+      "session_id": "session_1701",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "snapshot": {
+        "type": "task-result",
+        "id": "result-ecf107c4-b033-45e5-ad12-61be293c8144",
+        "sentAt": "2026-10-06T18:18:15.810178+00:00",
+        "senderRole": "partner",
+        "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+        "mentions": null,
+        "dataItems": null,
+        "groupId": null,
+        "sessionId": "session_1701",
+        "taskId": "c57cd75f-9ebc-43c0-bed5-7b36c25979df",
+        "status": {
+          "state": "failed",
+          "stateChangedAt": "2026-10-06T18:18:15.810138+00:00",
+          "dataItems": [
+            {
+              "metadata": null,
+              "type": "text",
+              "text": "没有符合能力和安全要求的 Partner。"
+            }
+          ]
+        },
+        "products": null,
+        "commandHistory": [
+          {
+            "type": "task-command",
+            "id": "cmd-44b448e7-a5f1-475d-9559-9750781da470",
+            "sentAt": "2026-10-06T18:18:14.427930+00:00",
+            "senderRole": "leader",
+            "senderId": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+            "mentions": null,
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "用户原始需求：\n水泵001运行异常，帮我安排明天下午检查。\n\n上一轮候选结果：\n\n叮当请求补充：为安排“水泵001运行异常”的检查任务，还需要您补充两项信息：\n1）开始时间：明天下午的具体几点开始（例如 14:00）；\n2）预计时长：本次检查大约需要多少分钟（例如 60 分钟）。\n未提供这两项时，检查任务无法排入明天下午的日程；请直接回复时间点与时长即可。\n用户回答：补充上一轮缺少的信息：明天下午两点开始，预计一小时。这是当前任务的补充，请继续同一个任务。\n\n该智能体的专属补充任务：\n水泵001运行异常，帮我安排明天下午检查。\n\nDAG 指定的上游产物摘要：\n叮当已完成协作规划并开始按 DAG 派发。"
+              }
+            ],
+            "groupId": null,
+            "sessionId": "session_1701",
+            "command": "start",
+            "commandParams": null,
+            "taskId": "c57cd75f-9ebc-43c0-bed5-7b36c25979df"
+          }
+        ],
+        "statusHistory": [
+          {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-06T18:18:14.965426+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "working",
+            "stateChangedAt": "2026-10-06T18:18:14.972463+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "failed",
+            "stateChangedAt": "2026-10-06T18:18:15.810138+00:00",
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "没有符合能力和安全要求的 Partner。"
+              }
+            ]
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "message_id": "cmd-44b448e7-a5f1-475d-9559-9750781da470",
+          "task_id": "c57cd75f-9ebc-43c0-bed5-7b36c25979df"
+        }
+      ]
+    },
+    {
+      "task_id": "public-continue-db00d48834b4-task",
+      "session_id": "public-continue-db00d48834b4-session",
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "snapshot": {
+        "type": "task-result",
+        "id": "result-1666a124-46a8-4688-bf58-842e05b2ba74",
+        "sentAt": "2026-10-06T18:59:41.034065+00:00",
+        "senderRole": "partner",
+        "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+        "mentions": null,
+        "dataItems": null,
+        "groupId": null,
+        "sessionId": "public-continue-db00d48834b4-session",
+        "taskId": "public-continue-db00d48834b4-task",
+        "status": {
+          "state": "canceled",
+          "stateChangedAt": "2026-10-06T18:59:41.034047+00:00",
+          "dataItems": []
+        },
+        "products": [
+          {
+            "id": "leader-product-public-continue-db00d48834b4-task",
+            "name": "gongwei-leader-result",
+            "description": null,
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "{\"sessionId\": \"public-continue-db00d48834b4-session\", \"taskId\": \"public-continue-db00d48834b4-task\", \"messageId\": \"public-continue-db00d48834b4-2065516b\", \"status\": \"cancelled\"}"
+              }
+            ]
+          }
+        ],
+        "commandHistory": [
+          {
+            "type": "task-command",
+            "id": "public-continue-db00d48834b4-adc3b68e",
+            "sentAt": "2026-10-06T18:59:40.712189+00:00",
+            "senderRole": "leader",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+            "mentions": null,
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "水泵001运行异常，帮我安排明天下午检查。"
+              }
+            ],
+            "groupId": null,
+            "sessionId": "public-continue-db00d48834b4-session",
+            "command": "start",
+            "commandParams": null,
+            "taskId": "public-continue-db00d48834b4-task"
+          },
+          {
+            "type": "task-command",
+            "id": "public-continue-db00d48834b4-f585c851",
+            "sentAt": "2026-10-06T18:59:40.870079+00:00",
+            "senderRole": "leader",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+            "mentions": null,
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "下午两点开始。"
+              }
+            ],
+            "groupId": null,
+            "sessionId": "public-continue-db00d48834b4-session",
+            "command": "continue",
+            "commandParams": null,
+            "taskId": "public-continue-db00d48834b4-task"
+          },
+          {
+            "type": "task-command",
+            "id": "public-continue-db00d48834b4-2065516b",
+            "sentAt": "2026-10-06T18:59:41.009574+00:00",
+            "senderRole": "leader",
+            "senderId": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+            "mentions": null,
+            "dataItems": [],
+            "groupId": null,
+            "sessionId": "public-continue-db00d48834b4-session",
+            "command": "cancel",
+            "commandParams": null,
+            "taskId": "public-continue-db00d48834b4-task"
+          }
+        ],
+        "statusHistory": [
+          {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-06T18:59:40.734888+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "working",
+            "stateChangedAt": "2026-10-06T18:59:40.739801+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "awaiting-input",
+            "stateChangedAt": "2026-10-06T18:59:40.752054+00:00",
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "请补充：开始时间、预计时长"
+              }
+            ]
+          },
+          {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-06T18:59:40.878853+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "working",
+            "stateChangedAt": "2026-10-06T18:59:40.883281+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "awaiting-input",
+            "stateChangedAt": "2026-10-06T18:59:40.892958+00:00",
+            "dataItems": [
+              {
+                "metadata": null,
+                "type": "text",
+                "text": "请补充：预计时长"
+              }
+            ]
+          },
+          {
+            "state": "accepted",
+            "stateChangedAt": "2026-10-06T18:59:41.019061+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "working",
+            "stateChangedAt": "2026-10-06T18:59:41.023911+00:00",
+            "dataItems": []
+          },
+          {
+            "state": "canceled",
+            "stateChangedAt": "2026-10-06T18:59:41.034047+00:00",
+            "dataItems": []
+          }
+        ]
+      },
+      "receipts": [
+        {
+          "message_id": "public-continue-db00d48834b4-adc3b68e",
+          "task_id": "public-continue-db00d48834b4-task"
+        },
+        {
+          "message_id": "public-continue-db00d48834b4-f585c851",
+          "task_id": "public-continue-db00d48834b4-task"
+        },
+        {
+          "message_id": "public-continue-db00d48834b4-2065516b",
+          "task_id": "public-continue-db00d48834b4-task"
+        }
+      ]
+    }
+  ],
+  "database": {
+    "integrity": "ok",
+    "work_orders": 0,
+    "active_reservations": 0
+  },
+  "leader_journal": "Oct 07 00:43:31 VM-0-6-ubuntu systemd[1]: Started gongwei-leader.service - Gongwei official mTLS Leader RPC with MQ Partners.\nOct 07 00:43:32 VM-0-6-ubuntu python[2336242]: INFO:     Started server process [2336242]\nOct 07 00:43:32 VM-0-6-ubuntu python[2336242]: INFO:     Waiting for application startup.\nOct 07 00:43:32 VM-0-6-ubuntu python[2336242]: INFO:     Application startup complete.\nOct 07 00:43:32 VM-0-6-ubuntu python[2336242]: INFO:     Uvicorn running on https://127.0.0.1:18443 (Press CTRL+C to quit)\nOct 07 00:45:01 VM-0-6-ubuntu python[2336242]: INFO:     127.0.0.1:53616 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 00:45:01 VM-0-6-ubuntu python[2336242]: INFO:     127.0.0.1:53632 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 00:45:01 VM-0-6-ubuntu python[2336242]: INFO:     127.0.0.1:53648 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 00:45:01 VM-0-6-ubuntu python[2336242]: INFO:     127.0.0.1:53684 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 00:47:21 VM-0-6-ubuntu systemd[1]: Stopping gongwei-leader.service - Gongwei official mTLS Leader RPC with MQ Partners...\nOct 07 00:47:21 VM-0-6-ubuntu python[2336242]: INFO:     Shutting down\nOct 07 00:47:21 VM-0-6-ubuntu python[2336242]: INFO:     Waiting for application shutdown.\nOct 07 00:47:21 VM-0-6-ubuntu python[2336242]: INFO:     Application shutdown complete.\nOct 07 00:47:21 VM-0-6-ubuntu python[2336242]: INFO:     Finished server process [2336242]\nOct 07 00:47:21 VM-0-6-ubuntu systemd[1]: gongwei-leader.service: Deactivated successfully.\nOct 07 00:47:21 VM-0-6-ubuntu systemd[1]: Stopped gongwei-leader.service - Gongwei official mTLS Leader RPC with MQ Partners.\nOct 07 00:47:21 VM-0-6-ubuntu systemd[1]: Started gongwei-leader.service - Gongwei official mTLS Leader RPC with MQ Partners.\nOct 07 00:47:22 VM-0-6-ubuntu python[2337421]: INFO:     Started server process [2337421]\nOct 07 00:47:22 VM-0-6-ubuntu python[2337421]: INFO:     Waiting for application startup.\nOct 07 00:47:22 VM-0-6-ubuntu python[2337421]: INFO:     Application startup complete.\nOct 07 00:47:22 VM-0-6-ubuntu python[2337421]: INFO:     Uvicorn running on https://127.0.0.1:18443 (Press CTRL+C to quit)\nOct 07 00:48:30 VM-0-6-ubuntu python[2337421]: INFO:     127.0.0.1:56258 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 00:48:30 VM-0-6-ubuntu python[2337421]: INFO:     127.0.0.1:56260 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 00:48:30 VM-0-6-ubuntu python[2337421]: INFO:     127.0.0.1:56274 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 00:48:30 VM-0-6-ubuntu python[2337421]: INFO:     127.0.0.1:56290 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 00:54:16 VM-0-6-ubuntu python[2337421]: INFO:     127.0.0.1:38314 - \"GET / HTTP/1.1\" 404 Not Found\nOct 07 00:55:14 VM-0-6-ubuntu python[2337421]: INFO:     127.0.0.1:32996 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 00:55:17 VM-0-6-ubuntu python[2337421]: INFO:     127.0.0.1:33000 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 00:55:17 VM-0-6-ubuntu python[2337421]: INFO:     127.0.0.1:33002 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 00:55:24 VM-0-6-ubuntu python[2337421]: INFO:     127.0.0.1:55492 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 00:57:43 VM-0-6-ubuntu python[2337421]: INFO:     127.0.0.1:44446 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 00:57:46 VM-0-6-ubuntu python[2337421]: INFO:     127.0.0.1:44446 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 01:01:56 VM-0-6-ubuntu python[2337421]: INFO:     127.0.0.1:38016 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 01:17:45 VM-0-6-ubuntu systemd[1]: Stopping gongwei-leader.service - Gongwei official mTLS Leader RPC with MQ Partners...\nOct 07 01:17:45 VM-0-6-ubuntu python[2337421]: INFO:     Shutting down\nOct 07 01:17:45 VM-0-6-ubuntu python[2337421]: INFO:     Waiting for application shutdown.\nOct 07 01:17:45 VM-0-6-ubuntu python[2337421]: INFO:     Application shutdown complete.\nOct 07 01:17:45 VM-0-6-ubuntu python[2337421]: INFO:     Finished server process [2337421]\nOct 07 01:17:45 VM-0-6-ubuntu systemd[1]: gongwei-leader.service: Deactivated successfully.\nOct 07 01:17:45 VM-0-6-ubuntu systemd[1]: Stopped gongwei-leader.service - Gongwei official mTLS Leader RPC with MQ Partners.\nOct 07 01:17:45 VM-0-6-ubuntu systemd[1]: gongwei-leader.service: Consumed 2.306s CPU time, 47.9M memory peak, 0B memory swap peak.\nOct 07 01:17:45 VM-0-6-ubuntu systemd[1]: Started gongwei-leader.service - Gongwei official mTLS Leader RPC with MQ Partners.\nOct 07 01:17:46 VM-0-6-ubuntu python[2345992]: INFO:     Started server process [2345992]\nOct 07 01:17:46 VM-0-6-ubuntu python[2345992]: INFO:     Waiting for application startup.\nOct 07 01:17:46 VM-0-6-ubuntu python[2345992]: INFO:     Application startup complete.\nOct 07 01:17:46 VM-0-6-ubuntu python[2345992]: INFO:     Uvicorn running on https://127.0.0.1:18443 (Press CTRL+C to quit)\nOct 07 01:18:36 VM-0-6-ubuntu python[2345992]: INFO:     127.0.0.1:49614 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 01:18:39 VM-0-6-ubuntu python[2345992]: INFO:     127.0.0.1:49614 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 01:19:17 VM-0-6-ubuntu python[2345992]: INFO:     127.0.0.1:43588 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 01:19:19 VM-0-6-ubuntu python[2345992]: 2026-10-07 01:19:19,309 WARNING leader_rpc_runtime event=leader_rpc_task_failed task_id=19f8e6da-bc45-4afd-85fd-85fc8a570347 error=DomainError\nOct 07 01:19:19 VM-0-6-ubuntu python[2345992]: INFO:     127.0.0.1:43588 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 01:19:21 VM-0-6-ubuntu python[2345992]: INFO:     127.0.0.1:43588 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 02:17:28 VM-0-6-ubuntu python[2345992]: INFO:     127.0.0.1:33406 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 02:17:31 VM-0-6-ubuntu python[2345992]: INFO:     127.0.0.1:33406 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 02:18:13 VM-0-6-ubuntu python[2345992]: INFO:     127.0.0.1:41002 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 02:18:15 VM-0-6-ubuntu python[2345992]: 2026-10-07 02:18:15,810 WARNING leader_rpc_runtime event=leader_rpc_task_failed task_id=c57cd75f-9ebc-43c0-bed5-7b36c25979df error=DomainError\nOct 07 02:18:15 VM-0-6-ubuntu python[2345992]: INFO:     127.0.0.1:41002 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 02:18:17 VM-0-6-ubuntu python[2345992]: INFO:     127.0.0.1:41002 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 02:59:40 VM-0-6-ubuntu python[2345992]: INFO:     127.0.0.1:54438 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 02:59:40 VM-0-6-ubuntu python[2345992]: INFO:     127.0.0.1:54454 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 02:59:40 VM-0-6-ubuntu python[2345992]: INFO:     127.0.0.1:54458 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 02:59:41 VM-0-6-ubuntu python[2345992]: INFO:     127.0.0.1:54468 - \"POST /rpc HTTP/1.1\" 200 OK\nOct 07 02:59:41 VM-0-6-ubuntu python[2345992]: INFO:     127.0.0.1:54484 - \"POST /rpc HTTP/1.1\" 200 OK",
+  "resource-inbox_journal": "Oct 07 01:01:08 VM-0-6-ubuntu systemd[1]: Started gongwei-resource-inbox.service - Gongwei official resource MQ Inbox.\nOct 07 01:01:09 VM-0-6-ubuntu python[2341716]: 2026-10-07 01:01:09,724 INFO __main__ event=partner_inbox_start role=resource aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\nOct 07 01:01:12 VM-0-6-ubuntu python[2341716]: 2026-10-07 01:01:12,268 INFO acps_sdk.aip.group_partner event=partner_inbox_queue_ready partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA queue=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA expires_ms=5184000000 message_ttl_ms=604800000\nOct 07 01:01:12 VM-0-6-ubuntu python[2341716]: 2026-10-07 01:01:12,269 INFO acps_sdk.aip.group_partner event=partner_inbox_consumer_start partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA queue=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\nOct 07 01:01:12 VM-0-6-ubuntu python[2341716]: 2026-10-07 01:01:12,378 INFO __main__ event=partner_inbox_listening role=resource aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+  "workorder-inbox_journal": "Oct 07 01:01:08 VM-0-6-ubuntu systemd[1]: Started gongwei-workorder-inbox.service - Gongwei official workorder MQ Inbox.\nOct 07 01:01:09 VM-0-6-ubuntu python[2341718]: 2026-10-07 01:01:09,728 INFO __main__ event=partner_inbox_start role=workorder aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF\nOct 07 01:01:11 VM-0-6-ubuntu python[2341718]: 2026-10-07 01:01:11,950 INFO acps_sdk.aip.group_partner event=partner_inbox_queue_ready partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF queue=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF expires_ms=5184000000 message_ttl_ms=604800000\nOct 07 01:01:11 VM-0-6-ubuntu python[2341718]: 2026-10-07 01:01:11,950 INFO acps_sdk.aip.group_partner event=partner_inbox_consumer_start partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF queue=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF\nOct 07 01:01:12 VM-0-6-ubuntu python[2341718]: 2026-10-07 01:01:12,057 INFO __main__ event=partner_inbox_listening role=workorder aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+  "heartbeat_metadata": {
+    "leader": [
+      {
+        "schema_version": "1.0",
+        "log_id": "c4d23ff2-1001-423f-9549-65cbefaf0c8f",
+        "log_type": "heartbeat",
+        "timestamp": "2026-10-06T19:34:01.980878+00:00",
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+        "body": {
+          "uptimeSeconds": 8175.698
+        }
+      }
+    ],
+    "resource-inbox": [
+      {
+        "schema_version": "1.0",
+        "log_id": "f29e0d70-fba0-4b42-919b-8cf566bf4f1c",
+        "log_type": "heartbeat",
+        "timestamp": "2026-10-06T19:34:02.241693+00:00",
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+        "body": {
+          "uptimeSeconds": 9169.864
+        }
+      }
+    ],
+    "workorder-inbox": [
+      {
+        "schema_version": "1.0",
+        "log_id": "687ee320-3c80-4bb5-9c12-843d54909a8f",
+        "log_type": "heartbeat",
+        "timestamp": "2026-10-06T19:34:01.782405+00:00",
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+        "body": {
+          "uptimeSeconds": 9169.725
+        }
+      }
+    ]
+  }
+}

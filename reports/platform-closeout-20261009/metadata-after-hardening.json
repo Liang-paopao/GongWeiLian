@@ -1,0 +1,16 @@
+{
+  "scope": "read-only GET diagnostic; Resource identity, NOT DingDang",
+  "sessionId": "public-continue-28776fa98d93-session",
+  "taskId": "public-continue-28776fa98d93-cancel-operation",
+  "state": "completed",
+  "business_unchanged": true,
+  "log_id": "dc9134fd-5281-4bec-827b-486dc2bf341d",
+  "kafka_ack": {
+    "log_type": "access",
+    "log_id": "dc9134fd-5281-4bec-827b-486dc2bf341d",
+    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+    "partition": 14,
+    "offset": 6013
+  },
+  "metadata_service": "active"
+}

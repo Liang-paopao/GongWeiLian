@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-10-08T14:30:00.062367+00:00",
+  "endpoint": "https://leader.yanyi.online/rpc",
+  "scope": "public mTLS identity rejection, no business mutation",
+  "tests": {
+    "valid_identity": {
+      "http_status": 200,
+      "body": {
+        "jsonrpc": "2.0",
+        "id": "security-5e865e17f871407484c21552e2498e67-valid_identity",
+        "result": null,
+        "error": {
+          "code": -32001,
+          "message": "Task not found",
+          "data": null
+        }
+      },
+      "elapsed_ms": 31.829
+    },
+    "wrong_sender": {
+      "http_status": 200,
+      "body": {
+        "jsonrpc": "2.0",
+        "id": "security-5e865e17f871407484c21552e2498e67-wrong_sender",
+        "result": null,
+        "error": {
+          "code": -32009,
+          "message": "AuthorizationFailedError",
+          "data": "senderId 1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45 does not match peer AIC 1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA"
+        }
+      },
+      "elapsed_ms": 10.528
+    },
+    "no_certificate": {
+      "error_type": "RemoteDisconnected",
+      "error": "Remote end closed connection without response",
+      "elapsed_ms": 41.126
+    },
+    "wrong_eku": {
+      "error_type": "RemoteDisconnected",
+      "error": "Remote end closed connection without response",
+      "elapsed_ms": 19.407
+    }
+  }
+}

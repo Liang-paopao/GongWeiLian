@@ -1,0 +1,103 @@
+{
+  "url": "https://wt.ioa.pub/internal/matched-stats/top?startAt=2026-10-09T01%3A00%3A00%2B08%3A00&endAt=2026-10-09T02%3A00%3A00%2B08%3A00&n=200",
+  "checked_at": "2026-10-09T01:43:28.972176+08:00",
+  "scope": "current formal SDK diagnostic; not a new DingDang conversation",
+  "http_status": 200,
+  "response": {
+    "timezone": "Asia/Shanghai",
+    "unit": "task",
+    "n": 200,
+    "timeRange": {
+      "startAt": "2026-10-09T01:00:00+08:00",
+      "endAt": "2026-10-09T02:00:00+08:00"
+    },
+    "caller": [
+      {
+        "aic": "1.2.156.3088.1.1.LDR001.LDR001.1.0002",
+        "count": 14,
+        "accessCount": 14,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.AGZXNJ.IDO77A.DTNLEB.0MUF",
+        "count": 5,
+        "accessCount": 5,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+        "count": 4,
+        "accessCount": 0,
+        "messageCount": 4
+      }
+    ],
+    "callee": [
+      {
+        "aic": "1.2.156.3088.1.BUPT.BNN2UD.A0G0KD.YYTVI4.1DHO",
+        "count": 14,
+        "accessCount": 14,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.AGZXNJ.Z159XP.CY42VL.0W0K",
+        "count": 2,
+        "accessCount": 2,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+        "count": 2,
+        "accessCount": 0,
+        "messageCount": 2
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+        "count": 2,
+        "accessCount": 0,
+        "messageCount": 2
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.AGZXNJ.19NPSX.PZEMGP.0WH0",
+        "count": 1,
+        "accessCount": 1,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.AGZXNJ.4JFH6S.8VWS14.0S87",
+        "count": 1,
+        "accessCount": 1,
+        "messageCount": 0
+      },
+      {
+        "aic": "1.2.156.3088.1.BUPT.AGZXNJ.BZ6LPM.319VE2.04SD",
+        "count": 1,
+        "accessCount": 1,
+        "messageCount": 0
+      }
+    ],
+    "callerNonInternal": [
+      {
+        "aic": "1.2.156.3088.1.1.LDR001.LDR001.1.0002",
+        "count": 14,
+        "accessCount": 14,
+        "messageCount": 0
+      }
+    ],
+    "calleeNonInternal": [
+      {
+        "aic": "1.2.156.3088.1.BUPT.BNN2UD.A0G0KD.YYTVI4.1DHO",
+        "count": 14,
+        "accessCount": 14,
+        "messageCount": 0
+      }
+    ],
+    "meta": {
+      "currentHourOpen": true,
+      "accessComputedAt": "2026-10-08T17:43:09.492000+00:00",
+      "messageComputedAt": "2026-10-08T17:42:34.980000+00:00",
+      "accessMissingHours": [],
+      "messageMissingHours": []
+    }
+  },
+  "error_type": "UnicodeDecodeError"
+}

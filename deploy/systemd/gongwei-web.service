@@ -1,0 +1,23 @@
+[Unit]
+Description=Gongwei web and Leader API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/opt/gongwei/current
+EnvironmentFile=/opt/gongwei/gongwei.env
+ExecStart=/opt/gongwei/.venv/bin/python -m uvicorn web_app:app --host 127.0.0.1 --port 18110
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+UMask=0077
+ReadWritePaths=/opt/gongwei
+StandardOutput=append:/opt/gongwei/shared/logs/web.service.log
+StandardError=append:/opt/gongwei/shared/logs/web.service.log
+
+[Install]
+WantedBy=multi-user.target

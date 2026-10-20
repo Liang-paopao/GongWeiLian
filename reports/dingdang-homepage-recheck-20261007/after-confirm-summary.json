@@ -1,0 +1,264 @@
+{
+  "services": {
+    "web": {
+      "MainPID": "2435366",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource": {
+      "MainPID": "2435360",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder": {
+      "MainPID": "2435362",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "audio": {
+      "MainPID": "2435364",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "leader": {
+      "MainPID": "2790887",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource-inbox": {
+      "MainPID": "2753079",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder-inbox": {
+      "MainPID": "2753083",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    }
+  },
+  "database": {
+    "integrity": "ok",
+    "work_orders": 2,
+    "active_reservations": 6
+  },
+  "tasks": [
+    {
+      "sessionId": "server-mtls-4e132677ed-session",
+      "taskId": "server-mtls-4e132677ed-task",
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "state": "canceled",
+      "commands": [
+        "start",
+        "cancel"
+      ]
+    },
+    {
+      "sessionId": "server-mtls-452639c3df-session",
+      "taskId": "server-mtls-452639c3df-task",
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "state": "canceled",
+      "commands": [
+        "start",
+        "cancel"
+      ]
+    },
+    {
+      "sessionId": "public-mtls-1717d39d86-session",
+      "taskId": "public-mtls-1717d39d86-task",
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "state": "canceled",
+      "commands": [
+        "start",
+        "cancel"
+      ]
+    },
+    {
+      "sessionId": "session_1699",
+      "taskId": "87ee5e18-72f2-4dee-90f6-2ee75cefd764",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "state": "canceled",
+      "commands": [
+        "start",
+        "cancel"
+      ]
+    },
+    {
+      "sessionId": "session_1700",
+      "taskId": "c08c35ae-137c-453d-aa88-6aa6ad900082",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "state": "canceled",
+      "commands": [
+        "start",
+        "cancel"
+      ]
+    },
+    {
+      "sessionId": "session_1700",
+      "taskId": "19f8e6da-bc45-4afd-85fd-85fc8a570347",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "state": "failed",
+      "commands": [
+        "start"
+      ]
+    },
+    {
+      "sessionId": "session_1701",
+      "taskId": "2a705116-016c-492b-b088-347b0f82e72a",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "state": "canceled",
+      "commands": [
+        "start",
+        "cancel"
+      ]
+    },
+    {
+      "sessionId": "session_1701",
+      "taskId": "c57cd75f-9ebc-43c0-bed5-7b36c25979df",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "state": "failed",
+      "commands": [
+        "start"
+      ]
+    },
+    {
+      "sessionId": "public-continue-db00d48834b4-session",
+      "taskId": "public-continue-db00d48834b4-task",
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "state": "canceled",
+      "commands": [
+        "start",
+        "continue",
+        "cancel"
+      ]
+    },
+    {
+      "sessionId": "public-continue-183ab980a167-session",
+      "taskId": "public-continue-183ab980a167-task",
+      "owner": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "state": "canceled",
+      "commands": [
+        "start",
+        "continue",
+        "cancel"
+      ]
+    },
+    {
+      "sessionId": "session_1702",
+      "taskId": "192cf143-e90e-4092-a44d-9fcca5520102",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "state": "canceled",
+      "commands": [
+        "start",
+        "cancel"
+      ]
+    },
+    {
+      "sessionId": "session_1702",
+      "taskId": "cfe51e30-0e42-4637-b322-2eea65663a00",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "state": "failed",
+      "commands": [
+        "start"
+      ]
+    },
+    {
+      "sessionId": "session_1703",
+      "taskId": "c9ea98aa-fcf7-42b3-89da-36b26aa1ec2b",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "state": "canceled",
+      "commands": [
+        "start",
+        "cancel"
+      ]
+    },
+    {
+      "sessionId": "session_1703",
+      "taskId": "c3a2809e-d5e5-4246-8f1e-1eb86daad30e",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "state": "canceled",
+      "commands": [
+        "start",
+        "cancel"
+      ]
+    },
+    {
+      "sessionId": "debug_4808e66359da4b3380540679941a4cbf",
+      "taskId": "5caf3f09-19c1-4573-be2a-0a283821c438",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "state": "completed",
+      "commands": [
+        "start",
+        "continue",
+        "continue"
+      ]
+    },
+    {
+      "sessionId": "debug_03b555a68a974bf498d0cb1c69853f9d",
+      "taskId": "4ebd484a-7eee-46dd-954f-0f50642a5d90",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "state": "canceled",
+      "commands": [
+        "start",
+        "continue"
+      ]
+    },
+    {
+      "sessionId": "session_1723",
+      "taskId": "c0c8efeb-5fc7-483f-8061-3110364c6bac",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "state": "canceled",
+      "commands": [
+        "start",
+        "cancel"
+      ]
+    },
+    {
+      "sessionId": "session_1723",
+      "taskId": "826e7f98-dedd-4553-96d2-6424a5bdb3ba",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "state": "canceled",
+      "commands": [
+        "start",
+        "cancel"
+      ]
+    },
+    {
+      "sessionId": "session_1723",
+      "taskId": "4f099dd8-9909-4e70-a078-814a4a4e5548",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "state": "failed",
+      "commands": [
+        "start"
+      ]
+    },
+    {
+      "sessionId": "session_1726",
+      "taskId": "0baf36fd-73ff-4ce0-8fb0-501247cb6423",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "state": "canceled",
+      "commands": [
+        "start",
+        "cancel"
+      ]
+    },
+    {
+      "sessionId": "session_1726",
+      "taskId": "6887e4c3-572c-4086-95db-8798ee5e42fd",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "state": "canceled",
+      "commands": [
+        "start",
+        "cancel"
+      ]
+    },
+    {
+      "sessionId": "session_1726",
+      "taskId": "7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8",
+      "owner": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+      "state": "completed",
+      "commands": [
+        "start"
+      ]
+    }
+  ]
+}

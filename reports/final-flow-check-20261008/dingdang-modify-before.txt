@@ -1,0 +1,557 @@
+- img "梧桐"
+- generic: 梧桐智能体互联平台
+- text: Contributor
+- generic: 核心团队
+- generic: 李珂
+- generic: 禹可
+- generic: 刘军
+- generic: 陈科良
+- generic: 马镝
+- generic: 胡晓峰
+- generic: 运营支持
+- generic: 中国移动通信集团山东有限公司
+- generic: 北京国数智联科技有限公司
+- generic: 建设者
+- generic: 吴权达
+- generic: 张茂彬
+- generic: 蔡亦张
+- generic: 王垚烨
+- generic: 李聪
+- generic: 易楷为
+- generic: 冯梓哲
+- generic: 钟悠豪
+- generic: 孙大壮
+- generic: 李胤铭
+- generic: 郭丁志
+- generic: 马清涛
+- generic: 史菲雨
+- generic: 黄瑞雪
+- generic: 贡献者
+- generic: 刘孙炎(北邮)
+- generic: 莫家瑞(港大)
+- generic: 王如苑(华科同济)
+- search "查询智能体在线状态":
+  - textbox "智能体 AIC":
+    - /placeholder: 输入 AIC 查询在线状态
+    - text: 1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45
+  - button "查询"
+- generic "来自 Discovery 心跳同步状态":
+  - text: 活跃智能体
+  - strong: "137"
+- link "使用说明":
+  - /url: /docs.html
+- button "梧桐智能体调用排行榜" [expanded]:
+  - generic: ⌄
+  - generic: 梧桐智能体调用排行榜
+- combobox "排行榜角色":
+  - option "被调用榜(含内部调用)" [selected]
+  - option "调用榜(含内部调用)"
+  - option "被调用榜(不含内部调用)"
+  - option "调用榜(不含内部调用)"
+- button "刷新"
+- generic: 2026-09-24 00:00 — 2026-10-07 18:00
+- generic: 当前小时持续更新
+- generic: 排名
+- generic: 智能体 AIC
+- generic: 任务数
+- list:
+  - listitem "1.2.156.3088.1.BUPT.HN9H10.8QIZ15.7VW5R0.08Q6":
+    - generic: "1"
+    - generic: 1.2.156.3088.1.BUPT.HN9H10.8QIZ15.7VW5R0.08Q6
+    - generic: Access 13 · Message 761
+    - generic: 774任务
+  - listitem "1.2.156.3088.1.BUPT.HN9H10.0SBKGM.IZVL3D.16GT":
+    - generic: "2"
+    - generic: 1.2.156.3088.1.BUPT.HN9H10.0SBKGM.IZVL3D.16GT
+    - generic: Access 13 · Message 459
+    - generic: 472任务
+  - listitem "1.2.156.3088.1.BUPT.I9JB16.KATBXS.AHHHKT.1D9E":
+    - generic: "3"
+    - generic: 1.2.156.3088.1.BUPT.I9JB16.KATBXS.AHHHKT.1D9E
+    - generic: Access 449 · Message 0
+    - generic: 449任务
+  - listitem "1.2.156.3088.1.BUPT.HN9H10.AIU1Z0.3BKT96.0HEC":
+    - generic: "4"
+    - generic: 1.2.156.3088.1.BUPT.HN9H10.AIU1Z0.3BKT96.0HEC
+    - generic: Access 13 · Message 428
+    - generic: 441任务
+  - listitem "1.2.156.3088.1.BUPT.I9JB16.00Z99Q.ZIC2UL.0CFK":
+    - generic: "5"
+    - generic: 1.2.156.3088.1.BUPT.I9JB16.00Z99Q.ZIC2UL.0CFK
+    - generic: Access 46 · Message 352
+    - generic: 398任务
+  - listitem "1.2.156.3088.1.BUPT.I9JB16.QY7RKX.2NPYPU.14IC":
+    - generic: "6"
+    - generic: 1.2.156.3088.1.BUPT.I9JB16.QY7RKX.2NPYPU.14IC
+    - generic: Access 18 · Message 350
+    - generic: 368任务
+  - listitem "1.2.156.3088.1.BUPT.I9JB16.ZCJ6SB.N74XF5.0OEC":
+    - generic: "7"
+    - generic: 1.2.156.3088.1.BUPT.I9JB16.ZCJ6SB.N74XF5.0OEC
+    - generic: Access 16 · Message 350
+    - generic: 366任务
+  - listitem "1.2.156.3088.1.BUPT.L2K8YU.SJKLDA.578Y8P.19DJ":
+    - generic: "8"
+    - generic: 1.2.156.3088.1.BUPT.L2K8YU.SJKLDA.578Y8P.19DJ
+    - generic: Access 243 · Message 57
+    - generic: 300任务
+  - listitem "1.2.156.3088.1.BUPT.G4J19Z.C7NFHV.OXDJOU.1BIS":
+    - generic: "9"
+    - generic: 1.2.156.3088.1.BUPT.G4J19Z.C7NFHV.OXDJOU.1BIS
+    - generic: Access 299 · Message 0
+    - generic: 299任务
+  - listitem "1.2.156.3088.1.BUPT.HN9H10.9XBQZH.V0UCAV.084B":
+    - generic: "10"
+    - generic: 1.2.156.3088.1.BUPT.HN9H10.9XBQZH.V0UCAV.084B
+    - generic: Access 0 · Message 268
+    - generic: 268任务
+- generic: 共 131 条 · 第 1 / 14 页
+- button "上一页" [disabled]
+- button "下一页"
+- heading "Agent Store" [level=2]
+- button "热门智能体 近期高频使用的智能体":
+  - generic: ⌄
+  - generic: 热门智能体
+  - generic: 近期高频使用的智能体
+- button "换一批"
+- button "上新智能体 最近接入梧桐的智能体" [expanded]:
+  - generic: ⌄
+  - generic: 上新智能体
+  - generic: 最近接入梧桐的智能体
+- button "换一批"
+- generic "Discovers approved ACPs agents and invokes their AIP endpoints using mTLS.":
+  - generic: NEW
+  - generic: 🤖
+  - generic: Dingdang Full ACPs Gateway-9Q9GFJ
+  - generic: Dingdang Full ACPs Gateway-9Q9GFJ
+  - generic: Discovers approved ACPs agents and invokes their AIP endpoints using mTLS.
+  - generic: 1.2.156.3088.1.0001.00001.EZTK03.9Q9GFJ.01NP
+- generic "对生成的 ROS2 Python 代码进行自动化规范审查，发现问题后自动修正。审查分为三个优先级：P0（必须通过）包括类继承正确性、super().__init__() 调用、main 函数完整性、发布者/订阅者创建方式、回调函数参数正确性、import 正确性、命名一致性（类名/节点名/话题名与需求一致）；P1（应该通过）包括话题名以/开头、命名规范、使用 get_logger() 而非 print()、回调函数命名规范；P2（建议）包括中文注释清晰度、代码结构清晰性、冗余代码检查。修正循环最多3次，每次根据错误集知识库检索解决方案进行针对性修复。":
+  - generic: NEW
+  - generic: 🤖
+  - generic: 工程实践视角ROS2程序开发与项目架构的交互式学习智能体
+  - generic: 工程实践视角ROS2程序开发与项目架构的交互式学习智能体
+  - generic: 对生成的 ROS2 Python 代码进行自动化规范审查，发现问题后自动修正。审查分为三个优先级：P0（必须通过）包括类继承正确性、super().__init__() 调用、main 函数完整性、发布者/订阅者创建方式、回调函数参数正确性、import 正确性、命名一致性（类名/节点名/话题名与需求一致）；P1（应该通过）包括话题名以/开头、命名规范、使用 get_logger() 而非 print()、回调函数命名规范；P2（建议）包括中文注释清晰度、代码结构清晰性、冗余代码检查。修正循环最多3次，每次根据错误集知识库检索解决方案进行针对性修复。
+  - generic: 1.2.156.3088.1.BUPT.AXZERQ.MSV9VF.7OZBZ1.0G36
+- generic "提交受理结论：把待核查事件整理成一个**可判真假的命题**、一份可核验事实清单，以及分配给正反双方的立场。这一步只整理事实与命题，不写真假结论。":
+  - generic: NEW
+  - generic: 🤖
+  - generic: 网络裁判
+  - generic: 网络裁判
+  - generic: 提交受理结论：把待核查事件整理成一个**可判真假的命题**、一份可核验事实清单，以及分配给正反双方的立场。这一步只整理事实与命题，不写真假结论。
+  - generic: 1.2.156.3088.1.BUPT.81M3FX.D3YAH9.WV6PFV.0BKO
+- generic "必填非空symptom或text，最多2000字符；可提供windowStartMs、windowEndMs和businessRequestId。返回生成的案件编号、证据、候选状态、发现/检查记录以及规则判定的verified或insufficient状态。repair默认为不请求修复；仅在部署开关与调用者授权允许时可请求F1/F2限定修复。":
+  - generic: NEW
+  - generic: 🤖
+  - generic: 协诊协调Agent
+  - generic: 协诊协调Agent
+  - generic: 必填非空symptom或text，最多2000字符；可提供windowStartMs、windowEndMs和businessRequestId。返回生成的案件编号、证据、候选状态、发现/检查记录以及规则判定的verified或insufficient状态。repair默认为不请求修复；仅在部署开关与调用者授权允许时可请求F1/F2限定修复。
+  - generic: 1.2.156.3088.1.BUPT.D9HGF4.PSLREB.RRZLR5.1BOE
+- generic "载荷使用incidentId、operation=query_logs及params；params支持service、request_id、level、error_type、window_start_ms、window_end_ms、limit。返回日志事实、错误类型统计、supports及原始记录引用；无日志返回no_data。":
+  - generic: NEW
+  - generic: 🤖
+  - generic: 协诊日志Agent
+  - generic: 协诊日志Agent
+  - generic: 载荷使用incidentId、operation=query_logs及params；params支持service、request_id、level、error_type、window_start_ms、window_end_ms、limit。返回日志事实、错误类型统计、supports及原始记录引用；无日志返回no_data。
+  - generic: 1.2.156.3088.1.BUPT.D9HGF4.CRYDMC.NSGIAS.0D5Z
+- generic "载荷使用incidentId、operation=query_metrics及params；params支持service、window_start_ms、window_end_ms、limit。facts首项为聚合summary，后续为已查询指标样本；supports为规则生成的候选支持；无样本返回no_data。":
+  - generic: NEW
+  - generic: 🤖
+  - generic: 协诊指标Agent
+  - generic: 协诊指标Agent
+  - generic: 载荷使用incidentId、operation=query_metrics及params；params支持service、window_start_ms、window_end_ms、limit。facts首项为聚合summary，后续为已查询指标样本；supports为规则生成的候选支持；无样本返回no_data。
+  - generic: 1.2.156.3088.1.BUPT.D9HGF4.BSPDI4.67YPNC.0N9H
+- separator "调整叮当窗口宽度"
+- generic: 叮当助手
+- button "平台说明": "?"
+- dialog "平台说明":
+  - generic: 智能体注册平台
+  - generic: 用于注册、发布和维护智能体元数据，让智能体可被发现、调用并接入梧桐互联生态。
+  - link "https://wt.ioa.pub/registry/":
+    - /url: https://wt.ioa.pub/registry/
+- iframe [active] [id="dingdangFrame"]:
+  - complementary "对话侧边栏":
+    - generic: 叮当
+    - button "新对话":
+      - generic: 新对话
+    - navigation "快捷操作":
+      - button "随意探索":
+        - generic: 随意探索
+    - region "最近对话":
+      - heading "最近对话" [level=2]
+      - button "水泵002明日异常检查协调安排 任务已完成或等待你的操作":
+        - generic: 水泵002明日异常检查协调安排
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：水泵002明日异常检查协调安排":
+      - button "确认方案编号并创建工单及幂等校验 任务已完成或等待你的操作":
+        - generic: 确认方案编号并创建工单及幂等校验
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：确认方案编号并创建工单及幂等校验":
+      - button "水管问题可调用哪些智能体 任务正在执行":
+        - generic: 水管问题可调用哪些智能体
+        - status "任务正在执行"
+      - button "删除对话：水管问题可调用哪些智能体":
+      - button "水管检修咨询与初步排查指导 任务正在执行":
+        - generic: 水管检修咨询与初步排查指导
+        - status "任务正在执行"
+      - button "删除对话：水管检修咨询与初步排查指导":
+      - button "确认方案并创建工单已完成 任务正在执行":
+        - generic: 确认方案并创建工单已完成
+        - status "任务正在执行"
+      - button "删除对话：确认方案并创建工单已完成":
+      - button "查找设备异常协调检查人员工具工单智能体 任务正在执行":
+        - generic: 查找设备异常协调检查人员工具工单智能体
+        - status "任务正在执行"
+      - button "删除对话：查找设备异常协调检查人员工具工单智能体":
+      - button "水泵002运行异常，帮我安排明天下午检查 任务正在执行":
+        - generic: 水泵002运行异常，帮我安排明天下午检查
+        - status "任务正在执行"
+      - button "删除对话：水泵002运行异常，帮我安排明天下午检查":
+      - button "调用智能体「工维联资源协调 Partner」 任务已完成或等待你的操作":
+        - generic: 调用智能体「工维联资源协调 Partner」
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：调用智能体「工维联资源协调 Partner」":
+      - button "调用智能体「工维联核心业务 Leader」":
+        - generic: 调用智能体「工维联核心业务 Leader」
+      - button "删除对话：调用智能体「工维联核心业务 Leader」":
+      - button "调用智能体「工维联核心业务 Leader」":
+        - generic: 调用智能体「工维联核心业务 Leader」
+      - button "删除对话：调用智能体「工维联核心业务 Leader」":
+      - button "水泵001运行异常，帮我安排明天下午检查 任务已完成或等待你的操作":
+        - generic: 水泵001运行异常，帮我安排明天下午检查
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：水泵001运行异常，帮我安排明天下午检查":
+      - button "水泵001运行异常，帮我安排明天下午检查 任务已完成或等待你的操作":
+        - generic: 水泵001运行异常，帮我安排明天下午检查
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：水泵001运行异常，帮我安排明天下午检查":
+      - button "水泵001运行异常，帮我安排明天下午检查 任务已完成或等待你的操作":
+        - generic: 水泵001运行异常，帮我安排明天下午检查
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：水泵001运行异常，帮我安排明天下午检查":
+      - button "水泵001运行异常，帮我安排明天下午检查 任务已完成或等待你的操作":
+        - generic: 水泵001运行异常，帮我安排明天下午检查
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：水泵001运行异常，帮我安排明天下午检查":
+      - button "水泵001运行异常，帮我安排明天下午检查 任务已完成或等待你的操作":
+        - generic: 水泵001运行异常，帮我安排明天下午检查
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：水泵001运行异常，帮我安排明天下午检查":
+      - button "水泵001下午泵体检查工单安排 任务正在执行":
+        - generic: 水泵001下午泵体检查工单安排
+        - status "任务正在执行"
+      - button "删除对话：水泵001下午泵体检查工单安排":
+      - button "调用智能体「证据综合智能体」 任务已完成或等待你的操作":
+        - generic: 调用智能体「证据综合智能体」
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：调用智能体「证据综合智能体」":
+      - button "调用智能体「众擎·出行服务」 任务已完成或等待你的操作":
+        - generic: 调用智能体「众擎·出行服务」
+        - status "任务已完成或等待你的操作"
+      - button "删除对话：调用智能体「众擎·出行服务」":
+      - button "用户询问叮当底层模型及身份说明 任务正在执行":
+        - generic: 用户询问叮当底层模型及身份说明
+        - status "任务正在执行"
+      - button "删除对话：用户询问叮当底层模型及身份说明":
+    - button "liangpaopao 今日剩余 5 次":
+      - generic: L
+      - strong: liangpaopao
+      - generic: 今日剩余 5 次
+    - text: ✓
+  - strong: 叮当
+  - generic: 智能助手
+  - region "服务健康状态":
+    - button "服务正常": 服务正常
+  - main:
+    - generic: 请使用工维联核心业务 Leader：水泵002运行异常，安排明天下午两点开始检查，预计一小时，需要泵体检查技能。
+    - button "复制消息": ⎘
+    - img "叮当"
+    - paragraph: 我理解您需要为水泵002的运行异常安排检查。我会请工维联核心业务 Leader 来协调处理：明天下午两点开始检查，预计用时一小时，并匹配泵体检查技能。请您放心，我会持续跟进，若有任何调整请随时告诉我。
+    - button "复制消息": ⎘
+    - region "智能体发现结果":
+      - generic: ✦
+      - generic: 能力匹配
+      - strong: 为你找到以下智能体
+      - generic: 8 项
+      - region "推荐组合":
+        - generic: 叮当推荐组合
+        - strong: 按能力分工协作
+        - generic: 8 个可执行智能体
+        - paragraph: 用户需要由工维联核心业务 Leader 受理水泵002运行异常，抽取明天下午两点开始、预计一小时的检查需求，发现并委派具备泵体检查能力的 Partner，同时协调资源并创建检查工单。
+        - article:
+          - generic: ✦
+          - strong: 工维联核心业务 Leader
+          - generic: primary
+          - generic: gongwei.leader.handle-maintenance-request
+          - generic: 理解水泵002运行异常的自然语言请求，抽取设备、时间、时长和泵体检查技能需求
+          - generic: 作为工维联核心业务 Leader 的请求入口，负责理解水泵002异常、检查时间、预计时长和泵体检查技能需求。
+        - article:
+          - generic: ✦
+          - strong: 工维联核心业务 Leader
+          - generic: supporting
+          - generic: gongwei.leader.plan-collaboration
+          - generic: 规划检查协作流程，包括资源查询、确认和工单协作计划
+          - generic: 生成资源查询、确认和工单协作计划，覆盖明天下午两点开始、预计一小时的检查安排。
+        - article:
+          - generic: ✦
+          - strong: 工维联核心业务 Leader
+          - generic: supporting
+          - generic: gongwei.leader.discover-and-delegate
+          - generic: 按能力、安全和在线状态发现并选择具备泵体检查能力的 Partner
+          - generic: 用于按能力发现并委派具备泵体检查技能的 Partner。
+        - article:
+          - generic: ✦
+          - strong: 工维联资源协调 Partner
+          - generic: supporting
+          - generic: gongwei.resource.query
+          - generic: 查询执行泵体检查所需人员、技能、工具和配件可用性
+          - generic: 查询泵体检查所需人员、技能、工具和配件可用性。
+        - article:
+          - generic: ✦
+          - strong: 工维联资源协调 Partner
+          - generic: supporting
+          - generic: gongwei.resource.reserve
+          - generic: 为已确认的检查方案预留检查资源
+          - generic: 为已生成的检查方案预留资源，支撑明天下午两点开始的检查。
+        - article:
+          - generic: ✦
+          - strong: 工维联工单处理 Partner
+          - generic: supporting
+          - generic: gongwei.work-order.create
+          - generic: 为已确认检查方案创建幂等检查工单，安排明天下午两点开始、预计一小时
+          - generic: 为已确认检查方案创建幂等检查工单。
+        - article:
+          - generic: ✦
+          - strong: 工维联核心业务 Leader
+          - generic: supporting
+          - generic: gongwei.leader.track-and-summarize
+          - generic: 跟踪协作轨迹、资源证据和工单结果并汇总返回
+          - generic: 跟踪并汇总协作轨迹、资源证据和工单结果。
+        - article:
+          - generic: ✦
+          - strong: 智能体能力可信核验服务
+          - generic: supporting
+          - generic: acps-cred.capability-reputation
+          - generic: 对候选泵体检查 Partner 按 AIC 与技能 ID 查询能力可信度，辅助委派决策
+          - generic: 在委派泵体检查 Partner 前核验候选能力可信度，降低委派风险。
+        - generic: ✓
+        - text: 设备异常请求理解与字段抽取
+        - generic: ✓
+        - text: 检查协作与时间安排规划
+        - generic: ✓
+        - text: 按能力发现并委派 Partner
+        - generic: ✓
+        - text: 资源可用性查询
+        - generic: ✓
+        - text: 资源预留
+        - status: 尚未覆盖：泵体检查具体执行技能/Partner 未出现在当前目录中、明天下午两点至三点的精确排程冲突校验需在运行时由资源查询与工单创建结果确认
+        - button "确认推荐组合并执行（8）"
+        - generic: 发现结果不会自动执行，点击按钮后才会开始协作。
+      - generic: 可调用智能体
+      - generic: "8"
+      - checkbox [checked]
+      - generic: 工维联核心业务 Leader
+      - generic: 推荐
+      - generic: 云端智能体
+      - generic: 工维联设备检查协调智能体。接受中文自然语言或 JSON 设备异常请求，多轮补充设备、日期、开始时间、时长与技能；在线发现并通过正式 MQ 调用资源协调 Partner，查询人员、时间、工具和库存后返回待确认方案。仅用户明确确认后预留资源并调用工单处理 Partner，创建唯一检查工单并返回编号、人员、物品、时间及状态。支持任务查询、补充、确认、取消、重复确认保护和服务重启恢复。声音检测为可选辅助，不推断具体零件损坏。
+      - generic: 任务
+      - textbox "工维联核心业务 Leader 的调用指令":
+        - /placeholder: 请输入要交给智能体的指令...
+      - checkbox
+      - generic: 工维联资源协调 Partner
+      - generic: 推荐
+      - generic: 云端智能体
+      - generic: 提供设备检查业务所需的人员、技能、可用时段、工具和配件查询，并支持按检查时段进行资源预留与释放。仅处理资源查询和预留，不负责维修决策、工单执行或声音诊断；缺少泵、时间或技能等必要参数时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。
+      - generic: 任务
+      - textbox "工维联资源协调 Partner 的调用指令":
+        - /placeholder: 请输入要交给智能体的指令...
+      - checkbox
+      - generic: 工维联工单处理 Partner
+      - generic: 推荐
+      - generic: 云端智能体
+      - generic: 提供设备检查工单的创建、查询、状态更新和取消能力。仅处理已确认方案的工单生命周期，不负责资源查询、人员排班或声音诊断；缺少方案编号或状态不允许时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。
+      - generic: 任务
+      - textbox "工维联工单处理 Partner 的调用指令":
+        - /placeholder: 请输入要交给智能体的指令...
+      - button "执行已选智能体 (1)"
+      - button "查看更多（8）"
+    - img "叮当"
+    - generic: 协作驾驶舱
+    - strong: 智能体协作状态
+    - generic: 1/2
+    - paragraph: 请使用工维联核心业务 Leader：水泵002运行异常，安排明天下午两点开始检查，预计一小时，需要泵体检查技能。
+    - button "✓ 叮当 多智能体协调 · 编排与汇总":
+      - generic: ✓
+      - text: 叮当
+      - generic: 多智能体协调 · 编排与汇总
+    - button "· 工维联核心业务 Leader 协作成员 · 执行任务":
+      - generic: ·
+      - text: 工维联核心业务 Leader
+      - generic: 协作成员 · 执行任务
+    - region "智能体协作 DAG 数据流转":
+      - strong: 协作与数据流转
+      - generic: DAG v1
+      - generic: 协作状态
+      - button "全屏查看 DAG": ⛶
+      - generic: 为用户请求生成parallel协作图：请使用工维联核心业务 Leader：水泵002运行异常，安排明天下午两点开始检查，预计一小时，需要泵体检查技能。
+      - img "多智能体协作有向无环图":
+        - generic "叮当规划 · 已完成":
+          - generic: 叮当规划
+          - generic: 已完成
+        - generic "工维联核心业务 Leader · 待补充":
+          - generic: 工维联核心业务 Le…
+          - generic: 待补充
+        - generic "叮当汇总 · 待执行":
+          - generic: 叮当汇总
+          - generic: 待执行
+      - list:
+        - listitem: secretary，completed
+        - listitem: 工维联核心业务 Leader，awaiting-input
+        - listitem: secretary_synthesis，pending
+    - strong: 叮当 · 协调进度
+    - text: 工维联核心业务 Leader · 已向叮当上报信息缺口，等待用户确认。
+    - img "叮当"
+    - strong: 工维联核心业务 Leader
+    - text: 等待输入
+    - paragraph: "{\"sessionId\": \"session_1825\", \"taskId\": \"892c94b4-987e-427e-a5ae-dc4295769483\", \"messageId\": \"cmd-8f17160f-52de-414a-a602-4851c2c1c337\", \"status\": \"awaiting_user_confirmation\", \"requiresConfirmation\": true, \"confirmationReference\": \"GW-11c8c2b5610607db68c04b2118383b08\", \"nextCommand\": \"continue\", \"request\": {\"id\": \"req-59c5588a-671d-4f44-a141-9889f8011a8e\", \"pump_id\": \"pump-002\", \"work_date\": \"2026-10-09\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"请使用工维联核心业务 Leader：水泵002运行异常，安排明天下午两点开始检查，预计一小时，需要泵体检查技能。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T14:59:32.586090+00:00\", \"updated_at\": \"2026-10-08T14:59:50.656564+00:00\", \"pump\": {\"id\": \"pump-002\", \"name\": \"循环水泵 002\", \"location\": \"二号机房\", \"model\": \"GW-150\", \"simulated\": 1}, \"plan\": {\"id\": \"plan-b5efff99-9e87-45f0-9abb-b30dd754612f\", \"request_id\": \"req-59c5588a-671d-4f44-a141-9889f8011a8e\", \"status\": \"proposed\", \"version\": 1, \"worker_id\": \"worker-01\", \"inventory_json\": [\"part-seal-ring\", \"tool-inspection-kit\"], \"reason\": \"按技能、时段和库存生成的模拟方案\", \"work_order_id\": null, \"created_at\": \"2026-10-08T14:59:50.656564+00:00\", \"updated_at\": \"2026-10-08T14:59:50.656564+00:00\", \"request\": {\"id\": \"req-59c5588a-671d-4f44-a141-9889f8011a8e\", \"pump_id\": \"pump-002\", \"work_date\": \"2026-10-09\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"请使用工维联核心业务 Leader：水泵002运行异常，安排明天下午两点开始检查，预计一小时，需要泵体检查技能。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T14:59:32.586090+00:00\", \"updated_at\": \"2026-10-08T14:59:50.656564+00:00\"}, \"worker\": {\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"unit\": \"套\"}], \"work_order\": null}}, \"plan\": {\"id\": \"plan-b5efff99-9e87-45f0-9abb-b30dd754612f\", \"request_id\": \"req-59c5588a-671d-4f44-a141-9889f8011a8e\", \"status\": \"proposed\", \"version\": 1, \"worker_id\": \"worker-01\", \"inventory_json\": [\"part-seal-ring\", \"tool-inspection-kit\"], \"reason\": \"按技能、时段和库存生成的模拟方案\", \"work_order_id\": null, \"created_at\": \"2026-10-08T14:59:50.656564+00:00\", \"updated_at\": \"2026-10-08T14:59:50.656564+00:00\", \"request\": {\"id\": \"req-59c5588a-671d-4f44-a141-9889f8011a8e\", \"pump_id\": \"pump-002\", \"work_date\": \"2026-10-09\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"end_time\": \"15:00\", \"description\": \"请使用工维联核心业务 Leader：水泵002运行异常，安排明天下午两点开始检查，预计一小时，需要泵体检查技能。\\n\\nDAG 指定的上游产物摘要：\\n叮当已完成协作规划并开始按 DAG 派发。\", \"required_skill\": \"泵体检查\", \"status\": \"proposed\", \"missing_fields\": [], \"created_at\": \"2026-10-08T14:59:32.586090+00:00\", \"updated_at\": \"2026-10-08T14:59:50.656564+00:00\"}, \"worker\": {\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"unit\": \"套\"}], \"work_order\": null}, \"discovery\": {\"source\": \"discovery_catalog\", \"candidates\": [{\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"protocolVersion\": \"02.02\", \"skills\": [\"gongwei.resource.query\", \"gongwei.resource.reserve\"], \"inputModes\": [\"application/json\"], \"outputModes\": [\"application/json\"], \"transport\": \"AMQP\", \"endpoint\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [\"mtls\"], \"online\": false, \"acs\": {\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"skills\": [{\"id\": \"gongwei.resource.query\", \"name\": \"查询可用人员与库存\", \"tags\": [\"resource\", \"query\"], \"version\": \"1.1.0\", \"description\": \"根据检查请求查询人员、技能、工具和配件可用性。\"}, {\"id\": \"gongwei.resource.reserve\", \"name\": \"预留和释放检查资源\", \"tags\": [\"resource\", \"reserve\"], \"version\": \"1.1.0\", \"description\": \"为已生成的检查方案预留资源并支持释放。\"}], \"version\": \"1.1.0\", \"provider\": {\"name\": \"LiangPaoPao\", \"department\": \"设备运维系统\", \"countryCode\": \"CN\", \"organization\": \"工维联项目组\"}, \"endPoints\": [{\"url\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [{\"mtls\": []}], \"transport\": \"AMQP\"}], \"description\": \"提供设备检查业务所需的人员、技能、可用时段、工具和配件查询，并支持按检查时段进行资源预留与释放。仅处理资源查询和预留，不负责维修决策、工单执行或声音诊断；缺少泵、时间或技能等必要参数时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。\", \"capabilities\": {\"streaming\": false, \"messageQueue\": [\"rabbitmq:>=4.2\"], \"notification\": false}, \"protocolVersion\": \"02.02\", \"securitySchemes\": {\"mtls\": {\"type\": \"mutualTLS\"}}, \"lastModifiedTime\": \"2026-10-06T22:34:10.877744+08:00\", \"defaultInputModes\": [\"application/json\"], \"defaultOutputModes\": [\"application/json\"]}, \"liveness\": \"unknown\", \"discovery_policy\": \"platform_catalog\"}], \"filtered\": [], \"selected\": {\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"protocolVersion\": \"02.02\", \"skills\": [\"gongwei.resource.query\", \"gongwei.resource.reserve\"], \"inputModes\": [\"application/json\"], \"outputModes\": [\"application/json\"], \"transport\": \"AMQP\", \"endpoint\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [\"mtls\"], \"online\": false, \"acs\": {\"aic\": \"1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"name\": \"工维联资源协调 Partner\", \"active\": true, \"skills\": [{\"id\": \"gongwei.resource.query\", \"name\": \"查询可用人员与库存\", \"tags\": [\"resource\", \"query\"], \"version\": \"1.1.0\", \"description\": \"根据检查请求查询人员、技能、工具和配件可用性。\"}, {\"id\": \"gongwei.resource.reserve\", \"name\": \"预留和释放检查资源\", \"tags\": [\"resource\", \"reserve\"], \"version\": \"1.1.0\", \"description\": \"为已生成的检查方案预留资源并支持释放。\"}], \"version\": \"1.1.0\", \"provider\": {\"name\": \"LiangPaoPao\", \"department\": \"设备运维系统\", \"countryCode\": \"CN\", \"organization\": \"工维联项目组\"}, \"endPoints\": [{\"url\": \"amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\", \"security\": [{\"mtls\": []}], \"transport\": \"AMQP\"}], \"description\": \"提供设备检查业务所需的人员、技能、可用时段、工具和配件查询，并支持按检查时段进行资源预留与释放。仅处理资源查询和预留，不负责维修决策、工单执行或声音诊断；缺少泵、时间或技能等必要参数时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。\", \"capabilities\": {\"streaming\": false, \"messageQueue\": [\"rabbitmq:>=4.2\"], \"notification\": false}, \"protocolVersion\": \"02.02\", \"securitySchemes\": {\"mtls\": {\"type\": \"mutualTLS\"}}, \"lastModifiedTime\": \"2026-10-06T22:34:10.877744+08:00\", \"defaultInputModes\": [\"application/json\"], \"defaultOutputModes\": [\"application/json\"]}, \"liveness\": \"unknown\", \"discovery_policy\": \"platform_catalog\"}, \"duration_ms\": 444.21, \"error\": null, \"http_status\": null}}"
+    - button "复制消息": ⎘
+    - status: 结果返回：工维联核心业务 Leader 正在等待补充信息
+    - img "叮当"
+    - paragraph: 叮当需要你补充确认：
+    - paragraph: 工维联核心业务 Leader 已生成检查方案，需你确认后才会预留资源并创建工单（当前尚未预留资源、尚未创建工单）：
+    - list:
+      - listitem: 设备：pump-002（循环水泵 002，二号机房，型号 GW-150）
+      - listitem: 时间：2026-10-09 14:00 开始，预计 60 分钟（至 15:00）
+      - listitem: 所需技能：泵体检查
+      - listitem: 人员：模拟人员甲（机械维护，worker-01）
+      - listitem: 工具/配件：机械密封圈 1 件、便携检查工具包 1 套
+      - listitem: 方案编号：GW-11c8c2b5610607db68c04b2118383b08（状态：待确认，方案版本 1）
+    - paragraph: 请选择：
+    - paragraph: 1) 确认执行：回复「确认方案 GW-11c8c2b5610607db68c04b2118383b08 并创建工单。」，将按上述方案预留资源并创建工单；
+    - paragraph: 2) 修改方案：补充修改要求（例如更换开始时间、时长、人员或工具/配件），由该成员重新生成方案后再确认；
+    - paragraph: 3) 取消：回复「取消任务」，不预留任何资源、不创建工单。
+    - paragraph: 请直接在下方输入框回复，我会继续本次多智能体协作。
+    - button "复制消息": ⎘
+    - status:
+      - generic: 智能体多轮对话
+      - strong: 叮当 正在等待你的补充
+      - generic: 请根据智能体的提示，在下方输入框中继续回复。
+      - button "结束本次对话"
+    - button "上传图片、文档或音频" [disabled]:
+    - textbox "回复 叮当…" [active]
+    - button "发送消息":
+    - paragraph: 叮当也可能会犯错，请核查重要信息。
+  - status
+- generic: 🤝 合作单位
+- generic "北京邮电大学":
+  - img "北京邮电大学"
+- generic "清华大学":
+  - img "清华大学"
+- generic "北京建筑大学":
+  - img "北京建筑大学"
+- generic "北京航空航天大学":
+  - img "北京航空航天大学"
+- generic "上海交通大学":
+  - img "上海交通大学"
+- generic "复旦大学附属中山医院":
+  - img "复旦大学附属中山医院"
+- generic "华科同济医学院":
+  - img "华科同济医学院"
+- generic "浙江大学":
+  - img "浙江大学"
+- generic "中关村实验室":
+  - img "中关村实验室"
+- generic "中国科学院大学":
+  - img "中国科学院大学"
+- generic "中国科学技术大学":
+  - img "中国科学技术大学"
+- generic "香港中文大学深圳校区":
+  - img "香港中文大学深圳校区"
+- generic "中国政法大学":
+  - img "中国政法大学"
+- generic "香港科技大学":
+  - img "香港科技大学"
+- generic "北京理工大学":
+  - img "北京理工大学"
+- generic "北京物资学院":
+  - img "北京物资学院"
+- generic "北京体育大学":
+  - img "北京体育大学"
+- generic "中国传媒大学":
+  - img "中国传媒大学"
+- generic "北京交通大学":
+  - img "北京交通大学"
+- generic "北京师范大学":
+  - img "北京师范大学"
+- generic "山东财经大学":
+  - img "山东财经大学"
+- generic "山东体育学院":
+  - img "山东体育学院"
+- generic "电子科技大学":
+  - img "电子科技大学"
+- generic "四川大学":
+  - img "四川大学"
+- generic "首都医科大学附属北京妇产医院":
+  - img "首都医科大学附属北京妇产医院"
+- generic "澳门科技大学":
+  - img "澳门科技大学"
+- generic "北京中医药大学第三附属医院":
+  - img "北京中医药大学第三附属医院"
+- generic "北京大学第三医院":
+  - img "北京大学第三医院"
+- generic "中山大学":
+  - img "中山大学"
+- generic "中国中医科学院":
+  - img "中国中医科学院"
+- generic "江苏恩华医药":
+  - img "江苏恩华医药"
+- generic "复旦大学":
+  - img "复旦大学"
+- generic "东南大学":
+  - img "东南大学"
+- generic "南京邮电大学":
+  - img "南京邮电大学"
+- generic "山东大学":
+  - img "山东大学"
+- generic "西安电子科技大学":
+  - img "西安电子科技大学"
+- generic "北京信息科技大学":
+  - img "北京信息科技大学"
+- generic "四川师范大学":
+  - img "四川师范大学"
+- generic "北京林业大学":
+  - img "北京林业大学"
+- generic "北京工商大学":
+  - img "北京工商大学"
+- generic "山东师范大学":
+  - img "山东师范大学"
+- generic "民航大学":
+  - img "民航大学"
+- generic "南开大学":
+  - img "南开大学"
+- generic "华东理工大学":
+  - img "华东理工大学"
+- generic "北京大学口腔医院":
+  - img "北京大学口腔医院"
+- generic "移动九天":
+  - img "移动九天"
+- generic "中移互联":
+  - img "中移互联"
+- generic "广东工业大学":
+  - img "广东工业大学"
+- generic "吉林大学":
+  - img "吉林大学"
+- generic "杭州电子科技大学":
+  - img "杭州电子科技大学"
+- generic "香港大学":
+  - img "香港大学"
+- generic "华北电力大学":
+  - img "华北电力大学"
+- generic "广州航海学院":
+  - img "广州航海学院"
+- generic "浙江移动创新研究院":
+  - img "浙江移动创新研究院"
+- generic "移动研究院":
+  - img "移动研究院"
+- link "京ICP备2025124884号-4":
+  - /url: https://beian.miit.gov.cn/

@@ -1,0 +1,100 @@
+{
+  "operation": "Repeated original status API settles previous completed order; no raw database edit",
+  "results": [
+    {
+      "status": 200,
+      "response": {
+        "id": "wo-c1f828d2-bb50-440f-bdc0-04d90fdc3c40",
+        "number": "WO-20261008-3D7B9C",
+        "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "plan_id": "plan-febb7dbd-0d2b-4439-a87e-a17835c156dc",
+        "status": "completed",
+        "failure_reason": null,
+        "created_at": "2026-10-08T14:20:35.892513+00:00",
+        "updated_at": "2026-10-08T14:23:19.378900+00:00"
+      }
+    },
+    {
+      "status": 200,
+      "response": {
+        "id": "wo-c1f828d2-bb50-440f-bdc0-04d90fdc3c40",
+        "number": "WO-20261008-3D7B9C",
+        "request_id": "req-e60a8640-d260-4485-87de-578768e6aa32",
+        "plan_id": "plan-febb7dbd-0d2b-4439-a87e-a17835c156dc",
+        "status": "completed",
+        "failure_reason": null,
+        "created_at": "2026-10-08T14:20:35.892513+00:00",
+        "updated_at": "2026-10-08T14:23:19.378900+00:00"
+      }
+    }
+  ],
+  "inventory": [
+    {
+      "id": "part-gasket",
+      "name": "泵体垫片",
+      "category": "part",
+      "total_qty": 8,
+      "available_qty": 8,
+      "unit": "件",
+      "simulated": 1
+    },
+    {
+      "id": "part-seal-ring",
+      "name": "机械密封圈",
+      "category": "part",
+      "total_qty": 5,
+      "available_qty": 4,
+      "unit": "件",
+      "simulated": 1
+    },
+    {
+      "id": "tool-inspection-kit",
+      "name": "便携检查工具包",
+      "category": "tool",
+      "total_qty": 2,
+      "available_qty": 2,
+      "unit": "套",
+      "simulated": 1
+    },
+    {
+      "id": "tool-lockout-tag",
+      "name": "检修挂牌套装",
+      "category": "tool",
+      "total_qty": 3,
+      "available_qty": 3,
+      "unit": "套",
+      "simulated": 1
+    },
+    {
+      "id": "tool-vibration-meter",
+      "name": "振动测量仪",
+      "category": "tool",
+      "total_qty": 1,
+      "available_qty": 1,
+      "unit": "台",
+      "simulated": 1
+    }
+  ],
+  "orders": [
+    {
+      "id": "wo-0883dc0e-00fa-462a-9fe4-45053fd85c58",
+      "number": "WO-20261008-1C8738",
+      "status": "cancelled"
+    },
+    {
+      "id": "wo-c1f828d2-bb50-440f-bdc0-04d90fdc3c40",
+      "number": "WO-20261008-3D7B9C",
+      "status": "completed"
+    },
+    {
+      "id": "wo-5fbb7dc9-5e74-4bf0-ad19-9852a9ff1e02",
+      "number": "WO-20261007-8DC4AC",
+      "status": "cancelled"
+    },
+    {
+      "id": "wo-63d7edf6-f338-4646-99ef-f1e42e2d0aa0",
+      "number": "WO-20261007-89643E",
+      "status": "cancelled"
+    }
+  ]
+}

@@ -1,0 +1,936 @@
+{
+  "checked_at": "2026-10-07T08:58:55.188112+00:00",
+  "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+  "request": {
+    "type": "filtered",
+    "limit": 10,
+    "filter": {
+      "conditions": [
+        {
+          "field": "active",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "logic": "and"
+    }
+  },
+  "http_status": 200,
+  "elapsed_ms": 1482.2,
+  "response": {
+    "result": {
+      "acsMap": {
+        "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7": {
+          "aic": "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7",
+          "name": "知行·项目推荐与实践规划主智能体",
+          "active": true,
+          "skills": [
+            {
+              "id": "study.coordinate",
+              "name": "知行·项目推荐与实践规划主智能体",
+              "tags": [
+                "跨领域",
+                "项目与知识",
+                "leader"
+              ],
+              "version": "1.0.0",
+              "inputModes": [
+                "text/plain"
+              ],
+              "description": "面向跨领域技能提升与项目实践，理解用户目标，协调三名专项智能体补齐画像、联网匹配项目与知识资料、规划实践路径。返回来源、匹配理由、待确认条件和第一步行动；项目由用户自行实施。业务输入为版本化 JSON 文本；结果为结构化产物。",
+              "outputModes": [
+                "application/json"
+              ]
+            }
+          ],
+          "version": "0.1.0",
+          "provider": {
+            "countryCode": "CN",
+            "organization": "杨帆"
+          },
+          "endPoints": [
+            {
+              "url": "https://8.152.209.151:8443/rpc",
+              "security": [
+                {
+                  "mtls": []
+                }
+              ],
+              "transport": "JSONRPC"
+            }
+          ],
+          "certificate": {
+            "altNames": {
+              "ip": [
+                "8.152.209.151"
+              ]
+            }
+          },
+          "description": "面向跨领域技能提升与项目实践，理解用户目标，协调三名专项智能体补齐画像、联网匹配项目与知识资料、规划实践路径。返回来源、匹配理由、待确认条件和第一步行动；项目由用户自行实施。",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "protocolVersion": "02.02",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS"
+            }
+          },
+          "lastModifiedTime": "2026-09-30T10:04:47.071926+08:00",
+          "defaultInputModes": [
+            "text/plain"
+          ],
+          "defaultOutputModes": [
+            "application/json"
+          ]
+        },
+        "1.2.156.3088.1.BUPT.1MON3C.BVKOG9.07HYVS.0OU3": {
+          "aic": "1.2.156.3088.1.BUPT.1MON3C.BVKOG9.07HYVS.0OU3",
+          "name": "知行·实践路径规划智能体",
+          "active": true,
+          "skills": [
+            {
+              "id": "study.plan",
+              "name": "知行·实践路径规划智能体",
+              "tags": [
+                "跨领域",
+                "项目与知识",
+                "planning"
+              ],
+              "version": "1.0.0",
+              "inputModes": [
+                "text/plain"
+              ],
+              "description": "依据同一任务的画像、候选项目与知识来源，结合用户基础和可投入时间，规划准备、实践、验收三个阶段。给出各阶段行动、成果、验收方式与第一步。业务输入为版本化 JSON 文本；结果为结构化产物。",
+              "outputModes": [
+                "application/json"
+              ]
+            }
+          ],
+          "version": "0.1.0",
+          "provider": {
+            "countryCode": "CN",
+            "organization": "杨帆"
+          },
+          "endPoints": [
+            {
+              "url": "https://8.152.209.151:8446/rpc",
+              "security": [
+                {
+                  "mtls": []
+                }
+              ],
+              "transport": "JSONRPC"
+            }
+          ],
+          "certificate": {
+            "altNames": {
+              "ip": [
+                "8.152.209.151"
+              ]
+            }
+          },
+          "description": "依据同一任务的画像、候选项目与知识来源，结合用户基础和可投入时间，规划准备、实践、验收三个阶段。给出各阶段行动、成果、验收方式与第一步。",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "protocolVersion": "02.02",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS"
+            }
+          },
+          "lastModifiedTime": "2026-09-30T10:04:38.473391+08:00",
+          "defaultInputModes": [
+            "text/plain"
+          ],
+          "defaultOutputModes": [
+            "application/json"
+          ]
+        },
+        "1.2.156.3088.1.BUPT.1MON3C.N1E7JH.U86RDI.055U": {
+          "aic": "1.2.156.3088.1.BUPT.1MON3C.N1E7JH.U86RDI.055U",
+          "name": "知行·项目与知识发现智能体",
+          "active": true,
+          "skills": [
+            {
+              "id": "project.match",
+              "name": "知行·项目与知识发现智能体",
+              "tags": [
+                "跨领域",
+                "项目与知识",
+                "project"
+              ],
+              "version": "1.0.0",
+              "inputModes": [
+                "text/plain"
+              ],
+              "description": "根据用户目标与画像联网检索 GitHub 项目、公开网页及知识资料，核查来源，并按目标契合度、时间约束和先修要求筛选候选。给出匹配理由与待核实项。业务输入为版本化 JSON 文本；结果为结构化产物。",
+              "outputModes": [
+                "application/json"
+              ]
+            }
+          ],
+          "version": "0.1.0",
+          "provider": {
+            "countryCode": "CN",
+            "organization": "杨帆"
+          },
+          "endPoints": [
+            {
+              "url": "https://8.152.209.151:8445/rpc",
+              "security": [
+                {
+                  "mtls": []
+                }
+              ],
+              "transport": "JSONRPC"
+            }
+          ],
+          "certificate": {
+            "altNames": {
+              "ip": [
+                "8.152.209.151"
+              ]
+            }
+          },
+          "description": "根据用户目标与画像联网检索 GitHub 项目、公开网页及知识资料，核查来源，并按目标契合度、时间约束和先修要求筛选候选。给出匹配理由与待核实项。",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "protocolVersion": "02.02",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS"
+            }
+          },
+          "lastModifiedTime": "2026-09-30T10:04:41.385393+08:00",
+          "defaultInputModes": [
+            "text/plain"
+          ],
+          "defaultOutputModes": [
+            "application/json"
+          ]
+        },
+        "1.2.156.3088.1.BUPT.1MON3C.XDARX1.V8OR5W.0VJM": {
+          "aic": "1.2.156.3088.1.BUPT.1MON3C.XDARX1.V8OR5W.0VJM",
+          "name": "知行·用户画像分析智能体",
+          "active": true,
+          "skills": [
+            {
+              "id": "learner.profile",
+              "name": "知行·用户画像分析智能体",
+              "tags": [
+                "跨领域",
+                "项目与知识",
+                "profile"
+              ],
+              "version": "1.0.0",
+              "inputModes": [
+                "text/plain"
+              ],
+              "description": "根据用户目标、经历、兴趣与可投入时间建立结构化画像；信息不足时提出针对性问题和可选方向，标注自述、推断与未知条件。业务输入为版本化 JSON 文本；结果为结构化产物。",
+              "outputModes": [
+                "application/json"
+              ]
+            }
+          ],
+          "version": "0.1.0",
+          "provider": {
+            "countryCode": "CN",
+            "organization": "杨帆"
+          },
+          "endPoints": [
+            {
+              "url": "https://8.152.209.151:8444/rpc",
+              "security": [
+                {
+                  "mtls": []
+                }
+              ],
+              "transport": "JSONRPC"
+            }
+          ],
+          "certificate": {
+            "altNames": {
+              "ip": [
+                "8.152.209.151"
+              ]
+            }
+          },
+          "description": "根据用户目标、经历、兴趣与可投入时间建立结构化画像；信息不足时提出针对性问题和可选方向，标注自述、推断与未知条件。",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "protocolVersion": "02.02",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS"
+            }
+          },
+          "lastModifiedTime": "2026-09-30T10:04:43.951502+08:00",
+          "defaultInputModes": [
+            "text/plain"
+          ],
+          "defaultOutputModes": [
+            "application/json"
+          ]
+        },
+        "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ": {
+          "aic": "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ",
+          "name": "证据综合智能体",
+          "active": true,
+          "skills": [
+            {
+              "id": "evidence-synthesis",
+              "name": "可追溯证据综合",
+              "tags": [
+                "科研协作",
+                "证据综合",
+                "开放全文",
+                "证据矩阵",
+                "不确定性"
+              ],
+              "version": "0.7.0",
+              "examples": [
+                "综合睡眠与学习表现的直接证据并说明不确定性",
+                "区分摘要级证据和开放全文片段级证据",
+                "生成可追溯证据矩阵但不夸大因果结论"
+              ],
+              "inputModes": [
+                "application/json",
+                "text/plain"
+              ],
+              "description": "基于检索产物生成证据矩阵、类型分布、确定性提示和限制说明。",
+              "outputModes": [
+                "application/json",
+                "text/plain"
+              ]
+            }
+          ],
+          "version": "0.7.0",
+          "provider": {
+            "countryCode": "CN",
+            "organization": "吃土买token队"
+          },
+          "endPoints": [
+            {
+              "url": "https://43.132.150.94:8016/rpc",
+              "security": [
+                {
+                  "mtls": []
+                }
+              ],
+              "transport": "JSONRPC"
+            }
+          ],
+          "certificate": {
+            "altNames": {
+              "ip": [
+                "43.132.150.94"
+              ]
+            },
+            "requestedValidity": 365
+          },
+          "description": "将书目、摘要与合法开放全文片段整理为证据矩阵，区分证据层级并表达不确定性；不在缺少验证时推断效应方向或生成正式 GRADE 结论。",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "protocolVersion": "02.02",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS",
+              "description": "ACPs CA 签发证书的智能体间 mTLS 双向认证"
+            }
+          },
+          "lastModifiedTime": "2026-09-29T14:52:39.068262+08:00",
+          "defaultInputModes": [
+            "application/json",
+            "text/plain"
+          ],
+          "defaultOutputModes": [
+            "application/json",
+            "text/plain"
+          ]
+        },
+        "1.2.156.3088.1.BUPT.4GKA38.F0XKKZ.ANJXNX.18OJ": {
+          "aic": "1.2.156.3088.1.BUPT.4GKA38.F0XKKZ.ANJXNX.18OJ",
+          "name": "文献证据智能体",
+          "active": true,
+          "skills": [
+            {
+              "id": "literature-search",
+              "name": "可追溯文献检索",
+              "tags": [
+                "科研协作",
+                "文献",
+                "Crossref",
+                "DOI",
+                "证据"
+              ],
+              "version": "0.5.0",
+              "examples": [
+                "检索睡眠时长与大学生学业表现相关的五篇文献",
+                "为这个研究假设查找包含 DOI 的可追溯证据",
+                "根据关键词返回公开文献元数据，不要生成虚构引用"
+              ],
+              "inputModes": [
+                "application/json",
+                "text/plain"
+              ],
+              "description": "按研究问题检索公开文献元数据，并保留 DOI 与检索来源。",
+              "outputModes": [
+                "application/json"
+              ]
+            }
+          ],
+          "version": "0.5.0",
+          "provider": {},
+          "endPoints": [
+            {
+              "url": "https://43.132.150.94:8011/rpc",
+              "security": [
+                {
+                  "mtls": []
+                }
+              ],
+              "transport": "JSONRPC"
+            }
+          ],
+          "certificate": {
+            "altNames": {
+              "ip": [
+                "43.132.150.94"
+              ]
+            },
+            "requestedValidity": 365
+          },
+          "description": "通过 Crossref 检索公开文献元数据，返回题名、作者、年份、来源与 DOI；不声称阅读全文，不伪造无法验证的引文或结论。",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "protocolVersion": "02.02",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS",
+              "description": "ACPs CA 签发证书的智能体间 mTLS 双向认证"
+            }
+          },
+          "lastModifiedTime": "2026-09-20T22:40:38.973041+08:00",
+          "defaultInputModes": [
+            "application/json",
+            "text/plain"
+          ],
+          "defaultOutputModes": [
+            "application/json"
+          ]
+        },
+        "1.2.156.3088.1.BUPT.4GKA38.HSRQ02.FE3N90.0KLT": {
+          "aic": "1.2.156.3088.1.BUPT.4GKA38.HSRQ02.FE3N90.0KLT",
+          "name": "规范复核智能体",
+          "active": true,
+          "skills": [
+            {
+              "id": "method-review",
+              "name": "方法与证据规范复核",
+              "tags": [
+                "科研协作",
+                "规范检查",
+                "证据核验",
+                "方法复核"
+              ],
+              "version": "0.5.0",
+              "examples": [
+                "检查研究包是否包含可追溯文献和实验控制条件",
+                "对小样本结论给出外推风险警告",
+                "审查研究约束是否登记完整并给出接受或修订决定"
+              ],
+              "inputModes": [
+                "application/json",
+                "text/plain"
+              ],
+              "description": "对其他 Partner 的产物执行一致性与最低规范检查。",
+              "outputModes": [
+                "application/json"
+              ]
+            }
+          ],
+          "version": "0.5.0",
+          "provider": {},
+          "endPoints": [
+            {
+              "url": "https://43.132.150.94:8014/rpc",
+              "security": [
+                {
+                  "mtls": []
+                }
+              ],
+              "transport": "JSONRPC"
+            }
+          ],
+          "certificate": {
+            "altNames": {
+              "ip": [
+                "43.132.150.94"
+              ]
+            },
+            "requestedValidity": 365
+          },
+          "description": "独立检查科研协作产物中的文献证据、实验控制、样本限制与约束登记，输出错误、警告和审查决定。",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "protocolVersion": "02.02",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS",
+              "description": "ACPs CA 签发证书的智能体间 mTLS 双向认证"
+            }
+          },
+          "lastModifiedTime": "2026-09-21T03:12:38.666743+08:00",
+          "defaultInputModes": [
+            "application/json",
+            "text/plain"
+          ],
+          "defaultOutputModes": [
+            "application/json"
+          ]
+        },
+        "1.2.156.3088.1.BUPT.4GKA38.OER277.9WXU5W.0E9H": {
+          "aic": "1.2.156.3088.1.BUPT.4GKA38.OER277.9WXU5W.0E9H",
+          "name": "科研数据分析智能体",
+          "active": true,
+          "skills": [
+            {
+              "id": "dataset-analysis",
+              "name": "可复现科研数据分析",
+              "tags": [
+                "科研协作",
+                "数据分析",
+                "描述统计",
+                "效应量",
+                "可复现",
+                "隐私"
+              ],
+              "version": "0.7.0",
+              "examples": [
+                "分析上传的 CSV 中睡眠时长与测验成绩的相关性",
+                "检查数据集缺失值、异常范围和字段类型",
+                "输出带输入哈希和分析引擎版本的可复现统计摘要"
+              ],
+              "inputModes": [
+                "application/json",
+                "text/plain"
+              ],
+              "description": "对经哈希验证的数据集执行确定性质量检查、描述统计和带区间的关联分析。",
+              "outputModes": [
+                "application/json",
+                "text/plain"
+              ]
+            }
+          ],
+          "version": "0.7.0",
+          "provider": {
+            "countryCode": "CN",
+            "organization": "吃土买token队"
+          },
+          "endPoints": [
+            {
+              "url": "https://43.132.150.94:8015/rpc",
+              "security": [
+                {
+                  "mtls": []
+                }
+              ],
+              "transport": "JSONRPC"
+            }
+          ],
+          "certificate": {
+            "altNames": {
+              "ip": [
+                "43.132.150.94"
+              ]
+            },
+            "requestedValidity": 365
+          },
+          "description": "读取服务器受控工件存储中的 CSV、JSON 或 XLSX 数据，执行字段、缺失、分布和预注册变量关联分析；不向模型发送原始数据，不把描述性关联解释为因果。",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "protocolVersion": "02.02",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS",
+              "description": "ACPs CA 签发证书的智能体间 mTLS 双向认证"
+            }
+          },
+          "lastModifiedTime": "2026-09-29T14:52:45.481856+08:00",
+          "defaultInputModes": [
+            "application/json",
+            "text/plain"
+          ],
+          "defaultOutputModes": [
+            "application/json",
+            "text/plain"
+          ]
+        },
+        "1.2.156.3088.1.BUPT.4GKA38.UQOTGG.H0B329.02VU": {
+          "aic": "1.2.156.3088.1.BUPT.4GKA38.UQOTGG.H0B329.02VU",
+          "name": "实验设计智能体",
+          "active": true,
+          "skills": [
+            {
+              "id": "experiment-design",
+              "name": "结构化实验设计",
+              "tags": [
+                "科研协作",
+                "实验设计",
+                "假设",
+                "变量",
+                "控制条件"
+              ],
+              "version": "0.5.0",
+              "examples": [
+                "为睡眠与学习表现的关系设计观察性研究",
+                "根据目标指标列出自变量、因变量和控制条件",
+                "生成包含人工审批节点的可复现研究步骤"
+              ],
+              "inputModes": [
+                "application/json",
+                "text/plain"
+              ],
+              "description": "依据研究目标、数据指标和约束生成可审查的实验设计草案。",
+              "outputModes": [
+                "application/json"
+              ]
+            }
+          ],
+          "version": "0.5.0",
+          "provider": {},
+          "endPoints": [
+            {
+              "url": "https://43.132.150.94:8012/rpc",
+              "security": [
+                {
+                  "mtls": []
+                }
+              ],
+              "transport": "JSONRPC"
+            }
+          ],
+          "certificate": {
+            "altNames": {
+              "ip": [
+                "43.132.150.94"
+              ]
+            },
+            "requestedValidity": 365
+          },
+          "description": "把研究问题转换为结构化假设、变量、控制条件和实验步骤，并显式标记需要人工审批的环节；不代替伦理委员会或领域专家作最终决策。",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "protocolVersion": "02.02",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS",
+              "description": "ACPs CA 签发证书的智能体间 mTLS 双向认证"
+            }
+          },
+          "lastModifiedTime": "2026-09-21T03:12:44.908786+08:00",
+          "defaultInputModes": [
+            "application/json",
+            "text/plain"
+          ],
+          "defaultOutputModes": [
+            "application/json"
+          ]
+        },
+        "1.2.156.3088.1.BUPT.4GKA38.WRM8OB.60E0WG.04T3": {
+          "aic": "1.2.156.3088.1.BUPT.4GKA38.WRM8OB.60E0WG.04T3",
+          "name": "基于多智能体协作的一站式科研助理平台",
+          "active": true,
+          "skills": [
+            {
+              "id": "research-collaboration.orchestration",
+              "name": "一站式科研助理与多智能体科研协作编排",
+              "tags": [
+                "一站式科研助理",
+                "科研协作",
+                "多智能体",
+                "文献检索",
+                "实验设计",
+                "数据分析",
+                "统计分析",
+                "规范复核",
+                "科研报告",
+                "可追溯"
+              ],
+              "version": "0.6.0",
+              "examples": [
+                "帮我检索相关文献并设计一项可复现的科研实验",
+                "围绕睡眠时长与学习表现完成文献检索、实验设计和数据分析",
+                "分析我提供的研究数据并生成统计摘要和研究报告",
+                "检查这份研究方案的证据来源、实验控制和方法规范",
+                "组织多个科研智能体协作完成从文献检索到规范复核的全过程"
+              ],
+              "inputModes": [
+                "application/json",
+                "text/plain"
+              ],
+              "description": "接收科研问题、研究目标、数据和约束，动态组织文献检索、实验设计、数据分析、统计分析和规范复核智能体，生成可追溯的一站式科研报告。",
+              "outputModes": [
+                "application/json"
+              ]
+            }
+          ],
+          "version": "0.6.0",
+          "provider": {},
+          "endPoints": [
+            {
+              "url": "https://43.132.150.94:8000/rpc",
+              "security": [
+                {
+                  "mtls": []
+                }
+              ],
+              "transport": "JSONRPC"
+            }
+          ],
+          "certificate": {
+            "altNames": {
+              "ip": [
+                "43.132.150.94"
+              ]
+            },
+            "requestedValidity": 365
+          },
+          "description": "面向科研人员的一站式科研助理与多智能体协作平台。根据研究问题动态编排可追溯文献检索、实验设计、证据与数据分析、统计摘要及方法规范复核，输出包含来源证据和过程记录的结构化科研报告；不替代伦理审批或高风险研究决策。",
+          "capabilities": {
+            "streaming": false,
+            "messageQueue": [],
+            "notification": false
+          },
+          "protocolVersion": "02.02",
+          "securitySchemes": {
+            "mtls": {
+              "type": "mutualTLS",
+              "description": "ACPs CA 签发证书的智能体间 mTLS 双向认证"
+            }
+          },
+          "lastModifiedTime": "2026-09-21T17:02:38.941159+08:00",
+          "defaultInputModes": [
+            "application/json",
+            "text/plain"
+          ],
+          "defaultOutputModes": [
+            "application/json"
+          ]
+        }
+      },
+      "agents": [
+        {
+          "group": "filtered",
+          "agentSkills": [
+            {
+              "aic": "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7",
+              "skillId": "study.coordinate",
+              "ranking": 1,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.BUPT.1MON3C.BVKOG9.07HYVS.0OU3",
+              "skillId": "study.plan",
+              "ranking": 2,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.BUPT.1MON3C.N1E7JH.U86RDI.055U",
+              "skillId": "project.match",
+              "ranking": 3,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.BUPT.1MON3C.XDARX1.V8OR5W.0VJM",
+              "skillId": "learner.profile",
+              "ranking": 4,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ",
+              "skillId": "evidence-synthesis",
+              "ranking": 5,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.BUPT.4GKA38.F0XKKZ.ANJXNX.18OJ",
+              "skillId": "literature-search",
+              "ranking": 6,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.BUPT.4GKA38.HSRQ02.FE3N90.0KLT",
+              "skillId": "method-review",
+              "ranking": 7,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.BUPT.4GKA38.OER277.9WXU5W.0E9H",
+              "skillId": "dataset-analysis",
+              "ranking": 8,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.BUPT.4GKA38.UQOTGG.H0B329.02VU",
+              "skillId": "experiment-design",
+              "ranking": 9,
+              "memo": "Filtered query result"
+            },
+            {
+              "aic": "1.2.156.3088.1.BUPT.4GKA38.WRM8OB.60E0WG.04T3",
+              "skillId": "research-collaboration.orchestration",
+              "ranking": 10,
+              "memo": "Filtered query result"
+            }
+          ]
+        }
+      ],
+      "routes": [
+        {
+          "forwardChain": [
+            "AIC-DS-A"
+          ],
+          "agentGroups": [
+            {
+              "group": "filtered",
+              "agentSkills": [
+                {
+                  "aic": "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7",
+                  "skillId": "study.coordinate",
+                  "ranking": 1,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.BUPT.1MON3C.BVKOG9.07HYVS.0OU3",
+                  "skillId": "study.plan",
+                  "ranking": 2,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.BUPT.1MON3C.N1E7JH.U86RDI.055U",
+                  "skillId": "project.match",
+                  "ranking": 3,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.BUPT.1MON3C.XDARX1.V8OR5W.0VJM",
+                  "skillId": "learner.profile",
+                  "ranking": 4,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ",
+                  "skillId": "evidence-synthesis",
+                  "ranking": 5,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.BUPT.4GKA38.F0XKKZ.ANJXNX.18OJ",
+                  "skillId": "literature-search",
+                  "ranking": 6,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.BUPT.4GKA38.HSRQ02.FE3N90.0KLT",
+                  "skillId": "method-review",
+                  "ranking": 7,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.BUPT.4GKA38.OER277.9WXU5W.0E9H",
+                  "skillId": "dataset-analysis",
+                  "ranking": 8,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.BUPT.4GKA38.UQOTGG.H0B329.02VU",
+                  "skillId": "experiment-design",
+                  "ranking": 9,
+                  "memo": "Filtered query result"
+                },
+                {
+                  "aic": "1.2.156.3088.1.BUPT.4GKA38.WRM8OB.60E0WG.04T3",
+                  "skillId": "research-collaboration.orchestration",
+                  "ranking": 10,
+                  "memo": "Filtered query result"
+                }
+              ]
+            }
+          ],
+          "status": "ok",
+          "durationMs": 7
+        }
+      ],
+      "aliveMap": {
+        "1.2.156.3088.1.BUPT.4GKA38.F0XKKZ.ANJXNX.18OJ": {
+          "alive": true,
+          "aliveLastSeenAt": "2026-10-06T11:58:37.189Z"
+        },
+        "1.2.156.3088.1.BUPT.4GKA38.UQOTGG.H0B329.02VU": {
+          "alive": true,
+          "aliveLastSeenAt": "2026-10-06T11:58:37.189Z"
+        },
+        "1.2.156.3088.1.BUPT.4GKA38.OER277.9WXU5W.0E9H": {
+          "alive": true,
+          "aliveLastSeenAt": "2026-10-06T11:58:02.775Z"
+        },
+        "1.2.156.3088.1.BUPT.1MON3C.BVKOG9.07HYVS.0OU3": {
+          "alive": true,
+          "aliveLastSeenAt": "2026-10-06T11:58:33.947Z"
+        },
+        "1.2.156.3088.1.BUPT.1MON3C.N1E7JH.U86RDI.055U": {
+          "alive": true,
+          "aliveLastSeenAt": "2026-10-06T11:58:36.947Z"
+        },
+        "1.2.156.3088.1.BUPT.1MON3C.BH1PPS.G167WL.06M7": {
+          "alive": true,
+          "aliveLastSeenAt": "2026-10-06T11:58:36.947Z"
+        },
+        "1.2.156.3088.1.BUPT.1MON3C.XDARX1.V8OR5W.0VJM": {
+          "alive": true,
+          "aliveLastSeenAt": "2026-10-06T11:58:36.947Z"
+        },
+        "1.2.156.3088.1.BUPT.4GKA38.HSRQ02.FE3N90.0KLT": {
+          "alive": true,
+          "aliveLastSeenAt": "2026-10-06T11:58:37.189Z"
+        },
+        "1.2.156.3088.1.BUPT.4GKA38.WRM8OB.60E0WG.04T3": {
+          "alive": true,
+          "aliveLastSeenAt": "2026-10-06T11:58:32.774Z"
+        },
+        "1.2.156.3088.1.BUPT.4GKA38.5UHO24.D4V90A.0UZQ": {
+          "alive": true,
+          "aliveLastSeenAt": "2026-10-06T11:58:10.775Z"
+        }
+      }
+    }
+  }
+}

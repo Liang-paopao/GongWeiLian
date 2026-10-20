@@ -1,0 +1,3 @@
+# Only the existing /opt/gongwei/.venv; acps-sdk 2.2.0 is already installed.
+# This supports the separately sandboxed protocol metadata service.
+aiokafka==0.12.0

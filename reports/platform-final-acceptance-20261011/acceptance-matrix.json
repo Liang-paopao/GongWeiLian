@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-10-10T19:44:30Z",
+  "platform_verified": false,
+  "passed": [
+    "three_agents_approved",
+    "three_independent_aic_and_certificates",
+    "default_online_discovery",
+    "dingdang_direct_leader_discovery",
+    "dingdang_three_round_business_flow",
+    "resource_partner_formal_mq",
+    "workorder_partner_formal_mq",
+    "single_work_order",
+    "duplicate_confirmation_idempotency",
+    "independent_modify_without_overwriting_completed_order",
+    "cancel_without_new_order",
+    "server_restart_recovery",
+    "database_integrity",
+    "amp_access_records_reached_official_kafka",
+    "local_full_regression",
+    "server_full_regression"
+  ],
+  "blocked": [
+    {
+      "gate": "wutong_https_access_matched_stats",
+      "observed": {
+        "leader": {"count": 16, "accessCount": 0, "messageCount": 16},
+        "resource_partner": {"count": 8, "accessCount": 0, "messageCount": 8},
+        "workorder_partner": {"count": 8, "accessCount": 0, "messageCount": 8}
+      },
+      "project_evidence": "18 real amp.access Leader callee records with caller AIC, taskId and HTTP 200 reached official amp.access Kafka",
+      "required_external_action": "Wutong must expose or classify the real DingDang caller-side AMP Access record, or confirm that DingDang calls are intentionally Message-only for this gate"
+    }
+  ],
+  "evidence": {
+    "amp_access_kafka": "amp-access-kafka-current.json",
+    "platform_statistics": "platform-statistics-current.json",
+    "report": "README.md"
+  }
+}

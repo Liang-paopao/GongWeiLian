@@ -1,0 +1,41 @@
+[
+  {
+    "name": "unittest",
+    "command": [
+      "-m",
+      "unittest",
+      "discover",
+      "-v"
+    ],
+    "exit_code": 0,
+    "seconds": 46.635,
+    "log": "unittest-final.log"
+  },
+  {
+    "name": "stage2",
+    "command": [
+      "run_stage2_tests.py"
+    ],
+    "exit_code": 0,
+    "seconds": 3.408,
+    "log": "stage2-final.log"
+  },
+  {
+    "name": "stage5",
+    "command": [
+      "run_stage5_tests.py"
+    ],
+    "exit_code": 0,
+    "seconds": 4.133,
+    "log": "stage5-final.log"
+  },
+  {
+    "name": "scenarios",
+    "command": [
+      "scripts/run_60_scenarios.py"
+    ],
+    "exit_code": 0,
+    "seconds": 10.974,
+    "log": "scenarios-final.log"
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "checked_at": "2026-10-07T12:05:42.107163+00:00",
+  "platform_verified": false,
+  "integrity": "ok",
+  "order": [
+    "WO-20261007-8DC4AC",
+    "confirmed",
+    "plan-7152f38a-5af3-4a62-a12e-82cb6b029145"
+  ],
+  "counts": {
+    "all_orders": 2,
+    "all_active_reservations": 6,
+    "plan_orders": 1,
+    "plan_active_reservations": 3
+  },
+  "services": {
+    "leader": {
+      "MainPID": "2811653",
+      "NRestarts": "0",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource-inbox": {
+      "MainPID": "2753079",
+      "NRestarts": "0",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder-inbox": {
+      "MainPID": "2753083",
+      "NRestarts": "0",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "web": {
+      "MainPID": "2435366",
+      "NRestarts": "0",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource": {
+      "MainPID": "2435360",
+      "NRestarts": "0",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder": {
+      "MainPID": "2435362",
+      "NRestarts": "0",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "audio": {
+      "MainPID": "2435364",
+      "NRestarts": "0",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "amp-heartbeat": {
+      "MainPID": "2367812",
+      "NRestarts": "0",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    }
+  }
+}

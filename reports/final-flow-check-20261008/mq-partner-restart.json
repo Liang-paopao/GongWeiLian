@@ -1,0 +1,249 @@
+{
+  "checked_at": "2026-10-08T14:52:15.139385+00:00",
+  "scope": "own two MQ Partner process restart, not shared machine reboot",
+  "before": {
+    "web": {
+      "MainPID": "3475537",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource": {
+      "MainPID": "3475510",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder": {
+      "MainPID": "3475518",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "audio": {
+      "MainPID": "3475527",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "leader": {
+      "MainPID": "3487321",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource-inbox": {
+      "MainPID": "2753079",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder-inbox": {
+      "MainPID": "2753083",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "amp-heartbeat": {
+      "MainPID": "2367812",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    }
+  },
+  "database_before": {
+    "integrity": "ok",
+    "orders": 4,
+    "reservations": [
+      [
+        "reservation-1970a022-4de3-4201-b555-2d354acce280",
+        "released"
+      ],
+      [
+        "reservation-2b5cac77-6c8b-4266-8fc9-aed56271d234",
+        "released"
+      ],
+      [
+        "reservation-3a8dd485-e67a-45cb-8911-d63fc300a1fd",
+        "active"
+      ],
+      [
+        "reservation-4ad500ee-6778-4545-9a15-f90269db17ee",
+        "active"
+      ],
+      [
+        "reservation-6491f764-5f20-4a12-95ca-7dacb21b44d0",
+        "released"
+      ],
+      [
+        "reservation-8de020c9-86df-407c-883a-3b01dea19487",
+        "active"
+      ],
+      [
+        "reservation-b23b8518-1c72-4983-a88e-c753763f5d0d",
+        "active"
+      ],
+      [
+        "reservation-d92c4727-dfc0-43a7-993a-684174d375b8",
+        "active"
+      ],
+      [
+        "reservation-e5990958-9b99-46e5-932c-197405d7efd5",
+        "active"
+      ],
+      [
+        "reservation-ef1ae5c6-c3a8-4675-82fc-04303a37833d",
+        "released"
+      ],
+      [
+        "reservation-f9110f8a-7f05-4449-9e65-493b7151f04e",
+        "released"
+      ],
+      [
+        "reservation-fdd057b2-65d2-4edd-bffa-dd538f7287b6",
+        "released"
+      ]
+    ],
+    "inventory": [
+      [
+        "part-gasket",
+        8
+      ],
+      [
+        "part-seal-ring",
+        3
+      ],
+      [
+        "tool-inspection-kit",
+        0
+      ],
+      [
+        "tool-lockout-tag",
+        3
+      ],
+      [
+        "tool-vibration-meter",
+        1
+      ]
+    ]
+  },
+  "after": {
+    "web": {
+      "MainPID": "3475537",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource": {
+      "MainPID": "3475510",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder": {
+      "MainPID": "3475518",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "audio": {
+      "MainPID": "3475527",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "leader": {
+      "MainPID": "3487321",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource-inbox": {
+      "MainPID": "3492146",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder-inbox": {
+      "MainPID": "3492178",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "amp-heartbeat": {
+      "MainPID": "2367812",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    }
+  },
+  "database_after": {
+    "integrity": "ok",
+    "orders": 4,
+    "reservations": [
+      [
+        "reservation-1970a022-4de3-4201-b555-2d354acce280",
+        "released"
+      ],
+      [
+        "reservation-2b5cac77-6c8b-4266-8fc9-aed56271d234",
+        "released"
+      ],
+      [
+        "reservation-3a8dd485-e67a-45cb-8911-d63fc300a1fd",
+        "active"
+      ],
+      [
+        "reservation-4ad500ee-6778-4545-9a15-f90269db17ee",
+        "active"
+      ],
+      [
+        "reservation-6491f764-5f20-4a12-95ca-7dacb21b44d0",
+        "released"
+      ],
+      [
+        "reservation-8de020c9-86df-407c-883a-3b01dea19487",
+        "active"
+      ],
+      [
+        "reservation-b23b8518-1c72-4983-a88e-c753763f5d0d",
+        "active"
+      ],
+      [
+        "reservation-d92c4727-dfc0-43a7-993a-684174d375b8",
+        "active"
+      ],
+      [
+        "reservation-e5990958-9b99-46e5-932c-197405d7efd5",
+        "active"
+      ],
+      [
+        "reservation-ef1ae5c6-c3a8-4675-82fc-04303a37833d",
+        "released"
+      ],
+      [
+        "reservation-f9110f8a-7f05-4449-9e65-493b7151f04e",
+        "released"
+      ],
+      [
+        "reservation-fdd057b2-65d2-4edd-bffa-dd538f7287b6",
+        "released"
+      ]
+    ],
+    "inventory": [
+      [
+        "part-gasket",
+        8
+      ],
+      [
+        "part-seal-ring",
+        3
+      ],
+      [
+        "tool-inspection-kit",
+        0
+      ],
+      [
+        "tool-lockout-tag",
+        3
+      ],
+      [
+        "tool-vibration-meter",
+        1
+      ]
+    ]
+  },
+  "amqps_connections": [
+    "ESTAB      0      0           10.3.0.6:34090   49.232.42.120:5671  users:((\"python\",pid=3492178,fd=7))                        ",
+    "ESTAB      0      0           10.3.0.6:46728   49.232.42.120:5671  users:((\"python\",pid=3492146,fd=7))                        "
+  ],
+  "journals": {
+    "resource-inbox": "Oct 08 22:52:15 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:15,195 WARNING acps_sdk.aip.group_partner event=partner_leave_command_failed partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-mq-rejoin-036300ce924a428dbefbd310d57c6914 error=<aio_pika.robust_channel.RobustChannel object at 0x763168a28800> closed\nOct 08 22:52:15 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:15,196 WARNING acps_sdk.aip.group_partner event=partner_leave_status_failed partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-mq-rejoin-036300ce924a428dbefbd310d57c6914 error=<aio_pika.robust_channel.RobustChannel object at 0x763168a28800> closed\nOct 08 22:52:15 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:15,196 INFO acps_sdk.aip.group_partner event=consumer_stopped partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-mq-rejoin-036300ce924a428dbefbd310d57c6914\nOct 08 22:52:15 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:15,196 INFO acps_sdk.aip.group_partner event=queue_delete_attempt partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA queue=group_1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45_group-mq-rejoin-036300ce924a428dbefbd310d57c6914_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\nOct 08 22:52:15 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:15,196 INFO aio_pika.queue Deleting <RobustQueue(group_1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45_group-mq-rejoin-036300ce924a428dbefbd310d57c6914_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA): auto_delete=True, durable=True, exclusive=False, arguments=None\nOct 08 22:52:15 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:15,196 WARNING acps_sdk.aip.group_partner event=partner_leave_command_failed partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-session-1726 error=<aio_pika.robust_channel.RobustChannel object at 0x763168a2af90> closed\nOct 08 22:52:15 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:15,197 WARNING acps_sdk.aip.group_partner event=partner_leave_status_failed partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-session-1726 error=<aio_pika.robust_channel.RobustChannel object at 0x763168a2af90> closed\nOct 08 22:52:15 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:15,197 INFO acps_sdk.aip.group_partner event=consumer_stopped partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-session-1726\nOct 08 22:52:15 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:15,197 INFO acps_sdk.aip.group_partner event=queue_delete_attempt partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA queue=group_1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45_group-session-1726_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\nOct 08 22:52:15 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:15,197 INFO aio_pika.queue Deleting <RobustQueue(group_1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45_group-session-1726_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA): auto_delete=True, durable=True, exclusive=False, arguments=None\nOct 08 22:52:15 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:15,197 WARNING acps_sdk.aip.group_partner event=partner_leave_command_failed partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-session-1822 error=<aio_pika.robust_channel.RobustChannel object at 0x763168a2a9c0> closed\nOct 08 22:52:15 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:15,198 WARNING acps_sdk.aip.group_partner event=partner_leave_status_failed partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-session-1822 error=<aio_pika.robust_channel.RobustChannel object at 0x763168a2a9c0> closed\nOct 08 22:52:15 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:15,198 INFO acps_sdk.aip.group_partner event=consumer_stopped partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA group_id=group-session-1822\nOct 08 22:52:15 VM-0-6-ubuntu systemd[1]: Stopping gongwei-resource-inbox.service - Gongwei official resource MQ Inbox...\nOct 08 22:52:15 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:15,198 INFO acps_sdk.aip.group_partner event=queue_delete_attempt partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA queue=group_1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45_group-session-1822_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\nOct 08 22:52:15 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:15,198 INFO aio_pika.queue Deleting <RobustQueue(group_1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45_group-session-1822_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA): auto_delete=True, durable=True, exclusive=False, arguments=None\nOct 08 22:52:20 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:20,200 WARNING mq_partner_runtime event=partner_sdk_cleanup_timeout_connection_closed group_id=group-mq-rejoin-036300ce924a428dbefbd310d57c6914\nOct 08 22:52:20 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:20,200 WARNING mq_partner_runtime event=partner_sdk_cleanup_timeout_connection_closed group_id=group-session-1726\nOct 08 22:52:20 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:20,201 WARNING mq_partner_runtime event=partner_sdk_cleanup_timeout_connection_closed group_id=group-session-1822\nOct 08 22:52:20 VM-0-6-ubuntu python[2753079]: 2026-10-08 22:52:20,201 INFO __main__ event=partner_inbox_closed role=resource aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\nOct 08 22:52:20 VM-0-6-ubuntu systemd[1]: gongwei-resource-inbox.service: Deactivated successfully.\nOct 08 22:52:20 VM-0-6-ubuntu systemd[1]: Stopped gongwei-resource-inbox.service - Gongwei official resource MQ Inbox.\nOct 08 22:52:20 VM-0-6-ubuntu systemd[1]: gongwei-resource-inbox.service: Consumed 6.800s CPU time, 46.5M memory peak, 0B memory swap peak.\nOct 08 22:52:20 VM-0-6-ubuntu systemd[1]: Started gongwei-resource-inbox.service - Gongwei official resource MQ Inbox.\nOct 08 22:52:20 VM-0-6-ubuntu python[3492146]: 2026-10-08 22:52:20,965 INFO __main__ event=partner_inbox_start role=resource aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\nOct 08 22:52:23 VM-0-6-ubuntu python[3492146]: 2026-10-08 22:52:23,609 INFO acps_sdk.aip.group_partner event=partner_inbox_queue_ready partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA queue=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA expires_ms=5184000000 message_ttl_ms=604800000\nOct 08 22:52:23 VM-0-6-ubuntu python[3492146]: 2026-10-08 22:52:23,609 INFO acps_sdk.aip.group_partner event=partner_inbox_consumer_start partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA queue=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\nOct 08 22:52:23 VM-0-6-ubuntu python[3492146]: 2026-10-08 22:52:23,726 INFO __main__ event=partner_inbox_listening role=resource aic=1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA\n",
+    "workorder-inbox": "Oct 08 22:52:20 VM-0-6-ubuntu systemd[1]: Stopping gongwei-workorder-inbox.service - Gongwei official workorder MQ Inbox...\nOct 08 22:52:20 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:20,313 WARNING acps_sdk.aip.group_partner event=partner_leave_command_failed partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-mq-rejoin-036300ce924a428dbefbd310d57c6914 error=<aio_pika.robust_channel.RobustChannel object at 0x7be35b41b9b0> closed\nOct 08 22:52:20 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:20,313 WARNING acps_sdk.aip.group_partner event=partner_leave_status_failed partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-mq-rejoin-036300ce924a428dbefbd310d57c6914 error=<aio_pika.robust_channel.RobustChannel object at 0x7be35b41b9b0> closed\nOct 08 22:52:20 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:20,313 INFO acps_sdk.aip.group_partner event=consumer_stopped partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-mq-rejoin-036300ce924a428dbefbd310d57c6914\nOct 08 22:52:20 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:20,313 INFO acps_sdk.aip.group_partner event=queue_delete_attempt partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF queue=group_1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45_group-mq-rejoin-036300ce924a428dbefbd310d57c6914_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF\nOct 08 22:52:20 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:20,313 INFO aio_pika.queue Deleting <RobustQueue(group_1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45_group-mq-rejoin-036300ce924a428dbefbd310d57c6914_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF): auto_delete=True, durable=True, exclusive=False, arguments=None\nOct 08 22:52:20 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:20,313 WARNING acps_sdk.aip.group_partner event=partner_leave_command_failed partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-session-1726 error=<aio_pika.robust_channel.RobustChannel object at 0x7be35b43df70> closed\nOct 08 22:52:20 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:20,313 WARNING acps_sdk.aip.group_partner event=partner_leave_status_failed partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-session-1726 error=<aio_pika.robust_channel.RobustChannel object at 0x7be35b43df70> closed\nOct 08 22:52:20 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:20,313 INFO acps_sdk.aip.group_partner event=consumer_stopped partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-session-1726\nOct 08 22:52:20 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:20,314 INFO acps_sdk.aip.group_partner event=queue_delete_attempt partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF queue=group_1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45_group-session-1726_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF\nOct 08 22:52:20 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:20,314 INFO aio_pika.queue Deleting <RobustQueue(group_1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45_group-session-1726_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF): auto_delete=True, durable=True, exclusive=False, arguments=None\nOct 08 22:52:20 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:20,314 WARNING acps_sdk.aip.group_partner event=partner_leave_command_failed partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-session-1822 error=<aio_pika.robust_channel.RobustChannel object at 0x7be35b43f770> closed\nOct 08 22:52:20 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:20,314 WARNING acps_sdk.aip.group_partner event=partner_leave_status_failed partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-session-1822 error=<aio_pika.robust_channel.RobustChannel object at 0x7be35b43f770> closed\nOct 08 22:52:20 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:20,314 INFO acps_sdk.aip.group_partner event=consumer_stopped partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF group_id=group-session-1822\nOct 08 22:52:20 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:20,314 INFO acps_sdk.aip.group_partner event=queue_delete_attempt partner_aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF queue=group_1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45_group-session-1822_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF\nOct 08 22:52:20 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:20,314 INFO aio_pika.queue Deleting <RobustQueue(group_1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45_group-session-1822_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF): auto_delete=True, durable=True, exclusive=False, arguments=None\nOct 08 22:52:25 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:25,314 WARNING mq_partner_runtime event=partner_sdk_cleanup_timeout_connection_closed group_id=group-mq-rejoin-036300ce924a428dbefbd310d57c6914\nOct 08 22:52:25 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:25,314 WARNING mq_partner_runtime event=partner_sdk_cleanup_timeout_connection_closed group_id=group-session-1726\nOct 08 22:52:25 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:25,315 WARNING mq_partner_runtime event=partner_sdk_cleanup_timeout_connection_closed group_id=group-session-1822\nOct 08 22:52:25 VM-0-6-ubuntu python[2753083]: 2026-10-08 22:52:25,315 INFO __main__ event=partner_inbox_closed role=workorder aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF\nOct 08 22:52:25 VM-0-6-ubuntu systemd[1]: gongwei-workorder-inbox.service: Deactivated successfully.\nOct 08 22:52:25 VM-0-6-ubuntu systemd[1]: Stopped gongwei-workorder-inbox.service - Gongwei official workorder MQ Inbox.\nOct 08 22:52:25 VM-0-6-ubuntu systemd[1]: gongwei-workorder-inbox.service: Consumed 6.790s CPU time, 46.3M memory peak, 0B memory swap peak.\nOct 08 22:52:25 VM-0-6-ubuntu systemd[1]: Started gongwei-workorder-inbox.service - Gongwei official workorder MQ Inbox.\nOct 08 22:52:26 VM-0-6-ubuntu python[3492178]: 2026-10-08 22:52:26,080 INFO __main__ event=partner_inbox_start role=workorder aic=1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF\n"
+  },
+  "pass_result": true
+}

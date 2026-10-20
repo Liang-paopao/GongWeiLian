@@ -1,0 +1,6 @@
+{
+  "command": ".venv/Scripts/python.exe -B -m unittest discover -v",
+  "isolated_db_and_logs": true,
+  "exit_code": 0,
+  "elapsed_seconds": 34.169
+}

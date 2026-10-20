@@ -1,0 +1,82 @@
+- link "跳到主要内容":
+  - /url: "#main-content"
+- complementary:
+  - link "返回工维联协作页":
+    - /url: "#/home"
+    - generic: 工
+    - strong: 工维联
+  - navigation "主导航":
+    - button "主协作":
+      - generic: 主协作
+    - button "方案确认":
+      - generic: 方案确认
+    - button "工单中心":
+      - generic: 工单中心
+    - button "资源与审计" [active]:
+      - generic: 资源与审计
+  - generic: 模拟业务数据
+- banner:
+  - text: 工维联
+  - generic: /
+  - strong: 资源与审计
+  - status:
+    - generic: 业务服务可用
+- main:
+  - status: 方案已生成。确认前不会预留资源或创建工单。
+  - region "资源与审计":
+    - heading "资源与审计" [level=1]
+    - button "↻ 刷新记录"
+    - heading "资源目录" [level=2]
+    - generic: 已记录的人员与库存
+    - tablist "资源类型":
+      - tab "人员" [selected]
+      - tab "工具与配件"
+    - tabpanel "人员":
+      - table:
+        - rowgroup:
+          - row "人员 技能 已记录安排":
+            - columnheader "人员"
+            - columnheader "技能"
+            - columnheader "已记录安排"
+        - rowgroup:
+          - row "模拟人员甲 泵体检查 2026-10-09 15:00–16:00":
+            - cell "模拟人员甲"
+            - cell "泵体检查":
+              - emphasis: 泵体检查
+            - cell "2026-10-09 15:00–16:00":
+              - generic: 2026-10-09 15:00–16:00
+          - row "模拟人员乙 电气检查 暂无已记录安排":
+            - cell "模拟人员乙"
+            - cell "电气检查":
+              - emphasis: 电气检查
+            - cell "暂无已记录安排":
+              - generic: 暂无已记录安排
+          - row "模拟人员丙 电气检查 、 泵体检查 暂无已记录安排":
+            - cell "模拟人员丙"
+            - cell "电气检查 、 泵体检查":
+              - emphasis: 电气检查
+              - text: 、
+              - emphasis: 泵体检查
+            - cell "暂无已记录安排":
+              - generic: 暂无已记录安排
+    - heading "协作记录" [level=2]
+    - generic: 2 条真实事件
+    - tablist "记录类型":
+      - tab "业务过程" [selected]
+      - tab "调用记录"
+    - tabpanel "业务过程":
+      - time: 23:49
+      - strong: 登记检查需求
+      - paragraph: 协调主控
+      - generic "技术详情"
+      - generic: 已记录
+      - time: 23:49
+      - strong: 生成检查方案
+      - paragraph: 协调主控
+      - generic "技术详情"
+      - generic: 已记录
+    - generic "技术详情：原始审计响应"
+  - generic "技术详情"
+- contentinfo:
+  - generic: 工维联 · 设备维护协作台
+  - generic: 模拟业务数据 · 平台完整验收待完成

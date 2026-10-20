@@ -1,0 +1,245 @@
+叮当
+新对话
+随意探索
+最近对话
+安排水泵零零二明天下午异常检查
+查找设备异常协调检查人员工具工单智能体
+水泵002运行异常，帮我安排明天下午检查
+调用智能体「工维联资源协调 Partner」
+调用智能体「工维联核心业务 Leader」
+调用智能体「工维联核心业务 Leader」
+水泵001运行异常，帮我安排明天下午检查
+水泵001运行异常，帮我安排明天下午检查
+水泵001运行异常，帮我安排明天下午检查
+水泵001运行异常，帮我安排明天下午检查
+水泵001运行异常，帮我安排明天下午检查
+水泵001下午泵体检查工单安排
+调用智能体「证据综合智能体」
+调用智能体「众擎·出行服务」
+用户询问叮当底层模型及身份说明
+L
+liangpaopao
+今日剩余 0 次
+叮当
+智能助手
+ 服务正常
+请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。
+⎘
+
+我理解您需要尽快安排水泵002的异常检查，这件事关系设备安全，确实要优先处理。我会帮您协调专业智能体来跟进：先确认水泵002的运行异常情况，再尝试安排明天下午的检查工单。您别着急，我会尽量把时间和事项都安排清楚。
+
+⎘
+✦
+能力匹配
+为你找到以下智能体
+2 项
+清除面板
+叮当推荐组合
+按能力分工协作
+4 个可执行智能体
+
+用户需要工维联核心业务 Leader 理解水泵002运行异常的自然语言检查请求，补全时间等信息，安排明天下午检查，并规划、发现执行资源、跟踪工单协作结果。
+
+✦
+工维联核心业务 Leader
+primary
+gongwei.leader.handle-maintenance-request
+接收并解析“水泵002运行异常，明天下午检查”的中文自然语言请求，识别设备、异常与期望检查时间，必要时向用户询问缺失字段。
+直接面向中文自然语言设备异常检查请求，能识别水泵002异常与明天下午检查意图，并在字段缺失时询问用户。
+✦
+工维联核心业务 Leader
+supporting
+gongwei.leader.plan-collaboration
+基于设备异常与检查时间生成资源查询、确认和工单协作计划，安排明天下午检查。
+负责生成资源查询、确认和工单协作计划，是“安排检查”的核心规划能力。
+✦
+工维联核心业务 Leader
+supporting
+gongwei.leader.discover-and-delegate
+按能力、安全和在线状态发现并选择适合处理水泵异常检查的 Partner。
+按能力、安全和在线状态发现并选择 Partner，用于落实水泵异常检查的执行资源。
+✦
+工维联核心业务 Leader
+supporting
+gongwei.leader.track-and-summarize
+跟踪协作轨迹、资源证据和工单结果，并汇总检查安排情况。
+跟踪并汇总协作轨迹、资源证据和工单结果，确保检查安排可追踪、可反馈。
+✓
+中文设备异常检查请求理解
+✓
+检查协作与工单安排规划
+✓
+执行资源发现与委派
+✓
+多轮补充信息恢复
+✓
+结果跟踪与汇总
+确认推荐组合并执行（4）
+发现结果不会自动执行，点击按钮后才会开始协作。
+可调用智能体
+2
+工维联核心业务 Leader
+推荐
+云端智能体
+工维联设备检查协调智能体。接受中文自然语言或 JSON 设备异常请求，多轮补充设备、日期、开始时间、时长与技能；在线发现并通过正式 MQ 调用资源协调 Partner，查询人员、时间、工具和库存后返回待确认方案。仅用户明确确认后预留资源并调用工单处理 Partner，创建唯一检查工单并返回编号、人员、物品、时间及状态。支持任务查询、补充、确认、取消、重复确认保护和服务重启恢复。声音检测为可选辅助，不推断具体零件损坏。
+任务
+Hermes 活动策划智能体
+云端智能体
+专业活动策划 Partner 智能体，覆盖企业会议、团建、发布会、庆典年会、学术研讨会和展览展会等场景。根据活动需求生成需求分析、总体方案、分阶段执行计划、资源清单与风险预案。
+任务
+执行已选智能体 (1)
+查看更多（2）
+协作驾驶舱
+智能体协作状态
+1/2
+
+请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。
+
+✓叮当
+多智能体协调 · 编排与汇总
+·工维联核心业务 Leader
+协作成员 · 执行任务
+协作与数据流转
+DAG v1
+协作状态
+⛶
+为用户请求生成parallel协作图：请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。
+叮当规划
+已完成
+工维联核心业务 Le…
+待补充
+叮当汇总
+待执行
+secretary，completed
+工维联核心业务 Leader，awaiting-input
+secretary_synthesis，pending
+叮当 · 协调进度
+工维联核心业务 Leader · 已向叮当上报信息缺口，等待用户确认。
+工维联核心业务 Leader 等待输入
+
+{"sessionId": "session_1726", "taskId": "6887e4c3-572c-4086-95db-8798ee5e42fd", "messageId": "cmd-4f386f0e-a6f6-42a2-9ab4-ad4b80cb07b1", "status": "awaiting_user_confirmation", "requiresConfirmation": true, "confirmationReference": "GW-2ec569cd1fa191e1beda84849cc6b680", "nextCommand": "continue", "request": {"id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9", "pump_id": "pump-002", "work_date": "2026-10-08", "start_time": "15:00", "duration_minutes": 60, "end_time": "16:00", "description": "请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。", "required_skill": "泵体检查", "status": "proposed", "missing_fields": [], "created_at": "2026-10-07T11:21:40.845146+00:00", "updated_at": "2026-10-07T11:21:58.752820+00:00", "pump": {"id": "pump-002", "name": "循环水泵 002", "location": "二号机房", "model": "GW-150", "simulated": 1}, "plan": {"id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145", "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9", "status": "proposed", "version": 1, "worker_id": "worker-01", "inventory_json": ["part-seal-ring", "tool-inspection-kit"], "reason": "按技能、时段和库存生成的模拟方案", "work_order_id": null, "created_at": "2026-10-07T11:21:58.752820+00:00", "updated_at": "2026-10-07T11:21:58.752820+00:00", "request": {"id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9", "pump_id": "pump-002", "work_date": "2026-10-08", "start_time": "15:00", "duration_minutes": 60, "end_time": "16:00", "description": "请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。", "required_skill": "泵体检查", "status": "proposed", "missing_fields": [], "created_at": "2026-10-07T11:21:40.845146+00:00", "updated_at": "2026-10-07T11:21:58.752820+00:00"}, "worker": {"id": "worker-01", "name": "模拟人员甲", "role": "机械维护"}, "inventory": [{"id": "part-seal-ring", "name": "机械密封圈", "category": "part", "unit": "件"}, {"id": "tool-inspection-kit", "name": "便携检查工具包", "category": "tool", "unit": "套"}], "work_order": null}}, "plan": {"id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145", "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9", "status": "proposed", "version": 1, "worker_id": "worker-01", "inventory_json": ["part-seal-ring", "tool-inspection-kit"], "reason": "按技能、时段和库存生成的模拟方案", "work_order_id": null, "created_at": "2026-10-07T11:21:58.752820+00:00", "updated_at": "2026-10-07T11:21:58.752820+00:00", "request": {"id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9", "pump_id": "pump-002", "work_date": "2026-10-08", "start_time": "15:00", "duration_minutes": 60, "end_time": "16:00", "description": "请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。", "required_skill": "泵体检查", "status": "proposed", "missing_fields": [], "created_at": "2026-10-07T11:21:40.845146+00:00", "updated_at": "2026-10-07T11:21:58.752820+00:00"}, "worker": {"id": "worker-01", "name": "模拟人员甲", "role": "机械维护"}, "inventory": [{"id": "part-seal-ring", "name": "机械密封圈", "category": "part", "unit": "件"}, {"id": "tool-inspection-kit", "name": "便携检查工具包", "category": "tool", "unit": "套"}], "work_order": null}, "discovery": {"source": "discovery_catalog", "candidates": [{"aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA", "name": "工维联资源协调 Partner", "active": true, "protocolVersion": "02.02", "skills": ["gongwei.resource.query", "gongwei.resource.reserve"], "inputModes": ["application/json"], "outputModes": ["application/json"], "transport": "AMQP", "endpoint": "amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA", "security": ["mtls"], "online": false, "acs": {"aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA", "name": "工维联资源协调 Partner", "active": true, "skills": [{"id": "gongwei.resource.query", "name": "查询可用人员与库存", "tags": ["resource", "query"], "version": "1.1.0", "description": "根据检查请求查询人员、技能、工具和配件可用性。"}, {"id": "gongwei.resource.reserve", "name": "预留和释放检查资源", "tags": ["resource", "reserve"], "version": "1.1.0", "description": "为已生成的检查方案预留资源并支持释放。"}], "version": "1.1.0", "provider": {"name": "LiangPaoPao", "department": "设备运维系统", "countryCode": "CN", "organization": "工维联项目组"}, "endPoints": [{"url": "amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA", "security": [{"mtls": []}], "transport": "AMQP"}], "description": "提供设备检查业务所需的人员、技能、可用时段、工具和配件查询，并支持按检查时段进行资源预留与释放。仅处理资源查询和预留，不负责维修决策、工单执行或声音诊断；缺少泵、时间或技能等必要参数时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。", "capabilities": {"streaming": false, "messageQueue": ["rabbitmq:>=4.2"], "notification": false}, "protocolVersion": "02.02", "securitySchemes": {"mtls": {"type": "mutualTLS"}}, "lastModifiedTime": "2026-10-06T22:34:10.877744+08:00", "defaultInputModes": ["application/json"], "defaultOutputModes": ["application/json"]}, "liveness": "unknown", "discovery_policy": "platform_catalog"}], "filtered": [], "selected": {"aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA", "name": "工维联资源协调 Partner", "active": true, "protocolVersion": "02.02", "skills": ["gongwei.resource.query", "gongwei.resource.reserve"], "inputModes": ["application/json"], "outputModes": ["application/json"], "transport": "AMQP", "endpoint": "amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA", "security": ["mtls"], "online": false, "acs": {"aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA", "name": "工维联资源协调 Partner", "active": true, "skills": [{"id": "gongwei.resource.query", "name": "查询可用人员与库存", "tags": ["resource", "query"], "version": "1.1.0", "description": "根据检查请求查询人员、技能、工具和配件可用性。"}, {"id": "gongwei.resource.reserve", "name": "预留和释放检查资源", "tags": ["resource", "reserve"], "version": "1.1.0", "description": "为已生成的检查方案预留资源并支持释放。"}], "version": "1.1.0", "provider": {"name": "LiangPaoPao", "department": "设备运维系统", "countryCode": "CN", "organization": "工维联项目组"}, "endPoints": [{"url": "amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA", "security": [{"mtls": []}], "transport": "AMQP"}], "description": "提供设备检查业务所需的人员、技能、可用时段、工具和配件查询，并支持按检查时段进行资源预留与释放。仅处理资源查询和预留，不负责维修决策、工单执行或声音诊断；缺少泵、时间或技能等必要参数时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。", "capabilities": {"streaming": false, "messageQueue": ["rabbitmq:>=4.2"], "notification": false}, "protocolVersion": "02.02", "securitySchemes": {"mtls": {"type": "mutualTLS"}}, "lastModifiedTime": "2026-10-06T22:34:10.877744+08:00", "defaultInputModes": ["application/json"], "defaultOutputModes": ["application/json"]}, "liveness": "unknown", "discovery_policy": "platform_catalog"}, "duration_ms": 1153.05, "error": null, "http_status": null}}
+
+⎘
+
+叮当需要你补充确认：
+
+
+
+
+关于“水泵002运行异常，安排明天下午检查”，要生成明天的检查安排，还缺两项信息：
+
+1）开始时间：明天下午的具体开始时刻（例如 14:00、15:00、16:00，或您指定的其他时间）；
+
+2）预计时长：本次检查预计需要多久（例如 30 分钟、60 分钟、90 分钟，或您指定的其他时长）。
+
+请直接回复这两项内容；收到后我会在同一个任务上继续（continue）下发，不会取消后重新创建。
+
+
+
+
+请直接在下方输入框回复，我会继续本次多智能体协作。
+
+⎘
+下午三点开始，预计一小时，需要泵体检查技能。
+⎘
+协作驾驶舱
+智能体协作状态
+1/2
+
+请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。 上一轮候选结果： 叮当请求补充：关于“水泵002运行异常，安排明天下午检查”，要生成明天的检查安排，还缺两项信息： 1）开始时间：明天下午的具体开始时刻（例如 14:00、15:00、16:00，或您指定的其他时间）； 2）预计时长：本次检查预计需要多久（例如 30 分钟、60 分钟、90 分钟，或您指定的其他时长）。 请直接回复这两项内容；收到后我会在同一个任务上继续（continue）下发，不会取消后重新创建。 用户回答：下午三点开始，预计一小时，需要泵体检查技能。
+
+✓叮当
+多智能体协调 · 编排与汇总
+·工维联核心业务 Leader
+协作成员 · 执行任务
+协作与数据流转
+DAG v1
+协作状态
+⛶
+为用户请求生成parallel协作图：请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。 上一轮候选结果： 叮当请求补充：关于“水泵002运行异常，安排明天下午检查”，要生成明天的检查安排，还缺两项信息： 1）开始时间：明天下午的具体开始时刻（例
+叮当规划
+已完成
+工维联核心业务 Le…
+待补充
+叮当汇总
+待执行
+secretary，completed
+工维联核心业务 Leader，awaiting-input
+secretary_synthesis，pending
+叮当 · 协调进度
+工维联核心业务 Leader · 已向叮当上报信息缺口，等待用户确认。
+
+叮当需要你补充确认：
+
+
+
+
+工维联核心业务 Leader 已生成一份待确认的检查方案（方案编号 GW-2ec569cd1fa191e1beda84849cc6b680），需要你确认后才会预留资源并创建工单，当前尚未预留资源、也未创建工单。方案内容如下：
+
+设备：循环水泵 002（pump-002，型号 GW-150，位置：二号机房）
+检查时间：2026-10-08（明天）15:00 开始，预计 60 分钟，16:00 结束
+技能要求：泵体检查
+指派人员：模拟人员甲（机械维护）
+工具/配件：机械密封圈 1 件、便携检查工具包 1 套
+
+请选择其中一种回复方式：
+
+1）确认执行：回复“确认方案 GW-2ec569cd1fa191e1beda84849cc6b680 并创建工单。”，随后我会对当前任务发送 continue，预留上述人员与工具配件并创建工单；
+
+2）修改方案：直接说明要改的内容（例如开始时间、预计时长、人员、工具或配件），我会更新方案后再次请你确认；
+
+3）取消：回复“取消任务”，本次检查安排终止，不预留任何资源、不创建工单。
+
+
+
+
+请直接在下方输入框回复，我会继续本次多智能体协作。
+
+⎘
+确认方案 GW-2ec569cd1fa191e1beda84849cc6b680 并创建工单。
+⎘
+协作驾驶舱
+智能体协作状态
+2/2
+
+请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。 上一轮候选结果： 叮当请求补充：关于“水泵002运行异常，安排明天下午检查”，要生成明天的检查安排，还缺两项信息： 1）开始时间：明天下午的具体开始时刻（例如 14:00、15:00、16:00，或您指定的其他时间）； 2）预计时长：本次检查预计需要多久（例如 30 分钟、60 分钟、90 分钟，或您指定的其他时长）。 请直接回复这两项内容；收到后我会在同一个任务上继续（continue）下发，不会取消后重新创建。 用户回答：下午三点开始，预计一小时，需要泵体检查技能。 上一轮候选结果： 叮当请求补充：工维联核心业务 Leader 已生成一份待确认的检查方案（方案编号 GW-2ec569cd1fa191e1beda84849cc6b680），需要你确认后才会预留资源并创建工单，当前尚未预留资源、也未创建工单。方案内容如下： - 设备：循环水泵 002（pump-002，型号 GW-150，位置：二号机房） - 检查时间：2026-10-08（明天）15:00 开始，预计 60 分钟，16:00 结束 - 技能要求：泵体检查 - 指派人员：模拟人员甲（机械维护） - 工具/配件：机械密封圈 1 件、便携检查工具包 1 套 请选择其中一种回复方式： 1）确认执行：回复“确认方案 GW-2ec569cd1fa191e1beda84849cc6b680 并创建工单。”，随后我会对当前任务发送 continue，预留上述人员与工具配件并创建工单； 2）修改方案：直接说明要改的内容（例如开始时间、预计时长、人员、工具或配件），我会更新方案后再次请你确认； 3）取消：回复“取消任务”，本次检查安排终止，不预留任何资源、不创建工单。 用户回答：确认方案 GW-2ec569cd1fa191e1beda84849cc6b680 并创建工单。
+
+✓叮当
+多智能体协调 · 编排与汇总
+✓工维联核心业务 Leader
+协作成员 · 执行任务
+协作与数据流转
+DAG v1
+协作状态
+⛶
+为用户请求生成parallel协作图：请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。 上一轮候选结果： 叮当请求补充：关于“水泵002运行异常，安排明天下午检查”，要生成明天的检查安排，还缺两项信息： 1）开始时间：明天下午的具体开始时刻（例
+叮当规划
+已完成
+工维联核心业务 Le…
+已完成
+叮当汇总
+已完成
+secretary，completed
+工维联核心业务 Leader，completed
+secretary_synthesis，completed
+叮当 · 协调进度
+叮当正在整合成员结论并检查一致性（已等待 5 秒）。
+智能体执行完成
+
+叮当也可能会犯错，请核查重要信息。
+
+×
+实时协作详情
+工维联核心业务 Leader
+成员任务
+
+工维联核心业务 Leader
+
+AIC：1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45
+AIP 任务：7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8
+链路：aip
+实际用时：5.04s
+轮询：2 次
+输入指令：请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。 上一轮候选结果： 叮当请求补充：关于“水泵002运行异常，安排明天下午检查”，要生成明天的检查安排，还缺两项信息： 1）开始时间：明天下午的具体开始时刻（例如 14:00、15:00、16:00，或您指定的其他时间）； 2）预计时长：本次检查预计需要多久（例如 30 分钟、60 分钟、90 分钟，或您指定的其他时长）。 请直接回复这两项内容；收到后我会在同一个任务上继续（continue）下发，不会取消后重新创建。 用户回答：下午三点开始，预计一小时，需要泵体检查技能。 上一轮候选结果： 叮当请求补充：工维联核心业务 Leader 已生成一份待确认的检查方案（方案编号 GW-2ec569cd1fa191e1beda84849cc6b680），需要你确认后才会预留资源并创建工单，当前尚未预留资源、也未创建工单。方案内容如下： - 设备：循环水泵 002（pump-002，型号 GW-150，位置：二号机房） - 检查时间：2026-10-08（明天）15:00 开始，预计 60 分钟，16:00 结束 - 技能要求：泵体检查 - 指派人员：模拟人员甲（机械维护） - 工具/配件：机械密封圈 1 件、便携检查工具包 1 套 请选择其中一种回复方式： 1）确认执行：回复“确认方案 GW-2ec569cd1fa191e1beda84849cc6b680 并创建工单。”，随后我会对当前任务发送 continue，预留上述人员与工具配件并创建工单； 2）修改方案：直接说明要改的内容（例如开始时间、预计时长、人员、工具或配件），我会更新方案后再次请你确认； 3）取消：回复“取消任务”，本次检查安排终止，不预留任何资源、不创建工单。 用户回答：确认方案 GW-2ec569cd1fa191e1beda84849cc6b680 并创建工单。 DAG 指定的上游产物摘要： 叮当已完成协作规划并开始按 DAG 派发。
+
+{"sessionId": "session_1726", "taskId": "7ecfb38d-5b15-4b52-b1ae-4f6bc14499c8", "messageId": "cmd-c4a2cf43-b722-49df-acfd-d87961499672", "status": "completed", "plan": {"id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145", "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9", "status": "confirmed", "version": 1, "worker_id": "worker-01", "inventory_json": ["part-seal-ring", "tool-inspection-kit"], "reason": "按技能、时段和库存生成的模拟方案", "work_order_id": "wo-5fbb7dc9-5e74-4bf0-ad19-9852a9ff1e02", "created_at": "2026-10-07T11:21:58.752820+00:00", "updated_at": "2026-10-07T11:23:07.004894+00:00", "request": {"id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9", "pump_id": "pump-002", "work_date": "2026-10-08", "start_time": "15:00", "duration_minutes": 60, "end_time": "16:00", "description": "请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。", "required_skill": "泵体检查", "status": "confirmed", "missing_fields": [], "created_at": "2026-10-07T11:21:40.845146+00:00", "updated_at": "2026-10-07T11:23:07.004894+00:00"}, "worker": {"id": "worker-01", "name": "模拟人员甲", "role": "机械维护"}, "inventory": [{"id": "part-seal-ring", "name": "机械密封圈", "category": "part", "unit": "件"}, {"id": "tool-inspection-kit", "name": "便携检查工具包", "category": "tool", "unit": "套"}], "work_order": {"id": "wo-5fbb7dc9-5e74-4bf0-ad19-9852a9ff1e02", "number": "WO-20261007-8DC4AC", "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9", "plan_id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145", "status": "confirmed", "failure_reason": null, "created_at": "2026-10-07T11:23:07.004894+00:00", "updated_at": "2026-10-07T11:23:07.004894+00:00", "request": {"id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9", "pump_id": "pump-002", "work_date": "2026-10-08", "start_time": "15:00", "duration_minutes": 60, "end_time": "16:00", "description": "请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。", "required_skill": "泵体检查", "status": "confirmed", "missing_fields": [], "created_at": "2026-10-07T11:21:40.845146+00:00", "updated_at": "2026-10-07T11:23:07.004894+00:00"}, "reservations": [{"id": "reservation-2b5cac77-6c8b-4266-8fc9-aed56271d234", "plan_id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145", "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9", "resource_type": "worker", "resource_id": "worker-01", "quantity": 1, "status": "active", "start_at": "2026-10-08T15:00:00", "end_at": "2026-10-08T16:00:00", "created_at": "2026-10-07T11:23:05.169503+00:00", "released_at": null}, {"id": "reservation-1970a022-4de3-4201-b555-2d354acce280", "plan_id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145", "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9", "resource_type": "inventory", "resource_id": "part-seal-ring", "quantity": 1, "status": "active", "start_at": "2026-10-08T15:00:00", "end_at": "2026-10-08T16:00:00", "created_at": "2026-10-07T11:23:05.169503+00:00", "released_at": null}, {"id": "reservation-f9110f8a-7f05-4449-9e65-493b7151f04e", "plan_id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145", "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9", "resource_type": "inventory", "resource_id": "tool-inspection-kit", "quantity": 1, "status": "active", "start_at": "2026-10-08T15:00:00", "end_at": "2026-10-08T16:00:00", "created_at": "2026-10-07T11:23:05.169503+00:00", "released_at": null}]}}, "workOrder": {"id": "wo-5fbb7dc9-5e74-4bf0-ad19-9852a9ff1e02", "number": "WO-20261007-8DC4AC", "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9", "plan_id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145", "status": "confirmed", "failure_reason": null, "created_at": "2026-10-07T11:23:07.004894+00:00", "updated_at": "2026-10-07T11:23:07.004894+00:00"}, "idempotent": false, "planContinuation": {"source_task_id": "6887e4c3-572c-4086-95db-8798ee5e42fd", "plan_id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145", "reference": "GW-2ec569cd1fa191e1beda84849cc6b680", "session_id": "session_1726", "sender_id": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT", "confirmation_message_id": "cmd-c4a2cf43-b722-49df-acfd-d87961499672", "confirmed_at": "2026-10-07T11:23:04.316867+00:00"}}

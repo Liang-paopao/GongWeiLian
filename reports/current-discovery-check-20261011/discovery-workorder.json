@@ -1,0 +1,314 @@
+{
+  "role": "workorder",
+  "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+  "default_query": {
+    "checked_at": "2026-10-10T18:48:58.591237+00:00",
+    "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+    "query": {
+      "type": "filtered",
+      "limit": 10,
+      "filter": {
+        "conditions": [
+          {
+            "field": "aic",
+            "op": "eq",
+            "value": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF"
+          }
+        ],
+        "logic": "and"
+      }
+    },
+    "dingdang_verified": false,
+    "http_status": 200,
+    "response": {
+      "result": {
+        "acsMap": {
+          "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF": {
+            "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+            "name": "工维联工单处理 Partner",
+            "active": true,
+            "skills": [
+              {
+                "id": "gongwei.work-order.create",
+                "name": "创建检查工单",
+                "tags": [
+                  "work-order",
+                  "create"
+                ],
+                "version": "1.1.0",
+                "description": "仅为已确认检查方案创建幂等工单。"
+              },
+              {
+                "id": "gongwei.work-order.lifecycle",
+                "name": "更新和取消工单",
+                "tags": [
+                  "work-order",
+                  "lifecycle"
+                ],
+                "version": "1.1.0",
+                "description": "更新工单状态或取消工单，并在取消时释放资源。"
+              }
+            ],
+            "version": "1.1.0",
+            "provider": {
+              "name": "LiangPaoPao",
+              "department": "设备运维系统",
+              "countryCode": "CN",
+              "organization": "工维联项目组"
+            },
+            "endPoints": [
+              {
+                "url": "amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "security": [
+                  {
+                    "mtls": []
+                  }
+                ],
+                "transport": "AMQP"
+              }
+            ],
+            "description": "提供设备检查工单的创建、查询、状态更新和取消能力。仅处理已确认方案的工单生命周期，不负责资源查询、人员排班或声音诊断；缺少方案编号或状态不允许时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。",
+            "capabilities": {
+              "streaming": false,
+              "messageQueue": [
+                "rabbitmq:>=4.2"
+              ],
+              "notification": false
+            },
+            "protocolVersion": "02.02",
+            "securitySchemes": {
+              "mtls": {
+                "type": "mutualTLS"
+              }
+            },
+            "lastModifiedTime": "2026-10-06T23:37:38.239969+08:00",
+            "defaultInputModes": [
+              "application/json"
+            ],
+            "defaultOutputModes": [
+              "application/json"
+            ]
+          }
+        },
+        "agents": [
+          {
+            "group": "filtered",
+            "agentSkills": [
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "skillId": "gongwei.work-order.create",
+                "ranking": 1,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "skillId": "gongwei.work-order.lifecycle",
+                "ranking": 2,
+                "memo": "Filtered query result"
+              }
+            ]
+          }
+        ],
+        "routes": [
+          {
+            "forwardChain": [
+              "AIC-DS-A"
+            ],
+            "agentGroups": [
+              {
+                "group": "filtered",
+                "agentSkills": [
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                    "skillId": "gongwei.work-order.create",
+                    "ranking": 1,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                    "skillId": "gongwei.work-order.lifecycle",
+                    "ranking": 2,
+                    "memo": "Filtered query result"
+                  }
+                ]
+              }
+            ],
+            "status": "ok",
+            "durationMs": 5
+          }
+        ],
+        "aliveMap": {
+          "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF": {
+            "alive": true,
+            "aliveLastSeenAt": "2026-10-10T18:48:25.639Z"
+          }
+        }
+      }
+    },
+    "success": true,
+    "target_found": true
+  },
+  "catalog_query": {
+    "checked_at": "2026-10-10T18:49:00.231358+00:00",
+    "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+    "query": {
+      "type": "filtered",
+      "limit": 10,
+      "filter": {
+        "conditions": [
+          {
+            "field": "aic",
+            "op": "eq",
+            "value": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF"
+          }
+        ],
+        "logic": "and"
+      },
+      "extFilter": {
+        "conditions": [
+          {
+            "field": "alive",
+            "op": "in",
+            "value": [
+              "online",
+              "offline",
+              "unknown"
+            ]
+          }
+        ]
+      }
+    },
+    "dingdang_verified": false,
+    "http_status": 200,
+    "response": {
+      "result": {
+        "acsMap": {
+          "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF": {
+            "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+            "name": "工维联工单处理 Partner",
+            "active": true,
+            "skills": [
+              {
+                "id": "gongwei.work-order.create",
+                "name": "创建检查工单",
+                "tags": [
+                  "work-order",
+                  "create"
+                ],
+                "version": "1.1.0",
+                "description": "仅为已确认检查方案创建幂等工单。"
+              },
+              {
+                "id": "gongwei.work-order.lifecycle",
+                "name": "更新和取消工单",
+                "tags": [
+                  "work-order",
+                  "lifecycle"
+                ],
+                "version": "1.1.0",
+                "description": "更新工单状态或取消工单，并在取消时释放资源。"
+              }
+            ],
+            "version": "1.1.0",
+            "provider": {
+              "name": "LiangPaoPao",
+              "department": "设备运维系统",
+              "countryCode": "CN",
+              "organization": "工维联项目组"
+            },
+            "endPoints": [
+              {
+                "url": "amqps://wt.ioa.pub:5671/acps?inbox=inbox_1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "security": [
+                  {
+                    "mtls": []
+                  }
+                ],
+                "transport": "AMQP"
+              }
+            ],
+            "description": "提供设备检查工单的创建、查询、状态更新和取消能力。仅处理已确认方案的工单生命周期，不负责资源查询、人员排班或声音诊断；缺少方案编号或状态不允许时拒绝请求。 使用 ACPS v2.2.0 Group/Inbox；群组准入由官方 mq-auth-server 完成。",
+            "capabilities": {
+              "streaming": false,
+              "messageQueue": [
+                "rabbitmq:>=4.2"
+              ],
+              "notification": false
+            },
+            "protocolVersion": "02.02",
+            "securitySchemes": {
+              "mtls": {
+                "type": "mutualTLS"
+              }
+            },
+            "lastModifiedTime": "2026-10-06T23:37:38.239969+08:00",
+            "defaultInputModes": [
+              "application/json"
+            ],
+            "defaultOutputModes": [
+              "application/json"
+            ]
+          }
+        },
+        "agents": [
+          {
+            "group": "filtered",
+            "agentSkills": [
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "skillId": "gongwei.work-order.create",
+                "ranking": 1,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                "skillId": "gongwei.work-order.lifecycle",
+                "ranking": 2,
+                "memo": "Filtered query result"
+              }
+            ]
+          }
+        ],
+        "routes": [
+          {
+            "forwardChain": [
+              "AIC-DS-A"
+            ],
+            "agentGroups": [
+              {
+                "group": "filtered",
+                "agentSkills": [
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                    "skillId": "gongwei.work-order.create",
+                    "ranking": 1,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+                    "skillId": "gongwei.work-order.lifecycle",
+                    "ranking": 2,
+                    "memo": "Filtered query result"
+                  }
+                ]
+              }
+            ],
+            "status": "ok",
+            "durationMs": 6
+          }
+        ],
+        "aliveMap": {
+          "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF": {
+            "alive": true,
+            "aliveLastSeenAt": "2026-10-10T18:48:25.639Z"
+          }
+        }
+      }
+    },
+    "success": true,
+    "target_found": true
+  },
+  "indexed": true,
+  "default_discoverable": true,
+  "dingdang_verified": false
+}

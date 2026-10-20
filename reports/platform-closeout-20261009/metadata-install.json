@@ -1,0 +1,35 @@
+{
+  "backup": "/opt/gongwei/backups/20261009-012543-amp-metadata",
+  "before_pids": {
+    "web": "3551614",
+    "resource": "3551606",
+    "workorder": "3551602",
+    "audio": "3475527",
+    "leader": "3551612",
+    "resource-inbox": "3551666",
+    "workorder-inbox": "3551661",
+    "amp-heartbeat": "2367812"
+  },
+  "platform_verified": false,
+  "tests": {
+    "count": 32,
+    "passed": true
+  },
+  "service": {
+    "MainPID": "3558194",
+    "ActiveState": "active",
+    "SubState": "running",
+    "UnitFileState": "enabled"
+  },
+  "after_pids": {
+    "web": "3551614",
+    "resource": "3551606",
+    "workorder": "3551602",
+    "audio": "3475527",
+    "leader": "3551612",
+    "resource-inbox": "3551666",
+    "workorder-inbox": "3551661",
+    "amp-heartbeat": "2367812"
+  },
+  "pass_result": true
+}

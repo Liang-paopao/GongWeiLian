@@ -1,0 +1,30 @@
+[
+  {
+    "page": "home",
+    "clientWidth": 1425,
+    "height": 900,
+    "scrollWidth": 1425,
+    "width": 1440
+  },
+  {
+    "page": "plan",
+    "clientWidth": 1425,
+    "height": 900,
+    "scrollWidth": 1425,
+    "width": 1440
+  },
+  {
+    "page": "orders",
+    "clientWidth": 1425,
+    "height": 900,
+    "scrollWidth": 1425,
+    "width": 1440
+  },
+  {
+    "page": "resources",
+    "clientWidth": 1440,
+    "height": 900,
+    "scrollWidth": 1440,
+    "width": 1440
+  }
+]

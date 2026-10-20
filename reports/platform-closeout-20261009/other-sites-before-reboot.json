@@ -1,0 +1,27 @@
+[
+  {
+    "host": "app.yanyi.online",
+    "status": 200,
+    "url": "https://app.yanyi.online/"
+  },
+  {
+    "host": "gongwei.yanyi.online",
+    "status": 200,
+    "url": "https://gongwei.yanyi.online/"
+  },
+  {
+    "host": "taluo.yanyi.online",
+    "status": 200,
+    "url": "https://taluo.yanyi.online/"
+  },
+  {
+    "host": "www.yanyi.online",
+    "status": 200,
+    "url": "https://www.yanyi.online/"
+  },
+  {
+    "host": "xiaoyi.yanyi.online",
+    "status": 200,
+    "url": "https://xiaoyi.yanyi.online/front_login.php?next=%2F"
+  }
+]

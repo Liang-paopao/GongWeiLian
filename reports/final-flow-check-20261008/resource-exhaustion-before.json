@@ -1,0 +1,151 @@
+{
+  "work_orders": [
+    {
+      "id": "wo-63d7edf6-f338-4646-99ef-f1e42e2d0aa0",
+      "number": "WO-20261007-89643E",
+      "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+      "plan_id": "plan-7bc2f92e-d103-45ec-afac-60d5b00f9891",
+      "status": "confirmed",
+      "failure_reason": null,
+      "created_at": "2026-10-07T08:41:42.557901+00:00",
+      "updated_at": "2026-10-07T08:41:42.557901+00:00"
+    },
+    {
+      "id": "wo-5fbb7dc9-5e74-4bf0-ad19-9852a9ff1e02",
+      "number": "WO-20261007-8DC4AC",
+      "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9",
+      "plan_id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145",
+      "status": "confirmed",
+      "failure_reason": null,
+      "created_at": "2026-10-07T11:23:07.004894+00:00",
+      "updated_at": "2026-10-07T11:23:07.004894+00:00"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "reservation-ef1ae5c6-c3a8-4675-82fc-04303a37833d",
+      "plan_id": "plan-7bc2f92e-d103-45ec-afac-60d5b00f9891",
+      "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+      "resource_type": "worker",
+      "resource_id": "worker-01",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-08T14:00:00",
+      "end_at": "2026-10-08T15:00:00",
+      "created_at": "2026-10-07T08:41:41.330086+00:00",
+      "released_at": null
+    },
+    {
+      "id": "reservation-6491f764-5f20-4a12-95ca-7dacb21b44d0",
+      "plan_id": "plan-7bc2f92e-d103-45ec-afac-60d5b00f9891",
+      "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+      "resource_type": "inventory",
+      "resource_id": "part-seal-ring",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-08T14:00:00",
+      "end_at": "2026-10-08T15:00:00",
+      "created_at": "2026-10-07T08:41:41.330086+00:00",
+      "released_at": null
+    },
+    {
+      "id": "reservation-fdd057b2-65d2-4edd-bffa-dd538f7287b6",
+      "plan_id": "plan-7bc2f92e-d103-45ec-afac-60d5b00f9891",
+      "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+      "resource_type": "inventory",
+      "resource_id": "tool-inspection-kit",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-08T14:00:00",
+      "end_at": "2026-10-08T15:00:00",
+      "created_at": "2026-10-07T08:41:41.330086+00:00",
+      "released_at": null
+    },
+    {
+      "id": "reservation-2b5cac77-6c8b-4266-8fc9-aed56271d234",
+      "plan_id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145",
+      "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9",
+      "resource_type": "worker",
+      "resource_id": "worker-01",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-08T15:00:00",
+      "end_at": "2026-10-08T16:00:00",
+      "created_at": "2026-10-07T11:23:05.169503+00:00",
+      "released_at": null
+    },
+    {
+      "id": "reservation-1970a022-4de3-4201-b555-2d354acce280",
+      "plan_id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145",
+      "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9",
+      "resource_type": "inventory",
+      "resource_id": "part-seal-ring",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-08T15:00:00",
+      "end_at": "2026-10-08T16:00:00",
+      "created_at": "2026-10-07T11:23:05.169503+00:00",
+      "released_at": null
+    },
+    {
+      "id": "reservation-f9110f8a-7f05-4449-9e65-493b7151f04e",
+      "plan_id": "plan-7152f38a-5af3-4a62-a12e-82cb6b029145",
+      "request_id": "req-91d5a06d-0f32-4b60-823c-7b90cec78df9",
+      "resource_type": "inventory",
+      "resource_id": "tool-inspection-kit",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-08T15:00:00",
+      "end_at": "2026-10-08T16:00:00",
+      "created_at": "2026-10-07T11:23:05.169503+00:00",
+      "released_at": null
+    }
+  ],
+  "inventory_items": [
+    {
+      "id": "tool-inspection-kit",
+      "name": "便携检查工具包",
+      "category": "tool",
+      "total_qty": 2,
+      "available_qty": 0,
+      "unit": "套",
+      "simulated": 1
+    },
+    {
+      "id": "tool-vibration-meter",
+      "name": "振动测量仪",
+      "category": "tool",
+      "total_qty": 1,
+      "available_qty": 1,
+      "unit": "台",
+      "simulated": 1
+    },
+    {
+      "id": "part-seal-ring",
+      "name": "机械密封圈",
+      "category": "part",
+      "total_qty": 5,
+      "available_qty": 3,
+      "unit": "件",
+      "simulated": 1
+    },
+    {
+      "id": "part-gasket",
+      "name": "泵体垫片",
+      "category": "part",
+      "total_qty": 8,
+      "available_qty": 8,
+      "unit": "件",
+      "simulated": 1
+    },
+    {
+      "id": "tool-lockout-tag",
+      "name": "检修挂牌套装",
+      "category": "tool",
+      "total_qty": 3,
+      "available_qty": 3,
+      "unit": "套",
+      "simulated": 1
+    }
+  ]
+}

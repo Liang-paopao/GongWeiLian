@@ -1,0 +1,524 @@
+{
+  "role": "leader",
+  "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+  "default_query": {
+    "checked_at": "2026-10-10T18:48:52.736686+00:00",
+    "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+    "query": {
+      "type": "filtered",
+      "limit": 10,
+      "filter": {
+        "conditions": [
+          {
+            "field": "aic",
+            "op": "eq",
+            "value": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9"
+          }
+        ],
+        "logic": "and"
+      }
+    },
+    "dingdang_verified": false,
+    "http_status": 200,
+    "response": {
+      "result": {
+        "acsMap": {
+          "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9": {
+            "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+            "name": "工维联核心业务 Leader",
+            "active": true,
+            "skills": [
+              {
+                "id": "gongwei.leader.handle-maintenance-request",
+                "name": "理解设备异常请求",
+                "tags": [
+                  "leader",
+                  "agentic"
+                ],
+                "version": "1.1.0",
+                "description": "接收中文自然语言和结构化检查请求，缺失字段时询问用户。"
+              },
+              {
+                "id": "gongwei.leader.pipe-maintenance",
+                "name": "水管与管道检修协调",
+                "tags": [
+                  "leader",
+                  "agentic",
+                  "水管",
+                  "管道",
+                  "供水",
+                  "检修",
+                  "设备运维"
+                ],
+                "version": "1.1.0",
+                "examples": [
+                  "我有一个水管检修问题，帮我安排检查",
+                  "管道漏水或压力异常，需要协调人员和工具检查",
+                  "供水或循环水泵异常，安排检修并创建检查工单"
+                ],
+                "description": "处理水管、管道、供水和循环水系统的漏水、堵塞、压力异常、阀门及泵体检修问题；协调现场检查人员、工具、配件和检查工单。"
+              },
+              {
+                "id": "gongwei.leader.plan-collaboration",
+                "name": "规划检查协作",
+                "tags": [
+                  "leader",
+                  "agentic"
+                ],
+                "version": "1.1.0",
+                "description": "生成资源查询、确认和工单协作计划。"
+              },
+              {
+                "id": "gongwei.leader.discover-and-delegate",
+                "name": "发现并委派 Partner",
+                "tags": [
+                  "leader",
+                  "agentic"
+                ],
+                "version": "1.1.0",
+                "description": "按能力、安全和在线状态发现并选择 Partner。"
+              },
+              {
+                "id": "gongwei.leader.resume-multiturn-task",
+                "name": "恢复多轮任务",
+                "tags": [
+                  "leader",
+                  "agentic"
+                ],
+                "version": "1.1.0",
+                "description": "使用同一 session、task 和 message 关联补充信息。"
+              },
+              {
+                "id": "gongwei.leader.track-and-summarize",
+                "name": "跟踪并汇总结果",
+                "tags": [
+                  "leader",
+                  "agentic"
+                ],
+                "version": "1.1.0",
+                "description": "返回协作轨迹、资源证据和工单结果。"
+              }
+            ],
+            "version": "1.1.1",
+            "provider": {
+              "name": "LiangPaoPao",
+              "department": "设备运维系统",
+              "countryCode": "CN",
+              "organization": "工维联项目组"
+            },
+            "endPoints": [
+              {
+                "url": "https://leader.yanyi.online/rpc",
+                "security": [
+                  {
+                    "mtls": []
+                  }
+                ],
+                "transport": "JSONRPC"
+              }
+            ],
+            "certificate": {
+              "altNames": {
+                "dns": [
+                  "leader.yanyi.online"
+                ]
+              }
+            },
+            "description": "工维联设备检查协调智能体，面向水泵、水管、管道、供水或循环水系统及阀门等设备的异常检查与检修协调。接受中文自然语言或 JSON 请求，多轮补充设备、日期、开始时间、时长与技能；在线发现并通过正式 MQ 调用资源协调 Partner，查询人员、时间、工具和库存后返回待确认方案。仅用户明确确认后预留资源并调用工单处理 Partner，创建唯一检查工单并返回编号、人员、物品、时间及状态。支持任务查询、补充、确认、取消、重复确认保护和服务重启恢复。声音检测为可选辅助，不推断具体零件损坏。",
+            "capabilities": {
+              "streaming": false,
+              "messageQueue": [],
+              "notification": false
+            },
+            "protocolVersion": "02.02",
+            "securitySchemes": {
+              "mtls": {
+                "type": "mutualTLS"
+              }
+            },
+            "lastModifiedTime": "2026-10-10T20:55:52.293026+08:00",
+            "defaultInputModes": [
+              "text/plain",
+              "application/json"
+            ],
+            "defaultOutputModes": [
+              "text/plain",
+              "application/json"
+            ]
+          }
+        },
+        "agents": [
+          {
+            "group": "filtered",
+            "agentSkills": [
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                "skillId": "gongwei.leader.discover-and-delegate",
+                "ranking": 1,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                "skillId": "gongwei.leader.handle-maintenance-request",
+                "ranking": 2,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                "skillId": "gongwei.leader.pipe-maintenance",
+                "ranking": 3,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                "skillId": "gongwei.leader.plan-collaboration",
+                "ranking": 4,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                "skillId": "gongwei.leader.resume-multiturn-task",
+                "ranking": 5,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                "skillId": "gongwei.leader.track-and-summarize",
+                "ranking": 6,
+                "memo": "Filtered query result"
+              }
+            ]
+          }
+        ],
+        "routes": [
+          {
+            "forwardChain": [
+              "AIC-DS-A"
+            ],
+            "agentGroups": [
+              {
+                "group": "filtered",
+                "agentSkills": [
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                    "skillId": "gongwei.leader.discover-and-delegate",
+                    "ranking": 1,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                    "skillId": "gongwei.leader.handle-maintenance-request",
+                    "ranking": 2,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                    "skillId": "gongwei.leader.pipe-maintenance",
+                    "ranking": 3,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                    "skillId": "gongwei.leader.plan-collaboration",
+                    "ranking": 4,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                    "skillId": "gongwei.leader.resume-multiturn-task",
+                    "ranking": 5,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                    "skillId": "gongwei.leader.track-and-summarize",
+                    "ranking": 6,
+                    "memo": "Filtered query result"
+                  }
+                ]
+              }
+            ],
+            "status": "ok",
+            "durationMs": 5
+          }
+        ],
+        "aliveMap": {
+          "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9": {
+            "alive": true,
+            "aliveLastSeenAt": "2026-10-10T18:48:53.191Z"
+          }
+        }
+      }
+    },
+    "success": true,
+    "target_found": true
+  },
+  "catalog_query": {
+    "checked_at": "2026-10-10T18:48:54.741127+00:00",
+    "endpoint": "https://wt.ioa.pub/discovery/acps-adp-v2/discover",
+    "query": {
+      "type": "filtered",
+      "limit": 10,
+      "filter": {
+        "conditions": [
+          {
+            "field": "aic",
+            "op": "eq",
+            "value": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9"
+          }
+        ],
+        "logic": "and"
+      },
+      "extFilter": {
+        "conditions": [
+          {
+            "field": "alive",
+            "op": "in",
+            "value": [
+              "online",
+              "offline",
+              "unknown"
+            ]
+          }
+        ]
+      }
+    },
+    "dingdang_verified": false,
+    "http_status": 200,
+    "response": {
+      "result": {
+        "acsMap": {
+          "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9": {
+            "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+            "name": "工维联核心业务 Leader",
+            "active": true,
+            "skills": [
+              {
+                "id": "gongwei.leader.handle-maintenance-request",
+                "name": "理解设备异常请求",
+                "tags": [
+                  "leader",
+                  "agentic"
+                ],
+                "version": "1.1.0",
+                "description": "接收中文自然语言和结构化检查请求，缺失字段时询问用户。"
+              },
+              {
+                "id": "gongwei.leader.pipe-maintenance",
+                "name": "水管与管道检修协调",
+                "tags": [
+                  "leader",
+                  "agentic",
+                  "水管",
+                  "管道",
+                  "供水",
+                  "检修",
+                  "设备运维"
+                ],
+                "version": "1.1.0",
+                "examples": [
+                  "我有一个水管检修问题，帮我安排检查",
+                  "管道漏水或压力异常，需要协调人员和工具检查",
+                  "供水或循环水泵异常，安排检修并创建检查工单"
+                ],
+                "description": "处理水管、管道、供水和循环水系统的漏水、堵塞、压力异常、阀门及泵体检修问题；协调现场检查人员、工具、配件和检查工单。"
+              },
+              {
+                "id": "gongwei.leader.plan-collaboration",
+                "name": "规划检查协作",
+                "tags": [
+                  "leader",
+                  "agentic"
+                ],
+                "version": "1.1.0",
+                "description": "生成资源查询、确认和工单协作计划。"
+              },
+              {
+                "id": "gongwei.leader.discover-and-delegate",
+                "name": "发现并委派 Partner",
+                "tags": [
+                  "leader",
+                  "agentic"
+                ],
+                "version": "1.1.0",
+                "description": "按能力、安全和在线状态发现并选择 Partner。"
+              },
+              {
+                "id": "gongwei.leader.resume-multiturn-task",
+                "name": "恢复多轮任务",
+                "tags": [
+                  "leader",
+                  "agentic"
+                ],
+                "version": "1.1.0",
+                "description": "使用同一 session、task 和 message 关联补充信息。"
+              },
+              {
+                "id": "gongwei.leader.track-and-summarize",
+                "name": "跟踪并汇总结果",
+                "tags": [
+                  "leader",
+                  "agentic"
+                ],
+                "version": "1.1.0",
+                "description": "返回协作轨迹、资源证据和工单结果。"
+              }
+            ],
+            "version": "1.1.1",
+            "provider": {
+              "name": "LiangPaoPao",
+              "department": "设备运维系统",
+              "countryCode": "CN",
+              "organization": "工维联项目组"
+            },
+            "endPoints": [
+              {
+                "url": "https://leader.yanyi.online/rpc",
+                "security": [
+                  {
+                    "mtls": []
+                  }
+                ],
+                "transport": "JSONRPC"
+              }
+            ],
+            "certificate": {
+              "altNames": {
+                "dns": [
+                  "leader.yanyi.online"
+                ]
+              }
+            },
+            "description": "工维联设备检查协调智能体，面向水泵、水管、管道、供水或循环水系统及阀门等设备的异常检查与检修协调。接受中文自然语言或 JSON 请求，多轮补充设备、日期、开始时间、时长与技能；在线发现并通过正式 MQ 调用资源协调 Partner，查询人员、时间、工具和库存后返回待确认方案。仅用户明确确认后预留资源并调用工单处理 Partner，创建唯一检查工单并返回编号、人员、物品、时间及状态。支持任务查询、补充、确认、取消、重复确认保护和服务重启恢复。声音检测为可选辅助，不推断具体零件损坏。",
+            "capabilities": {
+              "streaming": false,
+              "messageQueue": [],
+              "notification": false
+            },
+            "protocolVersion": "02.02",
+            "securitySchemes": {
+              "mtls": {
+                "type": "mutualTLS"
+              }
+            },
+            "lastModifiedTime": "2026-10-10T20:55:52.293026+08:00",
+            "defaultInputModes": [
+              "text/plain",
+              "application/json"
+            ],
+            "defaultOutputModes": [
+              "text/plain",
+              "application/json"
+            ]
+          }
+        },
+        "agents": [
+          {
+            "group": "filtered",
+            "agentSkills": [
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                "skillId": "gongwei.leader.discover-and-delegate",
+                "ranking": 1,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                "skillId": "gongwei.leader.handle-maintenance-request",
+                "ranking": 2,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                "skillId": "gongwei.leader.pipe-maintenance",
+                "ranking": 3,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                "skillId": "gongwei.leader.plan-collaboration",
+                "ranking": 4,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                "skillId": "gongwei.leader.resume-multiturn-task",
+                "ranking": 5,
+                "memo": "Filtered query result"
+              },
+              {
+                "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                "skillId": "gongwei.leader.track-and-summarize",
+                "ranking": 6,
+                "memo": "Filtered query result"
+              }
+            ]
+          }
+        ],
+        "routes": [
+          {
+            "forwardChain": [
+              "AIC-DS-A"
+            ],
+            "agentGroups": [
+              {
+                "group": "filtered",
+                "agentSkills": [
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                    "skillId": "gongwei.leader.discover-and-delegate",
+                    "ranking": 1,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                    "skillId": "gongwei.leader.handle-maintenance-request",
+                    "ranking": 2,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                    "skillId": "gongwei.leader.pipe-maintenance",
+                    "ranking": 3,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                    "skillId": "gongwei.leader.plan-collaboration",
+                    "ranking": 4,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                    "skillId": "gongwei.leader.resume-multiturn-task",
+                    "ranking": 5,
+                    "memo": "Filtered query result"
+                  },
+                  {
+                    "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+                    "skillId": "gongwei.leader.track-and-summarize",
+                    "ranking": 6,
+                    "memo": "Filtered query result"
+                  }
+                ]
+              }
+            ],
+            "status": "ok",
+            "durationMs": 3
+          }
+        ],
+        "aliveMap": {
+          "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9": {
+            "alive": true,
+            "aliveLastSeenAt": "2026-10-10T18:48:53.191Z"
+          }
+        }
+      }
+    },
+    "success": true,
+    "target_found": true
+  },
+  "indexed": true,
+  "default_discoverable": true,
+  "dingdang_verified": false
+}

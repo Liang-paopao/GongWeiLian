@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "investigation": "read_only_amp_access_pairing",
+  "checked_at": "2026-10-08T18:11:23.162148+00:00",
+  "scope": {
+    "broker": "wt.ioa.pub:19092",
+    "topic": "amp.access",
+    "window_start_utc": "2026-10-08T17:55:00Z",
+    "window_end_utc": "2026-10-08T18:10:00Z",
+    "window_timezone_equivalent": "2026-10-09 01:55–02:10 Asia/Shanghai",
+    "offset_semantics": "start inclusive, end exclusive; offsets obtained through offsets_for_times, falling back to the captured end offset when no timestamp offset exists",
+    "session_id": "session_1841",
+    "own_leader_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45",
+    "authenticated_caller_aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+    "task_ids": [
+      "a9f43cab-d4ce-4d11-b98b-432b9bf3180f",
+      "1847721f-6b88-40cb-a658-f51d415cbeb3",
+      "ce6f1ce3-d1b0-4a0a-b7be-aa8b3e623184"
+    ]
+  },
+  "read_only_controls": {
+    "group_id": null,
+    "enable_auto_commit": false,
+    "producer_used": false,
+    "records_written_to_kafka": false,
+    "repeated_scan_for_report_generation": false,
+    "retained_fields": [
+      "emitter_aic", "caller_aic", "callee_aic", "correlation_id",
+      "trace_id", "span_id", "parent_span_id", "method", "status_code",
+      "timestamp", "partition", "offset"
+    ],
+    "retained_record_scope": "Only metadata samples for the three named real calls to our own Leader; no raw Kafka values, headers, request/response bodies, credentials, or other users' records are saved"
+  },
+  "scan_integrity": {
+    "partition_count": 16,
+    "topic_records_scanned": 107,
+    "offset_ranges_record_count": 107,
+    "completed_all_captured_ranges": true,
+    "bounded_ranges": [
+      {"partition": 0, "start": 686126, "end": 686126},
+      {"partition": 1, "start": 6873, "end": 6874},
+      {"partition": 2, "start": 5875, "end": 5876},
+      {"partition": 3, "start": 5114, "end": 5115},
+      {"partition": 4, "start": 5526, "end": 5527},
+      {"partition": 5, "start": 4807, "end": 4808},
+      {"partition": 6, "start": 5189, "end": 5190},
+      {"partition": 7, "start": 10024, "end": 10025},
+      {"partition": 8, "start": 5746, "end": 5747},
+      {"partition": 9, "start": 4935, "end": 4936},
+      {"partition": 10, "start": 5133, "end": 5134},
+      {"partition": 11, "start": 5198, "end": 5198},
+      {"partition": 12, "start": 5563, "end": 5563},
+      {"partition": 13, "start": 4887, "end": 4887},
+      {"partition": 14, "start": 5898, "end": 5995},
+      {"partition": 15, "start": 5120, "end": 5120}
+    ]
+  },
+  "observations": {
+    "named_task_callee_record_counts": {
+      "a9f43cab-d4ce-4d11-b98b-432b9bf3180f": 3,
+      "1847721f-6b88-40cb-a658-f51d415cbeb3": 7,
+      "ce6f1ce3-d1b0-4a0a-b7be-aa8b3e623184": 3
+    },
+    "named_task_callee_records_total": 13,
+    "caller_record_checks": {
+      "non_own_emitter_with_callee_equal_to_own_leader": 0,
+      "caller_side_record_emitted_by_authenticated_caller_aic": 0,
+      "non_own_emitter_with_body_caller_equal_to_authenticated_caller_aic": 0,
+      "correlation_id_equal_to_session_1841": 0,
+      "limits": "Results apply only to records in the captured topic offset ranges; they do not prove caller records were never emitted, published to another topic/broker, delayed beyond the window, or stored elsewhere"
+    },
+    "group_sample_semantics": "Each sample below is the first observed Kafka record in that task/method group. count is the actual group total. This report does not expand unsaved records into invented individual samples.",
+    "callee_groups": [
+      {
+        "count": 1,
+        "sample": {"emitter_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45", "caller_aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT", "callee_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45", "correlation_id": "a9f43cab-d4ce-4d11-b98b-432b9bf3180f", "trace_id": null, "span_id": null, "parent_span_id": null, "method": "start", "status_code": 200, "timestamp": "2026-10-08T17:58:57.541488Z", "partition": 14, "offset": 5980}
+      },
+      {
+        "count": 1,
+        "sample": {"emitter_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45", "caller_aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT", "callee_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45", "correlation_id": "a9f43cab-d4ce-4d11-b98b-432b9bf3180f", "trace_id": null, "span_id": null, "parent_span_id": null, "method": "get", "status_code": 200, "timestamp": "2026-10-08T17:59:00.048379Z", "partition": 14, "offset": 5981}
+      },
+      {
+        "count": 1,
+        "sample": {"emitter_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45", "caller_aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT", "callee_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45", "correlation_id": "a9f43cab-d4ce-4d11-b98b-432b9bf3180f", "trace_id": null, "span_id": null, "parent_span_id": null, "method": "cancel", "status_code": 200, "timestamp": "2026-10-08T17:59:49.877115Z", "partition": 14, "offset": 5982}
+      },
+      {
+        "count": 1,
+        "sample": {"emitter_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45", "caller_aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT", "callee_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45", "correlation_id": "1847721f-6b88-40cb-a658-f51d415cbeb3", "trace_id": null, "span_id": null, "parent_span_id": null, "method": "start", "status_code": 200, "timestamp": "2026-10-08T17:59:51.282955Z", "partition": 14, "offset": 5983}
+      },
+      {
+        "count": 5,
+        "sample": {"emitter_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45", "caller_aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT", "callee_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45", "correlation_id": "1847721f-6b88-40cb-a658-f51d415cbeb3", "trace_id": null, "span_id": null, "parent_span_id": null, "method": "get", "status_code": 200, "timestamp": "2026-10-08T17:59:54.545625Z", "partition": 14, "offset": 5984}
+      },
+      {
+        "count": 1,
+        "sample": {"emitter_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45", "caller_aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT", "callee_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45", "correlation_id": "1847721f-6b88-40cb-a658-f51d415cbeb3", "trace_id": null, "span_id": null, "parent_span_id": null, "method": "cancel", "status_code": 200, "timestamp": "2026-10-08T18:01:17.120187Z", "partition": 14, "offset": 5989}
+      },
+      {
+        "count": 1,
+        "sample": {"emitter_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45", "caller_aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT", "callee_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45", "correlation_id": "ce6f1ce3-d1b0-4a0a-b7be-aa8b3e623184", "trace_id": null, "span_id": null, "parent_span_id": null, "method": "start", "status_code": 200, "timestamp": "2026-10-08T18:01:19.664756Z", "partition": 14, "offset": 5990}
+      },
+      {
+        "count": 2,
+        "sample": {"emitter_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45", "caller_aic": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT", "callee_aic": "1.2.156.3088.1.BUPT.JSQB3Y.RN5ERG.1KIZGN.0M45", "correlation_id": "ce6f1ce3-d1b0-4a0a-b7be-aa8b3e623184", "trace_id": null, "span_id": null, "parent_span_id": null, "method": "get", "status_code": 200, "timestamp": "2026-10-08T18:01:24.668054Z", "partition": 14, "offset": 5991}
+      }
+    ]
+  },
+  "documented_rules_and_source_findings": [
+    {
+      "source": "https://wt.ioa.pub/docs.html",
+      "finding": "The live platform documentation requires Access correlationId to be taskId and counts one call through bilateral taskId matching",
+      "verification": "Read directly from the live platform documentation during this investigation"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/AIP-PUB/ACPs-community/v2.2.0/acps-sdk/acps_sdk/aip/aip_rpc_client.py",
+      "line": 216,
+      "finding": "Official SDK 2.2.0 caller emitter uses correlation_id=command.sessionId; this is a possible incompatibility with the documented taskId rule, not evidence of DingDang's actual deployed caller output"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/AIP-PUB/ACPs-community/v2.2.0/monitor-server/app/access/tables.py",
+      "lines": [225, 230],
+      "finding": "Official Monitor topology materialized view counts the callee perspective and is not the website's documented bilateral matched-stats algorithm"
+    },
+    {
+      "source": "amp_telemetry.py",
+      "line": 248,
+      "finding": "Our callee emitter uses the genuine taskId and passes no trace parameters; missing uploaded trace metadata does not prove that the caller omitted the incoming traceparent HTTP header"
+    }
+  ],
+  "conclusion": "The captured amp.access window contains genuine task-correlated callee records for all three named DingDang tasks, but no corresponding caller-side record was found. This window lacks the public evidence needed for the documented bilateral match.",
+  "limitations": [
+    "No conclusion is made about caller records outside the captured offset ranges or about all platform history",
+    "Kafka timestamp offsets define the captured range; a delayed or differently timestamped caller upload can fall outside it",
+    "Caller records with both incorrect participant identities and unrelated correlation identifiers may evade the targeted checks",
+    "The actual deployed DingDang caller correlation_id and trace fields remain unobserved; SDK defaults are not proof of deployed behavior",
+    "The website matched-stats implementation was not available in the inspected public v2.2.0 tree; additional matching conditions, ingestion state, aliases, exclusions, and deduplication behavior are unverified",
+    "Kafka delivery and schema validity do not by themselves prove ingestion into the platform matching store or a completed bilateral match",
+    "The callee collector does not retain HTTP traceparent, so it cannot establish whether incoming DingDang requests carried trace context"
+  ],
+  "platform_follow_up": [
+    "Locate real DingDang caller Access records for session_1841 and the three named taskIds; inspect emitter AIC, caller/callee AIC, correlation_id, timestamp, and trace/span metadata only",
+    "Confirm the caller Access emitter is enabled and its real files are forwarded to the intended broker/topic; check delivery acknowledgements and ingestion/rejection state",
+    "Check whether the deployed caller uses taskId or the SDK 2.2.0 default sessionId as correlation_id",
+    "Confirm matched-stats accepts the actual authenticated caller AIC and does not require a different registered alias",
+    "Clarify the website's exact bilateral key and whether trace, method, status, time, schema aliases, deduplication, or caller/callee identity conditions also participate",
+    "If caller uploads are delayed, inspect a wider platform-side window using the real task identifiers; do not synthesize caller records"
+  ]
+}

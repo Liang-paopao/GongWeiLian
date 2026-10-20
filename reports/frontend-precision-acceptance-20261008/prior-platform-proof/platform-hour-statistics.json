@@ -1,0 +1,52 @@
+{
+  "url": "https://wt.ioa.pub/internal/matched-stats/top?startAt=2026-10-07T19%3A00%3A00%2B08%3A00&endAt=2026-10-07T20%3A00%3A00%2B08%3A00&n=200",
+  "http_status": 200,
+  "response": {
+    "timezone": "Asia/Shanghai",
+    "unit": "task",
+    "n": 200,
+    "timeRange": {
+      "startAt": "2026-10-07T19:00:00+08:00",
+      "endAt": "2026-10-07T20:00:00+08:00"
+    },
+    "caller": [
+      {
+        "aic": "1.2.156.3088.1.1.LDR001.LDR001.1.0002",
+        "count": 11,
+        "accessCount": 11,
+        "messageCount": 0
+      }
+    ],
+    "callee": [
+      {
+        "aic": "1.2.156.3088.1.BUPT.BNN2UD.A0G0KD.YYTVI4.1DHO",
+        "count": 11,
+        "accessCount": 11,
+        "messageCount": 0
+      }
+    ],
+    "callerNonInternal": [
+      {
+        "aic": "1.2.156.3088.1.1.LDR001.LDR001.1.0002",
+        "count": 11,
+        "accessCount": 11,
+        "messageCount": 0
+      }
+    ],
+    "calleeNonInternal": [
+      {
+        "aic": "1.2.156.3088.1.BUPT.BNN2UD.A0G0KD.YYTVI4.1DHO",
+        "count": 11,
+        "accessCount": 11,
+        "messageCount": 0
+      }
+    ],
+    "meta": {
+      "currentHourOpen": true,
+      "accessComputedAt": "2026-10-07T11:32:02.459000+00:00",
+      "messageComputedAt": "2026-10-07T11:32:00.897000+00:00",
+      "accessMissingHours": [],
+      "messageMissingHours": []
+    }
+  }
+}

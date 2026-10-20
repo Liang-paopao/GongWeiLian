@@ -1,0 +1,55 @@
+{
+  "backup": "/opt/gongwei/backups/20261008-230408-upload-limit",
+  "changed_config_files": [
+    "/etc/nginx/sites-available/gongwei.yanyi.online",
+    "/etc/nginx/sites-enabled/gongwei.yanyi.online"
+  ],
+  "nginx_test": "nginx: the configuration file /etc/nginx/nginx.conf syntax is ok\nnginx: configuration file /etc/nginx/nginx.conf test is successful\n",
+  "health": {
+    "status": "ok",
+    "service": "stage2-leader",
+    "database": "/opt/gongwei/shared/data/stage2.db",
+    "mode": "local_simulation_only",
+    "runtime_mode": "local",
+    "transport_mode": "local_rpc",
+    "mq_configuration": {
+      "mode": "local_rpc",
+      "configured": true,
+      "missing": [],
+      "invalid": [],
+      "broker_url": null,
+      "auth_service_url": null,
+      "vhost": null,
+      "tls_mode": null,
+      "inbox_endpoint_template": null,
+      "platform_verified": false
+    },
+    "https_configuration": {
+      "mode": "local_rpc",
+      "configured": true,
+      "missing": [],
+      "invalid": [],
+      "urls": {
+        "leader_rpc_url": null,
+        "resource_rpc_url": null,
+        "workorder_rpc_url": null
+      },
+      "aics": {
+        "leader_aic": null,
+        "resource_aic": null,
+        "workorder_aic": null
+      },
+      "certificate_files": {
+        "server_cert_file": null,
+        "client_cert_file": null,
+        "private_key_file": null,
+        "trust_bundle_file": null
+      },
+      "platform_verified": false
+    },
+    "external_ready": true,
+    "configuration_errors": [],
+    "platform_verified": false
+  },
+  "pass_result": true
+}

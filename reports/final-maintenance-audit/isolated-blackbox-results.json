@@ -1,0 +1,17 @@
+[
+  {
+    "script": "run_stage2_tests.py",
+    "returncode": 0,
+    "stdout": "STAGE2 LOGS: G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\reports\\local-test-runs\\stage2-497lboad\nSTAGE2 INTEGRATION PASSED\nREAL AIP PARTNERS: resource, workorder\nWEB FLOW: create -> propose -> confirm -> duplicate confirm -> in_progress -> cancel\nPERSISTENCE: restart retained cancelled work order\n"
+  },
+  {
+    "script": "run_stage5_tests.py",
+    "returncode": 0,
+    "stdout": "STAGE5 LOGS: G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\reports\\local-test-runs\\stage5-f1ar4tjo\nSTAGE5 INTEGRATION PASSED\nAUDIO: auxiliary pluggable baseline health verified\nREPLAN: resource change -> version 2 -> confirm -> duplicate confirm\nRECOVERY: restart compensated orphaned reservations\nCOMPENSATION: injected work-order failure released reservations\nAUDIT: replan, reserve and work-order events persisted\n"
+  },
+  {
+    "script": "scripts/run_60_scenarios.py",
+    "returncode": 0,
+    "stdout": "STAGE4 60 SCENARIOS: 60/60 PASSED\nSTAGE4 LOGS: G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\reports\\local-test-runs\\stage4-60-43e_vqbm\n"
+  }
+]

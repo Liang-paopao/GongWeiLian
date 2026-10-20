@@ -1,0 +1,404 @@
+[
+  {
+    "session_id": "session_1822",
+    "task_id": "5cd15141-6add-42de-b50c-1fa88c551bbb",
+    "first_business_result": "awaiting-input",
+    "leader_processing_ms": 36.076,
+    "basis": "First accepted to first non-working state; excludes platform planning and subsequent human waits",
+    "status_history": [
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T14:14:39.858598+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T14:14:39.866359+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "awaiting-input",
+        "stateChangedAt": "2026-10-08T14:14:39.894674+00:00",
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "请补充：开始时间、预计时长"
+          }
+        ]
+      },
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T14:18:40.844805+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T14:18:40.852662+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "canceled",
+        "stateChangedAt": "2026-10-08T14:18:40.868506+00:00",
+        "dataItems": []
+      }
+    ]
+  },
+  {
+    "session_id": "session_1822",
+    "task_id": "3dc5ed5c-0eeb-434d-8e0b-bd1357e2cf13",
+    "first_business_result": "awaiting-input",
+    "leader_processing_ms": 15631.044,
+    "basis": "First accepted to first non-working state; excludes platform planning and subsequent human waits",
+    "status_history": [
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T14:18:45.042823+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T14:18:45.050864+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "awaiting-input",
+        "stateChangedAt": "2026-10-08T14:19:00.673867+00:00",
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "待确认检查方案：设备 pump-002；2026-10-09 14:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-b469b938862008c3525395088c5fb3ed。确认请回复“确认方案 GW-b469b938862008c3525395088c5fb3ed 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+          }
+        ]
+      },
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T14:24:31.806445+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T14:24:31.814587+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "canceled",
+        "stateChangedAt": "2026-10-08T14:24:31.833521+00:00",
+        "dataItems": []
+      }
+    ]
+  },
+  {
+    "session_id": "session_1822",
+    "task_id": "c7b49b4d-e14f-457b-8f4f-6de4f02ee60f",
+    "first_business_result": "completed",
+    "leader_processing_ms": 6595.316,
+    "basis": "First accepted to first non-working state; excludes platform planning and subsequent human waits",
+    "status_history": [
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T14:24:39.159894+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T14:24:39.167984+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "completed",
+        "stateChangedAt": "2026-10-08T14:24:45.755210+00:00",
+        "dataItems": []
+      }
+    ]
+  },
+  {
+    "session_id": "session_1822",
+    "task_id": "784ec24a-3d92-40da-aba7-c190e72cfb69",
+    "first_business_result": "awaiting-input",
+    "leader_processing_ms": 26.106,
+    "basis": "First accepted to first non-working state; excludes platform planning and subsequent human waits",
+    "status_history": [
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T14:29:26.014776+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T14:29:26.021243+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "awaiting-input",
+        "stateChangedAt": "2026-10-08T14:29:26.040882+00:00",
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "请补充：水泵、检查日期、开始时间、预计时长、异常描述"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "session_id": "session_1822",
+    "task_id": "bd1d9227-ca10-48b0-ac7d-ece50cbbb52d",
+    "first_business_result": "awaiting-input",
+    "leader_processing_ms": 27.641,
+    "basis": "First accepted to first non-working state; excludes platform planning and subsequent human waits",
+    "status_history": [
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T14:31:18.522963+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T14:31:18.529960+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "awaiting-input",
+        "stateChangedAt": "2026-10-08T14:31:18.550604+00:00",
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "请补充：水泵、检查日期、开始时间、预计时长、异常描述"
+          }
+        ]
+      },
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T14:31:43.710524+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T14:31:43.716199+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "canceled",
+        "stateChangedAt": "2026-10-08T14:31:43.729197+00:00",
+        "dataItems": []
+      }
+    ]
+  },
+  {
+    "session_id": "session_1822",
+    "task_id": "03da5168-8907-4cb2-8fd3-4a1eb9b73c8c",
+    "first_business_result": "failed",
+    "leader_processing_ms": 23.474,
+    "basis": "First accepted to first non-working state; excludes platform planning and subsequent human waits",
+    "status_history": [
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T14:31:46.137027+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T14:31:46.145186+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "failed",
+        "stateChangedAt": "2026-10-08T14:31:46.160501+00:00",
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "确认上下文与已保存方案不一致，请直接回复方案编号确认句。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "session_id": "session_1822",
+    "task_id": "c1ba5ebd-fb09-4bd7-bbec-75f420ec50e4",
+    "first_business_result": "completed",
+    "leader_processing_ms": 48.917,
+    "basis": "First accepted to first non-working state; excludes platform planning and subsequent human waits",
+    "status_history": [
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T14:49:15.416080+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T14:49:15.426179+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "completed",
+        "stateChangedAt": "2026-10-08T14:49:15.464997+00:00",
+        "dataItems": []
+      }
+    ]
+  },
+  {
+    "session_id": "session_1825",
+    "task_id": "892c94b4-987e-427e-a5ae-dc4295769483",
+    "first_business_result": "awaiting-input",
+    "leader_processing_ms": 18123.398,
+    "basis": "First accepted to first non-working state; excludes platform planning and subsequent human waits",
+    "status_history": [
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T14:59:32.554594+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T14:59:32.562076+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "awaiting-input",
+        "stateChangedAt": "2026-10-08T14:59:50.677992+00:00",
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "待确认检查方案：设备 pump-002；2026-10-09 14:00 开始，预计 60 分钟；人员：模拟人员甲；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-11c8c2b5610607db68c04b2118383b08。确认请回复“确认方案 GW-11c8c2b5610607db68c04b2118383b08 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+          }
+        ]
+      },
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T15:01:58.032555+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T15:01:58.040565+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "canceled",
+        "stateChangedAt": "2026-10-08T15:01:58.057745+00:00",
+        "dataItems": []
+      }
+    ]
+  },
+  {
+    "session_id": "session_1825",
+    "task_id": "57fc1a87-7c5c-4112-9eec-3a1c550ece89",
+    "first_business_result": "awaiting-input",
+    "leader_processing_ms": 5548.38,
+    "basis": "First accepted to first non-working state; excludes platform planning and subsequent human waits",
+    "status_history": [
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T15:01:58.750500+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T15:01:58.756442+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "awaiting-input",
+        "stateChangedAt": "2026-10-08T15:02:04.298880+00:00",
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "待确认检查方案：设备 pump-002；2026-10-09 15:00 开始，预计 60 分钟；人员：模拟人员丙；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-ad2439db0a1c71f01d0ddf6c5bd989d7。确认请回复“确认方案 GW-ad2439db0a1c71f01d0ddf6c5bd989d7 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+          }
+        ]
+      },
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T15:04:32.179884+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T15:04:32.187705+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "canceled",
+        "stateChangedAt": "2026-10-08T15:04:32.206865+00:00",
+        "dataItems": []
+      }
+    ]
+  },
+  {
+    "session_id": "session_1825",
+    "task_id": "d2323be0-2a20-4340-8d25-042c2acdafcc",
+    "first_business_result": "awaiting-input",
+    "leader_processing_ms": 3073.803,
+    "basis": "First accepted to first non-working state; excludes platform planning and subsequent human waits",
+    "status_history": [
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T15:04:36.893444+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T15:04:36.901239+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "awaiting-input",
+        "stateChangedAt": "2026-10-08T15:04:39.967247+00:00",
+        "dataItems": [
+          {
+            "metadata": null,
+            "type": "text",
+            "text": "待确认检查方案：设备 pump-002；2026-10-09 15:00 开始，预计 60 分钟；人员：模拟人员丙；工具/配件：机械密封圈、便携检查工具包。当前尚未预留资源或创建工单。方案编号：GW-61b82b026b65dbf3f031e51b0baaed2c。确认请回复“确认方案 GW-61b82b026b65dbf3f031e51b0baaed2c 并创建工单。”，也可以补充修改要求或回复“取消任务”。请对当前任务发送 continue。"
+          }
+        ]
+      },
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T15:43:26.009977+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T15:43:26.017224+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "canceled",
+        "stateChangedAt": "2026-10-08T15:43:26.038634+00:00",
+        "dataItems": []
+      }
+    ]
+  },
+  {
+    "session_id": "session_1825",
+    "task_id": "3ae124af-aae7-4406-9eac-cc7eee174215",
+    "first_business_result": "canceled",
+    "leader_processing_ms": 56.419,
+    "basis": "First accepted to first non-working state; excludes platform planning and subsequent human waits",
+    "status_history": [
+      {
+        "state": "accepted",
+        "stateChangedAt": "2026-10-08T15:43:52.842718+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "working",
+        "stateChangedAt": "2026-10-08T15:43:52.850806+00:00",
+        "dataItems": []
+      },
+      {
+        "state": "canceled",
+        "stateChangedAt": "2026-10-08T15:43:52.899137+00:00",
+        "dataItems": []
+      }
+    ]
+  }
+]

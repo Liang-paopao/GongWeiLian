@@ -1,0 +1,7 @@
+{
+  "command": "systemctl show gongwei-amp-heartbeat -p ActiveState -p UnitFileState -p MainPID",
+  "read_only": true,
+  "MainPID": "2367812",
+  "ActiveState": "active",
+  "UnitFileState": "enabled"
+}

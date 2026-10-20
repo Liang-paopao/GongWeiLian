@@ -1,0 +1,176 @@
+{
+  "project": "gongwei-step1",
+  "as_of": "2026-10-11",
+  "platform_verified": false,
+  "agents": {
+    "leader": {
+      "name": "工维联核心业务 Leader",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.GD6IGY.AWF688.0WV9",
+      "approval": "APPROVED",
+      "version": "1.1.1",
+      "registration_url": "https://wt.ioa.pub/registry/#/my-agents/detail?agentId=01a125d2-ec5c-7337-8b62-c43ec22f641c",
+      "certificate": "clientAuth_issued_validated_20261010",
+      "server_auth": "issued_dns_san_leader.yanyi.online_validated_20261010"
+    },
+    "resource_partner": {
+      "name": "工维联资源协调 Partner",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.E164E8.FWIZ4R.03IA",
+      "approval": "APPROVED",
+      "version": "1.1.0",
+      "registration_url": "https://wt.ioa.pub/registry/#/my-agents/detail?agentId=01a11197-2627-7426-ba7b-df15f708bbcf",
+      "certificate": "clientAuth_issued_validated"
+    },
+    "workorder_partner": {
+      "name": "工维联工单处理 Partner",
+      "aic": "1.2.156.3088.1.BUPT.JSQB3Y.Q9QG7Q.14TNDP.0WSF",
+      "approval": "APPROVED",
+      "version": "1.1.0",
+      "registration_url": "https://wt.ioa.pub/registry/#/my-agents/detail?agentId=01a11198-c3f6-73be-aaac-aea590d74d43",
+      "certificate": "clientAuth_issued_validated"
+    }
+  },
+  "deployment": {
+    "web": "https://gongwei.yanyi.online",
+    "leader": "https://leader.yanyi.online/rpc",
+    "web_mode": "local_rpc",
+    "formal_mode": "platform_mq_inbox",
+    "local_maintenance_fixes_deployed": true,
+    "release": "/opt/gongwei/releases/20261006-211426-maintenance",
+    "services_active": 9,
+    "leader_release": "/opt/gongwei/releases/20261010-042637-inventory-reconcile",
+    "partner_inbox_release": "/opt/gongwei/releases/20261007-095036-maintenance",
+    "web_release": "/opt/gongwei/releases/20261006-211426-maintenance",
+    "frontend_revision": "precision-20261009-closeout",
+    "frontend_backup": "/opt/gongwei/backups/20261008-133659-precision-frontend",
+    "final_audit_backup": "/opt/gongwei/backups/20261008-234234-final-audit",
+    "latest_closeout_backup": "/opt/gongwei/backups/20261010-221500-leader-reregister",
+    "latest_cancel_guard_backup": "/opt/gongwei/backups/20261009-015437-cancel-guard",
+    "metadata_backup": "/opt/gongwei/backups/20261009-012543-amp-metadata",
+    "full_server_reboot": "PASS actual boot ID changed; 9 own and 7 other services active/enabled; 5 sites HTTPS200",
+    "full_server_reboot_evidence": "reports/platform-closeout-20261009/reboot-final.json",
+    "services_evidence": "reports/full-reregister-20261010-service-status.txt"
+  },
+  "mq": {
+    "broker": "amqps://wt.ioa.pub:5671",
+    "auth_service_url": "https://wt.ioa.pub:9007",
+    "historical_443_acl": "403 CLIENT_CERTIFICATE_REQUIRED",
+    "historical_9007_acl": "PASS official mTLS API",
+    "new_multigroup_runtime": "PASS formal AMQPS two live groups, complete statuses, duplicate messages and three-client reconstruction; isolated database",
+    "live_group_rejoin": "PASS two official Group/Inbox rounds on same group after coordinator recreation; 2026-10-07",
+    "live_group_rejoin_evidence": "reports/online-continuation-investigation-20261007/mq-rejoin-probe-fixed.json",
+    "latest_partner_restart": "PASS unchanged database; reconnected to 5671 and rejoined group via official Inbox",
+    "latest_partner_restart_evidence": "reports/final-flow-check-20261008/mq-partner-restart.json",
+    "new_leader_identity": "PASS new Leader clientAuth/serverAuth; AMQPS and official Inbox preflight",
+    "new_leader_identity_evidence": "reports/full-reregister-20261010-leader-preflight-default.json",
+    "full_reregister_flow": "PASS formal public mTLS + two official MQ Partners; one unique order and three active reservations",
+    "full_reregister_evidence": "reports/full-reregister-20261010-live-acceptance.md"
+  },
+  "discovery": {
+    "catalog_three_agents": true,
+    "default_online_three_agents": true,
+    "evidence": "reports/full-reregister-20261011-discovery-after-heartbeat-fix/",
+    "checked_at": "2026-10-10T16:47:43Z",
+    "alive_sync_recovered_at": "2026-10-10T16:47:30Z",
+    "note": "After re-registering the Leader, the server AMP heartbeat and metadata forwarder configs were migrated from the retired Leader AIC to the approved AIC; all three exact default queries now return active records."
+  },
+  "dingdang": {
+    "full_acceptance": false,
+    "known_behavior": "Homepage cancels/starts protocol task; user approved stable plan reference, same sender/session and persisted history binding",
+    "latest_session": "session_1988",
+    "evidence": "reports/platform-final-acceptance-20261011/README.md",
+    "automatic_discovery": true,
+    "automatic_discovery_evidence": "reports/platform-closeout-20261009/dingdang-auto-discovery.png",
+    "debug_multiturn": "PASS official debug UI start/continue/continue; one order; see dingdang-continuation-20261007",
+    "homepage_plan_reference_order": "PASS WO-20261009-A1044F; real two formal MQ Partners; one new order and three reservations",
+    "repeat_live_delivery": "PASS actual new RPC task; completed/idempotent=true; same order; unchanged 5 orders/3 active reservations",
+    "platform_public_statistics": "PARTIAL: current Leader16/resource8/workorder8 are Message; HTTPS Access0; official amp.access contains 18 current Leader callee records but no DingDang caller-side emitter record.",
+    "final_hardened_version_new_live_call": "PASS three rounds, repeat, independent modify and cancel after final guard deployment",
+    "modify_live": "PASS session_1842 14:00 to15:00; real resource query; no added orders or active reservations",
+    "cancel_live": "PASS new Start performs cancel_plan: protocol completed, business cancelled, green platform DAG and explicit member summary; true protocol Cancel remains canceled",
+    "business_acceptance": true,
+    "platform_access_evidence": "reports/platform-final-acceptance-20261011/README.md",
+    "latest_re_registration": "PASS real Leader direct-card three rounds, duplicate, modify, cancel and automatic discovery; HTTPS Access classification remains external blocker.",
+    "acceptance_matrix": "reports/platform-final-acceptance-20261011/acceptance-matrix.json"
+  },
+  "local_tests": {
+    "unit_total": 380,
+    "unit_passed": 379,
+    "unit_skipped": 1,
+    "skip_reason": "Windows symbolic-link privilege",
+    "stage2": "PASS",
+    "stage5": "PASS",
+    "scenarios": "60/60",
+    "web_controls": "24 groups PASS",
+    "browser_flow": "PASS real public website local_rpc: clarification, resources, proposal, confirmation, repeat, cancel, lifecycle, optional WAV upload",
+    "homepage_reference_cases": "36 cases PASS independent guard review",
+    "evidence": "reports/platform-final-acceptance-20261011/local-full-unittest.log"
+  },
+  "cleanup": {
+    "recycled_files": 598,
+    "preserved_in_use_logs": 3,
+    "permanently_deleted_files": 0,
+    "history_archive": "archive/evidence-before-cleanup-20261007.zip",
+    "current_run_removed_from_active_dirs": 11,
+    "current_run_breakdown": {
+      "stale_review_archives": 8,
+      "project_python_cache_dirs": 5
+    },
+    "reversible_hold": "archive/cleanup-hold-20261010",
+    "latest_package": "reports/gongwei-platform-final-acceptance-review-20261011.zip"
+  },
+  "evidence": "reports/platform-final-acceptance-20261011/README.md",
+  "server_tests": {
+    "unit_total": 380,
+    "unit_passed": 380,
+    "stage2": "PASS",
+    "stage5": "PASS",
+    "scenarios": "60/60",
+    "public_mtls_continue": "PASS new Leader public443 SDK; not DingDang",
+    "unit_skipped": 0,
+    "public_identity_rejections": "PASS missing cert, wrong EKU and wrong senderId",
+    "evidence": "reports/platform-final-acceptance-20261011/server-regression.json",
+    "identity_rejections": "PASS wrong senderId, missing client certificate and serverAuth-as-client rejected"
+  },
+  "frontend": {
+    "deployed": true,
+    "responsive_cases": 12,
+    "public_asset_hashes": "PASS index/app.js exact current hashes",
+    "report": "reports/platform-closeout-20261009/README.md",
+    "console_errors": 0,
+    "backend_changed": true,
+    "latest_fix": "Work-order closeout refreshes real inventory/worker data; failed-state and audit labels",
+    "console_errors_scope": "Previous 12-case frontend audit; this turn tests 24 controls and real inventory return"
+  },
+  "final_delivery": {
+    "only_pdf_and_video_remaining": false,
+    "technical_pdf": "NOT CREATED",
+    "demo_video": "NOT CREATED",
+    "pending": [
+      "梧桐叮当 caller-side HTTPS Access匹配/平台统计分类",
+      "Final technical PDF and demonstration video"
+    ],
+    "review_package": "reports/gongwei-platform-final-acceptance-review-20261011.zip"
+  },
+  "amp": {
+    "metadata_authorized": true,
+    "broker": "wt.ioa.pub:19092",
+    "transport": "PLAINTEXT explicitly authorized for protocol metadata only",
+    "topics": [
+      "amp.access",
+      "amp.message"
+    ],
+    "forwarder_service": "gongwei-amp-metadata",
+    "message_statistics": "PASS current window Leader16/resource8/workorder8 Message records; no HTTPS Access match",
+    "https_access_statistics": "NOT PASSED; current official amp.access has 18 Leader callee records, but matched-stats accessCount remains 0 and no DingDang caller-side record was observed",
+    "evidence": "reports/platform-final-acceptance-20261011/",
+    "discovery_heartbeat_fix": "PASS server heartbeat and metadata configs updated to new Leader AIC; sidecars active",
+    "discovery_heartbeat_fix_evidence": "reports/full-reregister-20261011-discovery-after-heartbeat-fix/"
+  },
+  "work_order_closeout": {
+    "completed": "atomic release worker/tool; consume planned part",
+    "failed": "atomic compensation of all active reservations",
+    "legacy_completed_order": "WO-20261008-3D7B9C reconciled through existing API twice HTTP200",
+    "tests": "9/9; repeat/concurrent/terminal/legacy/category rollback",
+    "evidence": "reports/platform-closeout-20261009/legacy-order-closeout.json"
+  }
+}

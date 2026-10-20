@@ -1,0 +1,8 @@
+{
+  "brokerUrl": "amqps://wt.ioa.pub:5671",
+  "authServiceUrl": "https://wt.ioa.pub/mq-auth/",
+  "vhost": "/acps",
+  "tlsMode": "mtls",
+  "inboxEndpointTemplate": "amqps://wt.ioa.pub:5671/acps?inbox=inbox_{AIC}",
+  "platformVerified": false
+}

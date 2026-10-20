@@ -1,0 +1,131 @@
+- link "跳到主要内容":
+  - /url: "#main-content"
+- complementary:
+  - link "返回工维联协作页":
+    - /url: "#/home"
+    - generic: 工
+    - strong: 工维联
+  - navigation "主导航":
+    - button "主协作":
+      - generic: 主协作
+    - button "方案确认":
+      - generic: 方案确认
+    - button "工单中心" [active]:
+      - generic: 工单中心
+    - button "资源与审计":
+      - generic: 资源与审计
+  - generic: 模拟业务数据
+- banner:
+  - text: 工维联
+  - generic: /
+  - strong: 工单中心
+  - status:
+    - generic: 业务服务可用
+- main:
+  - status: 方案已生成。确认前不会预留资源或创建工单。
+  - region "工单中心":
+    - heading "工单中心" [level=1]
+    - button "创建检查任务"
+    - region "全部工单":
+      - generic "按工单状态筛选":
+        - button "全部工单 4":
+          - generic: 全部工单
+          - generic: "4"
+        - button "待处理 0":
+          - generic: 待处理
+          - generic: "0"
+        - button "处理中 0":
+          - generic: 处理中
+          - generic: "0"
+        - button "已完成 1":
+          - generic: 已完成
+          - generic: "1"
+        - button "已取消 3":
+          - generic: 已取消
+          - generic: "3"
+      - generic: 按设备筛选
+      - combobox "按设备筛选":
+        - option "全部设备" [selected]
+        - option "循环水泵 001"
+        - option "循环水泵 002"
+        - option "冷却水泵 003"
+      - generic: 工单状态
+      - button "刷新工单": ↻
+      - button "重置"
+      - heading "全部工单" [level=2]
+      - table:
+        - rowgroup:
+          - row "工单 设备 检查时间 负责人 状态 操作":
+            - columnheader "工单"
+            - columnheader "设备"
+            - columnheader "检查时间"
+            - columnheader "负责人"
+            - columnheader "状态"
+            - columnheader "操作":
+              - generic: 操作
+        - rowgroup:
+          - row "WO-20261008-1C8738 循环水泵 002 2026-10-09 14:00 模拟人员甲 已取消 查看工单 WO-20261008-1C8738 详情":
+            - cell "WO-20261008-1C8738":
+              - button "WO-20261008-1C8738"
+            - cell "循环水泵 002"
+            - cell "2026-10-09 14:00"
+            - cell "模拟人员甲"
+            - cell "已取消":
+              - generic: 已取消
+            - cell "查看工单 WO-20261008-1C8738 详情":
+              - button "查看工单 WO-20261008-1C8738 详情": →
+          - row "WO-20261008-3D7B9C 循环水泵 001 2026-10-09 15:00 模拟人员甲 已完成 查看工单 WO-20261008-3D7B9C 详情":
+            - cell "WO-20261008-3D7B9C":
+              - button "WO-20261008-3D7B9C"
+            - cell "循环水泵 001"
+            - cell "2026-10-09 15:00"
+            - cell "模拟人员甲"
+            - cell "已完成":
+              - generic: 已完成
+            - cell "查看工单 WO-20261008-3D7B9C 详情":
+              - button "查看工单 WO-20261008-3D7B9C 详情": →
+          - row "WO-20261007-8DC4AC 循环水泵 002 2026-10-08 15:00 模拟人员甲 已取消 查看工单 WO-20261007-8DC4AC 详情":
+            - cell "WO-20261007-8DC4AC":
+              - button "WO-20261007-8DC4AC"
+            - cell "循环水泵 002"
+            - cell "2026-10-08 15:00"
+            - cell "模拟人员甲"
+            - cell "已取消":
+              - generic: 已取消
+            - cell "查看工单 WO-20261007-8DC4AC 详情":
+              - button "查看工单 WO-20261007-8DC4AC 详情": →
+          - row "WO-20261007-89643E 循环水泵 001 2026-10-08 14:00 模拟人员甲 已取消 查看工单 WO-20261007-89643E 详情":
+            - cell "WO-20261007-89643E":
+              - button "WO-20261007-89643E"
+            - cell "循环水泵 001"
+            - cell "2026-10-08 14:00"
+            - cell "模拟人员甲"
+            - cell "已取消":
+              - generic: 已取消
+            - cell "查看工单 WO-20261007-89643E 详情":
+              - button "查看工单 WO-20261007-89643E 详情": →
+      - paragraph: 共 4 张工单 · 从后端实时读取
+    - complementary:
+      - heading "WO-20261008-1C8738" [level=2]
+      - generic: 已取消
+      - term: 设备
+      - definition: 循环水泵 002
+      - term: 异常描述
+      - definition: 请使用工维联核心业务 Leader：水泵002运行异常，帮我安排明天下午检查。
+      - term: 检查时间
+      - definition: 2026-10-09 14:00
+      - term: 预计时长
+      - definition: 60 分钟
+      - term: 创建时间
+      - definition: 2026-10-08 22:24:44
+      - heading "分配资源" [level=3]
+      - paragraph: 模拟人员甲 · 泵体检查
+      - paragraph: 机械密封圈 1件
+      - paragraph: 便携检查工具包 1套
+      - strong: 处理进度
+      - generic: 工单已创建
+      - generic: 工单已取消
+  - generic "技术详情"
+- contentinfo:
+  - generic: 工维联 · 设备维护协作台
+  - generic: 模拟业务数据 · 平台完整验收待完成

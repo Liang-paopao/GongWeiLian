@@ -1,0 +1,22 @@
+[
+  {
+    "host": "app.yanyi.online",
+    "error_type": "URLError"
+  },
+  {
+    "host": "gongwei.yanyi.online",
+    "error_type": "URLError"
+  },
+  {
+    "host": "taluo.yanyi.online",
+    "error_type": "URLError"
+  },
+  {
+    "host": "www.yanyi.online",
+    "error_type": "URLError"
+  },
+  {
+    "host": "xiaoyi.yanyi.online",
+    "error_type": "URLError"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "unittest": {
+    "exit_code": 0,
+    "log": "unittest-final.log",
+    "total": 291,
+    "passed": 290,
+    "skipped": 1
+  },
+  "stage2": {
+    "exit_code": 0,
+    "log": "stage2.log"
+  },
+  "stage5": {
+    "exit_code": 0,
+    "log": "stage5.log"
+  },
+  "scenarios": {
+    "exit_code": 0,
+    "log": "scenarios.log"
+  },
+  "initial_unittest": {
+    "exit_code": 1,
+    "log": "unittest.log"
+  },
+  "web_controls": {
+    "exit_code": 0,
+    "log": "web-controls-final.log",
+    "grouped_checks": 22
+  },
+  "node_syntax": {
+    "exit_code": 0
+  }
+}

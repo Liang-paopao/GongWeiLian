@@ -1,0 +1,64 @@
+{
+  "final_counts": {
+    "work_orders": 4,
+    "active_reservations": 3
+  },
+  "database_integrity": "ok",
+  "formal_confirm_additions": {
+    "work_orders": 1,
+    "active_reservations": 3
+  },
+  "repeat_counts_unchanged": true,
+  "cancel_status": "cancelled",
+  "cancel_continuation": {
+    "source_task_id": "d2323be0-2a20-4340-8d25-042c2acdafcc",
+    "plan_id": "plan-698fd8f8-90f9-48dc-a5d1-b318c0b9443b",
+    "reference": "GW-61b82b026b65dbf3f031e51b0baaed2c",
+    "session_id": "session_1825",
+    "sender_id": "1.2.156.3088.1.0001.00001.EZTK03.WCU6LR.14YT",
+    "message_id": "cmd-93538cac-c18c-4946-a401-9dc81f6985d8"
+  },
+  "services": {
+    "web": {
+      "MainPID": "3475537",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource": {
+      "MainPID": "3475510",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder": {
+      "MainPID": "3475518",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "audio": {
+      "MainPID": "3475527",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "leader": {
+      "MainPID": "3513841",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "resource-inbox": {
+      "MainPID": "3492146",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "workorder-inbox": {
+      "MainPID": "3492178",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    },
+    "amp-heartbeat": {
+      "MainPID": "2367812",
+      "ActiveState": "active",
+      "UnitFileState": "enabled"
+    }
+  },
+  "id_rows": 40
+}

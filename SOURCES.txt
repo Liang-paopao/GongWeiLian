@@ -1,0 +1,26 @@
+原入门资料核对日期：2026-09-18；本地文件现状更新：2026-10-07。
+以下链接记录项目所用的官方 SDK 和安装资料，代码不是官方发布物。平台实际接入状态以 STATUS.md 与保留的实测报告为准。
+
+[1] 用户提供的梧桐使用指南：
+https://wt.ioa.pub/docs.html#sdk-verification
+
+[2] 官方智能体快速开发指南（v2.2.0），说明最小Leader/Partner、
+本机Direct RPC、任务状态和正式可信注册。业务实现与练习脚本为本次新增。
+https://github.com/AIP-PUB/ACPs-community/blob/v2.2.0/acps-docs/tutorials/agent-development.md
+
+[3] 官方SDK及依赖定义（SDK采用MulanPSL-2.0；本包未附带SDK源码）。
+https://github.com/AIP-PUB/ACPs-community/blob/v2.2.0/acps-sdk/README.md
+https://github.com/AIP-PUB/ACPs-community/blob/v2.2.0/acps-sdk/pyproject.toml
+
+[4] 本包针对v2.2.0实际接口编写，本机练习的身份设置与正式平台设置不同。
+https://github.com/AIP-PUB/ACPs-community/blob/v2.2.0/acps-sdk/acps_sdk/aip/aip_rpc_server.py
+https://github.com/AIP-PUB/ACPs-community/blob/v2.2.0/acps-sdk/acps_sdk/aip/aip_rpc_client.py
+
+[5] 工具官方安装文档。
+https://docs.astral.sh/uv/getting-started/installation/
+https://git-scm.com/install/windows
+
+当前本地 data/mimii_pump/ 包含既有 MIMII 水泵小样本、manifest.csv、splits.json 和 source.json。
+来源及校验记录以 source.json 和 manifest.csv 为准；CPU 轻量模型位于 models/audio/mimii_pump_baseline.json。
+本轮维护没有继续下载或训练。小样本与基线仅用于辅助检测和流程验证，不证明设备诊断或真实维修效果。
+data/resources.json 与 data/stage2_seed.json 为模拟业务数据，不是 MIMII 录音数据。

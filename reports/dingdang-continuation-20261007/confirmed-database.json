@@ -1,0 +1,117 @@
+{
+  "orders": [
+    {
+      "id": "wo-63d7edf6-f338-4646-99ef-f1e42e2d0aa0",
+      "number": "WO-20261007-89643E",
+      "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+      "plan_id": "plan-7bc2f92e-d103-45ec-afac-60d5b00f9891",
+      "status": "confirmed",
+      "failure_reason": null,
+      "created_at": "2026-10-07T08:41:42.557901+00:00",
+      "updated_at": "2026-10-07T08:41:42.557901+00:00"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "reservation-ef1ae5c6-c3a8-4675-82fc-04303a37833d",
+      "plan_id": "plan-7bc2f92e-d103-45ec-afac-60d5b00f9891",
+      "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+      "resource_type": "worker",
+      "resource_id": "worker-01",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-08T14:00:00",
+      "end_at": "2026-10-08T15:00:00",
+      "created_at": "2026-10-07T08:41:41.330086+00:00",
+      "released_at": null
+    },
+    {
+      "id": "reservation-6491f764-5f20-4a12-95ca-7dacb21b44d0",
+      "plan_id": "plan-7bc2f92e-d103-45ec-afac-60d5b00f9891",
+      "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+      "resource_type": "inventory",
+      "resource_id": "part-seal-ring",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-08T14:00:00",
+      "end_at": "2026-10-08T15:00:00",
+      "created_at": "2026-10-07T08:41:41.330086+00:00",
+      "released_at": null
+    },
+    {
+      "id": "reservation-fdd057b2-65d2-4edd-bffa-dd538f7287b6",
+      "plan_id": "plan-7bc2f92e-d103-45ec-afac-60d5b00f9891",
+      "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+      "resource_type": "inventory",
+      "resource_id": "tool-inspection-kit",
+      "quantity": 1,
+      "status": "active",
+      "start_at": "2026-10-08T14:00:00",
+      "end_at": "2026-10-08T15:00:00",
+      "created_at": "2026-10-07T08:41:41.330086+00:00",
+      "released_at": null
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "5caf3f09-19c1-4573-be2a-0a283821c438",
+      "session_id": "debug_4808e66359da4b3380540679941a4cbf",
+      "external_task_id": "5caf3f09-19c1-4573-be2a-0a283821c438",
+      "request_id": "req-10e4f463-3d09-48b2-b368-e5239dadc3d0",
+      "plan_id": "plan-7bc2f92e-d103-45ec-afac-60d5b00f9891",
+      "status": "completed",
+      "context_json": "{\"fields\": {\"pump_id\": \"pump-001\", \"work_date\": \"2026-10-08\", \"requested_period\": \"afternoon\", \"description\": \"水泵001运行异常，帮我安排明天下午检查。\", \"start_time\": \"14:00\", \"duration_minutes\": 60, \"required_skill\": \"泵体检查\"}, \"missing_fields\": [], \"parser_mode\": \"deterministic_fallback\", \"requested_period\": \"afternoon\"}",
+      "created_at": "2026-10-07T08:39:55.268273+00:00",
+      "updated_at": "2026-10-07T08:41:44.731627+00:00"
+    }
+  ],
+  "subtasks": [
+    {
+      "subtask_id": "subtask-5caf3f09-19c1-4573-be2a-0a283821c438:resource:01",
+      "parent_task_id": "5caf3f09-19c1-4573-be2a-0a283821c438",
+      "external_task_id": "5caf3f09-19c1-4573-be2a-0a283821c438:resource:01",
+      "partner": "resource",
+      "action": "query_resources",
+      "message_id": "cmd-a6b49359-1ce3-4eaa-a8e5-c186b094d298",
+      "status": "completed",
+      "result_json": "{\"simulated\": true, \"ok\": true, \"partner\": \"resource\", \"action\": \"query_resources\", \"result\": {\"simulated\": true, \"request_id\": \"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\", \"workers\": [{\"id\": \"worker-01\", \"name\": \"模拟人员甲\", \"role\": \"机械维护\"}, {\"id\": \"worker-03\", \"name\": \"模拟人员丙\", \"role\": \"综合维护\"}], \"inventory\": [{\"id\": \"part-seal-ring\", \"name\": \"机械密封圈\", \"category\": \"part\", \"available_qty\": 5, \"unit\": \"件\"}, {\"id\": \"tool-inspection-kit\", \"name\": \"便携检查工具包\", \"category\": \"tool\", \"available_qty\": 2, \"unit\": \"套\"}], \"required_skill\": \"pump_inspection\", \"required_inventory\": [\"tool-inspection-kit\", \"part-seal-ring\"], \"available\": true, \"reasons\": [], \"start_at\": \"2026-10-08T14:00:00\", \"end_at\": \"2026-10-08T15:00:00\"}}",
+      "created_at": "2026-10-07T08:40:32.421623+00:00",
+      "updated_at": "2026-10-07T08:40:46.848260+00:00"
+    },
+    {
+      "subtask_id": "subtask-5caf3f09-19c1-4573-be2a-0a283821c438:resource:02",
+      "parent_task_id": "5caf3f09-19c1-4573-be2a-0a283821c438",
+      "external_task_id": "5caf3f09-19c1-4573-be2a-0a283821c438:resource:02",
+      "partner": "resource",
+      "action": "reserve_resources",
+      "message_id": "cmd-025cb114-bf9c-43e6-8890-47ad1c8b201b",
+      "status": "completed",
+      "result_json": "{}",
+      "created_at": "2026-10-07T08:41:41.199749+00:00",
+      "updated_at": "2026-10-07T08:41:42.429543+00:00"
+    },
+    {
+      "subtask_id": "subtask-5caf3f09-19c1-4573-be2a-0a283821c438:workorder:01",
+      "parent_task_id": "5caf3f09-19c1-4573-be2a-0a283821c438",
+      "external_task_id": "5caf3f09-19c1-4573-be2a-0a283821c438:workorder:01",
+      "partner": "workorder",
+      "action": "create_work_order",
+      "message_id": "cmd-025cb114-bf9c-43e6-8890-47ad1c8b201b",
+      "status": "completed",
+      "result_json": "{\"simulated\": true, \"ok\": true, \"partner\": \"workorder\", \"action\": \"create_work_order\", \"result\": {\"simulated\": true, \"work_order\": {\"id\": \"wo-63d7edf6-f338-4646-99ef-f1e42e2d0aa0\", \"number\": \"WO-20261007-89643E\", \"request_id\": \"req-10e4f463-3d09-48b2-b368-e5239dadc3d0\", \"plan_id\": \"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\", \"status\": \"confirmed\", \"failure_reason\": null, \"created_at\": \"2026-10-07T08:41:42.557901+00:00\", \"updated_at\": \"2026-10-07T08:41:42.557901+00:00\"}}}",
+      "created_at": "2026-10-07T08:41:42.435341+00:00",
+      "updated_at": "2026-10-07T08:41:44.726896+00:00"
+    }
+  ],
+  "confirmations": [
+    {
+      "confirmation_id": "confirmation-5caf3f09-19c1-4573-be2a-0a283821c438",
+      "task_id": "5caf3f09-19c1-4573-be2a-0a283821c438",
+      "action": "create_work_order",
+      "decision": "confirmed",
+      "payload_json": "{\"plan_id\": \"plan-7bc2f92e-d103-45ec-afac-60d5b00f9891\"}",
+      "created_at": "2026-10-07T08:41:44.731667+00:00"
+    }
+  ],
+  "integrity": "ok"
+}

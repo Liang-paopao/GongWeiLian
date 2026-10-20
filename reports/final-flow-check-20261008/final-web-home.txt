@@ -1,0 +1,80 @@
+- link "跳到主要内容":
+  - /url: "#main-content"
+- complementary:
+  - link "返回工维联协作页":
+    - /url: "#/home"
+    - generic: 工
+    - strong: 工维联
+  - navigation "主导航":
+    - button "主协作" [active]:
+      - generic: 主协作
+    - button "方案确认":
+      - generic: 方案确认
+    - button "工单中心":
+      - generic: 工单中心
+    - button "资源与审计":
+      - generic: 资源与审计
+  - generic: 模拟业务数据
+- banner:
+  - text: 工维联
+  - generic: /
+  - strong: 主协作
+  - status:
+    - generic: 业务服务可用
+- main:
+  - status: 方案已生成。确认前不会预留资源或创建工单。
+  - region "安排设备检查":
+    - heading "安排设备检查" [level=1]
+    - paragraph: 从一句话开始，确认后执行。
+    - button "＋ 新建任务"
+    - button "刷新服务与任务状态": ↻
+    - region "检查对话":
+      - heading "检查对话" [level=2]
+      - generic: 你
+      - strong: 你
+      - paragraph: 水泵002运行异常，明天下午三点开始检查，预计一小时，需要泵体检查技能。
+      - time: 23:49
+      - generic: 工
+      - strong: 工维联
+      - paragraph: 人员和物品已查询，检查方案已准备好。请查看方案并确认安排。
+      - time: 23:49
+      - button "安排明天下午检查"
+      - button "查看已有工单"
+      - generic: 检查要求
+      - textbox "检查要求":
+        - /placeholder: 描述设备异常，或继续补充检查要求…
+      - generic: Enter 发送 · Shift+Enter 换行
+      - button "上传录音":
+        - text: 上传录音
+      - button "发送消息"
+      - generic "声音辅助（可选）"
+    - complementary "本次检查":
+      - heading "本次检查" [level=2]
+      - generic: 待确认
+      - generic: 设备
+      - strong: pump-002
+      - generic: 检查时间
+      - strong: 2026-10-09 15:00–16:00
+      - generic: 预计时长
+      - strong: 60 分钟
+      - generic: 检查人员
+      - strong: 模拟人员丙
+      - generic: 工具与配件
+      - strong: 机械密封圈 1件、便携检查工具包 1套
+      - paragraph: 按技能、时段和库存生成的模拟方案
+      - button "查看并确认方案"
+      - heading "协作进展" [level=2]
+      - button "查看记录"
+      - list:
+        - strong: 补充检查信息
+        - generic: 设备、时间与检查要求
+        - strong: 协调人员与物品
+        - generic: 按技能和时间查询资源
+        - strong: 确认并创建工单
+        - generic: 等待你的明确确认
+      - paragraph: 确认前不会预留资源或创建工单。
+      - button "取消本次任务"
+  - generic "技术详情"
+- contentinfo:
+  - generic: 工维联 · 设备维护协作台
+  - generic: 模拟业务数据 · 平台完整验收待完成

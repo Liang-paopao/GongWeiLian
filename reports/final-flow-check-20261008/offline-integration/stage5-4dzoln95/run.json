@@ -1,0 +1,10 @@
+{
+  "transport": "local_rpc",
+  "ports": {
+    "resource": 58278,
+    "workorder": 58279,
+    "leader": 58280,
+    "audio": 58281
+  },
+  "temporary_database": "C:\\WINDOWS\\TEMP\\gongwei-stage5-e_aqik8f\\stage5.db"
+}

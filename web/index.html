@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><title>工维联 · 设备维护协作台</title><link rel="stylesheet" href="/static/styles.css?v=precision-20261008-final"></head>
+<body>
+<a class="skip-link" href="#main-content">跳到主要内容</a>
+<aside class="sidebar">
+  <a class="brand" href="#/home" aria-label="返回工维联协作页"><span class="brand-mark" aria-hidden="true">工</span><strong>工维联</strong></a>
+  <nav class="main-nav" aria-label="主导航">
+    <button class="nav-item active" type="button" aria-label="主协作" data-view="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H9l-5 4z"/></svg><span>主协作</span></button>
+    <button class="nav-item" type="button" aria-label="方案确认" data-view="plan"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 12h7M9 16h7"/></svg><span>方案确认</span></button>
+    <button class="nav-item" type="button" aria-label="工单中心" data-view="orders"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H5v17h14V4h-4M9 3h6v4H9zM8 12h8M8 16h6"/></svg><span>工单中心</span></button>
+    <button class="nav-item" type="button" aria-label="资源与审计" data-view="resources"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V9h4v11m4 0V4h4v16m4 0V12M2 20h20"/></svg><span>资源与审计</span></button>
+  </nav>
+  <div class="sidebar-foot"><span class="demo-dot" aria-hidden="true"></span>模拟业务数据</div>
+</aside>
+<div class="app-frame">
+  <header class="topbar"><div class="breadcrumb">工维联 <span>/</span><strong id="currentViewLabel">主协作</strong></div><div class="service-summary" role="status"><i id="serviceHealthDot" aria-hidden="true"></i><span id="serviceHealthLabel">正在连接业务服务</span></div></header>
+  <main id="main-content" class="app-shell">
+    <div id="statusBar" class="status-bar" role="status" aria-live="polite"></div>
+    <section class="view view-home" data-view-panel="home" aria-labelledby="home-title">
+      <header class="page-head"><div><h1 id="home-title">安排设备检查</h1><p>从一句话开始，确认后执行。</p></div><div class="page-head-actions"><button class="button secondary" type="button" data-action="new-conversation">＋ 新建任务</button><button class="icon-button" type="button" data-action="refresh" aria-label="刷新服务与任务状态">↻</button></div></header>
+      <div class="workspace-grid">
+        <section id="conversationPanel" class="conversation-panel" aria-labelledby="chat-title">
+          <div class="panel-heading"><h2 id="chat-title">检查对话</h2><span id="chatActivity" class="activity-label" aria-live="polite"></span></div>
+          <div id="messageList" class="message-list" aria-live="polite"></div>
+          <div class="quick-prompts"><button type="button" data-prompt="水泵001运行异常，帮我安排明天下午检查。">安排明天下午检查</button><button type="button" data-view="orders">查看已有工单</button></div>
+          <form id="chatForm" class="chat-form"><label class="sr-only" for="messageInput">检查要求</label><textarea id="messageInput" rows="2" maxlength="4000" placeholder="描述设备异常，或继续补充检查要求…"></textarea><div class="chat-actions"><span class="input-hint">Enter 发送 · Shift+Enter 换行</span><button class="text-button" type="button" data-action="open-audio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 13 7-7a3 3 0 0 1 4 4L9 20a5 5 0 0 1-7-7L13 2"/></svg>上传录音</button><button id="sendButton" class="button primary" type="submit">发送消息</button></div></form>
+          <details id="audioDrawer" class="audio-drawer"><summary>声音辅助（可选）</summary><div class="support-content"><p>只提示疑似异常，确认后再安排检查。</p><div class="audio-controls"><label class="sr-only" for="audioFile">上传 WAV 录音</label><input id="audioFile" type="file" accept=".wav,audio/wav"><button id="analyzeAudioButton" class="button secondary" type="button" disabled>检测录音</button><span id="audioFileMeta">尚未选择录音</span></div><div id="audioResult" hidden class="audio-result"><span id="audioVerdict" class="status-badge neutral">待检测</span><span>检测分数 <strong id="audioScore">—</strong></span><span>基线 <strong id="audioModel">—</strong></span></div></div></details>
+        </section>
+        <aside class="plan-panel" aria-labelledby="plan-title">
+          <div class="panel-heading"><h2 id="plan-title">本次检查</h2><span id="taskStatus" class="status-badge neutral">待开始</span></div>
+          <div id="currentTaskFacts" class="facts-list"></div>
+          <div id="missingBox" class="callout" hidden><strong>还需要你补充</strong><p id="missingText"></p></div>
+          <div id="planEmpty" class="empty-state context-empty"><strong>等待检查要求</strong><p>设备与时间会随对话整理在这里。</p></div>
+          <div id="planContent" hidden><div class="plan-summary"><div><span>设备</span><strong id="planDevice">—</strong></div><div><span>检查时间</span><strong id="planWindow">—</strong></div><div><span>预计时长</span><strong id="planDuration">—</strong></div><div><span>检查人员</span><strong id="planWorker">—</strong></div><div><span>工具与配件</span><strong id="planInventory">—</strong></div></div><p id="planReason" class="muted-note"></p><button class="button primary full" type="button" data-view="plan">查看并确认方案</button></div>
+          <div id="resultBox" class="result-box" hidden><strong id="resultTitle">工单已创建</strong><p id="resultText"></p><button class="text-button" type="button" data-view="orders">查看工单 →</button></div>
+          <div class="progress-heading"><h2>协作进展</h2><button class="text-button" type="button" data-view="resources">查看记录</button></div>
+          <ol id="stepper" class="stepper"><li class="step"><i aria-hidden="true"></i><div><strong>补充检查信息</strong><small>设备、时间与检查要求</small></div></li><li class="step"><i aria-hidden="true"></i><div><strong>协调人员与物品</strong><small>按技能和时间查询资源</small></div></li><li class="step"><i aria-hidden="true"></i><div><strong>确认并创建工单</strong><small>等待你的明确确认</small></div></li></ol>
+          <p class="confirmation-note">确认前不会预留资源或创建工单。</p><button id="cancelTaskButton" class="button danger" type="button" hidden>取消本次任务</button>
+        </aside>
+      </div>
+    </section>
+    <section class="view view-plan" data-view-panel="plan" aria-labelledby="plan-page-title" hidden>
+      <header class="page-head"><div class="title-line"><h1 id="plan-page-title">检查方案</h1><span id="planPageBadge" class="status-badge pending">待确认</span></div><button class="text-button" type="button" data-view="home">← 返回对话</button></header>
+      <div class="plan-page-grid">
+        <section class="proposal-card" aria-labelledby="proposal-title"><h2 id="proposal-title" class="sr-only">检查安排</h2><div id="proposalFacts" class="proposal-facts"></div><p id="proposalExplanation" class="muted-note"></p><details class="plan-conversation"><summary>查看检查对话</summary><div id="planConversationSummary" class="summary-messages"></div><div id="requestFacts" class="request-facts" hidden></div></details></section>
+        <aside class="plan-side"><h2>执行前确认</h2><div id="planSideFacts" class="facts-list"></div><span id="proposalStatus" class="sr-only">等待方案</span><p id="confirmationHint" class="confirmation-note">确认后预留人员和物品，并创建检查工单。</p><div class="proposal-actions"><button id="planConfirmButton" class="button primary full" type="button" disabled>确认并创建工单</button><button id="planReviseButton" class="button secondary full" type="button" disabled>修改安排</button><button id="planCancelButton" class="button danger full" type="button" disabled>取消安排</button></div><button class="text-button records-link" type="button" data-view="resources">查看协作记录 →</button></aside>
+      </div>
+    </section>
+    <section class="view view-orders" data-view-panel="orders" aria-labelledby="orders-title" hidden>
+      <header class="page-head"><h1 id="orders-title">工单中心</h1><button class="button primary" type="button" data-action="new-conversation">创建检查任务</button></header>
+      <div class="orders-layout">
+        <section class="order-list-panel" aria-labelledby="orderListTitle"><div class="order-toolbar"><div id="orderFilterList" class="filter-list" aria-label="按工单状态筛选"></div><div class="order-tools"><label class="sr-only" for="orderPumpFilter">按设备筛选</label><select id="orderPumpFilter"><option value="">全部设备</option></select><label class="sr-only" for="orderStatusFilter">工单状态</label><select id="orderStatusFilter" hidden aria-hidden="true" tabindex="-1"><option value="">全部状态</option><option value="confirmed">待处理</option><option value="in_progress">处理中</option><option value="completed">已完成</option><option value="cancelled">已取消</option></select><button class="icon-button" type="button" data-action="refresh-orders" aria-label="刷新工单">↻</button><button class="text-button reset-filter" type="button" data-action="reset-order-filters">重置</button></div></div><h2 id="orderListTitle" class="sr-only">全部工单</h2><div class="table-wrap"><table><thead><tr><th>工单</th><th>设备</th><th>检查时间</th><th>负责人</th><th>状态</th><th><span class="sr-only">操作</span></th></tr></thead><tbody id="orderTableBody"></tbody></table></div><p id="orderListMeta" class="list-meta" aria-live="polite">正在读取工单…</p></section>
+        <aside class="order-detail-panel"><div class="panel-heading"><h2 id="orderDetailTitle">工单详情</h2><span id="orderDetailBadge" class="status-badge neutral">未选择</span></div><div id="orderDetailContent" class="order-detail-content"></div></aside>
+      </div>
+    </section>
+    <section class="view view-resources" data-view-panel="resources" aria-labelledby="resources-title" hidden>
+      <header class="page-head"><h1 id="resources-title">资源与审计</h1><button class="button secondary" type="button" data-action="refresh-resources">↻ 刷新记录</button></header>
+      <div class="resources-layout">
+        <section class="resource-panel"><div class="panel-heading"><h2>资源目录</h2><span class="directory-note">已记录的人员与库存</span></div><div class="resource-tabs" role="tablist" aria-label="资源类型"><button class="resource-tab active" role="tab" aria-selected="true" aria-controls="resourceList" type="button" id="resource-tab-workers" data-resource-tab="workers">人员</button><button class="resource-tab" role="tab" tabindex="-1" aria-selected="false" aria-controls="resourceList" type="button" id="resource-tab-inventory" data-resource-tab="inventory">工具与配件</button></div><div id="resourceList" class="resource-list" role="tabpanel" aria-labelledby="resource-tab-workers"></div></section>
+        <section class="collaboration-records"><div class="panel-heading"><h2>协作记录</h2><span id="timelineMeta" class="directory-note">尚未选择任务</span></div><div class="record-tabs" role="tablist" aria-label="记录类型"><button class="record-tab active" role="tab" aria-selected="true" aria-controls="businessRecords" type="button" id="record-tab-business" data-record-tab="business">业务过程</button><button class="record-tab" role="tab" tabindex="-1" aria-selected="false" aria-controls="callRecords" type="button" id="record-tab-calls" data-record-tab="calls">调用记录</button></div><div id="businessRecords" role="tabpanel" aria-labelledby="record-tab-business"><div id="timelineList" class="timeline-list"></div></div><div id="callRecords" role="tabpanel" aria-labelledby="record-tab-calls" hidden><div class="audit-filters" aria-label="调用记录筛选"><button class="audit-filter active" type="button" data-audit-filter="all" aria-pressed="true">全部</button><button class="audit-filter" type="button" data-audit-filter="session" aria-pressed="false">会话</button><button class="audit-filter" type="button" data-audit-filter="task" aria-pressed="false">任务</button><button class="audit-filter" type="button" data-audit-filter="message" aria-pressed="false">消息</button><button class="audit-filter" type="button" data-audit-filter="partner" aria-pressed="false">协作调用</button></div><div id="auditList" class="audit-list"></div></div><details class="technical-details resource-tech"><summary>技术详情：原始审计响应</summary><pre id="auditRaw">尚未读取记录。</pre></details></section>
+      </div>
+    </section>
+    <details class="technical-details global-technical"><summary>技术详情</summary><div class="agent-health"><span class="health-chip"><i id="leaderHealthDot"></i>协调主控 <b id="leaderHealth">检查中</b></span><span class="health-chip"><i id="resourceHealthDot"></i>资源服务 <b id="resourceHealth">检查中</b></span><span class="health-chip"><i id="workorderHealthDot"></i>工单服务 <b id="workorderHealth">检查中</b></span><span id="runtimeMode">检查中</span></div><div class="technical-grid"><div><span>sessionId</span><code id="techSession">尚未建立</code></div><div><span>taskId</span><code id="techTask">尚未建立</code></div><div><span>messageId</span><code id="techMessage">尚未建立</code></div><div><span>Leader AIC</span><code id="techAic">平台身份未公开</code></div><div><span>解析方式</span><span id="parserMode">检查中</span></div><div><span>平台验收</span><code>platform_verified=false</code></div><div class="technical-wide"><span>最近一次响应</span><pre id="techPayload">发送消息后显示结构化响应。</pre></div></div><div class="legacy-task-controls" hidden><span id="currentTaskBadge"></span><button id="confirmButton" type="button">确认方案并创建工单</button><button id="reviseButton" type="button">修改时间</button><span id="userState"></span><span id="leaderState"></span><span id="resourceState"></span><span id="workorderState"></span><div id="planAgentChain"></div></div></details>
+  </main>
+  <footer class="footer"><span>工维联 · 设备维护协作台</span><span>模拟业务数据 · 平台完整验收待完成</span></footer>
+</div>
+<script src="/static/app.js?v=precision-20261009-closeout" defer></script>
+</body></html>

@@ -1,0 +1,14 @@
+{
+  "unittest": {
+    "exit_code": 0,
+    "tail": "录，未停止。\r\n....................Executing <Task finished name='Task-625' coro=<MqGroupTransportTests.test_partner_handler_emits_sdk_states_and_deduplicates_message() done, defined at G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\test_mq_group_transport.py:83> result=None created at G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\.python-runtime\\cpython-3.14.8-windows-x86_64-none\\Lib\\asyncio\\runners.py:110> took 0.192 seconds\r\n....event=partner_sdk_cleanup_timeout_connection_closed group_id=closed-channel\r\n..event=partner_sdk_cleanup_timeout_connection_closed group_id=group-restart\r\n.........event=partner_sdk_cleanup_timeout_connection_closed group_id=group-a\r\n...................................G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\.python-runtime\\cpython-3.14.8-windows-x86_64-none\\Lib\\tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 404: 'Not Found'>\r\n  _warnings.warn(self.warn_message, ResourceWarning)\r\n....................................................\r\n----------------------------------------------------------------------\r\nRan 269 tests in 42.751s\r\n\r\nOK (skipped=1)\r\n"
+  },
+  "stage2": {
+    "exit_code": 0,
+    "tail": "STAGE2 LOGS: G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\reports\\local-test-runs\\stage2-2oqmol7g\r\nSTAGE2 INTEGRATION PASSED\r\nREAL AIP PARTNERS: resource, workorder\r\nWEB FLOW: create -> propose -> confirm -> duplicate confirm -> in_progress -> cancel\r\nPERSISTENCE: restart retained cancelled work order\r\n"
+  },
+  "stage5": {
+    "exit_code": 0,
+    "tail": "STAGE5 LOGS: G:\\My Work\\杂\\论文单（2025）\\智能体辅导\\gongwei-step1\\reports\\local-test-runs\\stage5-af3dy49z\r\nSTAGE5 INTEGRATION PASSED\r\nAUDIO: auxiliary pluggable baseline health verified\r\nREPLAN: resource change -> version 2 -> confirm -> duplicate confirm\r\nRECOVERY: restart compensated orphaned reservations\r\nCOMPENSATION: injected work-order failure released reservations\r\nAUDIT: replan, reserve and work-order events persisted\r\n"
+  }
+}
